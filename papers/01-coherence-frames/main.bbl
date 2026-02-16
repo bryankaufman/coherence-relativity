@@ -1,0 +1,346 @@
+%apsrev4-2.bst 2019-01-14 (MD) hand-edited version of apsrev4-1.bst
+%Control: key (0)
+%Control: author (8) initials jnrlst
+%Control: editor formatted (1) identically to author
+%Control: production of article title (0) allowed
+%Control: page (0) single
+%Control: year (1) truncated
+%Control: production of eprint (0) enabled
+\begin{thebibliography}{29}%
+\makeatletter
+\providecommand \@ifxundefined [1]{%
+ \@ifx{#1\undefined}
+}%
+\providecommand \@ifnum [1]{%
+ \ifnum #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \@ifx [1]{%
+ \ifx #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \natexlab [1]{#1}%
+\providecommand \enquote  [1]{``#1''}%
+\providecommand \bibnamefont  [1]{#1}%
+\providecommand \bibfnamefont [1]{#1}%
+\providecommand \citenamefont [1]{#1}%
+\providecommand \href@noop [0]{\@secondoftwo}%
+\providecommand \href [0]{\begingroup \@sanitize@url \@href}%
+\providecommand \@href[1]{\@@startlink{#1}\@@href}%
+\providecommand \@@href[1]{\endgroup#1\@@endlink}%
+\providecommand \@sanitize@url [0]{\catcode `\\12\catcode `\$12\catcode
+  `\&12\catcode `\#12\catcode `\^12\catcode `\_12\catcode `\%12\relax}%
+\providecommand \@@startlink[1]{}%
+\providecommand \@@endlink[0]{}%
+\providecommand \url  [0]{\begingroup\@sanitize@url \@url }%
+\providecommand \@url [1]{\endgroup\@href {#1}{\urlprefix }}%
+\providecommand \urlprefix  [0]{URL }%
+\providecommand \Eprint [0]{\href }%
+\providecommand \doibase [0]{https://doi.org/}%
+\providecommand \selectlanguage [0]{\@gobble}%
+\providecommand \bibinfo  [0]{\@secondoftwo}%
+\providecommand \bibfield  [0]{\@secondoftwo}%
+\providecommand \translation [1]{[#1]}%
+\providecommand \BibitemOpen [0]{}%
+\providecommand \bibitemStop [0]{}%
+\providecommand \bibitemNoStop [0]{.\EOS\space}%
+\providecommand \EOS [0]{\spacefactor3000\relax}%
+\providecommand \BibitemShut  [1]{\csname bibitem#1\endcsname}%
+\let\auto@bib@innerbib\@empty
+%</preamble>
+\bibitem [{\citenamefont {Gleason}(1957)}]{gleasonMeasuresClosedSubspaces1957}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.~M.}\ \bibnamefont
+  {Gleason}},\ }\bibfield  {title} {\bibinfo {title} {Measures on the {{Closed
+  Subspaces}} of a {{Hilbert Space}}},\ }\href@noop {} {\bibfield  {journal}
+  {\bibinfo  {journal} {Indiana Univ. Math. J.}\ }\textbf {\bibinfo {volume}
+  {6}},\ \bibinfo {pages} {885} (\bibinfo {year} {1957})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont
+  {Zurek}(2003)}]{zurekDecoherenceEinselectionQuantum2003}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {W.~H.}\ \bibnamefont
+  {Zurek}},\ }\bibfield  {title} {\bibinfo {title} {Decoherence, einselection,
+  and the quantum origins of the classical},\ }\href@noop {} {\bibfield
+  {journal} {\bibinfo  {journal} {Rev. Mod. Phys.}\ }\textbf {\bibinfo {volume}
+  {75}},\ \bibinfo {pages} {715} (\bibinfo {year} {2003})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont
+  {Zurek}(2005)}]{zurekProbabilitiesEntanglementBorns2005}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {W.~H.}\ \bibnamefont
+  {Zurek}},\ }\bibfield  {title} {\bibinfo {title} {Probabilities from
+  entanglement, {{Born}}'s rule from envariance},\ }\href@noop {} {\bibfield
+  {journal} {\bibinfo  {journal} {Phys. Rev. A}\ }\textbf {\bibinfo {volume}
+  {71}},\ \bibinfo {pages} {052105} (\bibinfo {year} {2005})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont
+  {Deutsch}(1999)}]{deutschQuantumTheoryProbability1999}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
+  {Deutsch}},\ }\bibfield  {title} {\bibinfo {title} {Quantum theory of
+  probability and decisions},\ }\href@noop {} {\bibfield  {journal} {\bibinfo
+  {journal} {Proc. R. Soc. A}\ }\textbf {\bibinfo {volume} {455}},\ \bibinfo
+  {pages} {3129} (\bibinfo {year} {1999})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont
+  {Wallace}(2012)}]{wallaceEmergentMultiverseQuantum2012}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
+  {Wallace}},\ }\href@noop {} {\emph {\bibinfo {title} {The {{Emergent
+  Multiverse}}: {{Quantum Theory}} According to the {{Everett
+  Interpretation}}}}}\ (\bibinfo  {publisher} {Oxford University Press},\
+  \bibinfo {address} {Oxford},\ \bibinfo {year} {2012})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont
+  {Zeh}(1970)}]{zehInterpretationMeasurementQuantum1970}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.~D.}\ \bibnamefont
+  {Zeh}},\ }\bibfield  {title} {\bibinfo {title} {On the interpretation of
+  measurement in quantum theory},\ }\href@noop {} {\bibfield  {journal}
+  {\bibinfo  {journal} {Found. Phys.}\ }\textbf {\bibinfo {volume} {1}},\
+  \bibinfo {pages} {69} (\bibinfo {year} {1970})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Joos}\ \emph {et~al.}(2003)\citenamefont {Joos},
+  \citenamefont {Zeh}, \citenamefont {Kiefer}, \citenamefont {Giulini},
+  \citenamefont {Kupsch},\ and\ \citenamefont
+  {Stamatescu}}]{joosDecoherenceAppearanceClassical2003}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {E.}~\bibnamefont
+  {Joos}}, \bibinfo {author} {\bibfnamefont {H.~D.}\ \bibnamefont {Zeh}},
+  \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {Kiefer}}, \bibinfo
+  {author} {\bibfnamefont {D.}~\bibnamefont {Giulini}}, \bibinfo {author}
+  {\bibfnamefont {J.}~\bibnamefont {Kupsch}},\ and\ \bibinfo {author}
+  {\bibfnamefont {I.-O.}\ \bibnamefont {Stamatescu}},\ }\href@noop {} {\emph
+  {\bibinfo {title} {Decoherence and the {{Appearance}} of a {{Classical
+  World}} in {{Quantum Theory}}}}},\ \bibinfo {edition} {2nd}\ ed.\ (\bibinfo
+  {publisher} {Springer},\ \bibinfo {address} {Berlin},\ \bibinfo {year}
+  {2003})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont
+  {Rovelli}(1996)}]{rovelliRelationalQuantumMechanics1996}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {Rovelli}},\ }\bibfield  {title} {\bibinfo {title} {Relational quantum
+  mechanics},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Int.
+  J. Theor. Phys.}\ }\textbf {\bibinfo {volume} {35}},\ \bibinfo {pages} {1637}
+  (\bibinfo {year} {1996})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Fuchs}\ \emph {et~al.}(2014)\citenamefont {Fuchs},
+  \citenamefont {Mermin},\ and\ \citenamefont
+  {Schack}}]{fuchsIntroductionQBism2014}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.~A.}\ \bibnamefont
+  {Fuchs}}, \bibinfo {author} {\bibfnamefont {N.~D.}\ \bibnamefont {Mermin}},\
+  and\ \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Schack}},\
+  }\bibfield  {title} {\bibinfo {title} {An introduction to {{QBism}}},\
+  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Am. J. Phys.}\
+  }\textbf {\bibinfo {volume} {82}},\ \bibinfo {pages} {749} (\bibinfo {year}
+  {2014})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Ghirardi}\ \emph {et~al.}(1986)\citenamefont
+  {Ghirardi}, \citenamefont {Rimini},\ and\ \citenamefont
+  {Weber}}]{ghirardiUnifiedDynamicsMicroscopic1986}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.~C.}\ \bibnamefont
+  {Ghirardi}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Rimini}},\
+  and\ \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont {Weber}},\ }\bibfield
+   {title} {\bibinfo {title} {Unified dynamics for microscopic and macroscopic
+  systems},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Phys.
+  Rev. D}\ }\textbf {\bibinfo {volume} {34}},\ \bibinfo {pages} {470} (\bibinfo
+  {year} {1986})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont
+  {Pearle}(1989)}]{pearleCombiningStochasticDynamical1989}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
+  {Pearle}},\ }\bibfield  {title} {\bibinfo {title} {Combining stochastic
+  dynamical state-vector reduction with spontaneous localization},\ }\href@noop
+  {} {\bibfield  {journal} {\bibinfo  {journal} {Phys. Rev. A}\ }\textbf
+  {\bibinfo {volume} {39}},\ \bibinfo {pages} {2277} (\bibinfo {year}
+  {1989})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Di{\'o}si}(1987)}]{diosiUniversalMasterEquation1987}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
+  {Di{\'o}si}},\ }\bibfield  {title} {\bibinfo {title} {A universal master
+  equation for the gravitational violation of quantum mechanics},\ }\href@noop
+  {} {\bibfield  {journal} {\bibinfo  {journal} {Phys. Lett. A}\ }\textbf
+  {\bibinfo {volume} {120}},\ \bibinfo {pages} {377} (\bibinfo {year}
+  {1987})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Penrose}(1996)}]{penroseGravitysRoleQuantum1996}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Penrose}},\ }\bibfield  {title} {\bibinfo {title} {On gravity's role in
+  quantum state reduction},\ }\href@noop {} {\bibfield  {journal} {\bibinfo
+  {journal} {Gen. Relativ. Gravit.}\ }\textbf {\bibinfo {volume} {28}},\
+  \bibinfo {pages} {581} (\bibinfo {year} {1996})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Bengtsson}\ and\ \citenamefont
+  {{\.Z}yczkowski}(2017)}]{bengtssonGeometryQuantumStates2017}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {I.}~\bibnamefont
+  {Bengtsson}}\ and\ \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
+  {{\.Z}yczkowski}},\ }\href@noop {} {\emph {\bibinfo {title} {Geometry of
+  Quantum States: An Introduction to Quantum Entanglement}}},\ \bibinfo
+  {edition} {2nd}\ ed.\ (\bibinfo  {publisher} {Cambridge University Press},\
+  \bibinfo {address} {Cambridge},\ \bibinfo {year} {2017})\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Brody}\ and\ \citenamefont
+  {Hughston}(2001)}]{brodyGeometricQuantumMechanics2001}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.~C.}\ \bibnamefont
+  {Brody}}\ and\ \bibinfo {author} {\bibfnamefont {L.~P.}\ \bibnamefont
+  {Hughston}},\ }\bibfield  {title} {\bibinfo {title} {Geometric quantum
+  mechanics},\ }\href {https://doi.org/10.1016/S0393-0440(00)00052-8}
+  {\bibfield  {journal} {\bibinfo  {journal} {J. Geom. Phys.}\ }\textbf
+  {\bibinfo {volume} {38}},\ \bibinfo {pages} {19} (\bibinfo {year}
+  {2001})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Petz}\ and\ \citenamefont
+  {Ghinea}(2008)}]{petzIntroductionQuantumFisher2008}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
+  {Petz}}\ and\ \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {Ghinea}},\
+  }\bibfield  {title} {\bibinfo {title} {Introduction to quantum {{Fisher}}
+  information},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {AIP
+  Conf. Proc.}\ }\textbf {\bibinfo {volume} {1021}},\ \bibinfo {pages} {53}
+  (\bibinfo {year} {2008})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Masanes}\ \emph {et~al.}(2019)\citenamefont
+  {Masanes}, \citenamefont {Galley},\ and\ \citenamefont
+  {M{\"u}ller}}]{masanesMeasurementPostulatesQuantum2019}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
+  {Masanes}}, \bibinfo {author} {\bibfnamefont {T.~D.}\ \bibnamefont
+  {Galley}},\ and\ \bibinfo {author} {\bibfnamefont {M.~P.}\ \bibnamefont
+  {M{\"u}ller}},\ }\bibfield  {title} {\bibinfo {title} {The measurement
+  postulates of quantum mechanics are operationally redundant},\ }\href@noop {}
+  {\bibfield  {journal} {\bibinfo  {journal} {Nat. Commun.}\ }\textbf {\bibinfo
+  {volume} {10}},\ \bibinfo {pages} {1361} (\bibinfo {year}
+  {2019})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Zurek}(2009)}]{zurekQuantumDarwinism2009}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {W.~H.}\ \bibnamefont
+  {Zurek}},\ }\bibfield  {title} {\bibinfo {title} {Quantum {{Darwinism}}},\
+  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Nat. Phys.}\
+  }\textbf {\bibinfo {volume} {5}},\ \bibinfo {pages} {181} (\bibinfo {year}
+  {2009})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Riedel}\ \emph {et~al.}(2016)\citenamefont {Riedel},
+  \citenamefont {Zurek},\ and\ \citenamefont
+  {Zwolak}}]{riedelObjectiveQuantumUniverse2016}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.~J.}\ \bibnamefont
+  {Riedel}}, \bibinfo {author} {\bibfnamefont {W.~H.}\ \bibnamefont {Zurek}},\
+  and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Zwolak}},\
+  }\bibfield  {title} {\bibinfo {title} {The {{Objective Past}} of a {{Quantum
+  Universe}}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Phys. Rev. A}\ }\textbf {\bibinfo {volume} {93}},\ \bibinfo {pages} {032126}
+  (\bibinfo {year} {2016})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Korbicz}\ \emph {et~al.}(2017)\citenamefont
+  {Korbicz}, \citenamefont {Horodecki},\ and\ \citenamefont
+  {Horodecki}}]{korbiczObjectivityNoisyPhotonic2017}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~K.}\ \bibnamefont
+  {Korbicz}}, \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont {Horodecki}},\
+  and\ \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Horodecki}},\
+  }\bibfield  {title} {\bibinfo {title} {Objectivity in a {{Noisy Photonic
+  Environment}}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {118}},\ \bibinfo {pages}
+  {150503} (\bibinfo {year} {2017})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Carlesso}\ \emph {et~al.}(2020)\citenamefont
+  {Carlesso}, \citenamefont {Bassi}, \citenamefont {Paternostro},\ and\
+  \citenamefont {Ulbricht}}]{carlessoTestingLargescaleLimit2020}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Carlesso}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Bassi}},
+  \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Paternostro}},\ and\
+  \bibinfo {author} {\bibfnamefont {H.}~\bibnamefont {Ulbricht}},\ }\bibfield
+  {title} {\bibinfo {title} {Testing the large-scale limit of quantum
+  mechanics},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {New
+  J. Phys.}\ }\textbf {\bibinfo {volume} {22}},\ \bibinfo {pages} {022001}
+  (\bibinfo {year} {2020})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont
+  {Everett}(1957)}]{everettRelativeStateFormulation1957}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.}~\bibnamefont
+  {Everett}},\ }\bibfield  {title} {\bibinfo {title} {Relative {{State
+  Formulation}} of {{Quantum Mechanics}}},\ }\href@noop {} {\bibfield
+  {journal} {\bibinfo  {journal} {Rev. Mod. Phys.}\ }\textbf {\bibinfo {volume}
+  {29}},\ \bibinfo {pages} {454} (\bibinfo {year} {1957})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {DeWitt}\ and\ \citenamefont
+  {Graham}(1973)}]{dewittManyWorldsInterpretationQuantum1973}%
+  \BibitemOpen
+  \bibinfo {editor} {\bibfnamefont {B.~S.}\ \bibnamefont {DeWitt}}\ and\
+  \bibinfo {editor} {\bibfnamefont {N.}~\bibnamefont {Graham}},\ eds.,\
+  \href@noop {} {\emph {\bibinfo {title} {The {{Many-Worlds Interpretation}} of
+  {{Quantum Mechanics}}}}}\ (\bibinfo  {publisher} {Princeton University
+  Press},\ \bibinfo {address} {Princeton},\ \bibinfo {year} {1973})\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Bartlett}\ \emph {et~al.}(2007)\citenamefont
+  {Bartlett}, \citenamefont {Rudolph},\ and\ \citenamefont
+  {Spekkens}}]{bartlettReferenceFramesSuperselection2007}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.~D.}\ \bibnamefont
+  {Bartlett}}, \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont {Rudolph}},\
+  and\ \bibinfo {author} {\bibfnamefont {R.~W.}\ \bibnamefont {Spekkens}},\
+  }\bibfield  {title} {\bibinfo {title} {Reference frames, superselection
+  rules, and quantum information},\ }\href
+  {https://doi.org/10.1103/RevModPhys.79.555} {\bibfield  {journal} {\bibinfo
+  {journal} {Reviews of Modern Physics}\ }\textbf {\bibinfo {volume} {79}},\
+  \bibinfo {pages} {555} (\bibinfo {year} {2007})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Giacomini}\ \emph {et~al.}(2019)\citenamefont
+  {Giacomini}, \citenamefont {{Castro-Ruiz}},\ and\ \citenamefont
+  {Brukner}}]{giacominiQuantumMechanicsCovariance2019}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
+  {Giacomini}}, \bibinfo {author} {\bibfnamefont {E.}~\bibnamefont
+  {{Castro-Ruiz}}},\ and\ \bibinfo {author} {\bibfnamefont {{\v
+  C}.}~\bibnamefont {Brukner}},\ }\bibfield  {title} {\bibinfo {title} {Quantum
+  mechanics and the covariance of physical laws in quantum reference frames},\
+  }\href {https://doi.org/10.1038/s41467-018-08155-0} {\bibfield  {journal}
+  {\bibinfo  {journal} {Nature Communications}\ }\textbf {\bibinfo {volume}
+  {10}},\ \bibinfo {pages} {494} (\bibinfo {year} {2019})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {{de la Hamette}}\ and\ \citenamefont
+  {Galley}(2020)}]{delahametteQuantumReferenceFrames2020}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.-C.}\ \bibnamefont
+  {{de la Hamette}}}\ and\ \bibinfo {author} {\bibfnamefont {T.~D.}\
+  \bibnamefont {Galley}},\ }\bibfield  {title} {\bibinfo {title} {Quantum
+  reference frames for general symmetry groups},\ }\href
+  {https://doi.org/10.22331/q-2020-11-30-367} {\bibfield  {journal} {\bibinfo
+  {journal} {Quantum}\ }\textbf {\bibinfo {volume} {4}},\ \bibinfo {pages}
+  {367} (\bibinfo {year} {2020})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Vanrietvelde}\ \emph {et~al.}(2020)\citenamefont
+  {Vanrietvelde}, \citenamefont {H{\"o}hn}, \citenamefont {Giacomini},\ and\
+  \citenamefont {{Castro-Ruiz}}}]{vanrietveldeChangePerspectiveSwitching2020}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Vanrietvelde}}, \bibinfo {author} {\bibfnamefont {P.~A.}\ \bibnamefont
+  {H{\"o}hn}}, \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
+  {Giacomini}},\ and\ \bibinfo {author} {\bibfnamefont {E.}~\bibnamefont
+  {{Castro-Ruiz}}},\ }\bibfield  {title} {\bibinfo {title} {A change of
+  perspective: Switching quantum reference frames via a perspective-neutral
+  framework},\ }\href {https://doi.org/10.22331/q-2020-01-27-225} {\bibfield
+  {journal} {\bibinfo  {journal} {Quantum}\ }\textbf {\bibinfo {volume} {4}},\
+  \bibinfo {pages} {225} (\bibinfo {year} {2020})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Loveridge}\ \emph {et~al.}(2018)\citenamefont
+  {Loveridge}, \citenamefont {Miyadera},\ and\ \citenamefont
+  {Busch}}]{loveridgeSymmetryReferenceFrames2018}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
+  {Loveridge}}, \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
+  {Miyadera}},\ and\ \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
+  {Busch}},\ }\bibfield  {title} {\bibinfo {title} {Symmetry, reference frames,
+  and relational quantities in quantum mechanics},\ }\href
+  {https://doi.org/10.1007/s10701-018-0138-3} {\bibfield  {journal} {\bibinfo
+  {journal} {Foundations of Physics}\ }\textbf {\bibinfo {volume} {48}},\
+  \bibinfo {pages} {135} (\bibinfo {year} {2018})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Cepollaro}\ \emph {et~al.}(2025)\citenamefont
+  {Cepollaro}, \citenamefont {Akil}, \citenamefont {Cie{\'s}li{\'n}ski},
+  \citenamefont {{de la Hamette}},\ and\ \citenamefont
+  {Brukner}}]{cepollaroSumEntanglementSubsystem2025}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {Cepollaro}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Akil}},
+  \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont {Cie{\'s}li{\'n}ski}},
+  \bibinfo {author} {\bibfnamefont {A.-C.}\ \bibnamefont {{de la Hamette}}},\
+  and\ \bibinfo {author} {\bibfnamefont {{\v{C}}.}~\bibnamefont {Brukner}},\
+  }\bibfield  {title} {\bibinfo {title} {Sum of entanglement and subsystem
+  coherence is invariant under quantum reference frame transformations},\
+  }\href {https://doi.org/10.1103/PhysRevLett.135.010201} {\bibfield  {journal}
+  {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {135}},\
+  \bibinfo {pages} {010201} (\bibinfo {year} {2025})}\BibitemShut {NoStop}%
+\end{thebibliography}%

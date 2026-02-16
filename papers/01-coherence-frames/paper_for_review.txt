@@ -1,0 +1,256 @@
+Coherence Relativity I: Coherence Frames, Frame Invariance, and the Born Rule
+
+Bryan Kaufman
+Independent Researcher
+
+ 
+
+ABSTRACT:
+
+We propose that the quantum measurement problem is a frame problem, resolved by recognizing that coherence is relative to a choice of coherence frame---analogous to the relativity of simultaneity in special relativity. We introduce coherence relativity, a geometric framework in which physical reality is described on a joint manifold M   Sigma, where M is emergent spacetime and Sigma is a coherence manifold whose points represent distinct observational perspectives. In this framework, wave function collapse is not a dynamical process but a transformation between coherence frames induced by measurement interactions. We derive the Born rule---that measurement probabilities equal squared amplitudes---as the unique probability measure invariant under all allowed coherence-frame transformations, given additivity and continuity. This derivation unifies insights from Gleason's theorem, Zurek's envariance, and operational reconstruction programs within a single geometric structure. We demonstrate the framework with the double-slit experiment in two coherence frames and identify six testable predictions distinguishing coherence relativity from standard quantum mechanics: non-linear visibility scaling, frame-transformation hysteresis, coherence-space curvature effects, modified gravitational decoherence, measurable transformation timescales, and coherence revival. The most accessible predictions---erasure hysteresis and transformation timescales---are testable with current superconducting qubit and trapped ion platforms.
+
+## Introduction
+
+### The Measurement Problem as a Frame Problem
+
+The quantum measurement problem---how definite outcomes emerge from superposed states---has persisted for nearly a century despite the extraordinary empirical success of quantum mechanics. At its core lies a conceptual asymmetry: the formalism describes systems evolving unitarily, yet observations yield definite results governed by the Born rule, p_k = | _k|^2. The standard resolution appends a measurement postulate that operates outside the unitary framework, creating what Penrose called ``the most important open problem in physics'' and what Bell termed ``the shifty split'' between quantum and classical domains.
+
+Attempts to resolve this tension have proceeded along several lines. Gleason's theorem~[ref] showed the Born rule follows from non-contextuality, but left its physical origin unexplained. Zurek's envariance~[ref] derived probabilities from entanglement symmetry, though critics note potential circularity. The Deutsch--Wallace approach~[ref] obtained Born weights from rationality axioms in an Everettian universe. The decoherence program~[ref] explained interference suppression while assuming the Born rule. Relational quantum mechanics~[ref] and QBism~[ref] reinterpret the formalism without deriving probabilities. Objective collapse models~[ref] modify the dynamics itself.
+
+Each captures an essential aspect. Yet none simultaneously provides: (i)~a derivation of the Born rule from physical principles, (ii)~a geometric framework explaining *why* those principles hold, (iii)~testable predictions, and (iv)~ontological clarity about frame-invariant content.
+
+### Coherence as Relativity
+
+We propose that the measurement problem is not a dynamical problem requiring new physics, but a *frame problem*---analogous to the shift from Newtonian absolute time to the relativity of simultaneity.
+
+The central idea: **coherence is frame-relative**. What appears as a definite outcome in one coherence frame appears as a coherent superposition in another, just as events simultaneous in one inertial frame are non-simultaneous in another. There is no absolute fact about whether a system ``has collapsed.''
+
+We formalize this through four elements:
+
+-  **Coherence space~Sigma**: A manifold whose points represent coherence frames. Physical reality is described on M   Sigma.
+-  **Frame transformations**: Maps U_{F   F'} between coherence frames, analogous to Lorentz transformations.
+-  **Born rule as frame-invariant measure**: Requiring invariance under all allowed frame transformations, additivity, and continuity uniquely fixes  ( _i) = |c_i|^2.
+-  **Tensor field T_AB**: A field on M   Sigma encoding the information geometry of coherence frames.
+
+### Organization
+
+Section~[ref] introduces coherence frames and the geometry of Sigma. Section~[ref] develops frame transformations and invariants. Section~[ref] derives the Born rule. Section~[ref] resolves standard quantum paradoxes. Section~[ref] discusses implications, and Sec.~[ref] summarizes.
+
+## Coherence Frames and the Geometry of Quantum Description
+
+### Definitions
+
+**Coherence Space:**
+Let H be a Hilbert space of dimension~d. The **coherence space**~Sigma is the space of orthonormal bases of~H, modulo physically irrelevant phase redundancies:
+
+Sigma = U(d) / T^d,
+
+where U(d) is the unitary group and T^d is the maximal torus.
+
+**Coherence Frame:**
+A **coherence frame**~F   Sigma is a choice of preferred orthonormal basis \{i_F\} together with a specification of which degrees of freedom encode definiteness.
+
+**State Representation:**
+For physical reality~R, the state in frame~F is
+
+ _F =  _i c_i^{(F)} i_F,
+
+where the coefficients c_i^{(F)} depend on the frame. The same~R has different representations in different frames:  _F(R)    _{F'}(R) in general.
+
+### Examples
+
+**Single qubit.** For d=2, Sigma is parameterized by the Bloch sphere. The frame F_z corresponds to \{0, 1\}; the frame F_x to \{+, -\}. A state   =  0 +  1 in F_z becomes   =  + {2}+ +  - {2}- in F_x. Coherence is not a property of the state alone but of the state-in-a-frame.
+
+**Double slit.** The interference frame F_int has basis states that are path superpositions; the which-path frame F_wp has path eigenstates. Both describe the same setup (Sec.~[ref]).
+
+**Bipartite system.** For H_A   H_B, the global frame F_{global} exhibits entanglement. The local frame F_A (tracing out~B) shows mixedness instead. Decoherence is reinterpreted as a frame change.
+
+### Metric Structure
+
+The coherence space inherits the Fubini--Study metric:
+
+G_lambda_lambda = Re\! [ _    |  _    -  _    |  \!  |  _    ].
+
+This measures the information-geometric distance between nearby frames. The geodesic distance d(F, F') =   G_lambda_lambda\, d  gives the shortest path in~Sigma.
+
+Figure~[ref] shows G_lambda_lambda( ) computed numerically for the double-slit which-path parameter. The metric peaks at intermediate~ , where small changes in frame produce the largest changes in quantum description.
+
+[FIGURE/TABLE]
+
+### Analogy with Special Relativity
+
+The coherence-frame structure parallels the inertial-frame structure of special relativity (Table~[ref]). The key structural parallel: in SR, there is no absolute simultaneity---it depends on the inertial frame. In CR, there is no absolute fact about whether a system is ``in superposition'' or ``has collapsed''---it depends on the coherence frame.
+
+[FIGURE/TABLE]
+
+## Frame Transformations and Invariants
+
+### Frame Transformation Maps
+
+**Frame Transformation:**
+A **frame transformation** U_{F   F'} maps state representations:  _{F'} = U_{F   F'} _F. In the Hilbert space picture, U_{F   F'} is unitary:
+
+i_{F'} =  _j (U_{F   F'})_{ji}\, j_F.
+
+**Coherence Relabeling:**
+A **coherence relabeling** permutes and phase-rotates basis vectors:
+
+U_{F   F'}: i_F   e^{i _i} (i)_{F'},
+
+where   is a permutation and  _i   R.
+
+### Group Structure
+
+Frame transformations form a **groupoid** over~Sigma:
+
+-  Composition: U_{F   F''} = U_{F'   F''}   U_{F   F'}
+-  Identity: U_{F   F} = I
+-  Inverse: (U_{F   F'})^{-1} = U_{F'   F}
+
+For finite-dimensional~H, each U_{F   F'} has a unitary matrix representation preserving inner products:  | _F = U  | U _{F'}.
+
+### Frame Splitting
+
+**Frame Splitting:**
+A **frame splitting** transforms a single basis state into an equal-amplitude superposition:
+
+i_F   1{m_i}  _{k=1}^{m_i} i,k_{F'},
+
+where \{i,k_{F'}\} are orthonormal in the enlarged space.
+
+**Existence of Splittings:**
+For any state  _F =  _i c_ii_F with rational |c_i|^2 = m_i/M, there exists a splitting F   F' such that  _{F'} = M^{-1/2} _{i,k}i,k_{F'} is equal-amplitude.
+
+This corresponds physically to refining a measurement by coupling to an ancilla. It is a theorem of Hilbert space structure, not an independent postulate.
+
+### Frame Invariants
+
+**Frame Invariants:**
+The following are invariant under all frame transformations:
+
+-  Total probability:  _i  _F(i) = 1
+-  Born measures of alternatives:  _F(i) =  _{F'}( (i))
+-  Inner products: |\! | \!|^2 is frame-independent
+-  Eigenvalue spectra of observables
+-  Entanglement entropy S( _A) for bipartite systems
+
+What is *not* invariant: which observables have definite values, whether a state appears coherent or decohered, and the form of the density matrix.
+
+## The Born Rule as Frame-Invariant Measure
+
+### Statement
+
+**Born Rule from Frame Invariance:**
+Let Sigma be the coherence space for H with     2. Let   be a measure on the alternatives \{i_F\} satisfying:
+
+- (A1) **Frame invariance**:   is invariant under all allowed U_{F   F'}.
+- (A2) **Additivity**:   is additive on mutually orthogonal alternatives.
+- (A3) **Dependence**:  _F(i) depends only on  _F and i_F.
+- (A4) **Continuity**:  _F(i) is continuous in the coefficients~c_i.
+
+Then  _F(i) = |c_i|^2, where  _F =  _i c_ii_F.
+
+### Derivation
+
+**Step 1: Phase independence.** By (A1),   is invariant under coherence relabelings~eq:relabeling, including arbitrary phase rotations  _i. Hence  _F(i) depends on c_i only through |c_i|.
+
+**Step 2: Equal amplitudes.** For  _F = N^{-1/2} _{k=1}^N k_F, permutation invariance gives  _F(k) = 1/N = |c_k|^2 for all~k.
+
+**Step 3: Rational amplitudes.** For  _F = m/(m+n)\,0_F + n/(m+n)\,1_F, construct a frame splitting (Prop.~[ref]) producing an equal-amplitude state of m+n terms. By Step~2 and additivity~(A2):
+
+ _F(0) = m{m+n} = |c_0|^2,    _F(1) = n{m+n} = |c_1|^2.
+
+**Step 4: General amplitudes.** Approximate |c_i|^2 by rationals r_i^{(n)} with |r_i^{(n)} - |c_i|^2| < 1/n. By Step~3,  ^{(n)}(i) = r_i^{(n)}. By continuity~(A4),  _F(i) =  _{n    }  ^{(n)}(i) = |c_i|^2.  
+
+### Comparison with Previous Derivations
+
+Table~[ref] summarizes the relationship to prior work. The key advance: coherence relativity provides the *physical reason* for Gleason's non-contextuality assumption and generalizes Zurek's envariance to the full group of frame transformations.
+
+[FIGURE/TABLE]
+
+### Physical Interpretation
+
+The Born rule is not a postulate, a frequency statement, or a consequence of branching. It is the **unique frame-invariant probability assignment** on~Sigma---the quantum analog of the invariant interval ds^2 in special relativity (Fig.~[ref]).
+
+[FIGURE/TABLE]
+
+## Paradox Resolutions and Worked Examples
+
+### Double-Slit Experiment
+
+Consider the double-slit with two frames (Fig.~[ref]):
+
+-  F_int:  _{F_int} = 1{2}(L + R). Interference visible.
+-  F_wp:  _{F_wp} = 1{2}(LW_L + RW_R). Paths definite.
+
+The transformation U_{F_int   F_wp} is realized by detector coupling. Frame invariants:  (L) =  (R) = 1/2 in both frames. Frame-dependent: visibility of interference fringes, off-diagonal density matrix elements.
+
+[FIGURE/TABLE]
+
+### Wigner's Friend
+
+Wigner's friend performs a measurement inside a laboratory (frame~F_{friend}: state has collapsed to   or  ). Wigner, outside the lab, describes the joint system in F_{Wigner}: the friend--system composite remains in superposition. In coherence relativity, both descriptions are correct *in their respective frames*. There is no contradiction, just as there is no contradiction between observers disagreeing about simultaneity in SR.
+
+### EPR and Bell Nonlocality
+
+For an entangled pair in the singlet state, Alice's and Bob's local frames each see mixed states. The global frame sees entanglement. Bell inequality violation is a frame-invariant fact (it depends only on |\! | \!|^2 terms). The correlations are not ``caused'' by collapse but are geometric properties of the entangled state visible from any frame.
+
+### Schr\"odinger's Cat
+
+The cat-in-a-box scenario involves two frames: F_{outside} (cat in superposition) and F_{inside} (cat alive or dead). Opening the box is a frame transformation U_{F_{outside}   F_{inside}}, not a physical collapse. The cat's definite state exists in F_{inside} at all times; it simply isn't accessible from F_{outside} without the frame transformation.
+
+## Discussion
+
+### Resolution of the Measurement Problem
+
+coherence relativity resolves the measurement problem by dissolving it: ``collapse'' is a frame transformation, not a dynamical process. The Born rule is not postulated but derived as the unique frame-invariant measure. Definite outcomes exist in appropriate coherence frames; superposition exists in others. There is no need to explain *when* or *how* collapse occurs, because collapse is not a physical event---it is a change of description.
+
+### Quasipotential Landscape
+
+The tensor field~T_AB yields, in the strong-coupling limit, a quasipotential V( ) on~Sigma (Fig.~[ref]). Minima of~V correspond to metastable classical frames (pointer states), and barriers determine transition rates. This provides a geometric explanation for einselection: environment-induced superselection is the dynamical relaxation to V-minima.
+
+[FIGURE/TABLE]
+
+### Quantum Darwinism and Objectivity
+
+coherence relativity naturally accommodates quantum Darwinism~[ref]: when multiple environment fragments independently acquire the same information about the system, they select a preferred coherence frame. In coherence relativity language, the redundant encoding of pointer-state information across environment fragments~[ref] corresponds to the narrowing of the quasipotential well around the classical frame as the number of monitoring fragments~N increases.
+
+### Testable Predictions
+
+Six predictions distinguish coherence relativity from standard QM:
+
+-  **Non-linear visibility**: V( ) deviates from 1- ^2 due to G_lambda_lambda curvature (Fig.~[ref]).
+-  **Frame-transformation hysteresis**: Erasure paths  : 0   1   0 show path-dependent visibility recovery.
+-  **Coherence-space curvature**: Many-body systems exhibit G_lambda_lambda scaling deviations from mean-field predictions.
+-  **Modified gravitational decoherence**: Gravitational contributions to~T_AB produce mass-dependent frame-transformation rates differing from Di\'osi--Penrose~[ref].
+-  **Transformation timescales**: Weak measurements probe finite frame-transformation duration, resolvable with current qubit platforms.
+-  **Coherence revival**: Closed systems show partial coherence recovery forbidden in irreversible-collapse models~[ref].
+
+[FIGURE/TABLE]
+
+### Relationship to Existing Frameworks
+
+coherence relativity is closest in spirit to relational quantum mechanics~[ref] but differs in three respects: (i)~Sigma has concrete geometric structure; (ii)~the Born rule is derived, not assumed; (iii)~the tensor field~T_AB provides dynamics absent in RQM.
+
+Compared to QBism~[ref], coherence relativity is realist: frame-invariant content (Born measures, inner products, spectra) constitutes observer-independent physical fact.
+
+Compared to many-worlds~[ref], coherence relativity posits one reality and many frames, not many worlds and one agent. The logical structure of the Born rule derivation parallels the Deutsch--Wallace approach, but replaces branching ontology with geometric frame-invariance.
+
+The quantum reference frame (QRF) program~[ref] shares coherence relativity's emphasis on frame-dependence: Giacomini et al.\ showed that entanglement and superposition are QRF-dependent~[ref], and perspective-neutral approaches~[ref] seek frame-invariant structures. coherence relativity differs in scope: QRFs transform between quantum systems serving as references, while coherence frames transform between *descriptive bases* for a fixed system. The coherence space~Sigma provides a global geometric arena absent in QRF treatments, and the Born rule emerges as its unique invariant measure rather than being assumed.
+
+## Conclusion
+
+We have introduced coherence relativity, a geometric framework in which:
+
+-  Quantum coherence is frame-relative, like simultaneity in special relativity.
+-  The Born rule  _F(i) = |c_i|^2 is the unique frame-invariant probability measure on the coherence manifold~Sigma.
+-  Wave function collapse is a frame transformation, not a dynamical process.
+-  The information geometry of~Sigma, encoded in the Fubini--Study metric and the tensor field~T_AB, generates a quasipotential landscape explaining einselection and classical emergence.
+
+The framework unifies insights from Gleason, Zurek, and operational reconstruction programs while making six testable predictions. The most accessible---frame-transformation hysteresis and measurable transformation timescales---are within reach of current superconducting qubit and trapped ion experiments.
+
+Paper~2 will develop the full tensor field~T_AB on M   Sigma, derive the equations of motion for frame dynamics, and explore holographic connections between coherence-space geometry and emergent spacetime.
+
+### Acknowledgments
+
+The author thanks the members of the Society of Mind coordination network for research assistance and computational support.
