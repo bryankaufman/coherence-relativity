@@ -3,8 +3,9 @@
 
 **Title:** Coherence Relativity I: Coherence Frames, Frame Invariance, and the Born Rule
 
-**Author:** Bryan Kaufman (Independent Researcher)
-
+**Author:** Bryan Kaufman (Independent Researcher)  
+**Email:** bryankaufman@mac.com  
+**ORCID:** 0009-0005-6838-2433
 **Date:** February 19, 2026
 
 ---
