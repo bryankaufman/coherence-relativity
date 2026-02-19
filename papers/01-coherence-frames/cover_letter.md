@@ -99,6 +99,6 @@ Email: bryankaufman@mac.com
 - **Word count**: ~12,000 words (main text)
 - **Figures**: 8 (all original, publication-quality PDFs included)
 - **Equations**: Numbered consecutively, all original derivations
-- **References**: 40+ primary sources
+- **References**: 34 primary sources
 - **Format**: LaTeX (RevTeX 4.2, Physical Review D style)
 - **Supplementary materials**: None required; all content is in main manuscript
