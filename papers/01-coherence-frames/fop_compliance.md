@@ -9,9 +9,9 @@ Based on Perplexity review feedback. Last updated: 2026-02-19
 
 ### 1. Author Affiliation ✓
 - **Status**: COMPLETE
-- **Action**: Added city and country for independent researcher
-- **Current**: `Independent Researcher, Jacksonville, Florida, USA`
-- **Email**: bryankaufman@mac.com included
+- **Manuscript**: `Independent Researcher` (location omitted per author preference)
+- **Submission form**: Will enter Jacksonville, Florida, USA in Editorial Manager
+- **Email**: bryankaufman@mac.com included in manuscript
 
 ### 2. Keywords ✓  
 - **Status**: COMPLETE
