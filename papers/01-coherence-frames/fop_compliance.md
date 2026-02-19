@@ -10,7 +10,7 @@ Based on Perplexity review feedback. Last updated: 2026-02-19
 ### 1. Author Affiliation ✓
 - **Status**: COMPLETE
 - **Action**: Added city and country for independent researcher
-- **Current**: `Independent Researcher, San Francisco, California, USA`
+- **Current**: `Independent Researcher, Jacksonville, Florida, USA`
 - **Email**: bryankaufman@mac.com included
 
 ### 2. Keywords ✓  
@@ -142,7 +142,7 @@ Based on Perplexity review feedback. Last updated: 2026-02-19
 
 ## 📝 Changes Made (2026-02-19)
 
-1. **Author affiliation**: Added "San Francisco, California, USA"
+1. **Author affiliation**: Added "Jacksonville, Florida, USA"
 2. **Email**: Added bryankaufman@mac.com
 3. **PACS codes**: Added 3 codes (03.65.Ta, 03.67.-a, 04.60.-m)
 4. **Keywords**: Added 6 keywords
@@ -196,7 +196,7 @@ Based on Perplexity review feedback. Last updated: 2026-02-19
 - RevTeX format
 
 ### After (FoP Compliant)
-- Author: "Independent Researcher, San Francisco, California, USA"
+- Author: "Independent Researcher, Jacksonville, Florida, USA"
 - Email: bryankaufman@mac.com
 - Keywords: 6 appropriate keywords
 - PACS: 3 relevant codes
