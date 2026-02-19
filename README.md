@@ -19,8 +19,12 @@ This code implements:
 code/
 ├── calculate_g_lambda.py      # Fubini-Study metric G_λλ(λ) calculation
 ├── calculate_v_lambda.py      # Quasipotential V(λ) calculation
-└── generate_figures.py        # Generate all 8 paper figures
+├── generate_figures.py        # Generate all 8 paper figures
+├── gen_fig1_dual.py           # Figure 1: Dual view (G_λλ and dλ/ds)
+└── gen_fig1b.py               # Figure 1b: dλ/ds standalone plot
 ```
+
+**Note**: Figures 3, 4, and related conceptual diagrams are generated using TikZ code embedded directly in the LaTeX manuscript (`main.tex`).
 
 ## Requirements
 
