@@ -177,8 +177,9 @@ Comments: _______________________________________________
 
 **Once all clearances obtained**:
 1. Submit to Foundations of Physics: https://www.editorialmanager.com/foop
-2. Submit to arXiv same day: https://arxiv.org/submit
+2. Reference Zenodo preprint in submission comments
 3. Notify all contributors of submission status
+4. arXiv submission optional (can be pursued later with endorsement)
 
 ---
 

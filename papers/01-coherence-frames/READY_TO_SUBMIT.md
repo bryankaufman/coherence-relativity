@@ -112,20 +112,20 @@ Preprint available at arXiv:XXXX.XXXXX (to be added after arXiv submission).
 Code repository: https://github.com/bryankaufman/coherence-relativity
 ```
 
-### Step 4: Concurrent arXiv Submission
+### Step 4: Preprint Reference
 
-**Submit on SAME DAY as FoP submission**
+**Status**: ✅ Paper already posted on Zenodo
 
-Follow detailed instructions in: `arxiv_submission_guide.md`
+**In FoP submission comments, include**:
+```
+Preprint available on Zenodo: [DOI or URL]
+Code repository: https://github.com/bryankaufman/coherence-relativity
+```
 
-**Quick steps**:
-1. Go to: https://arxiv.org/submit
-2. Select categories: Primary `quant-ph`, Cross-list `gr-qc`
-3. Upload source files (main.tex, mainNotes.bib, all figure PDFs)
-4. License: arXiv.org perpetual license
-5. Comments: "41 pages, 8 figures. Submitted to Foundations of Physics"
-
-**After arXiv posts**: Add arXiv number to FoP submission comments
+**arXiv Submission** (optional, can be done later):
+- Requires endorsement for first submission in quant-ph
+- See `arxiv_submission_guide.md` if pursuing later
+- Not required for FoP submission
 
 ---
 
@@ -157,7 +157,8 @@ Before clicking "Submit":
 
 **External**:
 - [x] GitHub repo live and public
-- [ ] arXiv submission (do same day)
+- [x] Zenodo preprint posted
+- [ ] arXiv submission (optional, later if desired)
 
 ---
 
