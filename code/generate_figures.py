@@ -64,14 +64,14 @@ def figure1_g_lambda():
 
 
 def figure2_quasipotential():
-    """Figure 2: Quasipotential V(lambda) landscape."""
+    """Figure 2: Fubini-Study geometric distance d_Sigma(lambda) on coherence space."""
     df = pd.read_csv('data/v_lambda.csv')
 
     fig, ax = plt.subplots()
-    ax.plot(df['lambda'], df['V_lambda'], 'r-', linewidth=2, label=r'$V(\lambda)$ (CR)')
+    ax.plot(df['lambda'], df['V_lambda'], 'r-', linewidth=2, label=r'$d_\Sigma(\lambda)$ (CR)')
     ax.set_xlabel(r'$\lambda$ (which-path resolution)')
-    ax.set_ylabel(r'$V(\lambda)$ (quasipotential)')
-    ax.set_title('Quasipotential Landscape on Coherence Space')
+    ax.set_ylabel(r'$d_\Sigma(\lambda)$ (FS geometric distance)')
+    ax.set_title('Fubini-Study Distance on Coherence Space')
 
     # Mark stable frame
     min_idx = df['V_lambda'].idxmin()
@@ -273,7 +273,7 @@ def figure5_double_slit_frames():
 
 
 def figure6_cr_vs_standard():
-    """Figure 6: V(lambda) comparison -- CR prediction vs standard QM."""
+    """Figure 6: d_Sigma(lambda) comparison -- CR prediction vs standard QM."""
     df = pd.read_csv('data/v_lambda.csv')
 
     fig, ax = plt.subplots()
@@ -285,7 +285,7 @@ def figure6_cr_vs_standard():
     else:
         V_norm = df['V_lambda']
 
-    ax.plot(df['lambda'], V_norm, 'r-', linewidth=2, label=r'CR: $V(\lambda)$ (normalized)')
+    ax.plot(df['lambda'], V_norm, 'r-', linewidth=2, label=r'CR: $d_\Sigma(\lambda)$ (normalized)')
     ax.plot(df['lambda'], df['V_standard_qm'], 'b--', linewidth=2,
             label=r'Standard QM: $\mathcal{V} = \sqrt{1-\lambda^2}$')
 
@@ -299,7 +299,7 @@ def figure6_cr_vs_standard():
 
     ax.set_xlabel(r'$\lambda$ (which-path resolution)')
     ax.set_ylabel('Normalized value')
-    ax.set_title(r'CR Quasipotential vs Standard QM Visibility')
+    ax.set_title(r'CR $d_\Sigma(\lambda)$ vs Standard QM Visibility')
     ax.legend()
     ax.set_xlim(0, 1)
     ax.grid(True, alpha=0.3)
