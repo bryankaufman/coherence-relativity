@@ -1,142 +1,94 @@
 #!/usr/bin/env python3
 """
-Calculate V(λ) quasipotential for double-slit which-path resolution.
-Society of Mind: Numerical Agent Task
+Calculate V(λ) and s(λ) on coherence space.
 
-The quasipotential is derived from the action functional:
-    S[γ] = (1/4D) ∫ G_λλ (dλ/ds - F^λ)² ds
+EGY parameterization: λ ≡ √(1 − |⟨W_L|W_R⟩|²), so V² + λ² = 1 and
+the standard QM visibility is V_std = √(1−λ²).
 
-V(λ) = -(1/2) ∫₀^λ F^μ G_μμ dμ + (D/2) ln(det G)^{1/2}
+Definitions (Paper 1, §II.C):
+    s(λ) = ∫₀^λ √G_λλ dλ'    (accumulated Fubini-Study length)
+    V(λ) = ∫_λ^1 √G_λλ dλ'    (FS distance to classical frame = d_Σ(λ))
 
-For our 1D coherence parameter, this simplifies.
+These are purely geometric quantities derived from the metric G_λλ.
+V(λ) is plotted in Fig 2 (labelled d_Σ(λ)); V(λ)/V(0) vs √(1−λ²) is Fig 6.
 
-Parameters:
-- D ~ ℏ/τ_dec where τ_dec ~ 10^-6 s (superconducting qubit)
-- F^λ = drift toward pointer basis (environment-induced)
-- Grid: 1000 points in λ
+Uses the same N-mode EGY dephasing model as calculate_g_lambda.py.
+
+Output: data/v_lambda.csv, data/s_lambda.csv
 """
 
 import numpy as np
 import pandas as pd
+import os
+import sys
 
-
-# Physical parameters
-HBAR = 1.054e-34          # J·s
-TAU_DEC = 1e-6            # s (superconducting qubit decoherence time)
-D = HBAR / TAU_DEC        # Noise strength (diffusion coefficient)
-N_POINTS = 1000
-
-
-def double_slit_state(lam):
-    """
-    State ψ(λ) for double-slit with which-path resolution λ.
-    λ=0: fully coherent (|L⟩+|R⟩)/√2
-    λ=1: fully resolved |L⟩
-    """
-    coherent = np.array([1, 1]) / np.sqrt(2)
-    pointer = np.array([1, 0])
-    psi = (1 - lam) * coherent + lam * pointer
-    return psi / np.linalg.norm(psi)
-
-
-def fubini_study_metric(lam, delta=1e-6):
-    """G_λλ = Re[⟨∂_λψ|∂_λψ⟩ - ⟨∂_λψ|ψ⟩⟨ψ|∂_λψ⟩]"""
-    psi = double_slit_state(lam)
-    psi_plus = double_slit_state(min(lam + delta, 1.0))
-    psi_minus = double_slit_state(max(lam - delta, 0.0))
-    d_psi = (psi_plus - psi_minus) / (2 * delta)
-
-    G = np.real(np.vdot(d_psi, d_psi)) - np.abs(np.vdot(d_psi, psi))**2
-    return max(np.real(G), 0.0)
-
-
-def drift_field(lam, gamma=2.0):
-    """
-    Environment-induced drift toward pointer basis.
-    F^λ > 0 pushes toward λ=1 (decoherence).
-    Model: F^λ = γ(1-λ) — strongest drift far from pointer basis.
-    gamma controls coupling strength.
-    """
-    return gamma * (1 - lam)
-
-
-def quasipotential(lambda_vals, G_vals, F_vals, D_eff):
-    """
-    V(λ) from Freidlin-Wentzell large-deviation theory.
-    V(λ) = (1/2) ∫₀^λ [F^μ - (D/2)(∂_μ ln G_μμ)] dμ   (effective potential)
-
-    Simplified for 1D: V(λ) ∝ -∫₀^λ F^μ dμ + D·correction
-    The minima of V correspond to metastable coherence frames.
-    """
-    dlam = lambda_vals[1] - lambda_vals[0]
-    V = np.zeros_like(lambda_vals)
-
-    for i in range(1, len(lambda_vals)):
-        # Integrand: potential = -(1/2) F² / G + noise correction
-        G_i = max(G_vals[i], 1e-30)  # Avoid division by zero
-        F_i = F_vals[i]
-
-        # Freidlin-Wentzell: V(x) = -∫ F dx + noise landscape
-        # Physical: drift creates potential well at pointer basis
-        V[i] = V[i-1] - F_i * dlam
-
-    # Add metric curvature correction (small for smooth metrics)
-    for i in range(1, len(lambda_vals) - 1):
-        G_i = max(G_vals[i], 1e-30)
-        dG = (G_vals[min(i+1, len(G_vals)-1)] - G_vals[max(i-1, 0)]) / (2 * dlam)
-        curvature_correction = D_eff * dG / (2 * G_i)
-        V[i] += curvature_correction * dlam
-
-    # Normalize: V(0) = 0
-    V -= V[0]
-
-    return V
+# Import G_λλ from sibling script
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from calculate_g_lambda import g_lambda_N_modes, N_POINTS, LAMBDA_MIN, LAMBDA_MAX
 
 
 def standard_qm_visibility(lam):
-    """
-    Standard QM prediction: visibility = sqrt(1 - λ²).
-    For comparison with CR quasipotential shape.
-    """
-    return np.sqrt(1 - lam**2)
+    """Standard QM visibility = √(1 − λ²)."""
+    return np.sqrt(1.0 - lam ** 2)
 
 
 def main():
-    lambda_vals = np.linspace(0, 1, N_POINTS)
+    N = 10  # Multi-mode model (matches paper figures)
+    lambda_vals = np.linspace(LAMBDA_MIN, LAMBDA_MAX, N_POINTS)
+    dlam = lambda_vals[1] - lambda_vals[0]
 
-    # Calculate G_λλ
-    G_vals = np.array([fubini_study_metric(lam) for lam in lambda_vals])
+    # Compute G_λλ
+    G_vals = np.array([g_lambda_N_modes(lam, N) for lam in lambda_vals])
+    sqrt_G = np.sqrt(G_vals)
 
-    # Calculate drift field
-    F_vals = np.array([drift_field(lam) for lam in lambda_vals])
+    # s(λ) = ∫₀^λ √G dλ'  (accumulated FS length, trapezoidal)
+    s_vals = np.zeros_like(lambda_vals)
+    for i in range(1, len(lambda_vals)):
+        s_vals[i] = s_vals[i - 1] + 0.5 * (sqrt_G[i - 1] + sqrt_G[i]) * dlam
 
-    # Effective diffusion (dimensionless)
-    D_eff = 0.01  # Small noise regime (classical limit)
+    # V(λ) = ∫_λ^1 √G dλ'  (FS distance to classical frame)
+    # V(λ) = s(1) − s(λ)
+    s_total = s_vals[-1]
+    V_vals = s_total - s_vals
 
-    # Calculate quasipotential
-    V_vals = quasipotential(lambda_vals, G_vals, F_vals, D_eff)
-
-    # Standard QM comparison
+    # Standard QM visibility for comparison
     V_std = standard_qm_visibility(lambda_vals)
 
-    # Save results
-    df = pd.DataFrame({
+    # dλ/ds = 1/√G  (rate of change of λ per unit FS length)
+    dlam_ds = 1.0 / sqrt_G
+
+    # --- Save v_lambda.csv ---
+    df_v = pd.DataFrame({
         'lambda': lambda_vals,
-        'G_lambda_lambda': G_vals,
-        'F_lambda': F_vals,
         'V_lambda': V_vals,
-        'V_standard_qm': V_std
+        'V_standard_qm': V_std,
     })
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    v_path = os.path.join(script_dir, '..', 'data', 'v_lambda.csv')
+    df_v.to_csv(v_path, index=False)
 
-    output_path = 'data/v_lambda.csv'
-    df.to_csv(output_path, index=False)
+    # --- Save s_lambda.csv ---
+    df_s = pd.DataFrame({
+        'lambda': lambda_vals,
+        's_lambda': s_vals,
+        'dlambda_ds': dlam_ds,
+    })
+    s_path = os.path.join(script_dir, '..', 'data', 's_lambda.csv')
+    df_s.to_csv(s_path, index=False)
 
-    # Report
-    min_idx = np.argmin(V_vals)
-    print(f"[WARP] COMPLETED: V(lambda) quasipotential -> {output_path}")
-    print(f"[WARP] KEY_FINDINGS: V minimum at lambda = {lambda_vals[min_idx]:.3f}")
-    print(f"[WARP] KEY_FINDINGS: V(0) = {V_vals[0]:.6f}, V(1) = {V_vals[-1]:.6f}")
-    print(f"[WARP] KEY_FINDINGS: Pointer basis (lambda=1) is the global minimum (stable classical frame)")
+    # Visibility deviation
+    V_norm = V_vals / V_vals[0] if V_vals[0] > 0 else V_vals
+    delta_vis = np.abs(V_norm - V_std)
+    max_delta = np.max(delta_vis)
+    max_lam = lambda_vals[np.argmax(delta_vis)]
+
+    print(f"[AUDIT-FIX] V(λ) and s(λ) calculation (N={N})")
+    print(f"[AUDIT-FIX] V(λ) → {v_path}")
+    print(f"[AUDIT-FIX] s(λ) → {s_path}")
+    print(f"[AUDIT-FIX] V(0) = {V_vals[0]:.6f} (total geodesic length)")
+    print(f"[AUDIT-FIX] V(1) = {V_vals[-1]:.6f}")
+    print(f"[AUDIT-FIX] s(1) = {s_vals[-1]:.6f}")
+    print(f"[AUDIT-FIX] Max Δ(V/V(0) vs √(1−λ²)) = {max_delta:.4f} at λ = {max_lam:.2f}")
 
 
 if __name__ == '__main__':

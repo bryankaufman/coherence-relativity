@@ -1,0 +1,198 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amssymb}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{booktabs}
+
+\newcommand{\referee}[1]{\medskip\noindent\textcolor{gray}{\textit{Referee: ``#1''}}\medskip}
+\newcommand{\response}[1]{\noindent\textbf{Response:} #1\medskip}
+
+\begin{document}
+
+\noindent
+Dear Editor,
+
+\medskip
+We thank the referee for a careful and technically precise reading of our manuscript.
+The report identifies several places where the exposition was insufficiently explicit,
+and we have addressed each point. Following further independent mathematical review,
+we have also corrected two additional technical errors in the paper: a mismatched
+comparison baseline in Fig.~5 and an overstated endpoint divergence claim for the
+single-mode metric formula. We respond to all issues below.
+
+\bigskip\hrule\bigskip
+
+%------- PART I -------
+\section*{Part I: Referee Report Issues (1--6)}
+
+%--- Issue 1 ---
+\subsection*{Issue 1: Reality $\mathcal{R}$ is under-specified}
+\referee{``The equivalence relation is not rigorously defined\ldots $\mathcal{R}$ risks
+collapsing to a ray in Hilbert space.''}
+\response{We have revised Definition~3 to state the equivalence relation explicitly:
+$|\psi\rangle_F \sim |\psi\rangle_{F'}$ iff there exists $U_{F\to F'}$ with
+$|\psi\rangle_{F'} = U_{F\to F'}|\psi\rangle_F$. We have added a sentence
+clarifying that $\mathcal{R}$ carries the \emph{pointer structure} as additional
+data---the specification of which observables behave classically. Two states related
+by a unitary that does not preserve the pointer observable belong to different
+equivalence classes, so $\mathcal{R}$ is a point on $M\times\Sigma$, not merely a
+ray in $\mathcal{H}$. See revised Definition~3.}
+
+%--- Issue 2 ---
+\subsection*{Issue 2: $T_{AB}$ double-counts the K\"{a}hler structure}
+\referee{``Your $T_{AB}$ is not new unless $\Omega_{AB}$ is not the standard symplectic
+form. You don't clearly distinguish Berry curvature from new dynamical curvature.''}
+\response{We have added a clarifying paragraph in Sec.~II.D. $\Omega_{AB}$ is
+\emph{not} the Berry curvature: Berry curvature is holonomy of the state vector under
+adiabatic parameter variation, living on the external parameter manifold. $\Omega_{AB}$
+is curvature of the frame bundle over $\Sigma$, vanishing for reversible frame changes
+and nonzero when a closed loop in $\Sigma$ fails to restore the pointer observable.
+The symmetric $G_{AB}$ reproduces the Fubini--Study (K\"{a}hler) metric;
+$\Omega_{AB}$ encodes dynamical irreversibility, absent from the standard K\"{a}hler
+form. See the added paragraph following Definition~4.}
+
+%--- Issue 3 ---
+\subsection*{Issue 3: Axiom (A1) is equivalent to Gleason's non-contextuality}
+\referee{``You have not eliminated the core assumption---you've rephrased it\ldots
+[A1] is equivalent to non-contextuality across refinements, which is exactly what
+Gleason assumes.''}
+\response{We dispute the equivalence and have added an explicit comparison in
+Sec.~IV.C. Gleason's non-contextuality (NC) is a \emph{global} condition: a
+projector must yield the same probability across \emph{all} POVMs simultaneously.
+Axiom~(A1) is strictly weaker: it constrains only isometric ancilla embeddings of
+the form in Proposition~1. The logical relationship is NC $\Rightarrow$ (A1) but
+(A1) $\not\Rightarrow$ NC. We additionally note that Gleason's theorem requires
+$\dim\mathcal{H}\geq 3$, whereas our derivation holds for $\dim\geq 2$ because the
+splitting operates on the ancilla-extended space. See the added paragraph in
+Sec.~IV.C.}
+
+%--- Issue 4 ---
+\subsection*{Issue 4: Axiom (A3) is a strong, underived assumption}
+\referee{``[A3] excludes contextual hidden-variable models\ldots another strong
+assumption, not derived.''}
+\response{The referee is correct, and we have revised Axiom~(A3) to label it
+explicitly as a \emph{frame-locality postulate}---structurally analogous to local
+causality in SR, adopted rather than derived. We explain why it is physically
+motivated: frame-history dependence would undermine the coherence-frame programme
+from the outset. See revised Theorem~2, Axiom~(A3).}
+
+%--- Issue 5 ---
+\subsection*{Issue 5: New physics claims contradict using standard QM structure}
+\referee{``Your framework uses Hilbert space, unitary transformations, Born rule.
+That is exactly standard quantum mechanics. Therefore you should get identical
+predictions\ldots You claim both simultaneously, which is inconsistent.''}
+\response{The source of the predictions is the \emph{geometric structure of $\Sigma$},
+specifically the Fubini--Study metric $G_{\lambda\lambda}$, which standard QM does not
+model. Standard QM implicitly treats all traversals of $\lambda$ as metrically
+equivalent; Coherence Relativity weights physically traversed paths by
+$G_{\lambda\lambda}$. No Hamiltonian is modified. We acknowledge that the geometric
+structure of $\Sigma$ is additional structure beyond standard QM's formalism and have
+revised Sec.~VI.D to describe the framework as a ``minimal geometric extension''
+rather than a pure reinterpretation. See the added paragraph at the start of
+Sec.~VI.D.}
+
+%--- Issue 6 ---
+\subsection*{Issues 6 \& 7: Hysteresis and $\tau_\mathrm{frame}$}
+\referee{``In standard QM, evolution is unitary $\to$ path-independent probabilities.
+No geometric hysteresis appears unless there is non-unitary dynamics. You haven't shown
+where unitarity breaks.''}
+\response{Unitarity does not break. We have added a sentence after Eq.~(13) making
+this explicit: the full system--environment state evolves unitarily; the visibility
+deficit is a property of the \emph{reduced} dynamics on $\Sigma$, the action cost
+accumulated along the erasure--revival cycle under the effective stochastic drift.
+Standard QM's path carries no metric weight; Coherence Relativity's does. Regarding
+$\tau_\mathrm{frame}$: the ``Remark on universality'' box (p.~8) already states
+explicitly that the timescales are not universal but depend on coupling strength
+$v_\mathrm{max}$. The testable content is the ratio of transformation duration to
+coupling strength, not the absolute value. No revision required for this sub-point.}
+
+\bigskip\hrule\bigskip
+
+%------- PART II -------
+\section*{Part II: Additional Corrections (Independent Mathematical Review)}
+
+Following independent review, we have identified and corrected two further technical
+errors.
+
+%--- Issue 7 (NEW) ---
+\subsection*{Correction A (Critical): Fig.~5 comparison baseline}
+\textbf{Error identified:} The paper defines $\lambda \equiv 1 - |\langle
+W_L|W_R\rangle|$ but Fig.~5 plots $\mathcal{V}_\mathrm{std} = \sqrt{1-\lambda^2}$
+as the standard QM reference curve. This formula is correct only for the orthogonal
+distinguishability parameterization $D = \sqrt{1-|\langle W_L|W_R\rangle|^2}$.
+Under the paper's own $\lambda$ definition, the correct standard QM prediction is
+$\mathcal{V}_\mathrm{std} = 1 - \lambda$ (linear). The metric formula
+$G_{\lambda\lambda} = 1/[2\lambda(2-\lambda)]$ is correctly derived; only the
+comparison baseline in Fig.~5 was wrong. This error was verified numerically:
+the spurious gap between $\sqrt{1-\lambda^2}$ and $1-\lambda$ reaches $0.37$ at
+$\lambda = 0.5$, substantially larger than the claimed $\Delta \approx 0.24$.
+
+\textbf{Correction:} We have redefined $\lambda$ as the standard
+Englert--Greenberger--Yasin which-path distinguishability
+$\lambda \equiv \sqrt{1-|\langle W_L|W_R\rangle|^2}$, which satisfies
+$\mathcal{V}^2 + \lambda^2 = 1$ for pure states and makes
+$\mathcal{V}_\mathrm{std} = \sqrt{1-\lambda^2}$ the correct baseline.
+The metric $G_{\lambda\lambda}$ has been rederived under this parameterization,
+and Fig.~5 and the $\Delta$ claim have been updated accordingly.
+
+%--- Issue 8 (NEW) ---
+\subsection*{Correction B: Metric endpoint divergence claim}
+\textbf{Error identified:} The analytic formula $G_{\lambda\lambda} =
+1/[2\lambda(2-\lambda)]$ approaches $1/2$ as $\lambda \to 1$ (finite, not divergent).
+The claim ``the metric diverges at both endpoints'' was true only for the multi-mode
+$N = 10$ numerical simulation in Fig.~1, not for the single-mode analytic formula.
+
+\textbf{Correction:} Sec.~II.C and the Fig.~1 caption have been revised to state
+that divergence at the classical endpoint $\lambda \to 1$ is a feature of the
+multi-mode numerical model, not of the single-mode formula. The $\tau_\mathrm{frame}$
+integral in Sec.~VI.D.1 uses the single-mode formula and correctly excludes the
+coordinate-singular endpoints via the restricted range $\lambda \in [0.01, 0.99]$.
+
+%--- Issues 9, 10 (NEW) ---
+\subsection*{Corrections C \& D: Prediction provenance and $\Sigma$ dimension}
+\textbf{C (Sec.~VI.D):} We have added a paragraph clarifying which predictions
+follow from $G_{\lambda\lambda}$ alone (predictions~1 and~5: non-linear visibility
+and transformation timescale) vs.\ which additionally invoke the deferred stochastic
+dynamics from Paper~2 (predictions~2, 3, 4, 6). The quantitative falsifiability of
+predictions~1 and~5 is independent of Paper~2.
+
+\textbf{D (Sec.~III.C):} We have added one sentence after Proposition~1 clarifying
+that frame splittings embed $\Sigma$ into a larger $\Sigma' = U(dM)/T^{dM}$, but
+$T_{AB}$ need not be defined on $\Sigma'$ for the Born rule derivation; the splitting
+is used solely to establish the probability assignment and the isometry returns to the
+original $\Sigma$.
+
+\bigskip\hrule\bigskip
+
+\noindent\textbf{Summary of all changes:}
+
+\medskip
+\begin{tabular}{clp{7.5cm}}
+\toprule
+\# & Section & Change \\
+\midrule
+1 & Sec.~II.A Def.~3 & Added explicit equivalence relation; pointer structure clarified \\
+2 & Sec.~II.D & Added paragraph: $\Omega_{AB}$ vs.\ Berry curvature \\
+3 & Sec.~IV.C & Added paragraph: (A1) vs.\ Gleason NC; $\dim\geq 2$ note \\
+4 & Sec.~IV Thm.~2 & Axiom~(A3) relabeled as frame-locality postulate \\
+5 & Sec.~VI.D & Added paragraph: predictions from geometry, not modified $H$ \\
+6 & Sec.~VI.D.1 & Added paragraph: hysteresis without unitarity violation \\
+7 & Sec.~II.C, Fig.~5 & \textbf{[New]} Corrected $\lambda$ definition and comparison baseline \\
+8 & Sec.~II.C, Fig.~1 & \textbf{[New]} Corrected endpoint divergence claim (single-mode formula) \\
+9 & Sec.~VI.D & \textbf{[New]} Clarified which predictions require Paper~2 dynamics \\
+10 & Sec.~III.C & \textbf{[New]} Added $\Sigma$-dimension note after Prop.~1 \\
+\bottomrule
+\end{tabular}
+
+\medskip
+\noindent We believe the revised manuscript fully addresses all raised concerns.
+The core framework, Born rule derivation, and qualitative predictions are unchanged;
+the revisions clarify foundations, correct two technical errors, and sharpen the
+physical claims.
+
+\bigskip
+\noindent Sincerely,\\
+Bryan Kaufman
+
+\end{document}

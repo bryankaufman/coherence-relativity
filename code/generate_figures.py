@@ -31,47 +31,72 @@ plt.rcParams.update({
 
 
 def figure1_g_lambda():
-    """Figure 1: Fubini-Study metric G_lambda(lambda) on coherence space."""
+    """Figure 1: Two-panel Fubini-Study metric under EGY parameterization.
+
+    Panel (a): G_ll(lambda) for N=10 multi-mode model.
+    Panel (b): dlambda/ds = 1/sqrt(G_ll) -- rate of distinguishability growth.
+
+    Under EGY, G_ll is finite at lambda=0 (all models: G=0.5) and diverges
+    at lambda->1 (classical rigidity). The curve is monotone increasing.
+    """
     df = pd.read_csv('data/g_lambda.csv')
+    lam = df['lambda'].values
+    G = df['G_lambda_lambda'].values
+    dlam_ds = 1.0 / np.sqrt(np.maximum(G, 1e-10))
 
-    fig, ax = plt.subplots()
-    ax.plot(df['lambda'], df['G_lambda_lambda'], 'b-', linewidth=2)
-    ax.set_xlabel(r'$\lambda$ (which-path resolution)')
-    ax.set_ylabel(r'$G_{\lambda\lambda}$ (Fubini-Study metric)')
-    ax.set_title('Information-Geometric Distance on Coherence Space')
+    fig, axes = plt.subplots(1, 2, figsize=(12, 5))
 
-    # Annotate regions
-    ax.axvspan(0, 0.15, alpha=0.1, color='blue', label='Coherent regime')
-    ax.axvspan(0.85, 1.0, alpha=0.1, color='red', label='Classical regime')
-
-    peak_idx = df['G_lambda_lambda'].idxmax()
-    peak_lam = df['lambda'].iloc[peak_idx]
-    peak_val = df['G_lambda_lambda'].iloc[peak_idx]
-    ax.annotate(f'Peak: $\\lambda$ = {peak_lam:.2f}',
-                xy=(peak_lam, peak_val),
-                xytext=(peak_lam + 0.15, peak_val * 0.85),
-                arrowprops=dict(arrowstyle='->', color='black'),
-                fontsize=11)
-
-    ax.legend(loc='upper right')
+    # Panel (a): G_ll
+    ax = axes[0]
+    ax.plot(lam, G, 'b-', linewidth=2, label=r'$G_{\lambda\lambda}$ ($N=10$)')
+    ax.set_xlabel(r'$\lambda = \sqrt{1 - |\langle W_L|W_R\rangle|^2}$')
+    ax.set_ylabel(r'$G_{\lambda\lambda} = (ds/d\lambda)^2$')
+    ax.set_title(r'(a) Fubini\textendash{}Study Metric')
     ax.set_xlim(0, 1)
+    ax.set_ylim(0, min(G.max(), 15))  # cap y-axis for readability
+    ax.axvspan(0, 0.15, alpha=0.08, color='blue', label='Coherent regime')
+    ax.axvspan(0.85, 1.0, alpha=0.08, color='red', label='Classical regime')
+    # Annotate G(0) finite value
+    ax.annotate(r'$G_{\lambda\lambda}(0)=\frac{1}{2}$ (finite)',
+                xy=(0.02, G[0]), xytext=(0.15, G[0] + 0.5),
+                arrowprops=dict(arrowstyle='->', color='navy'),
+                fontsize=10, color='navy')
+    ax.legend(loc='upper left', fontsize=9)
     ax.grid(True, alpha=0.3)
 
+    # Panel (b): dlambda/ds
+    ax = axes[1]
+    ax.plot(lam, dlam_ds, 'r-', linewidth=2, label=r'$d\lambda/ds = 1/\sqrt{G_{\lambda\lambda}}$')
+    ax.set_xlabel(r'$\lambda = \sqrt{1 - |\langle W_L|W_R\rangle|^2}$')
+    ax.set_ylabel(r'$d\lambda/ds = 1/\sqrt{G_{\lambda\lambda}}$')
+    ax.set_title(r'(b) Distinguishability Efficiency')
+    ax.set_xlim(0, 1)
+    ax.axvspan(0, 0.15, alpha=0.08, color='blue')
+    ax.axvspan(0.85, 1.0, alpha=0.08, color='red')
+    # Annotate dlam/ds(0) = sqrt(2)
+    ax.annotate(r'$d\lambda/ds(0) = \sqrt{2}$',
+                xy=(0.02, dlam_ds[0]), xytext=(0.12, dlam_ds[0] - 0.15),
+                arrowprops=dict(arrowstyle='->', color='darkred'),
+                fontsize=10, color='darkred')
+    ax.legend(loc='upper right', fontsize=9)
+    ax.grid(True, alpha=0.3)
+
+    fig.tight_layout()
     fig.savefig('figures/fig1_g_lambda.pdf')
     fig.savefig('figures/fig1_g_lambda.png')
     plt.close(fig)
-    print("[WARP] Figure 1: G_lambda(lambda) -> figures/fig1_g_lambda.pdf")
+    print("[EGY] Figure 1: G_ll(lambda) two-panel -> figures/fig1_g_lambda.pdf")
 
 
 def figure2_quasipotential():
-    """Figure 2: Quasipotential V(lambda) landscape."""
+    """Figure 2: Fubini-Study geometric distance d_Sigma(lambda) on coherence space."""
     df = pd.read_csv('data/v_lambda.csv')
 
     fig, ax = plt.subplots()
-    ax.plot(df['lambda'], df['V_lambda'], 'r-', linewidth=2, label=r'$V(\lambda)$ (CR)')
+    ax.plot(df['lambda'], df['V_lambda'], 'r-', linewidth=2, label=r'$d_\Sigma(\lambda)$ (CR)')
     ax.set_xlabel(r'$\lambda$ (which-path resolution)')
-    ax.set_ylabel(r'$V(\lambda)$ (quasipotential)')
-    ax.set_title('Quasipotential Landscape on Coherence Space')
+    ax.set_ylabel(r'$d_\Sigma(\lambda)$ (FS geometric distance)')
+    ax.set_title('Fubini-Study Distance on Coherence Space')
 
     # Mark stable frame
     min_idx = df['V_lambda'].idxmin()
@@ -273,7 +298,7 @@ def figure5_double_slit_frames():
 
 
 def figure6_cr_vs_standard():
-    """Figure 6: V(lambda) comparison -- CR prediction vs standard QM."""
+    """Figure 6: d_Sigma(lambda) comparison -- CR prediction vs standard QM."""
     df = pd.read_csv('data/v_lambda.csv')
 
     fig, ax = plt.subplots()
@@ -285,7 +310,7 @@ def figure6_cr_vs_standard():
     else:
         V_norm = df['V_lambda']
 
-    ax.plot(df['lambda'], V_norm, 'r-', linewidth=2, label=r'CR: $V(\lambda)$ (normalized)')
+    ax.plot(df['lambda'], V_norm, 'r-', linewidth=2, label=r'CR: $d_\Sigma(\lambda)$ (normalized)')
     ax.plot(df['lambda'], df['V_standard_qm'], 'b--', linewidth=2,
             label=r'Standard QM: $\mathcal{V} = \sqrt{1-\lambda^2}$')
 
@@ -299,7 +324,7 @@ def figure6_cr_vs_standard():
 
     ax.set_xlabel(r'$\lambda$ (which-path resolution)')
     ax.set_ylabel('Normalized value')
-    ax.set_title(r'CR Quasipotential vs Standard QM Visibility')
+    ax.set_title(r'CR $d_\Sigma(\lambda)$ vs Standard QM Visibility')
     ax.legend()
     ax.set_xlim(0, 1)
     ax.grid(True, alpha=0.3)
