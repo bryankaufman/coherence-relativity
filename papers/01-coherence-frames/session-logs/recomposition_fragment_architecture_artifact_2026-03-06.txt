@@ -1,0 +1,89 @@
+Section-Fragment Architecture (for rapid recomposition)
+
+Legend
+- [ALWAYS] = include by default
+- [COND] = deploy when triggered
+
+A) Intro Fragment Set
+
+A1 — Scope Boundary Fragment [ALWAYS]
+- Purpose: Define picture scope immediately.
+- Content unit: Paper 1 = Schrödinger-side formalism; Paper 2 = Heisenberg dual + left/right mismatch; Paper 3 = consequence layer.
+- Best placement: First 1–2 paragraphs of intro, plus end-of-intro roadmap line.
+
+A2 — Dependency Spine Fragment [ALWAYS]
+- Purpose: Keep cross-paper logic explicit.
+- Content unit: P1 foundations → P2 mixed-sector completion → P3 phenomenology.
+- Best placement: End of intro or “Organization of paper” paragraph.
+
+A3 — Settimo Positioning Fragment [COND]
+- Purpose: Tie manuscript to dual-generator literature.
+- Content unit: L_t, R_t, invertible-interval conjugation, projected suppression in commutative sectors.
+- Trigger: Reviewer asks for literature anchoring or mechanism completeness.
+- Best placement: Paper 2 motivation/scope subsection.
+
+B) Formal/Theorem Fragment Set
+
+B1 — Invariance-Domain Assumption Fragment [ALWAYS]
+- Purpose: Prevent overbroad invariance readings.
+- Content unit: Event-algebra-preserving transformation class.
+- Best placement: Axiom block / theorem assumptions.
+
+B2 — Entanglement Qualification Fragment [ALWAYS]
+- Purpose: Prevent partition ambiguity.
+- Content unit: Invariance only for fixed bipartition + local/unitary frame moves.
+- Best placement: Immediately after invariance theorem or as “not invariant” companion bullet.
+
+B3 — Mixed-State Geometry Escalation Fragment [COND]
+- Purpose: Handle open-system rigor challenges.
+- Content unit: FS (pure-state) vs Bures/QFI (mixed-state) regime split.
+- Trigger: Reviewer flags decoherence formalism.
+- Best placement: Paper 2 first technical section where dephasing appears.
+
+C) Notation/Definitions Fragment Set
+
+C1 — Symbol Dictionary Fragment [ALWAYS]
+- Purpose: Stabilize notation under section movement.
+- Content unit: A_A, Ω_AB, b^A, T_MΣ (+ one-line meanings).
+- Best placement: First technical section (Paper 2), optional reminder in Paper 3.
+
+C2 — Drift-vs-Curvature Disambiguation Fragment [ALWAYS]
+- Purpose: Avoid symbol collision.
+- Content unit: b^A is drift in action; Ω_AB is curvature.
+- Best placement: Right before first action functional.
+
+C3 — Mini Glossary Fragment [COND]
+- Purpose: Recovery aid after heavy recomposition.
+- Trigger: Internal editing causes repeated symbol confusion.
+- Best placement: Preliminaries or appendix.
+
+D) Bridge/Transition Fragment Set
+
+D1 — Paper 1 → Paper 2 Handoff Fragment [ALWAYS]
+- Purpose: Explicit deferment of Heisenberg sector.
+- Content unit: “Heisenberg dual treatment is developed in Paper 2.”
+- Best placement: Paper 1 conclusion/final paragraph.
+
+D2 — Paper 2 → Paper 3 Handoff Fragment [ALWAYS]
+- Purpose: Keep derivation/consequence split clean.
+- Content unit: Paper 2 derives structure; Paper 3 interprets cosmological offsets and phase effects.
+- Best placement: End of Paper 2 technical spine and start of Paper 3 framing.
+
+E) Interpretation/Claim-Strength Fragment Set
+
+E1 — Candidate-Term Guardrail Fragment [COND]
+- Purpose: Prevent overclaiming.
+- Content unit: ΔH0^(picture mismatch) marked as candidate effective term pending calibration/identifiability.
+- Trigger: Reviewer asks if term is derived vs fitted.
+- Best placement: Immediately after the formula in Paper 3.
+
+E2 — Claim-Tier Label Fragment [COND]
+- Purpose: Separate theorem, model hypothesis, and speculative extension.
+- Trigger: Reviewer requests stronger epistemic separation.
+- Best placement: At section headers or boxed notes.
+
+Default recomposition loadout
+- A1, A2, B1, B2, C1, C2, D1, D2
+
+Reviewer-responsive modules
+- A3, B3, C3, E1, E2

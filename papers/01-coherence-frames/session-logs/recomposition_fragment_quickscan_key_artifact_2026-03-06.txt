@@ -1,0 +1,26 @@
+Recomposition Fragment Quick-Scan Key
+Format: ID | Primary Hosts | Trigger | Priority
+
+A1 ScopeBoundary | P1 intro/scope; P1 roadmap line | Default insertion for cross-paper scope clarity | ALWAYS
+A2 DependencySpine | P1 end-intro; P2 intro; P3 intro | Default insertion for chain coherence (P1→P2→P3) | ALWAYS
+A3 SettimoPositioning | P2 motivation/scope; P2 dual-generator section | Reviewer requests stronger linkage to dual-generator literature | CONDITIONAL
+
+B1 InvarianceDomain | P1 theorem assumptions; P1 axioms; P2 references to P1 invariance | Default insertion to bound invariance class | ALWAYS
+B2 EntanglementQualifier | P1 invariance theorem companion text | Default insertion to avoid partition ambiguity | ALWAYS
+B3 MixedStateEscalation | P2 early technical section (open-system regime) | Reviewer flags decoherence-model rigor | CONDITIONAL
+
+C1 SymbolDictionary | P2 first technical section; optional P3 reminder | Default insertion to prevent symbol drift | ALWAYS
+C2 DriftCurvatureDisambiguation | P2 action-functional preamble | Default insertion where b^A and Ω_AB co-occur | ALWAYS
+C3 MiniGlossary | P2 preliminaries or appendix | Internal recomposition causes recurring symbol confusion | CONDITIONAL
+
+D1 P1toP2Handoff | P1 conclusion/final transition paragraph | Default insertion to mark Heisenberg deferment to P2 | ALWAYS
+D2 P2toP3Handoff | P2 technical-spine close; P3 framing open | Default insertion to maintain derivation/consequence split | ALWAYS
+
+E1 DeltaH0Guardrail | P3 section with ΔH0^(picture mismatch) term | Reviewer asks derived-vs-fitted status | CONDITIONAL
+E2 ClaimTierLabels | Section headers/boxed notes in P2/P3 | Reviewer requests stronger theorem-vs-hypothesis separation | CONDITIONAL
+
+Default loadout (deploy unprompted):
+A1, A2, B1, B2, C1, C2, D1, D2
+
+Reviewer-responsive pool:
+A3, B3, C3, E1, E2
