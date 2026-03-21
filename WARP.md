@@ -62,12 +62,13 @@ This protocol was established 2026-03-21 after a version crisis caused by parall
 ### Project: Coherence Relativity
 
 **Paper 1** (`papers/01-coherence-frames/`)
-- Status: Content complete (2026-03-21), HEAD `ba4e6c9`, 14 pages, 925KB, clean build
+- Status: Content complete (2026-03-21), HEAD `e3bea14`, 15 pages, clean build
 - Parameterization: **EGY** — λ ≡ √(1 − |⟨W_L|W_R⟩|²)
 - N=1 metric: G_λλ = 1/[2(1−λ²)]; G(0)=1/2 finite, G→∞ at λ→1
 - Applied: Fixes 1–15 (referee revision + citation audit + inferential gaps)
-- Applied: Remark §6.2 (frame-dependence of thermodynamic quantities, PtaszynskiEsposito2023)
-- Pending evaluation: `fig_born_invariant_parallel.pdf`, `fig4_quasipotential_well.pdf` (in `~/Desktop/coherence-relativity-v3/figures/`)
+- Applied: Remarks 1+2 (unified \begin{remark} style); notation table; AI disclosure
+- Applied: Grok attribution (EGY fix, fixes 7–10); v3 date; main_v3.pdf compiled
+- Directory: releases/, submission/, session-logs/ subdirs created; .gitignore added
 - Pending: arXiv endorsement (Dr. Jason Haraldsen, UNF)
 
 **Paper 2** (`papers/02-saturation-dynamics/`)
