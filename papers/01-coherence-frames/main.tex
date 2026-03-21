@@ -12,6 +12,7 @@
 \newtheorem{definition}{Definition}
 \newtheorem{proposition}{Proposition}
 \newtheorem{theorem}{Theorem}
+\newtheorem{remark}{Remark}
 
 \graphicspath{{../../figures/}}
 
@@ -399,6 +400,47 @@ The quasipotential is $V(x) = \inf_\gamma \mathcal{S}[\gamma]$, where the infimu
 The novel application is the identification of $\Sigma$ as the arena and $G_{AB}$ as the cost tensor---a construction with no prior precedent in the quantum decoherence literature. We conjecture that $F^A$, when derived explicitly from the system--environment interaction Hamiltonian $H_{SE}$, drives coherence-space trajectories to einselected pointer-state frames; this is consistent with Zurek's einselection picture~\cite{zurekDecoherenceEinselectionQuantum2003} and is the primary object of Paper~2. Here $F^A$ enters as a phenomenological drift term whose form is constrained by the requirement that $V$-minima reproduce known pointer states in tractable models.
 
 The accumulated Fubini--Study length $s(\lambda) = \int_0^\lambda\!\sqrt{\Gll}\,d\lambda'$ quantifies the total geometric distance traversed from the coherent frame. For the multi-mode model ($N=10$), the total length is $s(1) \approx 1.46$; for $N=1$, $s(1) = \pi/(2\sqrt{2}) \approx 1.11$. Under the EGY parameterization, $s(\lambda)$ grows from~$0$ at~$\lambda=0$ and accelerates near $\lambda\to 1$ (where $\Gll$ diverges). The quasipotential $V(\lambda) = s(1) - s(\lambda)$ therefore decreases steeply near $\lambda\to 1$, reflecting the increasing geometric cost of maintaining classical records. This is structurally analogous to a potential landscape where the classical fixed point at $\lambda=1$ sits at the bottom of a well with walls that steepen approaching the pointer basis---the system must traverse the full geometric length $s(1)$ to fully establish classical distinguishability.
+
+% ── REMARK: Frame-dependence of thermodynamic quantities ─────────────────────
+\begin{remark}[Frame-dependence of thermodynamic quantities]\label{rem:frame-thermo}
+The von Neumann entropy $S_{\mathrm{vN}}$, the free energy $F = \langle H\rangle -
+TS_{\mathrm{vN}}$, and the sign of environmental heat flow during decoherence are all
+\emph{frame-dependent} quantities in the sense of \CR{}: they change under
+coherence-frame transformations because they depend on where the system--bath boundary
+is drawn, and that boundary choice is precisely a choice of coherence frame.
+Concretely, the heat dissipated into the environment during pure decoherence can be
+positive, zero, or negative depending on the bath model and
+coupling~\cite{PtaszynskiEsposito2023}: the same physical process $R$ on
+$\mathcal{M}\times\Sig$ admits thermodynamic descriptions with any sign of
+environmental energy exchange, depending on the frame used to partition
+system from environment.
+
+The Fubini--Study arc length $s(\lambda)$, by contrast, is a property of the
+trajectory on~$\Sig$ that is \emph{independent} of this partition.  It is
+therefore frame-invariant in the same sense as the Born measure $\mu_F(i) =
+|c_i|^2$: both are quantities on~$\Sig$ that do not change when the
+system--bath boundary is redrawn.  The gap
+\begin{equation}\label{eq:gap}
+  \Delta(\lambda) \;=\; \frac{s(\lambda)}{s(1)} \;-\; \frac{S_{\mathrm{vN}}(\lambda)}{\log 2}
+\end{equation}
+visible in Fig.~\ref{fig:geometric_entropy}(a) is therefore not merely a
+quantitative difference between two entropy measures: it is the
+\emph{frame-invariant geometric information that is invisible to any fixed
+thermodynamic description of the decoherence process}.  A thermodynamic
+observer who fixes a system--bath boundary sees $S_{\mathrm{vN}}$; the
+geometry of~$\Sig$ knows $s(\lambda)$ regardless of where that boundary is
+drawn.  This reinforces the central claim of \CR{}: physical reality is more
+completely described on $\mathcal{M}\times\Sig$ than on~$\mathcal{H}$ alone,
+and the geometric structure of~$\Sig$ captures content that is invisible to
+the density-matrix description.
+\end{remark}
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{fig_geometric_entropy.pdf}
+\caption{Geometric entropy in coherence space~$\Sig$. \textbf{(a)}~The Fubini--Study arc length $s(\lambda)/s(1)$ (red dashed, frame-invariant) and von Neumann entropy $S_{\mathrm{vN}}/\log 2$ (blue solid, frame-dependent) both run from 0 to 1 but differ structurally: $S_{\mathrm{vN}}$ changes when the system--bath boundary is redrawn (a coherence-frame transformation), while $s(\lambda)$ does not. The shaded gap $\Delta(\lambda)$ is frame-invariant geometric information invisible to any fixed thermodynamic description (Remark~\ref{rem:frame-thermo}). \textbf{(b)}~Geometric entropy production rate $ds/d\lambda = \sqrt{\Gll}$: minimal at $\lambda=0$, diverging as $\lambda\to 1$. \textbf{(c)}~Accumulated $s(\lambda)$: Fubini--Study distance and distinguishability decouple near the quantum-classical crossover ($\lambda\in[0.2,\,0.6]$).}
+\label{fig:geometric_entropy}
+\end{figure*}
 
 \begin{figure}[t]
 \centering
