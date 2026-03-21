@@ -23,6 +23,7 @@
 \newcommand{\Tab}{T_{AB}}
 \newcommand{\Gll}{G_{\lambda\lambda}}
 \newcommand{\CR}{Coherence Relativity}
+\newcommand{\Phy}{\mathcal{R}}
 
 \begin{document}
 
@@ -43,7 +44,7 @@
 % ABSTRACT
 % ============================================================
 \begin{abstract}
-We propose that the quantum measurement problem is a frame problem, resolved by recognizing that coherence is relative to a choice of coherence frame---analogous to the relativity of simultaneity in special relativity. We introduce coherence relativity, a geometric framework in which physical reality is described on a joint manifold $\mathcal{M} \times \Sig$, where $\mathcal{M}$ is emergent spacetime and $\Sig$ is a coherence manifold whose points represent distinct observational perspectives. In this framework, wave function collapse is not a dynamical process but a transformation between coherence frames induced by measurement interactions. We present a derivation of the Born rule for pure states---that measurement probabilities equal squared amplitudes---as the unique probability measure invariant under coherence-frame relabelings and splittings, given additivity and continuity. Extension to mixed states via purification is addressed in Paper~2. This derivation unifies insights from Gleason's theorem, Zurek's envariance, and operational reconstruction programs within a single geometric structure. We demonstrate the framework with the double-slit experiment in two coherence frames and identify six experimentally testable signatures distinguishing \CR{} from standard quantum mechanics: non-linear visibility scaling, frame-transformation hysteresis, coherence-space curvature effects, modified gravitational decoherence, measurable transformation timescales, and coherence revival. The most accessible predictions---erasure hysteresis and transformation timescales---are testable with current superconducting qubit and trapped ion platforms.
+We propose that the quantum measurement problem is a frame problem, resolved by recognizing that coherence is relative to a choice of coherence frame---analogous to the relativity of simultaneity in special relativity. We introduce coherence relativity, a geometric framework in which physical reality is described on a joint manifold $\mathcal{M} \times \Sig$, where $\mathcal{M}$ is emergent spacetime and $\Sig$ is a coherence manifold whose points represent distinct observational perspectives. In this framework, wave function collapse is not a dynamical process but a transformation between coherence frames induced by measurement interactions. We present a derivation of the Born rule for pure states---that measurement probabilities equal squared amplitudes---as the unique probability measure invariant under coherence-frame relabelings and splittings, given additivity and continuity. Extension to mixed states via purification is given in Sec.~\ref{sec:born}. This derivation unifies insights from Gleason's theorem, Zurek's envariance, and operational reconstruction programs within a single geometric structure. We demonstrate the framework with the double-slit experiment in two coherence frames and identify six experimentally testable signatures distinguishing \CR{} from standard quantum mechanics: non-linear visibility scaling, frame-transformation hysteresis, coherence-space curvature effects, modified gravitational decoherence, measurable transformation timescales, and coherence revival. The most accessible predictions---erasure hysteresis and transformation timescales---are testable with current superconducting qubit and trapped ion platforms.
 \end{abstract}
 
 \maketitle
@@ -104,11 +105,11 @@ A \textbf{coherence frame}~$F \in \Sig$ is a choice of preferred orthonormal bas
 \end{definition}
 
 \begin{definition}[State Representation]
-For physical reality~$R$, the state in frame~$F$ is
+For physical reality~$\mathcal{R}$, the state in frame~$F$ is
 \begin{equation}\label{eq:state-rep}
 \ket{\psi}_F = \sum_i c_i^{(F)} \ket{i}_F,
 \end{equation}
-where the coefficients $c_i^{(F)}$ depend on the frame. The same~$R$ has different representations in different frames: $\ket{\psi}_F(R) \neq \ket{\psi}_{F'}(R)$ in general.
+where the coefficients $c_i^{(F)}$ depend on the frame. The same~$\mathcal{R}$ has different representations in different frames: $\ket{\psi}_F(\mathcal{R}) \neq \ket{\psi}_{F'}(\mathcal{R})$ in general.
 \end{definition}
 
 Here $\mathcal{R}$ is defined operationally as the equivalence class of all frame-dependent descriptions $\{\ket{\psi}_F\}_{F \in \Sig}$ connected by frame transformations, under the equivalence relation $\ket{\psi}_F \sim \ket{\psi}_{F'}$ if and only if there exists $U_{F \to F'}$ such that $\ket{\psi}_{F'} = U_{F \to F'}\ket{\psi}_F$. Crucially, $\mathcal{R}$ carries the \emph{pointer structure} as additional data: the specification of which degrees of freedom encode definiteness under system--environment coupling. This distinguishes $\mathcal{R}$ from a mere ray in Hilbert space---two states related by a unitary that does not preserve the pointer observable belong to different equivalence classes. Formally, $\mathcal{R}$ is a point on $\mathcal{M} \times \Sig$ rather than in $\mathcal{H}$, and its frame-invariant content consists of the quantities listed in Theorem~\ref{thm:invariants}: Born measures, inner products, spectra, and entanglement entropy.
@@ -127,7 +128,7 @@ The coherence space inherits the Fubini--Study metric:
 \begin{equation}\label{eq:fubini-study}
 \Gll = \mathrm{Re}\!\left[\braket{\partial_\lambda \psi | \partial_\lambda \psi} - \braket{\partial_\lambda \psi | \psi}\!\braket{\psi | \partial_\lambda \psi}\right].
 \end{equation}
-This measures the information-geometric distance between nearby frames. The geodesic distance $d(F, F') = \int \sqrt{\Gll}\, d\lambda$ gives the shortest path in~$\Sig$. The distinguishability parameter $\lambda \equiv \sqrt{1 - |\!\braket{W_L|W_R}\!|^2}$ follows the standard Englert--Greenberger--Yasin (EGY) complementarity form~\cite{GreenbergerYasin1988,Englert1996}, satisfying $\mathcal{V}^2 + \lambda^2 = 1$ where $\mathcal{V} = |\!\braket{W_L|W_R}\!|$ is the standard quantum-mechanical visibility. Braunstein and Caves~\cite{BraunsteinCaves1994} established that the Fubini--Study metric measures statistical distinguishability as $ds^2 \propto 1 - |\langle\psi|\phi\rangle|^2$, making $\lambda$ a natural information-geometric coordinate along the decoherence trajectory in~$\Sig$.
+This measures the information-geometric distance between nearby frames. The geodesic distance $d(F, F') = \inf_\gamma \int_\gamma \sqrt{\Gll}\, d\lambda$ gives the length of the shortest path in~$\Sig$ connecting $F$ to $F'$. The distinguishability parameter $\lambda \equiv \sqrt{1 - |\!\braket{W_L|W_R}\!|^2}$ follows the standard Englert--Greenberger--Yasin (EGY) complementarity form~\cite{GreenbergerYasin1988,Englert1996}, satisfying $\mathcal{V}^2 + \lambda^2 = 1$ where $\mathcal{V} = |\!\braket{W_L|W_R}\!|$ is the standard quantum-mechanical visibility. Braunstein and Caves~\cite{BraunsteinCaves1994} established that the Fubini--Study metric measures statistical distinguishability as $ds^2 \propto 1 - |\langle\psi|\phi\rangle|^2$, making $\lambda$ a natural information-geometric coordinate along the decoherence trajectory in~$\Sig$.
 
 Figure~\ref{fig:g_lambda} shows $\Gll(\lambda)$ and its inverse $d\lambda/ds = 1/\sqrt{\Gll}$ computed numerically for a multi-mode decoherence model ($N=10$ collectively coupled environment modes). Under the EGY parameterization, the metric is finite at $\lambda \to 0$ for all models ($\Gll(0) = 1/2$, reflecting the geometric accessibility of the coherent frame) and diverges at $\lambda \to 1$ (rigidity of fully established classical records). For the single-mode analytic case ($N=1$), $\Gll = 1/[2(1-\lambda^2)]$, which is monotone increasing. The $N=10$ multi-mode model has the same qualitative shape under the EGY parameterization. The inverse $d\lambda/ds = 1/\sqrt{\Gll}$ decreases monotonically from $\sqrt{2}$ at $\lambda = 0$ to $0$ at $\lambda \to 1$, showing that distinguishability accumulates most rapidly at the coherent endpoint and slows progressively as classical records are established. A coordinate-invariant and model-independent definition of the Markov transition is developed in Paper~2 via the $\delta\lambda$ formalism.
 
@@ -390,10 +391,13 @@ The cat-in-a-box scenario involves two frames: $F_{\mathrm{outside}}$ (cat in su
 
 \subsection{Quasipotential Landscape}
 
-The tensor field~$\Tab$ (Sec.~\ref{sec:tensor}) generates a quasipotential landscape on~$\Sig$ via an action principle. For a path $\gamma: s \mapsto x(s)$ through coherence space with effective drift~$F^A(x)$ (driven by system--environment coupling) and noise scale~$D$, define the action
+The tensor field~$\Tab$ (Sec.~\ref{sec:tensor}) generates a quasipotential landscape on~$\Sig$ via an action principle. For a path $\gamma: \sigma \mapsto x(\sigma)$ through coherence space with effective drift~$F^A(x)$ (driven by system--environment coupling) and noise scale~$D$, define the action
 \begin{equation}\label{eq:action}
-\mathcal{S}[\gamma] = \frac{1}{4D}\int_0^1 (\dot{x}^A - F^A)\,G_{AB}\,(\dot{x}^B - F^B)\,ds.
+\mathcal{S}[\gamma] = \frac{1}{4D}\int_0^1
+  \bigl(\dot{x}^A - F^A\bigr)\,G_{AB}\,
+  \bigl(\dot{x}^B - F^B\bigr)\,d\sigma,
 \end{equation}
+where $\dot{x}^A \equiv dx^A/d\sigma$ and $\sigma\in[0,1]$ is a path parameter distinct from the geometric arc length $s(\lambda) = \int_0^\lambda\!\sqrt{\Gll}\,d\lambda\'$ introduced below.
 This is the Freidlin--Wentzell large-deviation functional~\cite{FreidlinWentzell2012}, which defines the minimum-cost path for stochastic excursions away from an attractor.
 The quasipotential is $V(x) = \inf_\gamma \mathcal{S}[\gamma]$, where the infimum is over paths from a reference frame to~$x$ (Fig.~\ref{fig:quasipotential}). Minima of~$V$ correspond to metastable classical frames (pointer states), saddle points determine transition rates, and the stationary distribution concentrates as $p(x) \propto \exp(-V(x)/\epsilon)$ for small effective noise~$\epsilon$. This provides a geometric explanation for einselection: environment-induced superselection is the dynamical relaxation to $V$-minima. In the purely geometric limit (zero drift, zero noise), the quasipotential reduces to the Fubini--Study distance to the classical frame, $d_\Sig(\lambda) = \int_\lambda^1\!\sqrt{\Gll}\,d\lambda'$, which we plot in Figs.~\ref{fig:quasipotential} and~\ref{fig:cr_vs_standard}.
 
@@ -401,9 +405,11 @@ The novel application is the identification of $\Sigma$ as the arena and $G_{AB}
 
 The accumulated Fubini--Study length $s(\lambda) = \int_0^\lambda\!\sqrt{\Gll}\,d\lambda'$ quantifies the total geometric distance traversed from the coherent frame. For the multi-mode model ($N=10$), the total length is $s(1) \approx 1.46$; for $N=1$, $s(1) = \pi/(2\sqrt{2}) \approx 1.11$. Under the EGY parameterization, $s(\lambda)$ grows from~$0$ at~$\lambda=0$ and accelerates near $\lambda\to 1$ (where $\Gll$ diverges). The quasipotential $V(\lambda) = s(1) - s(\lambda)$ therefore decreases steeply near $\lambda\to 1$, reflecting the increasing geometric cost of maintaining classical records. This is structurally analogous to a potential landscape where the classical fixed point at $\lambda=1$ sits at the bottom of a well with walls that steepen approaching the pointer basis---the system must traverse the full geometric length $s(1)$ to fully establish classical distinguishability.
 
+We refer to $ds/d\lambda = \sqrt{\Gll}$ as the \emph{geometric entropy production rate} and to $s(\lambda)$ as the \emph{accumulated geometric entropy}---the total information-geometric arc length traversed from the coherent frame. These quantities are plotted in Fig.~\ref{fig:geometric_entropy} and discussed further in Remark~\ref{rem:frame-thermo}.
+
 % ── REMARK: Frame-dependence of thermodynamic quantities ─────────────────────
 \begin{remark}[Frame-dependence of thermodynamic quantities]\label{rem:frame-thermo}
-The von Neumann entropy $S_{\mathrm{vN}}$, the free energy $F = \langle H\rangle -
+The von Neumann entropy $S_{\mathrm{vN}}$, the free energy $\mathcal{F} = \langle H\rangle -
 TS_{\mathrm{vN}}$, and the sign of environmental heat flow during decoherence are all
 \emph{frame-dependent} quantities in the sense of \CR{}: they change under
 coherence-frame transformations because they depend on where the system--bath boundary
@@ -460,9 +466,9 @@ U_{SE}: \; |i\rangle_S |E_0\rangle \mapsto |i\rangle_S |E_i\rangle.
 \end{equation}
 Define the decoherence distinguishability coordinate
 \begin{equation}\label{eq:initiation-lambda}
-\lambda_D := 1 - \big|\langle E_i | E_j \rangle\big|,
+\lambda_D := 1 - \big|\langle E_i | E_j \rangle\big| \quad (i \neq j),
 \end{equation}
-with $\lambda_D \in [0,1]$. In this paper, the geometric order parameter $\lambda$ is taken to be a monotone calibration of $\lambda_D$; unless otherwise stated, we work in the gauge $\lambda \equiv \lambda_D$. Then $\lambda_D = 0$ corresponds to fully coherent alternatives and $\lambda_D \to 1$ to pointer-resolved records. The reduced state
+with $\lambda_D \in [0,1]$, where $i,j$ label distinct pointer branches. In this paper, the geometric order parameter $\lambda$ is taken to be a monotone calibration of $\lambda_D$; unless otherwise stated, we work in the gauge $\lambda \equiv \lambda_D$. Then $\lambda_D = 0$ corresponds to fully coherent alternatives and $\lambda_D \to 1$ to pointer-resolved records. The reduced state
 \begin{equation}\label{eq:initiation-reduced}
 \rho_S(\lambda_D) = \mathrm{Tr}_E\!\left[|\Psi(\lambda_D)\rangle\langle\Psi(\lambda_D)|\right]
 \end{equation}
@@ -501,7 +507,7 @@ We provide order-of-magnitude estimates for the two most accessible predictions.
 
 \textit{Frame-transformation hysteresis.} Consider a qubit coupled dispersively to a readout resonator (dispersive shift $\chi/2\pi \sim 1$~MHz). Prepare the state $\ket{+} = (\ket{0}+\ket{1})/\sqrt{2}$, drive the which-path parameter through a cycle $\lambda: 0 \to \lambda_{\max} \to 0$ by pulsing the readout, then measure visibility. In standard QM with a closed erasure cycle, $\mathcal{V}_{\mathrm{revival}} = \mathcal{V}_{\mathrm{initial}}$. In \CR{}, the action cost of the cycle is
 \begin{equation}\label{eq:hysteresis}
-\Delta\mathcal{S} = \frac{1}{4D}\oint (\dot\lambda - F^\lambda)^2 \Gll\,ds > 0,
+\Delta\mathcal{S} = \frac{1}{4D}\oint (\dot\lambda - F^\lambda)^2 \Gll\,d\sigma > 0,
 \end{equation}
 A dimensional estimate, connecting $D \sim 1/T_2$ and using the Ricci scalar $\mathcal{R}_\Sig = 8$ of the qubit coherence space ($\mathrm{CP}^1$ with Fubini--Study metric radius $r = 1/2$, giving $\mathcal{R} = 2/r^2 = 8$~\cite{bengtssonGeometryQuantumStates2017}), yields a visibility deficit $\delta\mathcal{V} \sim (\tau_{\mathrm{frame}}/T_2)^2 \cdot \mathcal{R}_\Sig$, where $\tau_{\mathrm{frame}} \sim 1/\chi \approx 1\;\mu$s and $T_2 \approx 70\;\mu$s. This gives $\delta\mathcal{V} \sim 2 \times 10^{-3}$. A rigorous derivation connecting $\Delta\mathcal{S}$ to the visibility deficit via a specific noise model is deferred to Paper~2; the estimate here serves as an order-of-magnitude guide to experimental sensitivity requirements.
 
