@@ -298,7 +298,7 @@ Let $\Sig$ be the coherence space for $\mathcal{H}$ with $\dim \geq 2$. Let $\mu
 \smallskip
 This is a \emph{locality assumption on~$\Sig$}, analogous to the independence of probability assignments from distant reference frames in relativistic theories---a postulate reflecting the physical structure of coherence space, not a derived result. It excludes contextual hidden-variable models in which the probability of outcome~$i$ depends on which other measurements are simultaneously possible.
 
-The physical justification is two-part. First, if $\mu_F(i)$ depended on the history of frame transformations leading to~$F$, then the same coherence frame reached by different preparation paths would yield different predictions---making ``coherence frame\'\' an ill-defined concept whose content depends on unobservable history. Second, (A3) is strictly weaker than Gleason\'s non-contextuality: it requires only path-independence within~$\Sig$, not global independence across all POVMs. We regard this weaker form as uncontroversial given the operational definition of a coherence frame as a physically distinct descriptive perspective (§\ref{sec:frames}). Readers who wish to treat (A3) as an assumption rather than a motivation may do so without affecting the formal derivation.
+The physical justification is two-part. First, if $\mu_F(i)$ depended on the history of frame transformations leading to~$F$, then the same coherence frame reached by different preparation paths would yield different predictions---making ``coherence frame'' an ill-defined concept whose content depends on unobservable history. Second, (A3) is strictly weaker than Gleason\'s non-contextuality: it requires only path-independence within~$\Sig$, not global independence across all POVMs. We regard this weaker form as uncontroversial given the operational definition of a coherence frame as a physically distinct descriptive perspective (§\ref{sec:frames}). Readers who wish to treat (A3) as an assumption rather than a motivation may do so without affecting the formal derivation.
 \item[(A4)] \textbf{Continuity}: $\mu_F(i)$ is continuous in the coefficients~$c_i$.
 \end{description}
 Then $\mu_F(i) = |c_i|^2$, where $\ket{\psi}_F = \sum_i c_i\ket{i}_F$.
@@ -406,7 +406,7 @@ The tensor field~$\Tab$ (Sec.~\ref{sec:tensor}) generates a quasipotential lands
   \bigl(\dot{x}^A - F^A\bigr)\,G_{AB}\,
   \bigl(\dot{x}^B - F^B\bigr)\,d\sigma,
 \end{equation}
-where $\dot{x}^A \equiv dx^A/d\sigma$ and $\sigma\in[0,1]$ is a path parameter distinct from the geometric arc length $s(\lambda) = \int_0^\lambda\!\sqrt{\Gll}\,d\lambda\'$ introduced below.
+where $\dot{x}^A \equiv dx^A/d\sigma$ and $\sigma\in[0,1]$ is a path parameter distinct from the geometric arc length $s(\lambda) = \int_0^\lambda\!\sqrt{\Gll}\,d\lambda'$ introduced below.
 
 This is the Freidlin--Wentzell large-deviation functional~\cite{FreidlinWentzell2012},
 The quasipotential is $V(x) = \inf_\gamma \mathcal{S}[\gamma]$, where the infimum is over paths from a reference frame to~$x$ (Fig.~\ref{fig:quasipotential}). Minima of~$V$ correspond to metastable classical frames (pointer states), saddle points determine transition rates, and the stationary distribution concentrates as $p(x) \propto \exp(-V(x)/\epsilon)$ for small effective noise~$\epsilon$. This provides a geometric explanation for einselection: environment-induced superselection is the dynamical relaxation to $V$-minima. In the purely geometric limit (zero drift $F^A = 0$, zero noise $D \to 0$), the stochastic quasipotential $V_{\mathrm{stoch}}(x) = \inf_\gamma \mathcal{S}[\gamma]$ reduces to the \emph{geometric quasipotential} $V(\lambda) = d_\Sig(\lambda) = \int_\lambda^1\!\sqrt{\Gll}\,d\lambda'$---the Fubini--Study distance from~$\lambda$ to the classical frame. It is this geometric quasipotential that we compute and plot in Figs.~\ref{fig:quasipotential} and~\ref{fig:cr_vs_standard}; the full stochastic $V_{\mathrm{stoch}}$ requires the explicit drift $F^A$, which is the primary object of Paper~2.
@@ -544,14 +544,7 @@ Compared to many-worlds~\cite{everettRelativeStateFormulation1957,dewittManyWorl
 
 The quantum reference frame (QRF) program~\cite{bartlettReferenceFramesSuperselection2007,giacominiQuantumMechanicsCovariance2019,delahametteQuantumReferenceFrames2020} shares \CR{}'s emphasis on frame-dependence: Giacomini et al.\ showed that entanglement and superposition are QRF-dependent~\cite{giacominiQuantumMechanicsCovariance2019}, and perspective-neutral approaches~\cite{vanrietveldeChangePerspectiveSwitching2020,loveridgeSymmetryReferenceFrames2018} seek frame-invariant structures. \CR{} differs in scope: QRFs transform between quantum systems serving as references, while coherence frames transform between \emph{descriptive bases} for a fixed system. The coherence space~$\Sig$ provides a global geometric arena absent in QRF treatments, and the Born rule emerges as its unique invariant measure rather than being assumed. Recent work showing that the sum of entanglement and subsystem coherence is invariant under QRF transformations~\cite{cepollaroSumEntanglementSubsystem2025} provides independent support for the principle that frame-invariant quantities---not frame-dependent descriptions---constitute physical reality. Figure~\ref{fig:sigma-qrf} summarizes the structural distinction.
 
-\subsection{Geometric Emergence Programs}
-
-Coherence relativity belongs to a broader contemporary movement in which geometric objects are more fundamental than the physical principles they encode. The Amplituhedron program of Arkani-Hamed and Trnka~\cite{arkanihamedAmplituhedron2013} encodes scattering amplitudes in N=4 Super Yang-Mills theory as the volume of a purely geometric object in Grassmannian space---with no Feynman diagrams, no spacetime, and without assuming locality or unitarity. These emerge from the geometry. The structural parallel to \CR{} is direct: just as the Born rule emerges here as the unique invariant measure on~$\Sig$ rather than being postulated, unitarity emerges from the Amplituhedron rather than being assumed. Both programs suggest that the deepest level of physical description is geometric, and that the principles physicists have long taken as foundational are in fact consequences of geometric structure. The connection between the coherence manifold~$\Sig$ and the positive Grassmannian underlying the Amplituhedron is an open question warranting future investigation.
-
-\medskip
-\noindent\textbf{Minimal ontology.} To summarize the interpretive commitments: \CR{} posits \emph{one reality~$R$}, \emph{many coherence frames~$F \in \Sig$}, and \emph{frame-invariant quantities as physical facts}. Collapse, coherence, and classicality are frame-dependent descriptions; Born measures, inner products, spectra, and entanglement entropy are frame-invariant and constitute observer-independent reality.
-\medskip
-\begin{figure*}[t]
+\begin{figure*}[!ht]
 \centering
 \begin{tikzpicture}[
   >=latex,
@@ -618,6 +611,13 @@ Coherence relativity belongs to a broader contemporary movement in which geometr
 \caption{Coherence relativity vs.\ quantum reference frames. Left: the coherence manifold $\Sig$ with frames $F$ connected by transformations $U_{F\to F'}$. Coherence and collapse are frame-dependent; Born measures and spectra are invariant. Right: QRF transformations change which physical system serves as reference, redistributing entanglement and coherence between subsystems. Dashed arrow: given any QRF choice, one still selects a coherence frame $F \in \Sig$ on the resulting Hilbert space. Bottom: physical reality consists of quantities invariant under both types of transformation.}
 \label{fig:sigma-qrf}
 \end{figure*}
+
+\subsection{Geometric Emergence Programs}
+
+Coherence relativity belongs to a broader contemporary movement in which geometric objects are more fundamental than the physical principles they encode. The Amplituhedron program of Arkani-Hamed and Trnka~\cite{arkanihamedAmplituhedron2013} encodes scattering amplitudes in N=4 Super Yang-Mills theory as the volume of a purely geometric object in Grassmannian space---with no Feynman diagrams, no spacetime, and without assuming locality or unitarity. These emerge from the geometry. The structural parallel to \CR{} is direct: just as the Born rule emerges here as the unique invariant measure on~$\Sig$ rather than being postulated, unitarity emerges from the Amplituhedron rather than being assumed. Both programs suggest that the deepest level of physical description is geometric, and that the principles physicists have long taken as foundational are in fact consequences of geometric structure. The connection between the coherence manifold~$\Sig$ and the positive Grassmannian underlying the Amplituhedron is an open question warranting future investigation.
+
+\medskip
+\noindent\textbf{Minimal ontology.} To summarize the interpretive commitments: \CR{} posits \emph{one reality~$R$}, \emph{many coherence frames~$F \in \Sig$}, and \emph{frame-invariant quantities as physical facts}. Collapse, coherence, and classicality are frame-dependent descriptions; Born measures, inner products, spectra, and entanglement entropy are frame-invariant and constitute observer-independent reality.
 
 
 % ============================================================
