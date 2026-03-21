@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  21 MAR 2026 03:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  21 MAR 2026 09:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -694,42 +694,45 @@ File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \c@theorem=\count330
 \c@remark=\count331
 Class revtex4-2 Info: Unrecognized LaTeX tabular. Please update this document c
-lass! (Proceeding with fingers crossed.) on input line 27.
+lass! (Proceeding with fingers crossed.) on input line 28.
 
 
 Class revtex4-2 Warning: Repair the float package.
 
-Class revtex4-2 Info: cite was not loaded (OK!) on input line 27.
-Class revtex4-2 Info: mcite was not loaded (OK!) on input line 27.
-Class revtex4-2 Info: multicol was not loaded (OK!) on input line 27.
+Class revtex4-2 Info: cite was not loaded (OK!) on input line 28.
+Class revtex4-2 Info: mcite was not loaded (OK!) on input line 28.
+Class revtex4-2 Info: multicol was not loaded (OK!) on input line 28.
 (/usr/local/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count332
 \l__pdf_internal_box=\box82
 )
-(./main.aux)
+(./main.aux
+
+LaTeX Warning: Label `tab:notation' multiply defined.
+
+)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-
-(/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+ (/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count333
 \scratchdimen=\dimen275
@@ -751,22 +754,22 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 27.
+Package hyperref Info: Link coloring OFF on input line 28.
 
 (./main.out) (./main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
-Class revtex4-2 Info: Taking \maketitle back from hyperref on input line 27.
+Class revtex4-2 Info: Taking \maketitle back from hyperref on input line 28.
 \openout3 = `mainNotes.bib'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 46.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 47.
 
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 46.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 47.
 
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -781,236 +784,268 @@ Class revtex4-2 Warning: If you want your keywords to appear in your output, us
 e document class option showkeys.
 
 [1{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 6188) in paragraph at lines 103--104
+Overfull \hbox (120.45714pt too wide) in paragraph at lines 99--171
+ []$[]$ 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (17.08064pt too wide) in paragraph at lines 181--214
+ []$[]$ 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 6188) in paragraph at lines 235--236
 [][]\OT1/cmr/bx/n/10 Definition 2 \OT1/cmr/m/n/10 (Co-her-ence Frame)\OT1/cmr/b
 x/n/10 . []\OT1/cmr/m/it/10 A \OT1/cmr/bx/it/10 co-her-ence
  []
 
-[2]
-<../../figures/fig1_g_lambda.pdf, id=274, 512.99641pt x 276.26411pt>
-File: ../../figures/fig1_g_lambda.pdf Graphic file (type pdf)
-<use ../../figures/fig1_g_lambda.pdf>
-Package pdftex.def Info: ../../figures/fig1_g_lambda.pdf  used on input line 13
-6.
-(pdftex.def)             Requested size: 510.0pt x 274.66154pt.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 141.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 141.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 141.
-
-
-Underfull \hbox (badness 1077) in paragraph at lines 169--170
-\OT1/cmr/m/n/10 frame struc-ture of spe-cial rel-a-tiv-ity (Ta-ble []I[]). The
- []
-
-[3
+[2
 pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has
  been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.199 \begin{equation}
-                      ] [4
+l.247 
+      {/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1
+.enc}]
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 247.
+
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 247.
+
+
+Class revtex4-2 Warning: Deferred float stuck during \clearpage processing.
+
+<../../figures/fig1_g_lambda.pdf, id=314, 512.99641pt x 276.26411pt>
+File: ../../figures/fig1_g_lambda.pdf Graphic file (type pdf)
+<use ../../figures/fig1_g_lambda.pdf>
+Package pdftex.def Info: ../../figures/fig1_g_lambda.pdf  used on input line 26
+8.
+(pdftex.def)             Requested size: 510.0pt x 274.66154pt.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 273.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 273.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 273.
+
+[3
+pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has
+ been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.276 
+      ] [4
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.242 \end{equation}
-                     <../../figures/fig1_g_lambda.pdf>] [5]
-Underfull \hbox (badness 2744) in paragraph at lines 301--302
+l.294 
+       <../../figures/fig1_g_lambda.pdf>] [5
+pdfTeX warning (ext4): destination with the same identifier (name{table.3}) has
+ been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.390 
+      ] [6]
+Underfull \hbox (badness 2744) in paragraph at lines 442--443
 []\OT1/cmr/bx/n/10 Step 2: Equal am-pli-tudes. \OT1/cmr/m/n/10 For $[][] =
  []
 
 
-Underfull \hbox (badness 1057) in paragraph at lines 303--304
+Underfull \hbox (badness 1057) in paragraph at lines 444--445
 []\OT1/cmr/bx/n/10 Step 3: Ra-tio-nal am-pli-tudes. \OT1/cmr/m/n/10 For $[][] =
 
  []
 
 
-Underfull \hbox (badness 1448) in paragraph at lines 308--309
+Underfull \hbox (badness 1448) in paragraph at lines 449--450
 \OT1/cmr/m/n/10 by ra-tio-nals $\OML/cmm/m/it/10 r[]$ \OT1/cmr/m/n/10 with $\OM
 S/cmsy/m/n/10 j\OML/cmm/m/it/10 r[] \OMS/cmsy/m/n/10 ^^@ j\OML/cmm/m/it/10 c[]\
 OMS/cmsy/m/n/10 j[]j \OML/cmm/m/it/10 < \OT1/cmr/m/n/10 1\OML/cmm/m/it/10 =n$\O
 T1/cmr/m/n/10 . By
  []
 
-<../../figures/fig2_born_invariant_parallel.pdf, id=462, 1292.83pt x 945.5325pt
+<../../figures/fig2_born_invariant_parallel.pdf, id=513, 1292.83pt x 945.5325pt
 >
 File: ../../figures/fig2_born_invariant_parallel.pdf Graphic file (type pdf)
 <use ../../figures/fig2_born_invariant_parallel.pdf>
 Package pdftex.def Info: ../../figures/fig2_born_invariant_parallel.pdf  used o
-n input line 342.
+n input line 483.
 (pdftex.def)             Requested size: 246.0pt x 179.91273pt.
-[6
+[7
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.361 
-      {/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1
-.enc} <../../figures/fig2_born_invariant_parallel.pdf>]
-<../../figures/fig5_double_slit_frames.pdf, id=478, 637.39644pt x 314.41464pt>
+l.498 \item $
+             \Fint$: $\ket{\psi}_{\Fint} = \tfrac{1}{\sqrt{2}}(\ket{L} + \ke...
+ <../../figures/fig2_born_invariant_parallel.pdf>]
+<../../figures/fig5_double_slit_frames.pdf, id=527, 637.39644pt x 314.41464pt>
 File: ../../figures/fig5_double_slit_frames.pdf Graphic file (type pdf)
 <use ../../figures/fig5_double_slit_frames.pdf>
 Package pdftex.def Info: ../../figures/fig5_double_slit_frames.pdf  used on inp
-ut line 364.
+ut line 505.
 (pdftex.def)             Requested size: 246.0pt x 121.34505pt.
 
-Underfull \hbox (badness 5908) in paragraph at lines 379--380
+Underfull \hbox (badness 5908) in paragraph at lines 520--521
 \OT1/cmr/m/n/10 (cat in su-per-po-si-tion) and $\OML/cmm/m/it/10 F[]$ \OT1/cmr/
 m/n/10 (cat alive or
  []
 
-
-Underfull \hbox (badness 3219) in paragraph at lines 396--399
-\OT1/cmr/m/n/10 This is the Freidlin--Wentzell large-deviation func-
- []
-
-[7
-pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has
+<../../figures/fig_geometric_entropy.pdf, id=530, 999.07243pt x 315.41037pt>
+File: ../../figures/fig_geometric_entropy.pdf Graphic file (type pdf)
+<use ../../figures/fig_geometric_entropy.pdf>
+Package pdftex.def Info: ../../figures/fig_geometric_entropy.pdf  used on input
+ line 534.
+(pdftex.def)             Requested size: 510.0pt x 161.00635pt.
+[8
+pdfTeX warning (ext4): destination with the same identifier (name{table.4}) has
  been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.399 
-      
+l.542 \begin{equation}
+                      \label{eq:action}
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.399 
-       <../../figures/fig5_double_slit_frames.pdf>]
-Underfull \hbox (badness 5475) in paragraph at lines 402--403
+l.542 \begin{equation}
+                      \label{eq:action} <../../figures/fig5_double_slit_frames.
+pdf>]
+Underfull \hbox (badness 5475) in paragraph at lines 554--555
 []\OT1/cmr/m/n/10 The ac-cu-mu-lated Fubini--Study length $\OML/cmm/m/it/10 s\O
 T1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^U\OT1/cmr/m/n/10 ) =
  []
 
-<../../figures/fig_geometric_entropy.pdf, id=635, 999.07243pt x 315.41037pt>
-File: ../../figures/fig_geometric_entropy.pdf Graphic file (type pdf)
-<use ../../figures/fig_geometric_entropy.pdf>
-Package pdftex.def Info: ../../figures/fig_geometric_entropy.pdf  used on input
- line 440.
-(pdftex.def)             Requested size: 510.0pt x 161.00635pt.
-<../../figures/fig2_quasipotential.pdf, id=638, 458.96469pt x 348.73726pt>
-File: ../../figures/fig2_quasipotential.pdf Graphic file (type pdf)
-<use ../../figures/fig2_quasipotential.pdf>
-Package pdftex.def Info: ../../figures/fig2_quasipotential.pdf  used on input l
-ine 447.
-(pdftex.def)             Requested size: 246.0pt x 186.92113pt.
-[8] [9
+[9
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.480 
-      
+l.571 
+       <../../figures/fig_geometric_entropy.pdf>]
+<../../figures/fig4_quasipotential_well.pdf, id=863, 330.99661pt x 224.037pt>
+File: ../../figures/fig4_quasipotential_well.pdf Graphic file (type pdf)
+<use ../../figures/fig4_quasipotential_well.pdf>
+Package pdftex.def Info: ../../figures/fig4_quasipotential_well.pdf  used on in
+put line 594.
+(pdftex.def)             Requested size: 246.0pt x 166.50949pt.
+
+Underfull \hbox (badness 1097) in paragraph at lines 611--613
+\OT1/cmr/m/n/10 with $\OML/cmm/m/it/10 ^^U[] \OMS/cmsy/m/n/10 2 \OT1/cmr/m/n/10
+ [0\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 1]$, where $\OML/cmm/m/it/10 i; j$ \OT1/c
+mr/m/n/10 la-bel dis-tinct pointer
+ []
+
+[10
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.480 
-       <../../figures/fig_geometric_entropy.pdf> <../../figures/fig2_quasipoten
-tial.pdf>]
-Underfull \hbox (badness 4429) in paragraph at lines 483--484
- []\OT1/cmr/bx/n/10 Non-linear vis-i-bil-ity\OT1/cmr/m/n/10 : $\OMS/cmsy/m/n/10
- V\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^U\OT1/cmr/m/n/10 )$ de-vi-ates from
- []
-
-
-Underfull \hbox (badness 3803) in paragraph at lines 484--485
+l.621 
+       <../../figures/fig4_quasipotential_well.pdf>]
+Underfull \hbox (badness 3803) in paragraph at lines 631--632
  []\OT1/cmr/bx/n/10 Frame-transformation hys-tere-sis\OT1/cmr/m/n/10 : Era-sure
 
  []
 
 
-Underfull \hbox (badness 2134) in paragraph at lines 486--487
+Underfull \hbox (badness 2134) in paragraph at lines 633--634
  \OT1/cmr/m/n/10 i-ta-tional con-tri-bu-tions to $\OML/cmm/m/it/10 T[]$ \OT1/cm
 r/m/n/10 pro-duce mass-
  []
 
 
-Underfull \hbox (badness 3291) in paragraph at lines 486--487
+Underfull \hbox (badness 3291) in paragraph at lines 633--634
  \OT1/cmr/m/n/10 dependent frame-transformation rates dif-fer-ing
  []
 
 
-Underfull \hbox (badness 1112) in paragraph at lines 487--488
+Underfull \hbox (badness 1112) in paragraph at lines 634--635
  []\OT1/cmr/bx/n/10 Transformation timescales\OT1/cmr/m/n/10 : Weak mea-sure-
  []
 
-<../../figures/fig6_cr_vs_standard.pdf, id=893, 457.50612pt x 345.53154pt>
+<../../figures/fig6_cr_vs_standard.pdf, id=889, 457.50612pt x 345.53154pt>
 File: ../../figures/fig6_cr_vs_standard.pdf Graphic file (type pdf)
 <use ../../figures/fig6_cr_vs_standard.pdf>
 Package pdftex.def Info: ../../figures/fig6_cr_vs_standard.pdf  used on input l
-ine 493.
+ine 640.
 (pdftex.def)             Requested size: 246.0pt x 185.79338pt.
-[10
+[11
 pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.517 \noindent
-               \fbox{\parbox{\dimexpr\columnwidth-2\fboxsep-2\fboxrule\relax...
- <../../figures/fig6_cr_vs_standard.pdf>]
-Underfull \hbox (badness 2158) in paragraph at lines 527--528
+l.656 
+       <../../figures/fig6_cr_vs_standard.pdf>]
+Underfull \hbox (badness 2158) in paragraph at lines 744--745
 \OT1/cmr/m/n/10 perspective-neutral ap-proaches [[], []] seek frame-
  []
 
-[11]
-Underfull \hbox (badness 10000) in paragraph at lines 633--634
-\OT1/cmtt/m/n/10 / / github . com / bryankaufman / coherence-[]relativity$[]\OT
-1/cmr/m/n/10 .
- []
-
-[12
+[12] [13
 pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.644 \end{acknowledgments}
-                           ] (./main.bbl
+l.780 \subsection
+                 *{Data Availability Statement}]
+Underfull \hbox (badness 10000) in paragraph at lines 781--782
+\OT1/cmtt/m/n/10 / / github . com / bryankaufman / coherence-[]relativity$[]\OT
+1/cmr/m/n/10 .
+ []
+
+(./main.bbl [14]
 Underfull \hbox (badness 1803) in paragraph at lines 264--274
  \OT1/cmr/m/n/9 in \OT1/cmr/m/it/9 The Sci-en-tist Spec-u-lates\OT1/cmr/m/n/9 ,
  edited by I. J. Good
  []
 
 
-Underfull \hbox (badness 2608) in paragraph at lines 405--412
+Underfull \hbox (badness 2608) in paragraph at lines 420--427
  []\OT1/cmr/m/n/9 A. Van-ri-etvelde, P. A. H^^?ohn, F. Gi-a-co-mini, and
  []
 
 
-Underfull \hbox (badness 1803) in paragraph at lines 405--412
+Underfull \hbox (badness 1803) in paragraph at lines 420--427
  \OT1/cmr/m/n/9 E. Castro-Ruiz, A change of per-spec-tive: Switch-
  []
 
-[13]
+
 Underfull \hbox (badness 1888) in paragraph at lines 442--447
  []\OT1/cmr/m/n/9 Jour-nal of High En-ergy Physics \OT1/cmr/bx/n/9 2014\OT1/cmr
 /m/n/9 , 30 (2014)[],
  []
 
-) [14] (./main.aux)
+) [15] (./main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: A749D40F2075F447F60D9FC6E931B04C;7904.
  ) 
 Here is how much of TeX's memory you used:
- 22998 strings out of 473190
- 418915 string characters out of 5715801
- 820508 words of memory out of 5000000
- 45723 multiletter control sequences out of 15000+600000
- 571028 words of font info for 81 fonts, out of 8000000 for 9000
+ 23015 strings out of 473190
+ 419145 string characters out of 5715801
+ 824649 words of memory out of 5000000
+ 45734 multiletter control sequences out of 15000+600000
+ 571742 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,13n,87p,1884b,1012s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy
@@ -1047,11 +1082,13 @@ dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2025/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2025/texmf-dis
 t/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2025/texmf
 -dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2025/t
-exmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on main.pdf (14 pages, 1423666 bytes).
+exmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2025/tex
+mf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2025/texmf
+-dist/fonts/type1/public/cm-super/sfti1000.pfb>
+Output written on main.pdf (15 pages, 1583588 bytes).
 PDF statistics:
- 1250 PDF objects out of 1440 (max. 8388607)
- 704 compressed objects within 8 object streams
- 159 named destinations out of 1000 (max. 500000)
+ 1255 PDF objects out of 1440 (max. 8388607)
+ 746 compressed objects within 8 object streams
+ 163 named destinations out of 1000 (max. 500000)
  395 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -341,6 +341,21 @@
   mechanics},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {New
   J. Phys.}\ }\textbf {\bibinfo {volume} {22}},\ \bibinfo {pages} {022001}
   (\bibinfo {year} {2020})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Cepollaro}\ \emph {et~al.}(2025)\citenamefont
+  {Cepollaro}, \citenamefont {Akil}, \citenamefont {Cie{\'s}li{\'n}ski},
+  \citenamefont {{de la Hamette}},\ and\ \citenamefont
+  {Brukner}}]{cepollaroSumEntanglementSubsystem2025}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {Cepollaro}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Akil}},
+  \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont {Cie{\'s}li{\'n}ski}},
+  \bibinfo {author} {\bibfnamefont {A.-C.}\ \bibnamefont {{de la Hamette}}},\
+  and\ \bibinfo {author} {\bibfnamefont {{\v{C}}.}~\bibnamefont {Brukner}},\
+  }\bibfield  {title} {\bibinfo {title} {Sum of entanglement and subsystem
+  coherence is invariant under quantum reference frame transformations},\
+  }\href {https://doi.org/10.1103/PhysRevLett.135.010201} {\bibfield  {journal}
+  {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {135}},\
+  \bibinfo {pages} {010201} (\bibinfo {year} {2025})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont
   {Everett}(1957)}]{everettRelativeStateFormulation1957}%
   \BibitemOpen
@@ -419,21 +434,6 @@
   {https://doi.org/10.1007/s10701-018-0138-3} {\bibfield  {journal} {\bibinfo
   {journal} {Foundations of Physics}\ }\textbf {\bibinfo {volume} {48}},\
   \bibinfo {pages} {135} (\bibinfo {year} {2018})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Cepollaro}\ \emph {et~al.}(2025)\citenamefont
-  {Cepollaro}, \citenamefont {Akil}, \citenamefont {Cie{\'s}li{\'n}ski},
-  \citenamefont {{de la Hamette}},\ and\ \citenamefont
-  {Brukner}}]{cepollaroSumEntanglementSubsystem2025}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
-  {Cepollaro}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Akil}},
-  \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont {Cie{\'s}li{\'n}ski}},
-  \bibinfo {author} {\bibfnamefont {A.-C.}\ \bibnamefont {{de la Hamette}}},\
-  and\ \bibinfo {author} {\bibfnamefont {{\v{C}}.}~\bibnamefont {Brukner}},\
-  }\bibfield  {title} {\bibinfo {title} {Sum of entanglement and subsystem
-  coherence is invariant under quantum reference frame transformations},\
-  }\href {https://doi.org/10.1103/PhysRevLett.135.010201} {\bibfield  {journal}
-  {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {135}},\
-  \bibinfo {pages} {010201} (\bibinfo {year} {2025})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Arkani-Hamed}\ and\ \citenamefont
   {Trnka}(2014)}]{arkanihamedAmplituhedron2013}%
   \BibitemOpen

@@ -86,7 +86,93 @@ Section~\ref{sec:frames} introduces coherence frames and the geometry of $\Sig$.
 
 \medskip
 \noindent\textbf{Notation.}\quad
-The following table collects the principal symbols used throughout, noting disambiguation for reused letters.
+The following table collects the principal symbols used
+throughout, noting disambiguation for reused letters.
+
+\begin{table}[h!]
+\centering
+\caption{Principal notation. Symbols are listed in order
+  of first appearance; ``primitive'' means undefined in
+  terms of other objects in this paper.}
+\label{tab:notation}
+\renewcommand{\arraystretch}{1.25}
+\begin{tabular}{@{}lll@{}}
+\toprule
+\textbf{Symbol} & \textbf{Meaning} & \textbf{Introduced} \\
+\midrule
+\multicolumn{3}{@{}l}{\textit{Spaces and manifolds}} \\[2pt]
+$\mathcal{H}$      & Hilbert space of dimension $d$
+                   & \S\ref{sec:frames} \\
+$\mathcal{M}$      & Emergent spacetime manifold (primitive)
+                   & \S\ref{sec:intro} \\
+$\Sig$             & Coherence space $= U(d)/T^d$ (flag manifold)
+                   & Def.\ 1 \\
+$\mathcal{M}\times\Sig$ & Joint arena for physical description
+                   & \S\ref{sec:intro} \\
+\midrule
+\multicolumn{3}{@{}l}{\textit{Core objects}} \\[2pt]
+$\mathcal{R}$      & Physical reality (primitive); equivalence
+                     class of frame-descriptions
+                   & Def.\ 3 \\
+$F \in \Sig$       & Coherence frame (pointer basis + stability)
+                   & Def.\ 2 \\
+$\ket{\psi}_F$     & State representation of $\mathcal{R}$ in frame $F$
+                   & Def.\ 3 \\
+$U_{F\to F'}$      & Frame transformation (unitary map)
+                   & Def.\ 5 \\
+$\mu_F(i)$         & Probability measure on frame-$F$ alternatives
+                   & Thm.\ 2 \\
+\midrule
+\multicolumn{3}{@{}l}{\textit{Geometric quantities}} \\[2pt]
+$G_{AB}$           & Fubini--Study metric on $\Sig$ (symmetric part of $\Tab$)
+                   & Eq.\ \eqref{eq:gab} \\
+$\Gll$             & $G_{AB}$ restricted to the $\lambda$-direction
+                   & Eq.\ \eqref{eq:fubini-study} \\
+$\Omega_{AB}$      & Frame-bundle curvature (antisymmetric part of $\Tab$)
+                   & Eq.\ \eqref{eq:omega-explicit} \\
+$\Tab$             & Full coherence tensor $= G_{AB} + \Omega_{AB}$
+                   & Def.\ 4 \\
+$\lambda$          & EGY distinguishability parameter $\in[0,1]$
+                   & \S\ref{sec:metric} \\
+$s(\lambda)$       & Accumulated geometric entropy (arc length on $\Sig$)
+                   & \S\ref{sec:discussion} \\
+$V(\lambda)$       & Geometric quasipotential $= s(1)-s(\lambda)$
+                     (zero-drift limit)
+                   & \S\ref{sec:discussion} \\
+\midrule
+\multicolumn{3}{@{}l}{\textit{Dynamical and stochastic quantities}} \\[2pt]
+$F^A$              & Drift field on $\Sig$ (from $H_{SE}$; derived in Paper~2)
+                   & \S\ref{sec:discussion} \\
+$\mathcal{S}[\gamma]$ & Freidlin--Wentzell action functional
+                   & Eq.\ \eqref{eq:action} \\
+$\sigma$           & Path parameter for $\mathcal{S}[\gamma]$, $\sigma\in[0,1]$
+                     (\emph{distinct from} arc length $s$)
+                   & Eq.\ \eqref{eq:action} \\
+$V_{\mathrm{stoch}}$ & Full stochastic quasipotential $=\inf_\gamma\mathcal{S}[\gamma]$
+                   & \S\ref{sec:discussion} \\
+$\lambda_D$        & Physical decoherence coordinate $= 1-|\langle E_i|E_j\rangle|$
+                   & Eq.\ \eqref{eq:initiation-lambda} \\
+\midrule
+\multicolumn{3}{@{}l}{\textit{Thermodynamic quantities (Remark~\ref{rem:frame-thermo} only)}} \\[2pt]
+$\mathcal{F}$      & Helmholtz free energy $=\langle H\rangle - TS_{\mathrm{vN}}$
+                     (\emph{distinct from} frame $F$)
+                   & Rmk.\ \ref{rem:frame-thermo} \\
+$\mathcal{V}$      & Standard QM visibility $= \sqrt{1-\lambda^2}$
+                     (\emph{distinct from} quasipotential $V$)
+                   & \S\ref{sec:metric} \\
+\midrule
+\multicolumn{3}{@{}l}{\textit{Predictions}} \\[2pt]
+$\delta\mathcal{V}$ & Visibility deficit from hysteresis cycle
+                   & \S\ref{sec:predictions} \\
+$\tau_{\mathrm{frame}}$ & Minimum frame-transformation duration
+                   & Eq.\ \eqref{eq:tau} \\
+\bottomrule
+\end{tabular}
+\end{table}
+\medskip
+
+% ============================================================
+% SECTION 2: COHERENCE FRAMES
 
 \begin{table}[h!]
 \centering
