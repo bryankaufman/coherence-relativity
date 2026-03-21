@@ -44,17 +44,36 @@ SEC (Security), DOC (Documentation), TEST, PERF (Performance), API
 
 ## Project-Specific Notes
 
+### Version Control (MANDATORY — READ FIRST)
+
+**⚠️ ONE CANONICAL REPO — ALL AGENTS**
+
+See `VERSION_CONTROL_PROTOCOL.md` at repo root for full rules. Summary:
+1. **Only** `~/Library/CloudStorage/Dropbox/Mac/Documents/coherence-relativity/` is authoritative
+2. Always `git log --oneline -5` + `git status` before editing any paper file
+3. All changes committed and pushed before handoff to another agent
+4. Desktop directories (`coherence-relativity-v3/`, `coherence-relativity-revised/`, etc.) are scratch space only — never the target of a final commit
+5. Post commit hash + page count to conv-log after every push
+
+This protocol was established 2026-03-21 after a version crisis caused by parallel untracked edits.
+
+---
+
 ### Project: Coherence Relativity
 
 **Paper 1** (`papers/01-coherence-frames/`)
-- Status: Referee revision complete (2026-03-19), pushed to GitHub (commit `1671048`)
+- Status: Content complete (2026-03-21), HEAD `ba4e6c9`, 14 pages, 925KB, clean build
 - Parameterization: **EGY** — λ ≡ √(1 − |⟨W_L|W_R⟩|²)
 - N=1 metric: G_λλ = 1/[2(1−λ²)]; G(0)=1/2 finite, G→∞ at λ→1
-- Pending: arXiv endorsement (Dr. Jason Haraldsen, UNF), submission tarball regeneration
+- Applied: Fixes 1–15 (referee revision + citation audit + inferential gaps)
+- Applied: Remark §6.2 (frame-dependence of thermodynamic quantities, PtaszynskiEsposito2023)
+- Pending evaluation: `fig_born_invariant_parallel.pdf`, `fig4_quasipotential_well.pdf` (in `~/Desktop/coherence-relativity-v3/figures/`)
+- Pending: arXiv endorsement (Dr. Jason Haraldsen, UNF)
 
-**Paper 2** (`papers/02-tensor-dynamics/` — not yet started)
+**Paper 2** (`papers/02-saturation-dynamics/`)
+- Draft sections in `papers/02-saturation-dynamics/sections/drafts/` (Waves 1–6 complete)
 - Focus: Full T_AB tensor field dynamics, equations of motion
-- Deferred items: s(λ) figure, thermodynamic table, Kramers rate, holographic connections
+- Deferred items: thermodynamic table, Kramers rate, holographic connections
 
 ### Key Files
 - `code/calculate_g_lambda.py` — EGY metric computation (N-mode, analytic N=1)
