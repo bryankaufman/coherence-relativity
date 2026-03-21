@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{29}%
+\begin{thebibliography}{39}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -50,6 +50,27 @@
 \providecommand \BibitemShut  [1]{\csname bibitem#1\endcsname}%
 \let\auto@bib@innerbib\@empty
 %</preamble>
+\bibitem [{\citenamefont {Bell}(1990)}]{bellAgainstMeasurement1990}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~S.}\ \bibnamefont
+  {Bell}},\ }\bibfield  {title} {\bibinfo {title} {Against `measurement'},\
+  }in\ \href@noop {} {\emph {\bibinfo {booktitle} {Sixty-Two Years of
+  Uncertainty: Historical, Philosophical, and Physical Inquiries into the
+  Foundations of Quantum Mechanics}}},\ \bibinfo {editor} {edited by\ \bibinfo
+  {editor} {\bibfnamefont {A.~I.}\ \bibnamefont {Miller}}}\ (\bibinfo
+  {publisher} {Plenum Press},\ \bibinfo {address} {New York},\ \bibinfo {year}
+  {1990})\ pp.\ \bibinfo {pages} {17--31},\ \bibinfo {note} {reprinted in
+  J.~S.~Bell, \textit{Speakable and Unspeakable in Quantum Mechanics}, 2nd ed.\
+  (Cambridge University Press, 2004)}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {von
+  Neumann}(1955)}]{vonneumannMathematicalFoundationsQuantum1955}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {von
+  Neumann}},\ }\href@noop {} {\emph {\bibinfo {title} {Mathematical Foundations
+  of Quantum Mechanics}}}\ (\bibinfo  {publisher} {Princeton University
+  Press},\ \bibinfo {address} {Princeton, NJ},\ \bibinfo {year} {1955})\
+  \bibinfo {note} {translated by R.~T.~Beyer from \textit{Mathematische
+  Grundlagen der Quantenmechanik} (Springer, 1932)}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Gleason}(1957)}]{gleasonMeasuresClosedSubspaces1957}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.~M.}\ \bibnamefont
@@ -197,6 +218,34 @@
   information},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {AIP
   Conf. Proc.}\ }\textbf {\bibinfo {volume} {1021}},\ \bibinfo {pages} {53}
   (\bibinfo {year} {2008})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Greenberger}\ and\ \citenamefont
+  {Yasin}(1988)}]{GreenbergerYasin1988}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.~M.}\ \bibnamefont
+  {Greenberger}}\ and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Yasin}},\ }\bibfield  {title} {\bibinfo {title} {Simultaneous wave and
+  particle knowledge in a neutron interferometer},\ }\href
+  {https://doi.org/10.1016/0375-9601(88)90114-4} {\bibfield  {journal}
+  {\bibinfo  {journal} {Phys. Lett. A}\ }\textbf {\bibinfo {volume} {128}},\
+  \bibinfo {pages} {391} (\bibinfo {year} {1988})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Englert}(1996)}]{Englert1996}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.-G.}\ \bibnamefont
+  {Englert}},\ }\bibfield  {title} {\bibinfo {title} {Fringe visibility and
+  which-way information: An inequality},\ }\href
+  {https://doi.org/10.1103/PhysRevLett.77.2154} {\bibfield  {journal} {\bibinfo
+   {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {77}},\ \bibinfo
+  {pages} {2154} (\bibinfo {year} {1996})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Braunstein}\ and\ \citenamefont
+  {Caves}(1994)}]{BraunsteinCaves1994}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.~L.}\ \bibnamefont
+  {Braunstein}}\ and\ \bibinfo {author} {\bibfnamefont {C.~M.}\ \bibnamefont
+  {Caves}},\ }\bibfield  {title} {\bibinfo {title} {Statistical distance and
+  the geometry of quantum states},\ }\href
+  {https://doi.org/10.1103/PhysRevLett.72.3439} {\bibfield  {journal} {\bibinfo
+   {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {72}},\ \bibinfo
+  {pages} {3439} (\bibinfo {year} {1994})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Masanes}\ \emph {et~al.}(2019)\citenamefont
   {Masanes}, \citenamefont {Galley},\ and\ \citenamefont
   {M{\"u}ller}}]{masanesMeasurementPostulatesQuantum2019}%
@@ -209,6 +258,48 @@
   {\bibfield  {journal} {\bibinfo  {journal} {Nat. Commun.}\ }\textbf {\bibinfo
   {volume} {10}},\ \bibinfo {pages} {1361} (\bibinfo {year}
   {2019})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Wigner}(1961)}]{wignerRemarksMindbodyQuestion1961}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {E.~P.}\ \bibnamefont
+  {Wigner}},\ }\bibfield  {title} {\bibinfo {title} {Remarks on the mind-body
+  question},\ }in\ \href@noop {} {\emph {\bibinfo {booktitle} {The Scientist
+  Speculates}}},\ \bibinfo {editor} {edited by\ \bibinfo {editor}
+  {\bibfnamefont {I.~J.}\ \bibnamefont {Good}}}\ (\bibinfo  {publisher}
+  {Heinemann},\ \bibinfo {address} {London},\ \bibinfo {year} {1961})\ pp.\
+  \bibinfo {pages} {284--302},\ \bibinfo {note} {reprinted in E.~P.~Wigner,
+  \textit{Symmetries and Reflections} (Indiana University Press,
+  1967)}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Einstein}\ \emph {et~al.}(1935)\citenamefont
+  {Einstein}, \citenamefont {Podolsky},\ and\ \citenamefont
+  {Rosen}}]{einsteinCanQuantumMechanical1935}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Einstein}}, \bibinfo {author} {\bibfnamefont {B.}~\bibnamefont {Podolsky}},\
+  and\ \bibinfo {author} {\bibfnamefont {N.}~\bibnamefont {Rosen}},\ }\bibfield
+   {title} {\bibinfo {title} {Can quantum-mechanical description of physical
+  reality be considered complete?},\ }\href
+  {https://doi.org/10.1103/PhysRev.47.777} {\bibfield  {journal} {\bibinfo
+  {journal} {Physical Review}\ }\textbf {\bibinfo {volume} {47}},\ \bibinfo
+  {pages} {777} (\bibinfo {year} {1935})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Freidlin}\ and\ \citenamefont
+  {Wentzell}(2012)}]{FreidlinWentzell2012}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.~I.}\ \bibnamefont
+  {Freidlin}}\ and\ \bibinfo {author} {\bibfnamefont {A.~D.}\ \bibnamefont
+  {Wentzell}},\ }\href@noop {} {\emph {\bibinfo {title} {Random Perturbations
+  of Dynamical Systems}}},\ \bibinfo {edition} {3rd}\ ed.\ (\bibinfo
+  {publisher} {Springer},\ \bibinfo {address} {New York},\ \bibinfo {year}
+  {2012})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Ptaszynski}\ and\ \citenamefont
+  {Esposito}(2023)}]{PtaszynskiEsposito2023}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
+  {Ptaszynski}}\ and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Esposito}},\ }\bibfield  {title} {\bibinfo {title} {Thermodynamics of
+  decoherence},\ }\bibfield  {journal} {\bibinfo  {journal} {Proceedings of the
+  Royal Society A}\ }\textbf {\bibinfo {volume} {479}},\ \href
+  {https://doi.org/10.1098/rspa.2023.0040} {10.1098/rspa.2023.0040} (\bibinfo
+  {year} {2023})\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Zurek}(2009)}]{zurekQuantumDarwinism2009}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {W.~H.}\ \bibnamefont
@@ -343,4 +434,14 @@
   }\href {https://doi.org/10.1103/PhysRevLett.135.010201} {\bibfield  {journal}
   {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {135}},\
   \bibinfo {pages} {010201} (\bibinfo {year} {2025})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Arkani-Hamed}\ and\ \citenamefont
+  {Trnka}(2014)}]{arkanihamedAmplituhedron2013}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {N.}~\bibnamefont
+  {Arkani-Hamed}}\ and\ \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Trnka}},\ }\bibfield  {title} {\bibinfo {title} {The amplituhedron},\ }\href
+  {https://doi.org/10.1007/JHEP10(2014)030} {\bibfield  {journal} {\bibinfo
+  {journal} {Journal of High Energy Physics}\ }\textbf {\bibinfo {volume}
+  {2014}},\ \bibinfo {pages} {30} (\bibinfo {year} {2014})},\ \Eprint
+  {https://arxiv.org/abs/1312.2007} {arXiv:1312.2007} \BibitemShut {NoStop}%
 \end{thebibliography}%
