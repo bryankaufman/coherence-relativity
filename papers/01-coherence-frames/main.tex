@@ -84,6 +84,51 @@ The novelty of this work is not interpretational but structural: the identificat
 
 Section~\ref{sec:frames} introduces coherence frames and the geometry of $\Sig$. Section~\ref{sec:transformations} develops frame transformations and invariants. Section~\ref{sec:born} derives the Born rule. Section~\ref{sec:paradoxes} resolves standard quantum paradoxes. Section~\ref{sec:discussion} discusses implications, and Sec.~\ref{sec:conclusion} summarizes.
 
+\medskip
+\noindent\textbf{Notation.}\quad
+The following table collects the principal symbols used throughout, noting disambiguation for reused letters.
+
+\begin{table}[h!]
+\centering
+\caption{Principal notation. Symbols in order of first appearance.}\label{tab:notation}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{@{}lll@{}}
+\toprule
+\textbf{Symbol} & \textbf{Meaning} & \textbf{Ref.} \\
+\midrule
+\multicolumn{3}{@{}l}{\textit{Spaces}} \\[2pt]
+$\mathcal{H}$      & Hilbert space, dimension $d$               & §\ref{sec:frames} \\
+$\mathcal{M}$      & Emergent spacetime (primitive)             & §\ref{sec:intro}  \\
+$\Sig$             & Coherence space $= U(d)/T^d$               & Def.\ 1 \\
+\midrule
+\multicolumn{3}{@{}l}{\textit{Core objects}} \\[2pt]
+$\mathcal{R}$      & Physical reality (primitive)               & Def.\ 3 \\
+$F \in \Sig$       & Coherence frame                            & Def.\ 2 \\
+$U_{F\to F'}$      & Frame transformation (unitary)             & Def.\ 5 \\
+$\mu_F(i)$         & Probability measure on frame-$F$ alternatives & Thm.\ 2 \\
+\midrule
+\multicolumn{3}{@{}l}{\textit{Geometry}} \\[2pt]
+$G_{AB},\,\Gll$    & Fubini--Study metric on $\Sig$             & Eq.\ \eqref{eq:gab} \\
+$\Omega_{AB}$      & Frame-bundle curvature                     & Eq.\ \eqref{eq:omega-explicit} \\
+$\Tab$             & Coherence tensor $= G_{AB}+\Omega_{AB}$    & Def.\ 4 \\
+$\lambda$          & EGY distinguishability $\in[0,1]$         & §\ref{sec:metric} \\
+$s(\lambda)$       & Accumulated geometric entropy (arc length) & §\ref{sec:discussion} \\
+$V(\lambda)$       & Geometric quasipotential $= s(1)-s(\lambda)$ & §\ref{sec:discussion} \\
+\midrule
+\multicolumn{3}{@{}l}{\textit{Dynamics (\emph{note disambiguations})}} \\[2pt]
+$F^A$              & Drift field on $\Sig$ \emph{(distinct from frame $F$)} & §\ref{sec:discussion} \\
+$\mathcal{F}$      & Free energy \emph{(distinct from frame $F$)}& Rmk.\ \ref{rem:frame-thermo} \\
+$\mathcal{S}[\gamma]$ & Freidlin--Wentzell action             & Eq.\ \eqref{eq:action} \\
+$\sigma$           & Action path parameter \emph{(distinct from arc $s$)} & Eq.\ \eqref{eq:action} \\
+$V_{\mathrm{stoch}}$ & Full stochastic quasipotential           & §\ref{sec:discussion} \\
+$\mathcal{V}$      & QM visibility $=\sqrt{1{-}\lambda^2}$ \emph{(distinct from $V$)} & §\ref{sec:metric} \\
+$\mathcal{K}_\Sig$ & Ricci scalar of $\Sig$ \emph{(distinct from $\mathcal{R}$)} & §\ref{sec:predictions} \\
+\bottomrule
+\end{tabular}
+\end{table}
+\medskip
+
+
 
 % ============================================================
 % SECTION 2: COHERENCE FRAMES
@@ -183,7 +228,7 @@ The coherence-frame structure parallels the inertial-frame structure of special 
 \toprule
 Special Relativity & Coherence Relativity \\
 \midrule
-Spacetime event & Physical reality $R$ \\
+Spacetime event & Physical reality $\mathcal{R}$ \\
 Inertial frame & Coherence frame $F$ \\
 Coordinates $(t, \mathbf{x})$ & State representation $\ket{\psi}_F$ \\
 Lorentz transformation & Frame transformation $U_{F \to F'}$ \\
@@ -415,10 +460,10 @@ The tensor field~$\Tab$ (Sec.~\ref{sec:tensor}) generates a quasipotential lands
 \end{equation}
 where $\dot{x}^A \equiv dx^A/d\sigma$ and $\sigma\in[0,1]$ is a path parameter distinct from the geometric arc length $s(\lambda) = \int_0^\lambda\!\sqrt{\Gll}\,d\lambda'$ introduced below.
 
-This is the Freidlin--Wentzell large-deviation functional~\cite{FreidlinWentzell2012},
+This is the Freidlin--Wentzell large-deviation functional~\cite{FreidlinWentzell2012}, which defines the minimum-cost path for stochastic excursions away from an attractor.
 The quasipotential is $V(x) = \inf_\gamma \mathcal{S}[\gamma]$, where the infimum is over paths from a reference frame to~$x$ (Fig.~\ref{fig:quasipotential}). Minima of~$V$ correspond to metastable classical frames (pointer states), saddle points determine transition rates, and the stationary distribution concentrates as $p(x) \propto \exp(-V(x)/\epsilon)$ for small effective noise~$\epsilon$. This provides a geometric explanation for einselection: environment-induced superselection is the dynamical relaxation to $V$-minima. In the purely geometric limit (zero drift $F^A = 0$, zero noise $D \to 0$), the stochastic quasipotential $V_{\mathrm{stoch}}(x) = \inf_\gamma \mathcal{S}[\gamma]$ reduces to the \emph{geometric quasipotential} $V(\lambda) = d_\Sig(\lambda) = \int_\lambda^1\!\sqrt{\Gll}\,d\lambda'$---the Fubini--Study distance from~$\lambda$ to the classical frame. It is this geometric quasipotential that we compute and plot in Figs.~\ref{fig:quasipotential} and~\ref{fig:cr_vs_standard}; the full stochastic $V_{\mathrm{stoch}}$ requires the explicit drift $F^A$, which is the primary object of Paper~2.
 
-The novel application is the identification of $\Sigma$ as the arena and $G_{AB}$ as the cost tensor---a construction with no prior precedent in the quantum decoherence literature. We conjecture that $F^A$, when derived explicitly from the system--environment interaction Hamiltonian $H_{SE}$, drives coherence-space trajectories to einselected pointer-state frames; this is consistent with Zurek's einselection picture~\cite{zurekDecoherenceEinselectionQuantum2003} and is the primary object of Paper~2. Here $F^A$ enters as a phenomenological drift term whose form is constrained by the requirement that $V$-minima reproduce known pointer states in tractable models.
+The novel application is the identification of $\Sig$ as the arena and $G_{AB}$ as the cost tensor---a construction with no prior precedent in the quantum decoherence literature. We conjecture that $F^A$, when derived explicitly from the system--environment interaction Hamiltonian $H_{SE}$, drives coherence-space trajectories to einselected pointer-state frames; this is consistent with Zurek's einselection picture~\cite{zurekDecoherenceEinselectionQuantum2003} and is the primary object of Paper~2. Here $F^A$ enters as a phenomenological drift term whose form is constrained by the requirement that $V$-minima reproduce known pointer states in tractable models.
 
 The accumulated Fubini--Study length $s(\lambda) = \int_0^\lambda\!\sqrt{\Gll}\,d\lambda'$ quantifies the total geometric distance traversed from the coherent frame, so that $V(\lambda) = s(1) - s(\lambda)$ is the geometric quasipotential (distance remaining to the pointer-state minimum), valid in the zero-drift limit. For the multi-mode model ($N=10$), the total length is $s(1) \approx 1.46$; for $N=1$, $s(1) = \pi/(2\sqrt{2}) \approx 1.11$. Under the EGY parameterization, $s(\lambda)$ grows from~$0$ at~$\lambda=0$ and accelerates near $\lambda\to 1$ (where $\Gll$ diverges). The quasipotential $V(\lambda) = s(1) - s(\lambda)$ therefore decreases steeply near $\lambda\to 1$, reflecting the increasing geometric cost of maintaining classical records. This is structurally analogous to a potential landscape where the classical fixed point at $\lambda=1$ sits at the bottom of a well with walls that steepen approaching the pointer basis---the system must traverse the full geometric length $s(1)$ to fully establish classical distinguishability.
 
@@ -488,7 +533,7 @@ approaches diagonality in a dynamically stable pointer basis when decohering cou
 
 \CR{} naturally accommodates quantum Darwinism~\cite{zurekQuantumDarwinism2009}: when multiple environment fragments independently acquire the same information about the system, they select a preferred coherence frame. In \CR{} language, the redundant encoding of pointer-state information across environment fragments~\cite{riedelObjectiveQuantumUniverse2016,korbiczObjectivityNoisyPhotonic2017} is consistent with the narrowing of the quasipotential well around the classical frame as the number of monitoring fragments~$N$ increases: each additional fragment independently constrains the preferred coherence frame, geometrically sharpening the $V$-minimum in a manner made precise in Paper~2. In Fig.~\ref{fig:quasipotential}, each value of~$N$ corresponds to a distinct multi-mode metric $\Gll^{(N)}(\lambda)$ (computed as in Fig.~\ref{fig:g_lambda} with $N$ collectively coupled environment modes); larger~$N$ yields a larger total arc length $s^{(N)}(1)$ and therefore a deeper, narrower $V$-minimum at $\lambda = 1$. The present paper notes only the structural consistency between the QD redundancy criterion and the geometric quasipotential picture; a quantitative derivation requires the explicit form of $F^A$ from $H_{SE}$.
 
-\subsection{Testable Predictions}
+\subsection{Testable Predictions}\label{sec:predictions}
 
 Before stating the predictions, we identify the physical origin of the deviations from standard quantum mechanics. The predictions do \emph{not} arise from modified Hamiltonian dynamics, alterations to the unitary group, or replacement of the Born rule---the full unitary structure of quantum mechanics is preserved on~$\mathcal{H}$. The deviations arise instead from the \emph{geometric structure of~$\Sig$}: specifically, the Fubini--Study metric $\Gll$ and the quasipotential $V(\lambda)$, which standard quantum mechanics does not model. Standard QM implicitly treats all traversals of the decoherence parameter~$\lambda$ as metrically equivalent; Coherence Relativity predicts that physically traversed paths are weighted by~$\Gll$. We acknowledge that the geometric structure of~$\Sig$ constitutes additional structure beyond standard QM's formalism; this framework is therefore a minimal \emph{geometric extension} that becomes empirically distinguishable from standard QM precisely through predictions~1--6 below.
 
@@ -496,7 +541,7 @@ Predictions~(1) (non-linear visibility) and (5) (transformation timescale) follo
 
 Six experimentally testable signatures distinguish \CR{} from standard QM:
 \begin{enumerate}
-\item \textbf{Non-linear visibility}: $\mathcal{V}(\lambda)$ deviates from $\sqrt{1-\lambda^2}$ due to $\Gll$ curvature (Fig.~\ref{fig:cr_vs_standard}).
+\item \textbf{Non-linear visibility}: the CR geometric traversal $d_\Sig(\lambda)/d_\Sig(0)$ deviates from the standard QM visibility $\mathcal{V} = \sqrt{1-\lambda^2}$ due to $\Gll$ curvature (Fig.~\ref{fig:cr_vs_standard}).
 \item \textbf{Frame-transformation hysteresis}: Erasure paths $\lambda: 0 \to 1 \to 0$ show path-dependent visibility recovery.
 \item \textbf{Coherence-space curvature}: Many-body systems exhibit $\Gll$ scaling deviations from mean-field predictions.
 \item \textbf{Modified gravitational decoherence}: Gravitational contributions to~$\Tab$ produce mass-dependent frame-transformation rates differing from Di\'osi--Penrose~\cite{diosiUniversalMasterEquation1987,penroseGravitysRoleQuantum1996}.
@@ -521,7 +566,7 @@ We provide order-of-magnitude estimates for the two most accessible predictions.
 \end{equation}
 The action cost $\Delta\mathcal{S} > 0$ suppresses the probability of path-reversed (revival) trajectories relative to forward (erasure) trajectories by a factor $\sim e^{-\Delta\mathcal{S}}$ in the weak-noise limit, which translates to a visibility deficit $\delta\mathcal{V} \sim \Delta\mathcal{S}$ for small $\Delta\mathcal{S}$. Evaluating the action cost for a symmetric cycle $\lambda: 0 \to \lambda_{\max} \to 0$ gives $\Delta\mathcal{S} \sim \tau_{\mathrm{frame}}^2\,\Gll(\bar\lambda) / D$, where $\bar\lambda$ is the characteristic distinguishability traversed and $D$ is the effective diffusion coefficient on~$\Sig$.
 
-A dimensional estimate, connecting $D \sim 1/T_2$ and using the Ricci scalar $\mathcal{R}_\Sig = 8$ of the qubit coherence space ($\mathrm{CP}^1$ with Fubini--Study metric radius $r = 1/2$, giving $\mathcal{R} = 2/r^2 = 8$~\cite{bengtssonGeometryQuantumStates2017}), yields a visibility deficit $\delta\mathcal{V} \sim (\tau_{\mathrm{frame}}/T_2)^2 \cdot \mathcal{R}_\Sig$, where $\tau_{\mathrm{frame}} \sim 1/\chi \approx 1\;\mu$s and $T_2 \approx 70\;\mu$s. This gives $\delta\mathcal{V} \sim 2 \times 10^{-3}$. A rigorous derivation connecting $\Delta\mathcal{S}$ to the visibility deficit via a specific noise model is deferred to Paper~2; the estimate here serves as an order-of-magnitude guide to experimental sensitivity requirements.
+A dimensional estimate, connecting $D \sim 1/T_2$ and using the Ricci scalar $\mathcal{K}_\Sig = 8$ of the qubit coherence space ($\mathrm{CP}^1$ with Fubini--Study metric radius $r = 1/2$, giving $\mathcal{K} = 2/r^2 = 8$~\cite{bengtssonGeometryQuantumStates2017}), yields a visibility deficit $\delta\mathcal{V} \sim (\tau_{\mathrm{frame}}/T_2)^2 \cdot \mathcal{K}_\Sig$, where $\tau_{\mathrm{frame}} \sim 1/\chi \approx 1\;\mu$s and $T_2 \approx 70\;\mu$s. This gives $\delta\mathcal{V} \sim 2 \times 10^{-3}$. A rigorous derivation connecting $\Delta\mathcal{S}$ to the visibility deficit via a specific noise model is deferred to Paper~2; the estimate here serves as an order-of-magnitude guide to experimental sensitivity requirements.
 
 We stress that this hysteresis does not require unitarity violation. The full system--environment state evolves unitarily throughout; the visibility deficit $\delta\mathcal{V}$ is a property of the \emph{reduced} dynamics on~$\Sig$---the action cost $\Delta\mathcal{S} > 0$ (Eq.~\ref{eq:hysteresis}) accumulated along the erasure--revival cycle under the effective stochastic drift~$F^\lambda$. In standard QM the path through~$\Sig$ carries no metric weight, so $\mathcal{V}_{\rm revival} = \mathcal{V}_{\rm initial}$. In Coherence Relativity the Fubini--Study metric renders forward and reverse paths geometrically inequivalent, producing the predicted deficit. The distinction is analogous to reversible vs.\ irreversible thermodynamic paths: global energy conservation holds in both, but accessible work differs.
 
@@ -622,10 +667,9 @@ Coherence relativity belongs to a broader contemporary movement in which geometr
 % SECTION 7: CONCLUSION
 % ============================================================
 \vspace{3em}
-\noindent\textbf{Minimal ontology.}
-\noindent\textbf{Minimal ontology.} To summarize the interpretive commitments: \CR{} posits \emph{one reality~$R$}, \emph{many coherence frames~$F \in \Sig$}, and \emph{frame-invariant quantities as physical facts}. Collapse, coherence, and classicality are frame-dependent descriptions; Born measures, inner products, spectra, and entanglement entropy are frame-invariant and constitute observer-independent reality.
+\noindent\textbf{Minimal ontology.} To summarize the interpretive commitments: \CR{} posits \emph{one reality~$\mathcal{R}$}, \emph{many coherence frames~$F \in \Sig$}, and \emph{frame-invariant quantities as physical facts}. Collapse, coherence, and classicality are frame-dependent descriptions; Born measures, inner products, spectra, and entanglement entropy are frame-invariant and constitute observer-independent reality.
 
-\section{Conclusion}
+\section{Conclusion}\label{sec:conclusion}
 
 We have introduced coherence relativity, a geometric framework in which:
 \begin{enumerate}
