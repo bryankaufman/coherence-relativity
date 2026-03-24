@@ -6753,7 +6753,7 @@ These evaluations illustrate the framework's content but do not exhaust it. Othe
 
 # §7 Open Problems
 
-**Status:** DRAFT — Wave 6 (merged: Cowork + Warp)
+**Status:** DRAFT — Wave 6 (merged: Cowork + Warp) + additions 2026-03-23
 **Model:** Sonnet-level (structured catalog)
 **Cross-references:** All preceding sections; [Paper 2B]; Paper 3 (future)
 
@@ -6817,11 +6817,17 @@ These problems go beyond the scope of the companion paper and require new deriva
 
 These are questions about the internal mathematical consistency of the formalism developed in this paper. They do not require new geometry or experimental input — they require careful analysis of the existing framework.
 
-**OP-18. The left-right generator program.** §2.5 introduces the distinction between Schrödinger-side and Heisenberg-side generators on $M \times \Sigma$. The mismatch tensor $\Delta G_{ij}$ between the two metric faces is conjectured to vanish in pointer sectors. A rigorous proof (or counterexample) in the single-qubit decoherence model is the immediate next step.
+**OP-18. The left-right generator program.** §2.5 introduces the distinction between Schrödinger-side and Heisenberg-side generators on $M \times \Sigma$. For the dephasing model, $\mathcal{R}_t = \mathcal{L}_t$ exactly (Markovian, one metric face). The open question is the non-Markovian extension: derive $T_{M\Sigma}^{(\text{H})}$ for a two-level system with amplitude damping plus dephasing, confirm $\|\mathcal{L}_t - \mathcal{R}_t\|_{\text{op}} \to 0$ in Phase III, and give a full proof of Theorem 2.5.1 (pointer states as the zero set of $\mathrm{Im}(H_{M\Sigma})$).
 
 **OP-19. §2.2 hypotheses verification for general geometries.** The $\delta\lambda$ formalism (§2.2) has several untested hypotheses: the warp-factor scaling $\lambda \sim A^2$ (Eq. 2.2.41), the cross-term scaling $T_{\mu a}^{\text{FS}} \sim A^{-2}$ (Eq. 2.2.38), and the $O(\lambda^2)$ corrections to the inverse metric (§2.2.3). These are verified for the KK-Cone in the companion paper but remain unverified for general geometries.
 
 **OP-20. Frame-lag and decoherence timescales.** The frame-lag mechanism (§4, Eq. 4.1.10) provides a geometric account of coherence response to spacetime acceleration. The lag timescale — the time for the Σ-sector to respond to M-sector perturbations — is a physical observable in principle. The general question remains: is the frame-lag timescale related to standard decoherence timescales (e.g., $\tau_D \sim \hbar / k_B T$)? If so, the framework would make a connection to thermodynamics.
+
+**OP-21. The $\ell^* = S(\ell^*) / S_{\max}$ entropic prediction.** The Casimir analysis yields $r_f^* \approx 12.96\,\mu\text{m}$ as the stabilized fiber radius. The currency-of-the-realm framework (see companion conceptual development) predicts that $\ell^*$ should mark the entropic watershed — the scale at which exactly half the universe's total entropic budget has been expended: $S(\ell^*) = S_{\max}/2$. The Hopf fiber density argument (§4.5.6) provides independent geometric grounding: $n_{\text{fiber}} = 1/4$ exactly at $r = \ell^*$, corresponding to the $25\%$ base coverage that anchors the entropy-midpoint identification. Verifying this numerically — computing $S_{\max}$ for the observable universe and checking the ratio — would provide a second, independent derivation of $\ell^*$ from completely different physical reasoning. Agreement between the Casimir geometric result and the entropic prediction would be strong evidence that $\ell^*$ is physically real.
+
+**OP-22. Decoherence Recapitulates Cosmogenesis: formal derivation.** Every quantum decoherence event enacts the same three-phase sequence the universe traversed cosmologically (Phase I $\to$ II $\to$ III). The suppression parameters governing both are structurally identical: $e^{-\lambda_M} \sim (\ell^*/R)^2$. This scale covariance of the phase transition equation is stated throughout the paper but not formally derived. A rigorous derivation would: (1) establish the explicit proportionality constant relating $e^{-\lambda_M}$ to $(\ell^*/R)^2$; (2) identify the Born rule as the conserved quantity across both the cosmic and the local phase transition; and (3) show that thermodynamic irreversibility and cosmological expansion are the same asymmetry at different scales. This derivation would provide the bridge from Paper 2 §9 Discussion into Paper 3 §1 Introduction.
+
+**OP-23. Settimo et al. (2026) citations and picture-inequivalence contributions.** Settimo et al. (2026) \cite{Settimo2026} establish that Schrödinger and Heisenberg divisibility are inequivalent for non-Markovian dynamics ($\mathcal{L}_t \neq \mathcal{R}_t$). This paper cites this result in §2.5. The outstanding bibliographic and technical tasks are: (1) add the Settimo citation to the Paper 2 bibliography and cross-reference it in §2.5, §7 (EOM), and §9 (Discussion); (2) determine whether $\|\mathcal{L}_t - \mathcal{R}_t\|_{\text{op}}$ makes a quantitative contribution to the $H_0$ tension channel analyzed in Paper 3 §5; (3) verify that the Born rule as $|H|$-invariant (§2.5.5) is consistent with the Settimo dual-picture structure. Citation: F. Settimo et al., \textit{PRX Quantum} \textbf{7}, 010340 (2026). DOI: 10.1103/6dt2-sq44.
 
 ---
 
@@ -6846,11 +6852,14 @@ These are questions about the internal mathematical consistency of the formalism
 | OP-15 KK mode detection | Experimental | Near-term |
 | OP-16 Dark matter | Paper 2B + data | Near-term |
 | OP-17 Cosmological constant | Paper 3 + data | High |
-| OP-18 Left-right generators | Internal | Immediate |
+| OP-18 Left-right generators (non-Markovian) | Internal | Immediate |
 | OP-19 §2.2 hypotheses | Internal | High |
 | OP-20 Frame-lag timescales | Internal | Medium |
+| OP-21 $\ell^* = S_{\max}/2$ entropic prediction | Internal + numerical | High |
+| OP-22 Decoherence Recapitulates Cosmogenesis | Internal + Paper 3 bridge | High |
+| OP-23 Settimo citation + picture-inequivalence | Internal (bibliography) | Immediate |
 
-The most critical open problem is **radius stabilization (OP-5)**: without it, the derived-topology program produces a topological structure but not a unique geometry. The most accessible near-term tests are **KK mode detection (OP-15)** and **dark matter predictions (OP-16)**: both connect to existing experimental programs. The most immediate internal question is the **left-right generator program (OP-18)**: it is fully self-contained within the existing formalism and can be resolved by computation.
+The most critical open problem is **radius stabilization (OP-5)**: without it, the derived-topology program produces a topological structure but not a unique geometry. The most immediate internal tasks are **OP-18** (left-right generator completion), **OP-22** (scale covariance derivation, which bridges to Paper 3), and **OP-23** (Settimo citation). The most testable prediction is **OP-21**: computing $S(\ell^*)$ numerically is a bounded calculation that could either confirm or falsify the entropic watershed interpretation of $\ell^*$.
 
 ---
 
@@ -6863,8 +6872,10 @@ The most critical open problem is **radius stabilization (OP-5)**: without it, t
 - §3.3.5: Cosmological constant constraint
 - §4, Eq. 4.1.10: Frame-lag mechanism
 - §4.2: Evaluation limitations
+- §4.5.6: Hopf fiber density at $r = \ell^*$
 - §5, Conjecture 5.1: Holographic structure
 - [Paper 2B]: Companion paper (KK-Cone evaluation)
+- Settimo et al. (2026), PRX Quantum 7, 010340. DOI: 10.1103/6dt2-sq44
 
 ---
 
@@ -6874,11 +6885,7 @@ The most critical open problem is **radius stabilization (OP-5)**: without it, t
 |------|--------|
 | 2026-03-10 | Initial drafts — Wave 6 (Cowork + Warp independently) |
 | 2026-03-10 | Merged version — 4-tier structure from Warp; internal consistency tier (OP-18, OP-19, OP-20) from Warp; expanded problem descriptions from both; priority table from Cowork |
-
----
-
-**Word count:** ~2,000 (target: 1,000–1,800 for an open problems section)
-**Status:** DRAFT — merged, needs Bryan review
+| 2026-03-23 | Added OP-21 ($\ell^* = S_{\max}/2$ entropic prediction), OP-22 (Decoherence Recapitulates Cosmogenesis formal derivation), OP-23 (Settimo citation + picture-inequivalence contributions) |
 
 
 ---
