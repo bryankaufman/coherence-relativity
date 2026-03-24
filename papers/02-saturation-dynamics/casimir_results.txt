@@ -1,0 +1,131 @@
+══════════════════════════════════════════════════════════════════════════════
+  SC3 CASIMIR SIGN-CLOSURE — BRANCH-SCREENING COMPUTATION
+  paper2_mathematical_spine_2026-02-28.md  §3.6 / §3.7
+══════════════════════════════════════════════════════════════════════════════
+
+── SECTION 1: CONVENTIONS (Step A, §3.7) ──────────────────────────────────
+
+  Geometry:    R^{3,1} × S¹(r),  circumference L = 2πr
+  Signature:   (+−−−−)
+  BCs:         bosons → periodic;  fermions → antiperiodic
+  Regularization: zeta-function (no normal-ordering subtraction)
+  Sign convention:
+    ρ_Casimir > 0  ← fermion-dominated (antiperiodic contribution wins)
+    ρ_Casimir < 0  ← boson-dominated  (periodic contribution wins)
+
+  Mapping to Λ_eff:
+    Λ_eff = 8πG₄ ρ_Casimir    [SI: Λ in m⁻², ρ in J/m³]
+
+── SECTION 2: SYMBOLIC FORMULA ─────────────────────────────────────────────
+
+  Derivation route (zeta-function regularization on S¹):
+
+  Bosons (periodic, massless scalar):
+    E_vac = ½ Σ_{n∈ℤ} |n|/r = (1/r) × ζ_R(-1)  [Hurwitz/Epstein]
+    After dimensional integration over R³:
+    ρ_boson = −π²/(90 r⁴)  per real d.o.f.
+
+  Fermions (antiperiodic, Weyl):
+    Antiperiodic BCs introduce (−1)^n twist → alternating sum
+    ρ_fermion = +7π²/(720 r⁴) = +(7/8) × π²/(90 r⁴)  per d.o.f.
+
+  Combined (natural units ℏ=c=1):
+    ρ_Casimir = (π²/90r⁴) × (7 N_F/8 − N_B)
+
+  SC3 positivity condition:
+    7 N_F/8 − N_B > 0  ⟺  N_F > 8 N_B/7
+
+  For N_B = 2:  N_F_min (real)  = 2.2857
+                N_F_min (integer) = 3
+
+── SECTION 3: BRANCH-SCREENING TABLE (Steps B & C, §3.7) ──────────────────
+
+  Sector                                          N_B  N_F   Factor  Verdict
+  ────────────────────────────────────────────────────────────────────────────
+  Branch 3: 2 photon polz, no fermions              2    0   -2.000  FAIL
+  SM photon + graviton (2+2, no fermions)           4    0   -4.000  FAIL
+  1 boson + 1 Weyl fermion                          1    1   -0.125  FAIL
+  2 bosons + 3 Weyl fermions                        2    3    0.625  PASS (provisional)
+  2 bosons + 4 Weyl fermions                        2    4    1.500  PASS (provisional)
+  Pure fermion sector N_F=4                         0    4    3.500  PASS (provisional)
+  Gravitino sector N_B=2, N_F=2                     2    2   -0.250  FAIL
+  Full SUSY (N_B = N_F = 4)                         4    4   -0.500  FAIL
+
+  Factor = 7 N_F/8 − N_B.  PASS threshold: > 0.05. MARGINAL: |factor| ≤ 0.05.
+
+── SECTION 4: NUMERICAL EVALUATION — KEY BRANCHES ─────────────────────────
+
+  Physical constants used:
+    ℏ       = 1.054572e-34  J·s
+    c       = 2.997924580e+08  m/s
+    G₄      = 6.67430e-11  m³ kg⁻¹ s⁻²
+    ℓ_P     = 1.616255e-35  m
+    Λ_obs   = 1.10e-52  m⁻²
+    ρ_target = Λ_obs c⁴/(8πG₄) = 5.2970e-10  J/m³
+
+  Branch 3  (N_B=2, N_F=0 — periodic bosons only):
+  r_fiber                     ρ_Casimir [J/m³]      ρ / ρ_target
+  ──────────────────────────────────────────────────────────────
+  Planck length ℓ_P               -1.0161e+113      -1.9183e+122
+  10 × ℓ_P                        -1.0161e+109      -1.9183e+118
+  1 μm                             -6.9340e-03       -1.3090e+07
+  10 μm                            -6.9340e-07       -1.3090e+03
+  50 μm                            -1.1094e-09       -2.0945e+00
+  100 μm                           -6.9340e-11       -1.3090e-01
+
+  Branch: N_B=2, N_F=3  (minimum-integer PASS candidate):
+  r_fiber                     ρ_Casimir [J/m³]      ρ / ρ_target
+  ──────────────────────────────────────────────────────────────
+  Planck length ℓ_P                3.1754e+112       5.9947e+121
+  10 × ℓ_P                         3.1754e+108       5.9947e+117
+  1 μm                              2.1669e-03        4.0908e+06
+  10 μm                             2.1669e-07        4.0908e+02
+  50 μm                             3.4670e-10        6.5452e-01
+  100 μm                            2.1669e-11        4.0908e-02
+
+── SECTION 5: REQUIRED r_fiber FOR SC3 CLOSURE  ──────────────────────────
+
+  Fiber radius r* at which |ρ_Casimir| = ρ_target (one species factor):
+
+  Sector                                                   r* [m]      r* / ℓ_P
+  ──────────────────────────────────────────────────────────────────────────────
+  Branch 3: 2 photon polz, no fermions                 6.0150e-05      3.72e+30
+  SM photon + graviton (2+2, no fermions)              7.1531e-05      4.43e+30
+  1 boson + 1 Weyl fermion                             3.0075e-05      1.86e+30
+  2 bosons + 3 Weyl fermions                           4.4973e-05      2.78e+30
+  2 bosons + 4 Weyl fermions                           5.5976e-05      3.46e+30
+  Pure fermion sector N_F=4                            6.9183e-05      4.28e+30
+  Gravitino sector N_B=2, N_F=2                        3.5766e-05      2.21e+30
+  Full SUSY (N_B = N_F = 4)                            4.2533e-05      2.63e+30
+
+  NOTE: r* >> ℓ_P for all sectors. At r_fiber = ℓ_P, |ρ_Casimir| >> ρ_target
+  by ~10¹²² — the standard cosmological-constant hierarchy problem.
+  SC3 closure via Casimir requires r_fiber ~ 50–100 μm (near fifth-force bound)
+  OR near-exact boson/fermion cancellation leaving a tiny residual.
+
+── SECTION 6: SC3 DECISION SUMMARY  ────────────────────────────────────────
+
+  Branch 3 (N_B=2, N_F=0, periodic):
+    ρ_Casimir < 0  → FAIL.  Cannot close SC3 in this sector.
+
+  Minimum integer fermion content for sign-positivity given N_B=2:
+    N_F ≥ 3  (antiperiodic).  Factor = 7×3/8 − 2 = +0.625 > 0.
+    Status: provisional PASS on sign.  Scale requires r* ~ 50–100 μm.
+
+  Full SUSY (N_B = N_F): factor = 7 N_F/8 − N_F = −N_F/8 < 0 → FAIL.
+  Exact SUSY cancels in the wrong direction — does not help SC3.
+
+  Overall SC3 status: OPEN (staged)
+    - Casimir route requires fermion-dominated post-transition sector.
+    - No PASS branch established without Paper 3 species/BC inputs.
+    - If r_fiber ~ ℓ_P, the Casimir approach faces the CC hierarchy
+      problem and cannot close SC3 without ~ 10¹²² cancellation.
+    - Alternative: r_fiber ~ 50–100 μm with N_F=3, N_B=2 gives correct
+      scale but requires an independent stabilization argument.
+
+  Claim-strength policy (§5.6): SC3 remains 'contingent candidate'.
+  Re-entry trigger: finalized Paper 3 species/BC dataset.
+
+══════════════════════════════════════════════════════════════════════════════
+  Computation complete.
+══════════════════════════════════════════════════════════════════════════════
