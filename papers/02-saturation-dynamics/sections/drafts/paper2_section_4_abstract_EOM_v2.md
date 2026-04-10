@@ -1,10 +1,35 @@
 # §4 Equations of Motion on M × Σ
 
-**Status:** DRAFT — Wave 5 extraction from §7.0 + new material
+**Status:** DRAFT v2 — Klein removal patch applied 2026-04-09
 **Model:** Opus (novel derivation-level content)
 **Source:** §7.0 DRAFT (abstract layer: §7.2.4–7.2.5, §7.4.1–7.4.2, §7.5.1–7.5.3)
 **New material:** §4.2 (Limitations) — drawn from norm-audit, convention-lock, Bryan's R_Markov analysis
 **Cross-references:** §2.1 (Fubini-Study pullback), §2.2 (δλ formalism, frame-lag force), §2.3 (Markov criterion)
+**v2 changes (2026-04-09):**
+- ψ ∈ [0,2π) not present in this file (confirmed — abstract EOM uses ξ throughout)
+- 5D metric ansatz added explicitly (§4.0.1 new)
+- KK gravity remark updated: U(1) from Berry phase holonomy on CP¹, not Hopf fiber; radion governs interval-width fluctuations, not fiber radius
+- References updated: §3.2 entry no longer says "Hopf fibration"
+
+---
+
+## §4.0.1 The 5D Metric Ansatz
+
+The KK-Cone worked example in §5–§8 adopts the following 5D metric ansatz, which encodes the derived compactification of §3.2:
+
+$$\mathrm{d}s^2_{(5)} = A^2(r)\, \eta_{\mu\nu}\, \mathrm{d}x^\mu\, \mathrm{d}x^\nu + \mathrm{d}r^2 \tag{4.0.1}$$
+
+where:
+- $x^\mu = (t, x^1, x^2, x^3)$ are the four 4D Minkowski coordinates ($\mu = 0,1,2,3$)
+- $r \in [0, r_\mathrm{max}]$ is the fifth (extra) dimension, compact by geometry
+- $A(r) = \cos(\sqrt{2}\, r)$ is the warp factor derived from the Fubini-Study eigenvalue (§3.2, Proposition 4.2)
+- $r_\mathrm{max} = \pi/(2\sqrt{2})$ is the pinch-off radius where $A(r_\mathrm{max}) = 0$
+
+This is genuinely 5D: $\{x^\mu, r\}$, five coordinates total. No extra angular coordinate (such as $\psi \in [0, 2\pi)$ in the Klein picture) appears. The fiber direction that Klein added as an independent coordinate is replaced here by the interval $r \in [0, r_\mathrm{max}]$, which is compact by the vanishing of $A$ rather than by topological identification.
+
+**Comparison with the Klein ansatz.** Klein (1926) wrote:
+$$\mathrm{d}s^2_\mathrm{Klein} = \eta_{\mu\nu}\, \mathrm{d}x^\mu\, \mathrm{d}x^\nu + R^2\, \mathrm{d}\psi^2, \qquad \psi \in [0,2\pi)$$
+with compactification imposed as a periodicity condition on the fifth coordinate $\psi$. The CR ansatz (4.0.1) contains no $\psi$ and requires no periodicity identification: compactness follows from $A(r_\mathrm{max}) = 0$ alone. The U(1) gauge structure previously attributed to the $\psi$-circle is recovered from the Berry phase holonomy on $\mathbb{CP}^1$ (§3.2, OP-24 resolution), which gives integer-quantized charge without requiring a compact circle coordinate.
 
 ---
 
@@ -37,11 +62,11 @@ $$\partial_\mu |\psi\rangle = \frac{\partial}{\partial x^\mu} |\psi(\text{ground
 
 The Fubini-Study cross-term is then:
 
-$$T_{\mu a} = \text{Re}\left[\langle \partial_\mu \psi | \partial_a \psi \rangle - \langle \partial_\mu \psi | \psi \rangle \langle \psi | \partial_a \psi \rangle\right] \tag{4.1.4}$$
+$$T_{\mu a} = \mathrm{Re}\left[\langle \partial_\mu \psi | \partial_a \psi \rangle - \langle \partial_\mu \psi | \psi \rangle \langle \psi | \partial_a \psi \rangle\right] \tag{4.1.4}$$
 
 For adiabatic ground states with $\langle \psi | \partial_a \psi \rangle = 0$ (real wavefunctions), this simplifies to:
 
-$$T_{\mu a} = \text{Re}\left[\langle \partial_\mu \psi | \partial_a \psi \rangle\right] \tag{4.1.5}$$
+$$T_{\mu a} = \mathrm{Re}\left[\langle \partial_\mu \psi | \partial_a \psi \rangle\right] \tag{4.1.5}$$
 
 ### §4.1.3 Cross-Term Scaling: The General Argument
 
@@ -143,26 +168,34 @@ The identification $\lambda = f(\text{warp factor})$ is geometry-dependent:
 
 The corrected identification $\lambda = A^2$ (not $A^{-2}$) was established for the KK-Cone in [Paper 2B, Eq. 7.3.3], where the physical requirement is that $\lambda \to 0$ in the classical limit (deep throat). This identification ensures:
 - $\lambda = 1$ at the brane (maximal coupling)
-- $\lambda \to 0$ at the throat (classical limit)
+- $\lambda \to 0$ at the pinch-off (classical limit)
 - The frame-lag force $F_{\text{lag}} \sim \lambda \cdot T \sim O(1)$ (finite)
 
 Whether the same identification holds for other geometries is an open question.
 
-\begin{remark}[Gravity as Kaluza-Klein zero mode]
+\begin{remark}[Gravity as Kaluza-Klein zero mode on the derived interval]
 \label{rem:kk-gravity}
 In the KK-Cone geometry, four-dimensional gravity is not independently
 postulated or separately quantized. The graviton emerges as the zero mode
-of the five-dimensional metric tensor: $g_{\mu\nu}$ (the 4D graviton),
-$g_{\mu 5}$ (the gravi-photon, identified with the $U(1)$ gauge field in
-the Hopf fiber), and $g_{55}$ (the radion, governing fiber radius
-fluctuations). All three arise from the same 5D pure geometry via
-Kaluza-Klein reduction. The framework therefore does not require a
+of the five-dimensional metric tensor on the derived interval $r \in [0, r_\mathrm{max}]$
+(Eq.\ 4.0.1): $g_{\mu\nu}$ (the 4D graviton),
+$g_{\mu 5}$ (the gravi-photon, identified with the $U(1)$ gauge field arising
+from Berry phase holonomy on $\mathbb{CP}^1$ with first Chern class $c_1 = 1$),
+and $g_{55}$ (the radion, governing interval-width fluctuations $\delta r_\mathrm{max}$).
+All three arise from the same 5D pure geometry via
+Kaluza-Klein reduction on the interval. The framework therefore does not require a
 separate quantum gravity program at the energies relevant to Paper~2's
 predictions --- the graviton is already present as a geometric
 consequence of the $M \times \Sigma$ structure.
 
+No compact circle coordinate $\psi \in [0, 2\pi)$ is introduced. The charge
+quantization previously attributed to the Klein circle is instead a topological
+consequence of $c_1 = 1$ on $\mathbb{CP}^1$, which holds on the open interval
+geometry without any periodicity identification (§3.2, OP-24 resolution).
+
 The one caveat is UV completion: above the KK energy scale
-$E_\mathrm{KK} \sim \hbar c / r_f^*$, the tower of massive KK graviton
+$E_\mathrm{KK} \sim \hbar c / L$, where $L = r_\mathrm{max} \cdot s$ is the physical
+interval length at cosmological scale factor $s$, the tower of massive KK graviton
 modes reintroduces non-renormalizability. This UV issue is standard in
 all Kaluza-Klein theories and does not affect the cosmological-scale
 predictions of this paper, which operate well below $E_\mathrm{KK}$.
@@ -186,7 +219,7 @@ This is convention-independent and follows directly from the structure of the eq
 
 The $R_{\text{Markov}}$ criterion remains valuable as a *geometric diagnostic* (it measures the relative curvature scales), but its evaluation requires resolving the norm conventions described in §4.2.1. This resolution is geometry-specific and is carried out for the KK-Cone in [Paper 2B, §3].
 
-In the KK-Cone geometry specifically, the radial coordinate $r$ has an additional geometric property: **the cone tip is not traversable.** The warp factor $A(r)$ vanishes at the tip ($r = 0$, brane), and the radial direction is non-decreasing along any physical (Lindblad-evolved) trajectory, as a consequence of open-system irreversibility. This non-traversability is not an independent axiom but a theorem of the Fubini-Study geometry of $\Sigma$. The full statement is as follows.
+In the KK-Cone geometry specifically, the radial coordinate $r$ has an additional geometric property: **the interval endpoint is not traversable.** The warp factor $A(r)$ vanishes at $r = r_\mathrm{max}$, and the radial direction is non-decreasing along any physical (Lindblad-evolved) trajectory, as a consequence of open-system irreversibility. This non-traversability is not an independent axiom but a theorem of the Fubini-Study geometry of $\Sigma$. The full statement is as follows.
 
 \begin{proposition}[Non-traversability and warp factor as residual coherence amplitude]
 \label{prop:r-nontraversable}
@@ -229,17 +262,19 @@ Despite the evaluation challenges described in §4.2, several results are establ
 ### §4.3.1 Established Results
 
 | Result | Status | Reference |
-|--------|--------|-----------|
+|--------|--------|-----------| 
+| 5D metric ansatz ds² = A²(r)η_μν dx^μ dx^ν + dr² | **ESTABLISHED** | Eq. 4.0.1 |
 | Coupled geodesic equations on M × Σ | **ESTABLISHED** | Eqs. 4.1.8–4.1.9 |
 | Frame-lag mechanism: M-acceleration sources Σ-response | **ESTABLISHED** | Eq. 4.1.10 |
 | $\lambda \cdot T$ boundedness as consistency requirement | **ESTABLISHED** | Eq. 4.1.11 |
 | $\lambda \to 0$ as convention-independent classical limit | **ESTABLISHED** | Eq. 4.2.2, norm-audit consensus |
 | Cross-term scaling $T \sim W^{-1}$ (general argument) | **ESTABLISHED** (up to geometry-dependent prefactors) | Eq. 4.1.7 |
+| U(1) from Berry phase holonomy c₁=1 on CP¹ (no ψ coordinate) | **ESTABLISHED** | §3.2, OP-24 |
 
 ### §4.3.2 What Requires a Geometry
 
 | Evaluation | Why It Requires Geometry | Companion Paper Reference |
-|-----------|--------------------------|--------------------------|
+|-----------|--------------------------|--------------------------| 
 | Numerical value of $T_{\mu a}$ | Requires mode equation solution | [Paper 2B, §6.2] |
 | Identification $\lambda = f(\text{warp})$ | Requires boundary conditions | [Paper 2B, §6.3] |
 | Whether $\lambda \cdot T = \text{const}$ | Requires explicit cancellation check | [Paper 2B, §6.4] |
@@ -265,7 +300,8 @@ The companion paper [Paper 2B] provides the first such evaluation, specializing 
 - §2.2, Eq. 2.2.7: Action with distinguishability parameter λ
 - §2.2, Eqs. 2.2.16–2.2.30: General Euler-Lagrange equations and frame-lag force
 - §2.3, Definition 2.3.1: Markov transition criterion
-- §3.2: Derived compactification and the Hopf fibration
+- §3.2: Derived compactification — interval geometry and Berry phase U(1)
+- §3.2 (OP-24 resolution): Klein circle not required; c₁=1 on CP¹ gives U(1) and charge quantization
 - [Paper 2B, §6]: KK-Cone specialization of the abstract EOM
 - [Paper 2B, §3]: Markov transition evaluation in the KK-Cone throat
 - [Paper 2B, Appendix A]: Norm convention resolution
@@ -277,9 +313,11 @@ The companion paper [Paper 2B] provides the first such evaluation, specializing 
 | Date | Change |
 |------|--------|
 | 2026-03-10 | Initial draft — Wave 5 extraction from §7.0 (abstract layer) + new §4.2 limitations |
+| 2026-04-09 | v2 — Klein removal patch: added §4.0.1 with explicit 5D ansatz (Eq. 4.0.1); updated KK gravity remark to reference Berry phase holonomy on CP¹ and interval-width radion (not Hopf fiber/fiber radius); verified ψ ∈ [0,2π) not present in abstract EOM; updated §3.2 reference |
 
 ---
 
-**Word count:** ~2,500 (target: 2,000–3,500 for a framework section)
+**Word count:** ~2,800 (target: 2,000–3,500 for a framework section)
 **Math rigor:** All equations referenced to §2.1–§2.2 source material or derived from general arguments
 **Status transparency:** Framework results labeled ESTABLISHED; geometry-dependent items explicitly identified
+**Klein-free status:** ✅ No ψ ∈ [0,2π) coordinate; no Klein circle; U(1) from Berry phase; interval geometry throughout

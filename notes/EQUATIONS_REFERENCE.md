@@ -48,37 +48,45 @@ A field on M x Sigma encoding:
 
 ---
 
-## Axioms
+## Axioms (main.tex numbering — authoritative)
 
-### A1. Born Measure Postulate
-There exists a scalar measure mu(psi) on Sigma such that:
-1. mu is **invariant** under coherence-frame transformations U_{F->F'}
-2. For orthogonal decompositions, mu is **additive** on mutually exclusive alternatives
-3. mu depends only on psi_F and the component |i>_F
-4. mu is **continuous** in the coefficients c_i
+### A1. Frame Invariance
+mu is invariant under coherence relabelings (Eq. relabeling) and frame splittings (Eq. splitting).
+This includes permutation symmetry and phase invariance.
 
-**LaTeX label**: `\label{axiom:born-measure}`
+**LaTeX label**: `\label{thm:born}` (A1) in main.tex §IV.A
 
-### A2. Relational Invariance
-The total weight assigned to a physical alternative is independent of frame:
-```
-mu_F(i) = Sum_{j in J(i)} mu_{F'}(j)
-```
-where J(i) maps outcome i in F to outcomes in F'.
+### A2. Additivity
+mu is additive on mutually orthogonal alternatives.
 
-**LaTeX label**: `\label{axiom:relational-invariance}`
+**LaTeX label**: `\label{thm:born}` (A2) in main.tex §IV.A
 
-### A3. Symmetry Under Coherence Relabelings
-For frame transformations that permute and phase-rotate basis vectors:
-```
-U_{F->F'}: |i>_F -> e^{i theta_i} |pi(i)>_{F'}
-```
-the measure satisfies:
-```
-mu_F(i) = mu_{F'}(pi(i))
-```
+### A3. Frame Locality (Dependence)
+mu_F(i) depends only on |psi>_F and |i>_F — not on the history of frame
+transformations leading to F, nor on probability assignments in other frames.
+This is a locality assumption on Sigma analogous to independence of probability
+assignments from distant reference frames in relativistic theories.
 
-**LaTeX label**: `\label{axiom:symmetry}`
+**LaTeX label**: `\label{thm:born}` (A3) in main.tex §IV.A
+
+### A4. Continuity
+mu_F(i) is continuous in the coefficients c_i.
+
+**LaTeX label**: `\label{thm:born}` (A4) in main.tex §IV.A
+
+### Legacy mapping (EQUATIONS_REFERENCE.md → main.tex)
+Previous versions of this file used a different numbering:
+- Old A1 (Born Measure Postulate) → collapsed into main.tex A1+A2+A3+A4
+- Old A2 (Relational Invariance) → not a separate axiom in main.tex; follows from A1+A2 via splitting
+- Old A3 (Symmetry Under Coherence Relabelings) → subsumed by main.tex A1
+
+**All references in section drafts should use main.tex numbering.**
+
+### Definition 2 addendum (pending integration into main.tex)
+Definition 2 (Coherence Frame) should explicitly state:
+> Information never received by the observer is excluded from the accessible
+> sector on the same footing as information actively decohered into the bath.
+This is currently implicit in A3 (frame locality) but should be stated in the definition.
 
 ---
 

@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{39}%
+\begin{thebibliography}{59}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -209,15 +209,28 @@
   {\bibfield  {journal} {\bibinfo  {journal} {J. Geom. Phys.}\ }\textbf
   {\bibinfo {volume} {38}},\ \bibinfo {pages} {19} (\bibinfo {year}
   {2001})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Petz}\ and\ \citenamefont
-  {Ghinea}(2008)}]{petzIntroductionQuantumFisher2008}%
+\bibitem [{\citenamefont {Kibble}(1979)}]{Kibble1979}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
-  {Petz}}\ and\ \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {Ghinea}},\
-  }\bibfield  {title} {\bibinfo {title} {Introduction to quantum {{Fisher}}
-  information},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {AIP
-  Conf. Proc.}\ }\textbf {\bibinfo {volume} {1021}},\ \bibinfo {pages} {53}
-  (\bibinfo {year} {2008})}\BibitemShut {NoStop}%
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.~W.~B.}\
+  \bibnamefont {Kibble}},\ }\bibfield  {title} {\bibinfo {title}
+  {Geometrization of quantum mechanics},\ }\href
+  {https://doi.org/10.1007/BF01225149} {\bibfield  {journal} {\bibinfo
+  {journal} {Communications in Mathematical Physics}\ }\textbf {\bibinfo
+  {volume} {65}},\ \bibinfo {pages} {189} (\bibinfo {year} {1979})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Ashtekar}\ and\ \citenamefont
+  {Schilling}(1997)}]{AshtekarSchilling1997}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Ashtekar}}\ and\ \bibinfo {author} {\bibfnamefont {T.~A.}\ \bibnamefont
+  {Schilling}},\ }\bibfield  {title} {\bibinfo {title} {Geometrical formulation
+  of quantum mechanics},\ }in\ \href@noop {} {\emph {\bibinfo {booktitle} {On
+  Einstein's Path: Essays in Honor of Engelbert Schucking}}},\ \bibinfo
+  {editor} {edited by\ \bibinfo {editor} {\bibfnamefont {A.}~\bibnamefont
+  {Harvey}}}\ (\bibinfo  {publisher} {Springer},\ \bibinfo {address} {New
+  York},\ \bibinfo {year} {1997})\ pp.\ \bibinfo {pages} {23--65},\ \Eprint
+  {https://arxiv.org/abs/gr-qc/9706069} {arXiv:gr-qc/9706069} \BibitemShut
+  {NoStop}%
 \bibitem [{\citenamefont {Greenberger}\ and\ \citenamefont
   {Yasin}(1988)}]{GreenbergerYasin1988}%
   \BibitemOpen
@@ -246,6 +259,16 @@
   {https://doi.org/10.1103/PhysRevLett.72.3439} {\bibfield  {journal} {\bibinfo
    {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {72}},\ \bibinfo
   {pages} {3439} (\bibinfo {year} {1994})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Kochen}\ and\ \citenamefont
+  {Specker}(1967)}]{kochenSpeckerProblemHiddenVariables1967}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Kochen}}\ and\ \bibinfo {author} {\bibfnamefont {E.~P.}\ \bibnamefont
+  {Specker}},\ }\bibfield  {title} {\bibinfo {title} {The problem of hidden
+  variables in quantum mechanics},\ }\href
+  {https://doi.org/10.1512/iumj.1968.17.17004} {\bibfield  {journal} {\bibinfo
+  {journal} {Journal of Mathematics and Mechanics}\ }\textbf {\bibinfo {volume}
+  {17}},\ \bibinfo {pages} {59} (\bibinfo {year} {1967})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Masanes}\ \emph {et~al.}(2019)\citenamefont
   {Masanes}, \citenamefont {Galley},\ and\ \citenamefont
   {M{\"u}ller}}]{masanesMeasurementPostulatesQuantum2019}%
@@ -258,6 +281,36 @@
   {\bibfield  {journal} {\bibinfo  {journal} {Nat. Commun.}\ }\textbf {\bibinfo
   {volume} {10}},\ \bibinfo {pages} {1361} (\bibinfo {year}
   {2019})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Chen}\ \emph {et~al.}(2025)\citenamefont {Chen},
+  \citenamefont {Chiou},\ and\ \citenamefont
+  {Hsu}}]{chenDemonstrationScullyDruhl2025}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.-H.}\ \bibnamefont
+  {Chen}}, \bibinfo {author} {\bibfnamefont {D.-W.}\ \bibnamefont {Chiou}},\
+  and\ \bibinfo {author} {\bibfnamefont {H.-C.}\ \bibnamefont {Hsu}},\
+  }\bibfield  {title} {\bibinfo {title} {Demonstration of
+  {Scully--Dr\"uhl}-type quantum erasers on quantum computers},\ }\href
+  {https://doi.org/10.1088/1367-2630/ade90e} {\bibfield  {journal} {\bibinfo
+  {journal} {New Journal of Physics}\ }\textbf {\bibinfo {volume} {27}},\
+  \bibinfo {pages} {074503} (\bibinfo {year} {2025})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Yang}\ \emph {et~al.}(2025)\citenamefont {Yang},
+  \citenamefont {Yu}, \citenamefont {Li}, \citenamefont {Zhao}, \citenamefont
+  {Zheng}, \citenamefont {Zhang}, \citenamefont {Li},\ and\ \citenamefont
+  {Guo}}]{yangExperimentalRealizationWheeler2025}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {X.}~\bibnamefont
+  {Yang}}, \bibinfo {author} {\bibfnamefont {X.}~\bibnamefont {Yu}}, \bibinfo
+  {author} {\bibfnamefont {L.}~\bibnamefont {Li}}, \bibinfo {author}
+  {\bibfnamefont {X.}~\bibnamefont {Zhao}}, \bibinfo {author} {\bibfnamefont
+  {T.}~\bibnamefont {Zheng}}, \bibinfo {author} {\bibfnamefont
+  {C.}~\bibnamefont {Zhang}}, \bibinfo {author} {\bibfnamefont {C.-F.}\
+  \bibnamefont {Li}},\ and\ \bibinfo {author} {\bibfnamefont {G.-C.}\
+  \bibnamefont {Guo}},\ }\bibfield  {title} {\bibinfo {title} {Experimental
+  realization of {Wheeler's} delayed-choice experiment with dual selections},\
+  }\href {https://doi.org/10.1007/s11433-024-2587-y} {\bibfield  {journal}
+  {\bibinfo  {journal} {Science China Physics, Mechanics and Astronomy}\
+  }\textbf {\bibinfo {volume} {68}},\ \bibinfo {pages} {250312} (\bibinfo
+  {year} {2025})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Wigner}(1961)}]{wignerRemarksMindbodyQuestion1961}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {E.~P.}\ \bibnamefont
@@ -269,6 +322,84 @@
   \bibinfo {pages} {284--302},\ \bibinfo {note} {reprinted in E.~P.~Wigner,
   \textit{Symmetries and Reflections} (Indiana University Press,
   1967)}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Frauchiger}\ and\ \citenamefont
+  {Renner}(2018)}]{frauchigerQuantumTheoryCannot2018}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
+  {Frauchiger}}\ and\ \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Renner}},\ }\bibfield  {title} {\bibinfo {title} {Quantum theory cannot
+  consistently describe the use of itself},\ }\href
+  {https://doi.org/10.1038/s41467-018-05739-8} {\bibfield  {journal} {\bibinfo
+  {journal} {Nature Communications}\ }\textbf {\bibinfo {volume} {9}},\
+  \bibinfo {pages} {3711} (\bibinfo {year} {2018})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Proietti}\ \emph {et~al.}(2019)\citenamefont
+  {Proietti}, \citenamefont {Pickston}, \citenamefont {Graffitti},
+  \citenamefont {Barrow}, \citenamefont {Kundys}, \citenamefont {Branciard},
+  \citenamefont {Ringbauer},\ and\ \citenamefont
+  {Fedrizzi}}]{proiettiExperimentalTestLocal2019}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Proietti}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Pickston}},
+  \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont {Graffitti}}, \bibinfo
+  {author} {\bibfnamefont {P.}~\bibnamefont {Barrow}}, \bibinfo {author}
+  {\bibfnamefont {D.}~\bibnamefont {Kundys}}, \bibinfo {author} {\bibfnamefont
+  {C.}~\bibnamefont {Branciard}}, \bibinfo {author} {\bibfnamefont
+  {M.}~\bibnamefont {Ringbauer}},\ and\ \bibinfo {author} {\bibfnamefont
+  {A.}~\bibnamefont {Fedrizzi}},\ }\bibfield  {title} {\bibinfo {title}
+  {Experimental test of local observer independence},\ }\href
+  {https://doi.org/10.1126/sciadv.aaw9832} {\bibfield  {journal} {\bibinfo
+  {journal} {Science Advances}\ }\textbf {\bibinfo {volume} {5}},\ \bibinfo
+  {pages} {eaaw9832} (\bibinfo {year} {2019})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Brukner}(2018)}]{bruknerNoGoTheorem2018}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {{\v{C}}.}~\bibnamefont
+  {Brukner}},\ }\bibfield  {title} {\bibinfo {title} {A no-go theorem for
+  observer-independent facts},\ }\href {https://doi.org/10.3390/e20050350}
+  {\bibfield  {journal} {\bibinfo  {journal} {Entropy}\ }\textbf {\bibinfo
+  {volume} {20}},\ \bibinfo {pages} {350} (\bibinfo {year} {2018})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Hance}\ \emph {et~al.}(2023)\citenamefont {Hance},
+  \citenamefont {Ji},\ and\ \citenamefont
+  {Hofmann}}]{hanceContextualityCoherencesQuantum2023}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~R.}\ \bibnamefont
+  {Hance}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Ji}},\ and\
+  \bibinfo {author} {\bibfnamefont {H.~F.}\ \bibnamefont {Hofmann}},\
+  }\bibfield  {title} {\bibinfo {title} {Contextuality, coherences, and quantum
+  cheshire cats},\ }\href {https://doi.org/10.1088/1367-2630/ad0bd4} {\bibfield
+   {journal} {\bibinfo  {journal} {New Journal of Physics}\ }\textbf {\bibinfo
+  {volume} {25}},\ \bibinfo {pages} {113028} (\bibinfo {year}
+  {2023})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Hance}\ \emph {et~al.}(2024)\citenamefont {Hance},
+  \citenamefont {Ladyman},\ and\ \citenamefont
+  {Rarity}}]{hanceDynamicalQuantumCheshire2024}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~R.}\ \bibnamefont
+  {Hance}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Ladyman}},\
+  and\ \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Rarity}},\
+  }\bibfield  {title} {\bibinfo {title} {Is the dynamical quantum cheshire cat
+  detectable?},\ }\href {https://doi.org/10.1088/1367-2630/ad6476} {\bibfield
+  {journal} {\bibinfo  {journal} {New Journal of Physics}\ }\textbf {\bibinfo
+  {volume} {26}},\ \bibinfo {pages} {073038} (\bibinfo {year}
+  {2024})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Rybotycki}\ \emph {et~al.}(2026)\citenamefont
+  {Rybotycki}, \citenamefont {Bia{\l}ecki}, \citenamefont {Batle},
+  \citenamefont {Zglinicki}, \citenamefont {Szereszewski}, \citenamefont
+  {Belzig},\ and\ \citenamefont
+  {Bednorz}}]{rybotyckiIdenticalIndependentQuantum2026}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
+  {Rybotycki}}, \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
+  {Bia{\l}ecki}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Batle}},
+  \bibinfo {author} {\bibfnamefont {B.}~\bibnamefont {Zglinicki}}, \bibinfo
+  {author} {\bibfnamefont {A.}~\bibnamefont {Szereszewski}}, \bibinfo {author}
+  {\bibfnamefont {W.}~\bibnamefont {Belzig}},\ and\ \bibinfo {author}
+  {\bibfnamefont {A.}~\bibnamefont {Bednorz}},\ }\bibfield  {title} {\bibinfo
+  {title} {Identical, independent quantum weak measurements violate objective
+  realism},\ }\bibfield  {journal} {\bibinfo  {journal} {arXiv preprint
+  arXiv:2603.22020}\ }\href {https://doi.org/10.48550/arXiv.2603.22020}
+  {10.48550/arXiv.2603.22020} (\bibinfo {year} {2026}),\ \Eprint
+  {https://arxiv.org/abs/2603.22020} {arXiv:2603.22020} \BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Einstein}\ \emph {et~al.}(1935)\citenamefont
   {Einstein}, \citenamefont {Podolsky},\ and\ \citenamefont
   {Rosen}}]{einsteinCanQuantumMechanical1935}%
@@ -281,6 +412,63 @@
   {https://doi.org/10.1103/PhysRev.47.777} {\bibfield  {journal} {\bibinfo
   {journal} {Physical Review}\ }\textbf {\bibinfo {volume} {47}},\ \bibinfo
   {pages} {777} (\bibinfo {year} {1935})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Misra}\ and\ \citenamefont
+  {Sudarshan}(1977)}]{MisraSudarshan1977}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.}~\bibnamefont
+  {Misra}}\ and\ \bibinfo {author} {\bibfnamefont {E.~C.~G.}\ \bibnamefont
+  {Sudarshan}},\ }\bibfield  {title} {\bibinfo {title} {The {Zeno}'s paradox in
+  quantum theory},\ }\href {https://doi.org/10.1063/1.523304} {\bibfield
+  {journal} {\bibinfo  {journal} {Journal of Mathematical Physics}\ }\textbf
+  {\bibinfo {volume} {18}},\ \bibinfo {pages} {756} (\bibinfo {year}
+  {1977})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Facchi}\ and\ \citenamefont
+  {Pascazio}(2002)}]{FacchiPascazio2002}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
+  {Facchi}}\ and\ \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Pascazio}},\ }\bibfield  {title} {\bibinfo {title} {Quantum {Zeno}
+  subspaces},\ }\href {https://doi.org/10.1103/PhysRevLett.89.080401}
+  {\bibfield  {journal} {\bibinfo  {journal} {Physical Review Letters}\
+  }\textbf {\bibinfo {volume} {89}},\ \bibinfo {pages} {080401} (\bibinfo
+  {year} {2002})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Kofman}\ and\ \citenamefont
+  {Kurizki}(2000)}]{KofmanKurizki2000}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.~G.}\ \bibnamefont
+  {Kofman}}\ and\ \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
+  {Kurizki}},\ }\bibfield  {title} {\bibinfo {title} {Acceleration of quantum
+  decay processes by frequent observations},\ }\href
+  {https://doi.org/10.1038/35014537} {\bibfield  {journal} {\bibinfo  {journal}
+  {Nature}\ }\textbf {\bibinfo {volume} {405}},\ \bibinfo {pages} {546}
+  (\bibinfo {year} {2000})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Elga}(2000)}]{Elga2000}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Elga}},\ }\bibfield  {title} {\bibinfo {title} {Self-locating belief and the
+  {Sleeping Beauty} problem},\ }\href {https://doi.org/10.1093/analys/60.2.143}
+  {\bibfield  {journal} {\bibinfo  {journal} {Analysis}\ }\textbf {\bibinfo
+  {volume} {60}},\ \bibinfo {pages} {143} (\bibinfo {year} {2000})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Winkler}(2017)}]{Winkler2017}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
+  {Winkler}},\ }\bibfield  {title} {\bibinfo {title} {The {Sleeping Beauty}
+  controversy},\ }\href {https://doi.org/10.4169/amer.math.monthly.124.7.579}
+  {\bibfield  {journal} {\bibinfo  {journal} {The American Mathematical
+  Monthly}\ }\textbf {\bibinfo {volume} {124}},\ \bibinfo {pages} {579}
+  (\bibinfo {year} {2017})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Sebens}\ and\ \citenamefont
+  {Carroll}(2018)}]{SebensCarroll2018}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.~T.}\ \bibnamefont
+  {Sebens}}\ and\ \bibinfo {author} {\bibfnamefont {S.~M.}\ \bibnamefont
+  {Carroll}},\ }\bibfield  {title} {\bibinfo {title} {Self-locating uncertainty
+  and the origin of probability in {Everettian} quantum mechanics},\ }\href
+  {https://doi.org/10.1093/bjps/axw004} {\bibfield  {journal} {\bibinfo
+  {journal} {The British Journal for the Philosophy of Science}\ }\textbf
+  {\bibinfo {volume} {69}},\ \bibinfo {pages} {25} (\bibinfo {year}
+  {2018})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Freidlin}\ and\ \citenamefont
   {Wentzell}(2012)}]{FreidlinWentzell2012}%
   \BibitemOpen
@@ -357,6 +545,14 @@
   {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {135}},\
   \bibinfo {pages} {010201} (\bibinfo {year} {2025})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont
+  {Healey}(2017)}]{healeyQuantumRevolutionPhilosophy2017}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Healey}},\ }\href {https://doi.org/10.1093/oso/9780198714057.001.0001}
+  {\emph {\bibinfo {title} {The Quantum Revolution in Philosophy}}}\ (\bibinfo
+  {publisher} {Oxford University Press},\ \bibinfo {address} {Oxford},\
+  \bibinfo {year} {2017})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont
   {Everett}(1957)}]{everettRelativeStateFormulation1957}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.}~\bibnamefont
@@ -374,6 +570,14 @@
   {{Quantum Mechanics}}}}}\ (\bibinfo  {publisher} {Princeton University
   Press},\ \bibinfo {address} {Princeton},\ \bibinfo {year} {1973})\BibitemShut
   {NoStop}%
+\bibitem [{\citenamefont {Bohm}(1952)}]{Bohm1952}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
+  {Bohm}},\ }\bibfield  {title} {\bibinfo {title} {A suggested interpretation
+  of the quantum theory in terms of ``hidden'' variables. {I}},\ }\href
+  {https://doi.org/10.1103/PhysRev.85.166} {\bibfield  {journal} {\bibinfo
+  {journal} {Physical Review}\ }\textbf {\bibinfo {volume} {85}},\ \bibinfo
+  {pages} {166} (\bibinfo {year} {1952})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Bartlett}\ \emph {et~al.}(2007)\citenamefont
   {Bartlett}, \citenamefont {Rudolph},\ and\ \citenamefont
   {Spekkens}}]{bartlettReferenceFramesSuperselection2007}%
@@ -434,6 +638,19 @@
   {https://doi.org/10.1007/s10701-018-0138-3} {\bibfield  {journal} {\bibinfo
   {journal} {Foundations of Physics}\ }\textbf {\bibinfo {volume} {48}},\
   \bibinfo {pages} {135} (\bibinfo {year} {2018})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Rovelli}(2004)}]{rovelliQuantumGravity2004}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {Rovelli}},\ }\href {https://doi.org/10.1017/CBO9780511755804} {\emph
+  {\bibinfo {title} {Quantum Gravity}}}\ (\bibinfo  {publisher} {Cambridge
+  University Press},\ \bibinfo {year} {2004})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Rovelli}(2002)}]{rovelliPartialObservables2002}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {Rovelli}},\ }\bibfield  {title} {\bibinfo {title} {Partial observables},\
+  }\href {https://doi.org/10.1103/PhysRevD.65.124013} {\bibfield  {journal}
+  {\bibinfo  {journal} {Physical Review D}\ }\textbf {\bibinfo {volume} {65}},\
+  \bibinfo {pages} {124013} (\bibinfo {year} {2002})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Arkani-Hamed}\ and\ \citenamefont
   {Trnka}(2014)}]{arkanihamedAmplituhedron2013}%
   \BibitemOpen

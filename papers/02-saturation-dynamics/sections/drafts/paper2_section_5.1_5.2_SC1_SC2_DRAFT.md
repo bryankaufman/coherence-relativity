@@ -427,7 +427,7 @@ $$
 \tag{5.2.8.4}
 $$
 
-This is a *small* value, meaning the extra dimension is only $\sim$20% of a single e-folding. The physical size is $L_* = \mu L_* / \mu \approx 13 \, \mu\mathrm{m}$ for typical $\mu$ values.
+This is a *small* value, meaning the extra dimension is only $\sim$20% of a single e-folding. The physical size is $L_* = \mu L_* / \mu \approx 21.8 \, \mu\mathrm{m}$ for typical $\mu$ values.
 
 ### §5.2.8.4 KK Graviton Spectrum and Fifth-Force Bound
 
