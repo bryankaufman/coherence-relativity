@@ -125,12 +125,39 @@ If the Hopf bundle structure imposes gauge constraints on SM fields (e.g., coupl
 
 This needs calculation: does c₁ = 1 on CP¹ shift the SM vacuum energy by a calculable, finite amount?
 
+## Finding 8: Vacuum Entanglement Dynamics (Pseudoparticle Correlations)
+
+**Origin:** Bryan (2026-04-10 ~10:24 UTC).
+
+The zero-point pseudoparticles are themselves entangled (Reeh-Schlieder). The vacuum is not a product state on Σ_total. This entanglement structure is distinct from the energy of the fluctuations.
+
+### The contribution chain:
+1. Zero-point fluctuations produce virtual particle pairs
+2. These pairs are EPR-entangled → non-trivial configuration on Σ_total
+3. The vacuum entanglement has an entropy: S_ent ~ A/ℓ_P² (area law)
+4. As the universe expands: new horizon entanglement created, existing entanglement diluted
+5. The RATE of entanglement change couples to M via T_{MΣ}
+
+This is NOT the zero-point energy (½ℏω sum), NOT Casimir (boundary shift), and NOT bulk mode counting. It's the CORRELATIONS between virtual particles.
+
+### Connection to Jacobson (1995)
+Jacobson derived Einstein's equations from δQ = TdS applied to entanglement entropy at local Rindler horizons. If gravity = thermodynamics of entanglement, then vacuum entanglement dynamics feed directly into the gravitational sector as an entropy production rate, not as a vacuum energy.
+
+### Possible unification of Levels 3 and 4
+- Level 3 (Machian frame-dragging): geometric description via T_{MΣ}
+- Level 4 (vacuum entanglement dynamics): thermodynamic description via δQ = TdS
+- These may be the SAME process from different perspectives
+- If unified: dark energy = gravitational thermodynamics of ongoing vacuum entanglement production
+- Rate set by H₀ → coincidence problem dissolves
+
 ### Updated coupling hierarchy
 - Level 1: Casimir (static topology → BCs → finite vacuum energy shift)
 - Level 1b: Topological zero-point (Σ gauge structure → SM mode modification)
 - Level 1c: Radion zero-point (scalar field on M from Σ breathing mode)
 - Level 2: FS curvature (enters decoherence, NOT gravity — category error)
 - Level 3: Machian frame-dragging (dynamic, ~ H₀² M_Pl²)
+- Level 4: Vacuum entanglement dynamics (pseudoparticle correlations → entropy current)
+- Levels 3+4 may unify: entanglement entropy current = frame-dragging source
 
 ---
 
