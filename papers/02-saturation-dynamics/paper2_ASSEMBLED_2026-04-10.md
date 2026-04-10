@@ -3042,7 +3042,7 @@ The selection of $c_1 = 1$ over higher Chern numbers is a minimality argument. W
 
 **Status:** v2 DRAFT — 2026-04-10. Klein removal applied throughout; geometric Λ from §5.3 v2 incorporated.
 **Supersedes:** `paper2_section_3.3_constraints_DRAFT.md`
-**Changes from v1:** (1) Compactification language updated to interval geometry. (2) Klein S¹ added to ruled-out topologies. (3) KK mode expansion replaced with volcano potential spectrum. (4) Cosmological constant section updated: geometric Λ primary, Casimir correction secondary. (5) Moduli section updated: shape frozen by $k^2 = 2$, not just "dynamically determined."
+**Changes from v1:** (1) Compactification language updated to interval geometry. (2) Klein S¹ added to ruled-out topologies. (3) KCR mode expansion replaced with volcano potential spectrum. (4) Cosmological constant section updated: geometric Λ primary, Casimir correction secondary. (5) Moduli section updated: shape frozen by $k^2 = 2$, not just "dynamically determined."
 
 ---
 
@@ -3058,7 +3058,7 @@ This section answers that question by tracing the cascade of constraints that fl
 
 1. The landscape of possible topologies is reduced from $\sim 10^{500}$ to a single geometric outcome: the bounded interval $r \in [0, r_{\max}]$ with one scale parameter.
 2. The shape modulus is zero: $r_{\max}$ is topologically frozen by $k^2 = 2$.
-3. The KK mode structure is fixed by the volcano potential on the interval.
+3. The KCR mode structure is fixed by the volcano potential on the interval.
 4. The cosmological constant has a geometric primary source and a Casimir quantum correction.
 5. The scale $s$ (mapping $r$ to meters) is determined by the Friedmann balance at each epoch.
 
@@ -3167,35 +3167,35 @@ with the **volcano potential**
 $$V(r) = -3 + \tfrac{3}{2}\tan^2(\sqrt{2}\,r)$$
 (Eq. 3.3.7)
 
-This potential arises from the warp factor $A(r) = \cos(\sqrt{2}\,r)$ (standard warped KK reduction). It has a minimum of $V(0) = -3$ at the brane and diverges as $r \to r_{\max}$.
+This potential arises from the warp factor $A(r) = \cos(\sqrt{2}\,r)$ (standard warped KCR reduction). It has a minimum of $V(0) = -3$ at the brane and diverges as $r \to r_{\max}$.
 
 ### 3.3.4.2 KK Spectrum
 
-The KK graviton spectrum from (3.3.6)–(3.3.7) is:
+The KCR graviton spectrum from (3.3.6)–(3.3.7) is:
 
 | Mode | $m^2$ (dimless) | $m$ (dimless) | Identity | $\lambda$ at $s \sim 50\,\mu\mathrm{m}$ |
 |------|-----------------|---------------|----------|------------------------------------------|
 | 0 | 0 | 0 | Graviton zero mode | $\infty$ (massless, 4D gravity) |
 | ~0 | 0.01 | 0.10 | Radion (OP-5, resolved) | ~2600 μm |
-| 1 | 20.1 | 4.48 | First KK graviton | **13.3 μm** |
-| 2 | 56.2 | 7.50 | Second KK graviton | 7.9 μm |
-| 3 | 108.4 | 10.41 | Third KK graviton | 5.7 μm |
-| 4 | 176.7 | 13.29 | Fourth KK graviton | 4.5 μm |
+| 1 | 20.1 | 4.48 | First KCR graviton | **13.3 μm** |
+| 2 | 56.2 | 7.50 | Second KCR graviton | 7.9 μm |
+| 3 | 108.4 | 10.41 | Third KCR graviton | 5.7 μm |
+| 4 | 176.7 | 13.29 | Fourth KCR graviton | 4.5 μm |
 
-The graviton zero mode ($m=0$) is normalizable and localized near the brane (half-weight at $r/r_{\max} \approx 22.6\%$). The near-zero mode is the radion — the breathing mode of $r_{\max}$ — identified by a 71% wavefunction overlap. It is OP-5's stabilized radion, not a KK graviton.
+The graviton zero mode ($m=0$) is normalizable and localized near the brane (half-weight at $r/r_{\max} \approx 22.6\%$). The near-zero mode is the radion — the breathing mode of $r_{\max}$ — identified by a 71% wavefunction overlap. It is OP-5's stabilized radion, not a KCR graviton.
 
-The first genuine KK graviton has $\lambda_1 \approx 13.3\,\mu\mathrm{m}$, safely below the 44 μm ISL bound (Lee et al. 2020). ✓
+The first genuine KCR graviton has $\lambda_1 \approx 13.3\,\mu\mathrm{m}$, safely below the 44 μm ISL bound (Lee et al. 2020). ✓
 
 ### 3.3.4.3 Contrast with Klein S¹
 
-**Klein $S^1$** gives an exactly linear KK spectrum: $m_n = n/R$, hence $m_n/m_1 = 1, 2, 3, 4, \ldots$
+**Klein $S^1$** gives an exactly linear KCR spectrum: $m_n = n/R$, hence $m_n/m_1 = 1, 2, 3, 4, \ldots$
 
 **Derived compactification** gives a non-linear spectrum from the volcano potential: $m_n/m_1 \approx 1, 1.67, 2.32, 2.97, \ldots$
 
-$$\boxed{\text{Testable prediction: non-linear KK mode spacing distinguishes derived compactification from Klein.}}$$
+$$\boxed{\text{Testable prediction: non-linear KCR mode spacing distinguishes derived compactification from Klein.}}$$
 (Eq. 3.3.8)
 
-If KK graviton resonances are ever detected, the spacing pattern is a clean, model-independent discriminator.
+If KCR graviton resonances are ever detected, the spacing pattern is a clean, model-independent discriminator.
 
 ### 3.3.4.4 Charge Quantization (Klein-Free)
 
@@ -3271,7 +3271,7 @@ The following remain open, as in v1, with updated status:
 | **Shape moduli** | $h^{2,1} \sim 100$–$1000$ | 0 (circle) | **0 (topologically frozen)** |
 | **Scale moduli** | $h^{1,1} \sim 100$–$300$ | Free $R$ — stabilization required | Cosmological attractor |
 | **Charge quantization** | From flux quantization | From $p_5 = n\hbar/R$ | From Berry phase $c_1 = 1$ on $\mathbb{CP}^1$ |
-| **KK spectrum** | Hodge structure | Linear $m_n = n/R$ | Non-linear (volcano potential) |
+| **KCR spectrum** | Hodge structure | Linear $m_n = n/R$ | Non-linear (volcano potential) |
 | **Cosmological constant** | Landscape; anthropic | Casimir on $S^1$ | Geometric primary + Casimir correction |
 | **Dimension count** | 10D (6 compact) | 5D + Klein $S^1 = 6$D? | **5D (4 + r)** |
 | **Landscape size** | $\sim 10^{500}$ | 1 (but $R$ free) | **1** (scale from Friedmann) |
@@ -3310,7 +3310,7 @@ $$\boxed{\text{Degrees of freedom: String theory } \gtrsim 10^{500};\quad \text{
 
 3. **Scale resolution.** The physical scale is a cosmological attractor — no Goldberger-Wise potential needed.
 
-4. **Predictive power.** Non-linear KK mode spacing ($1, 1.67, 2.32, 2.97$) is a sharp, falsifiable prediction distinguishing CR from every prior compactification scheme.
+4. **Predictive power.** Non-linear KCR mode spacing ($1, 1.67, 2.32, 2.97$) is a sharp, falsifiable prediction distinguishing CR from every prior compactification scheme.
 
 5. **Charge quantization.** Topological (Berry phase) rather than dimensional (Klein momentum).
 
@@ -3332,7 +3332,7 @@ $$\boxed{\text{Degrees of freedom: String theory } \gtrsim 10^{500};\quad \text{
 
 3. **Scale is a cosmological attractor:** determined by the Friedmann balance at each epoch. No stabilization potential needed.
 
-4. **KK spectrum is non-linear:** from the volcano potential, giving $m_n/m_1 \approx 1, 1.67, 2.32, 2.97$ — a testable prediction distinguishing CR from Klein.
+4. **KCR spectrum is non-linear:** from the volcano potential, giving $m_n/m_1 \approx 1, 1.67, 2.32, 2.97$ — a testable prediction distinguishing CR from Klein.
 
 5. **$\Lambda_{\mathrm{eff}}$ has a geometric primary source:** $\rho_{\mathrm{geom,4D}} = +3.534 \times M_5^3 k^2/s > 0$ classically. Casimir is a correction.
 
@@ -3380,7 +3380,7 @@ $$\boxed{\text{Degrees of freedom: String theory } \gtrsim 10^{500};\quad \text{
 **v2 changes (2026-04-09):**
 - ψ ∈ [0,2π) not present in this file (confirmed — abstract EOM uses ξ throughout)
 - 5D metric ansatz added explicitly (§4.0.1 new)
-- KK gravity remark updated: U(1) from Berry phase holonomy on CP¹, not Hopf fiber; radion governs interval-width fluctuations, not fiber radius
+- KCR gravity remark updated: U(1) from Berry phase holonomy on CP¹, not Hopf fiber; radion governs interval-width fluctuations, not fiber radius
 - References updated: §3.2 entry no longer says "Hopf fibration"
 
 ---
@@ -3565,9 +3565,9 @@ quantization previously attributed to the Klein circle is instead a topological
 consequence of $c_1 = 1$ on $\mathbb{CP}^1$, which holds on the open interval
 geometry without any periodicity identification (§3.2, OP-24 resolution).
 
-The one caveat is UV completion: above the KK energy scale
+The one caveat is UV completion: above the KCR energy scale
 $E_\mathrm{KK} \sim \hbar c / L$, where $L = r_\mathrm{max} \cdot s$ is the physical
-interval length at cosmological scale factor $s$, the tower of massive KK graviton
+interval length at cosmological scale factor $s$, the tower of massive KCR graviton
 modes reintroduces non-renormalizability. This UV issue is standard in
 all Kaluza-Klein theories and does not affect the cosmological-scale
 predictions of this paper, which operate well below $E_\mathrm{KK}$.
@@ -3685,7 +3685,7 @@ The companion paper [Paper 2B] provides the first such evaluation, specializing 
 | Date | Change |
 |------|--------|
 | 2026-03-10 | Initial draft — Wave 5 extraction from §7.0 (abstract layer) + new §4.2 limitations |
-| 2026-04-09 | v2 — Klein removal patch: added §4.0.1 with explicit 5D ansatz (Eq. 4.0.1); updated KK gravity remark to reference Berry phase holonomy on CP¹ and interval-width radion (not Hopf fiber/fiber radius); verified ψ ∈ [0,2π) not present in abstract EOM; updated §3.2 reference |
+| 2026-04-09 | v2 — Klein removal patch: added §4.0.1 with explicit 5D ansatz (Eq. 4.0.1); updated KCR gravity remark to reference Berry phase holonomy on CP¹ and interval-width radion (not Hopf fiber/fiber radius); verified ψ ∈ [0,2π) not present in abstract EOM; updated §3.2 reference |
 
 ---
 
@@ -4077,7 +4077,7 @@ None of these steps can be performed without a metric. The abstract framework pr
 
 Computing the boundary entanglement entropy directly (to compare with the RT prediction) requires:
 1. A UV cutoff — which depends on the specific field theory on the boundary
-2. The specific field content — determined by the geometry through the KK reduction
+2. The specific field content — determined by the geometry through the KCR reduction
 3. The state — determined by the boundary conditions and the bulk solution
 
 The framework specifies the *type* of theory (a quantum field theory encoded by $\Phi$) but not its specific content.
@@ -4093,7 +4093,7 @@ Step (1) requires the explicit equations of motion — which are abstract at the
 
 Step (2) requires the identification $\lambda = f(\text{geometry})$ — which is geometry-dependent (§4, §4.2.3).
 
-Step (3) requires knowing the boundary theory — which is determined by the KK reduction on the specific compact fiber.
+Step (3) requires knowing the boundary theory — which is determined by the KCR reduction on the specific compact fiber.
 
 ### §5.2.4 Boundary Correlators
 
@@ -4112,7 +4112,7 @@ All three steps are geometry-specific.
 |--------------------|------------------|-----------------|
 | RT surfaces | Full metric, extremal surface PDE | ❌ Requires geometry |
 | Entanglement entropy | UV cutoff, field content, state | ❌ Requires geometry |
-| Beta function matching | Explicit EOM, $\lambda(\xi)$, KK reduction | ❌ Requires geometry |
+| Beta function matching | Explicit EOM, $\lambda(\xi)$, KCR reduction | ❌ Requires geometry |
 | Boundary correlators | Full metric, bulk wave equation | ❌ Requires geometry |
 | Dictionary structure | M × Σ decomposition, $T_{M\Sigma}$, $\lambda$ | ✅ Framework level |
 | Three departures from AdS/CFT | General arguments | ✅ Framework level |
@@ -4447,7 +4447,7 @@ V_{\text{Newton}}(\ell) = -\frac{G_4 M}{\ell} + O\left(\left(\frac{\ell}{\mu^{-1
 \tag{5.2.6}
 $$
 
-The first term is the standard Newtonian result. The second term represents KK corrections—modifications due to the excitation of massive KK graviton modes in the bulk. These corrections are suppressed as $(\ell/\mu^{-1})^2$, which for $\ell \ll \mu^{-1}$ is very small.
+The first term is the standard Newtonian result. The second term represents KK corrections—modifications due to the excitation of massive KCR graviton modes in the bulk. These corrections are suppressed as $(\ell/\mu^{-1})^2$, which for $\ell \ll \mu^{-1}$ is very small.
 
 **Observational constraint (benchmark form):** At distances where fifth-force experiments are most sensitive (tens of microns), KK corrections must remain below current exclusion limits.
 
@@ -4464,7 +4464,7 @@ $$
 
 **What SC2 determines:**
 - The warp profile $f(r)$ must create an effective potential well that traps the graviton zero mode. For the exponential form $f(r) = e^{-\\mu|r|}$, the parameter $\\mu$ is constrained by fifth-force tests at the tens-of-microns scale (for order-one Yukawa strength).
-- The existence of a mass gap: the first excited graviton KK mode has a mass $m_1 \sim \mu$, which suppresses its production at low energies.
+- The existence of a mass gap: the first excited graviton KCR mode has a mass $m_1 \sim \mu$, which suppresses its production at low energies.
 
 **What SC2 does not determine:**
 - The specific functional form of $f(r)$; while $f(r) = e^{-\mu|r|}$ is a concrete example, other localization profiles (Gaussian, power-law with exponent $> 1$, etc.) can also satisfy SC2.
@@ -4596,7 +4596,7 @@ with $A(r) = e^{-\mu r}$ for $r \in [0, L_*]$. Unlike the Randall-Sundrum confor
 
 ### §5.2.8.2 Graviton Zero-Mode Normalization
 
-The effective 4D Planck mass is determined by the Gauss-Codazzi KK reduction:
+The effective 4D Planck mass is determined by the Gauss-Codazzi KCR reduction:
 
 $$
 M_{\text{Pl}}^2 = M_5^3 \int_0^{L_*} n(r) \cdot a(r) \, \mathrm{d}r = M_5^3 \int_0^{L_*} A(r) \, \mathrm{d}r
@@ -4625,7 +4625,7 @@ This is a *small* value, meaning the extra dimension is only $\sim$20% of a sing
 
 ### §5.2.8.4 KK Graviton Spectrum and Fifth-Force Bound
 
-The massive KK graviton modes satisfy the Sturm-Liouville equation:
+The massive KCR graviton modes satisfy the Sturm-Liouville equation:
 
 $$
 -(A^3 f')' = m^2 A^3 f
@@ -4653,7 +4653,7 @@ $$
 \tag{5.2.8.8}
 $$
 
-**Physical interpretation:** The non-conformal SC2 metric produces a *smaller* self-consistent $\mu L_*$ than the conformal case would, which pushes the KK mass gap *higher* and the Yukawa range *shorter*. This is the mechanism by which $p = 1$ (seemingly "less localized" than $p = 2$) actually produces a *stronger* fifth-force suppression. The key is that small $p$ demands small $\mu L_*$ for self-consistency, and small $\mu L_*$ means heavy KK modes.
+**Physical interpretation:** The non-conformal SC2 metric produces a *smaller* self-consistent $\mu L_*$ than the conformal case would, which pushes the KCR mass gap *higher* and the Yukawa range *shorter*. This is the mechanism by which $p = 1$ (seemingly "less localized" than $p = 2$) actually produces a *stronger* fifth-force suppression. The key is that small $p$ demands small $\mu L_*$ for self-consistency, and small $\mu L_*$ means heavy KCR modes.
 
 ### §5.2.8.5 Radion Normalization
 
@@ -4666,7 +4666,7 @@ $$
 
 The weight is $n \cdot a^3 = 1 \cdot A^3 = A^3$ (not $A^2$ as would follow from a naive conformal generalization; see the Radion Z_L Correction assessment). The RS1 cross-check gives $Z_L^{\text{RS1}} = \tfrac{3}{2} M_5^3 \mu (1 - e^{-4\mu L_*})$, matching the Goldberger-Wise result.
 
-The radion contributes a tier-2 fifth force with Planck-suppressed coupling ($\alpha_{\text{rad}} \sim 10^{-58}$), which is negligible compared to the tier-1 KK graviton contribution and far below experimental sensitivity.
+The radion contributes a tier-2 fifth force with Planck-suppressed coupling ($\alpha_{\text{rad}} \sim 10^{-58}$), which is negligible compared to the tier-1 KCR graviton contribution and far below experimental sensitivity.
 
 ### §5.2.8.6 Summary of Quantitative SC2 Results
 
@@ -4675,7 +4675,7 @@ The radion contributes a tier-2 fifth force with Planck-suppressed coupling ($\a
 | Graviton weight $p$ | 1 | 2 |
 | Self-consistent $\mu L_*$ | 0.2007 | (depends on $R_{\text{DM}}$) |
 | Extra-dimension size $L_*$ | $\sim 13 \, \mu\mathrm{m}$ | $\sim$ mm-scale |
-| First KK mass $m_1/\mu$ | $\approx 15.7$ | $\approx 3.83$ |
+| First KCR mass $m_1/\mu$ | $\approx 15.7$ | $\approx 3.83$ |
 | First KK Yukawa range | $\approx 4.3 \, \mu\mathrm{m}$ | $\sim 100 \, \mu\mathrm{m}$ |
 | H1 verdict | **PASS** | (would need checking) |
 | Radion weight | $A^3$ | $A^4$ |
@@ -4958,7 +4958,7 @@ This is the scale at which the Casimir quantum correction is of order $\Lambda_{
 
 ### § 5.3.4.2: Self-Consistency of the Massless-Field Approximation
 
-At $L \sim 55\,\mu\mathrm{m}$, the KK energy scale is $E_{\mathrm{KK}} = \hbar c / L \approx 3.5\,\mathrm{meV}$. Self-consistent iteration (computing $f_{\mathrm{eff}}$ at each $L^*$ and re-solving) converges to:
+At $L \sim 55\,\mu\mathrm{m}$, the KCR energy scale is $E_{\mathrm{KK}} = \hbar c / L \approx 3.5\,\mathrm{meV}$. Self-consistent iteration (computing $f_{\mathrm{eff}}$ at each $L^*$ and re-solving) converges to:
 
 | Quantity | Full SM ($f = 54$) | Self-consistent |
 |---|---|---|
@@ -4972,20 +4972,20 @@ Three open subtleties remain: (1) gluon confinement, (2) neutrino mass hierarchy
 
 ### § 5.3.4.3: ISL Bound Comparison (Klein-Free)
 
-The gravitational ISL comparison for the derived interval geometry uses the first genuine KK graviton, not a Yukawa correction from a Klein circle. The graviton Schrödinger equation on $[0, r_{\max}]$ with volcano potential
+The gravitational ISL comparison for the derived interval geometry uses the first genuine KCR graviton, not a Yukawa correction from a Klein circle. The graviton Schrödinger equation on $[0, r_{\max}]$ with volcano potential
 
 $$V(r) = -3 + \tfrac{3}{2}\tan^2(\sqrt{2}\,r)$$
 
-gives the KK mode spectrum:
+gives the KCR mode spectrum:
 
 | Mode | $m^2$ (dimless) | Identity | $\lambda$ (μm) at $s \sim 50\,\mu\mathrm{m}$ |
 |------|-----------------|----------|----------------------------------------------|
 | 0 | 0 | Graviton zero mode | $\infty$ (massless) |
 | ~0 | 0.01 | Radion (OP-5, resolved) | ~2600 |
-| 1 | 20.1 | First KK graviton | **13.3 μm** |
-| 2 | 56.2 | Second KK graviton | 7.9 μm |
+| 1 | 20.1 | First KCR graviton | **13.3 μm** |
+| 2 | 56.2 | Second KCR graviton | 7.9 μm |
 
-The near-zero mode (71% overlap with radion wavefunction) is the breathing mode of $r_{\max}$ — it is OP-5's stabilized radion appearing in the spectrum, not a KK graviton. The first genuine KK graviton is at $\lambda_1 \approx 13.3\,\mu\mathrm{m}$, safely below the 44 μm ISL bound (Lee et al. 2020). ✓
+The near-zero mode (71% overlap with radion wavefunction) is the breathing mode of $r_{\max}$ — it is OP-5's stabilized radion appearing in the spectrum, not a KCR graviton. The first genuine KCR graviton is at $\lambda_1 \approx 13.3\,\mu\mathrm{m}$, safely below the 44 μm ISL bound (Lee et al. 2020). ✓
 
 **Non-linear mode spacing:** $m_n/m_1 \approx 1, 1.67, 2.32, 2.97$ (non-linear). This distinguishes derived compactification from Klein's $S^1$ (which gives exactly linear spacing $1, 2, 3, 4$). This is a **new testable prediction**.
 
@@ -5088,7 +5088,7 @@ All three conditions are mutually consistent in the Klein-free picture.
 
 ## § 5.3.9: New Testable Prediction — Non-Linear KK Mode Spacing
 
-The Klein-free derived compactification predicts non-linear KK graviton mass ratios:
+The Klein-free derived compactification predicts non-linear KCR graviton mass ratios:
 
 $$m_n/m_1 \approx 1,\; 1.67,\; 2.32,\; 2.97 \quad \text{(derived compactification)}$$
 
@@ -5096,7 +5096,7 @@ vs. Klein $S^1$:
 
 $$m_n/m_1 = 1,\; 2,\; 3,\; 4 \quad \text{(Klein circle)}$$
 
-If KK graviton resonances are detected in future experiments, the spacing pattern distinguishes CR's derived compactification from Klein's ad hoc circle. This is a clean, model-independent prediction.
+If KCR graviton resonances are detected in future experiments, the spacing pattern distinguishes CR's derived compactification from Klein's ad hoc circle. This is a clean, model-independent prediction.
 
 ---
 
@@ -5143,11 +5143,11 @@ If KK graviton resonances are detected in future experiments, the spacing patter
 
 The standard cosmological paradigm addresses missing gravitational mass through particle dark matter—candidates range from WIMPs (Weakly Interacting Massive Particles) to axions to sterile neutrinos. Each invokes new matter beyond the Standard Model, with density profiles fit *a posteriori* to observations. This approach is phenomenologically successful but unsatisfying: it introduces new particles without detection and requires fitting per-system dark matter distributions that correlate mysteriously with baryonic matter.
 
-The KCR-Cone model sketches a conditional alternative framework: *if* the KCR-Cone warp geometry produces a non-trivial KK mode spectrum with the properties assumed below, *then* the observed dark-matter acceleration profile may be reinterpreted as gravitational signatures of the warped extra dimension, potentially requiring no new particles. In this picture, the warp factor $A(r,z)$ that modulates the metric geometry would directly produce effective forces on brane-localized matter. Perturbations to $A(r,z)$ near the brane—sourced by baryonic matter itself—would generate an additional gravitational potential on the 3-brane. The integrated effect could mimic dark matter without postulating new particle species.
+The KCR-Cone model sketches a conditional alternative framework: *if* the KCR-Cone warp geometry produces a non-trivial KCR mode spectrum with the properties assumed below, *then* the observed dark-matter acceleration profile may be reinterpreted as gravitational signatures of the warped extra dimension, potentially requiring no new particles. In this picture, the warp factor $A(r,z)$ that modulates the metric geometry would directly produce effective forces on brane-localized matter. Perturbations to $A(r,z)$ near the brane—sourced by baryonic matter itself—would generate an additional gravitational potential on the 3-brane. The integrated effect could mimic dark matter without postulating new particle species.
 
 This is fundamentally different from Modified Newtonian Dynamics (MOND). MOND alters the functional form of Newton's law in the infrared limit (e.g., $F \propto a^2$ rather than $F \propto a$ for small accelerations). The KCR-Cone keeps Einstein's equations intact in 5D but exploits the geometric structure of the extra dimension to produce an effective 4D gravitational correction. The mechanism is not an ad-hoc modification but a consequence of the warp geometry.
 
-The working hypothesis explored in this section: *if* the KCR-Cone warp geometry produces a non-trivial KK mode spectrum with the properties assumed below, *then* the observed dark-matter acceleration profile—particularly the flat rotation curves in galaxies and the tight radial acceleration relation (RAR)—could emerge as a geometric effect of the warped bulk, not from a population of unseen particles.
+The working hypothesis explored in this section: *if* the KCR-Cone warp geometry produces a non-trivial KCR mode spectrum with the properties assumed below, *then* the observed dark-matter acceleration profile—particularly the flat rotation curves in galaxies and the tight radial acceleration relation (RAR)—could emerge as a geometric effect of the warped bulk, not from a population of unseen particles.
 
 **Status**: The analysis in this section is schematic. The perturbation equations (Eqs. 6.1–6.5) assume a linearization regime that has not yet been verified against the full 5D Einstein equations on the KCR-Cone background of §4. The observational predictions (§6.5) are conditional on this linearization being valid. A complete treatment requires solving the perturbation eigenvalue problem on the canonical metric of §4, which is deferred to future work.
 
@@ -5213,7 +5213,7 @@ $$\vec{a}_{\text{eff}} = \vec{a}_{\text{Newton}} + \delta \vec{a}_{\text{geometr
 
 **(Eq. 6.6)**
 
-where $\vec{a}_{\text{Newton}}$ is the Newtonian acceleration from the baryonic mass distribution, and $\delta \vec{a}_{\text{geometric}}$ is the geometric correction arising from the KK modes.
+where $\vec{a}_{\text{Newton}}$ is the Newtonian acceleration from the baryonic mass distribution, and $\delta \vec{a}_{\text{geometric}}$ is the geometric correction arising from the KCR modes.
 
 **Newtonian Contribution**
 
@@ -5227,13 +5227,13 @@ where $M_b(<r)$ is the baryonic mass within radius $r$.
 
 **Geometric Correction from KK Modes**
 
-The massive KK modes contribute a correction:
+The massive KCR modes contribute a correction:
 
 $$\delta \vec{a}_{\text{geometric}}(r) = -\sum_{n=1}^{\infty} \nabla u_n(r) \times (\text{brane coupling})$$
 
 **(Eq. 6.8)**
 
-The sum is dominated by the lowest-mass KK modes ($n=1,2,\ldots$), since higher modes are increasingly suppressed. The key insight is that at large radii $r \gg R_c$, the Yukawa form of the Green's function for the massive modes leads to a different scaling:
+The sum is dominated by the lowest-mass KCR modes ($n=1,2,\ldots$), since higher modes are increasingly suppressed. The key insight is that at large radii $r \gg R_c$, the Yukawa form of the Green's function for the massive modes leads to a different scaling:
 
 $$u_n(r) \sim \frac{m_n}{r} \exp(-m_n r)$$
 
@@ -5243,7 +5243,7 @@ For $r \gtrsim 1/m_n$ (i.e., $r$ comparable to or larger than the Compton wavele
 
 **Schematic Form for Galaxy-Scale Dynamics**
 
-For a galaxy-scale mass distribution (extended with scale $\sim$ kpc), numerical integration of the KK mode sum would, under the stated assumptions, yield an effective acceleration:
+For a galaxy-scale mass distribution (extended with scale $\sim$ kpc), numerical integration of the KCR mode sum would, under the stated assumptions, yield an effective acceleration:
 
 $$\vec{a}_{\text{eff}}(r) \approx -\frac{G_{\text{eff}}(r) M_b(<r)}{r^2} \hat{r}$$
 
@@ -5255,7 +5255,7 @@ $$G_{\text{eff}}(r) = G_4 \left[1 + \alpha \frac{R_c}{r} + \mathcal{O}\left(\fra
 
 **(Eq. 6.11 — schematic)**
 
-Here $\\alpha$ is a dimensionless coefficient determined by the warp profile and the KK mode spectrum, and $R_c$ is the characteristic size of the extra dimension. The second term is the geometric correction. At very large radii ($r \\gg R_c/\\alpha$), the correction becomes small relative to the Newtonian term, but at intermediate radii (galactic scale, $\\sim$ 10-50 kpc), it can be substantial. These expressions are schematic, illustrating possible $G_{\\text{eff}}(r)$ behavior under an appropriate KK spectrum; they are not derived from a completed 5D eigenmode calculation. See Appendix B (`papers/02-saturation-dynamics/sections/patched/paper2_appendix_B_Geff_KK_tower_PATCHED.md`) for a compact asymptotic motivation.
+Here $\\alpha$ is a dimensionless coefficient determined by the warp profile and the KCR mode spectrum, and $R_c$ is the characteristic size of the extra dimension. The second term is the geometric correction. At very large radii ($r \\gg R_c/\\alpha$), the correction becomes small relative to the Newtonian term, but at intermediate radii (galactic scale, $\\sim$ 10-50 kpc), it can be substantial. These expressions are schematic, illustrating possible $G_{\\text{eff}}(r)$ behavior under an appropriate KCR spectrum; they are not derived from a completed 5D eigenmode calculation. See Appendix B (`papers/02-saturation-dynamics/sections/patched/paper2_appendix_B_Geff_KK_tower_PATCHED.md`) for a compact asymptotic motivation.
 
 **Rotation Curve Implication**
 
@@ -5288,7 +5288,7 @@ The geometric correction depends directly on the baryonic density profile $\rho_
 Traditional dark-matter models fit a dark-matter density profile (e.g., Navarro-Frenk-White or isothermal) to each galaxy. This introduces a free parameter: the dark-matter halo mass or concentration. The geometric model would, if the linearization holds, eliminate this freedom—the response would be determined entirely by:
 
 1. The observed baryonic mass distribution
-2. The warp geometry (specifically, $A(r,z)$ and the KK spectrum)
+2. The warp geometry (specifically, $A(r,z)$ and the KCR spectrum)
 3. Physical constants ($G_5, R_c$)
 
 Once the warp parameters are fixed by fitting one class of objects (e.g., rotation curves of a sample of spiral galaxies), the model's predictions for other observables (dwarf galaxies, elliptical galaxies, lensing, CMB) are constrained, not free to adjust.
@@ -6412,7 +6412,7 @@ The stabilization problem splits into two parts, both now resolved:
 
 No Goldberger-Wise scalar, no KKLT potential, no new stabilization mechanism is required. Stabilization uses only: topology ($k^2 = 2$), classical geometry (warp curvature energy), cosmology (Friedmann balance), and thermodynamics (non-traversability).
 
-The radion appearing in the KK spectrum (near-zero mode, $m^2 \approx 0.01$, 71% wavefunction overlap with breathing mode) is the manifestation of this stabilized breathing mode in the KK tower — not a new problem.
+The radion appearing in the KCR spectrum (near-zero mode, $m^2 \approx 0.01$, 71% wavefunction overlap with breathing mode) is the manifestation of this stabilized breathing mode in the KCR tower — not a new problem.
 
 **OP-6. Explicit trajectory solutions.** The companion paper solves the abstract EOM on the KCR-Cone and extracts decoherence timescales, trajectory deviations, and effective potentials.
 
@@ -6442,15 +6442,15 @@ When Klein's ad hoc $S^1$ compactification is replaced by the derived-compact in
 
 | Calculation | Result |
 |-------------|--------|
-| ISL bounds | First genuine KK graviton at $\lambda = 13.3\,\mu\mathrm{m} < 44\,\mu\mathrm{m}$ ✓ |
+| ISL bounds | First genuine KCR graviton at $\lambda = 13.3\,\mu\mathrm{m} < 44\,\mu\mathrm{m}$ ✓ |
 | Charge quantization | Berry phase $c_1 = 1$ on $\mathbb{CP}^1$ — topological, Klein-independent ✓ |
 | APS index | $\mathrm{ind}(D) = 0$ on $[0, r_{\max}] \times S^2$ — $\eta = 0$ by symmetry ✓ |
-| KK reduction | Gravity + U(1) + radion all emerge from 5D interval ✓ |
+| KCR reduction | Gravity + U(1) + radion all emerge from 5D interval ✓ |
 | Dimensional accounting | 5D (4 + r): ψ is gauge phase, not spatial dimension ✓ |
 
 Klein's mechanism is **not required** by CR. His compactification was sufficient but not necessary; the derived-compact interval provides everything Klein provided, from first principles.
 
-New prediction: non-linear KK mode spacing $m_n/m_1 \approx 1, 1.67, 2.32, 2.97$ (vs. Klein's exactly linear $1, 2, 3, 4$) — a falsifiable observational distinction.
+New prediction: non-linear KCR mode spacing $m_n/m_1 \approx 1, 1.67, 2.32, 2.97$ (vs. Klein's exactly linear $1, 2, 3, 4$) — a falsifiable observational distinction.
 
 **OP-25. Weak Values from $T_{M\Sigma}$ Cross-Terms (TSVF connection).**
 
@@ -6478,10 +6478,10 @@ The Aharonov-Vaidman three-box paradox: with pre-selected state $(|A\rangle + |B
 
 **OP-14. Frame-lag signatures.** Unchanged from v1.
 
-**OP-15. KK mode detection (updated).**
+**OP-15. KCR mode detection (updated).**
 
-The KK spectrum from the derived-compact interval (§3.3, Eq. 3.3.6–3.3.7) predicts:
-- First KK graviton: $\lambda_1 \approx 13.3\,\mu\mathrm{m}$ (at the self-consistent Casimir correction scale)
+The KCR spectrum from the derived-compact interval (§3.3, Eq. 3.3.6–3.3.7) predicts:
+- First KCR graviton: $\lambda_1 \approx 13.3\,\mu\mathrm{m}$ (at the self-consistent Casimir correction scale)
 - Mode spacing: non-linear ($m_n/m_1 \approx 1, 1.67, 2.32, 2.97$)
 
 The non-linear spacing is the key experimental discriminator from Klein (linear spacing). If the first mode is detected, the ratio $m_2/m_1 \approx 1.67$ (not 2.0) confirms derived compactification over the Klein circle.
@@ -6530,7 +6530,7 @@ The quantitative check — computing $s_{\mathrm{now}}$ from $H_0$ via Eq. 5.3.2
 | OP-12 Quantization | Paper 3+ | Medium | Medium |
 | OP-13 Multi-sector | Paper 3+ | Medium | Medium |
 | OP-14 Frame-lag signatures | Experimental | Long-term | Long-term |
-| OP-15 KK mode detection | Experimental | Near-term | **Updated: non-linear spacing** |
+| OP-15 KCR mode detection | Experimental | Near-term | **Updated: non-linear spacing** |
 | OP-16 Dark matter | Paper 2B + data | Near-term | Near-term |
 | OP-17 Cosmological constant | Paper 3 + data | High | **Updated: geometric Λ primary** |
 | OP-18 Left-right generators | Internal | Immediate | **RESOLVED** |
@@ -6547,7 +6547,7 @@ The quantitative check — computing $s_{\mathrm{now}}$ from $H_0$ via Eq. 5.3.2
 - OP-5 resolved: No stabilization potential needed; cosmological attractor + topological shape freezing
 - OP-24 resolved: Klein's mechanism is unnecessary; derived compactification passes all five tests
 - Two new OPs added: TSVF connections giving geometric explanations of quantum measurement paradoxes
-- OP-15 updated: testable non-linear KK mode spacing prediction
+- OP-15 updated: testable non-linear KCR mode spacing prediction
 - OP-17 updated: geometric Λ changes the character of the cosmological constant problem
 
 ---
@@ -6665,11 +6665,11 @@ Status: derivation-level appendix for reference and reuse in manuscript integrat
 
 # Appendix B — Schematic Origin of \(G_{\mathrm{eff}}(r)=G_4[1+\alpha R_c/r+\dots]\)
 
-Consider a static, spherically symmetric baryonic source of mass \(M_b\) localized on the brane at \(r=r_0\). In the linearized regime of §6.2, model the 4D effective potential on the brane as a zero mode plus a tower of massive KK modes:
+Consider a static, spherically symmetric baryonic source of mass \(M_b\) localized on the brane at \(r=r_0\). In the linearized regime of §6.2, model the 4D effective potential on the brane as a zero mode plus a tower of massive KCR modes:
 \[
 \Phi(r)= -\frac{G_4M_b}{r}-\sum_{n\ge 1}c_n^2\,G_4M_b\,\frac{e^{-m_nr}}{r},
 \]
-where \(m_n\) are KK masses and \(c_n\propto\chi_n(r_0)\) are brane-overlap coefficients.
+where \(m_n\) are KCR masses and \(c_n\propto\chi_n(r_0)\) are brane-overlap coefficients.
 
 Then
 \[

@@ -114,7 +114,7 @@ The Casimir energy (Level 1) is the boundary-dependent piece of the vacuum energ
 3. **Radion zero-point**: the breathing mode (m² ≈ 0.01) is a scalar field on M with a specific ½ℏω contribution.
 
 ### Contributions on Σ (information-geometric sector — may NOT enter Friedmann)
-4. **KK mode zero-point**: each volcano-potential mode has ½ℏω. If r is informational (Picture 3), these live on Σ, not M. Their energy enters decoherence dynamics, not gravity.
+4. **KCR mode zero-point**: each volcano-potential mode has ½ℏω. If r is informational (Picture 3), these live on Σ, not M. Their energy enters decoherence dynamics, not gravity.
 5. **Berry gauge field fluctuations**: U(1) connection on CP¹ has gauge-field-like vacuum fluctuations. The c₁ = 1 topology may support instantons (non-perturbative contributions).
 
 ### Potentially new: Topological zero-point modification
@@ -170,7 +170,7 @@ If Levels 3+4 produce dark energy (cosmological average of entanglement dynamics
 
 ### Connections:
 - Verlinde (2016) emergent gravity: dark matter as entanglement effect
-- Paper 2 §6 (Geometric Dark Matter): KK graviton tower as DM candidates — this is a DIFFERENT mechanism (massive particles vs entanglement variation). Both may contribute.
+- Paper 2 §6 (Geometric Dark Matter): KCR graviton tower as DM candidates — this is a DIFFERENT mechanism (massive particles vs entanglement variation). Both may contribute.
 - Tully-Fisher / MOND: if the entanglement variation scales with baryonic mass in a specific way, the Tully-Fisher relation (v⁴ ∝ M_baryon) might emerge
 
 ### Required calculation (RC-7):
@@ -221,7 +221,7 @@ If the cosmic decoherence rate = H₀, this is a falsifiable prediction. What ob
 - **§9 inserts**: Both splice blocks reference geometric Λ as primary source
 
 ### Sections that are UNAFFECTED:
-- **§3.3.1–3.3.4**: Klein removal, topology, moduli, KK modes — all fine
+- **§3.3.1–3.3.4**: Klein removal, topology, moduli, KCR modes — all fine
 - **§4.0.1**: 5D metric ansatz is correct as an effective description
 - **§5.3 Casimir calculation**: The Dirichlet BC formula and field-content table are correct
 - **§5.3 OP-5 shape**: "Topologically frozen" (k² = 2) remains valid
@@ -308,7 +308,7 @@ Full derivation requires solving T_{MΣ} spatial variation.
 **DARK MATTER:** Currently decohering modes. Γ = 0.416 H(t). w = 0.
 **ARROW OF TIME:** = dark energy source (chronogenic cascade on Σ).
 
-**8 PREDICTIONS:** α=3/2, Γ/H₀=0.679, w=-1, null DM detection, DM≠NFW, a_dec~a₀, Casimir L~50-70μm, non-linear KK spectrum.
+**8 PREDICTIONS:** α=3/2, Γ/H₀=0.679, w=-1, null DM detection, DM≠NFW, a_dec~a₀, Casimir L~50-70μm, non-linear KCR spectrum.
 
 **OPEN:** DM/DE split ratio (0.374) is input not prediction. Exact DM profile. Casimir-drag interference. Machian/Jacobson rigorous derivation.
 

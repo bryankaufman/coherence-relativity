@@ -8,7 +8,7 @@
 **v2 changes (2026-04-09):**
 - ψ ∈ [0,2π) not present in this file (confirmed — abstract EOM uses ξ throughout)
 - 5D metric ansatz added explicitly (§4.0.1 new)
-- KK gravity remark updated: U(1) from Berry phase holonomy on CP¹, not Hopf fiber; radion governs interval-width fluctuations, not fiber radius
+- KCR gravity remark updated: U(1) from Berry phase holonomy on CP¹, not Hopf fiber; radion governs interval-width fluctuations, not fiber radius
 - References updated: §3.2 entry no longer says "Hopf fibration"
 
 ---
@@ -193,9 +193,9 @@ quantization previously attributed to the Klein circle is instead a topological
 consequence of $c_1 = 1$ on $\mathbb{CP}^1$, which holds on the open interval
 geometry without any periodicity identification (§3.2, OP-24 resolution).
 
-The one caveat is UV completion: above the KK energy scale
+The one caveat is UV completion: above the KCR energy scale
 $E_\mathrm{KK} \sim \hbar c / L$, where $L = r_\mathrm{max} \cdot s$ is the physical
-interval length at cosmological scale factor $s$, the tower of massive KK graviton
+interval length at cosmological scale factor $s$, the tower of massive KCR graviton
 modes reintroduces non-renormalizability. This UV issue is standard in
 all Kaluza-Klein theories and does not affect the cosmological-scale
 predictions of this paper, which operate well below $E_\mathrm{KK}$.
@@ -313,7 +313,7 @@ The companion paper [Paper 2B] provides the first such evaluation, specializing 
 | Date | Change |
 |------|--------|
 | 2026-03-10 | Initial draft — Wave 5 extraction from §7.0 (abstract layer) + new §4.2 limitations |
-| 2026-04-09 | v2 — Klein removal patch: added §4.0.1 with explicit 5D ansatz (Eq. 4.0.1); updated KK gravity remark to reference Berry phase holonomy on CP¹ and interval-width radion (not Hopf fiber/fiber radius); verified ψ ∈ [0,2π) not present in abstract EOM; updated §3.2 reference |
+| 2026-04-09 | v2 — Klein removal patch: added §4.0.1 with explicit 5D ansatz (Eq. 4.0.1); updated KCR gravity remark to reference Berry phase holonomy on CP¹ and interval-width radion (not Hopf fiber/fiber radius); verified ψ ∈ [0,2π) not present in abstract EOM; updated §3.2 reference |
 
 ---
 

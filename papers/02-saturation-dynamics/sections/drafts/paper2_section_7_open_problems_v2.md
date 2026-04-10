@@ -32,7 +32,7 @@ The stabilization problem splits into two parts, both now resolved:
 
 No Goldberger-Wise scalar, no KKLT potential, no new stabilization mechanism is required. Stabilization uses only: topology ($k^2 = 2$), classical geometry (warp curvature energy), cosmology (Friedmann balance), and thermodynamics (non-traversability).
 
-The radion appearing in the KK spectrum (near-zero mode, $m^2 \approx 0.01$, 71% wavefunction overlap with breathing mode) is the manifestation of this stabilized breathing mode in the KK tower — not a new problem.
+The radion appearing in the KCR spectrum (near-zero mode, $m^2 \approx 0.01$, 71% wavefunction overlap with breathing mode) is the manifestation of this stabilized breathing mode in the KCR tower — not a new problem.
 
 **OP-6. Explicit trajectory solutions.** The companion paper solves the abstract EOM on the KCR-Cone and extracts decoherence timescales, trajectory deviations, and effective potentials.
 
@@ -62,15 +62,15 @@ When Klein's ad hoc $S^1$ compactification is replaced by the derived-compact in
 
 | Calculation | Result |
 |-------------|--------|
-| ISL bounds | First genuine KK graviton at $\lambda = 13.3\,\mu\mathrm{m} < 44\,\mu\mathrm{m}$ ✓ |
+| ISL bounds | First genuine KCR graviton at $\lambda = 13.3\,\mu\mathrm{m} < 44\,\mu\mathrm{m}$ ✓ |
 | Charge quantization | Berry phase $c_1 = 1$ on $\mathbb{CP}^1$ — topological, Klein-independent ✓ |
 | APS index | $\mathrm{ind}(D) = 0$ on $[0, r_{\max}] \times S^2$ — $\eta = 0$ by symmetry ✓ |
-| KK reduction | Gravity + U(1) + radion all emerge from 5D interval ✓ |
+| KCR reduction | Gravity + U(1) + radion all emerge from 5D interval ✓ |
 | Dimensional accounting | 5D (4 + r): ψ is gauge phase, not spatial dimension ✓ |
 
 Klein's mechanism is **not required** by CR. His compactification was sufficient but not necessary; the derived-compact interval provides everything Klein provided, from first principles.
 
-New prediction: non-linear KK mode spacing $m_n/m_1 \approx 1, 1.67, 2.32, 2.97$ (vs. Klein's exactly linear $1, 2, 3, 4$) — a falsifiable observational distinction.
+New prediction: non-linear KCR mode spacing $m_n/m_1 \approx 1, 1.67, 2.32, 2.97$ (vs. Klein's exactly linear $1, 2, 3, 4$) — a falsifiable observational distinction.
 
 **OP-25. Weak Values from $T_{M\Sigma}$ Cross-Terms (TSVF connection).**
 
@@ -98,10 +98,10 @@ The Aharonov-Vaidman three-box paradox: with pre-selected state $(|A\rangle + |B
 
 **OP-14. Frame-lag signatures.** Unchanged from v1.
 
-**OP-15. KK mode detection (updated).**
+**OP-15. KCR mode detection (updated).**
 
-The KK spectrum from the derived-compact interval (§3.3, Eq. 3.3.6–3.3.7) predicts:
-- First KK graviton: $\lambda_1 \approx 13.3\,\mu\mathrm{m}$ (at the self-consistent Casimir correction scale)
+The KCR spectrum from the derived-compact interval (§3.3, Eq. 3.3.6–3.3.7) predicts:
+- First KCR graviton: $\lambda_1 \approx 13.3\,\mu\mathrm{m}$ (at the self-consistent Casimir correction scale)
 - Mode spacing: non-linear ($m_n/m_1 \approx 1, 1.67, 2.32, 2.97$)
 
 The non-linear spacing is the key experimental discriminator from Klein (linear spacing). If the first mode is detected, the ratio $m_2/m_1 \approx 1.67$ (not 2.0) confirms derived compactification over the Klein circle.
@@ -150,7 +150,7 @@ The quantitative check — computing $s_{\mathrm{now}}$ from $H_0$ via Eq. 5.3.2
 | OP-12 Quantization | Paper 3+ | Medium | Medium |
 | OP-13 Multi-sector | Paper 3+ | Medium | Medium |
 | OP-14 Frame-lag signatures | Experimental | Long-term | Long-term |
-| OP-15 KK mode detection | Experimental | Near-term | **Updated: non-linear spacing** |
+| OP-15 KCR mode detection | Experimental | Near-term | **Updated: non-linear spacing** |
 | OP-16 Dark matter | Paper 2B + data | Near-term | Near-term |
 | OP-17 Cosmological constant | Paper 3 + data | High | **Updated: geometric Λ primary** |
 | OP-18 Left-right generators | Internal | Immediate | **RESOLVED** |
@@ -167,7 +167,7 @@ The quantitative check — computing $s_{\mathrm{now}}$ from $H_0$ via Eq. 5.3.2
 - OP-5 resolved: No stabilization potential needed; cosmological attractor + topological shape freezing
 - OP-24 resolved: Klein's mechanism is unnecessary; derived compactification passes all five tests
 - Two new OPs added: TSVF connections giving geometric explanations of quantum measurement paradoxes
-- OP-15 updated: testable non-linear KK mode spacing prediction
+- OP-15 updated: testable non-linear KCR mode spacing prediction
 - OP-17 updated: geometric Λ changes the character of the cosmological constant problem
 
 ---

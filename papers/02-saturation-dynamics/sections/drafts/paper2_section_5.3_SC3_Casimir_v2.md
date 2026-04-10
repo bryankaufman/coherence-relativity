@@ -184,7 +184,7 @@ This is the scale at which the Casimir quantum correction is of order $\Lambda_{
 
 ### § 5.3.4.2: Self-Consistency of the Massless-Field Approximation
 
-At $L \sim 55\,\mu\mathrm{m}$, the KK energy scale is $E_{\mathrm{KK}} = \hbar c / L \approx 3.5\,\mathrm{meV}$. Self-consistent iteration (computing $f_{\mathrm{eff}}$ at each $L^*$ and re-solving) converges to:
+At $L \sim 55\,\mu\mathrm{m}$, the KCR energy scale is $E_{\mathrm{KK}} = \hbar c / L \approx 3.5\,\mathrm{meV}$. Self-consistent iteration (computing $f_{\mathrm{eff}}$ at each $L^*$ and re-solving) converges to:
 
 | Quantity | Full SM ($f = 54$) | Self-consistent |
 |---|---|---|
@@ -198,20 +198,20 @@ Three open subtleties remain: (1) gluon confinement, (2) neutrino mass hierarchy
 
 ### § 5.3.4.3: ISL Bound Comparison (Klein-Free)
 
-The gravitational ISL comparison for the derived interval geometry uses the first genuine KK graviton, not a Yukawa correction from a Klein circle. The graviton Schrödinger equation on $[0, r_{\max}]$ with volcano potential
+The gravitational ISL comparison for the derived interval geometry uses the first genuine KCR graviton, not a Yukawa correction from a Klein circle. The graviton Schrödinger equation on $[0, r_{\max}]$ with volcano potential
 
 $$V(r) = -3 + \tfrac{3}{2}\tan^2(\sqrt{2}\,r)$$
 
-gives the KK mode spectrum:
+gives the KCR mode spectrum:
 
 | Mode | $m^2$ (dimless) | Identity | $\lambda$ (μm) at $s \sim 50\,\mu\mathrm{m}$ |
 |------|-----------------|----------|----------------------------------------------|
 | 0 | 0 | Graviton zero mode | $\infty$ (massless) |
 | ~0 | 0.01 | Radion (OP-5, resolved) | ~2600 |
-| 1 | 20.1 | First KK graviton | **13.3 μm** |
-| 2 | 56.2 | Second KK graviton | 7.9 μm |
+| 1 | 20.1 | First KCR graviton | **13.3 μm** |
+| 2 | 56.2 | Second KCR graviton | 7.9 μm |
 
-The near-zero mode (71% overlap with radion wavefunction) is the breathing mode of $r_{\max}$ — it is OP-5's stabilized radion appearing in the spectrum, not a KK graviton. The first genuine KK graviton is at $\lambda_1 \approx 13.3\,\mu\mathrm{m}$, safely below the 44 μm ISL bound (Lee et al. 2020). ✓
+The near-zero mode (71% overlap with radion wavefunction) is the breathing mode of $r_{\max}$ — it is OP-5's stabilized radion appearing in the spectrum, not a KCR graviton. The first genuine KCR graviton is at $\lambda_1 \approx 13.3\,\mu\mathrm{m}$, safely below the 44 μm ISL bound (Lee et al. 2020). ✓
 
 **Non-linear mode spacing:** $m_n/m_1 \approx 1, 1.67, 2.32, 2.97$ (non-linear). This distinguishes derived compactification from Klein's $S^1$ (which gives exactly linear spacing $1, 2, 3, 4$). This is a **new testable prediction**.
 
@@ -314,7 +314,7 @@ All three conditions are mutually consistent in the Klein-free picture.
 
 ## § 5.3.9: New Testable Prediction — Non-Linear KK Mode Spacing
 
-The Klein-free derived compactification predicts non-linear KK graviton mass ratios:
+The Klein-free derived compactification predicts non-linear KCR graviton mass ratios:
 
 $$m_n/m_1 \approx 1,\; 1.67,\; 2.32,\; 2.97 \quad \text{(derived compactification)}$$
 
@@ -322,7 +322,7 @@ vs. Klein $S^1$:
 
 $$m_n/m_1 = 1,\; 2,\; 3,\; 4 \quad \text{(Klein circle)}$$
 
-If KK graviton resonances are detected in future experiments, the spacing pattern distinguishes CR's derived compactification from Klein's ad hoc circle. This is a clean, model-independent prediction.
+If KCR graviton resonances are detected in future experiments, the spacing pattern distinguishes CR's derived compactification from Klein's ad hoc circle. This is a clean, model-independent prediction.
 
 ---
 

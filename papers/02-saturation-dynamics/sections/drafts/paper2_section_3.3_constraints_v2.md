@@ -2,7 +2,7 @@
 
 **Status:** v2 DRAFT — 2026-04-10. Klein removal applied throughout; geometric Λ from §5.3 v2 incorporated.
 **Supersedes:** `paper2_section_3.3_constraints_DRAFT.md`
-**Changes from v1:** (1) Compactification language updated to interval geometry. (2) Klein S¹ added to ruled-out topologies. (3) KK mode expansion replaced with volcano potential spectrum. (4) Cosmological constant section updated: geometric Λ primary, Casimir correction secondary. (5) Moduli section updated: shape frozen by $k^2 = 2$, not just "dynamically determined."
+**Changes from v1:** (1) Compactification language updated to interval geometry. (2) Klein S¹ added to ruled-out topologies. (3) KCR mode expansion replaced with volcano potential spectrum. (4) Cosmological constant section updated: geometric Λ primary, Casimir correction secondary. (5) Moduli section updated: shape frozen by $k^2 = 2$, not just "dynamically determined."
 
 ---
 
@@ -18,7 +18,7 @@ This section answers that question by tracing the cascade of constraints that fl
 
 1. The landscape of possible topologies is reduced from $\sim 10^{500}$ to a single geometric outcome: the bounded interval $r \in [0, r_{\max}]$ with one scale parameter.
 2. The shape modulus is zero: $r_{\max}$ is topologically frozen by $k^2 = 2$.
-3. The KK mode structure is fixed by the volcano potential on the interval.
+3. The KCR mode structure is fixed by the volcano potential on the interval.
 4. The cosmological constant has a geometric primary source and a Casimir quantum correction.
 5. The scale $s$ (mapping $r$ to meters) is determined by the Friedmann balance at each epoch.
 
@@ -108,11 +108,25 @@ This resolves OP-5 (radius stabilization). No Goldberger-Wise potential or KKLT 
 
 ---
 
-## 3.3.4 Constrained Matter Content via KK Modes
+## 3.3.4 Constrained Matter Content via KCR Modes
+
+### Remark: KCR mode nomenclature
+
+The massive graviton modes of the KCR-Cone are designated **KCR modes** (Kaluza–Coherence Relativity modes), not Kaluza-Klein modes, for the following reasons:
+
+1. **Not Klein modes.** Klein's (1926) modes are Fourier harmonics $e^{iny/R}$ on a compact circle $S^1$ with periodic boundary conditions. They produce a linear mass spectrum $m_n = n/R$. The KCR modes are eigenfunctions of the volcano potential $V(r) = -3 + \tfrac{3}{2}\tan^2(\sqrt{2}\,r)$ on a bounded interval with Dirichlet-type boundary conditions. They produce a **non-linear** mass spectrum. The equation, boundary conditions, and spectrum are all different.
+
+2. **Not Kaluza modes.** Kaluza (1921) imposed a cylinder condition $\partial/\partial x^5 = 0$ — complete independence of the extra dimension at low energies. He had no tower of massive excitations. The discrete tower is Klein's contribution, not Kaluza's.
+
+3. **KCR modes are new.** They arise from derived compactification: the warp factor $A(r) = \cos(\sqrt{2}\,r)$ vanishing at $r_{\max}$ creates a confining potential that quantizes the spectrum. The compactification is geometric (from CP¹ curvature), not topological (from identification of points). The resulting non-linear spacing $m_n/m_1 \approx 1,\, 1.67,\, 2.32,\, 2.97$ is a falsifiable prediction that distinguishes derived compactification from Klein's circle.
+
+The term "Kaluza-Klein" appears in the literature as a generic label for massive modes from compact extra dimensions. We use "KCR" to distinguish the specific mechanism (derived-interval volcano potential) from the historical one (Klein circle harmonics), consistent with calling the geometry the KCR-Cone.
+
+---
 
 ### 3.3.4.1 Mode Structure on the Derived Interval
 
-The topology of the compact space determines the allowed Kaluza-Klein mode expansion. For the derived interval $[0, r_{\max}]$ with Dirichlet-type boundary conditions at both ends (brane at $r=0$, pinch-off at $r = r_{\max}$), the mode expansion is:
+The topology of the compact space determines the allowed mode expansion.
 
 $$\Phi(x^\mu, r) = \sum_n \phi_n(x^\mu)\,\psi_n(r)$$
 (Eq. 3.3.5)
@@ -127,39 +141,39 @@ with the **volcano potential**
 $$V(r) = -3 + \tfrac{3}{2}\tan^2(\sqrt{2}\,r)$$
 (Eq. 3.3.7)
 
-This potential arises from the warp factor $A(r) = \cos(\sqrt{2}\,r)$ (standard warped KK reduction). It has a minimum of $V(0) = -3$ at the brane and diverges as $r \to r_{\max}$.
+This potential arises from the warp factor $A(r) = \cos(\sqrt{2}\,r)$ (standard warped KCR reduction). It has a minimum of $V(0) = -3$ at the brane and diverges as $r \to r_{\max}$.
 
 ### 3.3.4.2 KK Spectrum
 
-The KK graviton spectrum from (3.3.6)–(3.3.7) is:
+The KCR graviton spectrum from (3.3.6)–(3.3.7) is:
 
 | Mode | $m^2$ (dimless) | $m$ (dimless) | Identity | $\lambda$ at $s \sim 50\,\mu\mathrm{m}$ |
 |------|-----------------|---------------|----------|------------------------------------------|
 | 0 | 0 | 0 | Graviton zero mode | $\infty$ (massless, 4D gravity) |
 | ~0 | 0.01 | 0.10 | Radion (OP-5, resolved) | ~2600 μm |
-| 1 | 20.1 | 4.48 | First KK graviton | **13.3 μm** |
-| 2 | 56.2 | 7.50 | Second KK graviton | 7.9 μm |
-| 3 | 108.4 | 10.41 | Third KK graviton | 5.7 μm |
-| 4 | 176.7 | 13.29 | Fourth KK graviton | 4.5 μm |
+| 1 | 20.1 | 4.48 | First KCR graviton | **13.3 μm** |
+| 2 | 56.2 | 7.50 | Second KCR graviton | 7.9 μm |
+| 3 | 108.4 | 10.41 | Third KCR graviton | 5.7 μm |
+| 4 | 176.7 | 13.29 | Fourth KCR graviton | 4.5 μm |
 
-The graviton zero mode ($m=0$) is normalizable and localized near the brane (half-weight at $r/r_{\max} \approx 22.6\%$). The near-zero mode is the radion — the breathing mode of $r_{\max}$ — identified by a 71% wavefunction overlap. It is OP-5's stabilized radion, not a KK graviton.
+The graviton zero mode ($m=0$) is normalizable and localized near the brane (half-weight at $r/r_{\max} \approx 22.6\%$). The near-zero mode is the radion — the breathing mode of $r_{\max}$ — identified by a 71% wavefunction overlap. It is OP-5's stabilized radion, not a KCR graviton.
 
-The first genuine KK graviton has $\lambda_1 \approx 13.3\,\mu\mathrm{m}$, safely below the 44 μm ISL bound (Lee et al. 2020). ✓
+The first genuine KCR graviton has $\lambda_1 \approx 13.3\,\mu\mathrm{m}$, safely below the 44 μm ISL bound (Lee et al. 2020). ✓
 
 ### 3.3.4.3 Contrast with Klein S¹
 
-**Klein $S^1$** gives an exactly linear KK spectrum: $m_n = n/R$, hence $m_n/m_1 = 1, 2, 3, 4, \ldots$
+**Klein $S^1$** gives an exactly linear spectrum:
 
 **Derived compactification** gives a non-linear spectrum from the volcano potential: $m_n/m_1 \approx 1, 1.67, 2.32, 2.97, \ldots$
 
-$$\boxed{\text{Testable prediction: non-linear KK mode spacing distinguishes derived compactification from Klein.}}$$
+$$\boxed{\text{Testable prediction: non-linear KCR mode spacing distinguishes derived compactification from Klein.}}$$
 (Eq. 3.3.8)
 
-If KK graviton resonances are ever detected, the spacing pattern is a clean, model-independent discriminator.
+If KCR graviton resonances are ever detected, the spacing pattern is a clean, model-independent discriminator.
 
 ### 3.3.4.4 Charge Quantization (Klein-Free)
 
-Previously: KK charge quantization came from quantized momentum $p_5 = n\hbar/R$ on the Klein circle.
+Previously: Klein charge quantization came from quantized momentum
 
 Now: Charge quantization comes from the Berry phase holonomy on $\Sigma = \mathbb{CP}^1$. The U(1) Berry connection has first Chern number $c_1 = 1$ — a topological invariant. Closed loops in $\Sigma$ pick up holonomy phases that are integer multiples of $2\pi$, giving discrete charge without any compact spatial dimension.
 
@@ -231,7 +245,7 @@ The following remain open, as in v1, with updated status:
 | **Shape moduli** | $h^{2,1} \sim 100$–$1000$ | 0 (circle) | **0 (topologically frozen)** |
 | **Scale moduli** | $h^{1,1} \sim 100$–$300$ | Free $R$ — stabilization required | Cosmological attractor |
 | **Charge quantization** | From flux quantization | From $p_5 = n\hbar/R$ | From Berry phase $c_1 = 1$ on $\mathbb{CP}^1$ |
-| **KK spectrum** | Hodge structure | Linear $m_n = n/R$ | Non-linear (volcano potential) |
+| **KCR spectrum** | Hodge structure | Linear $m_n = n/R$ | Non-linear (volcano potential) |
 | **Cosmological constant** | Landscape; anthropic | Casimir on $S^1$ | Geometric primary + Casimir correction |
 | **Dimension count** | 10D (6 compact) | 5D + Klein $S^1 = 6$D? | **5D (4 + r)** |
 | **Landscape size** | $\sim 10^{500}$ | 1 (but $R$ free) | **1** (scale from Friedmann) |
@@ -270,7 +284,7 @@ $$\boxed{\text{Degrees of freedom: String theory } \gtrsim 10^{500};\quad \text{
 
 3. **Scale resolution.** The physical scale is a cosmological attractor — no Goldberger-Wise potential needed.
 
-4. **Predictive power.** Non-linear KK mode spacing ($1, 1.67, 2.32, 2.97$) is a sharp, falsifiable prediction distinguishing CR from every prior compactification scheme.
+4. **Predictive power.** Non-linear KCR mode spacing ($1, 1.67, 2.32, 2.97$) is a sharp, falsifiable prediction distinguishing CR from every prior compactification scheme.
 
 5. **Charge quantization.** Topological (Berry phase) rather than dimensional (Klein momentum).
 
@@ -292,7 +306,7 @@ $$\boxed{\text{Degrees of freedom: String theory } \gtrsim 10^{500};\quad \text{
 
 3. **Scale is a cosmological attractor:** determined by the Friedmann balance at each epoch. No stabilization potential needed.
 
-4. **KK spectrum is non-linear:** from the volcano potential, giving $m_n/m_1 \approx 1, 1.67, 2.32, 2.97$ — a testable prediction distinguishing CR from Klein.
+4. **KCR spectrum is non-linear:** from the volcano potential, giving $m_n/m_1 \approx 1, 1.67, 2.32, 2.97$ — a testable prediction distinguishing CR from Klein.
 
 5. **$\Lambda_{\mathrm{eff}}$ has a geometric primary source:** $\rho_{\mathrm{geom,4D}} = +3.534 \times M_5^3 k^2/s > 0$ classically. Casimir is a correction.
 

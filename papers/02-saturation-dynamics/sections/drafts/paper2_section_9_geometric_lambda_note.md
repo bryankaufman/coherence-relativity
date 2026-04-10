@@ -42,7 +42,7 @@ Three consequences follow from this reordering:
 
 The field-content question from SC3 remains open in a weaker form: the Casimir correction $\rho_\mathrm{Cas}$ depends on the post-transition species count $f = 7N_F/8 - N_B$, which is determined by Paper 3 boundary conditions. This no longer blocks the SC3 result but does affect the subleading prediction for the Casimir correction scale $L_\mathrm{Cas}^*$.
 
-The most testable near-term prediction is now the non-linear KK graviton spectrum: $m_n/m_1 \approx 1, 1.67, 2.32, 2.97$ from the volcano potential on the derived interval, versus Klein's linear spacing $1, 2, 3, 4$ from the circle harmonics. The first genuine KK graviton has $\lambda_1 \approx 13.3\,\mu\mathrm{m}$, safely below the Lee et al.\ (2020) ISL bound of $44\,\mu\mathrm{m}$. Short-range gravity experiments at the $10$–$50\,\mu\mathrm{m}$ scale can distinguish these spectra; any observed non-linearity would directly confirm the derived-interval picture over Klein's ad hoc circle.
+The most testable near-term prediction is now the non-linear KCR graviton spectrum: $m_n/m_1 \approx 1, 1.67, 2.32, 2.97$ from the volcano potential on the derived interval, versus Klein's linear spacing $1, 2, 3, 4$ from the circle harmonics. The first genuine KCR graviton has $\lambda_1 \approx 13.3\,\mu\mathrm{m}$, safely below the Lee et al.\ (2020) ISL bound of $44\,\mu\mathrm{m}$. Short-range gravity experiments at the $10$–$50\,\mu\mathrm{m}$ scale can distinguish these spectra; any observed non-linearity would directly confirm the derived-interval picture over Klein's ad hoc circle.
 
 ---
 
