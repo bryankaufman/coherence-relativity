@@ -150,6 +150,34 @@ Jacobson derived Einstein's equations from δQ = TdS applied to entanglement ent
 - If unified: dark energy = gravitational thermodynamics of ongoing vacuum entanglement production
 - Rate set by H₀ → coincidence problem dissolves
 
+## Finding 9: Dark Matter from Spatial Variation of Vacuum Entanglement
+
+**Origin:** Bryan (2026-04-10 ~10:29 UTC).
+
+If Levels 3+4 produce dark energy (cosmological average of entanglement dynamics), the SPATIAL VARIATION of the same process produces dark matter effects.
+
+### The mechanism:
+1. Baryonic matter decoheres quantum fields (environmental interaction)
+2. Regions with more matter have faster decoherence → denser entanglement on Σ
+3. Denser Σ entanglement → stronger T_{MΣ} frame-dragging locally
+4. Stronger local frame-dragging → excess gravitational attraction
+5. Observationally: dark matter halo around baryonic matter concentrations
+
+### Dark energy and dark matter as one phenomenon at different scales:
+- **Dark energy**: cosmic MEAN of vacuum entanglement rate → Λ ~ H₀² M_Pl²
+- **Dark matter**: spatial VARIANCE of vacuum entanglement rate → δρ_grav correlated with baryonic density
+- **Ratio Ω_DM/Ω_Λ ≈ 0.39**: may be determined by variance/mean of entanglement rate
+
+### Connections:
+- Verlinde (2016) emergent gravity: dark matter as entanglement effect
+- Paper 2 §6 (Geometric Dark Matter): KK graviton tower as DM candidates — this is a DIFFERENT mechanism (massive particles vs entanglement variation). Both may contribute.
+- Tully-Fisher / MOND: if the entanglement variation scales with baryonic mass in a specific way, the Tully-Fisher relation (v⁴ ∝ M_baryon) might emerge
+
+### Required calculation (RC-7):
+Derive the spatial variation of the T_{MΣ} frame-dragging in the presence of a baryonic matter distribution. Does it reproduce NFW-like profiles? Does it give the right Ω_DM/Ω_Λ ratio? This requires solving the backreaction (RC-1) first, then linearizing around the cosmological background.
+
+---
+
 ### Updated coupling hierarchy
 - Level 1: Casimir (static topology → BCs → finite vacuum energy shift)
 - Level 1b: Topological zero-point (Σ gauge structure → SM mode modification)
