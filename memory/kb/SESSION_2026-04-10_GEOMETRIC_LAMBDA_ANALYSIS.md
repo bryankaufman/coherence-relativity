@@ -238,11 +238,38 @@ If the cosmic decoherence rate = H₀, this is a falsifiable prediction. What ob
 
 ---
 
-## Status (updated 2026-04-10 10:00 UTC)
-- 6 findings, 6 required calculations logged
-- §5.3 v3 NOT YET DRAFTED — awaiting RC-1 through RC-3 at minimum
-- The conceptual picture has shifted: three-level Σ→M coupling hierarchy
-- Key insight: Λ may be a frame-dragging effect (Level 3), not a vacuum energy (Level 1)
-- Committed: 8ed3b70 (v2 drafts), 6ea38c1 (assembled), 66db695 (this log)
-- All v2 files committed — §5.3, §3.3.5, §7 OP-5/17, §9 inserts need selective revision
+## Phase 0-1 Calculation Results (2026-04-10 15:00-15:30 UTC)
+
+### Phase 0: Gate calculation PASSES
+T_μν^(eff) ≠ 0. The Σ → M backreaction exists.
+The λ·T = O(1) cancellation (A² × A⁻²) removes the Planck/Hubble hierarchy.
+Backreaction magnitude set by decoherence rate with no suppression factor.
+
+### Phase 1a: α identified (two exact results)
+- Without graviton zero-mode: α = 4/π (from ∫A / ∫A² = (1/√2) / (π/4√2))
+- With graviton zero-mode f₀ = N cos^{3/2}(√2 r): α = 3/2 (from ∫A / ∫A³ = (1/√2) / (2/3√2))
+- Both are EXACT, pure geometric constants from CP¹.
+- Ω_drag = (3/2) × (Γ_dec / H₀)²
+
+### Phase 1b: Equation of state
+- Scenario B (Γ_dec = βH): w = 0 (matter-like). Dark MATTER channel.
+- Scenario C (Γ_dec = const): w = -1 (cosmological constant). Dark ENERGY channel.
+- Both from same mechanism at different timescales.
+- Prediction: Γ_dec/H₀ = √(2Ω_Λ/3) ≈ 0.679
+- Decoherence scale: L_dec ≈ c/Γ₀ ≈ 6500 Mpc ≈ Hubble radius
+
+### Physical picture
+- Modes currently crossing Hubble horizon: decohere at rate ~ H(t) → w = 0 (DM-like)
+- Modes already permanently decohered: fixed ρ → w = -1 (DE)
+- Both dark components from same Σ → M frame-dragging mechanism
+
+---
+
+## Status (updated 2026-04-10 15:30 UTC)
+- 9 findings, 7 required calculations
+- Phase 0: COMPLETE (gate passes)
+- Phase 1: COMPLETE (α = 3/2 exact, w depends on scenario)
+- Phase 2: PENDING (self-consistency + Casimir comparison)
+- §5.3 v3 NOT YET DRAFTED — awaiting Phase 2
+- Committed: 8ed3b70, 6ea38c1, 66db695, ac217af, fb1defa, d20aed2, c85ad7f
 - Paper 1 and Klein removal (OP-24) are UNAFFECTED
