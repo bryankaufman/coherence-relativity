@@ -36,11 +36,23 @@ with $f = 54$ (SM spectrum, Dirac neutrinos: $N_B = 30$, $N_F = 96$, $f = 7N_F/8
 
 The Atiyah-Singer index theorem relates the topology of the fiber bundle to the spectrum of differential operators (Dirac, Dolbeault, signature operators) on the manifold. For a $U(1)$ principal bundle with $c_1 = 1$ over $S^2$, the index theorem constrains which zero modes exist and which are lifted.
 
+### CLARIFICATIONS (from pre-dispatch review)
+
+**Background manifold:** The index calculation is performed on the $S^2$ base of the Hopf bundle with the associated $U(1)$ line bundle $\mathcal{L}$ having $c_1(\mathcal{L}) = 1$. This is the standard setup for twisted Dirac operators on a Riemann surface. The $r$-direction (decoherence depth) is NOT part of the compact manifold for the index — it is the bounded interval $[0, r_{\max}]$ with Dirichlet BC, already accounted for in the Casimir calculation. The index theorem applies to the angular ($S^2$) sector only.
+
+**SM-bundle embedding:** The $U(1)$ from the Hopf bundle (Berry phase holonomy) is to be identified with $U(1)_Y$ (hypercharge). SM fields carry specific hypercharge quantum numbers $Y$ under this $U(1)$. The Dirac operator twisted by $\mathcal{L}^Y$ (the $Y$-th tensor power of the line bundle) on $S^2$ has index:
+$$\mathrm{ind}(D_Y) = Y \times c_1 = Y$$
+This determines the zero-mode count for each SM field based on its hypercharge. ⚠️ The identification $U(1)_{\mathrm{Hopf}} = U(1)_Y$ is an assumption that should be flagged and tested.
+
+**SU(3)_c limitation (stated upfront):** A $U(1)$ principal bundle over $S^2$ with $c_1 = 1$ cannot produce $SU(3)_c$ as a gauge factor. The color group requires either (a) a higher-rank bundle structure (e.g., $SU(3)$ principal bundle over a higher-dimensional base), (b) a different Hopf fibration ($S^7 \to S^4$ for $SU(2)$; $S^{15} \to S^8$ for higher), or (c) additional compact dimensions beyond the single $r$-direction. This is explicitly a Paper 3 item — the $SU(3)_c$ color derivation is out of scope for Level 1b.
+
+---
+
 Compute the following:
 
 ### 1. ZERO-MODE INVENTORY
 
-Using the Atiyah-Singer index theorem, determine which SM gauge fields acquire zero modes on the KCR-Cone Hopf bundle ($c_1 = 1$). Specifically:
+Using the Atiyah-Singer index theorem on the $S^2$ base with line bundle $\mathcal{L}^Y$, determine which SM fields acquire zero modes. Specifically:
 - Which fields have index $\neq 0$ and therefore guaranteed zero modes?
 - Which fields have index $= 0$ and therefore no topologically protected zero modes?
 - For each SM gauge boson ($U(1)_Y$, $SU(2)_L$, $SU(3)_c$) and fermion generation, state the index and zero-mode count.
@@ -67,8 +79,8 @@ This result belongs in §5.3.2 ("What derived compactification contributes that 
 - Full mathematical derivation of the index calculation
 - Explicit statement of which version of the index theorem is applied (Dirac index, G-index, equivariant index, etc.) and why
 - Flag any assumptions about the SM representation content with ⚠️
-- If $SU(3)_c$ cannot be derived from $c_1 = 1$, say so explicitly and note what additional structure would be required
-- Output LaTeX-ready markdown with numbered equations
+- $SU(3)_c$ CANNOT be derived from $c_1 = 1$ (stated in clarifications above).
+  State what additional structure would be required and where this appears in the Paper 3 roadmap
 
 ## NOTATION
 
