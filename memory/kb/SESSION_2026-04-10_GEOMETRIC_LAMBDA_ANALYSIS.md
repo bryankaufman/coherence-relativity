@@ -314,11 +314,46 @@ Full derivation requires solving T_{MΣ} spatial variation.
 
 ---
 
-## Status (updated 2026-04-10 15:45 UTC)
-- 9 findings, 7 required calculations ALL COMPLETE
-- Phase 0: COMPLETE (gate passes)
-- Phase 1: COMPLETE (α = 3/2 exact)
-- Phase 2: COMPLETE (self-consistent, Casimir ~ drag)
-- §5.3 v3 direction: CLEAR (six-level hierarchy + two-channel dark sector)
-- Committed: 8ed3b70, 6ea38c1, 66db695, ac217af, fb1defa, d20aed2, c85ad7f, ac3e739
+## Evening Session: D1–D5 Execution + SC3 Checkpoint (15:00–23:45 UTC)
+
+### Derivations Completed
+| Item | Result | Commit |
+|------|--------|--------|
+| D1 | L* = [56, 69] μm. Interval Dirichlet BC (1/1440). Old values retired. | 01f13e7 |
+| D4 | Atiyah-Singer: ind(D_Y) = Y on S². ΔL*/L* < 1%. c₁=1 constrains f topologically. | eaee177 |
+| D2 | §5.3 REVISED. Category error corrected. Five-level hierarchy. D4 paragraph inserted. | 5dc3c2d |
+| D3 | V_eff: Outcome B. Casimir 1/η⁴ overwhelms Berger η² by 5×. No minimum. Deferral to Paper III. | cd6f17b |
+| D3b | Level 3 added: V_Level3 = −C/η² (same destabilizing direction). dV/dη > 0 ∀η. Paper III needs flux quantization. | (bridge) |
+| D5 | §6 REVISED. α = 3/2 integral derivation. Dark sector budget. Falsification criteria. Arrow-of-time connection. | d325098 |
+| §1 | Introduction REVISED. 750 words. All results incorporated. KCR nomenclature. Paper III roadmap. | a04e939 |
+
+### Nomenclature Changes
+- KK-Cone → KCR-Cone (Kaluza–Coherence Relativity) in all v2/REVISED files
+- KK modes → KCR modes with explanatory remark in §3.3.4
+- r_f* → L* (interval length, not fiber radius)
+- Kaluza (1921) and Klein (1926) added to master.bib
+
+### SC3 Checkpoint Result
+**CONDITIONALLY ESTABLISHED (Option 1 approved).**
+- Casimir: L* = [56, 69] μm ✔, ISL passes 3× ✔
+- Level 1b: Δf < 1%, topological ✔
+- Shape: k² = 2 topologically frozen ✔
+- Scale: Casimir balance gives L*, but V_eff minimum requires Paper III (flux quantization)
+- Level 3: α = 3/2 exact, but destabilizes V_eff in same direction as Casimir
+
+### Dispatched (pending)
+- D10 (§10 open problems) → Cowork
+- D11 (§9 discussion) → Cowork
+- Editorial pass (49k → 15–20k) → next session
+
+---
+
+## Final Status (2026-04-10 23:45 UTC)
+- 20 commits, ~19 hours
+- HEAD: a04e939
+- 9 findings, 7 calculations (Phase 0–2), 7 derivations (D1–D5 + D3b + §1)
+- SC3 checkpoint: PASSED (conditionally)
+- Paper 1: 21 pages, clean
+- Paper 2: REVISED sections for §1, §5.3, §6 + D3/D4 drafts. D10/D11 pending.
+- Paper III roadmap: flux quantization, Γ_dec(η), SU(3)_c, Ω_DM/Ω_Λ prediction
 - Paper 1 and Klein removal (OP-24) are UNAFFECTED
