@@ -509,3 +509,30 @@ These are ready to integrate into Paper 2 drafts without new derivation:
 
 **Wave 3 integration note (2026-04-09):** Proposition 4.2 anchor phrase "the cone tip is not traversable" did not exist in any file prior to this integration. The phrase + Proposition were inserted together into §4.2.4 of the abstract EOM draft. KK gravity Remark inserted into §4.2.3. Source file: `paper2_KK_gravity_and_SC3_update.md` (logged 2026-04-09 00:30 UTC).
 
+---
+
+## APRIL 10 SESSION: Geometric Λ Analysis + Dark Sector Unification
+
+**Session log:** `memory/kb/SESSION_2026-04-10_GEOMETRIC_LAMBDA_ANALYSIS.md`
+**9 findings, 7 calculations, 12 commits.**
+
+### Key Results
+- **Category error found:** §5.3 v2 geometric Λ (Level 2, FS curvature) is 10⁶¹ × Λ_obs. FS curvature is information-geometric, not gravitational.
+- **α = 3/2 exact:** Frame-dragging backreaction from T_{MΣ} with graviton zero-mode weighting. Pure geometric constant from CP¹.
+- **Dark sector unified:** DE (w=-1, permanent modes) + DM (w=0, tracking modes) from same mechanism.
+- **D1 resolved:** r* discrepancy traced. Correct value: L* = 56–69 μm (interval Dirichlet BC). ISL passes.
+- **Nomenclature:** KK-Cone → KCR-Cone, KK modes → KCR modes (post-Klein files only).
+
+### Dispatch: D4 (Atiyah-Singer Topological Zero-Point)
+
+**Status:** Ready for Claude Cowork
+**Dispatch file:** `papers/02-saturation-dynamics/sections/drafts/D4_atiyah_singer_dispatch.md`
+**Model:** Opus | **Priority:** Tier 2 | **No blocking dependencies**
+
+Compute the Atiyah-Singer index for SM fields on the KCR-Cone Hopf bundle (c₁=1).
+Determine zero-mode inventory, Casimir mode count correction, and physical interpretation.
+Output to: `paper2_section_D4_atiyah_singer_DRAFT.md`
+
+### Remaining Critical Path (D2–D11)
+See session log for full dispatch tracker. Next: D2 (§5.3 category error repair, Sonnet).
+
