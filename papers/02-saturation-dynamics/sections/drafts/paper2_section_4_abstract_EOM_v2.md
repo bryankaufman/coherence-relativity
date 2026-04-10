@@ -15,7 +15,7 @@
 
 ## §4.0.1 The 5D Metric Ansatz
 
-The KK-Cone worked example in §5–§8 adopts the following 5D metric ansatz, which encodes the derived compactification of §3.2:
+The KCR-Cone worked example in §5–§8 adopts the following 5D metric ansatz, which encodes the derived compactification of §3.2:
 
 $$\mathrm{d}s^2_{(5)} = A^2(r)\, \eta_{\mu\nu}\, \mathrm{d}x^\mu\, \mathrm{d}x^\nu + \mathrm{d}r^2 \tag{4.0.1}$$
 
@@ -124,7 +124,7 @@ This is a necessary condition for the equations of motion to be well-posed. If $
 
 **At the framework level**, we can state this as a *consistency requirement* on admissible geometries: any geometry that supports the coherence-frame formalism must have bounded $\lambda \cdot T$.
 
-Whether $\lambda \cdot T$ is not just bounded but *constant* (independent of $\xi$) is a stronger condition that has been verified in the KK-Cone worked example (§7.4.15 of the companion paper [Paper 2B]), where the warp-factor cancellation gives $\lambda \cdot T = O(1)$. This uniformity is a notable feature of that geometry, not a general theorem.
+Whether $\lambda \cdot T$ is not just bounded but *constant* (independent of $\xi$) is a stronger condition that has been verified in the KCR-Cone worked example (§7.4.15 of the companion paper [Paper 2B]), where the warp-factor cancellation gives $\lambda \cdot T = O(1)$. This uniformity is a notable feature of that geometry, not a general theorem.
 
 ---
 
@@ -166,7 +166,7 @@ The identification $\lambda = f(\text{warp factor})$ is geometry-dependent:
 - It depends on the physical interpretation of $\lambda$ (metric perspective vs. dynamical perspective — see the detailed discussion in [Paper 2B, §6.3])
 - Different geometries may produce different functional forms
 
-The corrected identification $\lambda = A^2$ (not $A^{-2}$) was established for the KK-Cone in [Paper 2B, Eq. 7.3.3], where the physical requirement is that $\lambda \to 0$ in the classical limit (deep throat). This identification ensures:
+The corrected identification $\lambda = A^2$ (not $A^{-2}$) was established for the KCR-Cone in [Paper 2B, Eq. 7.3.3], where the physical requirement is that $\lambda \to 0$ in the classical limit (deep throat). This identification ensures:
 - $\lambda = 1$ at the brane (maximal coupling)
 - $\lambda \to 0$ at the pinch-off (classical limit)
 - The frame-lag force $F_{\text{lag}} \sim \lambda \cdot T \sim O(1)$ (finite)
@@ -175,7 +175,7 @@ Whether the same identification holds for other geometries is an open question.
 
 \begin{remark}[Gravity as Kaluza-Klein zero mode on the derived interval]
 \label{rem:kk-gravity}
-In the KK-Cone geometry, four-dimensional gravity is not independently
+In the KCR-Cone geometry, four-dimensional gravity is not independently
 postulated or separately quantized. The graviton emerges as the zero mode
 of the five-dimensional metric tensor on the derived interval $r \in [0, r_\mathrm{max}]$
 (Eq.\ 4.0.1): $g_{\mu\nu}$ (the 4D graviton),
@@ -217,9 +217,9 @@ $$\text{Classical limit} \iff \lambda \to 0 \tag{4.2.2}$$
 
 This is convention-independent and follows directly from the structure of the equations of motion (4.1.8)–(4.1.9): when $\lambda = 0$, the M and Σ sectors decouple, and the M-sector follows a standard geodesic.
 
-The $R_{\text{Markov}}$ criterion remains valuable as a *geometric diagnostic* (it measures the relative curvature scales), but its evaluation requires resolving the norm conventions described in §4.2.1. This resolution is geometry-specific and is carried out for the KK-Cone in [Paper 2B, §3].
+The $R_{\text{Markov}}$ criterion remains valuable as a *geometric diagnostic* (it measures the relative curvature scales), but its evaluation requires resolving the norm conventions described in §4.2.1. This resolution is geometry-specific and is carried out for the KCR-Cone in [Paper 2B, §3].
 
-In the KK-Cone geometry specifically, the radial coordinate $r$ has an additional geometric property: **the interval endpoint is not traversable.** The warp factor $A(r)$ vanishes at $r = r_\mathrm{max}$, and the radial direction is non-decreasing along any physical (Lindblad-evolved) trajectory, as a consequence of open-system irreversibility. This non-traversability is not an independent axiom but a theorem of the Fubini-Study geometry of $\Sigma$. The full statement is as follows.
+In the KCR-Cone geometry specifically, the radial coordinate $r$ has an additional geometric property: **the interval endpoint is not traversable.** The warp factor $A(r)$ vanishes at $r = r_\mathrm{max}$, and the radial direction is non-decreasing along any physical (Lindblad-evolved) trajectory, as a consequence of open-system irreversibility. This non-traversability is not an independent axiom but a theorem of the Fubini-Study geometry of $\Sigma$. The full statement is as follows.
 
 \begin{proposition}[Non-traversability and warp factor as residual coherence amplitude]
 \label{prop:r-nontraversable}
@@ -288,7 +288,7 @@ The abstract equations of motion on M × Σ are well-defined and the frame-lag m
 
 But *evaluating* these equations requires committing to a geometry and resolving convention choices. This is not a failure of the framework — it is the expected state of affairs for any geometric theory. General relativity's field equations are abstract; evaluating them requires choosing a spacetime (Schwarzschild, Kerr, FRW, etc.). Similarly, the coherence-frame equations of motion are abstract; evaluating them requires choosing a coherence geometry.
 
-The companion paper [Paper 2B] provides the first such evaluation, specializing to the KK-Cone — the first physically motivated geometry from derived compactification (§3.2). That evaluation reveals: the warp-factor cancellation $\lambda \cdot T = O(1)$, the corrected identification $\lambda = A^2$, and specific predictions for decoherence dynamics. These are geometry-specific results that illustrate the framework's content but do not exhaust it.
+The companion paper [Paper 2B] provides the first such evaluation, specializing to the KCR-Cone — the first physically motivated geometry from derived compactification (§3.2). That evaluation reveals: the warp-factor cancellation $\lambda \cdot T = O(1)$, the corrected identification $\lambda = A^2$, and specific predictions for decoherence dynamics. These are geometry-specific results that illustrate the framework's content but do not exhaust it.
 
 **Delivered promise:** *Equations of motion on M × Σ* ✅ — abstract system fully specified (Eqs. 4.1.8–4.1.9); frame-lag mechanism established (Eq. 4.1.10); evaluation deferred to companion paper with explicit justification.
 
@@ -302,8 +302,8 @@ The companion paper [Paper 2B] provides the first such evaluation, specializing 
 - §2.3, Definition 2.3.1: Markov transition criterion
 - §3.2: Derived compactification — interval geometry and Berry phase U(1)
 - §3.2 (OP-24 resolution): Klein circle not required; c₁=1 on CP¹ gives U(1) and charge quantization
-- [Paper 2B, §6]: KK-Cone specialization of the abstract EOM
-- [Paper 2B, §3]: Markov transition evaluation in the KK-Cone throat
+- [Paper 2B, §6]: KCR-Cone specialization of the abstract EOM
+- [Paper 2B, §3]: Markov transition evaluation in the KCR-Cone throat
 - [Paper 2B, Appendix A]: Norm convention resolution
 
 ---

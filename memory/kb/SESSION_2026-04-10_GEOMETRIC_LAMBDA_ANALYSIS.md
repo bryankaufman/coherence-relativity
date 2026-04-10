@@ -192,7 +192,7 @@ Derive the spatial variation of the T_{MΣ} frame-dragging in the presence of a 
 ## Required Calculations (Priority Order)
 
 ### RC-1: T_{MΣ} backreaction on M-sector Einstein equations
-Derive the effective stress-energy tensor T_μν^(drag) from the T_{MΣ} cross-term. This requires the explicit form of T_{MΣ} in the KK-Cone geometry and the Σ-sector dynamics (decoherence rate). The result should be expressible as T_μν^(drag) = f(decoherence rate, T_{MΣ}, λ) × g_μν.
+Derive the effective stress-energy tensor T_μν^(drag) from the T_{MΣ} cross-term. This requires the explicit form of T_{MΣ} in the KCR-Cone geometry and the Σ-sector dynamics (decoherence rate). The result should be expressible as T_μν^(drag) = f(decoherence rate, T_{MΣ}, λ) × g_μν.
 
 ### RC-2: Equation of state w for the Machian contribution
 If ρ_drag ~ H(t)² × M_Pl², does this give w ≈ -1 (constant-like) or w ≠ -1 (evolving)? If the decoherence rate tracks H(t), then ρ_drag evolves with the expansion — compute w(t) explicitly. Compare with Planck+BAO+SNe constraint w = -1.03 ± 0.03.

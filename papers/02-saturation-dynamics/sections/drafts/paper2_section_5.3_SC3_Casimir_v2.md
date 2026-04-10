@@ -12,13 +12,13 @@ The third self-consistency condition (SC3) requires that the observed cosmologic
 
 $$\Lambda_{\mathrm{obs}} \approx 1.1 \times 10^{-52} \, \mathrm{m}^{-2},$$
 
-emerges from the KK-Cone geometry. Previous drafts required **quantum closure**: the classical Einstein tensor of the $S^3$ Hopf fiber geometry gives $\Lambda_{\mathrm{classical}} = 0$ (spine §3.4), so SC3 appeared to require Casimir energy as the sole source of $\Lambda_{\mathrm{obs}} > 0$.
+emerges from the KCR-Cone geometry. Previous drafts required **quantum closure**: the classical Einstein tensor of the $S^3$ Hopf fiber geometry gives $\Lambda_{\mathrm{classical}} = 0$ (spine §3.4), so SC3 appeared to require Casimir energy as the sole source of $\Lambda_{\mathrm{obs}} > 0$.
 
 This framing is superseded by the following result.
 
 ### § 5.3.1.1: Geometric Λ from Warp Curvature
 
-The 5D metric of the KK-Cone is
+The 5D metric of the KCR-Cone is
 
 $$\mathrm{d}s^2_{5\mathrm{D}} = A^2(r)\,\eta_{\mu\nu}\,\mathrm{d}x^\mu \mathrm{d}x^\nu + \mathrm{d}r^2$$
 (Eq. 5.3.0)
@@ -65,7 +65,7 @@ since $A(r_{\max}) = 0$. The geometry is self-consistent at the boundary.
 
 **New (v2) narrative:** The classical $\cos(\sqrt{2}\,r)$ warp factor has intrinsic positive curvature energy. When the extra dimension is integrated out, this yields $\Lambda_{\mathrm{geom}} > 0$ classically — no quantum fields required for the sign. The Casimir energy on the derived interval is a **quantum correction** to $\Lambda_{\mathrm{geom}}$, not its source. The sign of $\Lambda$ is geometrically guaranteed. The sign condition $f > 0$ on the field content affects the correction, not the leading term. SUSY sectors are no longer excluded.
 
-**SC3 revised claim:** The KK-Cone with warp factor $A(r) = \cos(\sqrt{2}\,r)$ produces $\Lambda_{\mathrm{eff}} > 0$ from classical geometry, with Casimir energy providing a subleading quantum correction whose magnitude determines the physical scale $s$ (and hence the interval length $L = r_{\max} \times s$).
+**SC3 revised claim:** The KCR-Cone with warp factor $A(r) = \cos(\sqrt{2}\,r)$ produces $\Lambda_{\mathrm{eff}} > 0$ from classical geometry, with Casimir energy providing a subleading quantum correction whose magnitude determines the physical scale $s$ (and hence the interval length $L = r_{\max} \times s$).
 
 ---
 
@@ -279,7 +279,7 @@ Massive modes, loop corrections, finite-temperature effects, and cubic interacti
 
 ### Claim Posture: GEOMETRIC Λ (Conditionally Established)
 
-**SC3 in v2:** The KK-Cone with $A(r) = \cos(\sqrt{2}\,r)$ produces a positive cosmological constant from classical geometry. The magnitude is set by the Friedmann balance at the current epoch (cosmological attractor). The Casimir energy on the derived interval provides a quantum correction whose scale is $L_{\mathrm{Cas}}^* \sim 46\text{–}56\,\mu\mathrm{m}$.
+**SC3 in v2:** The KCR-Cone with $A(r) = \cos(\sqrt{2}\,r)$ produces a positive cosmological constant from classical geometry. The magnitude is set by the Friedmann balance at the current epoch (cosmological attractor). The Casimir energy on the derived interval provides a quantum correction whose scale is $L_{\mathrm{Cas}}^* \sim 46\text{–}56\,\mu\mathrm{m}$.
 
 Remaining open items:
 1. **Post-transition field content** (Paper 3): determines the sign and magnitude of the Casimir correction

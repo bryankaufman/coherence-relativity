@@ -20,7 +20,7 @@ coherence amplitude]
 The non-traversability of the cone tip at $r = 0$ extends to the radial
 direction itself.  We show here that (i) $r$ is non-decreasing along any
 physical trajectory as a consequence of open quantum dynamics, and
-(ii) the KK-Cone warp factor $A(r)$ is the complement of the decoherence
+(ii) the KCR-Cone warp factor $A(r)$ is the complement of the decoherence
 depth, with the decay rate $\mu = \sqrt{2}$ fixed by the Fubini-Study
 geometry of~$\Sigma$.
 
@@ -65,7 +65,7 @@ $\Lambda^2 + A^2 = 1$ at the level of the state vector, which gives
   \label{eq:A_exact}
 \end{equation}
 This is the \emph{exact} warp factor from the Fubini-Study geometry.
-The KK-Cone ansatz $A(r) = e^{-\mu r}$ is the WKB approximation to
+The KCR-Cone ansatz $A(r) = e^{-\mu r}$ is the WKB approximation to
 $\cos(\sqrt{2}\,r)$, valid in the early-decoherence regime
 $r \ll \pi/(2\sqrt{2}) \approx 1.11$ (near the brane, $\Lambda \ll 1$),
 where $\cos(\sqrt{2}\,r) \approx e^{-\sqrt{2}\,r}$ to second order.
@@ -134,7 +134,7 @@ SPECIFIC DERIVATION TARGET FOR §7:
 The Fubini-Study geometry of Σ gives Λ(r) = sin(√2 r) as the
 decoherence-depth arc-length coordinate, and A(r) = cos(√2 r) as
 the exact warp complement (Remark 4.2, with Λ² + A² = 1).
-The KK-Cone uses A(r) = e^{−√2 r} as a WKB approximation.
+The KCR-Cone uses A(r) = e^{−√2 r} as a WKB approximation.
 
 §7 must verify the following:
 

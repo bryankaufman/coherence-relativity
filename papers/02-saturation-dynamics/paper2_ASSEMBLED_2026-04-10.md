@@ -87,7 +87,7 @@ Section 5 states the Holographic Structure Conjecture (Conjecture 5.1) with a co
 
 ## §1.5 The Companion Paper
 
-This paper develops the framework. A companion paper — *Coherence Relativity IIb: Self-Consistency, Dark Matter, and Holographic Verification on the KK-Cone* — provides the first evaluation of the abstract framework on a specific geometry: the Kaluza-Klein cone (KK-Cone) arising from derived compactification.
+This paper develops the framework. A companion paper — *Coherence Relativity IIb: Self-Consistency, Dark Matter, and Holographic Verification on the KCR-Cone* — provides the first evaluation of the abstract framework on a specific geometry: the Kaluza-Klein cone (KCR-Cone) arising from derived compactification.
 
 The companion paper specializes the abstract equations of motion (§4) to the 5D warped metric, resolves the norm conventions identified in §4.2, evaluates the Markov transition criterion in the warped throat, tests two of three self-consistency conditions, derives predictions for geometric dark matter, and performs partial holographic verification against Ryu-Takayanagi calculations.
 
@@ -118,7 +118,7 @@ The metric signature is $(-,+,+,+)$ for the M-sector. Natural units $\hbar = c =
 - §2.1–§2.5: Part I formalism
 - §3.1–§3.3: Part II derived compactification
 - §4–§5: Part III dynamics and holography
-- [Paper 2B]: Companion paper (KK-Cone evaluation)
+- [Paper 2B]: Companion paper (KCR-Cone evaluation)
 
 ---
 
@@ -593,7 +593,7 @@ For specific physical systems (e.g., those with holomorphic coherence frames), K
 
 ---
 
-## 2.1.11 Connection to the KK-Cone: Warp-Factor Modulation of T_{MΣ}
+## 2.1.11 Connection to the KCR-Cone: Warp-Factor Modulation of T_{MΣ}
 
 [Note: Full treatment deferred to §7. Here we sketch the key point.]
 
@@ -632,7 +632,7 @@ where $T_{\mu a}^{(flat)}$ is the cross-term computed in flat space.
 
 **No quantitative scaling law for $T_{\mu a}$ is claimed here until derived from covariant equations in §7.**
 
-### Physical Interpretation in the KK-Cone
+### Physical Interpretation in the KCR-Cone
 
 If this scaling hypothesis is confirmed, the consequences are profound:
 
@@ -694,7 +694,7 @@ With T_{MΣ} now characterized on the joint manifold M × Σ, the next sections 
 
 - **§2.2**: Equations of motion on M × Σ derived from the action principle, showing how spacetime dynamics couples to coherence-frame evolution. Full treatment of index raising and the inverse metric.
 - **§3**: Specific solutions in symmetric spacetimes (FLRW, Schwarzschild), computing G_{μν}, G_{ab}, and T_{MΣ} explicitly.
-- **§7**: Full treatment of the KK-Cone geometry, including verification of the warp-factor modulation hypothesis and the emergence of low-energy effective physics.
+- **§7**: Full treatment of the KCR-Cone geometry, including verification of the warp-factor modulation hypothesis and the emergence of low-energy effective physics.
 
 ---
 
@@ -720,7 +720,7 @@ The quantum geometric tensor Q_{AB} = G_{AB} + i F_{AB} unifies the metric and B
 
 This section develops the **δλ formalism**, which controls the degree to which spacetime and coherence-frame degrees of freedom are coupled. We introduce a **distinguishability parameter λ ∈ [0, 1]** that interpolates between the classical limit (λ = 0, where spacetime and coherence decouple) and the quantum regime (λ = 1, full coupling via T_{MΣ}).
 
-Using λ, we decompose the pullback metric from the Fubini-Study structure on projective Hilbert space PH to the joint manifold M × Σ into three parts: a "pure-M" component (classical spacetime metric), a "pure-Σ" component (coherence-frame metric from Paper 1), and a controlled cross-term (proportional to T_{MΣ}, strength set by λ). We then derive the **Euler-Lagrange equations** from the action principle, obtaining frame-lag equations of motion that show how the coherence frame **lags behind** or **tracks** environmental decoherence depending on the magnitude of T_{MΣ}. Finally, we relate this formalism to the canonical 5D KK-Cone metric, showing how the warp factor A(r,z) modulates λ and hence the effective coupling between spacetime and coherence sectors.
+Using λ, we decompose the pullback metric from the Fubini-Study structure on projective Hilbert space PH to the joint manifold M × Σ into three parts: a "pure-M" component (classical spacetime metric), a "pure-Σ" component (coherence-frame metric from Paper 1), and a controlled cross-term (proportional to T_{MΣ}, strength set by λ). We then derive the **Euler-Lagrange equations** from the action principle, obtaining frame-lag equations of motion that show how the coherence frame **lags behind** or **tracks** environmental decoherence depending on the magnitude of T_{MΣ}. Finally, we relate this formalism to the canonical 5D KCR-Cone metric, showing how the warp factor A(r,z) modulates λ and hence the effective coupling between spacetime and coherence sectors.
 
 ---
 
@@ -1083,11 +1083,11 @@ $$\frac{\ddot{\xi}^1 - \dot{\mathcal{F}}^1}{\ddot{x}^0 - \dot{\mathcal{F}}^0} \s
 
 ---
 
-## 2.2.6 Connection to the KK-Cone: Warp-Factor Modulation of λ
+## 2.2.6 Connection to the KCR-Cone: Warp-Factor Modulation of λ
 
 ### The Canonical 5D Metric (Reminder)
 
-From the problem statement, the 5D KK-Cone metric is:
+From the problem statement, the 5D KCR-Cone metric is:
 
 $$ds^2_{(5)} = -dz^2 + dr^2 + A(r,z)^2 \, \gamma_{ij} d\theta^i d\theta^j$$
 
@@ -1104,10 +1104,10 @@ where:
 
 We use the following **working identification** for this section:
 
-| M × Σ object | KK-Cone object | Interpretation |
+| M × Σ object | KCR-Cone object | Interpretation |
 |------------------|-------------------|---|
 | x^μ (spacetime coordinates on M) | brane/worldvolume coordinates (with z used as a representative coordinate in simplified examples) | M is not collapsed to a single coordinate; 1D examples below are illustrative reductions. |
-| ξ^a (coherence-frame coordinates on Σ) | internal/fiber-adapted degrees of freedom in the KK-Cone chart | Σ degrees are represented through internal geometric response, not a literal one-to-one coordinate identity. |
+| ξ^a (coherence-frame coordinates on Σ) | internal/fiber-adapted degrees of freedom in the KCR-Cone chart | Σ degrees are represented through internal geometric response, not a literal one-to-one coordinate identity. |
 | λ(x,ξ) | function modulated by local warp geometry A(r,z) | A-dependence of λ is a hypothesis tested later. |
 
 **Eq. 2.2.35**
@@ -1163,8 +1163,8 @@ $$\boxed{\lambda(r, z) \sim A(r, z)^2}$$
 
 **Status — UNTESTED**: This is a **warp-scaling hypothesis** derived from dimensional analysis and physical intuition. Verification requires:
 1. Computing covariant derivatives in the full 5D metric.
-2. Evaluating the Fubini-Study structure explicitly in KK-Cone coordinates.
-3. Solving the coupled equations of motion on M × Σ within the KK-Cone geometry.
+2. Evaluating the Fubini-Study structure explicitly in KCR-Cone coordinates.
+3. Solving the coupled equations of motion on M × Σ within the KCR-Cone geometry.
 4. Confirming that the emergent effective action has λ ∼ A² scaling.
 
 Full verification is deferred to §7.
@@ -1373,9 +1373,9 @@ The equations of motion (Eq. 2.2.29 and 2.2.30, in the simplified 1D example) ar
 
 ---
 
-### 2. Verification of λ ∼ A² in KK-Cone
+### 2. Verification of λ ∼ A² in KCR-Cone
 
-**Question**: Does the detailed calculation in the 5D KK-Cone metric confirm λ ∼ A²?
+**Question**: Does the detailed calculation in the 5D KCR-Cone metric confirm λ ∼ A²?
 
 **Approach**: Compute the Fubini-Study tensor G_{AB} explicitly using the 5D metric (Eq. 2.2.34). Evaluate the cross-term T_{μa} as a function of (r,z). Determine whether λ, as extracted from the equations of motion, scales as A².
 
@@ -1433,7 +1433,7 @@ The equations of motion (Eq. 2.2.29 and 2.2.30, in the simplified 1D example) ar
 
 - **Explicit form of O(λ) corrections to inverse metric** (§2.2.3): Lengthy algebra, deferred to Appendix A.
 - **Position-dependent decoherence rate example** (mentioned in §2.1.8): Concrete model of T_{MΣ} with γ = γ(x), deferred to §3.
-- **Exact solutions in KK-Cone and verification of λ ∼ A² scaling** (§2.2.6, 2.2.12.2): Full numerical or analytical solution, deferred to §7.
+- **Exact solutions in KCR-Cone and verification of λ ∼ A² scaling** (§2.2.6, 2.2.12.2): Full numerical or analytical solution, deferred to §7.
 - **Quantization of M × Σ system** (§2.2.12.4): Future work.
 
 ---
@@ -1444,11 +1444,11 @@ The equations of motion (Eq. 2.2.29 and 2.2.30, in the simplified 1D example) ar
 
 1. **Interpretation of λ is phenomenological**: A first-principles derivation from decoherence-rate functionals would strengthen the formalism.
 
-2. **Warp-factor scaling is hypothetical**: The λ ∼ A² ansatz must be verified by explicit calculation in the KK-Cone geometry (§7).
+2. **Warp-factor scaling is hypothetical**: The λ ∼ A² ansatz must be verified by explicit calculation in the KCR-Cone geometry (§7).
 
 3. **Exact solutions are limited**: The coupled equations are complex; progress likely requires symmetry, ansätze, or numerical methods.
 
-All equations, definitions, and logical steps are **mathematically consistent** and **gauge-invariant**. The section is ready for §3 (specific spacetime examples) and §7 (KK-Cone verification).
+All equations, definitions, and logical steps are **mathematically consistent** and **gauge-invariant**. The section is ready for §3 (specific spacetime examples) and §7 (KCR-Cone verification).
 
 ---
 
@@ -2546,7 +2546,7 @@ When R_{Markov} ≪ 1, the frame-lag ratio is also small (the frame acceleration
 
 The abstract Markov criterion (Eq. 2.3.3–2.3.6) applies to any geometry on $M \times \Sigma$. Evaluation on a specific geometry — computing the metric-block norms, resolving the cross-term norm convention, and determining the warp-factor scaling of $R_{\text{Markov}}$ — is the subject of [Paper 2B, §3].
 
-The key result (established in [Paper 2B]): in the KK-Cone throat ($A \to 0$), the warp factor automatically drives $\lambda \to 0$ (via Eq. 2.2.42), which in turn pushes $R_{\text{Markov}} \to 0$. This provides a geometric mechanism for classical entry. The detailed scaling analysis, numerical estimates, and convention dependence are presented there.
+The key result (established in [Paper 2B]): in the KCR-Cone throat ($A \to 0$), the warp factor automatically drives $\lambda \to 0$ (via Eq. 2.2.42), which in turn pushes $R_{\text{Markov}} \to 0$. This provides a geometric mechanism for classical entry. The detailed scaling analysis, numerical estimates, and convention dependence are presented there.
 
 ---
 
@@ -2605,7 +2605,7 @@ This definition applies locally at each point (x, ξ) ∈ M × Σ. A system can 
 
 Examples:
 - In regions where λ ≈ 1 (strong coupling): possibly quantum (R_{Markov} ~ ε or larger)
-- In regions where λ → 0 (weak coupling): automatically classical (R_{Markov} → 0) — see [Paper 2B, §3] for the KK-Cone throat as a concrete realization
+- In regions where λ → 0 (weak coupling): automatically classical (R_{Markov} → 0) — see [Paper 2B, §3] for the KCR-Cone throat as a concrete realization
 - Near a boundary or interface: transition region (R_{Markov} ~ ε)
 
 ---
@@ -2626,7 +2626,7 @@ Examples:
 
 6. **Define classicality geometrically** (§2.3.6): Classicality is the condition R_{Markov} < ε, applied locally at each point in M × Σ.
 
-Evaluation of R_{Markov} on a specific geometry (the KK-Cone) is the subject of [Paper 2B, §3], where the warp factor is shown to drive automatic classical entry in the throat.
+Evaluation of R_{Markov} on a specific geometry (the KCR-Cone) is the subject of [Paper 2B, §3], where the warp factor is shown to drive automatic classical entry in the throat.
 
 ### Key Insight
 
@@ -2638,7 +2638,7 @@ The transition from quantum to classical is not an abrupt change (ℏ → 0), bu
 
 ### Geometry-Specific Evaluation
 
-The abstract Markov criterion developed in this section is evaluated on the KK-Cone geometry in [Paper 2B, §3]. That evaluation includes:
+The abstract Markov criterion developed in this section is evaluated on the KCR-Cone geometry in [Paper 2B, §3]. That evaluation includes:
 
 1. Computing the metric-block norms as functions of the warp factor A.
 2. Resolving the cross-term norm convention (covariant vs. contravariant).
@@ -2687,7 +2687,7 @@ The abstract equations of motion on $M \times \Sigma$ (§4 of this paper) provid
 
   **Status**: ⚠️ **UNTESTED** — Specific form depends on microscopic decoherence model.
 
-- **KK-Cone throat scaling and warp-driven transition point**: Moved to [Paper 2B, §3]. Three-model consensus (2026-03-09) established R_{Markov} ∼ A² under the asymmetric norm convention; see [Paper 2B, Appendix A] for the convention lock.
+- **KCR-Cone throat scaling and warp-driven transition point**: Moved to [Paper 2B, §3]. Three-model consensus (2026-03-09) established R_{Markov} ∼ A² under the asymmetric norm convention; see [Paper 2B, Appendix A] for the convention lock.
 
 ---
 
@@ -2699,7 +2699,7 @@ The abstract equations of motion on $M \times \Sigma$ (§4 of this paper) provid
 
 - **Explicit calculation of ε for specific systems**: The threshold depends on the physical system and environment.
 
-  **Status**: ⚠️ **MISSING** — [Paper 2B] will provide examples on the KK-Cone.
+  **Status**: ⚠️ **MISSING** — [Paper 2B] will provide examples on the KCR-Cone.
 
 - **Time-dependent analysis**: Full time evolution of R_{Markov}(t) during a transition.
 
@@ -2737,8 +2737,8 @@ The abstract equations of motion on $M \times \Sigma$ (§4 of this paper) provid
 - To §2.1: Fubini-Study metric, state map Φ, T_{MΣ} definition
 - To §2.2: δλ formalism, action principle, frame-lag force, classical limit, warp-factor hypothesis
 - To §4: Abstract equations of motion on M × Σ
-- To [Paper 2B, §3]: KK-Cone throat evaluation, norm convention lock
-- To [Paper 2B, §6]: Coupled EOMs on the KK-Cone
+- To [Paper 2B, §3]: KCR-Cone throat evaluation, norm convention lock
+- To [Paper 2B, §6]: Coupled EOMs on the KCR-Cone
 
 **Integration with Paper 1**: The Markov criterion applies to the full M × Σ manifold, preserving all Paper-1 physics in the Σ-sector when R_{Markov} → 0.
 
@@ -3387,7 +3387,7 @@ $$\boxed{\text{Degrees of freedom: String theory } \gtrsim 10^{500};\quad \text{
 
 ## §4.0.1 The 5D Metric Ansatz
 
-The KK-Cone worked example in §5–§8 adopts the following 5D metric ansatz, which encodes the derived compactification of §3.2:
+The KCR-Cone worked example in §5–§8 adopts the following 5D metric ansatz, which encodes the derived compactification of §3.2:
 
 $$\mathrm{d}s^2_{(5)} = A^2(r)\, \eta_{\mu\nu}\, \mathrm{d}x^\mu\, \mathrm{d}x^\nu + \mathrm{d}r^2 \tag{4.0.1}$$
 
@@ -3496,7 +3496,7 @@ This is a necessary condition for the equations of motion to be well-posed. If $
 
 **At the framework level**, we can state this as a *consistency requirement* on admissible geometries: any geometry that supports the coherence-frame formalism must have bounded $\lambda \cdot T$.
 
-Whether $\lambda \cdot T$ is not just bounded but *constant* (independent of $\xi$) is a stronger condition that has been verified in the KK-Cone worked example (§7.4.15 of the companion paper [Paper 2B]), where the warp-factor cancellation gives $\lambda \cdot T = O(1)$. This uniformity is a notable feature of that geometry, not a general theorem.
+Whether $\lambda \cdot T$ is not just bounded but *constant* (independent of $\xi$) is a stronger condition that has been verified in the KCR-Cone worked example (§7.4.15 of the companion paper [Paper 2B]), where the warp-factor cancellation gives $\lambda \cdot T = O(1)$. This uniformity is a notable feature of that geometry, not a general theorem.
 
 ---
 
@@ -3538,7 +3538,7 @@ The identification $\lambda = f(\text{warp factor})$ is geometry-dependent:
 - It depends on the physical interpretation of $\lambda$ (metric perspective vs. dynamical perspective — see the detailed discussion in [Paper 2B, §6.3])
 - Different geometries may produce different functional forms
 
-The corrected identification $\lambda = A^2$ (not $A^{-2}$) was established for the KK-Cone in [Paper 2B, Eq. 7.3.3], where the physical requirement is that $\lambda \to 0$ in the classical limit (deep throat). This identification ensures:
+The corrected identification $\lambda = A^2$ (not $A^{-2}$) was established for the KCR-Cone in [Paper 2B, Eq. 7.3.3], where the physical requirement is that $\lambda \to 0$ in the classical limit (deep throat). This identification ensures:
 - $\lambda = 1$ at the brane (maximal coupling)
 - $\lambda \to 0$ at the pinch-off (classical limit)
 - The frame-lag force $F_{\text{lag}} \sim \lambda \cdot T \sim O(1)$ (finite)
@@ -3547,7 +3547,7 @@ Whether the same identification holds for other geometries is an open question.
 
 \begin{remark}[Gravity as Kaluza-Klein zero mode on the derived interval]
 \label{rem:kk-gravity}
-In the KK-Cone geometry, four-dimensional gravity is not independently
+In the KCR-Cone geometry, four-dimensional gravity is not independently
 postulated or separately quantized. The graviton emerges as the zero mode
 of the five-dimensional metric tensor on the derived interval $r \in [0, r_\mathrm{max}]$
 (Eq.\ 4.0.1): $g_{\mu\nu}$ (the 4D graviton),
@@ -3589,9 +3589,9 @@ $$\text{Classical limit} \iff \lambda \to 0 \tag{4.2.2}$$
 
 This is convention-independent and follows directly from the structure of the equations of motion (4.1.8)–(4.1.9): when $\lambda = 0$, the M and Σ sectors decouple, and the M-sector follows a standard geodesic.
 
-The $R_{\text{Markov}}$ criterion remains valuable as a *geometric diagnostic* (it measures the relative curvature scales), but its evaluation requires resolving the norm conventions described in §4.2.1. This resolution is geometry-specific and is carried out for the KK-Cone in [Paper 2B, §3].
+The $R_{\text{Markov}}$ criterion remains valuable as a *geometric diagnostic* (it measures the relative curvature scales), but its evaluation requires resolving the norm conventions described in §4.2.1. This resolution is geometry-specific and is carried out for the KCR-Cone in [Paper 2B, §3].
 
-In the KK-Cone geometry specifically, the radial coordinate $r$ has an additional geometric property: **the interval endpoint is not traversable.** The warp factor $A(r)$ vanishes at $r = r_\mathrm{max}$, and the radial direction is non-decreasing along any physical (Lindblad-evolved) trajectory, as a consequence of open-system irreversibility. This non-traversability is not an independent axiom but a theorem of the Fubini-Study geometry of $\Sigma$. The full statement is as follows.
+In the KCR-Cone geometry specifically, the radial coordinate $r$ has an additional geometric property: **the interval endpoint is not traversable.** The warp factor $A(r)$ vanishes at $r = r_\mathrm{max}$, and the radial direction is non-decreasing along any physical (Lindblad-evolved) trajectory, as a consequence of open-system irreversibility. This non-traversability is not an independent axiom but a theorem of the Fubini-Study geometry of $\Sigma$. The full statement is as follows.
 
 \begin{proposition}[Non-traversability and warp factor as residual coherence amplitude]
 \label{prop:r-nontraversable}
@@ -3660,7 +3660,7 @@ The abstract equations of motion on M × Σ are well-defined and the frame-lag m
 
 But *evaluating* these equations requires committing to a geometry and resolving convention choices. This is not a failure of the framework — it is the expected state of affairs for any geometric theory. General relativity's field equations are abstract; evaluating them requires choosing a spacetime (Schwarzschild, Kerr, FRW, etc.). Similarly, the coherence-frame equations of motion are abstract; evaluating them requires choosing a coherence geometry.
 
-The companion paper [Paper 2B] provides the first such evaluation, specializing to the KK-Cone — the first physically motivated geometry from derived compactification (§3.2). That evaluation reveals: the warp-factor cancellation $\lambda \cdot T = O(1)$, the corrected identification $\lambda = A^2$, and specific predictions for decoherence dynamics. These are geometry-specific results that illustrate the framework's content but do not exhaust it.
+The companion paper [Paper 2B] provides the first such evaluation, specializing to the KCR-Cone — the first physically motivated geometry from derived compactification (§3.2). That evaluation reveals: the warp-factor cancellation $\lambda \cdot T = O(1)$, the corrected identification $\lambda = A^2$, and specific predictions for decoherence dynamics. These are geometry-specific results that illustrate the framework's content but do not exhaust it.
 
 **Delivered promise:** *Equations of motion on M × Σ* ✅ — abstract system fully specified (Eqs. 4.1.8–4.1.9); frame-lag mechanism established (Eq. 4.1.10); evaluation deferred to companion paper with explicit justification.
 
@@ -3674,8 +3674,8 @@ The companion paper [Paper 2B] provides the first such evaluation, specializing 
 - §2.3, Definition 2.3.1: Markov transition criterion
 - §3.2: Derived compactification — interval geometry and Berry phase U(1)
 - §3.2 (OP-24 resolution): Klein circle not required; c₁=1 on CP¹ gives U(1) and charge quantization
-- [Paper 2B, §6]: KK-Cone specialization of the abstract EOM
-- [Paper 2B, §3]: Markov transition evaluation in the KK-Cone throat
+- [Paper 2B, §6]: KCR-Cone specialization of the abstract EOM
+- [Paper 2B, §3]: Markov transition evaluation in the KCR-Cone throat
 - [Paper 2B, Appendix A]: Norm convention resolution
 
 ---
@@ -3704,13 +3704,13 @@ The companion paper [Paper 2B] provides the first such evaluation, specializing 
 
 Paper 1 (line 411) deferred the embedding-level regularity check for warped profiles A(r,z) to this section. The coherence-relativity framework requires continuous differentiability (C¹) of the coherence-to-classical map to ensure that small perturbations in the coherence frame induce small, physically meaningful changes in observable predictions. A failure of C¹ continuity would signal unphysical discontinuities or cusps in the quasipotential landscape, violating the fundamental smoothness requirement.
 
-In the KK-Cone model, the 5D metric is given by:
+In the KCR-Cone model, the 5D metric is given by:
 
 $$\begin{equation}
 \mathrm{d}s^2_{(5)} = -\mathrm{d}z^2 + \mathrm{d}r^2 + A(r,z)^2\,\gamma_{ij}\,\mathrm{d}\theta^i\mathrm{d}\theta^j \tag{4.4.1}
 \end{equation}$$
 
-where A(r,z) is a smooth warp factor and \(\gamma_{ij}\) is the unit round S³ metric in Hopf coordinates (as fixed in §4.0). The five KK-Cone coordinates are \((z, r, \theta^1, \theta^2, \theta^3)\). The structure combines:
+where A(r,z) is a smooth warp factor and \(\gamma_{ij}\) is the unit round S³ metric in Hopf coordinates (as fixed in §4.0). The five KCR-Cone coordinates are \((z, r, \theta^1, \theta^2, \theta^3)\). The structure combines:
 - A brane-normal sector \((-\mathrm{d}z^2)\)
 - A radial bulk sector \((\mathrm{d}r^2)\)
 - A warped internal Hopf sector \((A(r,z)^2\,\gamma_{ij}\,\mathrm{d}\theta^i\mathrm{d}\theta^j)\)
@@ -3760,7 +3760,7 @@ where ℝ⁺ is the radial coordinate domain and Σ is the coherence domain. Thi
 
 ### 4.4.3.1 The Cone Tip (r = 0)
 
-**Geometric Issue**: In the canonical KK-Cone metric, the internal S³ sector is multiplied by \(A(r,z)^2\). As \(r \to 0\), a pinch-off occurs when \(A(r,z)\to 0\). Regularity then depends on how \(A\) approaches zero near the tip.
+**Geometric Issue**: In the canonical KCR-Cone metric, the internal S³ sector is multiplied by \(A(r,z)^2\). As \(r \to 0\), a pinch-off occurs when \(A(r,z)\to 0\). Regularity then depends on how \(A\) approaches zero near the tip.
 
 **Analysis**: Consider the metric near r = 0:
 
@@ -3830,7 +3830,7 @@ This ensures that both A and its derivatives are bounded and continuous, prevent
 
 **Lemma 4.4.1** (Sufficient Conditions for C¹ Regularity):
 
-Let A(r,z) ∈ C¹(ℝ⁺ × Σ) be a warp factor on the KK-Cone satisfying:
+Let A(r,z) ∈ C¹(ℝ⁺ × Σ) be a warp factor on the KCR-Cone satisfying:
 
 $$\begin{equation}
 \text{(Reg1)} \quad A(r,z) \text{ is globally } C^1 \text{ with bounded derivatives} \tag{4.4.13}
@@ -3938,7 +3938,7 @@ For the 5D metric (Eq. 4.4.1) to satisfy the Einstein equations Ric_AB = 0 (or R
 
 ## 4.4.7 Summary and Conclusion
 
-We have verified that the coherence-to-classical map remains C¹ under the KK-Cone warp factor A(r,z), provided three conditions hold:
+We have verified that the coherence-to-classical map remains C¹ under the KCR-Cone warp factor A(r,z), provided three conditions hold:
 
 1. **Global Smoothness** (Reg1): A ∈ C¹(ℝ⁺ × Σ)
 2. **Bounded Derivatives** (Reg2): First partial derivatives of A are uniformly bounded
@@ -3949,7 +3949,7 @@ These conditions ensure that:
 - The path integral action functional is continuous in both spacetime and coherence parameters
 - The quasipotential V(x) and its gradient ∇V are continuous
 
-Under these conditions, the framework guarantees that coherence-frame shifts induce smooth changes in observable predictions, eliminating unphysical discontinuities. This fulfills the promise from Paper 1 (line 411) and establishes the rigorous foundation for the KK-Cone model as a coherence-relativity embedding.
+Under these conditions, the framework guarantees that coherence-frame shifts induce smooth changes in observable predictions, eliminating unphysical discontinuities. This fulfills the promise from Paper 1 (line 411) and establishes the rigorous foundation for the KCR-Cone model as a coherence-relativity embedding.
 
 ---
 
@@ -4139,15 +4139,15 @@ Because all verification methods require a geometry (§5.2), the conjecture cann
 
 ### §5.3.3 The Companion Paper Provides the First Test
 
-The companion paper [Paper 2B] specializes the holographic conjecture to the KK-Cone — the first physically motivated geometry from derived compactification (§3.2). That paper:
+The companion paper [Paper 2B] specializes the holographic conjecture to the KCR-Cone — the first physically motivated geometry from derived compactification (§3.2). That paper:
 
 1. Identifies the bulk geometry: $ds^2 = -dz^2 + A(r)^2 \gamma_{ij} dx^i dx^j + dr^2$ with $A(r) = e^{-\mu r}$
 2. Evaluates the holographic dictionary entries with the specific warp factor and field content
 3. Computes the $\lambda \cdot T$ product (finding $O(1)$ — the warp-factor cancellation)
 4. Tests the RT formula against direct entanglement entropy calculations (partial results: monotonic geometric-entropic link confirmed; proportionality refuted; sublinear power-law fit)
-5. Identifies the non-standard features specific to the KK-Cone (unwarped time $n(r) = 1$, 1D coherence sector, etc.)
+5. Identifies the non-standard features specific to the KCR-Cone (unwarped time $n(r) = 1$, 1D coherence sector, etc.)
 
-The KK-Cone evaluation is the first test of Conjecture 5.1. Whether additional geometries confirm or modify the conjecture is a major open question.
+The KCR-Cone evaluation is the first test of Conjecture 5.1. Whether additional geometries confirm or modify the conjecture is a major open question.
 
 ### §5.3.4 Relation to §4 (Equations of Motion)
 
@@ -4155,7 +4155,7 @@ The holographic conjecture is closely related to the equations of motion (§4). 
 
 Whether the frame-lag force is bounded, constant, or divergent as one moves along Σ is a geometry-dependent question (§4, §4.1.6). In the holographic interpretation, this question becomes: *is the effective coupling in the RG flow marginal, relevant, or irrelevant?*
 
-The KK-Cone answer ($\lambda \cdot T = O(1)$, uniform across all $r$) corresponds to a marginal coupling — the frame-lag response is the same at every coherence scale. Whether this is a generic feature of coherence-frame holography or specific to the KK-Cone is unknown.
+The KCR-Cone answer ($\lambda \cdot T = O(1)$, uniform across all $r$) corresponds to a marginal coupling — the frame-lag response is the same at every coherence scale. Whether this is a generic feature of coherence-frame holography or specific to the KCR-Cone is unknown.
 
 **Delivered promise:** *Holographic connections* ✅ — conjecture stated with complete dictionary (Eqs. 5.1.2–5.1.5); three departures from standard AdS/CFT identified; verification deferred to companion paper with explicit justification of why verification requires a geometry.
 
@@ -4168,7 +4168,7 @@ The KK-Cone answer ($\lambda \cdot T = O(1)$, uniform across all $r$) correspond
 - §4, Eqs. 4.1.8–4.1.10: Abstract EOM and frame-lag mechanism
 - §4, Eq. 4.2.2: Classical limit via $\lambda \to 0$
 - §3.2: Derived compactification — Hopf fibration
-- [Paper 2B, §7]: Holographic verification on the KK-Cone
+- [Paper 2B, §7]: Holographic verification on the KCR-Cone
 - Maldacena (1997): The large-N limit of superconformal field theories and supergravity
 - Ryu & Takayanagi (2006): Holographic derivation of entanglement entropy from AdS/CFT
 
@@ -4196,7 +4196,7 @@ The KK-Cone answer ($\lambda \cdot T = O(1)$, uniform across all $r$) correspond
 
 ## Overview
 
-Having established in §4 the canonical KK-Cone metric with Hopf-fibered internal space, we now examine what it means for this geometry to be **self-consistent** with observed physics. This section develops two of the three self-consistency conditions that the warp factor $A(r,z)$ must satisfy simultaneously:
+Having established in §4 the canonical KCR-Cone metric with Hopf-fibered internal space, we now examine what it means for this geometry to be **self-consistent** with observed physics. This section develops two of the three self-consistency conditions that the warp factor $A(r,z)$ must satisfy simultaneously:
 
 1. **SC1 (Flatness Condition):** The observed universe is spatially flat ($\Omega_k \to 0$) as measured at late cosmological times.
 2. **SC2 (Gravity Localization):** Standard 4D Newton's law holds at accessible scales, with no detectable fifth force.
@@ -4207,7 +4207,7 @@ These conditions do not determine $A(r,z)$ uniquely; rather, they define a **cla
 
 ### Notation Convention: Warp Factor
 
-In §4, the KK-Cone metric was written using the Randall–Sundrum convention $e^{2\mathcal{A}(r,z)}$, where $\mathcal{A}$ is the warp *exponent*. Beginning in this section and continuing through §7–§8, we adopt a simplified notation in which $A(r,z)$ denotes the warp *factor* (scale factor) directly:
+In §4, the KCR-Cone metric was written using the Randall–Sundrum convention $e^{2\mathcal{A}(r,z)}$, where $\mathcal{A}$ is the warp *exponent*. Beginning in this section and continuing through §7–§8, we adopt a simplified notation in which $A(r,z)$ denotes the warp *factor* (scale factor) directly:
 
 $$
 A(r,z) \;\equiv\; e^{\mathcal{A}(r,z)}, \qquad \text{so that} \quad e^{2\mathcal{A}} = A^2.
@@ -4235,7 +4235,7 @@ $$
 \Omega_k = -\frac{k_{\text{eff}}}{H_0^2} = 0.0005 \pm 0.0019 \quad \text{(Planck 2018)}
 $$
 
-In the limit of high precision, we take $\Omega_k \to 0$, meaning that the spatial sections of the universe are **flat** to observable accuracy. On the KK-Cone, the brane observers at fixed $r = r_{\text{brane}}$ measure curvature through the intrinsic metric of constant-$z$ slices. For the universe to appear flat to these observers, the effective spatial curvature must vanish.
+In the limit of high precision, we take $\Omega_k \to 0$, meaning that the spatial sections of the universe are **flat** to observable accuracy. On the KCR-Cone, the brane observers at fixed $r = r_{\text{brane}}$ measure curvature through the intrinsic metric of constant-$z$ slices. For the universe to appear flat to these observers, the effective spatial curvature must vanish.
 
 ### §5.1.2 Derivation of the Effective Curvature
 
@@ -4708,11 +4708,11 @@ $$
 Example: $A = z \cdot e^{-\mu|r|}$ satisfies SC1 and SC2 (Sections 5.1–5.2), but its compatibility with SC3 requires further analysis (§5.3 onward).
 
 ⚠️ **Claim posture:** The trial-ansatz approach is **pragmatic but not fundamental**. The exponential warp $A = z \cdot e^{-\mu|r|}$ is a **hypothesis**, not a derived solution. It is justified insofar as it:
-- Is consistent with the topological structure of the KK-Cone.
+- Is consistent with the topological structure of the KCR-Cone.
 - Satisfies the necessary conditions SC1 and SC2.
 - Admits numerical evaluation to test SC3 compatibility.
 
-It is **not justified** by an a-priori analytical derivation from first principles. The "true" self-consistent $A(r,z)$, if it exists, may have a different form—or may not exist at all for generic parameter values, in which case the KK-Cone model itself would be ruled out.
+It is **not justified** by an a-priori analytical derivation from first principles. The "true" self-consistent $A(r,z)$, if it exists, may have a different form—or may not exist at all for generic parameter values, in which case the KCR-Cone model itself would be ruled out.
 
 ### Next Steps
 
@@ -4754,7 +4754,7 @@ This is deferred to a dedicated numerical study (cf. WARP.md for the computation
 
 ## References to Earlier Sections
 
-- **§4:** The KK-Cone metric ansatz and coordinate structure.
+- **§4:** The KCR-Cone metric ansatz and coordinate structure.
 - **§3:** Topological derivation of the Hopf fibration and its role in the coherence frame (from Paper 3).
 - **§5.3 (upcoming):** SC3, the effective cosmological constant, and the closure of the full system.
 
@@ -4786,13 +4786,13 @@ The third self-consistency condition (SC3) requires that the observed cosmologic
 
 $$\Lambda_{\mathrm{obs}} \approx 1.1 \times 10^{-52} \, \mathrm{m}^{-2},$$
 
-emerges from the KK-Cone geometry. Previous drafts required **quantum closure**: the classical Einstein tensor of the $S^3$ Hopf fiber geometry gives $\Lambda_{\mathrm{classical}} = 0$ (spine §3.4), so SC3 appeared to require Casimir energy as the sole source of $\Lambda_{\mathrm{obs}} > 0$.
+emerges from the KCR-Cone geometry. Previous drafts required **quantum closure**: the classical Einstein tensor of the $S^3$ Hopf fiber geometry gives $\Lambda_{\mathrm{classical}} = 0$ (spine §3.4), so SC3 appeared to require Casimir energy as the sole source of $\Lambda_{\mathrm{obs}} > 0$.
 
 This framing is superseded by the following result.
 
 ### § 5.3.1.1: Geometric Λ from Warp Curvature
 
-The 5D metric of the KK-Cone is
+The 5D metric of the KCR-Cone is
 
 $$\mathrm{d}s^2_{5\mathrm{D}} = A^2(r)\,\eta_{\mu\nu}\,\mathrm{d}x^\mu \mathrm{d}x^\nu + \mathrm{d}r^2$$
 (Eq. 5.3.0)
@@ -4839,7 +4839,7 @@ since $A(r_{\max}) = 0$. The geometry is self-consistent at the boundary.
 
 **New (v2) narrative:** The classical $\cos(\sqrt{2}\,r)$ warp factor has intrinsic positive curvature energy. When the extra dimension is integrated out, this yields $\Lambda_{\mathrm{geom}} > 0$ classically — no quantum fields required for the sign. The Casimir energy on the derived interval is a **quantum correction** to $\Lambda_{\mathrm{geom}}$, not its source. The sign of $\Lambda$ is geometrically guaranteed. The sign condition $f > 0$ on the field content affects the correction, not the leading term. SUSY sectors are no longer excluded.
 
-**SC3 revised claim:** The KK-Cone with warp factor $A(r) = \cos(\sqrt{2}\,r)$ produces $\Lambda_{\mathrm{eff}} > 0$ from classical geometry, with Casimir energy providing a subleading quantum correction whose magnitude determines the physical scale $s$ (and hence the interval length $L = r_{\max} \times s$).
+**SC3 revised claim:** The KCR-Cone with warp factor $A(r) = \cos(\sqrt{2}\,r)$ produces $\Lambda_{\mathrm{eff}} > 0$ from classical geometry, with Casimir energy providing a subleading quantum correction whose magnitude determines the physical scale $s$ (and hence the interval length $L = r_{\max} \times s$).
 
 ---
 
@@ -5053,7 +5053,7 @@ Massive modes, loop corrections, finite-temperature effects, and cubic interacti
 
 ### Claim Posture: GEOMETRIC Λ (Conditionally Established)
 
-**SC3 in v2:** The KK-Cone with $A(r) = \cos(\sqrt{2}\,r)$ produces a positive cosmological constant from classical geometry. The magnitude is set by the Friedmann balance at the current epoch (cosmological attractor). The Casimir energy on the derived interval provides a quantum correction whose scale is $L_{\mathrm{Cas}}^* \sim 46\text{–}56\,\mu\mathrm{m}$.
+**SC3 in v2:** The KCR-Cone with $A(r) = \cos(\sqrt{2}\,r)$ produces a positive cosmological constant from classical geometry. The magnitude is set by the Friedmann balance at the current epoch (cosmological attractor). The Casimir energy on the derived interval provides a quantum correction whose scale is $L_{\mathrm{Cas}}^* \sim 46\text{–}56\,\mu\mathrm{m}$.
 
 Remaining open items:
 1. **Post-transition field content** (Paper 3): determines the sign and magnitude of the Casimir correction
@@ -5143,19 +5143,19 @@ If KK graviton resonances are detected in future experiments, the spacing patter
 
 The standard cosmological paradigm addresses missing gravitational mass through particle dark matter—candidates range from WIMPs (Weakly Interacting Massive Particles) to axions to sterile neutrinos. Each invokes new matter beyond the Standard Model, with density profiles fit *a posteriori* to observations. This approach is phenomenologically successful but unsatisfying: it introduces new particles without detection and requires fitting per-system dark matter distributions that correlate mysteriously with baryonic matter.
 
-The KK-Cone model sketches a conditional alternative framework: *if* the KK-Cone warp geometry produces a non-trivial KK mode spectrum with the properties assumed below, *then* the observed dark-matter acceleration profile may be reinterpreted as gravitational signatures of the warped extra dimension, potentially requiring no new particles. In this picture, the warp factor $A(r,z)$ that modulates the metric geometry would directly produce effective forces on brane-localized matter. Perturbations to $A(r,z)$ near the brane—sourced by baryonic matter itself—would generate an additional gravitational potential on the 3-brane. The integrated effect could mimic dark matter without postulating new particle species.
+The KCR-Cone model sketches a conditional alternative framework: *if* the KCR-Cone warp geometry produces a non-trivial KK mode spectrum with the properties assumed below, *then* the observed dark-matter acceleration profile may be reinterpreted as gravitational signatures of the warped extra dimension, potentially requiring no new particles. In this picture, the warp factor $A(r,z)$ that modulates the metric geometry would directly produce effective forces on brane-localized matter. Perturbations to $A(r,z)$ near the brane—sourced by baryonic matter itself—would generate an additional gravitational potential on the 3-brane. The integrated effect could mimic dark matter without postulating new particle species.
 
-This is fundamentally different from Modified Newtonian Dynamics (MOND). MOND alters the functional form of Newton's law in the infrared limit (e.g., $F \propto a^2$ rather than $F \propto a$ for small accelerations). The KK-Cone keeps Einstein's equations intact in 5D but exploits the geometric structure of the extra dimension to produce an effective 4D gravitational correction. The mechanism is not an ad-hoc modification but a consequence of the warp geometry.
+This is fundamentally different from Modified Newtonian Dynamics (MOND). MOND alters the functional form of Newton's law in the infrared limit (e.g., $F \propto a^2$ rather than $F \propto a$ for small accelerations). The KCR-Cone keeps Einstein's equations intact in 5D but exploits the geometric structure of the extra dimension to produce an effective 4D gravitational correction. The mechanism is not an ad-hoc modification but a consequence of the warp geometry.
 
-The working hypothesis explored in this section: *if* the KK-Cone warp geometry produces a non-trivial KK mode spectrum with the properties assumed below, *then* the observed dark-matter acceleration profile—particularly the flat rotation curves in galaxies and the tight radial acceleration relation (RAR)—could emerge as a geometric effect of the warped bulk, not from a population of unseen particles.
+The working hypothesis explored in this section: *if* the KCR-Cone warp geometry produces a non-trivial KK mode spectrum with the properties assumed below, *then* the observed dark-matter acceleration profile—particularly the flat rotation curves in galaxies and the tight radial acceleration relation (RAR)—could emerge as a geometric effect of the warped bulk, not from a population of unseen particles.
 
-**Status**: The analysis in this section is schematic. The perturbation equations (Eqs. 6.1–6.5) assume a linearization regime that has not yet been verified against the full 5D Einstein equations on the KK-Cone background of §4. The observational predictions (§6.5) are conditional on this linearization being valid. A complete treatment requires solving the perturbation eigenvalue problem on the canonical metric of §4, which is deferred to future work.
+**Status**: The analysis in this section is schematic. The perturbation equations (Eqs. 6.1–6.5) assume a linearization regime that has not yet been verified against the full 5D Einstein equations on the KCR-Cone background of §4. The observational predictions (§6.5) are conditional on this linearization being valid. A complete treatment requires solving the perturbation eigenvalue problem on the canonical metric of §4, which is deferred to future work.
 
 ---
 
 ## §6.2 Perturbation Setup: Linearized 5D Gravity
 
-We linearize the 5D Einstein equations around the **canonical** KK-Cone background of §4:
+We linearize the 5D Einstein equations around the **canonical** KCR-Cone background of §4:
 
 $$\mathrm{d}s^2_{(5)} = -\mathrm{d}z^2 + \mathrm{d}r^2 + A_0(r,z)^2\,\gamma_{ij}\,\mathrm{d}\theta^i\mathrm{d}\theta^j,$$
 
@@ -5275,7 +5275,7 @@ with $\beta$ a small dimensionless constant. This would produce a flat rotation 
 
 A profound puzzle in dark-matter phenomenology is why dark matter and baryons are so tightly correlated. The Radial Acceleration Relation (RAR)—the tight correlation between total (observed) gravitational acceleration and baryonic acceleration—has no obvious explanation in the ΛCDM model, where dark matter follows from collisionless N-body dynamics independent of baryon physics.
 
-In the geometric KK-Cone model, this correlation would be **structural** (built into the geometry rather than coincidental):
+In the geometric KCR-Cone model, this correlation would be **structural** (built into the geometry rather than coincidental):
 
 $$\delta a_{\text{geometric}}(r) = f\left(\rho_b(r), A(r,z), u_n,\chi_n(r_0)\right)$$
 
@@ -5303,7 +5303,7 @@ Observationally, this predicts that the scatter in dark-matter properties (for f
 
 ## §6.5 Observational Predictions
 
-**Status**: The predictions below are conditional on the schematic linearization of §6.2. They should be treated as directional indicators, not quantitative forecasts, until the perturbation eigenvalue problem on the canonical KK-Cone metric is solved.
+**Status**: The predictions below are conditional on the schematic linearization of §6.2. They should be treated as directional indicators, not quantitative forecasts, until the perturbation eigenvalue problem on the canonical KCR-Cone metric is solved.
 
 ### Rotation Curves
 
@@ -5354,7 +5354,7 @@ If WIMPs, axions, or other dark-matter particles are directly detected (via scat
 If high-precision observations reveal galaxies with fixed baryonic distributions but significantly different "dark-matter" properties, the geometric model is falsified. Specifically:
 
 - **Different scaling laws**: If dwarf galaxies systematically deviate from the baryon-dark-matter correlation observed in spiral galaxies, geometric determinism fails.
-- **Halo scatter**: If hydrodynamical simulations incorporating the KK-Cone geometry show significant scatter in geometric response for identical initial baryonic profiles, the model is falsified.
+- **Halo scatter**: If hydrodynamical simulations incorporating the KCR-Cone geometry show significant scatter in geometric response for identical initial baryonic profiles, the model is falsified.
 
 ### Rotation Curve Shapes and the Tully-Fisher Relation
 
@@ -5382,7 +5382,7 @@ A detailed analysis (beyond the scope of this section) is required, but any sign
 
 ### Quantum Stability of the Warp Geometry
 
-The linearized analysis assumes the KK-Cone background is stable under small perturbations. Quantum corrections (one-loop, higher-loop) to the warp profile must be computed to ensure stability. If quantum backreaction significantly modifies $A(r,z)$, the predictions change.
+The linearized analysis assumes the KCR-Cone background is stable under small perturbations. Quantum corrections (one-loop, higher-loop) to the warp profile must be computed to ensure stability. If quantum backreaction significantly modifies $A(r,z)$, the predictions change.
 
 ### Non-Linear Regime and Cluster Dynamics
 
@@ -5394,13 +5394,13 @@ The geometric model superficially resembles MOND (both produce flat rotation cur
 
 ### Dark Energy and the Warp Sector
 
-The cosmological constant problem and the observed accelerated expansion (typically attributed to dark energy) are not directly addressed here. The warp geometry might also contribute to dark-energy phenomena; investigating whether a unified treatment of "dark" phenomena (dark matter + dark energy) emerges from the KK-Cone is compelling.
+The cosmological constant problem and the observed accelerated expansion (typically attributed to dark energy) are not directly addressed here. The warp geometry might also contribute to dark-energy phenomena; investigating whether a unified treatment of "dark" phenomena (dark matter + dark energy) emerges from the KCR-Cone is compelling.
 
 ---
 
 ## Conclusion
 
-The geometric dark-matter response in the KK-Cone model provides an intriguing conditional alternative to particle-based dark matter. If the schematic analysis survives a full perturbation treatment on the canonical KK-Cone metric, the geometric mechanism would provide a natural explanation for:
+The geometric dark-matter response in the KCR-Cone model provides an intriguing conditional alternative to particle-based dark matter. If the schematic analysis survives a full perturbation treatment on the canonical KCR-Cone metric, the geometric mechanism would provide a natural explanation for:
 
 - **Flat rotation curves** without dark-matter halos
 - **Baryon-dark-matter correlation** (the tight RAR) as a geometric consequence, not a coincidence
@@ -5414,7 +5414,7 @@ The burden of proof shifts to §7–§8, where the equations of motion on M × �
 
 **References and Further Reading**
 
-This section builds on the KK-Cone formalism established in §3 and §4, the perturbation theory of §5, and the linearized analysis of warp-factor dynamics. Detailed numerical results and comparisons with observational datasets will be presented in subsequent papers.
+This section builds on the KCR-Cone formalism established in §3 and §4, the perturbation theory of §5, and the linearized analysis of warp-factor dynamics. Detailed numerical results and comparisons with observational datasets will be presented in subsequent papers.
 
 
 ---
@@ -5434,7 +5434,7 @@ This section builds on the KK-Cone formalism established in §3 and §4, the per
 
 ---
 
-## §7.1 The KK-Cone Metric and Warp Factor
+## §7.1 The KCR-Cone Metric and Warp Factor
 
 The Kaluza-Klein cone metric in the M × Σ geometry is given by:
 
@@ -5731,7 +5731,7 @@ $\dot{r} \geq 0$ along any physical trajectory (Lindblad contractivity, §7.8.1)
 
 # §8.0 Holographic Structure Conjecture — v2 (2026-04-08)
 
-**Status:** DRAFT | CONJECTURED with worked example support (KK-Cone)
+**Status:** DRAFT | CONJECTURED with worked example support (KCR-Cone)
 **Change from v1:** Added §8.0 preamble + comparison table (Position b), revised §8.1.3 conjecture, new §8.3.5 dS/CFT comparison, new §8.10 closing summary. All existing §8.1–§8.9 verified numerical content preserved.
 **Word count:** ~7,000
 
@@ -5741,22 +5741,22 @@ $\dot{r} \geq 0$ along any physical trajectory (Lindblad contractivity, §7.8.1)
 
 The M × Σ geometry of Coherence Relativity shares structural features with holographic theories, particularly in the role of the radial direction as a decoherence scale, the coupling of boundary observables through cross-terms in the metric, and the warp-factor encoding of geometric information. However, the relationship between CR and the foundational AdS/CFT correspondence (Maldacena 1997, 1998) is neither identity nor exclusion. Rather, CR and AdS/CFT represent different realizations of the holographic principle, each with distinct mechanisms, geometric origins, and physical interpretations.
 
-This section develops the holographic interpretation of the KK-Cone and presents the following position:
+This section develops the holographic interpretation of the KCR-Cone and presents the following position:
 
 > **Position (b):** CR and AdS/CFT are different holographic classes, each realizing the holographic principle through distinct mechanisms. They are not the same theory; they are not mutually exclusive; they occupy different corners of the space of holographic dualities.
 
 We proceed by comparing the two frameworks systematically, identifying the CR holographic conjecture, and acknowledging both the strengths and open problems of the CR picture.
 
-### §8.0.1 Comparison Table: CR KK-Cone vs. AdS/CFT
+### §8.0.1 Comparison Table: CR KCR-Cone vs. AdS/CFT
 
-| Feature | AdS/CFT (Maldacena 1997) | CR KK-Cone |
+| Feature | AdS/CFT (Maldacena 1997) | CR KCR-Cone |
 |---------|--------------------------|------------|
 | **Bulk geometry** | AdS₅ × S⁵ (negative Λ) | M × Σ: R × S³ × [0, L*] (positive Λ_eff) |
 | **Bulk cosmological constant** | Λ < 0 (derived from D3-brane near-horizon; required for AdS throat) | Λ_eff > 0 (Casimir stabilization, §5.3; consistent with observed universe) |
 | **Radial direction origin** | Near-horizon limit of D3 branes; string theory UV completion | Fubini-Study arc-length r on Σ; geometric prediction from coherence manifold |
 | **Radial direction role** | Energy/length scale (RG flow in CFT) | Decoherence depth (coherence-RG flow); r non-traversable (Proposition, §4.2) |
 | **Warp decay rate** | μ_RS = k (set by AdS radius, phenomenological for hierarchy) | μ = √2 (fixed by Fubini-Study eigenvalue k²=2; first-principles, §7.8) |
-| **Fiber structure** | S⁵ compact manifold (6D extra space) | S³ fiber via Hopf projection S¹→S³→S² (KK-Cone §4) |
+| **Fiber structure** | S⁵ compact manifold (6D extra space) | S³ fiber via Hopf projection S¹→S³→S² (KCR-Cone §4) |
 | **Boundary theory** | 𝒩=4 SYM (D=4 CFT, exactly conformal, Λ_bdy = 0) | QFT on M-brane; time is RG-invariant (T_{zr}=0, §7.4); non-conformal |
 | **Holographic dictionary** | GKPW: Z_bulk[φ_0] = ⟨exp∫φ_0 O⟩_CFT (exact) | T_{MΣ} as source coupling (§8.2.3); not yet bulk-boundary prescription |
 | **Entanglement entropy** | Ryu-Takayanagi: S = Area(γ)/4G_N (exact formula) | Weakened conjecture: S_coh ~ f(d_Σ), f'>0; S_RT ~ d_Σ^{0.80} (§8.6.4) |
@@ -5769,7 +5769,7 @@ Both theories realize the holographic principle—the idea that a higher-dimensi
 
 **AdS/CFT via conformal symmetry and D-brane geometry:** The AdS/CFT correspondence emerges from the near-horizon limit of D-branes in string theory. The bulk geometry AdS₅ is generated by the gravitational backreaction of the branes, and the boundary is a conformal field theory (𝒩=4 SYM). The correspondence exploits the isometry group SO(4,2) of AdS₅, which acts as the conformal symmetry group on the boundary. This symmetry is *exact* and leads to the precise GKPW dictionary. The price: AdS has negative cosmological constant Λ < 0, inconsistent with observed accelerated cosmic expansion.
 
-**CR via decoherence-depth geometry and Fubini-Study pullback:** The KK-Cone geometry of CR emerges from the joint manifold M × Σ, where Σ is equipped with the Fubini-Study metric (a positive-definite Kähler metric). The radial direction r is not a string-theoretic scale but an arc-length coordinate encoding decoherence depth. The geometric origin of the warp factor is first-principles: the Fubini-Study Laplacian eigenvalue k²=2 *fixes* μ = √2 (§7.8). Crucially, the effective cosmological constant is Λ_eff > 0 (§5.3, Casimir stabilization), matching the observed universe.
+**CR via decoherence-depth geometry and Fubini-Study pullback:** The KCR-Cone geometry of CR emerges from the joint manifold M × Σ, where Σ is equipped with the Fubini-Study metric (a positive-definite Kähler metric). The radial direction r is not a string-theoretic scale but an arc-length coordinate encoding decoherence depth. The geometric origin of the warp factor is first-principles: the Fubini-Study Laplacian eigenvalue k²=2 *fixes* μ = √2 (§7.8). Crucially, the effective cosmological constant is Λ_eff > 0 (§5.3, Casimir stabilization), matching the observed universe.
 
 **The cosmological constant sign contrast:** This is the most striking structural difference. AdS/CFT requires Λ < 0. CR's positive Λ_eff emerges dynamically from Casimir stabilization. This makes CR potentially more relevant to our universe, while accepting the trade of reduced mathematical precision.
 
@@ -5783,14 +5783,14 @@ The metric tensor T_{MΣ} (specifically the cross-term Ω_{MΣ}) is identified a
 
 ### §8.1.1 AdS-Like Structure Without Standard AdS
 
-The KK-Cone metric is:
+The KCR-Cone metric is:
 
 $$ds^2 = -dz^2 + A(r)^2 \gamma_{ij} dx^i dx^j + dr^2, \quad A(r) = e^{-\mu r}
 \tag{8.1.1}$$
 
 This exhibits spatial warping (the $A(r)^2$ factor) reminiscent of AdS geometry. In standard AdS/CFT, such warping encodes the holographic duality: the radial direction represents energy/length scales in the boundary theory.
 
-**However**, the KK-Cone has three non-standard features:
+**However**, the KCR-Cone has three non-standard features:
 
 1. **Time is unwarped:** n(r) = 1 is an *ansatz*, not derived from vacuum Einstein equations.
 2. **The warping is in spatial directions only:** This breaks the conformal structure of AdS.
@@ -5803,7 +5803,7 @@ From Coherence Relativity Paper 1, the frame Σ parameterizes the environment's 
 $$ds_\Sigma^2 = 4 \left( \langle d\psi | d\psi \rangle - |\langle \psi | d\psi \rangle|^2 \right)
 \tag{8.1.2}$$
 
-In the KK-Cone, Σ = [0, L_*] with the radial coordinate r acting as the decoherence parameter:
+In the KCR-Cone, Σ = [0, L_*] with the radial coordinate r acting as the decoherence parameter:
 
 $$\lambda(r) = A(r)^2 = e^{-2\mu r}
 \tag{8.1.3}$$
@@ -5812,7 +5812,7 @@ This is a **CONJECTURED** identification. It says: as the system evolves in the 
 
 ### §8.1.3 Conjecture 8.1: Holographic Structure — Position (b)
 
-**Conjecture 8.1 (Holographic Structure — Position (b)):** The KK-Cone geometry of Coherence Relativity is a holographic theory distinct from AdS/CFT. CR and AdS/CFT are different realizations of the holographic principle: AdS/CFT via conformal symmetry on a negative-Λ background; CR via decoherence-depth geometry on a positive-Λ_eff background. The CR holographic dictionary — mapping bulk objects (T_{MΣ}, λ(r), A(r)) to boundary observables — is partially identified (§8.2) but not yet complete. The formal derivation of a GKPW-like prescription is deferred. We conjecture that this structure constitutes a holographic duality; proof requires establishing the bulk-boundary correspondence explicitly.
+**Conjecture 8.1 (Holographic Structure — Position (b)):** The KCR-Cone geometry of Coherence Relativity is a holographic theory distinct from AdS/CFT. CR and AdS/CFT are different realizations of the holographic principle: AdS/CFT via conformal symmetry on a negative-Λ background; CR via decoherence-depth geometry on a positive-Λ_eff background. The CR holographic dictionary — mapping bulk objects (T_{MΣ}, λ(r), A(r)) to boundary observables — is partially identified (§8.2) but not yet complete. The formal derivation of a GKPW-like prescription is deferred. We conjecture that this structure constitutes a holographic duality; proof requires establishing the bulk-boundary correspondence explicitly.
 
 This duality is *non-standard* because:
 - The boundary theory lives on a manifold with unwarped time (unlike CFT in Euclidean AdS backgrounds)
@@ -5852,7 +5852,7 @@ The deep-throat classical limit (r → L_*) corresponds to complete loss of cohe
 In standard AdS/CFT, boundary operators couple to bulk fields via:
 $$S = S_{\text{CFT}} + \int d^4 x \, g(x) \, O(x)$$
 
-In the KK-Cone, the cross-term T_{MΣ} (Eq. 2.1.3) from the Fubini-Study pullback plays this role:
+In the KCR-Cone, the cross-term T_{MΣ} (Eq. 2.1.3) from the Fubini-Study pullback plays this role:
 $$T_{M\Sigma} = \frac{1}{4} \operatorname{Tr}\left[ (\partial_\mu \hat{\rho}) (\partial_r \hat{\rho}) \right]
 \tag{8.2.4}$$
 
@@ -5908,7 +5908,7 @@ $$\boxed{\lambda(r) = A(r)^2 \quad \Longleftrightarrow \quad \text{Coherence par
 
 ### §8.3.1 Breakdown of Conformal Symmetry
 
-The KK-Cone metric cannot be put into the Fefferman-Graham form:
+The KCR-Cone metric cannot be put into the Fefferman-Graham form:
 $$ds^2 = \frac{dz^2 + g_{\mu\nu}(x, z) dx^\mu dx^\nu}{z^2}$$
 
 Instead, our metric:
@@ -5923,11 +5923,11 @@ The boundary time direction (z-direction on the brane) does not participate in t
 
 ### §8.3.3 One-Dimensional Coherence Sector
 
-The frame Σ = [0, L_*] is a 1-dimensional manifold. Unlike standard AdS/CFT where the radial direction is one coordinate among many, r here is a quantum-information axis. Entanglement in the KK-Cone holography involves both standard spatial entanglement (in M) and coherence entanglement (across Σ). The Ryu-Takayanagi formula must be generalized (§8.5).
+The frame Σ = [0, L_*] is a 1-dimensional manifold. Unlike standard AdS/CFT where the radial direction is one coordinate among many, r here is a quantum-information axis. Entanglement in the KCR-Cone holography involves both standard spatial entanglement (in M) and coherence entanglement (across Σ). The Ryu-Takayanagi formula must be generalized (§8.5).
 
 ### §8.3.4 Necessity of Non-Conformality
 
-In standard RS1/RS2, the time and spatial warp factors are related by the 5D vacuum Einstein equations. In the KK-Cone, we imposed n(r) = 1 as an *ansatz*, requiring non-trivial bulk matter:
+In standard RS1/RS2, the time and spatial warp factors are related by the 5D vacuum Einstein equations. In the KCR-Cone, we imposed n(r) = 1 as an *ansatz*, requiring non-trivial bulk matter:
 $$\kappa_5^2 T_{zz} = -3\mu^2 \neq 0
 \tag{8.3.2}$$
 
@@ -5975,7 +5975,7 @@ CR offers a different approach to positive-Λ holography than dS/CFT, avoiding t
 $$\text{Decoherence rate} \sim \text{const} \quad \text{(independent of energy scale)}
 \tag{8.4.1}$$
 
-**How to test:** In an experimental or numerical system, measure the dephasing time T₂ as a function of the system energy E. Standard behavior: T₂(E) ∝ E^{-α} for some α > 0. The KK-Cone prediction is α = 0.
+**How to test:** In an experimental or numerical system, measure the dephasing time T₂ as a function of the system energy E. Standard behavior: T₂(E) ∝ E^{-α} for some α > 0. The KCR-Cone prediction is α = 0.
 
 ### §8.4.2 Warp-Factor Scaling of Decoherence
 
@@ -6011,7 +6011,7 @@ $$S_A = \frac{\text{Area}(\gamma_A)}{4 G_N}
 
 where γ_A is an extremal surface in the bulk with boundary ∂γ_A = ∂A.
 
-### §8.5.2 Generalization to the KK-Cone
+### §8.5.2 Generalization to the KCR-Cone
 
 An extremal surface in M × Σ with metric:
 $$ds^2 = -dz^2 + e^{-2\mu r} \gamma_{ij} dx^i dx^j + dr^2
@@ -6021,7 +6021,7 @@ has area:
 $$\text{Area}(\gamma_A) = \int_{\gamma_A} d\sigma_1 d\sigma_2 \sqrt{g_{\text{ind}}}
 \tag{8.5.3}$$
 
-**Conjecture 8.5:** The entanglement entropy in the KK-Cone holographic dual is:
+**Conjecture 8.5:** The entanglement entropy in the KCR-Cone holographic dual is:
 $$S_A = \frac{\text{Area}(\gamma_A)}{4 G_N} = \frac{1}{4 G_N} \int_{\gamma_A} d\sigma_1 d\sigma_2 \, \sqrt{g_{\text{ind}}}
 \tag{8.5.4}$$
 
@@ -6063,7 +6063,7 @@ where K_r is the extrinsic curvature in the r-direction and K_⊥ is in the spat
 
 ### §8.6.2 Central Charge of the Boundary Theory
 
-In AdS/CFT, c ∝ (AdS radius)³ / G_N. In the KK-Cone, a naive dimensional estimate gives:
+In AdS/CFT, c ∝ (AdS radius)³ / G_N. In the KCR-Cone, a naive dimensional estimate gives:
 $$c \sim \frac{\ell_{\text{eff}}^3}{\kappa_5^2}
 \tag{8.6.1}$$
 
@@ -6118,7 +6118,7 @@ $S_{\text{RT}}(\lambda)$ is **monotonically decreasing**. Power-law fit: $S_{\te
 
 **Current status:** All three options (A, B, C) tested. Option B applied. Weakened conjecture supported; strict proportionality structurally ruled out.
 
-### §8.6.5 Beyond the KK-Cone: Generalization
+### §8.6.5 Beyond the KCR-Cone: Generalization
 
 The conjecture is derived from a single worked example. To claim universal validity requires:
 1. Solving the CR equations of motion for other geometries (KK with conformal warping, RS1, RS2)
@@ -6150,9 +6150,9 @@ The conjecture is derived from a single worked example. To claim universal valid
 
 ### Coherence Holography Thesis
 
-The KK-Cone worked example provides evidence for a new principle:
+The KCR-Cone worked example provides evidence for a new principle:
 
-> **In the KK-Cone worked example, the loss of coherence is dual to the deformation of spacetime geometry. The radial direction of bulk spacetime encodes the decoherence RG flow. Whether this extends beyond the single worked example to a universal principle remains an open question (§8.6.5).**
+> **In the KCR-Cone worked example, the loss of coherence is dual to the deformation of spacetime geometry. The radial direction of bulk spacetime encodes the decoherence RG flow. Whether this extends beyond the single worked example to a universal principle remains an open question (§8.6.5).**
 
 ### Unification with Holography
 
@@ -6170,7 +6170,7 @@ The sharp classical limit (r → L_*) predicts that **quantumness is fragile and
 ## §8.9 Caveats and Scope
 
 **This conjecture applies specifically to:**
-- The KK-Cone geometry with n(r) = 1
+- The KCR-Cone geometry with n(r) = 1
 - Single-system coherence (not entanglement between two systems)
 - Small-r regime where the warp factor is monotonic
 
@@ -6196,7 +6196,7 @@ The sharp classical limit (r → L_*) predicts that **quantumness is fragile and
 
 ### §8.10.2 What is Conjectured
 
-1. The KK-Cone geometry constitutes a holographic duality — a higher-dimensional gravitational theory on M × Σ equivalent to a lower-dimensional QFT on M.
+1. The KCR-Cone geometry constitutes a holographic duality — a higher-dimensional gravitational theory on M × Σ equivalent to a lower-dimensional QFT on M.
 2. The six entries in the holographic dictionary (§8.2) can be completed into a full GKPW-like prescription.
 3. Correlation functions, entanglement entropy, and other observables can be computed from bulk data and match boundary theory predictions.
 4. The central charge and other invariants of the boundary theory are related to bulk geometry.
@@ -6204,7 +6204,7 @@ The sharp classical limit (r → L_*) predicts that **quantumness is fragile and
 
 ### §8.10.3 The Deferred Derivation
 
-*We conjecture that the KK-Cone geometry constitutes a holographic duality of a new class — CR holography — in which the radial direction encodes decoherence depth rather than conformal energy scale, and the effective cosmological constant is positive rather than negative. Establishing this conjecture formally requires deriving the bulk-boundary correspondence, computing the central charge, and identifying the GKPW dictionary. This derivation is deferred to a subsequent paper.*
+*We conjecture that the KCR-Cone geometry constitutes a holographic duality of a new class — CR holography — in which the radial direction encodes decoherence depth rather than conformal energy scale, and the effective cosmological constant is positive rather than negative. Establishing this conjecture formally requires deriving the bulk-boundary correspondence, computing the central charge, and identifying the GKPW dictionary. This derivation is deferred to a subsequent paper.*
 
 ---
 
@@ -6276,9 +6276,9 @@ The coherence-frame formalism has the same structure:
 - The **$\lambda \cdot T$ boundedness requirement** (§4, Eq. 4.1.11) is a necessary consistency condition.
 - The **holographic dictionary** (§5, Eqs. 5.1.2–5.1.5) is a structural conjecture about the framework.
 
-Evaluating any of these requires committing to a geometry: specifying the metric, solving the mode equation, identifying $\lambda$ with a function of the warp factor, and resolving norm conventions. The companion paper [Paper 2B] provides this evaluation for the KK-Cone — the first physically motivated geometry from derived compactification. That evaluation reveals the warp-factor cancellation $\lambda \cdot T = O(1)$, the corrected identification $\lambda = A^2$, and specific predictions for decoherence dynamics.
+Evaluating any of these requires committing to a geometry: specifying the metric, solving the mode equation, identifying $\lambda$ with a function of the warp factor, and resolving norm conventions. The companion paper [Paper 2B] provides this evaluation for the KCR-Cone — the first physically motivated geometry from derived compactification. That evaluation reveals the warp-factor cancellation $\lambda \cdot T = O(1)$, the corrected identification $\lambda = A^2$, and specific predictions for decoherence dynamics.
 
-The split between framework and evaluation is a feature of the theory's generality: the framework applies to *any* geometry on $M \times \Sigma$, not only the KK-Cone.
+The split between framework and evaluation is a feature of the theory's generality: the framework applies to *any* geometry on $M \times \Sigma$, not only the KCR-Cone.
 
 ---
 
@@ -6294,7 +6294,7 @@ The program has several distinctive features.
 
 **Topological rigidity.** The fiber topology $S^1$ is fixed — it cannot be deformed or destabilized. Only the fiber radius $R$ remains as a dynamical parameter, to be determined by the equations of motion and stabilization mechanisms.
 
-**Framework/evaluation separation.** This paper establishes the framework; the companion paper [Paper 2B] provides the first evaluation. This separation is not merely organizational — it reflects a methodological commitment. Framework results survive if the KK-Cone fails; evaluation results test specific predictions. The two papers serve different epistemic functions.
+**Framework/evaluation separation.** This paper establishes the framework; the companion paper [Paper 2B] provides the first evaluation. This separation is not merely organizational — it reflects a methodological commitment. Framework results survive if the KCR-Cone fails; evaluation results test specific predictions. The two papers serve different epistemic functions.
 
 **Falsifiability.** The entire construction depends on the result that the coherence axioms produce $\Sigma = S^2$ for the qubit. If this is incorrect, the Hopf fibration does not arise, and the compactification is not derived. This is genuine falsifiability — a single calculational error would invalidate the topological chain.
 
@@ -6314,7 +6314,7 @@ The $C^1$ regularity comparison (§4.5) shows that RS junction conditions — wh
 
 ### §6.4.3 AdS/CFT
 
-The holographic conjecture (§5) identifies three specific departures from standard holographic dualities: unwarped time, a one-dimensional coherence sector, and a quantum-information (rather than energy-scale) interpretation of the holographic direction. These departures are framework-level observations — they apply to any geometry that supports the coherence-frame metric, not only the KK-Cone.
+The holographic conjecture (§5) identifies three specific departures from standard holographic dualities: unwarped time, a one-dimensional coherence sector, and a quantum-information (rather than energy-scale) interpretation of the holographic direction. These departures are framework-level observations — they apply to any geometry that supports the coherence-frame metric, not only the KCR-Cone.
 
 ### §6.4.4 For the Measurement Problem
 
@@ -6328,16 +6328,16 @@ Derived compactification constrains the cosmological constant (§3.3.5). The fra
 
 ## §6.5 Relation to the Companion Paper
 
-The companion paper [Paper 2B] specializes the abstract framework to the KK-Cone — the first physically motivated geometry from derived compactification (§3.2). That paper:
+The companion paper [Paper 2B] specializes the abstract framework to the KCR-Cone — the first physically motivated geometry from derived compactification (§3.2). That paper:
 
-1. Evaluates the Markov criterion in the KK-Cone throat, showing $R_{\text{Markov}} \sim A^2 \to 0$ (geometric classicalization).
+1. Evaluates the Markov criterion in the KCR-Cone throat, showing $R_{\text{Markov}} \sim A^2 \to 0$ (geometric classicalization).
 2. Tests two of three self-consistency conditions (spatial flatness and gravity localization close; the cosmological constant requires a four-path Casimir analysis).
 3. Specializes the abstract EOM to the 5D warped metric and solves for explicit trajectories.
 4. Tests the holographic conjecture against Ryu-Takayanagi calculations (partial results: monotonic geometric-entropic link confirmed; proportionality refuted; sublinear power-law fit).
 5. Derives predictions for geometric dark matter (rotation curves, Bullet Cluster constraints, falsification criteria).
 6. Resolves the norm convention ambiguity (Appendix A) that §4.2 identifies as a framework-level open question.
 
-These evaluations illustrate the framework's content but do not exhaust it. Other geometries — higher-$c_1$ bundles, non-abelian fiber structures, or entirely different compactification ansätze — may yield qualitatively different physics. The framework is general; the KK-Cone is the first example.
+These evaluations illustrate the framework's content but do not exhaust it. Other geometries — higher-$c_1$ bundles, non-abelian fiber structures, or entirely different compactification ansätze — may yield qualitatively different physics. The framework is general; the KCR-Cone is the first example.
 
 ---
 
@@ -6352,7 +6352,7 @@ These evaluations illustrate the framework's content but do not exhaust it. Othe
 - §4.2: Where evaluation hits walls
 - §4.5: $C^1$ regularity comparison
 - §5: Holographic conjecture and dictionary
-- [Paper 2B]: KK-Cone evaluation
+- [Paper 2B]: KCR-Cone evaluation
 
 ---
 
@@ -6392,13 +6392,13 @@ The framework developed in this paper raises several open questions that fall ou
 
 ## §7.1 Questions Addressed in the Companion Paper [Paper 2B]
 
-**OP-1. Norm convention resolution.** The Markov ratio $R_{\text{Markov}}$ (§2.3) involves a Frobenius norm convention choice. The companion paper resolves this for the KK-Cone geometry (Appendix A), establishing the asymmetric convention as geometrically consistent.
+**OP-1. Norm convention resolution.** The Markov ratio $R_{\text{Markov}}$ (§2.3) involves a Frobenius norm convention choice. The companion paper resolves this for the KCR-Cone geometry (Appendix A), establishing the asymmetric convention as geometrically consistent.
 
-**OP-2. The coupling identification $\lambda = f(\text{warp factor})$.** The warp-factor hypothesis $\lambda \sim A^2$ is verified for the KK-Cone in the companion paper. Generalization to other geometries is unknown.
+**OP-2. The coupling identification $\lambda = f(\text{warp factor})$.** The warp-factor hypothesis $\lambda \sim A^2$ is verified for the KCR-Cone in the companion paper. Generalization to other geometries is unknown.
 
-**OP-3. Self-consistency of the KK-Cone.** Three self-consistency conditions must be checked on the derived-compact geometry. SC1 (flatness) and SC2 (gravity localization) close in the companion paper. SC3 (cosmological constant): **resolved — see §5.3 v2** (geometric Λ from warp curvature, Casimir as correction).
+**OP-3. Self-consistency of the KCR-Cone.** Three self-consistency conditions must be checked on the derived-compact geometry. SC1 (flatness) and SC2 (gravity localization) close in the companion paper. SC3 (cosmological constant): **resolved — see §5.3 v2** (geometric Λ from warp curvature, Casimir as correction).
 
-**OP-4. Holographic verification.** Conjecture 5.1 is tested on the KK-Cone in the companion paper: monotonic geometric-entropic link confirmed; proportionality refuted (sublinear power-law fit, §8.0 v2).
+**OP-4. Holographic verification.** Conjecture 5.1 is tested on the KCR-Cone in the companion paper: monotonic geometric-entropic link confirmed; proportionality refuted (sublinear power-law fit, §8.0 v2).
 
 **OP-5. Fiber scale stabilization.**
 
@@ -6414,7 +6414,7 @@ No Goldberger-Wise scalar, no KKLT potential, no new stabilization mechanism is 
 
 The radion appearing in the KK spectrum (near-zero mode, $m^2 \approx 0.01$, 71% wavefunction overlap with breathing mode) is the manifestation of this stabilized breathing mode in the KK tower — not a new problem.
 
-**OP-6. Explicit trajectory solutions.** The companion paper solves the abstract EOM on the KK-Cone and extracts decoherence timescales, trajectory deviations, and effective potentials.
+**OP-6. Explicit trajectory solutions.** The companion paper solves the abstract EOM on the KCR-Cone and extracts decoherence timescales, trajectory deviations, and effective potentials.
 
 ---
 
@@ -6561,7 +6561,7 @@ The quantitative check — computing $s_{\mathrm{now}}$ from $H_0$ via Eq. 5.3.2
 - §3.3 v2: Constraints from derived compactification (this document)
 - §4, Eq. 4.1.10: Frame-lag mechanism
 - §5.3 v2: SC3 — geometric Λ + Casimir correction
-- [Paper 2B]: Companion paper (KK-Cone evaluation)
+- [Paper 2B]: Companion paper (KCR-Cone evaluation)
 - Settimo et al. (2026), PRX Quantum 7, 010340. DOI: 10.1103/6dt2-sq44
 - Lee, J.G. et al. (2020), Phys. Rev. Lett. 124, 101101. [ISL 44 μm bound]
 - Aharonov, Y. & Vaidman, L. (1990). Phys. Rev. A 41, 11. [TSVF]

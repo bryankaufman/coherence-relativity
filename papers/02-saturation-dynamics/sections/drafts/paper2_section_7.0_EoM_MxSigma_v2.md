@@ -6,7 +6,7 @@
 
 ---
 
-## §7.1 The KK-Cone Metric and Warp Factor
+## §7.1 The KCR-Cone Metric and Warp Factor
 
 The Kaluza-Klein cone metric in the M × Σ geometry is given by:
 

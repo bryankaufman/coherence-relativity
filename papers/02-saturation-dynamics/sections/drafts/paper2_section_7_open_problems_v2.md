@@ -12,13 +12,13 @@ The framework developed in this paper raises several open questions that fall ou
 
 ## §7.1 Questions Addressed in the Companion Paper [Paper 2B]
 
-**OP-1. Norm convention resolution.** The Markov ratio $R_{\text{Markov}}$ (§2.3) involves a Frobenius norm convention choice. The companion paper resolves this for the KK-Cone geometry (Appendix A), establishing the asymmetric convention as geometrically consistent.
+**OP-1. Norm convention resolution.** The Markov ratio $R_{\text{Markov}}$ (§2.3) involves a Frobenius norm convention choice. The companion paper resolves this for the KCR-Cone geometry (Appendix A), establishing the asymmetric convention as geometrically consistent.
 
-**OP-2. The coupling identification $\lambda = f(\text{warp factor})$.** The warp-factor hypothesis $\lambda \sim A^2$ is verified for the KK-Cone in the companion paper. Generalization to other geometries is unknown.
+**OP-2. The coupling identification $\lambda = f(\text{warp factor})$.** The warp-factor hypothesis $\lambda \sim A^2$ is verified for the KCR-Cone in the companion paper. Generalization to other geometries is unknown.
 
-**OP-3. Self-consistency of the KK-Cone.** Three self-consistency conditions must be checked on the derived-compact geometry. SC1 (flatness) and SC2 (gravity localization) close in the companion paper. SC3 (cosmological constant): **resolved — see §5.3 v2** (geometric Λ from warp curvature, Casimir as correction).
+**OP-3. Self-consistency of the KCR-Cone.** Three self-consistency conditions must be checked on the derived-compact geometry. SC1 (flatness) and SC2 (gravity localization) close in the companion paper. SC3 (cosmological constant): **resolved — see §5.3 v2** (geometric Λ from warp curvature, Casimir as correction).
 
-**OP-4. Holographic verification.** Conjecture 5.1 is tested on the KK-Cone in the companion paper: monotonic geometric-entropic link confirmed; proportionality refuted (sublinear power-law fit, §8.0 v2).
+**OP-4. Holographic verification.** Conjecture 5.1 is tested on the KCR-Cone in the companion paper: monotonic geometric-entropic link confirmed; proportionality refuted (sublinear power-law fit, §8.0 v2).
 
 **OP-5. Fiber scale stabilization.**
 
@@ -34,7 +34,7 @@ No Goldberger-Wise scalar, no KKLT potential, no new stabilization mechanism is 
 
 The radion appearing in the KK spectrum (near-zero mode, $m^2 \approx 0.01$, 71% wavefunction overlap with breathing mode) is the manifestation of this stabilized breathing mode in the KK tower — not a new problem.
 
-**OP-6. Explicit trajectory solutions.** The companion paper solves the abstract EOM on the KK-Cone and extracts decoherence timescales, trajectory deviations, and effective potentials.
+**OP-6. Explicit trajectory solutions.** The companion paper solves the abstract EOM on the KCR-Cone and extracts decoherence timescales, trajectory deviations, and effective potentials.
 
 ---
 
@@ -181,7 +181,7 @@ The quantitative check — computing $s_{\mathrm{now}}$ from $H_0$ via Eq. 5.3.2
 - §3.3 v2: Constraints from derived compactification (this document)
 - §4, Eq. 4.1.10: Frame-lag mechanism
 - §5.3 v2: SC3 — geometric Λ + Casimir correction
-- [Paper 2B]: Companion paper (KK-Cone evaluation)
+- [Paper 2B]: Companion paper (KCR-Cone evaluation)
 - Settimo et al. (2026), PRX Quantum 7, 010340. DOI: 10.1103/6dt2-sq44
 - Lee, J.G. et al. (2020), Phys. Rev. Lett. 124, 101101. [ISL 44 μm bound]
 - Aharonov, Y. & Vaidman, L. (1990). Phys. Rev. A 41, 11. [TSVF]
