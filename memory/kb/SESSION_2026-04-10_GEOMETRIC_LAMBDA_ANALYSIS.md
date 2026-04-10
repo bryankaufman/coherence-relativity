@@ -102,6 +102,38 @@ If Level 3 dominates, the cosmological constant is not a vacuum energy problem a
 
 ---
 
+## Finding 7: Zero-Point Pseudoparticle Contributions (Distinct from Casimir)
+
+**Origin:** Bryan (2026-04-10 ~10:18 UTC).
+
+The Casimir energy (Level 1) is the boundary-dependent piece of the vacuum energy. There are additional zero-point contributions that are physically distinct:
+
+### Contributions on M (gravitational sector)
+1. **SM field zero-point on 4D M**: the standard CC problem (ρ ~ M_Pl⁴, 10¹²⁰ × ρ_Λ). Every theory faces this. CR does not solve it directly.
+2. **Casimir from Σ topology**: boundary-dependent, finite, calculable. This is Level 1.
+3. **Radion zero-point**: the breathing mode (m² ≈ 0.01) is a scalar field on M with a specific ½ℏω contribution.
+
+### Contributions on Σ (information-geometric sector — may NOT enter Friedmann)
+4. **KK mode zero-point**: each volcano-potential mode has ½ℏω. If r is informational (Picture 3), these live on Σ, not M. Their energy enters decoherence dynamics, not gravity.
+5. **Berry gauge field fluctuations**: U(1) connection on CP¹ has gauge-field-like vacuum fluctuations. The c₁ = 1 topology may support instantons (non-perturbative contributions).
+
+### Potentially new: Topological zero-point modification
+If the Hopf bundle structure imposes gauge constraints on SM fields (e.g., coupling Berry U(1) to hypercharge U(1)), the SM mode spectrum itself changes. This is:
+- NOT Casimir (not about boundaries)
+- NOT bulk zero-point (not UV divergent)
+- A finite topological modification from the Σ structure
+
+This needs calculation: does c₁ = 1 on CP¹ shift the SM vacuum energy by a calculable, finite amount?
+
+### Updated coupling hierarchy
+- Level 1: Casimir (static topology → BCs → finite vacuum energy shift)
+- Level 1b: Topological zero-point (Σ gauge structure → SM mode modification)
+- Level 1c: Radion zero-point (scalar field on M from Σ breathing mode)
+- Level 2: FS curvature (enters decoherence, NOT gravity — category error)
+- Level 3: Machian frame-dragging (dynamic, ~ H₀² M_Pl²)
+
+---
+
 ## Required Calculations (Priority Order)
 
 ### RC-1: T_{MΣ} backreaction on M-sector Einstein equations
