@@ -574,53 +574,17 @@ For specific physical systems (e.g., those with holomorphic coherence frames), K
 
 ---
 
-## 2.1.11 Connection to the KK-Cone: Warp-Factor Modulation of T_{MΣ} — Ansatz ATA
+## 2.1.11 Warp-Factor Scaling of T_{MΣ} — Ansatz ATA
 
-**Scope note:** This subsection introduces a geometry-specific scaling claim for $T_{\mu a}$. Per the §1.3 scope boundary, Paper 2A does not derive results on a specific geometry; the result here is an explicit named ansatz. Full covariant-EOM evaluation on the KCR-Cone is in Paper 2B §4.
+**Scope note:** Per the §1.3 scope boundary, Paper 2A does not derive results on a specific geometry. The result below is a named modeling ansatz only; full covariant-EOM evaluation on the KCR-Cone is in Paper 2B §4.
 
-For warped-geometry coupling, we anchor notation to the canonical 5D bulk metric (full evaluation in Paper 2B §4):
+**Ansatz ATA:** In a warped-geometry setting with warp factor $A(r,z)$, the cross-term is posited to scale as:
 
-$$ds^2_{(5)} = -dz^2 + dr^2 + A(r,z)^2 \, \gamma_{ij} d\theta^i d\theta^j$$
-
-**Eq. 2.1.37**
-
-where $z$ is the brane-normal coordinate, $r$ is the radial direction, $A(r,z)$ is the warp factor, and $\gamma_{ij}$ is the unit round metric on S³. All scaling statements below are ansatz-level hypotheses, not derived consequences.
-
-### Effect on Spacetime Derivatives: Scaling Ansatz
-
-In the warped geometry, distances along spacetime directions are rescaled by the warp factor. We express this through an **ansatz** on how spacetime derivatives scale:
-
-$$\partial_\mu \psi \to A(x, z)^{-1} \partial_\mu^{(0)} \psi$$
-
-**Eq. 2.1.38**
-
-where $\partial_\mu^{(0)}$ is the derivative in flat space, and this scaling reflects the geometric rescaling of tangent vectors in the warped frame.
-
-### Warp-Factor Modulation: Hypothesis
-
-Under the above ansatz, we hypothesize that the cross-term T_{μa} inherits the warp-factor dependence:
-
-$$T_{\mu a}(x, z, \xi) \sim A(x, z)^{-2} T_{\mu a}^{(flat)}(\xi)$$
+$$\boxed{T_{\mu a}(x, z, \xi) \sim A(x, z)^{-2} \, T_{\mu a}^{(\text{flat})}(\xi)}$$
 
 **Eq. 2.1.39**
 
-where $T_{\mu a}^{(flat)}$ is the cross-term computed in flat space.
-
-**Status: Ansatz ATA.** This is a modeling ansatz, not a derived result. The $A^{-2}$ scaling follows dimensionally from the $A^{-1}$ scaling of derivatives, but actual verification requires:
-1. Computing the full covariant derivatives $\nabla_\mu \psi$ in the warped metric
-2. Solving the equations of motion on $M \times \Sigma$ in the KCR-Cone geometry
-3. Confirming that the effective action reproduces this scaling
-
-**No quantitative scaling law for $T_{\mu a}$ is derived in Paper 2A. Covariant-EOM evaluation on the KCR-Cone is in Paper 2B §4.**
-
-### Physical Interpretation in the KK-Cone
-
-If Ansatz ATA is confirmed by the full covariant evaluation, the consequences are:
-
-- In regions where $A(x, z) \to 0$ (the "deep throat" of the cone), the coherence-spacetime coupling is suppressed ($T_{M\Sigma} \to 0$).
-- Conversely, in regions where $A(x, z)$ is large (the bulk), the coupling strengthens.
-
-This warp-factor modulation would provide a geometric mechanism by which warped geometry protects quantum coherence. Evaluation against the full covariant EOMs is in Paper 2B §4.
+where $T_{\mu a}^{(\text{flat})}$ is the flat-space cross-term. The $A^{-2}$ scaling follows dimensionally from the derivative rescaling $\partial_\mu \psi \to A^{-1}\partial_\mu^{(0)}\psi$, but is not derived from the covariant EOMs here. It underlies Ansatz A* in §2.2.6. No quantitative scaling law for $T_{\mu a}$ is claimed in Paper 2A; evaluation against the KCR-Cone covariant EOMs is in Paper 2B §4.
 
 ---
 
@@ -2749,7 +2713,7 @@ The pilot-wave correspondence (§2.3) establishes, within the 1D two-slit dephas
 
 The left-right generator decomposition (§2.5) introduces the two-face structure of the $M \times \Sigma$ metric: the Schrödinger face $G^{(\text{S})}$ and the Heisenberg face $G^{(\text{H})}$, unified in the complex metric $H_{M\Sigma} = G_{M\Sigma} + i\Omega_{M\Sigma}$. The Born rule is identified as the unique invariant of $|H|$ under both coherence-frame transformations and Schrödinger/Heisenberg picture changes simultaneously. Theorem 2.5.1 establishes that pointer states are precisely the zero set of $\mathrm{Im}(H_{M\Sigma})$ on the open Bures manifold ($\det\rho > 0$) — the real slice of $M \times \Sigma$ where the Kähler form $\Omega$ vanishes on the cross-sector and the two quantum pictures agree. This gives the measurement problem a geometric resolution: there is no collapse, only a locus in the Bures–Kähler geometry where quantum and classical descriptions coincide.
 
-The left-right decomposition connects directly to the work of Settimo et al.\ (2026), who establish that Schrödinger and Heisenberg divisibility are inequivalent for non-Markovian dynamics ($\mathcal{L}_t \neq \mathcal{R}_t$). In the HCR framework this inequivalence is encoded geometrically as $\Delta G_{ij} = G_{ij}^{(\text{S})} - G_{ij}^{(\text{H})} \neq 0$, and its vanishing is the Markov transition criterion (§2.6). The mismatch tensor $\Delta G_{ij}$ is directly measurable as a difference in trace-distance and operator-norm distinguishability — a concrete experimental connection between the abstract geometry and the Settimo et al.\ framework.
+The left-right decomposition connects directly to the work of Settimo et al.\ (2026), who establish that Schrödinger and Heisenberg divisibility are inequivalent for non-Markovian dynamics ($\mathcal{L}_t \neq \mathcal{R}_t$). In the models of §2.5, this inequivalence is encoded geometrically as $\Delta G_{ij} = G_{ij}^{(\text{S})} - G_{ij}^{(\text{H})} \neq 0$, and its vanishing is the Markov transition criterion (§2.6). The mismatch tensor $\Delta G_{ij}$ is directly measurable as a difference in trace-distance and operator-norm distinguishability — a concrete experimental connection between the abstract geometry and the Settimo et al.\ framework.
 
 The companion papers apply this framework to concrete geometry. Paper 2B shows that derived compactification, the KCR-Cone evaluation, and the self-consistency conditions SC1–SC3 follow from the objects established here. Paper 2C derives the physical consequence line: the effective stress tensor, holographic dictionary, dark-sector predictions, and quantum-foundations applications.
 
