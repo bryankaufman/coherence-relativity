@@ -1679,10 +1679,11 @@ the 1D dephasing model.
 
 The adiabatic elimination of §2.3.3, the Born-Oppenheimer reduction of §2.3.4, and the pilot-wave correspondence of §2.3.5–§2.3.9 all rest on a single structural premise: the $\Sigma$-sector relaxes *faster* than $M$-sector dynamics evolve, so that the coherence-frame degrees of freedom can be integrated out. This premise, together with the pointer-state criterion established later in §2.5 (Theorem 2.5.1) and the Markov classicalization criterion of §2.6, motivates a unified dynamical mechanism that we now state explicitly.
 
-\begin{definition}[Coherence-Frame Induction Principle]
-\label{def:cfip}
+\begin{principle}[Coherence-Frame Induction Principle]
+\label{prin:cfip}
+*Supported by: Zurek (2003), Hornberger (2009), Azouit et al. (2016–2024), Macieszczak et al. (2016); topology step deferred to Paper 2B §3.2. Upgrade path to Theorem: bridge Azouit et al. slow-manifold spectral-gap condition to M×Σ metric language, and cite Paper 2B §3.2 for the compactification step.*
 The multi-particle quantum state lives on the full coherence manifold $M \times \Sigma$, whose internal structure contains a hierarchy of coupled coherence and entanglement modes. When environmental coupling drives the system into a Markovian, pointer-selective regime, the fast higher coherence modes are dynamically suppressed, and the residual evolution is \textbf{induced} onto a lower-dimensional manifold of pointer-compatible modes. This transition is a dynamical reduction by timescale separation, not a Taylor-series truncation of the state. Compactification, when it occurs, acts only on this surviving induced sector and is fixed by its topology rather than imposed as an initial postulate.
-\end{definition}
+\end{principle}
 
 The principle synthesizes three components developed in this paper:
 
@@ -2044,7 +2045,7 @@ This is the commutativity condition: $[L_t, \Phi_t][\rho] = 0$.
 For the Lindblad generator:
 $$L[\rho] = -i[H, \rho] + \sum_k \gamma_k\left(L_k \rho L_k^\dagger - \frac{1}{2}\{L_k^\dagger L_k, \rho\}\right)$$
 
-$[L, \Phi_t] = 0$ on $\rho$ requires that $\rho$ is a fixed point, i.e.:
+$[L, \Phi_t] = 0$ on $\rho$ requires that $\rho$ is a fixed point, i.e. (for general Lindblad generators this is the standard fixed-point characterization of quantum dynamical semigroups: Frigerio 1977; Evans \& Lewis 1977):
 1. $[H, \rho] = 0$ (Hamiltonian commutes)
 2. $[L_k, \rho] = 0$ for all $k$ (all jump operators commute)
 
@@ -2676,7 +2677,7 @@ Despite the evaluation challenges described in §4.2, several results are establ
 | Frame-lag mechanism: M-acceleration sources Σ-response | **ESTABLISHED** | Eq. 4.1.10 |
 | $\lambda \cdot T$ boundedness as consistency requirement | **ESTABLISHED** | Eq. 4.1.11 |
 | $\lambda \to 0$ as convention-independent classical limit | **ESTABLISHED** | Eq. 4.2.2, norm-audit consensus |
-| Cross-term scaling $T \sim W^{-1}$ (general argument) | **ESTABLISHED** (heuristic adiabatic argument; geometry-specific prefactors require mode equation solution) | Eq. 4.1.7; KCR-Cone: Paper 2B §4.1.3 (confirmation) + §6 in preparation (derivation) |
+| Cross-term scaling $T \sim W^{-1}$ (general argument) | **ESTABLISHED** (heuristic adiabatic argument; geometry-specific prefactors require mode equation solution) | Eq. 4.1.7; scaling argument holds for any A(r); KK-Cone: explicitly verified in §7.0 DRAFT (A=e^{-μr}); KCR-Cone: Paper 2B §4.1.3 (argument confirmed, mode equation required for prefactor) |
 
 ### §4.3.2 What Requires a Geometry
 
