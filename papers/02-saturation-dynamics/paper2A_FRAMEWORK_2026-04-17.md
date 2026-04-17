@@ -1,12 +1,12 @@
-# Coherence Relativity IIA — Abstract M×Σ Framework
+# Holographic Coherence Relativity IIA — Abstract M×Σ Framework
 
-*Paper 2A of the Coherence Relativity series.*
+*Paper 2A of the Holographic Coherence Relativity (HCR) series.*
 
 # §1 Introduction
 
 ## §1.1 From Coherence Frames to Joint Geometry
 
-Paper 1 introduced coherence relativity: a geometric framework in which quantum measurement is a change of coherence frame, not a dynamical collapse. The Born rule emerges as the unique probability measure invariant under coherence-frame transformations (A1–A4), resolving the measurement problem without modifying unitary dynamics, postulating many worlds, or retreating to subjectivism.
+Paper 1 introduced coherence relativity as the coherence-frame sector of Holographic Coherence Relativity (HCR): a geometric framework in which quantum measurement is a change of coherence frame, not a dynamical collapse. The Born rule emerges as the unique probability measure invariant under coherence-frame transformations (A1–A4), resolving the measurement problem without modifying unitary dynamics, postulating many worlds, or retreating to subjectivism.
 
 Paper 1 established the geometry of $\Sigma$ alone — the manifold of coherence frames at a fixed spacetime point. This paper extends the formalism to the joint manifold $M \times \Sigma$, where $M$ is spacetime. The extension is forced by physics: decoherence conditions vary across spacetime, and the coherence frame that is natural in one environment may be inappropriate in another.
 
@@ -27,9 +27,9 @@ This paper is intentionally conservative about claims beyond the abstract framew
 
 This paper develops the framework. Two companion papers complete the series:
 
-- *Coherence Relativity IIB* evaluates the abstract framework on a specific geometry: the Kaluza-Klein cone (KCR-Cone) arising from derived compactification. It specializes the equations of motion to the 5D warped metric, resolves the norm conventions, evaluates the Markov criterion in the warped throat, and tests the self-consistency conditions.
+- *HCR IIB* evaluates the abstract framework on a specific geometry: the Kaluza-Klein cone (KCR-Cone) arising from derived compactification. It specializes the equations of motion to the 5D warped metric, resolves the norm conventions, evaluates the Markov criterion in the warped throat, and tests the self-consistency conditions.
 
-- *Coherence Relativity IIC* derives the physical consequence line: the RC-1 effective stress tensor from the boundary action, the holographic dictionary as calculation rather than conjecture, dark-sector predictions, CMB implications, and quantum-foundations applications.
+- *HCR IIC* derives the physical consequence line: the RC-1 effective stress tensor from the boundary action, the holographic dictionary as calculation rather than conjecture, dark-sector predictions, CMB implications, and quantum-foundations applications.
 
 The present paper is fully self-contained. Every result stated here is established at the framework level — no specific geometry is required. The companion papers illustrate the framework's content on physically motivated examples, but the framework stands independently.
 
@@ -50,19 +50,19 @@ The present paper is fully self-contained. Every result stated here is establish
 
 ## §1.6 Notation and Conventions
 
-*This section establishes conventions for the entire CR series. Symbols from Paper 1 that are promoted or extended here are listed explicitly to prevent ambiguity.*
+*This section establishes conventions for the entire HCR series. Symbols from Paper 1 that are promoted or extended here are listed explicitly to prevent ambiguity.*
 
 **Disambiguation — three objects denoted $\Sigma$:**
 
-The symbol $\Sigma$ is overloaded in the broader literature. In the CR series it always means the coherence manifold; any other use is subscripted explicitly.
+The symbol $\Sigma$ is overloaded in the broader literature. In the HCR series it always means the coherence manifold; any other use is subscripted explicitly.
 
 | Symbol | Object | Context |
 |---|---|---|
-| $\Sigma \equiv \Sigma_{\mathrm{coh}}(H) = U(d)/T^d$ | **Coherence manifold** (flag manifold of $H$) | CR throughout |
-| $\Sigma_{\mathrm{ws}}$ | String worldsheet (2D) | String theory; never used in CR papers |
+| $\Sigma \equiv \Sigma_{\mathrm{coh}}(H) = U(d)/T^d$ | **Coherence manifold** (flag manifold of $H$) | HCR throughout |
+| $\Sigma_{\mathrm{ws}}$ | String worldsheet (2D) | String theory; never used in HCR papers |
 | $\Sigma_{\mathrm{conf}} = \mathrm{Map}(\Sigma_{\mathrm{ws}}, M)$ | String configuration space | String/holography literature only |
 
-**CR configuration space:** Throughout this paper, $\mathcal{X}(H) := M \times \Sigma_{\mathrm{coh}}(H)$ denotes the fundamental kinematic space. The factor $M$ is not independent — it is a functional of the Hilbert-space data $(H, \partial\mathcal{C}, T_{AB})$, reconstructed as the emergent spacetime. The product notation is shorthand for the image of the reconstruction map $\mathcal{F}: (|\psi\rangle, F) \mapsto (M, g_{\mu\nu}, \{\Phi_a\})$.
+**HCR configuration space:** Throughout this paper, $\mathcal{X}(H) := M \times \Sigma_{\mathrm{coh}}(H)$ denotes the fundamental kinematic space. The factor $M$ is not independent — it is a functional of the Hilbert-space data $(H, \partial\mathcal{C}, T_{AB})$, reconstructed as the emergent spacetime. The product notation is shorthand for the image of the reconstruction map $\mathcal{F}: (|\psi\rangle, F) \mapsto (M, g_{\mu\nu}, \{\Phi_a\})$.
 
 ### Table 1. Cross-Paper Symbol Correspondence
 
@@ -92,7 +92,7 @@ The symbol $\Sigma$ is overloaded in the broader literature. In the CR series it
 
 ### Table 3. Causal and Ontological Direction
 
-CR involves two conceptually distinct types of relationship between objects. Standard physics notation uses $\to$ for both; we distinguish them explicitly.
+HCR involves two conceptually distinct types of relationship between objects. Standard physics notation uses $\to$ for both; we distinguish them explicitly.
 
 | Symbol | Name | Meaning | Example |
 |---|---|---|---|
@@ -101,7 +101,7 @@ CR involves two conceptually distinct types of relationship between objects. Sta
 | $A \Rightarrow B$ | Logical implication | $A$ implies $B$ as a theorem | $c_1 = 1 \Rightarrow$ Hopf fiber structure |
 | $A \rightsquigarrow B$ | Conjectured connection | Proposed relation; not yet derived | $\Sigma \twoheadrightarrow M$ holographic dictionary (Paper 3 candidate) |
 
-The ontological hierarchy of the CR series:
+The ontological hierarchy of the HCR series:
 $\mathcal{H} \twoheadrightarrow \Sigma_{\mathrm{coh}}(\mathcal{H}) \twoheadrightarrow M \times \Sigma \twoheadrightarrow M$
 where each arrow is a theorem first established in Papers 1, 1, 2, and 3 respectively.
 
@@ -1383,7 +1383,7 @@ A natural first attempt is to compare the frame-lag force $F^a_{\text{lag}}$ fro
 
 However, the pure-state Fubini-Study cross-term $T_{\mu a}^{(\text{FS})}$ vanishes identically for single-ray parameterizations of the form $\psi(x) = R(x)e^{iS(x)/\hbar}$, because the Fubini-Study metric is insensitive to overall phase and amplitude rescaling. The pilot-wave correspondence therefore cannot operate at the pure-state level.
 
-This is not an obstruction but a *clue*. The Bohmian picture describes a particle moving in a wave field, but the pilot-wave effect — the non-classical force that deflects trajectories — has its physical origin in the coupling between the particle and its environment. In CR, this coupling is encoded precisely in the mixed-state cross-term $T_{\mu a}^{(\text{mix})}$, which measures how the *open-system* quantum state responds jointly to spacetime variation and frame adaptation.
+This is not an obstruction but a *clue*. The Bohmian picture describes a particle moving in a wave field, but the pilot-wave effect — the non-classical force that deflects trajectories — has its physical origin in the coupling between the particle and its environment. In HCR, this coupling is encoded precisely in the mixed-state cross-term $T_{\mu a}^{(\text{mix})}$, which measures how the *open-system* quantum state responds jointly to spacetime variation and frame adaptation.
 
 ## 2.3.2 The Mixed-State Cross-Term and Its Factorization
 
@@ -1491,15 +1491,15 @@ The adiabatic piece $V_{\text{BODC}}$ captures the energetic cost of maintaining
 
 Both contributions share three essential properties with $Q$: (i) they are velocity-independent scalar potentials, resolving the contrast with the velocity-dependent metric correction of Eq. 2.3.4; (ii) they vanish when $\lambda \to 0$ (no spacetime-frame coupling); and (iii) they require genuine mixed states — for pure states ($\eta + \zeta = 1$), the Bures metric becomes singular and the BO approximation breaks down.
 
-The third property is significant. In the de Broglie-Bohm interpretation, $Q$ is a property of the pure wave function $\psi$. In CR, the analogous object arises from the mixed-state Bures geometry of an open system. The pilot-wave effect, in this reading, is not a primitive feature of the wave function but an emergent consequence of decoherence-mediated coupling between spacetime and the coherence-frame sector — present whenever the system is genuinely open ($\eta + \zeta < 1$) and the decoherence landscape is spatially inhomogeneous ($\nabla\Gamma \neq 0$).
+The third property is significant. In the de Broglie-Bohm interpretation, $Q$ is a property of the pure wave function $\psi$. In HCR, the analogous object arises from the mixed-state Bures geometry of an open system. The pilot-wave effect, in this reading, is not a primitive feature of the wave function but an emergent consequence of decoherence-mediated coupling between spacetime and the coherence-frame sector — present whenever the system is genuinely open ($\eta + \zeta < 1$) and the decoherence landscape is spatially inhomogeneous ($\nabla\Gamma \neq 0$).
 
 ## 2.3.7 Scope and Limitations
 
 The correspondence demonstrated here is structural: it establishes that the $M \times \Sigma$ formalism generates the correct derivative structures ($|\nabla\Gamma|^2$ and $\nabla^2\Gamma$) with the correct physical properties (velocity-independent, classically vanishing, mixed-state-requiring). The exact coefficient matching that would promote this from structural correspondence to quantitative identity depends on the specific choice of mixed-state model through the purity parameters $\alpha$ and $\gamma$, and is deferred to future work.
 
-Additionally, the present analysis treats a single-particle dephasing model. The extension to $N$-body systems — where Bohmian nonlocality manifests through the configuration-space dependence of $Q$ — maps in CR to entanglement structure within the $\Sigma$-sector. This extension, which requires a multi-particle generalization of the Bures cross-term, lies beyond the scope of the present paper.
+Additionally, the present analysis treats a single-particle dephasing model. The extension to $N$-body systems — where Bohmian nonlocality manifests through the configuration-space dependence of $Q$ — maps in HCR to entanglement structure within the $\Sigma$-sector. This extension, which requires a multi-particle generalization of the Bures cross-term, lies beyond the scope of the present paper.
 
-The experimental bridge between these formalisms may be accessible through weak-measurement reconstructions of Bohmian trajectories (Kocsis *et al.* 2011, Mahler *et al.* 2016), which measure the local momentum field $\nabla S/m$. The CR framework predicts specific decoherence-dependent modifications to these trajectories — a prediction that could distinguish the two pictures experimentally.
+The experimental bridge between these formalisms may be accessible through weak-measurement reconstructions of Bohmian trajectories (Kocsis *et al.* 2011, Mahler *et al.* 2016), which measure the local momentum field $\nabla S/m$. The HCR framework predicts specific decoherence-dependent modifications to these trajectories — a prediction that could distinguish the two pictures experimentally.
 
 ## 2.3.8 Explicit 1D Two-Slit Reduction (Toy Model)
 
@@ -1591,7 +1591,7 @@ $$
 \dot{x} = \frac{1}{m}\partial_x S.\tag{2.3.17}
 $$
 
-In the CR framework, the guidance equation emerges from the phase of the M-sector BO wave
+In the HCR framework, the guidance equation emerges from the phase of the M-sector BO wave
 function. Writing $\psi = Re^{iS/\hbar}$, the current $J = R^2\partial_x S/m$ is identified with
 the M-sector probability flow. The effective action on $M$ after Σ-elimination contains, in
 addition to the scalar potential $Q$, a vector potential term arising from the Berry connection of
@@ -1609,13 +1609,13 @@ $$
 \dot{x} = \frac{1}{m}\left(\partial_x S - \hbar\mathcal{A}_x\right).\tag{2.3.19}
 $$
 
-The physical content of (2.3.19) is that the Bohmian velocity field, in the CR framework, includes
+The physical content of (2.3.19) is that the Bohmian velocity field, in the HCR framework, includes
 both the phase gradient (standard) and the Berry connection of the coherence-frame sector
 (new). The Berry term vanishes whenever the coherence-frame state can be chosen to be
 real-valued along the decoherence trajectory — which is guaranteed by time-reversal symmetry
 in the dephasing model.
 
-**Summary**: In the 1D two-slit model with real dephasing, the CR framework reproduces the
+**Summary**: In the 1D two-slit model with real dephasing, the HCR framework reproduces the
 complete pilot-wave theory — both the quantum potential $Q$ (Eq. 2.3.14) and the guidance
 equation (Eq. 2.3.17) — without any model-dependent ambiguity. The framework therefore
 provides a geometric derivation of pilot-wave theory as an effective M-sector description of
@@ -1933,7 +1933,7 @@ where $R_t = \Phi_t^{-1} \circ L_t \circ \Phi_t$ is the right generator (Heisenb
 
 For Markovian (memoryless) dynamics, $L_t = R_t$ and the dynamics forms a commutative semigroup. For non-Markovian dynamics, $L_t \neq R_t$, and the mismatch $\|L_t - R_t\|_{\text{op}}$ quantifies memory effects.
 
-The Coherence Relativity framework connects this mismatch to the M×Σ geometry:
+The HCR framework connects this mismatch to the M×Σ geometry:
 - In Schrödinger picture: the metric $T_{MΣ}^{(S)}$ arises from $L_t$
 - In Heisenberg picture: the metric $T_{MΣ}^{(H)}$ arises from $R_t$
 - When $L_t = R_t$ (Phase III, Markovian limit), both metrics coincide and the system is fully classical (pointer states selected)
@@ -2051,7 +2051,7 @@ The Born rule probability $|\langle\psi|\phi\rangle|^2$ is the invariant of $|H|
 1. Coherence-frame rotations acting on $|H|$
 2. Schrödinger/Heisenberg picture changes acting on $\arg H$
 
-This gives the Born rule its unique frame-invariant status within the CR framework: it is the modulus of the full complex metric, unchanged by any allowed picture transformation.
+This gives the Born rule its unique frame-invariant status within the HCR framework: it is the modulus of the full complex metric, unchanged by any allowed picture transformation.
 
 **Verification in dephasing model:** Pointer states $|0\rangle, |1\rangle$ have Born probabilities $P(|0\rangle) = \rho_{00}$, $P(|1\rangle) = \rho_{11}$ — the standard result. The metric $G_{ij}$ on the pointer-state manifold (diagonal states) reduces to the Fisher information for $(P(|0\rangle), P(|1\rangle))$.
 
@@ -2142,7 +2142,7 @@ $$\|L_t - R_t\|_{\text{op}} \sim e^{-\gamma_\downarrow t}$$
 | 1.0 | 0.037 |
 | 10.0 | ~1.4 × 10⁻⁴ (Phase III reached) |
 
-**Connection to CR:** Phase III = $\lambda_M \to 0$ = pointer basis fully selected. As $\|L_t - R_t\|_{\text{op}} \to 0$, all states in the pointer sector satisfy Theorem 2.5.1, and classical states (products of M and Σ) emerge as attractors.
+**Connection to HCR:** Phase III = $\lambda_M \to 0$ = pointer basis fully selected. As $\|L_t - R_t\|_{\text{op}} \to 0$, all states in the pointer sector satisfy Theorem 2.5.1, and classical states (products of M and Σ) emerge as attractors.
 
 
 ---
@@ -2749,7 +2749,7 @@ The pilot-wave correspondence (§2.3) establishes, within the 1D two-slit dephas
 
 The left-right generator decomposition (§2.5) introduces the two-face structure of the $M \times \Sigma$ metric: the Schrödinger face $G^{(\text{S})}$ and the Heisenberg face $G^{(\text{H})}$, unified in the complex metric $H_{M\Sigma} = G_{M\Sigma} + i\Omega_{M\Sigma}$. The Born rule is identified as the unique invariant of $|H|$ under both coherence-frame transformations and Schrödinger/Heisenberg picture changes simultaneously. Theorem 2.5.1 establishes that pointer states are precisely the zero set of $\mathrm{Im}(H_{M\Sigma})$ on the open Bures manifold ($\det\rho > 0$) — the real slice of $M \times \Sigma$ where the Kähler form $\Omega$ vanishes on the cross-sector and the two quantum pictures agree. This gives the measurement problem a geometric resolution: there is no collapse, only a locus in the Bures–Kähler geometry where quantum and classical descriptions coincide.
 
-The left-right decomposition connects directly to the work of Settimo et al.\ (2026), who establish that Schrödinger and Heisenberg divisibility are inequivalent for non-Markovian dynamics ($\mathcal{L}_t \neq \mathcal{R}_t$). In the CR framework this inequivalence is encoded geometrically as $\Delta G_{ij} = G_{ij}^{(\text{S})} - G_{ij}^{(\text{H})} \neq 0$, and its vanishing is the Markov transition criterion (§2.6). The mismatch tensor $\Delta G_{ij}$ is directly measurable as a difference in trace-distance and operator-norm distinguishability — a concrete experimental connection between the abstract geometry and the Settimo et al.\ framework.
+The left-right decomposition connects directly to the work of Settimo et al.\ (2026), who establish that Schrödinger and Heisenberg divisibility are inequivalent for non-Markovian dynamics ($\mathcal{L}_t \neq \mathcal{R}_t$). In the HCR framework this inequivalence is encoded geometrically as $\Delta G_{ij} = G_{ij}^{(\text{S})} - G_{ij}^{(\text{H})} \neq 0$, and its vanishing is the Markov transition criterion (§2.6). The mismatch tensor $\Delta G_{ij}$ is directly measurable as a difference in trace-distance and operator-norm distinguishability — a concrete experimental connection between the abstract geometry and the Settimo et al.\ framework.
 
 The companion papers apply this framework to concrete geometry. Paper 2B shows that derived compactification, the KCR-Cone evaluation, and the self-consistency conditions SC1–SC3 follow from the objects established here. Paper 2C derives the physical consequence line: the effective stress tensor, holographic dictionary, dark-sector predictions, and quantum-foundations applications.
 
