@@ -342,17 +342,17 @@ Applied 2026-04-17: Ansatz A* named in §2.2.6; §4 assembled (commit b6cfcb7), 
 
 §2.6.5 patched. §4.2.4 provides canonical λ→0 / R_{Markov}≈O(1) framework statement. Table 4 rewritten (prior session patch) with current 2B §4 anchors and Ansatz A*/ATA status flags.
 
-### Priority 1 (ex-4) — §2.1.11 relocation
+### ✅ Priority 1 (ex-4) DONE — §2.1.11 condensed (commit c834ede)
 
-Move T_{μa}∼A⁻² warp-scaling subsection out of 2A or reduce to a pointer to 2B §4. Removes broken §7/§4.0 anchors.
+Condensed to single named-ansatz block (Eq. 2.1.39 only). Removed Eqs. 2.1.37/2.1.38 and Physical Interpretation section. Scope note and Paper 2B §4 pointer retained.
 
-### Priority 2 (ex-5) — §2.3/§3 language softening
+### ✅ Priority 2 (ex-5) DONE — §3 Settimo sentence scoped (commit c834ede)
 
-Soften §3 pilot-wave and Settimo sentences to match actual 1D/model scope.
+Settimo ΔG sentence: added 'in the models of §2.5' qualifier. Pilot-wave sentence was already scoped (1D two-slit) in prior session.
 
-### Priority 3 (ex-6) — Formatting hygiene
+### ✅ Priority 3 (ex-6) DONE — Formatting hygiene (prior session)
 
-§2.6 labels: 2.3.x → 2.6.x. §2.3 Appendix C: D-* → C-*.
+§2.6 labels renumbered (2.3.x→2.6.x). §2.3 Appendix C D-*→C-* renaming. Both completed in prior session.
 
 ---
 
@@ -383,7 +383,7 @@ Soften §3 pilot-wave and Settimo sentences to match actual 1D/model scope.
 3. ✅ §4 assembly — DONE (commit b6cfcb7).
 4. ✅ §2.6 / Table 4 conceptual repair — DONE.
 5. ✅ HCR naming — DONE (commit 47106c9).
-6. **Remaining cleanup (no RC-2 / 2C blocking):** §2.1.11 relocation; §2.3/§3 language softening; §2.6 / Appendix C label renumber.
+6. ✅ **All cleanup done** (commit c834ede): §2.1.11 condensed; §3 Settimo scoped; §2.6 labels and Appendix C renumbered (prior session).
 7. **When cleanup done:** 2B citation hygiene → RC-2 rebuild → 2C patches.
 
-**Realistic status: 2A provenance audit 100% complete. All blocking items resolved. 2A is stable for downstream RC-2 / 2C work. Three low-risk cleanup items remain (Priorities 1–3 above).**
+**Realistic status: 2A provenance audit 100% complete. ALL items resolved including cleanup. 2A is stable and fully clean for downstream RC-2 / 2C work.**
