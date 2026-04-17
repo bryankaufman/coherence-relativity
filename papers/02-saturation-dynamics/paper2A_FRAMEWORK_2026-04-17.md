@@ -1781,7 +1781,7 @@ $$= \text{Tr}(\rho M_a)$$
 
 Projective measurements are a special case of the more general POVM (Positive-Operator-Valued Measure). To show that any POVM is equivalent to a projective measurement on an enlarged system, we invoke Naimark's dilation theorem.
 
-**Naimark's Dilation Theorem (Correct Form):**
+**Naimark's Dilation Theorem** *(standard result; Naimark 1940; see also Nielsen & Chuang §2.2.8, 2000; Paulsen 2002):*
 
 There exists:
 - An ancilla space H_A
@@ -2216,7 +2216,7 @@ The cross-term norm $\| G^{(\text{cross})} \|$ requires a convention choice (cov
 
 ### The Markov Ratio
 
-Define the **Markov ratio** as:
+**Definition 2.6.1 (Markov Ratio).** Define the **Markov ratio** as:
 
 $$\boxed{R_{\text{Markov}} := \frac{\lambda \| G^{(cross)} \|}{\| G^{(M)} \| + \| G^{(Σ)} \|}}$$
 
@@ -2676,7 +2676,7 @@ Despite the evaluation challenges described in §4.2, several results are establ
 | Frame-lag mechanism: M-acceleration sources Σ-response | **ESTABLISHED** | Eq. 4.1.10 |
 | $\lambda \cdot T$ boundedness as consistency requirement | **ESTABLISHED** | Eq. 4.1.11 |
 | $\lambda \to 0$ as convention-independent classical limit | **ESTABLISHED** | Eq. 4.2.2, norm-audit consensus |
-| Cross-term scaling $T \sim W^{-1}$ (general argument) | **ESTABLISHED** (up to geometry-dependent prefactors) | Eq. 4.1.7 |
+| Cross-term scaling $T \sim W^{-1}$ (general argument) | **ESTABLISHED** (heuristic adiabatic argument; geometry-specific prefactors require mode equation solution) | Eq. 4.1.7; KCR-Cone: Paper 2B §4.1.3 (confirmation) + §6 in preparation (derivation) |
 
 ### §4.3.2 What Requires a Geometry
 
