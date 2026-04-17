@@ -39,7 +39,7 @@ The present paper is fully self-contained. Every result stated here is establish
 | 2A Section | Framework Claim | 2B Section | Evaluation Status |
 |---|---|---|---|
 | §2.1.1–§2.1.10 | $T_{M\Sigma}$ derived from FS pullback; vanishes in uniform environment | Paper 2B §4 | Abstract claim — geometry-specific evaluation in Paper 2B §4 |
-| §2.1.11 ⚠️ | **Ansatz ATA**: $T_{\mu a} \sim A^{-2}$ in warped geometry (§2.1.11) | Paper 2B §4 | Modeling ansatz; evaluation against covariant EOMs on KCR-Cone in Paper 2B §4; not derived in 2A |
+| §2.1.11 ⚠️ | **Ansatz ATA**: $T_{\mu a} \sim A^{-2}$ in warped geometry (§2.1.11) | Paper 2B §6 | Structurally derived for KCR-Cone in Paper 2B §6 (§6.2.10): $T_{\mu r} \sim \sec^2(\sqrt{2}\,r)$; exact prefactor requires mode equation. Conditional on Ansatz A*. |
 | §2.2.1–§2.2.5 | $\lambda \in [0,1]$ interpolates quantum/classical; frame-lag EOM derived | Paper 2B §4 | Abstract EOM — geometry-specific evaluation in Paper 2B §4 |
 | §2.2.6 ⚠️ | **Ansatz A\***: $\lambda T_{\mu a}$ warp-invariant $\Rightarrow \lambda \sim A^2$ (§2.2.6) | Paper 2B §4 | Modeling ansatz from dimensional analysis; conditional evaluation on KCR-Cone in Paper 2B §4; not derived from first principles |
 | §2.3, §2.6 ⚠️ | $R_{\text{Markov}} < \varepsilon$ is abstract classicalization criterion; throat realization is $\lambda \to 0$ (conditional on Ansatz A*) | Paper 2B §4.2 | Per Paper 2B §4.2.1–§4.2.4: $\lambda \to 0$ in throat; $R_{\text{Markov}} \sim O(1)$ (not $\to 0$); classicalization mechanism is direct $\lambda$ suppression |
@@ -584,7 +584,7 @@ $$\boxed{T_{\mu a}(x, z, \xi) \sim A(x, z)^{-2} \, T_{\mu a}^{(\text{flat})}(\xi
 
 **Eq. 2.1.39**
 
-where $T_{\mu a}^{(\text{flat})}$ is the flat-space cross-term. The $A^{-2}$ scaling follows dimensionally from the derivative rescaling $\partial_\mu \psi \to A^{-1}\partial_\mu^{(0)}\psi$, but is not derived from the covariant EOMs here. It underlies Ansatz A* in §2.2.6. No quantitative scaling law for $T_{\mu a}$ is claimed in Paper 2A; evaluation against the KCR-Cone covariant EOMs is in Paper 2B §4.
+where $T_{\mu a}^{(\text{flat})}$ is the flat-space cross-term. The $A^{-2}$ scaling follows dimensionally from the derivative rescaling $\partial_\mu \psi \to A^{-1}\partial_\mu^{(0)}\psi$, but is not derived from the covariant EOMs here. It underlies Ansatz A* in §2.2.6. No quantitative scaling law for $T_{\mu a}$ is derived in Paper 2A. The structural argument has been confirmed for the KCR-Cone in Paper 2B §6 (§6.2.10: $T_{\mu r} \sim \sec^2(\sqrt{2}\,r)$); the exact prefactor requires mode equation solution.
 
 ---
 
@@ -2552,7 +2552,7 @@ $$|T_{\mu a}| \sim W(\xi)^{-1} \times \text{(coupling strength)} \tag{4.1.7}$$
 
 This scaling arises because excited states in Σ — which give non-trivial $\partial_a |\psi_\Sigma\rangle$ — have energy gaps of order $W(\xi)$ due to the rescaling in (4.1.6). The inverse dependence on $W$ is a general consequence of adiabatic perturbation theory.
 
-**Key point:** The specific function $W(\xi)$ depends on the geometry. For a warped product with warp factor $A$, one expects $W \sim A^{-2}$ (the standard warped-mode scaling), giving $T_{\mu a} \sim A^{-2}$. But this identification requires solving the mode equation on the specific geometry — it cannot be established at the framework level.
+**Key point:** The specific function $W(\xi)$ depends on the geometry. For a warped product with warp factor $A$, one expects $W \sim A^{-2}$ (the standard warped-mode scaling), giving $T_{\mu a} \sim A^{-2}$. This structural scaling has been derived for the KCR-Cone in Paper 2B §6 (Eq. 6.2.10): $T_{\mu r} \sim A(r)^{-2} = \sec^2(\sqrt{2}\,r)$ for $A(r) = \cos(\sqrt{2}\,r)$. The exact prefactor — and whether the scaling is exactly $W^{-1}$ or involves corrections — requires solving the mode equation on the specific geometry.
 
 ### §4.1.4 The General Equations of Motion
 
@@ -2677,7 +2677,7 @@ Despite the evaluation challenges described in §4.2, several results are establ
 | Frame-lag mechanism: M-acceleration sources Σ-response | **ESTABLISHED** | Eq. 4.1.10 |
 | $\lambda \cdot T$ boundedness as consistency requirement | **ESTABLISHED** | Eq. 4.1.11 |
 | $\lambda \to 0$ as convention-independent classical limit | **ESTABLISHED** | Eq. 4.2.2, norm-audit consensus |
-| Cross-term scaling $T \sim W^{-1}$ (general argument) | **ESTABLISHED** (heuristic adiabatic argument; geometry-specific prefactors require mode equation solution) | Eq. 4.1.7; scaling argument holds for any A(r); KK-Cone: explicitly verified in §7.0 DRAFT (A=e^{-μr}); KCR-Cone: Paper 2B §4.1.3 (argument confirmed, mode equation required for prefactor) |
+| Cross-term scaling $T \sim W^{-1}$ (general argument) | **DERIVED** (structural adiabatic argument for any $A(r)$; exact prefactor requires mode equation) | Eq. 4.1.7; KK-Cone: §7.0 DRAFT (numerical); KCR-Cone: Paper 2B §6, Eq. 6.2.10 (structural, $T_{\mu r} \sim \sec^2(\sqrt{2}\,r)$) |
 
 ### §4.3.2 What Requires a Geometry
 
