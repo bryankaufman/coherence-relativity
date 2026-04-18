@@ -1337,6 +1337,16 @@ The equations of motion (Eq. 2.2.29 and 2.2.30, in the simplified 1D example) ar
 
 **Status**: Beyond the scope of Paper 2. Deferred to future work.
 
+---
+
+### 5. Proof of the Born Rule as Unique Coherence-Frame Invariant (Paper N)
+
+**Question**: Can Conjecture 2.5.3 — that $|\langle\psi|\phi\rangle|^2$ is the *unique* invariant of $|H_{M\Sigma}|$ under coherence-frame rotations and picture changes — be elevated to a theorem within the HCR framework?
+
+**Approach**: Three requirements are identified in Box 2.5.A. The most direct path is the envariance route: map the pointer-sector swap symmetry established in §2.5.6 (commutativity of jump operators with pointer states) onto Zurek's (2003) envariance construction, which derives the Born rule from environment-assisted swap symmetries on entangled states. If pointer states satisfy the swap-invariance hypothesis of that construction — which their $[L_k, \rho_\xi] = 0$ condition strongly suggests — the Born rule follows for the full HCR framework without reinventing the uniqueness argument from scratch. The extension from qubit ($\mathcal{H} = \mathbb{C}^2$, verified in §2.5.3–2.5.4) to general $\mathcal{H}$ would complete the proof.
+
+**Status**: *Paper N candidate.* Registered as Open Items Ledger item #21. Pursue as a standalone short paper or appendix if no existing literature closes the gap. Do not block Papers 2A–2C on this item.
+
 # §2.3 Connection to Pilot-Wave Theory
 
 The cross-term tensor $T_{M\Sigma}$ developed in §2.1, together with the frame-lag dynamics of §2.2, carries an unexpected consequence: when the coherence-frame sector $\Sigma$ is integrated out of the joint $M \times \Sigma$ dynamics, the effective potential on spacetime $M$ reproduces the functional form of the Bohmian quantum potential. This section establishes the structural correspondence and its physical interpretation.
