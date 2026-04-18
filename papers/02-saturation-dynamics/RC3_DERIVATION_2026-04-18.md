@@ -195,13 +195,13 @@ $= N_0[4 - 4] = 0 = m_0^2\,\Phi_0$. ✓ **Zero mode verified.**
 | Well depth $V(0)$ | $-3$ | $-4$ |
 | Wall coefficient | $3/2$ | $4$ |
 | Zero-mode profile | $\cos^{3/2}(\sqrt{2}\,r)$ | $\cos^2(\sqrt{2}\,r)$ |
-| First mass gap $m_1^2$ | $20.1$ (numerical) | **To be computed** |
+| First mass gap $m_1^2$ | $20$ (exact) | $24$ (exact) |
 
 The vector potential is **deeper** (well depth 4 vs 3) and has **steeper walls** (coefficient 4 vs 3/2 on $\tan^2$). The vector modes are therefore more tightly confined than graviton modes.
 
 ## First Massive Mode (Structural)
 
-The first excited eigenvalue $m_1^2$ of (RC3.11) with $V_{\rm vec} = 4\tan^2(\sqrt{2}\,r) - 4$ requires numerical solution (the potential is not a standard Pöschl-Teller form for integer parameters). By comparison with the graviton case ($m_1^2 = 20.1$ for a shallower well with weaker walls), we expect $m_1^2$ to be of order 10–30 in dimensionless units.
+Both volcano potentials are **exactly solvable** as Pöschl-Teller systems. The graviton has $l = 3/2$ (half-integer) giving $m_n^2 = 4n(2n+3)$; the vector has $l = 2$ (integer) giving $m_n^2 = 8n(n+2)$. See §RC3.3 Addendum and §RC3.3b Addendum below. The first mass gaps are $m_1^2 = 20$ (graviton) and $m_1^2 = 24$ (vector).
 
 **The physical mass is:**
 
@@ -368,13 +368,59 @@ $$\boxed{m_n^2 = 8n(n+2), \qquad n = 0, 1, 2, \ldots} \tag{RC3.12b}$$
 
 Numerical verification (finite-difference, $N = 50{,}000$): $m_1^2 = 24.0012$ (converging to exact $24$). ✓
 
-**Why the vector potential is exactly solvable while the graviton is not:** The graviton volcano potential $V_{\rm grav} = (3/2)\tan^2(\sqrt{2}\,r) - 3$ has coefficient $(3/2)$ in $\sec^2(z)$, giving $l(l-1) = 3/2$ → $l = (1 + \sqrt{7})/2 \approx 1.82$ (irrational). Non-integer $l$ has no closed-form spectrum. The vector coefficient is $2 = l(l-1)$ with $l = 2$ (integer), which is the algebraic accident making the vector exactly solvable.
+**Both potentials are exactly solvable.** The vector has $l = 2$ (integer); the graviton has $l = 3/2$ (half-integer). Both give exact rational eigenvalues — the Pöschl-Teller spectrum requires only that $l$ is a half-integer or integer, not that $l$ is strictly integer. See §RC3.3b Addendum below for the graviton derivation.
 
 **Revised $k_c$ identification:**
 
 $$\boxed{k_c = \frac{m_1}{L^*} = \frac{2\sqrt{6}}{L^*} \approx \frac{4.90}{L^*}} \tag{RC3.17a}$$
 
 The eigenfunctions for the Neumann-at-0 spectrum are even-order Gegenbauer polynomials of $\sin(z)$, weighted by $\cos^2(z)$: $f_n(z) \propto \cos^2(z)\,C_{2n}^{(3/2)}(\sin z)$.
+
+---
+
+## RC-3.3b Addendum — Graviton Exact Spectrum (2026-04-18)
+
+The graviton volcano potential is **also exactly solvable**. This corrects the earlier claim (now struck) that the graviton has irrational $l$ and no closed-form spectrum.
+
+**Derivation.** The graviton mode equation after $z = \sqrt{2}\,r$:
+
+$$-\psi''(z) + \tfrac{3}{4}\sec^2(z)\,\psi(z) = E\,\psi(z), \qquad E = \frac{m^2}{2} + \frac{9}{4} \tag{RC3.18a}$$
+
+where the factor $3/4$ comes from the graviton potential $V_{\rm grav} = (3/2)\tan^2(\sqrt{2}\,r) - 3$: after the substitution and dividing by 2, the $\sec^2(z)$ coefficient is $(3/2)/2 = 3/4$.
+
+This is Pöschl-Teller with $l(l-1) = 3/4$, i.e., $l^2 - l - 3/4 = 0$, giving:
+
+$$l = \frac{1 + \sqrt{1 + 3}}{2} = \frac{1 + 2}{2} = \frac{3}{2}$$
+
+**Key point:** The earlier error was computing $l(l-1) = 3/2$ (using the $\tan^2$ coefficient directly), when the correct value after the $z$-substitution is $l(l-1) = 3/4$. The factor of 2 from $d^2/dr^2 = 2\,d^2/dz^2$ halves the $\sec^2$ coefficient.
+
+Neumann (even) spectrum on $[0, \pi/2]$:
+
+$$E_n = (2n + \tfrac{3}{2})^2, \qquad n = 0, 1, 2, \ldots$$
+
+Converting to $m^2$ via $m^2 = 2E - 9/2$:
+
+$$m^2 = 2\bigl[(2n + \tfrac{3}{2})^2 - \tfrac{9}{4}\bigr] = 2(4n^2 + 6n) = 8n^2 + 12n$$
+
+$$\boxed{m_n^2 = 4n(2n+3), \qquad n = 0, 1, 2, \ldots} \tag{RC3.18b}$$
+
+| $n$ | $m_n^2$ (exact) | $m_n$ (units of $L^{*-1}$) | Mode |
+|-----|-----------------|---------------------------|------|
+| 0 | $0$ | $0$ | Zero mode (massless graviton) |
+| 1 | $20$ | $2\sqrt{5} \approx 4.472$ | First KK graviton |
+| 2 | $56$ | $2\sqrt{14} \approx 7.483$ | Second KK graviton |
+| 3 | $108$ | $6\sqrt{3} \approx 10.39$ | Third KK graviton |
+
+Numerical verification (finite-difference, Richardson extrapolation, $N = 4000$): $m_1^2 = 20.000000$ (error $< 3 \times 10^{-7}$). ✓
+
+**Complete KCR-Cone spectrum summary:**
+
+| Sector | Potential | Pöschl-Teller $l$ | Spectrum | Mass gap $m_1^2$ |
+|--------|-----------|-------------------|----------|------------------|
+| Graviton | $(3/2)\tan^2(\sqrt{2}\,r) - 3$ | $l = 3/2$ (half-integer) | $4n(2n+3)$ | $20$ |
+| Vector | $4\tan^2(\sqrt{2}\,r) - 4$ | $l = 2$ (integer) | $8n(n+2)$ | $24$ |
+
+The graviton mass gap ($m_1 = 2\sqrt{5}/L^*$) is lighter than the vector ($m_1 = 2\sqrt{6}/L^*$) by a factor $\sqrt{5/6} \approx 0.913$, consistent with the graviton's shallower potential well.
 
 ---
 
@@ -425,4 +471,5 @@ This is a clean separation: **the CC comes from geometry; the fluctuation spectr
 | Date | Change |
 |------|--------|
 | 2026-04-18 | Initial derivation — full 5D → 4D reduction for the vector sector on KCR-Cone. Zero-mode profile, volcano potential, propagator, λ_bdry identification. |
-| 2026-04-18 | §RC3.3 addendum — exact analytic spectrum: $m_n^2 = 8n(n+2)$. Vector potential exactly solvable (integer $l=2$); graviton not. $k_c = 2\sqrt{6}/L^* \approx 4.90/L^*$ exact. Numerical verification to $N=50{,}000$. |
+| 2026-04-18 | §RC3.3 addendum — exact analytic vector spectrum: $m_n^2 = 8n(n+2)$, integer $l=2$. $k_c = 2\sqrt{6}/L^* \approx 4.90/L^*$ exact. |
+| 2026-04-18 | §RC3.3b addendum — exact analytic graviton spectrum: $m_n^2 = 4n(2n+3)$, half-integer $l=3/2$. Corrects earlier claim that graviton is not exactly solvable (error: used $l(l-1)=3/2$ instead of correct $3/4$ after $z$-substitution). Both KCR-Cone sectors now fully analytic. |

@@ -19,8 +19,8 @@ This ledger collects every item that is currently UNTESTED, OPEN, CONJECTURED, A
 
 | # | Item | Source | Notes |
 |---|------|--------|-------|
-| 3 | **A⁻² cross-term scaling hypothesis** | 2A §2.2 (L606) | Ansatz follows dimensionally from A⁻¹ derivative scaling. Needs EOM verification in 2B. |
-| 4 | **λ ~ A² warp-factor scaling** | 2A §2.2 (L1342) | Key verification point — does KK-Cone metric confirm this? Deferred to 2B. |
+| 3 | ~~**A⁻² cross-term scaling hypothesis**~~ | 2A §2.2 (L606) | **RESOLVED 2026-04-18.** Derived from first principles in §6.2.10 (Hamiltonian decomposition + KCR-Cone metric). $T_{\mu r} \sim A^{-2}(r) = \sec^2(\sqrt{2}\,r)$ — exact, not merely an ansatz. |
+| 4 | ~~**λ ~ A² warp-factor scaling**~~ | 2A §2.2 (L1342) | **PARTIALLY RESOLVED 2026-04-18.** Physically established via Ansatz A* + three consistency checks in §6.3: (i) $\lambda \cdot T = O(1)$ exact cancellation, (ii) $\lambda \to 0$ at throat, (iii) agreement with §4.2.3 boundary conditions. Independent geometric derivation (without Ansatz A* as input) remains open. |
 
 ---
 
@@ -99,8 +99,8 @@ This ledger collects every item that is currently UNTESTED, OPEN, CONJECTURED, A
 | Category | Count | Blocking Paper 2? |
 |----------|-------|--------------------|
 | Deferred | 3 | No |
-| Untested (needs 2B verification) | 2 | Yes — 2B |
-| Blocking 2B | 2 | Yes — 2B |
+| Untested (needs 2B verification) | 0 (#3 resolved, #4 partially resolved) | — |
+| Blocking 2B | 2 (#5 resolved, #6 partially resolved) | Yes — #6 |
 | Contingent on Paper 3 | 3 | No (interface contracts) |
 | Open | 2 (items #11, #13b partially resolved; #11 → RC-4) | Partially |
 | Conjectured | 2 | No (flagged honestly) |
@@ -111,8 +111,11 @@ This ledger collects every item that is currently UNTESTED, OPEN, CONJECTURED, A
 
 **Resolved since 2026-04-17:** #5 (SC1/SC2), #17 (RC1 symmetry), #13a (Λ_eff Path C), #16 (A5 propagator), #11 (partially — direction resolved), #13b (p ill-defined, reflagged).
 
-**Critical path (updated 2026-04-18):** 
-- 2B: items #3, #4, #6 still need numerical verification (volcano potential ODE)
+**Resolved since 2026-04-18 (2B §6 numerical session):** #3 (T~A⁻² derived from first principles in §6.2.10), #4 (partially — λ=A² established via three consistency checks, independent derivation still open). Graviton spectrum discovered to be exactly solvable: $m_n^2 = 4n(2n+3)$ (Pöschl-Teller $l=3/2$). Both KCR-Cone sectors now fully analytic. Numerical trajectories computed confirming confinement.
+
+**Critical path (updated 2026-04-18, post-§6 numerical):** 
+- 2B: #3 RESOLVED, #4 PARTIALLY RESOLVED. #6 (s dynamical mechanism) still open — Casimir gives value but not mechanism.
 - 2C §8 quality gate: items #18–20 (FR holonomy, Proietti, Eq. 8.4.5) — Opus passes needed
 - RC-4: #22 ($k_c^{\rm eff}$) gates 2C §RC1.4 full predictions; #23 (factor-of-6) is computable now from $N_0$
 - Paper 3: items #7–9 are interface contracts, not blocking
+- Exact spectra: graviton $m_n^2 = 4n(2n+3)$, vector $m_n^2 = 8n(n+2)$ — both Pöschl-Teller. This is a new result with potential implications for Paper 3 (KK tower structure).

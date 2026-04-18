@@ -330,15 +330,26 @@ Since $|\dot{r}| \to 0$ at least as fast as $A$ (from the confinement), $\epsilo
 
 ### §6.6.2 Open (Requires Mode-Equation Solution)
 
-1. **Exact prefactor in $T \sim cA^{-2}$** — the proportionality constant $c$ requires solving the mode equation on the KCR-Cone (volcano potential, Bessel-type equation). §6.2.9 gives the leading order; corrections require explicit mode solutions.
+1. ~~**Exact prefactor in $T \sim cA^{-2}$**~~ — **RESOLVED by RC-3.** The vector zero-mode profile is $\psi_0 = N_0 A^2(r)$ with $N_0 = \sqrt{16\sqrt{2}/(3\pi)} \approx 1.55$ (exact). The graviton zero mode is $\psi_0^{(\rm grav)} \propto A^{3/2}(r)$ with $N_0^{(\rm grav)} \approx 1.457$. See `RC3_DERIVATION_2026-04-18.md` §RC3.2.
 
-2. **Explicit zero-mode profile $f_0(r)$** — for the KCR-Cone the zero-mode satisfies $f_0'' + 4\frac{A'}{A}f_0' = 0$ with boundary conditions $f_0'(0) = f_0(r_{\max}) = 0$. This is related to $\psi_0(r) \propto A^{3/2}(r)$ from Paper 2B §5.2.
+2. ~~**Explicit zero-mode profile $f_0(r)$**~~ — **RESOLVED by RC-3.** Vector: $f_0(r) = N_0 \cos^2(\sqrt{2}\,r)$. Graviton: $f_0(r) = N_0^{(\rm grav)} \cos^{3/2}(\sqrt{2}\,r)$ (from Paper 2B §5.2, confirmed by RC-3).
 
-3. **Numerical trajectory solutions $r(s)$** — solving the $\Sigma$-sector EOM (6.4.6) numerically for specific initial conditions.
+3. ~~**Numerical trajectory solutions $r(s)$**~~ — **RESOLVED (2026-04-18).** Computed via geodesic equation with Christoffel force $\Gamma^r_{\mu\nu}$. Three test trajectories (brane-start, mid-start, near-throat) all remain confined below $r/r_{\max} < 0.96$. Christoffel divergence confirmed: $\Gamma^r_{tt} \to -\infty$ as $r \to r_{\max}$. Adiabatic parameter $\epsilon_{\rm ad} \sim 10^{-5}$ near throat, consistent with §6.5.2.
 
-4. **Non-adiabatic corrections** — the $O(\epsilon_{\mathrm{ad}})$ corrections to the cross-term from excited-state mixing; expected to be small near $r_{\max}$ but relevant at intermediate $r$.
+4. **Non-adiabatic corrections** — the $O(\epsilon_{\mathrm{ad}})$ corrections to the cross-term from excited-state mixing; expected to be small near $r_{\max}$ but relevant at intermediate $r$. **Still open.**
 
-5. **Verification that $\lambda = A^2$ holds** — Ansatz A* is used here as input. Rigorous verification from solving the boundary conditions on the KCR-Cone interval is in Paper 2B §4.2.3.
+5. **Verification that $\lambda = A^2$ holds** — Ansatz A* is used here as input. Three consistency checks passed (§6.3): (i) $\lambda \cdot T = O(1)$ cancellation, (ii) limit $\lambda \to 0$ as $A \to 0$ at throat, (iii) agreement with Paper 2B §4.2.3. Rigorous geometric derivation (independent of Ansatz A*) remains open.
+
+**Exact mass spectra (RC-3, 2026-04-18):**
+
+Both KCR-Cone volcano potentials are Pöschl-Teller exactly solvable:
+
+| Sector | $l$ | Spectrum | Mass gap $m_1^2$ | $m_1/L^{*-1}$ |
+|--------|-----|----------|------------------|----------------|
+| Graviton | $3/2$ | $4n(2n+3)$ | $20$ | $2\sqrt{5} \approx 4.47$ |
+| Vector | $2$ | $8n(n+2)$ | $24$ | $2\sqrt{6} \approx 4.90$ |
+
+See `RC3_DERIVATION_2026-04-18.md` §RC3.3, §RC3.3b.
 
 ---
 
@@ -373,3 +384,4 @@ Since $|\dot{r}| \to 0$ at least as fast as $A$ (from the confinement), $\epsilo
 | Date | Change |
 |------|--------|
 | 2026-04-17 | Initial derivation — rederiving $T \sim A^{-2}$ specifically for KCR-Cone $A = \cos(\sqrt{2}\,r)$; comparison with KK-Cone; identification of absolute-confinement feature |
+| 2026-04-18 | §6.6.2 updated: items 1–3 resolved by RC-3 (exact zero-mode profiles, exact spectra, numerical trajectories). Graviton spectrum $m_n^2 = 4n(2n+3)$ (exact, $l=3/2$ Pöschl-Teller). Vector spectrum $m_n^2 = 8n(n+2)$ (exact, $l=2$). |
