@@ -60,7 +60,7 @@ This ledger collects every item that is currently UNTESTED, OPEN, CONJECTURED, A
 
 | # | Item | Source | Notes |
 |---|------|--------|-------|
-| 14 | **Exponent $p$ in $|T_M|^2 \propto \Gamma_{\rm dec}^p$** (C1) | 2C §RC1.3 (L377 in triage) | Unresolved. The naive CP¹ spectral-density route was withdrawn; if $p = 3/2$, it must be derived from the full M-Σ dynamics. |
+| 14 | ~~**Exponent $p$ in $|T_M|^2 \propto \Gamma_{\rm dec}^p$** (C1)~~ | 2C §RC1.3 (L377 in triage) | **KILLED (RC-6, 2026-04-18).** Three distinct quantities were conflated under "α = 3/2": (1) spectral-density exponent α_spec — killed by Weyl formula (RC-1 #4); (2) dynamical exponent p — ill-defined at leading order (#13b); (3) geometric coefficient α_geom — underived (RC-6). Only α_geom survives; its value is OPEN (not 3/2 until derived). See `RC6_ALPHA_AUDIT_2026-04-18.md`. |
 | 15 | **λ normalization for Ω_DM/Ω_b ratio** (C2) | 2C §RC1.4 (L454 in triage) | Conjectured. Ratio consistency confirmed but absolute normalization not derived. |
 
 ---
@@ -89,7 +89,7 @@ This ledger collects every item that is currently UNTESTED, OPEN, CONJECTURED, A
 | # | Item | Source | Notes |
 |---|------|--------|-------|
 | 22 | **$k_c^{\rm eff}$ from decoherence-sourced T_M EOM** | RC-3 §RC3.4 | The zero mode is massless at the free-field level; the effective mass $k_c^{\rm eff} \approx 5H_0$ must come from the sourced dynamics. Requires solving $\Box B_\mu^{(0)} = J_\mu^{\rm dec}$ where the source is the decoherence-rate tensor. Well-defined problem; Γ_dec~H₀ provides the scale. |
-| 23 | **Factor-of-6 in Path C Λ_eff** | RC-2.5 | Exact coefficient of $\rho_{\rm drag} = (3/2)H_0^2/G$ has a geometric factor $\alpha_{\rm geom}$ that was estimated as 3/2 from CP¹. Exact value requires mode-equation normalization from RC-3 (now available: $N_0 = \sqrt{16\sqrt{2}/(3\pi)} \approx 1.55$). Can be computed now that $N_0$ is exact. |
+| 23 | ~~**Factor-of-6 in Path C Λ_eff**~~ → **α_geom underived** | RC-2.5, RC-6 | **RETRACTED (RC-6, 2026-04-18).** The "factor of 6" was an artifact of a π error in RC-2 (used ρ_Λ = 0.26 H₀²/G instead of correct 0.082 H₀²/G). The actual ratio with the RC-2 formula is 18, not 6. However, RC-2's formula ρ_drag = α Γ²/G is itself wrong by 8π/3 — correct formula is Ω_drag = α_geom × c_Γ² (Eq. RC6.1). The value α_geom = 3/2 has no traceable derivation ("exact from CP¹" claim is unsupported). The observational constraint is α_geom × c_Γ² = 0.69 (one equation, two unknowns). See `RC6_ALPHA_AUDIT_2026-04-18.md`. |
 | 24 | **Amplitude $A_s$ from $\lambda_{\rm bdry}$ normalization** | RC-3 §RC3.5 | $A_s = \lambda_{\rm bdry}^2 N_0^2/(\pi^2 M_5^3)$ (from RC3.16a). Setting $A_s \sim 2\times10^{-9}$ (Planck) constrains $\lambda_{\rm bdry}$ once $k_c^{\rm eff}$ is known. |
 
 ---
@@ -116,6 +116,7 @@ This ledger collects every item that is currently UNTESTED, OPEN, CONJECTURED, A
 **Critical path (updated 2026-04-18, post-RC-5):** 
 - 2B: #3 RESOLVED, #4 RESOLVED (RC-5). #6 (s dynamical mechanism) still open — Casimir gives value but not mechanism.
 - 2C §8 quality gate: items #18–20 (FR holonomy, Proietti, Eq. 8.4.5) — Opus passes needed
-- RC-4: #22 ($k_c^{\rm eff}$) gates 2C §RC1.4 full predictions; #23 (factor-of-6) is computable now from $N_0$
+- RC-4: #22 ($k_c^{\rm eff}$) gates 2C §RC1.4 full predictions; #23 retracted (π error — see RC-6), replaced by: α_geom underived + c_Γ underived
 - Paper 3: items #7–9 are interface contracts, not blocking
 - Exact spectra: graviton $m_n^2 = 4n(2n+3)$, vector $m_n^2 = 8n(n+2)$ — both Pöschl-Teller. This is a new result with potential implications for Paper 3 (KK tower structure).
+- **RC-6 findings (2026-04-18):** Three "α = 3/2" quantities disambiguated — only α_geom survives (value OPEN). π error in RC-2 corrected. Formula convention: Ω_drag = α_geom c_Γ² (not ρ = αΓ²/G). Observational constraint: α_geom × c_Γ² = 0.69 — one equation, two unknowns. The λ·T = 1 theorem guarantees both are O(1) but does not fix their individual values. See `RC6_ALPHA_AUDIT_2026-04-18.md`.

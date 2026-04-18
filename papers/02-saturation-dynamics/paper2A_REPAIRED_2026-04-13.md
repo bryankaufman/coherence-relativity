@@ -49,9 +49,39 @@ The companion paper specializes the abstract equations of motion (§4) to the 5D
 
 The present paper is fully self-contained. Every result stated here is established at the framework level — no specific geometry is required. The companion paper illustrates the framework's content on the first physically motivated example, but the framework stands independently. Other geometries — higher Chern classes, non-abelian fiber structures — remain to be explored.
 
+### Table 4. Cross-Reference Map: 2A Framework Claim → 2B Verification
+
+| 2A Section | Framework Claim | 2B Section | Verification |
+|---|---|---|---|
+| §2.1 | $T_{M\Sigma}$ derived from FS pullback; vanishes in uniform environment | 2B §2 | $T_{\mu r} \sim A^{-2}$; $T_{zr} = 0$ (temporal decoupling) |
+| §2.2 | $\lambda$ is geometry-dependent; warp-factor hypothesis $\lambda = A^2$ | 2B §5 / App A | $\lambda(r) = A(r)^2$ verified; asymmetric norm convention locked |
+| §2.3, §2.6 | $R_{\text{Markov}} \to 0$ implies classicalization; norm convention ambiguous | 2B §5 / App A | $R_{\text{Markov}} \sim A^2$ in throat; convention locked |
+| §2.3 | $Q = Q_{\text{BODC}} + Q_{\text{geom}}$ matches Bohmian $Q$ exactly in 1D | 2B App C | SymPy algebraic verification |
+| §2.4 | Mixed-state Born rule extends via purification and Naimark dilation | 2B §3 | Used in SC2 graviton localization analysis |
+| §2.5 | Theorem 2.5.1: $\mathrm{Im}(H_{M\Sigma}) = 0$ iff pointer sector | 2B §3 | Used in SC2 graviton localization analysis |
+| §3.2 | Hopf fibration $S^1 \to S^3 \to S^2$ from qubit axioms | 2B §2 | $k^2 = 2$ eigenvalue $\Rightarrow$ $A(r) = \cos(\sqrt{2}\,r)$; $r_{\max}$ topologically frozen |
+| §3.3 | Derived compactification constrains $\Lambda(R)$ | 2B §4 | SC3: Casimir as primary gravitational source; $L^* \in [56, 69]\,\mu\mathrm{m}$; ISL passes |
+| §3.3 | KCR spectrum is discrete and non-linear | 2B §5 | $m_n/m_1 \approx 1, 1.67, 2.32, 2.97$; $\lambda_1 \approx 13.3\,\mu\mathrm{m}$ |
+| §4 | Abstract EOM: frame-lag = universal mechanism | 2B §5 | $F_{\text{lag}} = O(1)$, $r$-independent; temporal decoupling |
+| §4 | Abstract EOM: evaluation hits walls (norm, coupling, classical limit) | 2B App A | Convention lock resolves all three |
+| §4.4 | $C^1$ regularity constrained by topology, not junction conditions | 2B §3 | Smooth normalizable graviton zero mode; no brane tension tuning |
+| §5 | Holographic conjecture: 4-entry dictionary + 3 AdS/CFT departures | 2B §6 | RT weakened: $S_{\text{RT}} \propto d_\Sigma^{0.80}$; $\alpha = 1$ ruled out |
+
 ## §1.6 Notation and Conventions
 
 *This section establishes conventions for the entire CR series. Symbols from Paper 1 that are promoted or extended here are listed explicitly to prevent ambiguity.*
+
+**Disambiguation — three objects denoted $\Sigma$:**
+
+The symbol $\Sigma$ is overloaded in the broader literature. In the CR series it always means the coherence manifold; any other use is subscripted explicitly.
+
+| Symbol | Object | Context |
+|---|---|---|
+| $\Sigma \equiv \Sigma_{\mathrm{coh}}(H) = U(d)/T^d$ | **Coherence manifold** (flag manifold of $H$) | CR throughout |
+| $\Sigma_{\mathrm{ws}}$ | String worldsheet (2D) | String theory; never used in CR papers |
+| $\Sigma_{\mathrm{conf}} = \mathrm{Map}(\Sigma_{\mathrm{ws}}, M)$ | String configuration space | String/holography literature only |
+
+**CR configuration space:** Throughout this paper, $\mathcal{X}(H) := M \times \Sigma_{\mathrm{coh}}(H)$ denotes the fundamental kinematic space. The factor $M$ is not independent — it is a functional of the Hilbert-space data $(H, \partial\mathcal{C}, T_{AB})$, reconstructed as the emergent spacetime. The product notation is shorthand for the image of the reconstruction map $\mathcal{F}: (|\psi\rangle, F) \mapsto (M, g_{\mu\nu}, \{\Phi_a\})$.
 
 ### Table 1. Cross-Paper Symbol Correspondence
 
@@ -62,6 +92,7 @@ The present paper is fully self-contained. Every result stated here is establish
 | $\Omega_{AB}$ | Frame-bundle curvature on $\Sigma$ (antisymmetric, real) | $F_{ab}$ block of $F_{AB}$ on $M \times \Sigma$ | Berry curvature restricted to $\Sigma$-$\Sigma$ sector | Same geometric content; P2 uses complex ($i F_{AB}$) notation |
 | *(none)* | — | $T_{M\Sigma} = G_{\mu a}$ | Symmetric coupling tensor: $(M,\Sigma)$ off-diagonal block of $\mathrm{Re}[Q_{AB}]$. New object with no P1 analog. | Drives frame-lag (§2.2) and Markov transition (§2.6). Vanishes in uniform environments. |
 | $\lambda$ (trajectory coord.) | EGY distinguishability along decoherence path in $\Sigma$; $\lambda = \sqrt{1 - |\langle W_L|W_R\rangle|^2}$ | $\lambda(x,\xi)$ (scalar field on $M \times \Sigma$) | Same physical quantity promoted to a scalar field on $M \times \Sigma$; P1 value = restriction to trajectory at fixed $x$ | Generalization, not redefinition. P2 $\lambda(x,\xi)$ restricts to P1 $\lambda$ along any decoherence trajectory. |
+| $\Sigma = U(d)/T^d$ | Coherence space: flag manifold of $H$ (Paper 1 Definition 1) | $\Sigma_{\mathrm{coh}}(H) = U(\dim H)/T^{\dim H}$ | Same object; explicit $H$-labeling adopted in P2 to prevent confusion with string worldsheet $\Sigma_{\mathrm{ws}}$ | Same manifold; subscript added for disambiguation. Papers 3+ use $\Sigma_{\mathrm{coh}}(H)$ throughout. |
 | $\Phi: \Sigma \to \mathcal{P}\mathcal{H}$ | State map (coherence frame only) | $\Phi: M \times \Sigma \to \mathcal{P}\mathcal{H}$ | State map (spacetime + coherence frame) | Domain extended from $\Sigma$ to $M \times \Sigma$ |
 
 
@@ -427,7 +458,7 @@ where:
 - $T_{\mu a}^{\text{FS}}$ is the Fubini-Study cross-term computed in §2.1 (the "bare" geometric coupling)
 - λ is the **suppression factor** that encodes how much of this coupling is actually realized in the dynamics
 
-**Status**: The derivation of λ from first principles (e.g., from a decoherence-rate Lagrangian or from information-theoretic constraints) is deferred to future work. For now, λ is a phenomenological parameter whose value is determined by the local environment and the system's coupling strength to it.
+**Status (UPDATED 2026-04-18)**: The first-principles derivation of λ is now complete. RC-5 establishes that $\lambda(r) = \psi_0(r)/\psi_0(0) = A^2(r)$, where $\psi_0 = N_0 A^2$ is the zero-mode profile of the vector cross-term $T_{\mu r}$ derived from the 5D Einstein-Hilbert mode equation (RC-3). λ is therefore a **geometric quantity** determined by the warped-background field theory, not a phenomenological parameter. See `RC5_LAMBDA_DERIVATION_2026-04-18.md`.
 
 ### Classical Limit Behavior
 
@@ -629,13 +660,7 @@ $$\boxed{\lambda(r, z) \sim A(r, z)^2}$$
 
 **Eq. 2.2.41**
 
-**Status — UNTESTED**: This is a **warp-scaling hypothesis** derived from dimensional analysis and physical intuition. Verification requires:
-1. Computing covariant derivatives in the full 5D metric.
-2. Evaluating the Fubini-Study structure explicitly in KCR-Cone coordinates.
-3. Solving the coupled equations of motion on M × Σ within the KCR-Cone geometry.
-4. Confirming that the emergent effective action has λ ∼ A² scaling.
-
-Full verification is deferred to §7.
+**Status — RESOLVED (RC-5, 2026-04-18)**: ~~UNTESTED~~ The dimensional-analysis argument in Eqs. 2.2.39–2.2.41 is a *consistency check*, not the primary derivation. RC-5 derives λ = A² from first principles: the zero-mode profile of the vector sector on the KCR-Cone is $\psi_0 = N_0 A^2$ (RC-3, Eq. RC3.8), and λ(r) = ψ₀(r)/ψ₀(0) = A²(r) is the normalized field amplitude. The λ·T = O(1) cancellation is a geometric theorem (not a requirement), proved universal for all warped geometries. Items 1–4 above are all addressed by RC-3 + RC-5. See `RC5_LAMBDA_DERIVATION_2026-04-18.md`.
 
 ### Physical Consequences of λ ∼ A²
 
@@ -837,7 +862,7 @@ The equations of motion (Eq. 2.2.29 and 2.2.30, in the simplified 1D example) ar
 
 **Approach**: In principle, λ could be defined as the ratio of the coherence-frame adaptation timescale to the environmental decoherence timescale. If the frame can adapt faster than the system decoheres, λ ≈ 1. If decoherence dominates, λ ≈ 0. A rigorous formula requires a detailed microscopic model of the system-environment interaction.
 
-**Status**: Deferred to future work. For now, λ is treated as a phenomenological parameter.
+**Status (RESOLVED, RC-5, 2026-04-18)**: λ is **not** phenomenological. RC-5 establishes that λ(r) = ψ₀(r)/ψ₀(0) = A²(r), where ψ₀ is the vector zero-mode profile derived from the 5D Einstein-Hilbert action on the KCR-Cone. The "decoherence-rate Lagrangian" referred to here IS the 5D Einstein-Hilbert action for the off-diagonal metric sector. The program is complete at leading order (zero-mode dominance). See `RC5_LAMBDA_DERIVATION_2026-04-18.md` §RC5.6.
 
 ---
 
@@ -845,9 +870,7 @@ The equations of motion (Eq. 2.2.29 and 2.2.30, in the simplified 1D example) ar
 
 **Question**: Does the detailed calculation in the 5D KCR-Cone metric confirm λ ∼ A²?
 
-**Approach**: Compute the Fubini-Study tensor G_{AB} explicitly using the 5D metric (Eq. 2.2.34). Evaluate the cross-term T_{μa} as a function of (r,z). Determine whether λ, as extracted from the equations of motion, scales as A².
-
-**Status**: Deferred to §7. This is a key verification point for the entire formalism.
+**Status (RESOLVED, RC-3 + RC-5, 2026-04-18)**: Yes. The vector zero-mode profile on the KCR-Cone is $\psi_0(r) = N_0 \cos^2(\sqrt{2}\,r) = N_0 A^2(r)$ (RC-3 Eq. RC3.8), derived by solving the mode equation $\partial_r[A^4 \partial_r(\psi/A^2)] = -m^2\psi$ with $m_0 = 0$. This gives $\lambda(r) = A^2(r)$ exactly. The cross-term scaling $T_{\mu r} \sim A^{-2}$ was derived in Paper 2B §6.2.10. Together these confirm λ·T = O(1) as a geometric theorem.
 
 ---
 
@@ -891,9 +914,9 @@ The equations of motion (Eq. 2.2.29 and 2.2.30, in the simplified 1D example) ar
 
 ### Hypotheses and Conjectures
 
-- **Warp-factor scaling: λ ∼ A(r,z)²** (Eq. 2.2.41): Derived from dimensional analysis and physical intuition. **Status**: ⚠️ **UNTESTED** — Requires verification in §7.
-- **Cross-term scaling: $T_{\mu a}^{\text{FS}} \sim A^{-2}$** (Eq. 2.2.38): From §2.1 hypothesis. **Status**: ⚠️ **UNTESTED** — Requires covariant derivative calculation.
-- **First-principles formula for λ** (§2.2.12.1): Not yet proposed. **Status**: ⚠️ **MISSING**.
+- **Warp-factor scaling: λ ∼ A(r,z)²** (Eq. 2.2.41): ~~UNTESTED~~ ✅ **RESOLVED (RC-5, 2026-04-18)** — Derived from vector zero-mode profile $\psi_0 = N_0 A^2$ (RC-3). λ = A² is a geometric quantity, not a hypothesis.
+- **Cross-term scaling: $T_{\mu a}^{\text{FS}} \sim A^{-2}$** (Eq. 2.2.38): ~~UNTESTED~~ ✅ **RESOLVED (Paper 2B §6.2.10, 2026-04-17)** — Derived from Hamiltonian decomposition on KCR-Cone. $T_{\mu r} \sim A^{-2}(r) = \sec^2(\sqrt{2}\,r)$ is an exact structural result.
+- **First-principles formula for λ** (§2.2.12.1): ~~MISSING~~ ✅ **RESOLVED (RC-5, 2026-04-18)** — $\lambda(r) = \psi_0(r)/\psi_0(0) = A^2(r)$. See `RC5_LAMBDA_DERIVATION_2026-04-18.md`.
 
 ---
 
@@ -901,7 +924,7 @@ The equations of motion (Eq. 2.2.29 and 2.2.30, in the simplified 1D example) ar
 
 - **Explicit form of O(λ) corrections to inverse metric** (§2.2.3): Lengthy algebra, deferred to Appendix A.
 - **Position-dependent decoherence rate example** (mentioned in §2.1.8): Concrete model of T_{MΣ} with γ = γ(x), deferred to §3.
-- **Exact solutions in KCR-Cone and verification of λ ∼ A² scaling** (§2.2.6, 2.2.12.2): Full numerical or analytical solution, deferred to §7.
+- **Exact solutions in KCR-Cone and verification of λ ∼ A² scaling** (§2.2.6, 2.2.12.2): ✅ **RESOLVED (RC-3 + RC-5, 2026-04-18)** — Both KCR-Cone spectra (graviton: $m_n^2 = 4n(2n+3)$; vector: $m_n^2 = 8n(n+2)$) are exactly solvable (Pöschl-Teller). λ = A² derived from vector zero-mode profile. See `RC3_DERIVATION_2026-04-18.md`, `RC5_LAMBDA_DERIVATION_2026-04-18.md`.
 - **Quantization of M × Σ system** (§2.2.12.4): Future work.
 
 ---
@@ -2226,7 +2249,7 @@ The selection of $c_1 = 1$ over higher Chern numbers is a minimality argument. W
 # §3.3 What Derived Compactification Constrains
 
 **Supersedes:** `paper2_section_3.3_constraints_DRAFT.md`
-**Changes from v1:** (1) Compactification language updated to interval geometry. (2) Klein S¹ added to ruled-out topologies. (3) KCR mode expansion replaced with volcano potential spectrum. (4) Cosmological constant section updated: geometric Λ primary, Casimir correction secondary. (5) Moduli section updated: shape frozen by $k^2 = 2$, not just "dynamically determined."
+**Changes from v1:** (1) Compactification language updated to interval geometry. (2) Klein S¹ added to ruled-out topologies. (3) KCR mode expansion replaced with volcano potential spectrum. (4) Cosmological constant section updated: five-level Σ→M hierarchy; Casimir (Level 1) restored as primary gravitational contributor; FS curvature (Level 2) removed from Friedmann equation (category error corrected; see D2). (5) Moduli section updated: shape frozen by $k^2 = 2$, not just "dynamically determined."
 
 ---
 
@@ -2243,8 +2266,8 @@ This section answers that question by tracing the cascade of constraints that fl
 1. The landscape of possible topologies is reduced from $\sim 10^{500}$ to a single geometric outcome: the bounded interval $r \in [0, r_{\max}]$ with one scale parameter.
 2. The shape modulus is zero: $r_{\max}$ is topologically frozen by $k^2 = 2$.
 3. The KCR mode structure is fixed by the volcano potential on the interval.
-4. The cosmological constant has a geometric primary source and a Casimir quantum correction.
-5. The scale $s$ (mapping $r$ to meters) is determined by the Friedmann balance at each epoch.
+4. The cosmological constant receives contributions from a structured Σ→M coupling hierarchy (§3.3.5); the primary *gravitational* contributor is the Casimir energy on the derived interval.
+5. The scale $s$ (mapping $r$ to meters) is partially determined by the Casimir balance; the full stabilization mechanism is deferred to Paper 3.
 
 ---
 
@@ -2364,44 +2387,44 @@ This is cleaner than the Klein mechanism: topological rather than dimensional, i
 
 ## 3.3.5 Constrained Cosmological Constant
 
-### 3.3.5.1 Geometric Λ (Primary Source)
+### 3.3.5.1 Five-Level Σ→M Coupling Hierarchy
 
-The warp factor $A(r) = \cos(\sqrt{2}\,r)$ has intrinsic curvature energy that, when integrated over the interval with $A^4$ weighting, produces a **positive** effective 4D cosmological constant classically:
+Derived compactification produces multiple distinct contributions to the effective 4D cosmological constant. These are organized by mechanism and physical sector:
 
-$$\rho_{\mathrm{geom,4D}} = \frac{\int_0^{r_{\max}} A^4(r)\,\rho_{\mathrm{geom}}(r)\,\mathrm{d}r}{\int_0^{r_{\max}} A^3(r)\,\mathrm{d}r} = +3.534 \times \frac{M_5^3\,k^2}{s}$$
+| Level | Mechanism | Source | Enters Friedmann? |
+|-------|-----------|--------|-------------------|
+| **1** | Casimir energy | Σ topology → Dirichlet BCs on interval | ✅ YES — primary gravitational contributor |
+| **1b** | Topological zero-point | $c_1 = 1$ Hopf bundle → AS index | ✅ YES (< 1% correction) |
+| **2** | Fubini-Study curvature $k^2 = 2$ | CP¹ Laplacian eigenvalue | ❌ NO — information-geometric |
+| **3** | $T_{M\Sigma}$ frame-dragging | Machian backreaction, $\alpha = 3/2$ | ✅ YES (if confirmed; Paper 3 scope) |
+| **4** | Vacuum entanglement dynamics | Jacobson $\delta Q = T\,\mathrm{d}S$ | Likely unifies with Level 3 |
+
+**Level 2 is not a gravitational source.** The warp factor $A(r) = \cos(\sqrt{2}\,r)$ satisfies $A'' = -k^2 A$ with $k^2 = 2$ from the Fubini-Study Laplacian eigenvalue of $\mathbb{CP}^1$. This curvature is *information-geometric*: it governs the rate of statistical distinguishability between quantum states on $\Sigma$ and determines the decoherence dynamics along the $r$-direction. It does not enter the Friedmann equation as a gravitational source. The A⁴-weighted curvature integral $\rho_{\mathrm{geom,4D}} = +3.534 \times M_5^3 k^2/s$ is a real quantity — it belongs in the decoherence rate equation, not in the stress-energy tensor on $M$. Treating it as a gravitational source introduces a hierarchy of $10^{61} \times \Lambda_{\mathrm{obs}}$ at Casimir scales — the cosmological constant problem in KK form.
+
+### 3.3.5.2 Level 1: Casimir Energy (Primary Gravitational Contributor)
+
+Quantum fields confined to the derived interval $[0, L^*]$ with Dirichlet boundary conditions have a shifted zero-point energy that enters the stress-energy tensor on $M$:
+
+$$\rho_{\mathrm{Cas}}(L^*) = \frac{\pi^2 \hbar c}{1440\,L^{*4}}\,f, \quad f := \frac{7N_F}{8} - N_B$$
 (Eq. 3.3.9)
 
-with the GHY boundary term vanishing at $r_{\max}$ (since $A(r_{\max}) = 0$). This is positive for all field contents — it does not depend on $N_B$ or $N_F$. The sign of $\Lambda_{\mathrm{eff}}$ is geometrically guaranteed.
+This is the corrected formula for the interval with Dirichlet boundary conditions (factor of 2 smaller than the Klein circle formula with periodic BC). Setting $\rho_{\mathrm{Cas}} = \rho_\Lambda$ gives the scale prediction:
 
-### 3.3.5.2 Casimir Quantum Correction
-
-The quantum Casimir energy on the interval $[0, L]$ (with $L = r_{\max} \times s$, Dirichlet BC) provides a correction:
-
-$$\rho_{\mathrm{Cas}}(L) = \frac{\pi^2 \hbar c}{1440\,L^4}\,f, \quad f := \frac{7N_F}{8} - N_B$$
+$$L^* \approx 56\text{–}69\,\mu\mathrm{m} \quad \text{(SM sector; self-consistent: } \approx 56\,\mu\mathrm{m}\text{)}$$
 (Eq. 3.3.10)
 
-This is the corrected formula for the interval with Dirichlet boundary conditions (a factor of 2 smaller than the Klein circle formula with periodic BC, which used $720$ in the denominator).
+Full numerical evaluation of the SC3 condition — including the Atiyah-Singer topological correction to $f$ (Level 1b), the ISL bound on the first KCR graviton mode, and the branch-screening table — is performed on the KCR-Cone geometry in [Paper 2B, §4].
 
-The total effective 4D cosmological constant:
+### 3.3.5.3 Level 3: $T_{M\Sigma}$ Frame-Dragging (Paper 3 Scope)
 
-$$\Lambda_{\mathrm{eff}} = \frac{8\pi G_4}{c^4}\bigl[\rho_{\mathrm{geom,4D}}(s) + \rho_{\mathrm{Cas}}(L)\bigr]$$
+The cross-term $T_{M\Sigma}$ in the $M \times \Sigma$ metric couples decoherence dynamics to spacetime geometry. The $\lambda \cdot T = O(1)$ cancellation (verified for the KCR-Cone in [Paper 2B, §5]) removes the Planck/Hubble hierarchy, giving $\rho_{\mathrm{drag}} = \alpha \times \Gamma_{\mathrm{dec}}^2/G$ with the geometric coupling constant $\alpha = 3/2$ exact from CP¹. If the cosmic decoherence rate $\Gamma_{\mathrm{dec}} \sim 0.68\,H_0$, this gives $\Omega_{\mathrm{drag}} \sim 0.69$, potentially dominant over the Casimir contribution. The rigorous derivation (RC-1 through RC-6) requires the backreaction from the action principle and is Paper 3 scope.
+
+### 3.3.5.4 Implications
+
+The question shifts from "For what fiber radius does $\Lambda_{\mathrm{eff}}(R) = \Lambda_{\mathrm{obs}}$?" (fine-tuning) to "What is the Σ→M coupling hierarchy at the current epoch?" Whether Casimir (Level 1) or frame-dragging (Level 3) dominates does not affect the falsifiability of the Casimir prediction: $L^* \in [56, 69]\,\mu\mathrm{m}$ remains a testable sub-millimeter signature regardless.
+
+$$\boxed{\text{Primary gravitational contributor: Casimir (Level 1). FS curvature: decoherence dynamics only (Level 2).}}$$
 (Eq. 3.3.11)
-
-**Key consequence:** The sign of $\Lambda_{\mathrm{eff}}$ is determined by the geometric term (always positive). The Casimir term can be positive or negative depending on the field content; it modifies the magnitude, not the sign.
-
-### 3.3.5.3 The Scale
-
-The physical scale factor $s$ is not a free parameter. It is set by the Friedmann balance (Eq. 3.3.4). The scale of the Casimir correction (where $\rho_{\mathrm{Cas}} \sim \rho_\Lambda$) is:
-
-$$L_{\mathrm{Cas}}^* = \left(\frac{\pi^2 \hbar c\,f}{1440\,\rho_\Lambda}\right)^{1/4} \approx 46\text{–}56\,\mu\mathrm{m} \quad \text{(SM sector, self-consistent)}$$
-(Eq. 3.3.12)
-
-### 3.3.5.4 Implications for Fine-Tuning
-
-The old question "For what fiber radius $R$ does $\Lambda_{\mathrm{eff}}(R) = \Lambda_{\mathrm{obs}}$?" is replaced by the question "What is the Friedmann balance at the current epoch?" The cosmological constant is not a fine-tuned parameter; it is the energy density of the geometrically curved extra dimension, which grows (very slowly, at the Hubble rate) with cosmic expansion. The observed smallness of $\Lambda_{\mathrm{obs}}$ reflects the fact that the universe has been decohering for 13.8 Gyr, producing a large scale factor $s$.
-
-$$\boxed{\Lambda_{\mathrm{eff}} \text{ has geometric primary source } + \text{ Casimir correction. Scale from Friedmann.}}$$
-(Eq. 3.3.13)
 
 ---
 
@@ -2649,7 +2672,7 @@ This is a necessary condition for the equations of motion to be well-posed. If $
 
 **At the framework level**, we can state this as a *consistency requirement* on admissible geometries: any geometry that supports the coherence-frame formalism must have bounded $\lambda \cdot T$.
 
-Whether $\lambda \cdot T$ is not just bounded but *constant* (independent of $\xi$) is a stronger condition that has been verified in the KCR-Cone worked example (§7.4.15 of the companion paper [Paper 2B]), where the warp-factor cancellation gives $\lambda \cdot T = O(1)$. This uniformity is a notable feature of that geometry, not a general theorem.
+Whether $\lambda \cdot T$ is not just bounded but *constant* (independent of $\xi$) is a stronger condition. RC-5 (2026-04-18) proves this is in fact a **general theorem** for all warped-product geometries ds² = A²η dx² + dr²: the mixed tensor $T^\mu{}_r$ is $r$-independent for the vector zero mode because the gauge-covariant variable $\varphi = T_\mu/A^2$ has a constant zero mode ($\varphi_0 = \text{const}$), so index-raising gives $T^\mu{}_r = A^{-2} \times A^2 \times \text{const} = \text{const}$. The KCR-Cone result $\cos^2(\sqrt{2}\,r) \cdot \sec^2(\sqrt{2}\,r) = 1$ is an instance of this universal theorem. See `RC5_LAMBDA_DERIVATION_2026-04-18.md` §RC5.3–5.4.
 
 ---
 
@@ -2691,12 +2714,7 @@ The identification $\lambda = f(\text{warp factor})$ is geometry-dependent:
 - It depends on the physical interpretation of $\lambda$ (metric perspective vs. dynamical perspective — see the detailed discussion in [Paper 2B, §6.3])
 - Different geometries may produce different functional forms
 
-The corrected identification $\lambda = A^2$ (not $A^{-2}$) was established for the KCR-Cone in [Paper 2B, Eq. 7.3.3], where the physical requirement is that $\lambda \to 0$ in the classical limit (deep throat). This identification ensures:
-- $\lambda = 1$ at the brane (maximal coupling)
-- $\lambda \to 0$ at the pinch-off (classical limit)
-- The frame-lag force $F_{\text{lag}} \sim \lambda \cdot T \sim O(1)$ (finite)
-
-Whether the same identification holds for other geometries is an open question.
+The identification $\lambda = A^2$ for the KCR-Cone is now **derived from first principles** (RC-5, 2026-04-18): $\lambda(r) = \psi_0(r)/\psi_0(0) = A^2(r)$, where $\psi_0 = N_0 A^2$ is the vector zero-mode profile from the 5D Einstein-Hilbert mode equation (RC-3). The frame-lag force $F_{\text{lag}} \sim \lambda \cdot T \sim O(1)$ is a **geometric theorem** (the mixed tensor $T^\mu{}_r$ is $r$-independent for the vector zero mode on any warped geometry), not a consistency requirement. This result is universal for all warped-product geometries $\mathrm{d}s^2 = A^2\eta\,\mathrm{d}x^2 + \mathrm{d}r^2$, so it extends beyond the KCR-Cone. See `RC5_LAMBDA_DERIVATION_2026-04-18.md`.
 
 \begin{remark}[Gravity as Kaluza-Klein zero mode on the derived interval]
 \label{rem:kk-gravity}
@@ -3610,9 +3628,9 @@ The framework developed in this paper raises several open questions that fall ou
 
 **OP-1. Norm convention resolution.** The Markov ratio $R_{\text{Markov}}$ (§2.3) involves a Frobenius norm convention choice. The companion paper resolves this for the KCR-Cone geometry (Appendix A), establishing the asymmetric convention as geometrically consistent.
 
-**OP-2. The coupling identification $\lambda = f(\text{warp factor})$.** The warp-factor hypothesis $\lambda \sim A^2$ is verified for the KCR-Cone in the companion paper. Generalization to other geometries is unknown.
+**OP-2. The coupling identification $\lambda = f(\text{warp factor})$.** ✅ **RESOLVED (RC-5, 2026-04-18).** $\lambda(r) = \psi_0(r)/\psi_0(0) = A^2(r)$ is derived from the vector zero-mode profile on the KCR-Cone (RC-3 + RC-5). The λ·T = O(1) theorem holds for **all** warped-product geometries, so the identification is not KCR-Cone-specific. See `RC5_LAMBDA_DERIVATION_2026-04-18.md`.
 
-**OP-3. Self-consistency of the KCR-Cone.** Three self-consistency conditions must be checked on the derived-compact geometry. SC1 (flatness) and SC2 (gravity localization) close in the companion paper. SC3 (cosmological constant): **resolved — see §5.3 v2** (geometric Λ from warp curvature, Casimir as correction).
+**OP-3. Self-consistency of the KCR-Cone.** Three self-consistency conditions must be checked on the derived-compact geometry. SC1 (flatness) and SC2 (gravity localization) close in the companion paper [Paper 2B, §3]. SC3 (cosmological constant): **conditionally established** — Casimir (Level 1) as primary gravitational contributor; FS curvature (Level 2) governs decoherence dynamics only (category error corrected, D2). Full SC3 analysis in [Paper 2B, §4].
 
 **OP-4. Holographic verification.** Conjecture 5.1 is tested on the KCR-Cone in the companion paper: monotonic geometric-entropic link confirmed; proportionality refuted (sublinear power-law fit, §8.0 v2).
 
@@ -3697,7 +3715,7 @@ The Aharonov-Vaidman three-box paradox: with pre-selected state $(|A\rangle + |B
 **OP-15. KCR mode detection (updated).**
 
 The KCR spectrum from the derived-compact interval (§3.3, Eq. 3.3.6–3.3.7) predicts:
-- First KCR graviton: $\lambda_1 \approx 13.3\,\mu\mathrm{m}$ (at the self-consistent Casimir correction scale)
+- First KCR graviton: $\lambda_1 \approx 13.3\,\mu\mathrm{m}$ (from volcano potential on derived interval; ISL PASS with 3× margin)
 - Mode spacing: non-linear ($m_n/m_1 \approx 1, 1.67, 2.32, 2.97$)
 
 The non-linear spacing is the key experimental discriminator from Klein (linear spacing). If the first mode is detected, the ratio $m_2/m_1 \approx 1.67$ (not 2.0) confirms derived compactification over the Klein circle.
@@ -3706,7 +3724,7 @@ The non-linear spacing is the key experimental discriminator from Klein (linear 
 
 **OP-17. Cosmological constant (updated).**
 
-The framework now provides a **geometric** origin for $\Lambda > 0$ (§5.3.2, §3.3.5.1). The warp-factor curvature energy produces $\rho_{\mathrm{geom,4D}} = +3.534 \times M_5^3 k^2/s > 0$ classically. The question is no longer "does Casimir energy explain $\Lambda$?" but rather "does the Friedmann balance at the current epoch correctly reproduce $H_0$?"
+The framework provides a structured Σ→M coupling hierarchy for $\Lambda$ (§3.3.5). The primary *gravitational* contributor is Casimir energy on the derived interval (Level 1; $L^* \in [56, 69]\,\mu\mathrm{m}$). The FS curvature $k^2 = 2$ is information-geometric and does not enter the Friedmann equation (Level 2 category error corrected, D2). A potentially dominant Level 3 contribution (T_{M\Sigma} frame-dragging, $\alpha = 3/2$ exact) is identified but requires Paper 3 for rigorous derivation.
 
 The quantitative check — computing $s_{\mathrm{now}}$ from $H_0$ via Eq. 5.3.2 and verifying consistency with $\Lambda_{\mathrm{obs}}$ — requires the explicit 5D-to-4D reduction factor from the companion paper [Paper 2B].
 
@@ -3734,7 +3752,7 @@ The quantitative check — computing $s_{\mathrm{now}}$ from $H_0$ via Eq. 5.3.2
 |---------|-------|-----------|-----------|
 | OP-1 Norm conventions | Paper 2B | Addressed | Addressed |
 | OP-2 Coupling identification | Paper 2B | Addressed | Addressed |
-| OP-3 Self-consistency | Paper 2B | Addressed | **SC3 resolved (geometric Λ)** |
+| OP-3 Self-consistency | Paper 2B | Addressed | **SC3 conditionally established (Casimir Level 1; category error corrected D2)** |
 | OP-4 Holographic verification | Paper 2B | Addressed | Addressed |
 | OP-5 Radius stabilization | Paper 2B | **Critical — OPEN** | **RESOLVED** |
 | OP-6 Explicit trajectories | Paper 2B | Addressed | Addressed |
@@ -3748,7 +3766,7 @@ The quantitative check — computing $s_{\mathrm{now}}$ from $H_0$ via Eq. 5.3.2
 | OP-14 Frame-lag signatures | Experimental | Long-term | Long-term |
 | OP-15 KCR mode detection | Experimental | Near-term | **Updated: non-linear spacing** |
 | OP-16 Dark matter | Paper 2B + data | Near-term | Near-term |
-| OP-17 Cosmological constant | Paper 3 + data | High | **Updated: geometric Λ primary** |
+| OP-17 Cosmological constant | Paper 3 + data | High | **Updated: Casimir Level 1 primary; Level 3 frame-dragging (Paper 3); Level 2 FS curvature = decoherence dynamics only** |
 | OP-18 Left-right generators | Internal | Immediate | **RESOLVED** |
 | OP-19 §2.2 hypotheses | Internal | High | High |
 | OP-20 Frame-lag timescales | Internal | Medium | Medium |

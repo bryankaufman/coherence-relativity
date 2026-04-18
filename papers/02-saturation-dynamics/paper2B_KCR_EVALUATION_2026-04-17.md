@@ -682,7 +682,7 @@ $$|T_{\mu a}| \sim W(\xi)^{-1} \times \text{(coupling strength)} \tag{4.1.7}$$
 
 This scaling arises because excited states in Σ — which give non-trivial $\partial_a |\psi_\Sigma\rangle$ — have energy gaps of order $W(\xi)$ due to the rescaling in (4.1.6). The inverse dependence on $W$ is a general consequence of the adiabatic perturbation theory.
 
-**Key point:** The specific function $W(\xi)$ depends on the geometry. For a warped product with warp factor $A$, one expects $W \sim A^{-2}$ (the standard warped-mode scaling), giving $T_{\mu a} \sim A^{-2}$. This structural scaling has been derived for the KCR-Cone in Paper 2B §6 (Eq. 6.2.10): $T_{\mu r} \sim A(r)^{-2} = \sec^2(\sqrt{2}\,r)$ for $A(r) = \cos(\sqrt{2}\,r)$. The exact prefactor — and whether the scaling is exactly $W^{-1}$ or involves corrections — requires solving the mode equation on the specific geometry.
+**Key point:** The specific function $W(\xi)$ depends on the geometry. For a warped product with warp factor $A$, the cross-term scales as $T_{\mu a} \sim A^{-2}$ — derived for the KCR-Cone in §6.2.10 (Eq. 6.2.10): $T_{\mu r} \sim A(r)^{-2} = \sec^2(\sqrt{2}\,r)$ for $A(r) = \cos(\sqrt{2}\,r)$. The zero-mode profile that sets the exact prefactor is $\psi_0 = N_0 A^2$ with $N_0 \approx 1.55$ (RC-3 Eq. RC3.10), derived from the 5D mode equation. The decoherence parameter λ = A² is the normalized zero-mode amplitude (RC-5).
 
 ### §4.1.4 The General Equations of Motion
 
@@ -724,9 +724,9 @@ $$\lambda(\xi) \cdot |T^{a\mu}(\xi)| \text{ is bounded for all } \xi \in \Sigma 
 
 This is a necessary condition for the equations of motion to be well-posed. If $\lambda \cdot T$ diverges somewhere in Σ, the frame-lag force becomes infinite and the coupled geodesic system breaks down.
 
-**At the framework level**, we can state this as a *consistency requirement* on admissible geometries: any geometry that supports the coherence-frame formalism must have bounded $\lambda \cdot T$.
+**At the framework level**, this is a consistency requirement on admissible geometries. For all warped-product geometries ds² = A²η dx² + dr², RC-5 §RC5.3 proves the stronger result: $\lambda \cdot T = O(1)$ exactly (not just bounded). This follows from the vector zero-mode profile $\psi_0 \propto A^2$ and metric $g^{\mu\nu} = A^{-2}\eta^{\mu\nu}$, whose product is A-independent. The requirement (4.1.11) is thus *automatically satisfied* by the mode structure — it is a theorem, not a design constraint.
 
-Whether $\lambda \cdot T$ is not just bounded but *constant* (independent of $\xi$) is a stronger condition that has been verified for the KCR-Cone geometry in §6.3.1 of this paper (Eq. 6.3.1), where the warp-factor cancellation $\cos^2(\sqrt{2}\,r) \cdot \sec^2(\sqrt{2}\,r) = 1$ gives $\lambda \cdot T = O(1)$ exactly. This uniformity is a notable feature of that geometry, not a general theorem.
+Whether $\lambda \cdot T$ is not just bounded but *constant* (independent of $\xi$) is a stronger condition. RC-5 (2026-04-18) proves this is a **general theorem** for all warped-product geometries: the vector zero mode has $\varphi_0 = T_\mu/A^2 = \text{const}$, so $T^\mu{}_r = A^{-2} \times A^2 \times \text{const} = \text{const}$. The warp-factor cancellation $\cos^2(\sqrt{2}\,r) \cdot \sec^2(\sqrt{2}\,r) = 1$ verified in §6.3.1 is an instance of this universal result, not a coincidence of the KCR-Cone geometry. See `RC5_LAMBDA_DERIVATION_2026-04-18.md` §RC5.3–5.4.
 
 ---
 
@@ -768,12 +768,12 @@ The identification $\lambda = f(\text{warp factor})$ is geometry-dependent:
 - It depends on the physical interpretation of $\lambda$ (metric perspective vs. dynamical perspective — see the detailed discussion in [Paper 2B, §6.3])
 - Different geometries may produce different functional forms
 
-The corrected identification $\lambda = A^2$ (not $A^{-2}$) was established for the KCR-Cone in §6.3.1 of this paper (Eq. 6.3.1), where the physical requirement is that $\lambda \to 0$ in the classical limit (deep throat). This identification ensures:
-- $\lambda = 1$ at the brane (maximal coupling)
-- $\lambda \to 0$ at the pinch-off (classical limit)
-- The frame-lag force $F_{\text{lag}} \sim \lambda \cdot T \sim O(1)$ (finite)
+The identification $\lambda = A^2$ for the KCR-Cone is **derived from first principles** (RC-5, 2026-04-18): $\lambda(r) = \psi_0(r)/\psi_0(0) = A^2(r)$, where $\psi_0 = N_0 A^2$ is the vector zero-mode profile of $T_{\mu r}$ from the 5D Einstein-Hilbert mode equation (RC-3 Eq. RC3.8). This supersedes the earlier claim that it was "established in §6.3.1" — §6.3.1 *used* λ = A² as Ansatz A* input; RC-5 *derives* it independently. The properties follow as consequences:
+- $\lambda = 1$ at the brane ($r = 0$, where $\psi_0/\psi_0(0) = 1$)
+- $\lambda \to 0$ at the pinch-off ($A \to 0$ at $r_{\max}$)
+- $\lambda \cdot T = O(1)$ — a **geometric theorem**, universal for warped geometries
 
-Whether the same identification holds for other geometries is an open question.
+The identification extends beyond the KCR-Cone: for any warped background ds² = A²η dx² + dr², the vector zero-mode profile is $\psi_0 \propto A^2$, giving $\lambda = A^2$. See `RC5_LAMBDA_DERIVATION_2026-04-18.md`.
 
 \begin{remark}[Gravity as Kaluza-Klein zero mode on the derived interval]
 \label{rem:kk-gravity}
