@@ -1349,6 +1349,10 @@ However, the pure-state Fubini-Study cross-term $T_{\mu a}^{(\text{FS})}$ vanish
 
 This is not an obstruction but a *clue*. The Bohmian picture describes a particle moving in a wave field, but the pilot-wave effect — the non-classical force that deflects trajectories — has its physical origin in the coupling between the particle and its environment. In HCR, this coupling is encoded precisely in the mixed-state cross-term $T_{\mu a}^{(\text{mix})}$, which measures how the *open-system* quantum state responds jointly to spacetime variation and frame adaptation.
 
+**Framework extension to mixed states.** The M×Σ formalism developed in §2.1–§2.2 for pure states $|\psi(x,\xi)\rangle$ extends to mixed states by replacing the Fubini-Study metric $G_{AB}$ on the projective Hilbert space $\mathcal{P}\mathcal{H}$ with the Bures metric on the space of density matrices $\mathcal{D}(\mathcal{H})$. Concretely: the state map $\Phi: M \times \Sigma \to \mathcal{P}\mathcal{H}$ is replaced by a density-matrix map $\varrho: M \times \Sigma \to \mathcal{D}(\mathcal{H})$, and the pullback of the Bures metric $g_{\text{Bures}}$ onto $M \times \Sigma$ yields the mixed-state block metric
+$$G_{AB}^{(\text{mix})} = \varrho^* g_{\text{Bures}}, \qquad T_{\mu a}^{(\text{mix})} = G_{AB}^{(\text{mix})}\big|_{\mu a \text{ block}}.$$
+The action (§2.2.3), equations of motion (§2.2.4–2.2.5), and Markov criterion (§2.6) all carry over with $T_{\mu a} \to T_{\mu a}^{(\text{mix})}$. For pure states ($\rho = |\psi\rangle\langle\psi|$), the Bures metric reduces to the Fubini-Study metric and $T_{\mu a}^{(\text{mix})} \to T_{\mu a}^{(\text{FS})} = 0$ (the pure-state cross-term vanishes, as noted above). The specific form of $T_{\mu a}^{(\text{mix})}$ in the dephasing model is computed in §2.3.2.
+
 ## 2.3.2 The Mixed-State Cross-Term and Its Factorization
 
 For the dephasing model introduced in §2.1.7, with density matrix
@@ -2012,11 +2016,9 @@ $$H_{ij} = G_{ij} + i\Omega_{ij}$$
 
 where $G_{ij}$ is the Fubini-Study real part and $\Omega_{ij}$ is the Berry connection.
 
-The Born rule probability $|\langle\psi|\phi\rangle|^2$ is the invariant of $|H|$ — it is preserved under both:
-1. Coherence-frame rotations acting on $|H|$
-2. Schrödinger/Heisenberg picture changes acting on $\arg H$
+**Claim 2.5.3 (Born Rule as Frame Invariant).** *The Born rule probability $|\langle\psi|\phi\rangle|^2$ is an invariant of $|H_{M\Sigma}|$: it is preserved under coherence-frame rotations acting on $|H|$ and under Schrödinger/Heisenberg picture changes acting on $\arg H$. This gives the Born rule its unique frame-invariant status within the HCR framework — it is the modulus of the full complex metric, unchanged by any allowed picture transformation.*
 
-This gives the Born rule its unique frame-invariant status within the HCR framework: it is the modulus of the full complex metric, unchanged by any allowed picture transformation.
+*(Status: supporting evidence. The claim is verified in the dephasing and amplitude-damping qubit models below (§2.5.3–2.5.4), where it reduces to the standard result $P(|0\rangle) = \rho_{00}$, $P(|1\rangle) = \rho_{11}$. A general proof — showing $|\langle\psi|\phi\rangle|^2 = |H_{ij}|$ for arbitrary states and all picture transformations allowed by the Bures extension — is not established here and is deferred to future work.)*
 
 **Verification in dephasing model:** Pointer states $|0\rangle, |1\rangle$ have Born probabilities $P(|0\rangle) = \rho_{00}$, $P(|1\rangle) = \rho_{11}$ — the standard result. The metric $G_{ij}$ on the pointer-state manifold (diagonal states) reduces to the Fisher information for $(P(|0\rangle), P(|1\rangle))$.
 
@@ -2470,7 +2472,7 @@ Examples:
 
 2. **Define R_{Markov}** (§2.6.2): The ratio of coupling strength to diagonal contributions.
 
-3. **Set Markov threshold** (§2.6.3): System is classical when $R_{\text{Markov}} < \varepsilon$.
+3. **Set Markov threshold** (§2.6.3): System is classical when $R_{\text{Markov}} < \varepsilon$. *(Note: $R_{\text{Markov}}$ is a geometric diagnostic for the coupling strength, not the primary classicalization mechanism. In the KCR-Cone throat (Paper 2B §4.2), $R_{\text{Markov}}$ remains $O(1)$ as the system enters the classical regime; the operative mechanism is $\lambda \to 0$ directly (§4.2.4 of this paper). The condition $R_{\text{Markov}} < \varepsilon$ correctly identifies classical behavior when the coupling strength $\lambda T_{M\Sigma}$ is small relative to the diagonal blocks — but $\lambda \to 0$ can achieve this without $R_{\text{Markov}} \to 0$.)*
 
 4. **Relate to timescales** (§2.6.4): Markovian behavior occurs when decoherence timescale ≪ adaptation timescale.
 
