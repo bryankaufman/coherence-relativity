@@ -11,8 +11,8 @@
 | Result | Status | Equation |
 |--------|--------|----------|
 | $T_{\mu r} \sim A(r)^{-2} = \sec^2(\sqrt{2}\,r)$ | **DERIVED** | §6.2.5 |
-| $\lambda = A^2 = \cos^2(\sqrt{2}\,r)$ | From Ansatz A* (Paper 2A §2.2.6) | — |
-| $\lambda \cdot T = O(1)$ exact cancellation | **DERIVED** | §6.3.1 |
+| $\lambda = A^2 = \cos^2(\sqrt{2}\,r)$ | **DERIVED** (RC-5: vector zero-mode profile) | §6.3.1 |
+| $\lambda \cdot T = O(1)$ exact cancellation | **THEOREM** (geometric, universal) | §6.3.1, RC-5 §RC5.3 |
 | $F_{\mathrm{lag}}^r = a_i = O(1)$ | **DERIVED** | §6.3.2 |
 | Christoffel: $\Gamma_{jr}^i = -\sqrt{2}\tan(\sqrt{2}\,r)\,\delta_j^i$ | **COMPUTED** | §6.4.1 |
 | Throat: absolute confinement ($\Gamma \to -\infty$ at $r_{\max}$) | **DERIVED** | §6.5 |
@@ -175,15 +175,17 @@ This result holds by the same structural argument as the KK-Cone, because the $A
 
 ### §6.3.1 Exact Cancellation
 
-From Ansatz A* (Paper 2A §2.2.6): $\lambda(r) = A(r)^2 = \cos^2(\sqrt{2}\,r)$
+~~From Ansatz A* (Paper 2A §2.2.6): $\lambda(r) = A(r)^2 = \cos^2(\sqrt{2}\,r)$~~ **SUPERSEDED by RC-5 (2026-04-18).**
 
-From §6.2.5: $T_{\mu r} \sim A(r)^{-2} = \sec^2(\sqrt{2}\,r)$
+**From RC-5:** $\lambda(r) = \psi_0(r)/\psi_0(0) = A^2(r) = \cos^2(\sqrt{2}\,r)$, where $\psi_0 = N_0 A^2$ is the vector zero-mode profile derived from the 5D Einstein-Hilbert action in RC-3. This is NOT an ansatz — it is the normalized field amplitude of the decoherence-mediating cross-term $T_{\mu r}$ at position $r$.
+
+From §6.2.5: $T_{\rm kinetic}(r) \sim A(r)^{-2} = \sec^2(\sqrt{2}\,r)$
 
 Therefore:
 
-$$\lambda \cdot T_{\mu r} \sim \cos^2(\sqrt{2}\,r) \cdot \sec^2(\sqrt{2}\,r) = 1 = O(1) \quad \text{for all } r \in [0, r_{\max}] \tag{6.3.1}$$
+$$\lambda \cdot T_{\rm kinetic} = \frac{\psi_0(r)}{\psi_0(0)} \cdot A^{-2}(r) = A^2(r) \cdot A^{-2}(r) = 1 \quad \text{for all } r \in [0, r_{\max}] \tag{6.3.1}$$
 
-This holds at every point in the interval, including as $r \to r_{\max}$. ✓
+**This is a geometric theorem (RC-5 §RC5.3), not a consequence of an ansatz.** The cancellation occurs because the gauge-covariant variable $\varphi = T_\mu/A^2$ has a constant zero mode ($\varphi_0 = \text{const}$), and raising an index on $T_{\mu r}$ is equivalent to dividing by $A^2$, which converts $T$ back to $\varphi$. The result holds for **any** warp factor $A(r)$, not just the KCR-Cone.
 
 ### §6.3.2 Frame-Lag Force
 
@@ -199,7 +201,7 @@ $$F_{\mathrm{lag}}^r = A^2 \cdot A^{-2} \cdot a_i = a_i = O(1) \quad \text{for a
 
 **The frame-lag force is order-unity and independent of $r$ (to leading order) in the KCR-Cone geometry.** ✓
 
-This matches the KK-Cone result (§7.4.4–7.4.15 of §7.0 DRAFT) identically in algebraic form, because the result depends only on $\lambda \cdot T = O(1)$, not on the specific form of $A(r)$.
+This matches the KK-Cone result (§7.4.4–7.4.15 of §7.0 DRAFT) identically in algebraic form. RC-5 §RC5.4 proves this universality: the cancellation holds for **any** warp factor $A(r)$ because it is a property of the vector zero-mode structure, not of a specific geometry.
 
 ---
 
@@ -338,7 +340,7 @@ Since $|\dot{r}| \to 0$ at least as fast as $A$ (from the confinement), $\epsilo
 
 4. **Non-adiabatic corrections** — the $O(\epsilon_{\mathrm{ad}})$ corrections to the cross-term from excited-state mixing; expected to be small near $r_{\max}$ but relevant at intermediate $r$. **Still open.**
 
-5. **Verification that $\lambda = A^2$ holds** — Ansatz A* is used here as input. Three consistency checks passed (§6.3): (i) $\lambda \cdot T = O(1)$ cancellation, (ii) limit $\lambda \to 0$ as $A \to 0$ at throat, (iii) agreement with Paper 2B §4.2.3. Rigorous geometric derivation (independent of Ansatz A*) remains open.
+5. ~~**Verification that $\lambda = A^2$ holds**~~ — **RESOLVED by RC-5 (2026-04-18).** $\lambda(r) = \psi_0(r)/\psi_0(0) = A^2(r)$ derived from the vector zero-mode profile (RC-3 + RC-5). The cancellation $\lambda \cdot T = O(1)$ is a geometric theorem, universal across all warped geometries. Ansatz A* is superseded. See `RC5_LAMBDA_DERIVATION_2026-04-18.md`.
 
 **Exact mass spectra (RC-3, 2026-04-18):**
 
@@ -385,3 +387,4 @@ See `RC3_DERIVATION_2026-04-18.md` §RC3.3, §RC3.3b.
 |------|--------|
 | 2026-04-17 | Initial derivation — rederiving $T \sim A^{-2}$ specifically for KCR-Cone $A = \cos(\sqrt{2}\,r)$; comparison with KK-Cone; identification of absolute-confinement feature |
 | 2026-04-18 | §6.6.2 updated: items 1–3 resolved by RC-3 (exact zero-mode profiles, exact spectra, numerical trajectories). Graviton spectrum $m_n^2 = 4n(2n+3)$ (exact, $l=3/2$ Pöschl-Teller). Vector spectrum $m_n^2 = 8n(n+2)$ (exact, $l=2$). |
+| 2026-04-18 | §6.3.1 rewritten: $\lambda = A^2$ now DERIVED from vector zero-mode profile (RC-5), superseding Ansatz A*. $\lambda \cdot T = O(1)$ promoted from "consistency check" to geometric theorem. §6.6.2 item 5 resolved. Circularity in Paper 2A §2.2.6 → §4.2.3 → §6.3.1 eliminated. |

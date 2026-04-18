@@ -20,7 +20,7 @@ This ledger collects every item that is currently UNTESTED, OPEN, CONJECTURED, A
 | # | Item | Source | Notes |
 |---|------|--------|-------|
 | 3 | ~~**A⁻² cross-term scaling hypothesis**~~ | 2A §2.2 (L606) | **RESOLVED 2026-04-18.** Derived from first principles in §6.2.10 (Hamiltonian decomposition + KCR-Cone metric). $T_{\mu r} \sim A^{-2}(r) = \sec^2(\sqrt{2}\,r)$ — exact, not merely an ansatz. |
-| 4 | ~~**λ ~ A² warp-factor scaling**~~ | 2A §2.2 (L1342) | **PARTIALLY RESOLVED 2026-04-18.** Physically established via Ansatz A* + three consistency checks in §6.3: (i) $\lambda \cdot T = O(1)$ exact cancellation, (ii) $\lambda \to 0$ at throat, (iii) agreement with §4.2.3 boundary conditions. Independent geometric derivation (without Ansatz A* as input) remains open. |
+| 4 | ~~**λ ~ A² warp-factor scaling**~~ | 2A §2.2 (L1342) | **RESOLVED 2026-04-18 (RC-5).** Derived from first principles: $\lambda(r) = \psi_0(r)/\psi_0(0) = A^2(r)$, where $\psi_0 = N_0 A^2$ is the vector zero-mode profile (RC-3). The cancellation $\lambda \cdot T = O(1)$ is a geometric theorem (the mixed tensor $T^\mu{}_r$ is $r$-independent for the vector zero mode on any warped geometry). Supersedes the circular Ansatz A* → §6.3.1 → §4.2.3 chain. See `RC5_LAMBDA_DERIVATION_2026-04-18.md`. |
 
 ---
 
@@ -99,7 +99,7 @@ This ledger collects every item that is currently UNTESTED, OPEN, CONJECTURED, A
 | Category | Count | Blocking Paper 2? |
 |----------|-------|--------------------|
 | Deferred | 3 | No |
-| Untested (needs 2B verification) | 0 (#3 resolved, #4 partially resolved) | — |
+| Untested (needs 2B verification) | 0 (#3 resolved, #4 resolved by RC-5) | — |
 | Blocking 2B | 2 (#5 resolved, #6 partially resolved) | Yes — #6 |
 | Contingent on Paper 3 | 3 | No (interface contracts) |
 | Open | 2 (items #11, #13b partially resolved; #11 → RC-4) | Partially |
@@ -111,10 +111,10 @@ This ledger collects every item that is currently UNTESTED, OPEN, CONJECTURED, A
 
 **Resolved since 2026-04-17:** #5 (SC1/SC2), #17 (RC1 symmetry), #13a (Λ_eff Path C), #16 (A5 propagator), #11 (partially — direction resolved), #13b (p ill-defined, reflagged).
 
-**Resolved since 2026-04-18 (2B §6 numerical session):** #3 (T~A⁻² derived from first principles in §6.2.10), #4 (partially — λ=A² established via three consistency checks, independent derivation still open). Graviton spectrum discovered to be exactly solvable: $m_n^2 = 4n(2n+3)$ (Pöschl-Teller $l=3/2$). Both KCR-Cone sectors now fully analytic. Numerical trajectories computed confirming confinement.
+**Resolved since 2026-04-18 (2B §6 numerical + RC-5 session):** #3 (T~A⁻² derived in §6.2.10), #4 (λ=A² derived from vector zero-mode profile in RC-5 — circularity in Ansatz A* eliminated). Graviton spectrum exactly solvable: $m_n^2 = 4n(2n+3)$ (Pöschl-Teller $l=3/2$). Both KCR-Cone sectors fully analytic. λ·T = O(1) proved as geometric theorem (universal for all warped geometries).
 
-**Critical path (updated 2026-04-18, post-§6 numerical):** 
-- 2B: #3 RESOLVED, #4 PARTIALLY RESOLVED. #6 (s dynamical mechanism) still open — Casimir gives value but not mechanism.
+**Critical path (updated 2026-04-18, post-RC-5):** 
+- 2B: #3 RESOLVED, #4 RESOLVED (RC-5). #6 (s dynamical mechanism) still open — Casimir gives value but not mechanism.
 - 2C §8 quality gate: items #18–20 (FR holonomy, Proietti, Eq. 8.4.5) — Opus passes needed
 - RC-4: #22 ($k_c^{\rm eff}$) gates 2C §RC1.4 full predictions; #23 (factor-of-6) is computable now from $N_0$
 - Paper 3: items #7–9 are interface contracts, not blocking
