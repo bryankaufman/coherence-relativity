@@ -48,7 +48,7 @@ This ledger collects every item that is currently UNTESTED, OPEN, CONJECTURED, A
 | # | Item | Source | Notes |
 |---|------|--------|-------|
 | 10 | **c₁ = 1 uniqueness** | 2B §3 (L525) | Minimality argument unchanged; higher-c₁ bundles possible at higher energies. |
-| 11 | **k_c identification for CMB (d vs k_c discrepancy)** | 2C §7 (L564 in triage) | RC-3 scope. The cutoff scale identification doesn't match between derivations. |
+| 11 | ~~**k_c identification for CMB (d vs k_c discrepancy)**~~ | 2C §7 (L564 in triage) | **PARTIALLY RESOLVED 2026-04-18.** RC-3 derives exact KK mass: $m_1^2 = 24$ → $k_c^{\rm KK} = 2\sqrt{6}/L^* \approx 4.90/L^*$. d vs k_c discrepancy resolved in direction: k_c is NOT $1/R_\Sigma$ but the dynamical $k_c^{\rm eff}$ from $\Gamma_{\rm dec}$ sourcing (RC-4 scope). Free-field propagator $1/k^2$ confirmed; massive form requires decoherence sourcing. See `RC3_DERIVATION_2026-04-18.md` §RC3.3 addendum. |
 | 12 | ~~**δT_M/δg^μν extraction (RC-2)**~~ | 2C §7 | **PARTIALLY RESOLVED 2026-04-17.** Formal adiabatic-perturbation expression derived; KCR-Cone evaluation shows T_M(r) ∝ A²(r) and metric variation suppressed by Λ_matter/M_Pl² (justifies Assumption A3). Full field-theoretic EOM still pending. See `RC2_DERIVATION_2026-04-17.md` §RC-2.1. |
 | 13 | ~~**Covariant conservation ∇^μ T^(eff)_μν = 0**~~ | 2C §7 | **PARTIALLY RESOLVED 2026-04-17.** Distributional decomposition derived: ∇^μ T^(eff)_μν = [D_ν σ − ε σ (K n_ν + a_ν)]·δ(ℓ). DE limit verified for null ∂M. DM limit reduces to baryon-current conservation. See `RC2_DERIVATION_2026-04-17.md` §RC-2.3. |
 | 13a | **Λ_eff reconciliation — Path C** | RC-2.4 | **RESOLVED 2026-04-18.** RC-2.4 boundary-layer estimate "5.4 G H₀" withdrawn (dimensionally inconsistent — λ_bdry [M³] vs λ_dist [dimensionless] collision). Path C (frame-dragging backreaction) gives ρ_drag = (3/2)H₀²/G ~ 18·ρ_Λ — order-of-magnitude agreement with SC3. Factor-of-6 discrepancy expected to close with mode-equation prefactor (Paper 2B §6, open). Notation box added to RC2_DERIVATION distinguishing λ_dist and λ_bdry. |
@@ -69,7 +69,7 @@ This ledger collects every item that is currently UNTESTED, OPEN, CONJECTURED, A
 
 | # | Item | Source | Notes |
 |---|------|--------|-------|
-| 16 | **T_M propagator form P(k)** (A5) | 2C §RC1.5 (L503 in triage) | Assumed functional form for the matter-sector propagator. |
+| 16 | ~~**T_M propagator form P(k)**~~ (A5) | 2C §RC1.5 (L503 in triage) | **RESOLVED 2026-04-18.** RC-3 derives from first principles: free-field propagator $P(k) = 2N_0^2/(M_5^3 k^2) \sim 1/k^2$ (massless zero mode, $m_0^2=0$). The massive form $C/(k^2+k_c^2)$ in §RC1.4 holds with $k_c = k_c^{\rm eff}$ set by decoherence dynamics (RC-4), not the free KK mass $k_c^{\rm KK}=2\sqrt{6}/L^*$. See `RC3_DERIVATION_2026-04-18.md` §RC3.4. |
 
 ---
 
@@ -84,6 +84,16 @@ This ledger collects every item that is currently UNTESTED, OPEN, CONJECTURED, A
 
 ---
 
+## RC-4 SCOPE (new items surfaced by RC-3)
+
+| # | Item | Source | Notes |
+|---|------|--------|-------|
+| 22 | **$k_c^{\rm eff}$ from decoherence-sourced T_M EOM** | RC-3 §RC3.4 | The zero mode is massless at the free-field level; the effective mass $k_c^{\rm eff} \approx 5H_0$ must come from the sourced dynamics. Requires solving $\Box B_\mu^{(0)} = J_\mu^{\rm dec}$ where the source is the decoherence-rate tensor. Well-defined problem; Γ_dec~H₀ provides the scale. |
+| 23 | **Factor-of-6 in Path C Λ_eff** | RC-2.5 | Exact coefficient of $\rho_{\rm drag} = (3/2)H_0^2/G$ has a geometric factor $\alpha_{\rm geom}$ that was estimated as 3/2 from CP¹. Exact value requires mode-equation normalization from RC-3 (now available: $N_0 = \sqrt{16\sqrt{2}/(3\pi)} \approx 1.55$). Can be computed now that $N_0$ is exact. |
+| 24 | **Amplitude $A_s$ from $\lambda_{\rm bdry}$ normalization** | RC-3 §RC3.5 | $A_s = \lambda_{\rm bdry}^2 N_0^2/(\pi^2 M_5^3)$ (from RC3.16a). Setting $A_s \sim 2\times10^{-9}$ (Planck) constrains $\lambda_{\rm bdry}$ once $k_c^{\rm eff}$ is known. |
+
+---
+
 ## Summary
 
 | Category | Count | Blocking Paper 2? |
@@ -92,10 +102,17 @@ This ledger collects every item that is currently UNTESTED, OPEN, CONJECTURED, A
 | Untested (needs 2B verification) | 2 | Yes — 2B |
 | Blocking 2B | 2 | Yes — 2B |
 | Contingent on Paper 3 | 3 | No (interface contracts) |
-| Open | 4 | Partially (RC-2 items gate 2C closure) |
-| Conjectured | 2 | No (flagged honestly in manuscript) |
-| Assumed | 1 | No (flagged honestly in manuscript) |
-| Pending Opus verification | 3 | Yes — 2C quality gate (items #18, #19, #20) |
-| **Total** | **21** (20 active, 1 resolved) | |
+| Open | 2 (items #11, #13b partially resolved; #11 → RC-4) | Partially |
+| Conjectured | 2 | No (flagged honestly) |
+| Assumed | 0 (A5 resolved by RC-3) | — |
+| Pending Opus verification | 3 | Yes — 2C §8 quality gate (#18, #19, #20) |
+| RC-4 scope (new) | 3 | No (but gates 2C exact predictions) |
+| **Total active** | **23** | |
 
-**Critical path:** ~~SC1/SC2 rewrite (#5)~~ **DONE** → 2B unblocked for items #3, #4, #6 verification → 2B closes. ~~RC1.1/RC1.2 verification (#17)~~ **DONE 2026-04-17** → items #18–20 remain as the 2C §8 quality gate (FR holonomy, Proietti, Eq. 8.4.5). ~~Items #12, #13 (RC-2 work)~~ **PARTIALLY DONE 2026-04-17** — RC-2 derivation framework complete (~60%); two new blockers surfaced: **#13a Λ_eff boundary-layer vs. SC3 reconciliation** (most important) and **#13b p = 1 vs. p = 3/2 narrative decision**. Items #7–9 are Paper 3's problem.
+**Resolved since 2026-04-17:** #5 (SC1/SC2), #17 (RC1 symmetry), #13a (Λ_eff Path C), #16 (A5 propagator), #11 (partially — direction resolved), #13b (p ill-defined, reflagged).
+
+**Critical path (updated 2026-04-18):** 
+- 2B: items #3, #4, #6 still need numerical verification (volcano potential ODE)
+- 2C §8 quality gate: items #18–20 (FR holonomy, Proietti, Eq. 8.4.5) — Opus passes needed
+- RC-4: #22 ($k_c^{\rm eff}$) gates 2C §RC1.4 full predictions; #23 (factor-of-6) is computable now from $N_0$
+- Paper 3: items #7–9 are interface contracts, not blocking

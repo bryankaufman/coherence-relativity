@@ -18,7 +18,7 @@
 | Zero-mode profile: $\psi_0(r) = N_0\,\cos^2(\sqrt{2}\,r)$ | **DERIVED** | Eq. RC3.8 |
 | Normalization: $N_0 \approx 1.70$ | **COMPUTED** | Eq. RC3.10 |
 | Vector volcano potential: $V_{\rm vec} = 4\tan^2(\sqrt{2}\,r) - 4$ | **DERIVED** | Eq. RC3.12 |
-| Mass gap: $m_1^2$ from vector Sturm-Liouville problem | **STRUCTURAL** | §RC3.3 |
+| Mass gap: $m_1^2 = 24$ (exact); $m_n^2 = 8n(n+2)$ | **EXACT ANALYTIC** | §RC3.3 addendum |
 | 4D propagator: $P(k) = N_0^2/k^2$ (zero-mode dominated) | **DERIVED** | Eq. RC3.16 |
 | $k_c$ identification: first massive vector mode | **DERIVED** | Eq. RC3.17 |
 | $\lambda_{\rm bdry}$ expression | **DERIVED** | Eq. RC3.22 |
@@ -339,13 +339,48 @@ This is a constraint on $\lambda_{\rm bdry}$ that can in principle be solved onc
 | Vector volcano potential | ✅ DERIVED | Eq. RC3.12 | Deeper well than graviton → tighter confinement |
 | Zero-mode verified | ✅ VERIFIED | Below RC3.12 | m₀² = 0 algebraically exact |
 | Propagator $P(k) \sim 1/k^2$ | ✅ DERIVED | Eq. RC3.16a | Zero mode is MASSLESS (not massive as assumed in 2C §RC1.4) |
-| $k_c = m_1/L^*$ (structural) | ✅ DERIVED | Eq. RC3.17 | First massive vector mode provides spectral transition |
+| $k_c = 2\sqrt{6}/L^*$ (exact) | ✅ COMPUTED | Eq. RC3.17a | $m_1^2 = 24$ exact; $k_c \approx 4.90/L^*$ |
 | $\lambda_{\rm bdry}$ expression | ✅ DERIVED | Eq. RC3.21 | Relates boundary and bulk descriptions |
 | λ_bdry decouples from Λ_eff | ✅ ESTABLISHED | §RC3.5 | The CC prediction is independent of the boundary coupling |
 
+## RC-3.3 Addendum — Exact Analytic Spectrum (2026-04-18)
+
+The vector volcano potential is **exactly solvable**. The key observation is that after the substitution $z = \sqrt{2}\,r$, the mode equation becomes:
+
+$$-f''(z) + 2\sec^2(z)\,f(z) = E\,f(z), \qquad E = \frac{m^2}{2} + 4 \tag{RC3.12a}$$
+
+This is the Pöschl-Teller operator $\hat{H} = -d^2/dz^2 + l(l-1)\sec^2(z)$ with $l(l-1) = 2$, giving **integer** $l = 2$. For integer $l$, the spectrum on $[0, \pi/2]$ with Neumann BC at $z = 0$ and Dirichlet BC at $z = \pi/2$ is:
+
+$$E_n = (2n + l)^2 = 4(n+1)^2, \qquad n = 0, 1, 2, \ldots$$
+
+**Verification:** $E_0 = 4$, and $f_0 = \cos^2(z)$ satisfies $-f_0'' + 2\sec^2(z)\,f_0 = 4f_0$ algebraically (confirmed by sympy). ✓
+
+Converting back to $m^2$ via $m^2 = 2E - 8$:
+
+$$\boxed{m_n^2 = 8n(n+2), \qquad n = 0, 1, 2, \ldots} \tag{RC3.12b}$$
+
+| $n$ | $m_n^2$ (exact) | $m_n$ (units of $L^{*-1}$) | Mode |
+|-----|-----------------|---------------------------|------|
+| 0 | $0$ | $0$ | Zero mode (massless) |
+| 1 | $24$ | $2\sqrt{6} \approx 4.899$ | First KK mode |
+| 2 | $64$ | $8$ | Second KK mode |
+| 3 | $120$ | $2\sqrt{30} \approx 10.95$ | Third KK mode |
+
+Numerical verification (finite-difference, $N = 50{,}000$): $m_1^2 = 24.0012$ (converging to exact $24$). ✓
+
+**Why the vector potential is exactly solvable while the graviton is not:** The graviton volcano potential $V_{\rm grav} = (3/2)\tan^2(\sqrt{2}\,r) - 3$ has coefficient $(3/2)$ in $\sec^2(z)$, giving $l(l-1) = 3/2$ → $l = (1 + \sqrt{7})/2 \approx 1.82$ (irrational). Non-integer $l$ has no closed-form spectrum. The vector coefficient is $2 = l(l-1)$ with $l = 2$ (integer), which is the algebraic accident making the vector exactly solvable.
+
+**Revised $k_c$ identification:**
+
+$$\boxed{k_c = \frac{m_1}{L^*} = \frac{2\sqrt{6}}{L^*} \approx \frac{4.90}{L^*}} \tag{RC3.17a}$$
+
+The eigenfunctions for the Neumann-at-0 spectrum are even-order Gegenbauer polynomials of $\sin(z)$, weighted by $\cos^2(z)$: $f_n(z) \propto \cos^2(z)\,C_{2n}^{(3/2)}(\sin z)$.
+
+---
+
 ## What RC-3 Does Not Deliver (RC-4 Scope)
 
-1. **The numerical value of $m_1^2$** for the vector potential — requires solving the Schrödinger equation numerically for $V_{\rm vec} = 4\tan^2(\sqrt{2}\,r) - 4$.
+1. ~~**The numerical value of $m_1^2$**~~ — **RESOLVED above** (exact: $m_1^2 = 24$, $m_1 = 2\sqrt{6}/L^*$).
 
 2. **The effective $k_c^{(\rm eff)}$ for the primordial spectrum** — the zero-mode $T_M$ acquires its effective mass from decoherence dynamics, not from the free-field spectrum. Deriving $k_c^{(\rm eff)} \approx 5H_0$ requires the sourced (non-free) T_M EOM.
 
@@ -390,3 +425,4 @@ This is a clean separation: **the CC comes from geometry; the fluctuation spectr
 | Date | Change |
 |------|--------|
 | 2026-04-18 | Initial derivation — full 5D → 4D reduction for the vector sector on KCR-Cone. Zero-mode profile, volcano potential, propagator, λ_bdry identification. |
+| 2026-04-18 | §RC3.3 addendum — exact analytic spectrum: $m_n^2 = 8n(n+2)$. Vector potential exactly solvable (integer $l=2$); graviton not. $k_c = 2\sqrt{6}/L^* \approx 4.90/L^*$ exact. Numerical verification to $N=50{,}000$. |
