@@ -602,7 +602,7 @@ For RC-3 to make C_ℓ^Σ fully predictive, it needs from RC-1:
 
 1. **Derive δT_M/δg^{μν}** from the M-Σ coupled equations of motion (Paper 2A §7 EOM). This lifts Assumption A3 and completes the anisotropic correction term in T^(eff)_μν.
 
-2. **Derive |T_M|²(Γ_dec)** from the M-Σ EOM — i.e. determine the exponent $p$ in $|T_M|^2 \propto \Gamma_{\rm dec}^p$ and identify the mechanism that fixes it. If $p = 3/2$, that result must come from the full coupled dynamics rather than from a naive CP¹ Weyl-law argument.
+2. **Determine the exponent $p$ in $|T_M|^2 \propto \Gamma_{\rm dec}^p$** from the full field-theoretic M-Σ EOM. *RC-2 status:* The RC-2.2 analytical attempt found that with the correct $T \sim A^{-2}$ (Paper 2B §6), $\Gamma_{\rm dec}$ is A-independent at leading order while $|T_M|^2 \sim A^{-4}$, so no clean power law exists at leading order — $p$ is ill-defined in the adiabatic approximation. The p=1 result (from incorrect $T \sim A^2$ input) is withdrawn. C1 remains open; determining $p$ requires the field-theoretic $T_M$ EOM (RC-3 scope). *(Reflagged: RC-2 → RC-3.)*
 
 3. **Verify covariant conservation** ∇^μ T^(eff)_μν = 0 using the T_M EOM as the source/sink term. This confirms Assumption A4.
 
