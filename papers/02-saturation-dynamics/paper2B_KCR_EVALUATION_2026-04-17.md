@@ -726,7 +726,7 @@ This is a necessary condition for the equations of motion to be well-posed. If $
 
 **At the framework level**, we can state this as a *consistency requirement* on admissible geometries: any geometry that supports the coherence-frame formalism must have bounded $\lambda \cdot T$.
 
-Whether $\lambda \cdot T$ is not just bounded but *constant* (independent of $\xi$) is a stronger condition that has been verified in the KCR-Cone worked example (§7.4.15 of the companion paper [Paper 2B]), where the warp-factor cancellation gives $\lambda \cdot T = O(1)$. This uniformity is a notable feature of that geometry, not a general theorem.
+Whether $\lambda \cdot T$ is not just bounded but *constant* (independent of $\xi$) is a stronger condition that has been verified for the KCR-Cone geometry in §6.3.1 of this paper (Eq. 6.3.1), where the warp-factor cancellation $\cos^2(\sqrt{2}\,r) \cdot \sec^2(\sqrt{2}\,r) = 1$ gives $\lambda \cdot T = O(1)$ exactly. This uniformity is a notable feature of that geometry, not a general theorem.
 
 ---
 
@@ -768,7 +768,7 @@ The identification $\lambda = f(\text{warp factor})$ is geometry-dependent:
 - It depends on the physical interpretation of $\lambda$ (metric perspective vs. dynamical perspective — see the detailed discussion in [Paper 2B, §6.3])
 - Different geometries may produce different functional forms
 
-The corrected identification $\lambda = A^2$ (not $A^{-2}$) was established for the KCR-Cone in [Paper 2B, Eq. 7.3.3], where the physical requirement is that $\lambda \to 0$ in the classical limit (deep throat). This identification ensures:
+The corrected identification $\lambda = A^2$ (not $A^{-2}$) was established for the KCR-Cone in §6.3.1 of this paper (Eq. 6.3.1), where the physical requirement is that $\lambda \to 0$ in the classical limit (deep throat). This identification ensures:
 - $\lambda = 1$ at the brane (maximal coupling)
 - $\lambda \to 0$ at the pinch-off (classical limit)
 - The frame-lag force $F_{\text{lag}} \sim \lambda \cdot T \sim O(1)$ (finite)
@@ -955,7 +955,19 @@ Derived compactification therefore constrains the regularity class of admissible
 
 # §5 Self-Consistency Conditions
 
-The abstract $M \times \Sigma$ framework of Paper 2A admits many geometries in principle. Derived compactification acts not on the unreduced full coherence space, but on the pointer-compatible sector selected by the Coherence-Frame Induction Principle (Paper 2A, Definition 2.3.10): decoherence first suppresses the fast higher coherence modes, inducing the residual dynamics onto a lower-dimensional manifold; topology then fixes the compact internal direction of that surviving sector.
+The abstract $M \times \Sigma$ framework of Paper 2A admits many geometries in principle. Derived compactification acts not on the unreduced full coherence space, but on the pointer-compatible sector selected by the Coherence-Frame Induction Principle (Paper 2A, §2.3.10): decoherence first suppresses the fast higher coherence modes, inducing the residual dynamics onto a lower-dimensional manifold; topology then fixes the compact internal direction of that surviving sector.
+
+**Theorem 5.0.1 (Slow-Manifold Reduction — Azouit Bridge).** *Let the $\Sigma$-sector Lindblad generator $\mathcal{L}_\Sigma$ have a spectral gap $\delta > 0$, and let the M-sector evolution rate satisfy $\|\partial_t G_{\mu\nu}^{(M)}\| \ll \delta$. Then:*
+
+*(i) The fast $\Sigma$-sector modes are adiabatically eliminated, and the residual M-sector dynamics evolve on a slow manifold whose effective metric is the Schur complement*
+$$G_{\mu\nu}^{\mathrm{eff}} = G_{\mu\nu}^{(M)} - T_{\mu a}\,(G^{(\Sigma)})^{-1,ab}\,T_{b\nu},$$
+*which is precisely Eq. 2.3.4 of Paper 2A.*
+
+*(ii) The spectral gap condition $\delta > 0$ is equivalent to "eigenvalues of $G_{ab}^{(\Sigma)}$ are large" in the sense of Paper 2A §2.3.3: both conditions state that $\Sigma$-sector relaxation dominates M-sector driving.*
+
+*Proof.* Step (i) is Theorem 1 of Azouit, Sarlette \& Rouchon (2016, \textit{ESAIM: COCV}), applied with the identification: their "fast generator" $\mathcal{L}_0$ = $\mathcal{L}_\Sigma$ in the HCR framework; their "slow manifold" = the pointer-compatible sector; their "effective equation" = the M-sector EOM with the Schur-complement metric. Step (ii) follows from the spectral characterization of the Bures metric block $G_{ab}^{(\Sigma)}$: large eigenvalues correspond to rapid $\Sigma$-sector return to equilibrium, which is exactly the spectral gap condition on $\mathcal{L}_0$. $\square$
+
+*Remark.* This theorem provides the rigorous foundation for the Coherence-Frame Induction Principle (Paper 2A, §2.3.10). With Theorem 5.0.1 (Step A, slow-manifold reduction) and §3.2 of this paper (Step B, topology-fixing of the surviving sector), the CFIP is elevated from a named Principle to a fully proved Theorem in the HCR series. The label "Principle" is retained in Paper 2A to reflect the logical order of presentation; the proof is completed jointly by this theorem and §3.2.
 
 For any specific geometry realized by this mechanism to be physically viable, it must satisfy three self-consistency conditions:
 
@@ -1136,7 +1148,7 @@ On the KCR interval, this problem is *dissolved*. Both conditions are satisfied 
 
 The entire constraint-solving apparatus of §5.1–§5.2 in the pre-split formulation — the asymptotic analysis, the admissible profile classes, the combined SC1 + SC2 coupled system — becomes unnecessary. Derived compactification answers the question before it can be asked.
 
-The conceptual point is worth stating explicitly: the KCR-Cone is not a postulated Kaluza-Klein geometry, but the effective geometry of the induced surviving sector (Paper 2A, Definition 2.3.10). Klein's circle was a useful first approximation, but the Quantum Kaluza Cone replaces that postulate with a derived structure: decoherence first induces a surviving pointer-compatible sector, and topology then fixes its compact internal direction.
+The conceptual point is worth stating explicitly: the KCR-Cone is not a postulated Kaluza-Klein geometry, but the effective geometry of the induced surviving sector (Paper 2A, §2.3.10; see also Theorem 5.0.1 of this paper for the rigorous slow-manifold foundation). Klein's circle was a useful first approximation, but the Quantum Kaluza Cone replaces that postulate with a derived structure: decoherence first induces a surviving pointer-compatible sector, and topology then fixes its compact internal direction.
 
 **What remains non-trivial:** SC3 (cosmological constant). The Casimir energy on the interval must be consistent with $\Lambda_{\mathrm{obs}}$. This is the only self-consistency condition that genuinely *tests* the derived geometry, and it is the subject of §5.3.
 
