@@ -300,11 +300,13 @@ $$\boxed{\lambda_{\rm bdry}^{(\rm eff)} = \lambda_{\rm bdry} \cdot \frac{2N_0^2}
 
 ## Expressing $M_5$ in Terms of $M_{\rm Pl}$
 
-From Paper 2B §5.2.3:
+4D Einstein–Hilbert reduction gives (Paper 2B §5.2.3, corrected):
 
-$$M_{\rm Pl}^2 = M_5^3 \int_0^{r_{\max}} A^3(r)\,\mathrm{d}r = M_5^3 \cdot \frac{2}{3\sqrt{2}} \tag{RC3.22}$$
+$$M_{\rm Pl}^2 = M_5^3 \int_0^{r_{\max}} A^2(r)\,\mathrm{d}r = M_5^3 \cdot \frac{\pi}{4\sqrt{2}} \tag{RC3.22}$$
 
-So $M_5^3 = \frac{3\sqrt{2}}{2}\,M_{\rm Pl}^2 \approx 2.12\,M_{\rm Pl}^2$ (in units where $r_{\max}$ is dimensionless; physically $M_5^3 = 3\sqrt{2}M_{\rm Pl}^2/(2L^*)$).
+So $M_5^3 = \frac{4\sqrt{2}}{\pi}\,M_{\rm Pl}^2 \approx 1.8006\,M_{\rm Pl}^2$ (in units where $r_{\max}$ is dimensionless; physically $M_5^3 = 4\sqrt{2}M_{\rm Pl}^2/(\pi L^*)$).
+
+**Note:** The integral $\int A^3\,dr = 2/(3\sqrt{2})$ is the graviton Schrödinger zero-mode normalization ($\Psi_0^{(g)} = A^{3/2}$ so $\Psi_0^{(g)2}=A^3$), not the EH reduction measure.
 
 ## The $M_{\rm eff}$ Identification
 

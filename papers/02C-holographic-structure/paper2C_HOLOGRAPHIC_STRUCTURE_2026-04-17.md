@@ -295,8 +295,8 @@ In the inhomogeneous (DM) limit, $D_i \sigma \neq 0$. Then the tangential diverg
 ## §RC1.3 — Two Physical Limits: Dark Energy and Dark Matter
 
 Derived for the tensor structure and equation-of-state identification
- Derived for the geometric coefficient $\alpha_{\rm geom} = 3/2$ appearing in the zero-mode-weighted KCR backreaction integral
- CONJECTURED only for the scaling law $|T_M|^2 \propto \Gamma_{\rm dec}^{p}$, whose exponent $p$ is not yet derived
+ Derived for the geometric coefficient $\alpha_{\rm geom} = N_0^2 I_6/I_2 = 10\sqrt{2}/(3\pi) \approx 1.5005$ appearing in the zero-mode-weighted KCR backreaction integral (RC-8b)
+ WITHDRAWN for any power-law scaling $|T_M|^2 \propto \Gamma_{\rm dec}^{p}$ at leading order (RC-6: the “p exponent” formulation is ill-defined; do not use)
 
 ---
 
@@ -342,27 +342,21 @@ This is the cosmological constant form: T^(eff)_μν → -ρ_eff g_μν, identic
 
 ---
 
-**The geometric coefficient $\alpha_{\rm geom} = 3/2$ and the unresolved $T_M$ scaling law:**
+**The geometric coefficient $\alpha_{\rm geom}$ and the remaining dynamical coefficient $c_\Gamma$: **
 
-The April 10 KCR calculation fixes a geometric coefficient in the frame-dragging backreaction:
+The KCR-Cone geometry fixes the dimensionless backreaction coefficient in the corrected (π-consistent) form
 
-$$\rho_{\rm drag} = \alpha_{\rm geom}\, \frac{\Gamma_{\rm dec}^2}{G_4}, \qquad \alpha_{\rm geom} = \frac{3}{2}$$
+$$\boxed{\Omega_{\rm drag} = \alpha_{\rm geom}\,c_\Gamma^2, \qquad c_\Gamma := \Gamma_{\rm dec}/H_0.}$$
 
-This $\alpha_{\rm geom} = 3/2$ result comes from the zero-mode-weighted KCR geometry — equivalently, from the warp factor $A(r)=\cos(\sqrt{2}\,r)$ together with the graviton zero-mode profile on the derived interval. It is a geometric coefficient, not a spectral-density exponent.
+A reproducible derivation of $\alpha_{\rm geom}$ is now available:
 
-What is not yet derived here is the dependence of $|T_M|^2$ on the decoherence rate $\Gamma_{\rm dec}$. We therefore write
+$$\boxed{\alpha_{\rm geom} = N_0^2\,\frac{I_6}{I_2} = \frac{10\sqrt{2}}{3\pi} \approx 1.5005,}$$
 
-$$|T_M|^2 \propto \Gamma_{\rm dec}^{p}$$
+where $\psi_0(r)=N_0A^2(r)$ is the KCR vector zero mode (RC-3) and the weighting uses the graviton reduction measure $A^2dr$ (RC-8b). This value is within 0.033% of $3/2$ but is not exactly $3/2$.
 
-with exponent $p$ left unspecified at the RC-1 level.
+The $\lambda\cdot T=O(1)$ theorem (RC-5) guarantees $c_\Gamma=O(1)$ (no Planck/Hubble hierarchy), but does not fix its numerical value; $c_\Gamma$ must be derived from the sourced EOM for the zero mode (RC-4). If we *identify* $\Omega_{\rm drag}$ with the observed $\Omega_\Lambda=0.69$, this would imply $c_\Gamma\approx\sqrt{0.69/\alpha_{\rm geom}}\approx 0.678$ (observationally inferred, not yet derived).
 
-A naive Weyl-formula argument on CP¹ (real dimension 2) gives $\rho(\lambda) \sim \mathrm{const}$ rather than $\rho(\lambda) \sim \lambda^{1/2}$, so no spectral-density derivation of $p = 3/2$ is claimed here. If $p = 3/2$ is correct, it must arise from additional structure in the full $M \times \Sigma$ dynamics — for example the $T_M$ propagator, normalization, or backreaction kernel — and not from the simple CP¹ density-of-states argument alone.
-
-**Conjectured (C1):** The exponent $p = 3/2$ may still be correct, but it is not derived here. Determining $p$ requires the full M-Σ equation of motion for $T_M$ and is therefore an RC-2 problem.
-
-**RC-2 status (2026-04-18):** The RC-2.2 pass (RC2_DERIVATION_2026-04-17.md) attempted to determine $p$ analytically from the M-Σ EOM. An initial result of $p=1$ was obtained using $|T_{\mu a}| \sim A^2$ from an adiabatic formula. However, Paper 2B §6 (KCR-Cone EOM rederivation) establishes $T_{\mu r} \sim A^{-2}$ directly from the Fubini-Study cross-term, confirmed by the $\lambda \cdot T = O(1)$ cancellation (§6.3.1). With the correct $T \sim A^{-2}$: $\Gamma_{\rm dec} \sim \lambda \cdot T \cdot H_0 \sim O(1) \cdot H_0 = H_0$ (A-independent), while $|T_M|^2 \sim A^{-4}$ (warp-dependent). No clean power law $|T_M|^2 \propto \Gamma_{\rm dec}^p$ exists at leading order. The p=1 result is **withdrawn**; C1 remains an open conjecture. The RC-2.2 derivation is preserved in `RC2_DERIVATION_2026-04-17.md` with a correction block.
-
-**Flagged for RC-3:** Determine $p$ from the full field-theoretic M-Σ EOM (requires promoting the worldline action to a field action — RC-3 scope).
+**Withdrawn:** We do **not** assume a power-law scaling $|T_M|^2 \propto \Gamma_{\rm dec}^{p}$ at leading order; the exponent formulation is ill-defined in the KCR-Cone scaling regime and was retired in RC-6.
 
 ---
 
@@ -423,17 +417,17 @@ The boundary condition at ∂M seeds a classical field in the bulk M that, under
 
 ---
 
-**Ω_DM/Ω_b consistency check for an adopted scaling ansatz:**
+**Ω_DM/Ω_b consistency check for an adopted *phenomenological* scaling ansatz (illustrative only):**
 
 If one adopts the phenomenological ansatz
 
-$$\rho_{\rm DM} \sim \lambda^2 \rho_b^{p},$$
+$$\rho_{\rm DM} \sim \lambda^2 \rho_b^{q},$$
 
 then
 
-$$\frac{\Omega_{\rm DM}}{\Omega_b} = \lambda^2 \cdot \bar{\rho}_b^{\,p - 1}.$$
+$$\frac{\Omega_{\rm DM}}{\Omega_b} = \lambda^2 \cdot \bar{\rho}_b^{\,q - 1}.$$
 
-For the illustrative choice $p = 3/2$, with $\Omega_b = 0.049$, $\Omega_{\rm DM} = 0.259$, and $\bar{\rho}_b$ expressed in units of the critical density $\rho_c$, one obtains
+For the illustrative choice $q = 3/2$, with $\Omega_b = 0.049$, $\Omega_{\rm DM} = 0.259$, and $\bar{\rho}_b$ expressed in units of the critical density $\rho_c$, one obtains
 
 $$\lambda^2 \cdot \left(\frac{\Omega_b}{1}\right)^{1/2} = \frac{\Omega_{\rm DM}}{\Omega_b}$$
 
@@ -443,9 +437,9 @@ $$\lambda^2 = \frac{0.259}{0.049} \cdot \frac{1}{\sqrt{0.049}} = 5.29 \cdot 4.52
 
 The $\Omega^{1/2}$ factor carries units of $\rho_c^{1/2}$, so this is only a scaling-level consistency estimate.
 
-**Conjectured (C2):** If the eventual RC-2 derivation yields $p = 3/2$, then the observed ratio $\Omega_{\rm DM}/\Omega_b = 5.29$ can be matched by an admissible choice of normalization $\lambda$. This check does **not** derive either $p$ or $\lambda$; it only shows phenomenological viability of that benchmark ansatz.
+**Conjectured (C2):** If future work yields a baryon-tracking scaling close to $q\approx 3/2$, then the observed ratio $\Omega_{\rm DM}/\Omega_b = 5.29$ can be matched by an admissible choice of the normalization $\lambda$. This check does **not** derive either $q$ or $\lambda$; it only shows phenomenological viability of that benchmark ansatz.
 
-**Interpretation:** The choice $p = 3/2$ is retained here only as an illustrative benchmark because it is numerically viable and because the separate geometric coefficient $\alpha_{\rm geom}=3/2$ already appears in the KCR backreaction sector. The actual exponent $p$ remains to be derived from the full M-Σ dynamics.
+**Interpretation:** This illustrative baryon exponent $q$ is **not** tied to the geometric dark-energy coefficient $\alpha_{\rm geom}$; the latter is fixed independently by the KCR zero-mode backreaction integral (RC-8b). Any genuine derivation of baryon tracking requires solving the sourced M–Σ dynamics.
 
 ---
 
@@ -603,9 +597,9 @@ For RC-3 to make C_ℓ^Σ fully predictive, it needs from RC-1:
 | §RC1.1 | Symmetry constraints → S^boundary_M | Derived | A1: T_M background; A2: |T_M| ≪ M_Pl |
 | §RC1.2 | Metric variation → T^(eff)_μν | Derived | A3: T_M metric-variation from RC-2 |
 | §RC1.3A | DE limit: w = -1 from isotropic T^(eff) | Derived | — |
-| §RC1.3A | Geometric coefficient $\alpha_{\rm geom}=3/2$ in KCR backreaction | Derived | Zero-mode-weighted KCR geometry |
+| §RC1.3A | Geometric coefficient $\alpha_{\rm geom}=10\sqrt{2}/(3\pi)\approx 1.5005$ in KCR backreaction | Derived | Zero-mode-weighted KCR geometry (RC-8b) |
 | §RC1.3B | DM limit: w = 0 from anisotropic T^(eff) | Derived | A3 |
-| §RC1.3B | Ω_DM/Ω_b consistency for benchmark $p=3/2$ ansatz |  CONJECTURED | C2: λ normalization |
+| §RC1.3B | Ω_DM/Ω_b consistency for benchmark $q=3/2$ ansatz |  CONJECTURED | C2: λ normalization |
 | §RC1.4 | 𝒫^Σ(k) ∝ λ² |T_M(k)|² formula | Derived | A5: T_M propagator form |
 | §RC1.4 | 69% quadrupole suppression at k_c=5/χ | Verified numerically | — |
 | §RC1.4 | Physical k_c from Σ geometry |  BLOCKED | RC-3 input |
@@ -616,7 +610,7 @@ For RC-3 to make C_ℓ^Σ fully predictive, it needs from RC-1:
 
 1. **Derive δT_M/δg^{μν}** from the M-Σ coupled equations of motion (Paper 2A §7 EOM). This lifts Assumption A3 and completes the anisotropic correction term in T^(eff)_μν.
 
-2. **Determine the exponent $p$ in $|T_M|^2 \propto \Gamma_{\rm dec}^p$** from the full field-theoretic M-Σ EOM. *RC-2 status:* The RC-2.2 analytical attempt found that with the correct $T \sim A^{-2}$ (Paper 2B §6), $\Gamma_{\rm dec}$ is A-independent at leading order while $|T_M|^2 \sim A^{-4}$, so no clean power law exists at leading order — $p$ is ill-defined in the adiabatic approximation. The p=1 result (from incorrect $T \sim A^2$ input) is withdrawn. C1 remains open; determining $p$ requires the field-theoretic $T_M$ EOM (RC-3 scope). *(Reflagged: RC-2 → RC-3.)*
+2. **Derive the tracking-channel relation** between baryon density and the sourced M–Σ dynamics (e.g. $\Gamma_{\rm dec}(x)$ and/or the effective dust source as a functional of $\rho_b(x)$). *RC-2 note:* Do not assume a leading-order power law $|T_M|^2 \propto \Gamma_{\rm dec}^p$; the “p exponent” formulation is ill-defined in the KCR-Cone scaling regime (RC-6), and the earlier RC-2.2 exponent attempt is withdrawn.
 
 3. **Verify covariant conservation** ∇^μ T^(eff)_μν = 0 using the T_M EOM as the source/sink term. This confirms Assumption A4.
 
@@ -646,7 +640,7 @@ For RC-3 to make C_ℓ^Σ fully predictive, it needs from RC-1:
 
 - **Paper 2A §5** (holographic conjecture → calculation): T^(eff)_μν from §RC1.2 makes the conjecture precise. The conjecture "T_MΣ mediates boundary-bulk coupling" is now: T^(eff)_μν = λ |T_M|² Π_μν δ_⊥, localized at ∂M.
 
-- **Paper 3 §5** (dark matter/energy predictions): Targets 3A and 3B provide w = -1 and w = 0 from the same source S^boundary_M. The geometric coefficient $\alpha_{\rm geom}=3/2$ is already identified, but the scaling exponent $p$ in $|T_M|^2 \propto \Gamma_{\rm dec}^p$ must still be derived before Paper 3 §5 is complete.
+- **Paper 3 §5** (dark matter/energy predictions): Targets 3A and 3B provide w = -1 and w = 0 from the same source S^boundary_M. The geometric coefficient $\alpha_{\rm geom}=10\sqrt{2}/(3\pi)\approx 1.5005$ is now derived (RC-8b). Turning the ratio $\Omega_{\mathrm{DM}}/\Omega_{\mathrm{DE}}$ into a prediction still requires the cosmic decoherence history — i.e. the sourced dynamics determining $c_\Gamma$ and the tracking-channel evolution.
 
 - **Paper 4 §3–4** (CMB anomalies from Σ geometry): Target 4 provides 𝒫^Σ(k) ∝ λ² |T_M(k)|² and the C_ℓ^Σ formula. The 69% quadrupole suppression at k_c = 5/χ_CMB is verified numerically; the physical k_c derivation is blocked until RC-3.
 
@@ -1086,14 +1080,14 @@ A central clarification of this work is the taxonomy of Σ → M couplings. We n
 - Level 1 — Casimir: static topology of Σ imposes boundary conditions on quantum fields, generating a finite vacuum energy that genuinely enters the Friedmann equation. For the KCR-Cone, this yields an interval scale $$L^* \in \,\mu\mathrm{m}$$ satisfying inverse-square-law bounds with a factor-of-three margin.[56][69]
 - Level 1b — Atiyah–Singer topological zero-point: the $$c_1 = 1$$ Hopf bundle induces a hypercharge-dependent zero-mode structure; the resulting correction to the Casimir mode count is topological and shifts $$L^*$$ by less than one percent.  
 - Level 2 — FS curvature: the Fubini–Study curvature of $$\Sigma$$ controls decoherence dynamics but does not source Friedmann directly. Treating it as a gravitational cosmological constant was identified as a category error and removed.  
-- Level 3 — $$T_{M\Sigma}$$ frame-dragging: off-diagonal couplings between $$M$$ and $$\Sigma$$ produce a Machian backreaction; on the KCR-Cone this is governed by a geometric constant $$\alpha = 3/2$$.  
+- Level 3 — $$T_{M\Sigma}$$ frame-dragging: off-diagonal couplings between $$M$$ and $$\Sigma$$ produce a Machian backreaction; on the KCR-Cone this is governed by $$\alpha_{\rm geom} = 10\sqrt{2}/(3\pi) \approx 1.5005$$ (RC-8b).  
 - Level 4 — Vacuum entanglement dynamics: correlations among vacuum “pseudoparticles” on $$\Sigma$$ contribute an entropy current that may unify with Level 3 in a single entanglement-thermodynamic description.
 
 It took the sequence of derivations labeled D1–D5 to disentangle these levels and to correct the initial misattribution of FS curvature as a gravitational source. The hierarchy is now a framework-level statement: any proposed geometry must say which levels contribute to gravity, which contribute only to decoherence, and how they interact.
 
-## §9.2 α = 3/2 and the Dark Sector
+## §9.2 $\alpha_{\rm geom} \approx 1.5005$ and the Dark Sector
 
-One of the more unusual features of the KCR-Cone analysis is that the Machian frame-dragging coupling is not a free parameter. The $$\lambda \cdot T = O(1)$$ cancellation between the distinguishability parameter and the cross-term tensor removes the naïve Planck–Hubble hierarchy and fixes a single geometric coefficient $$\alpha = 3/2$$ from the CP¹ geometry alone. Most extra-dimensional constructions introduce tunable couplings to match the observed dark sector; here, the geometry dictates the normalization.
+One of the more unusual features of the KCR-Cone analysis is that the Machian frame-dragging coupling is not a free parameter. The $$\lambda \cdot T = O(1)$$ cancellation between the distinguishability parameter and the cross-term tensor removes the naïve Planck–Hubble hierarchy, and the remaining geometric coefficient is fixed by the KCR zero-mode backreaction integral (RC-8b): $$\alpha_{\rm geom} = 10\sqrt{2}/(3\pi) \approx 1.5005$$ (within 0.033% of $3/2$, but not exactly $3/2$). Most extra-dimensional constructions introduce tunable couplings to match the observed dark sector; here, the geometry dictates the normalization.
 
 When this coefficient is combined with a two-channel decoherence model (permanent modes versus tracking modes), the dark-sector energy budget emerges from two geometric inputs, $$\Gamma_0/H_0$$ and $$\beta$$. In its current form, the model reproduces $$\Omega_{\mathrm{DE}} = 0.692$$, $$\Omega_{\mathrm{DM}} = 0.259$$, and $$\Omega_b = 0.049$$, summing to a flat universe. The split $$\Omega_{\mathrm{DM}}/\Omega_{\mathrm{DE}} = 0.374$$ is honest-to-admit still an input: the present analysis chooses $$\Gamma_0$$ and $$\beta$$ to match it rather than deriving it from first principles. Turning this ratio into a prediction is explicitly deferred to the next stage, where the cosmic decoherence history must be computed from the full $$T_{M\Sigma}$$ dynamics.
 
@@ -1115,7 +1109,7 @@ On the open side, stabilization of the effective geometry remains unresolved. Th
 
 ## §9.5 The Role of the KCR-Cone
 
-Throughout, the KCR-Cone is presented as a worked example and template, not as a unique solution. It demonstrates that when compactification is derived from coherence geometry rather than assumed, several things happen automatically: the fiber topology is fixed, the Kaluza–Klein spectrum is discretized without continuous moduli, and coupling hierarchies like $$\alpha = 3/2$$ appear as geometric invariants rather than fit parameters. It also shows how easy it is to misassign roles—FS curvature nearly became a “geometric Λ”—and how the five-level hierarchy helps prevent such category errors.
+Throughout, the KCR-Cone is presented as a worked example and template, not as a unique solution. It demonstrates that when compactification is derived from coherence geometry rather than assumed, several things happen automatically: the fiber topology is fixed, the Kaluza–Klein spectrum is discretized without continuous moduli, and coupling hierarchies like $$\alpha_{\rm geom} \approx 1.5005$$ (RC-8b) appear as geometric invariants rather than fit parameters. It also shows how easy it is to misassign roles—FS curvature nearly became a “geometric Λ”—and how the five-level hierarchy helps prevent such category errors.
 
 The invitation going forward is straightforward. Any alternative geometry consistent with the coherence-frame axioms can be run through the same pipeline: derive its compactification, compute its Level 1 Casimir contribution and Level 1b topological corrections, determine whether its Level 2 curvature enters gravity or only decoherence, and evaluate its Level 3–4 entanglement backreaction. The KCR-Cone has passed this battery of tests up to the SC3 stabilization gate; Paper III will decide whether it clears that gate or whether another geometry does better. Either way, the framework—compactification as output, not input, organized by a five-level Σ → M hierarchy—is the durable result.
 
@@ -1153,7 +1147,7 @@ These problems are now sharply defined by the D1–D5 results. They must be addr
 The D3/D3b analysis establishes “Outcome B”: with Casimir $$ \propto 1/\eta^4$$ and Level 3 backreaction $$ \propto 1/\eta^2$$, the effective potential $$V_{\mathrm{eff}}(\eta)$$ has no minimum; any stationary point is a maximum. Stabilization therefore requires an additional contribution with slower-than-$$\eta^2$$ growth but positive sign—flux quantization on the compact fiber is the primary candidate. The gate problem is to compute this flux contribution, derive its $$\eta$$-dependence (e.g., constant or logarithmic), and demonstrate a bona fide minimum in $$V_{\mathrm{eff}}(\eta)$$ consistent with SC3.
 
 **OP-B2. Rigorous $$T_{M\Sigma}$$ backreaction from the 5D action.**  
-The Level 3 Machian term currently uses scaling arguments and the $$\lambda \cdot T = O(1)$$ cancellation to obtain $$\alpha = 3/2$$. The gate is to derive the effective stress-energy tensor $$T_{\mu\nu}^{\mathrm{drag}}$$ from a variational principle on the full $$M \times \Sigma$$ action, with explicit dependence on $$\Gamma_{\mathrm{dec}}$$ and the KCR-Cone geometry. This must recover (or correct) $$\alpha = 3/2$$ and yield an unambiguous equation of state for the Machian contribution.
+The geometric coefficient in the Level 3 Machian term is now fixed by a reproducible derivation: $$\alpha_{\rm geom} = 10\sqrt{2}/(3\pi)\approx 1.5005$$ (RC-8b). The remaining gate is to derive the full effective stress-energy tensor $$T_{\mu\nu}^{\mathrm{drag}}$$ (including its equation of state beyond the isotropic estimate) together with the sourced dynamics that determine $$c_\Gamma=\Gamma_{\mathrm{dec}}/H_0$$ on the cosmological background.
 
 **OP-B3. SU(3)$$_c$$ gauge derivation.**  
 D4 shows that the $$c_1 = 1$$ Hopf bundle naturally yields a geometric $$U(1)_Y$$ structure but cannot produce $$SU(3)_c$$ from this single $$S^2$$–$$S^1$$ compactification alone. Paper III must introduce the additional compact structure—whether an extended spatial compactification, a higher-dimensional Hopf fibration, or another mechanism—that supports an $$SU(3)$$ principal bundle. The gate is to construct such a bundle explicitly and demonstrate how the color sector emerges from the same derived-compactification philosophy.
