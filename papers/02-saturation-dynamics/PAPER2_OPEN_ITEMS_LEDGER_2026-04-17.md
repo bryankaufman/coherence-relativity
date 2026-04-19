@@ -11,7 +11,7 @@ This ledger collects every item that is currently UNTESTED, OPEN, CONJECTURED, A
 |---|------|--------|-------|
 | 1 | **λ first-principles derivation** | 2A §2.2 (L731, L1332) | Currently phenomenological. Needs decoherence-rate Lagrangian or information-theoretic derivation. |
 | 2 | **Quantization of the M × Σ system** | 2A §2.2 (L1365) | Beyond Paper 2 scope. Canonical, path-integral, or geometric quantization approaches identified. |
-| 21 | **Proof of Conjecture 2.5.3 (Born rule as unique coherence-frame invariant)** | 2A §2.5.5, Box 2.5.A | *Paper N candidate.* Three requirements identified in Box 2.5.A: (1) precise definition of coherence-frame symmetry group $\mathcal{G}_{\text{CR}}$ and its orbit structure; (2) noncontextuality and regularity assumptions translated into HCR language; (3) uniqueness lemma (Gleason/envariance-type, adapted to $\mathcal{G}_{\text{CR}}$). Most direct path: map the pointer-sector swap symmetry (§2.5.6) onto Zurek's envariance construction (2003) and extend from qubit to general $\mathcal{H}$. Model verification complete (dephasing + amplitude-damping). Pursue as standalone paper if not resolved by existing literature. |
+| 21 | **Proof of Conjecture 2.5.3 (Born rule as unique coherence-frame invariant)** | 2A §2.5.5, Box 2.5.A | *Paper N candidate. Active derivation initiated 2026-04-19.* Working draft: `papers/02C-holographic-structure/CR_Born_Derivation_Working_Draft_19Apr2026.docx`. **Progress on M × CP¹ (qubit case):** Observation 2 (geometric fact) ESTABLISHED — the level set θ=θ_ψ on the Bloch sphere divides it into two caps of area cos²(θ_ψ/2) and sin²(θ_ψ/2), exactly equal to Born probabilities P(0\|ψ) and P(1\|ψ). For CP¹, frame noncontextuality + SU(2) symmetry → Born without Gleason. **Central open gap (§6 of draft):** proof that the T_MΣ SCF fixed-point condition forces frame noncontextuality of the basin weight function. If proved, Born follows. Physical plausibility argument given; formal proof remains. Extension to CP^n via Gleason identified. See `memory/kb/SESSION_2026-04-19_T_MSigma_HOLOGRAPHIC_BORN_RULE.md`. |
 
 ---
 
@@ -84,6 +84,17 @@ This ledger collects every item that is currently UNTESTED, OPEN, CONJECTURED, A
 
 ---
 
+## T_MΣ CONSTRAINT SCOPE (new items surfaced by 2026-04-19 Cowork session)
+
+| # | Item | Source | Notes |
+|---|------|--------|-------|
+| 25 | **T_MΣ SCF fixed-point → frame noncontextuality** | Born draft §6; session 2026-04-19 | **Central unproven claim.** The T_MΣ SCF condition must force frame noncontextuality of W(φ\|ψ). If proved, Born on M×CP¹ follows from SU(2) symmetry (no Gleason needed for n=2); extension to CP^n via Gleason. See `CR_Born_Derivation_Working_Draft_19Apr2026.docx` §6. Plausibility argument: frame-preferring T_MΣ solutions violate bidirectionality constraint → ruled out by SCF. Formal proof required. |
+| 26 | **T_MΣ candidate form: fiber bundle connection** | Session 2026-04-19; `CR_Session_Record_19Apr2026.docx` | Proposed: connection on principal bundle over M × Σ with U(1) × φ-work structure. Checked intuitively against several constraints. NOT yet systematically verified against full constraint list (especially SCF fixed-point encoding). |
+| 27 | **Loschmidt echo identification** | Session 2026-04-19 | f(t) = ⟨ψ\|U†(t)U'(t)\|ψ⟩ as observable signature of T_MΣ behavior is a structural parallel. Primary citation: Gorin, Prosen, Seligman, Strunz PRA 70, 042105 (2004) — VERIFIED. Full derived equivalence (not just analogy) not yet established. Subsection of Paper 2B needed. |
+| 28 | **Related Work skeleton integration into Paper 2C** | `CR_Related_Work_19Apr2026.docx` | 10/12 citations verified; 181 paragraphs, 7 constraints covered. Two genuine gaps (bidirectionality, Born geometry) correctly marked as CR-novel. Ready to integrate into Paper 2C §Related Work. Verify DOIs for Juárez-Aubry 2412.08402 and Merz et al. 2511.01684 before final submission. |
+
+---
+
 ## RC-4 SCOPE (new items surfaced by RC-3)
 
 | # | Item | Source | Notes |
@@ -107,7 +118,8 @@ This ledger collects every item that is currently UNTESTED, OPEN, CONJECTURED, A
 | Assumed | 0 (A5 resolved by RC-3) | — |
 | Pending re-derivation (Opus 4.6 direct supervision) | 3 | Yes — 2C §8 quality gate (#18, #19, #20); 4.7 dispatch superseded |
 | RC-4 scope (new) | 3 | No (but gates 2C exact predictions) |
-| **Total active** | **23** | |
+| T_MΣ constraint scope (new, 2026-04-19) | 4 | No (but gates Paper 2C §Related Work and Born proof) |
+| **Total active** | **27** | |
 
 **Resolved since 2026-04-17:** #5 (SC1/SC2), #17 (RC1 symmetry), #13a (Λ_eff Path C), #16 (A5 propagator), #11 (partially — direction resolved), #13b (p ill-defined, reflagged).
 
@@ -121,3 +133,4 @@ This ledger collects every item that is currently UNTESTED, OPEN, CONJECTURED, A
 - Exact spectra: graviton $m_n^2 = 4n(2n+3)$, vector $m_n^2 = 8n(n+2)$ — both Pöschl-Teller. This is a new result with potential implications for Paper 3 (KK tower structure).
 - **RC-6 findings (2026-04-18):** Three "α = 3/2" quantities disambiguated — only α_geom survives (now derived: $\alpha_{\rm geom}=10\sqrt{2}/(3\pi)\approx 1.5005$; RC-8b). π error in RC-2 corrected. Formula convention: Ω_drag = α_geom c_Γ² (not ρ = αΓ²/G). Observational constraint: α_geom × c_Γ² = 0.69 — fixes $c_\Gamma\approx 0.678$ if we identify Ω_drag with Ω_Λ (inference; EOM derivation still required). The λ·T = 1 theorem guarantees $c_\Gamma=O(1)$ but does not fix it. See `RC6_ALPHA_AUDIT_2026-04-18.md`.
 - **RC-7 findings (2026-04-18):** α_geom derivation pushed to ~70% (superseded by the full indicial 5D EH expansion, RC-8b). See `RC7_ALPHA_GEOM_DERIVATION_ATTEMPT_2026-04-18.md` for candidate expressions and `RC8_5D_EH_EXPANSION_2026-04-18.md` for the definitive derivation.
+- **2026-04-19 Cowork session:** T_MΣ constraint set formalized (7 constraints, ~30% complete overall). Related Work skeleton produced — 10/12 citations verified, 181 paragraphs, 2 genuine gaps (bidirectionality, Born geometry) correctly marked as CR-novel. Born rule derivation on M×CP¹ initiated: geometric fact established (cap areas = Born probabilities, exact), central gap identified (SCF → frame noncontextuality), derivation roadmap in place. Three output docs in `papers/02C-holographic-structure/`. See `memory/kb/SESSION_2026-04-19_T_MSigma_HOLOGRAPHIC_BORN_RULE.md`. New items #25–28 added.

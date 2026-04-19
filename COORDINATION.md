@@ -226,7 +226,7 @@ Claude Web (integrate into Paper 1 with captions)
 
 ---
 
-## HANDOFF → Claude Cowork: Zenodo v4 Submission
+## HANDOFF → Claude Cowork: Zenodo v4 Submission ✅ COMPLETED 2026-04-13
 
 ### Task
 Upload Paper 1 v4 to the existing Zenodo record.
@@ -548,4 +548,71 @@ See session log for full dispatch tracker. Next: D2 (§5.3 category error repair
   Dispatched: D4 (Atiyah-Singer, completed by Perplexity). D2 (§5.3 repair) is next.
 **HEAD**: `eaee177` | **Paper 1**: 21 pages, clean | **Paper 2**: not yet LaTeX (markdown drafts).
 **HANDOFF**: D2 is unblocked. Read `memory/kb/SESSION_2026-04-10_GEOMETRIC_LAMBDA_ANALYSIS.md` for full context.
+**2026-04-13 01:35** [Warp/Oz] COMPLETED: D2 category error integrated into `paper2A_REPAIRED_2026-04-13.md`. §3.3.5 fully rewritten with five-level Σ→M hierarchy; FS curvature (Level 2) removed from Friedmann equation; Casimir (Level 1) restored as primary gravitational contributor. Stale references in §OP-3, §OP-17, Discussion, and mode-list corrected.
 
+**2026-04-13 01:50** [Warp/Oz] COMPLETED: Full spine pass on 2A + 2B.
+  2A: §3.3.5 rewritten (five-level hierarchy, Casimir primary, FS curvature = decoherence only); Table 4 cross-reference map added to §1.5 (all 13 SPINE-mapped claims cited to 2B sections); stale geometric-Λ references in OP-3, OP-17, Discussion corrected.
+  2B: §1 Introduction added (verbatim notation paragraph from SPINE); §9 Discussion, §10 Open Problems, Appendix B removed (all now in 2A). File truncated to 1750 lines.
+  Next: prose compression (2A: 31,503 → 18,000–22,000 words; primary cut §2.1 scaffolding).
+**2026-04-15 06:55** [Claude Cowork/Sonnet 4.6] COMPLETED: RC-1 first draft — paper2_RC1_effective_stress_tensor_DRAFT.md (631 lines)
+  §RC1.1 ✅ DERIVED: Symmetry constraints (diffeomorphism covariance, U(d)×T^d invariance, locality) uniquely fix leading boundary action to λ ∫_∂M √(-γ) Tr(T_M T_M†)
+  §RC1.2 ✅ DERIVED: T^(eff)_μν(x) = λ (√(-γ)/√(-g)) Π_μν |T_M|² δ_⊥(x,∂M) — quadratic in T_M, localized on ∂M, no normal flux
+  §RC1.3A ✅ DERIVED: Uniform Γ_dec → isotropic Π_μν → T^(eff) ∝ g_μν → w = -1 (dark energy exact)
+  §RC1.3B ✅ DERIVED: Γ_dec ∝ ρ_b → anisotropic T_M = A(ρ_b)u⊗ψ → T^(eff) ∝ u_μ u_ν → w = 0 (dust exact)
+  α=3/2 consistency: Ω_DM/Ω_b = 5.29 consistent with α=3/2 for λ²~24 ρ_c^{-1/2} (⚠️ CONJECTURED; derivation from CP¹ spectral density flagged for RC-2)
+  §RC1.4 ✅ DERIVED: Δ²_Σ(k) = A_s k²/(k²+k_c²) from T_M propagator on compact Σ; C_ℓ^Σ formula; 69% quadrupole suppression at k_c=5/χ_CMB (✅ VERIFIED). Physical k_c ❌ BLOCKED → RC-3.
+  MODEL NOTE: Written by Sonnet 4.6 (not Opus). §RC1.1 U(d)×T^d uniqueness proof and §RC1.3B anisotropic tensor structure flagged for Opus verification before paper inclusion.
+  RC-2 gates: δT_M/δg^μν; |T_M|²(Γ_dec) → α=3/2; covariant conservation; propagation mechanism (∂M boundary → bulk DM density)
+  File: papers/02-saturation-dynamics/sections/drafts/paper2_RC1_effective_stress_tensor_DRAFT.md
+**2026-04-15 06:10** [Warp/Oz] COMPLETED: Paper 2A four editorial actions
+  (1) §8 QF Applications inserted (FR holonomy, Proietti loop, Zeno 4-explanation, Prediction 8.4.1: t_cross=τ_Z sec²α)
+  (2) Numbering fixed: §2.6 subsections (2.3.x→§2.6.x, 6 headings); §9 subsections (§6.x→§9.x, 10 headings); §10 subsections (§7.x→§10.x, 5 headings)
+  (3) Appendix B removed (G_eff schematic — schematic only, not required)
+  RC-1 dispatch created: RC1_effective_stress_tensor_dispatch.md — ready for Claude Cowork (Opus)
+  NEXT for 2A: prose compression → Opus dispatch (18,000–22,000 words, primary cut §2.1 scaffolding)
+**2026-04-15 08:33** [Bryan] ARCHITECTURE DECISION: Paper 2 splits into 3 parts.
+  2A: M×Σ abstract framework (§2.1–§2.6) — ~32k words, Foundations of Physics / Annals of Physics
+  2B: Derived topology + KCR-Cone evaluation (§3 compactification, §4 EOM, SC1/SC2/SC3)
+  2C (new): Holographic Structure of CR — RC-1 as core result; dark sector (w=-1, w=0) and CMB C_ℓ^Σ as immediate corollaries; §8 QF applications
+  RC-1 moves from "Paper 3 critical gate" → "Paper 2C core result"
+  Papers 3 and 4 cite Paper 2C for T^(eff)_μν and C_ℓ^Σ; Paper 3 opens directly with T2.5-B cosmological dynamics
+  New file created: papers/02C-holographic-structure/paper2C_idea_assignments_2026-04-15.md
+  Paper assignments updated: P3 idea file, P4 idea file, CONCEPT_MAP all updated
+**2026-04-15 08:17** [Bryan] DECISION: 18k–22k word target for 2A is ABANDONED. Paper stays at ~32k words. Presentation integrity and conceptual completeness take priority over length. Target venue: Foundations of Physics or Annals of Physics (both accept 30–50 page framework papers). Future prose passes should trim only redundant hedging/transitions, not remove derivations or conceptual content.
+**2026-04-17 02:46** [Warp/Oz] COMPLETED: Direct reconciliation patch applied to `papers/02-saturation-dynamics/paper2B_KCR_EVALUATION_2026-04-17.md` to remove the stale §3.3 geometric-Λ narrative that contradicted §5.3.
+  Changes:
+  - `§3.3.3.2` rewritten: scale is SC3-constrained, not a Friedmann/geometric-attractor result
+  - `§3.3.5.1–§3.3.5.4` rewritten: FS curvature kept as Σ/information geometry; Casimir restored as the Paper 2 gravitational contribution; boxed summary corrected
+  - `§3.3.6`, `§3.3.7`, and `§3.3.8` harmonized to remove residual “geometric primary Λ” / “scale from Friedmann” language
+  - `§3.3.4.2` heading renamed `KCR Spectrum`
+  Claude: please treat this reconciliation as already applied and build RC-1 on top of the patched 2B text rather than re-spending tokens on the old §3.3/§5.3 contradiction.
+**2026-04-14 Tier 1+3 checks** [Claude Cowork follow-up] Three numerical validations + toy model:
+  Study 1 (l_max): MAJOR FINDING. Upper TP NOT converged. a_max grows 293→606→1044 b* (l_max 60→80→100). T_osc = 1884.7 b* is a lower bound. ζ-reg upgraded to BLOCKER. T2.5-B 82% → 72%.
+  Study 2 (ε robustness): ΔT_osc < 0.001% across ε ∈ [0.005, 0.020] b*. Paper-grade result.
+  Study 3 (GW scan): Natural boundary kb* < 1.63 confirmed. For kb*=0.5: need ξ > 8.6×10⁻³ (natural). Window will expand when ζ-reg gives physical Ω_osc.
+  Tier 3 (Toy C_ℓ model): Lorentzian FS cutoff Δ²(k) = A_s·k²/(k²+k_c²). k_c = 5/χ_CMB ⇒ 69% quadrupole suppression (Planck: ~67%). Consistency: d ~ 10^61, d² ~ 10^122 ≈ S_CMB ~ 10^123. Figure: CL_sigma_toy_model.pdf (archived).
+  Archives: SESSION_2026-04-14_T25B_CMB_BOUNDARY.md updated with Parts V+VI; P3+P4 idea files updated.
+**2026-04-14 Claude Cowork** [Bryan + Claude Cowork] SESSION: T2.5-B SM Casimir Bounce + CMB as ∂M.
+  Source: CR_Session_Log_2026-04-14.pdf (separate from same-day Oz session).
+  T2.5-B Track (82% complete): 5D bounce S¹_t×S³×S¹_φ, GW-stabilized radion b=b*. SM Chowla-Selberg K₂ Casimir energy. Verified: a_min=58.85 b*, a_max≈605.5 b*, w₃=-0.943, T_osc=1884.7 b*, Ω_osc=3.334×10⁻³ b*⁻¹. KK-SCF fails by 300× (expected, sub-Hagedorn). Correct SCF = GW adiabaticity: m_φ >> Ω_osc. Standard RS-I kb*~10-12 fails; needs kb*≲0.5 or large ε. BLOCKING: GW parameter scan (k,μ,ε). Code: T25B_scf_check.py.
+  CMB as ∂M Track (~30% complete): CMB last-scattering = ∂M = fact horizon frozen in light. S_CMB=A/4G≈10¹²³ bits. C_ℓ^obs = T²(ℓ)·C_ℓ^Σ + noise. Three regimes: ℓ≲30 (Σ-signal), 30-2000 (mixed), ℓ≳2000 (M-noise). Low-ℓ anomalies = Σ geometry. Quadrupole suppression = finite-d FS cutoff at ℓ_min. RC-1 gates all quantitative predictions.
+  CR action written: S_CR = ∫_M √(-g)[R/16πG+ℒ_matter] + ∫_Σ ω_FS∧ℱ + S_M^boundary; boundary term ~ Tr(T_M T_M†).
+  RC-1 through RC-4 formalized. RC-1 (T_μν^eff) is CRITICAL for P3 and P4.
+  Archives: SESSION_2026-04-14_T25B_CMB_BOUNDARY.md; P3 idea file (§5 T2.5-B, RC-1–RC-4); P4 idea file (§2-4 CMB as ∂M, C_ℓ decomposition); CONCEPT_MAP.
+  Perplexity eval: T2.5-B "genuinely close to defensible." Key gaps: GW scan, ε robustness, toy Σ→C_ℓ model.
+  Paper placement: T2.5-B → P3 §5 (NOT P2B); CMB-as-∂M → P3 §3 + P4 §2-4; C_ℓ^Σ → P4 §3-4.
+**2026-04-19 12:00–12:45** [Claude Cowork + Oz] SESSION: T_MΣ holographic framework + Born rule derivation.
+  T_MΣ constraint set: 7 constraints verified, ~30% complete overall. Best-supported: Type 1/Type 2 decoherence, self-consistency fixed-point, threshold bifurcation. CR-novel (no prior art): bidirectionality, depth=band, φ-work storage, Born rule as basin geometry.
+  Related Work skeleton: 10/12 citations verified. Key verified: Gorin et al. PRA 70 042105, Chen-Gu-Wen PRB 96 035101, Cucchietti nlin/0201038, McInnes & Ong NPB 898 (2015), Dominguez et al. PRB 95 224423, de Vega-Suter-Pastawski JCP 139 154901, Lahlou-Liu-Martineau arXiv:2506.17149, quantum dot NatComm 7 12745, Ahmed et al. arXiv:2310.16289. SG landscape paragraph ready for Paper 2C.
+  Born rule on M×CP¹: Geometric fact ESTABLISHED (Bloch sphere cap areas = Born probabilities, exact). Derivation reduces to one claim: SCF condition → frame noncontextuality. Section 6 of working draft open. Plausibility argument given; formal proof required.
+  Outputs committed: 3 docx files in papers/02C-holographic-structure/. Session archive in memory/kb/. Ledger items #25-28 added.
+  HEAD after Oz commit: c399e2a (RC-8b). Today's additions will be committed in next batch.
+**2026-04-14 06:36–10:58** [Oz] MAJOR SESSION: 8 findings, all archived.
+  P3 §1 opener: H-only mathematical objects (G64, Gödel, Bekenstein proof M ⊊ H)
+  P3 §2: Multiverse hierarchy — potential (Im=0) → realized (Darwinism) → universe (M=past)
+  P3 §3: Arrow of time as ontological necessity; M = accumulated records; fact horizon = present
+  P3 §4: Singularity = sub-Planck M dissolution; Schwarzschild role-swap = CR Σ-M role-swap
+  P3 §5: Dark matter/energy from vacuum coherence states (RC-1 still needed)
+  P4: New holographic dictionary using orthoverse/coherosphere; fact horizon = holographic horizon
+  NEW TERMS: orthoverse (H), coherosphere (Σ), fact horizon, potential/realized multiverse
+  Archives: SESSION_2026-04-14_ORTHOVERSE_SINGULARITY_DARK_MATTER.md; P3+P4 idea files; CONCEPT_MAP
