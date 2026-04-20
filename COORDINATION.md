@@ -606,7 +606,15 @@ See session log for full dispatch tracker. Next: D2 (§5.3 category error repair
   Related Work skeleton: 10/12 citations verified. Key verified: Gorin et al. PRA 70 042105, Chen-Gu-Wen PRB 96 035101, Cucchietti nlin/0201038, McInnes & Ong NPB 898 (2015), Dominguez et al. PRB 95 224423, de Vega-Suter-Pastawski JCP 139 154901, Lahlou-Liu-Martineau arXiv:2506.17149, quantum dot NatComm 7 12745, Ahmed et al. arXiv:2310.16289. SG landscape paragraph ready for Paper 2C.
   Born rule on M×CP¹: Geometric fact ESTABLISHED (Bloch sphere cap areas = Born probabilities, exact). Derivation reduces to one claim: SCF condition → frame noncontextuality. Section 6 of working draft open. Plausibility argument given; formal proof required.
   Outputs committed: 3 docx files in papers/02C-holographic-structure/. Session archive in memory/kb/. Ledger items #25-28 added.
-  HEAD after Oz commit: c399e2a (RC-8b). Today's additions will be committed in next batch.
+**2026-04-20 04:xx** [Warp/Oz] COMPLETED: SCF fixed-point substitution reconciled to the updated Born working draft.
+  Checked \\(T_{M\\Sigma}=F[g_M(T_{M\\Sigma}),g^{FS},C]\\) with canonical branch \\(F=\\nabla^{FS}+A_C\\).
+  Direct substitution collapses the SCF condition to \\(A_C=A_C[g_M(F)]\\).
+  Case 1: constant pointer basis \\(\\Rightarrow\\) exact SCF fixed point.
+  Case 2: varying pointer basis \\(\\Rightarrow\\) SCF iff the einselection equation holds: \\(F^M_{A_C,\\mu\\nu}=\\Omega_{\\mu\\nu}[|\\psi\\rangle,g_M]\\).
+  Synced Section 11 now adds the Banach map \\(\\Phi=YM\\circ Q\\circ E\\); for \\(\\epsilon<\\epsilon^*=(C_EC_QC_{YM})^{-1}\\) it gives a unique local fixed point \\(A_C^*\\in B_R(A_0)\\) in the nondegenerate QM regime.
+  Born consequence: Born holds for SCF-einselected connections via COV + SU(d) symmetry; realistic Conjecture 6.3 status is now ~72% in the QM regime.
+  Remaining open: gauge uniqueness (Conj. 6.3′), degenerate pointer basis / Wilczek–Zee, QFT renormalization translation, global continuation, and \\(\\mathbb{C}P^{n-1}\\)/Gleason closure.
+  Files reconciled: `papers/02C-holographic-structure/DERIVATION_SCF_FIXED_POINT_SUBSTITUTION_2026-04-20.md`, `memory/kb/SESSION_2026-04-20_SCF_FIXED_POINT_SUBSTITUTION.md`, `papers/02-saturation-dynamics/PAPER2_OPEN_ITEMS_LEDGER_2026-04-17.md`, `COORDINATION.md`.
 **2026-04-14 06:36–10:58** [Oz] MAJOR SESSION: 8 findings, all archived.
   P3 §1 opener: H-only mathematical objects (G64, Gödel, Bekenstein proof M ⊊ H)
   P3 §2: Multiverse hierarchy — potential (Im=0) → realized (Darwinism) → universe (M=past)
