@@ -4,6 +4,7 @@
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage{braket}
+\usepackage{array}
 \usepackage{booktabs}
 \usepackage{xcolor}
 \usepackage{float}
@@ -22,19 +23,21 @@
 \newcommand{\Fwp}{F_{\mathrm{wp}}}
 \newcommand{\Tab}{T_{AB}}
 \newcommand{\Gll}{G_{\lambda\lambda}}
-\newcommand{\CR}{Coherence Relativity}
+\newcommand{\HCRname}{Holographic Coherence Relativity}
+\newcommand{\HCR}{HCR}
+\newcommand{\CR}{\HCR}  % v6: \CR now aliases \HCR throughout; Paper 1 uses both names
 \newcommand{\Phy}{\mathcal{R}}
 
 \begin{document}
 
-\title{Coherence Relativity I: Coherence Frames, Frame Invariance, and the Born Rule}
+\title{\HCRname{} I: Coherence Frames, Frame Invariance, and the Born Rule}
 
 \author{Bryan Kaufman}
 \affiliation{Independent Researcher}
 \email{bryankaufman@mac.com}
 \thanks{ORCID: 0009-0005-6838-2433}
 
-\date{April 4, 2026 (v4)}
+\date{April 26, 2026 (v6)}
 
 \pacs{03.65.Ta, 03.67.-a, 04.60.-m}
 
@@ -44,7 +47,7 @@
 % ABSTRACT
 % ============================================================
 \begin{abstract}
-We argue that the quantum measurement problem can be recast as a frame problem: whether a system appears coherent or definite depends on the coherence frame used to describe it, much as simultaneity depends on inertial frame in special relativity. We call this framework coherence relativity. Physical reality is described on a joint manifold $\mathcal{M} \times \Sig$, where $\mathcal{M}$ is emergent spacetime and $\Sig$ is the space of coherence frames. In this picture, wave function collapse is not a new dynamical process but a transformation between coherence frames induced by measurement interactions. We derive the Born rule for pure states as the unique probability measure invariant under coherence-frame relabelings and splittings, together with additivity and continuity, and outline the extension to mixed states by purification. This places insights from Gleason's theorem, Zurek's envariance, and operational reconstruction programs within a single geometric framework. We illustrate the proposal with the double-slit experiment in two coherence frames and identify seven experimentally testable signatures that distinguish \CR{} from standard quantum mechanics: non-linear visibility scaling, frame-transformation hysteresis, coherence-space curvature effects, modified gravitational decoherence, measurable transformation timescales, coherence revival, and a Zeno/anti-Zeno crossover prediction. The most accessible predictions---erasure hysteresis and transformation timescales---are testable with current superconducting-qubit and trapped-ion platforms.
+We argue that the quantum measurement problem can be recast as a frame problem: whether a system appears coherent or definite depends on the coherence frame used to describe it, much as simultaneity depends on inertial frame in special relativity. We call the broader framework \HCRname{} (\HCR), while using ``coherence relativity'' for the frame-relativity principle developed in this paper; this avoids confusion with contextual realism and critical realism, whose abbreviations can overlap with bare ``CR'' in adjacent literatures. Physical reality is described on a joint manifold $\mathcal{M} \times \Sig$, where $\mathcal{M}$ is emergent spacetime and $\Sig$ is the space of coherence frames. In this picture, wave function collapse is not a new dynamical process but a transformation between coherence frames induced by measurement interactions. We derive the Born rule for pure states as the unique probability measure invariant under coherence-frame relabelings and splittings, together with additivity and continuity, and outline the extension to mixed states by purification. This places insights from Gleason's theorem, Zurek's envariance, and operational reconstruction programs within a single geometric framework. We illustrate the proposal with the double-slit experiment in two coherence frames and identify eight experimentally testable signatures that distinguish \HCR{} from standard quantum mechanics: non-linear visibility scaling, frame-transformation hysteresis, coherence-space curvature effects, modified gravitational decoherence, measurable transformation timescales, coherence revival, a Zeno/anti-Zeno crossover prediction, and the absence of preferred-basis selection without record constitution. The most accessible predictions---erasure hysteresis and transformation timescales---are testable with current superconducting-qubit and trapped-ion platforms.
 \end{abstract}
 
 \maketitle
@@ -60,17 +63,21 @@ The quantum measurement problem---how definite outcomes emerge from superposed s
 
 Attempts to resolve this tension have proceeded along several lines. The mathematical framework for this tension was established by von Neumann~\cite{vonneumannMathematicalFoundationsQuantum1955}. Gleason's theorem~\cite{gleasonMeasuresClosedSubspaces1957} showed the Born rule follows from non-contextuality, but left its physical origin unexplained. Zurek's envariance~\cite{zurekDecoherenceEinselectionQuantum2003,zurekProbabilitiesEntanglementBorns2005} derived probabilities from entanglement symmetry, though critics note potential circularity. The Deutsch--Wallace approach~\cite{deutschQuantumTheoryProbability1999,wallaceEmergentMultiverseQuantum2012} obtained Born weights from rationality axioms in an Everettian universe. The decoherence program~\cite{zehInterpretationMeasurementQuantum1970,joosDecoherenceAppearanceClassical2003} explained interference suppression while assuming the Born rule. Relational quantum mechanics~\cite{rovelliRelationalQuantumMechanics1996} and QBism~\cite{fuchsIntroductionQBism2014} reinterpret the formalism without deriving probabilities. Objective collapse models~\cite{ghirardiUnifiedDynamicsMicroscopic1986,pearleCombiningStochasticDynamical1989,diosiUniversalMasterEquation1987,penroseGravitysRoleQuantum1996} modify the dynamics itself.
 
+The empirical decoherence literature also fixes the scale of the problem. Joos and Zeh showed that a dust grain in air decoheres on timescales of order $10^{-31}\,\mathrm{s}$, that even the best laboratory vacuum only stretches this to about $10^{-14}\,\mathrm{s}$, and that only near-intergalactic isolation pushes the timescale toward seconds; absent such monitoring, even macroscopic bodies such as Hyperion would sustain coherent orientation superpositions rather than stable classical trajectories~\cite{JoosZeh1985,joosDecoherenceAppearanceClassical2003}. Haroche and collaborators later tracked this progressive decoherence directly in cavity QED~\cite{Haroche1996decoherence,Haroche2012Nobel}. These facts matter here because they make classicality explicitly environment-relative, not an intrinsic property of an isolated system.
+
 Each captures an essential aspect. Yet none simultaneously provides: (i)~a derivation of the Born rule from physical principles, (ii)~a geometric framework explaining \emph{why} those principles hold, (iii)~testable predictions, and (iv)~ontological clarity about frame-invariant content.
 
 \subsection{Coherence as Relativity}
 
 We propose that the measurement problem is not a dynamical problem requiring new physics, but a \emph{frame problem}---analogous to the shift from Newtonian absolute time to the relativity of simultaneity.
 
+Throughout, we reserve \HCR{} for \HCRname{}. The shorter phrase ``coherence relativity'' refers to the specific coherence-frame sector developed here, and we avoid the bare acronym ``CR'' because it is already overloaded in nearby philosophy-of-science literature.
+
 The central idea: \textbf{coherence is frame-relative}. What appears as a definite outcome in one coherence frame appears as a coherent superposition in another, just as events simultaneous in one inertial frame are non-simultaneous in another. There is no absolute fact about whether a system ``has collapsed.''
 
 We formalize this through four elements:
 \begin{enumerate}
-\item \textbf{Coherence space~$\Sig$}: A manifold whose points represent coherence frames. Physical reality is described on $\mathcal{M} \times \Sig$.
+\item \textbf{Coherence space~$\Sig$}: A manifold whose points represent coherence frames. Physical reality is described on $\mathcal{M} \times \Sig$. We treat $\mathcal{M}$ as a given Lorentzian manifold in this paper; later papers in the series (Papers 3--4) will derive the spacetime manifold and its metric from the Hilbert-space coherence data.
 \item \textbf{Frame transformations}: Maps $U_{F \to F'}$ between coherence frames, analogous to Lorentz transformations.
 \item \textbf{Born rule as frame-invariant measure}: Requiring invariance under coherence relabelings and frame splittings, plus additivity and continuity, uniquely fixes $\mu(\psi_i) = |c_i|^2$.
 \item \textbf{Tensor field $\Tab$}: A field on $\mathcal{M} \times \Sig$ encoding the information geometry of coherence frames.
@@ -88,17 +95,19 @@ Section~\ref{sec:frames} introduces coherence frames and the geometry of $\Sig$.
 % ============================================================
 % SECTION 2: COHERENCE FRAMES
 
-\begin{table}[h!]
+\begin{table}[ht!]
 \centering
 \caption{Principal notation. Symbols in order of first appearance.}\label{tab:notation}
-\renewcommand{\arraystretch}{1.2}
-\begin{tabular}{@{}lll@{}}
+\small
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{@{}l >{\raggedright\arraybackslash}p{0.5\columnwidth} l@{}}
 \toprule
 \textbf{Symbol} & \textbf{Meaning} & \textbf{Ref.} \\
 \midrule
 \multicolumn{3}{@{}l}{\textit{Spaces}} \\[2pt]
 $\mathcal{H}$      & Hilbert space, dimension $d$               & §\ref{sec:frames} \\
-$\mathcal{M}$      & Emergent spacetime (primitive)             & §\ref{sec:intro}  \\
+$\mathcal{M}$      & Emergent spacetime (input in this paper; derived from $\mathcal{H}$ in Paper~3) & §\ref{sec:intro}  \\
 $\Sig$             & Coherence space $= U(d)/T^d$               & Def.\ 1 \\
 \midrule
 \multicolumn{3}{@{}l}{\textit{Core objects}} \\[2pt]
@@ -145,9 +154,15 @@ Let $\mathcal{H}$ be a Hilbert space of dimension~$d$. The \textbf{coherence spa
 where $U(d)$ is the unitary group and $T^d$ is the maximal torus. Mathematically, $\Sig$ is the \emph{complete flag manifold} $\mathrm{Fl}(\mathbb{C}^d)$, a compact K\"ahler manifold of real dimension $d^2 - d$~\cite{bengtssonGeometryQuantumStates2017,brodyGeometricQuantumMechanics2001}. The associated projective-state space $\mathbb{P}(\mathcal{H}) \cong \mathbb{CP}^{d-1}$ carries the standard Fubini--Study geometry~\cite{bengtssonGeometryQuantumStates2017,brodyGeometricQuantumMechanics2001,Kibble1979,AshtekarSchilling1997}; in the present framework, the information geometry used on~$\Sig$ is the pullback of that projective geometry along the state map determined by the chosen frame data.
 \end{definition}
 
+Throughout this paper, $\Sig \equiv \Sigma_{\mathrm{coh}}(\mathcal{H}) = U(d)/T^d$ denotes the coherence manifold of~$\mathcal{H}$. This is distinct from a string worldsheet $\Sigma_{\mathrm{ws}}$ and from configuration spaces such as $\mathrm{Map}(\Sigma_{\mathrm{ws}},\mathcal{M})$; later papers will use the more explicit notation $\Sigma_{\mathrm{coh}}(\mathcal{H})$ whenever multiple meanings of $\Sigma$ appear at once.
+
 \begin{definition}[Coherence Frame]
-A \textbf{coherence frame}~$F \in \Sig$ is a choice of preferred orthonormal basis $\{\ket{i}_F\}$ together with a specification of which degrees of freedom encode definiteness.
+A \textbf{coherence frame}~$F \in \Sig$ is a choice of preferred orthonormal basis $\{\ket{i}_F\}$ together with a specification of which degrees of freedom encode definiteness. Information never received by the system is excluded from its accessible sector on the same footing as information decohered to the bath.
 \end{definition}
+
+\begin{remark}[Bloch sphere: state space versus frame space]\label{rem:bloch-two-roles}
+For a qubit ($d=2$), the coherence space $\Sig = U(2)/T^2 \cong \mathbb{CP}^1 \cong S^2$ is geometrically the same manifold as the pure-state space $\mathbb{P}(\mathcal{H}) \cong \mathbb{CP}^1$. This coincidence can obscure an important conceptual distinction. As a state space, a point on the Bloch sphere specifies where the qubit state $|\psi\rangle$ is. As a coherence-frame space, a point specifies which orthonormal basis $\{\ket{e_1},\ket{e_2}\}$ is taken to define definite alternatives. In coherence relativity, $\Sig$ always denotes the latter. A state $|\psi\rangle$ is represented \emph{in} a frame $F=\{\ket{e_1},\ket{e_2}\}$ by amplitudes $c_1,c_2$ with $|\psi\rangle = c_1\ket{e_1}+c_2\ket{e_2}$; the frame changes, while the frame-invariant Born weights remain $|c_i|^2$. For $d>2$, the distinction is unavoidable because $\mathbb{P}(\mathcal{H}) = \mathbb{CP}^{d-1}$ and $\Sig = U(d)/T^d$ are no longer the same manifold.
+\end{remark}
 
 \begin{definition}[State Representation]
 For physical reality~$\mathcal{R}$, the state in frame~$F$ is
@@ -187,7 +202,7 @@ The coherence space inherits the Fubini--Study metric:
 \begin{equation}\label{eq:fubini-study}
 \Gll = \mathrm{Re}\!\left[\braket{\partial_\lambda \psi | \partial_\lambda \psi} - \braket{\partial_\lambda \psi | \psi}\!\braket{\psi | \partial_\lambda \psi}\right].
 \end{equation}
-Equation~\eqref{eq:fubini-study} measures the information-geometric distance between nearby frames. The geodesic distance $d(F, F') = \inf_\gamma \int_\gamma \sqrt{\Gll}\, d\lambda$ gives the length of the shortest path in~$\Sig$ connecting $F$ to $F'$. The distinguishability parameter $\lambda \equiv \sqrt{1 - |\!\braket{W_L|W_R}\!|^2}$ is the standard Englert--Greenberger--Yasin (EGY) coordinate~\cite{GreenbergerYasin1988,Englert1996}, so $\mathcal{V}^2 + \lambda^2 = 1$ with $\mathcal{V} = |\!\braket{W_L|W_R}\!|$. Because the Fubini--Study metric measures statistical distinguishability~\cite{BraunsteinCaves1994}, $\lambda$ serves as a natural coordinate along the decoherence trajectory in~$\Sig$.
+Equation~\eqref{eq:fubini-study} measures the information-geometric distance between nearby frames. The geodesic distance $d(F, F') = \inf_\gamma \int_\gamma \sqrt{\Gll}\, d\lambda$ gives the length of the shortest path in~$\Sig$ connecting $F$ to $F'$. The distinguishability parameter $\lambda \equiv \sqrt{1 - |\!\braket{W_L|W_R}\!|^2}$ is the standard Englert--Greenberger--Yasin (EGY) coordinate~\cite{GreenbergerYasin1988,Englert1996}, so $\mathcal{V}^2 + \lambda^2 = 1$ with $\mathcal{V} = |\!\braket{W_L|W_R}\!|$. Because the Fubini--Study metric measures statistical distinguishability~\cite{BraunsteinCaves1994}, $\lambda$ serves as a natural coordinate along the decoherence trajectory in~$\Sig$. \emph{Convention note:} throughout the \HCR{} series, $\lambda$ always follows this EGY orientation: $\lambda = 0$ is the fully coherent (undistinguishable) endpoint, $\lambda = 1$ is the fully classical (pointer-state) endpoint. Paper~2 introduces a derived coupling parameter $\kappa(x,\xi)$---distinct from~$\lambda$---that measures the strength of $\mathcal{M}$-$\Sig$ sector coupling; $\kappa$ and $\lambda$ are monotonically related but differ in orientation and domain.
 
 Figure~\ref{fig:g_lambda} shows $\Gll(\lambda)$ and its inverse $d\lambda/ds = 1/\sqrt{\Gll}$ for a multi-mode decoherence model ($N=10$ collectively coupled environment modes). Under the EGY parameterization, the metric is finite at $\lambda = 0$ and diverges as $\lambda \to 1$. The universal value $\Gll(0) = 1/2$ means the fully coherent endpoint is geometrically accessible, whereas the divergence near $\lambda = 1$ expresses the rigidity of fully established classical records. For the single-mode analytic case ($N=1$), $\Gll = 1/[2(1-\lambda^2)]$, and the multi-mode model has the same qualitative behavior. Accordingly, $d\lambda/ds = 1/\sqrt{\Gll}$ decreases from $\sqrt{2}$ at $\lambda = 0$ to $0$ as $\lambda \to 1$: distinguishability changes quickly near the coherent endpoint and progressively more slowly as classical records stabilize. A coordinate-invariant and model-independent definition of the Markov transition is deferred to Paper~2 via the $\delta\lambda$ formalism.
 
@@ -218,7 +233,7 @@ where $\partial_A := \partial/\partial x^A$. This is positive-semidefinite and m
 
 \textbf{Antisymmetric part.} The two-form $\Omega_{AB}$ derives from a connection $A_A$ on coherence space, with curvature $F_{AB} = \partial_A A_B - \partial_B A_A$. It encodes non-integrable aspects of frame changes: how coherence frames twist relative to each other along closed loops in~$\Sig$. In quasi-equilibrium situations (reversible frame changes), $\Omega_{AB} = 0$ and $\Tab$ reduces to the metric. For irreversible processes---such as partial erasure followed by attempted revival---$\Omega_{AB} \neq 0$ is the necessary condition for hysteresis: a closed loop in~$\Sig$ with $\Omega_{AB} \neq 0$ fails to return the pointer observable to its initial configuration, so forward and reverse paths are geometrically inequivalent. The metric $G_{AB}$ then determines the \emph{magnitude} of the visibility deficit through the action cost~\eqref{eq:action}; $\Omega_{AB}$ controls whether the deficit is nonzero at all.
 
-We emphasize that $\Omega_{AB}$ is \emph{not} the Berry curvature of the state. Berry curvature characterizes holonomy of the state vector under adiabatic parameter variation and lives on the external parameter manifold. $\Omega_{AB}$ is instead the curvature of the \emph{frame bundle} over~$\Sig$: it encodes how the pointer structure twists when coherence frames are transported along closed loops in~$\Sig$. It vanishes for reversible (unitary) frame changes and is nonzero precisely when a closed loop in~$\Sig$ fails to return the pointer observable to its initial configuration. The symmetric part $G_{AB}$ reproduces the Fubini--Study metric---the K\"ahler metric on $\mathbb{CP}^{d-1}$---while $\Omega_{AB}$ encodes dynamical irreversibility in the frame bundle, a structure absent from the standard K\"ahler form. The full $T_{AB} = G_{AB} + \Omega_{AB}$ therefore carries genuinely new geometric content beyond standard projective Hilbert space structure.
+The antisymmetric part $\Omega_{AB}$ has the same algebraic form as the Berry curvature two-form (Eq.~\eqref{eq:omega-explicit}), but its geometric role here is distinct: it is the curvature of the \emph{frame bundle} over~$\Sig$, encoding how the \emph{pointer observable} (not the state vector) twists when coherence frames are transported along closed loops. Standard Berry curvature characterizes holonomy of the state vector under adiabatic parameter variation; $\Omega_{AB}$ characterizes holonomy of the pointer structure. $\Omega_{AB}$ vanishes for reversible (unitary) frame changes and is nonzero precisely when a closed loop in~$\Sig$ fails to return the pointer observable to its initial configuration. The symmetric part $G_{AB}$ reproduces the Fubini--Study metric---the K\"ahler metric on $\mathbb{CP}^{d-1}$---while $\Omega_{AB}$ encodes dynamical irreversibility in the frame bundle, a structure absent from the standard K\"ahler form. The full $T_{AB} = G_{AB} + \Omega_{AB}$ therefore carries genuinely new geometric content beyond standard projective Hilbert space structure. In Paper~2, $\Omega_{AB}$ is identified with the $F_{ab}$ block of the imaginary part of $Q_{AB} = G_{AB} + iF_{AB}$; the reconciliation of the pointer-transport and state-vector holonomy perspectives is addressed there.
 
 Concretely, the antisymmetric part takes the form
 \begin{equation}\label{eq:omega-explicit}
@@ -229,7 +244,7 @@ which is the Berry curvature two-form on projective Hilbert space when restricte
 
 \textbf{Double-slit reduction.} For the one-dimensional coherence manifold $\Sig \simeq [0,1]$ with which-path parameter~$\lambda$, the tensor field reduces to the single scalar component $T_{\lambda\lambda} = \Gll(\lambda)$ (since $\Omega_{\lambda\lambda} = 0$ trivially in one dimension). The full tensor structure becomes physically relevant for systems with $\dim\Sig \geq 2$, where closed loops in coherence space are possible.
 
-The complete development of $\Tab$---including the decomposition into $\mathcal{M}$ and $\Sig$ coordinates, the cross-term $T_{M\Sigma}$ encoding $\mathcal{M}$-$\Sig$ coupling, the $\delta\lambda$ formalism separating frame-lag from decoherence progress, equations of motion, and the connection to emergent spacetime---is the subject of Paper~2. Here we require only the decomposition~\eqref{eq:tab-decomp}, the metric definition~\eqref{eq:gab}, and the qualitative role of~$\Omega_{AB}$ in generating hysteresis.
+The complete development of $\Tab$---including the decomposition into $\mathcal{M}$ and $\Sig$ coordinates, the cross-term $T_{M\Sigma}$ encoding $\mathcal{M}$-$\Sig$ coupling, the $\delta\lambda$ formalism separating frame-lag from decoherence progress, equations of motion, and the connection to emergent spacetime---is the subject of Paper~2. Here we require only the decomposition~\eqref{eq:tab-decomp}, the metric definition~\eqref{eq:gab}, and the qualitative role of~$\Omega_{AB}$ in generating hysteresis. In Paper~2, $T_{AB}$ is promoted to the quantum geometric tensor $Q_{AB} = G_{AB} + iF_{AB}$ on $\mathcal{M} \times \Sig$; the $\Sigma$-$\Sigma$ block of $Q_{AB}$ recovers $T_{AB}$, and a new cross-term $T_{M\Sigma}$ (with no Paper-1 analog) encodes $\mathcal{M}$-$\Sig$ coupling. See Paper~2 \S1.6 for the precise correspondence.
 
 \subsection{Analogy with Special Relativity}
 
@@ -479,7 +494,7 @@ The Born rule is not a postulate, a frequency statement, or a consequence of bra
 \begin{figure}[t]
 \centering
 \includegraphics[width=\columnwidth]{fig2_born_invariant_parallel.pdf}
-\caption{The Born rule as frame invariant: $ds^2$ in SR $\leftrightarrow$ $\mu = |c_i|^2$ in CR. \textbf{Left (SR):} Minkowski diagram showing two frames $S, S'$; the interval $ds^2$ is identical in both. \textbf{Right (CR):} Amplitude plane of~$\Sig$ (Bloch sphere cross-section); the Born measure $\mu = r^2 = |c_0|^2$ is invariant under frame rotations, while individual components $|c_+|^2$ are frame-dependent.}
+\caption{The Born rule as frame invariant: $ds^2$ in SR $\leftrightarrow$ $\mu = |c_i|^2$ in \HCR{}. \textbf{Left (SR):} Minkowski diagram showing two frames $S, S'$; the interval $ds^2$ is identical in both. \textbf{Right (\HCR):} Amplitude plane of~$\Sig$ (Bloch sphere cross-section); the Born measure $\mu = r^2 = |c_0|^2$ is invariant under frame rotations, while individual components $|c_+|^2$ are frame-dependent.}
 \label{fig:born_invariant}
 \end{figure}
 
@@ -512,7 +527,7 @@ Recent delayed-choice and quantum-eraser experiments sharpen the timing and cont
 
 In \CR{}, the late choice does not rewrite an already fixed past. It selects the final comparison frame and therefore the record algebra in which the experiment is described. If the closing frame preserves which-path records, the experiment ends in a definite-path description. If the closing frame erases the distinguishing records, it ends in an interference-compatible description. What changes is not an earlier fact, but whether the earlier interaction had already become a Born-compliant, observer-independent record across the relevant transport loop.
 
-This is the temporal point developed in Sec.~\ref{sec:temporal}: an event can be earlier in coordinate time without yet belonging to the CR-past. Delayed-choice experiments therefore do not force retrocausality; they display frame-relative fact-establishment. The later intervention completes the trajectory through~$\Sig$ and determines which facts are jointly portable, rather than altering a past that was already fixed.
+This is the temporal point developed in Sec.~\ref{sec:temporal}: an event can be earlier in coordinate time without yet belonging to the HCR-past. Delayed-choice experiments therefore do not force retrocausality; they display frame-relative fact-establishment. The later intervention completes the trajectory through~$\Sig$ and determines which facts are jointly portable, rather than altering a past that was already fixed.
 
 \subsection{Wigner's Friend}
 
@@ -553,11 +568,15 @@ Einstein, Podolsky, and Rosen~\cite{einsteinCanQuantumMechanical1935} argued tha
 
 The cat-in-a-box scenario involves two frames: $F_{\mathrm{outside}}$ (cat in superposition) and $F_{\mathrm{inside}}$ (cat alive or dead). Opening the box is a frame transformation $U_{F_{\mathrm{outside}} \to F_{\mathrm{inside}}}$, not a physical collapse. The cat's definite state exists in $F_{\mathrm{inside}}$ at all times; it simply isn't accessible from $F_{\mathrm{outside}}$ without the frame transformation.
 
+This is quantitative, not merely verbal. Joos--Zeh estimates and their later experimental confirmation show that macroscopic record states are manufactured collision by collision on extremely short, environment-dependent timescales; absent such monitoring, even macroscopic orientational states such as Hyperion's would remain coherently delocalized rather than classically definite~\cite{JoosZeh1985,joosDecoherenceAppearanceClassical2003,Haroche1996decoherence}.
+
 \subsection{Quantum Zeno Effect}
 
 Frequent measurements prevent a system from evolving---how can observation stop dynamics? The Zeno effect admits several explanations (projection~\cite{MisraSudarshan1977}; Zeno subspace confinement~\cite{FacchiPascazio2002}; continuous environmental monitoring). \CR{} provides a unified geometric language: each explanation becomes a distinct physical claim about what happens in~$\Sig$ during measurement, and each leads to distinguishable predictions (a full four-explanation comparative framework with experimentally independent discriminating axes is developed in Paper~2).
 
 The \CR{}-specific contribution is the $D_f$ completion interpretation: each strong projective measurement completes the quantum-to-classical transition, fully populating the diagonal density matrix in the pointer basis ($\rho_{\mathrm{pointer}} = \sum_i p_i |i\rangle\langle i|$, all off-diagonals zero). The Zeno regime corresponds to $\tau_{\mathrm{meas}} < \tau_{\mathrm{transform}}$ (Eq.~\ref{eq:tau}): each measurement completes $D_f$ before Hamiltonian evolution can repopulate coherences. The anti-Zeno regime corresponds to $\tau_{\mathrm{meas}} > \tau_{\mathrm{transform}}$: $D_f$ is not fully populated between steps, coherences survive, and the system evolves into uncovered regions of~$\Sig$.
+
+This completion picture aligns naturally with the measurement-induced phase transition (MIPT) literature~\cite{Li2019MIPT,Bao2020MIPT,Noel2022MIPT,GoogleMIPT2023}. In that language, the threshold $\tau_{\mathrm{meas}} \approx \tau_{\mathrm{transform}}$ plays the role of a critical monitoring scale: below it the stationary distribution on~$\Sig$ remains spread over coherent frames, while above it weight concentrates near pointer frames and classicalization stabilizes. On the present view, the MIPT is the many-body manifestation of the same $D_f$-completion threshold, with the coherence-relativity quasipotential developing the non-analytic structure characteristic of the transition.
 
 Regardless of which Zeno mechanism is correct, the paradox follows the general pattern: the naive observer imports the partially-populated free-evolution dynamics (quantum evolution ongoing, coherences present) into the measurement frame (where measurement has at least partially populated~$D_f$) without applying the frame transformation.
 
@@ -571,6 +590,10 @@ In \CR{}, the halfer/thirder debate is a frame-mismatch error. Beauty before sle
 
 By~(A3), the Born measure in~$F_{\mathrm{wake}}$ depends only on $|\psi\rangle_{F_{\mathrm{wake}}}$ and $|i\rangle_{F_{\mathrm{wake}}}$---information outside the frame cannot enter the measure. The coin outcome, never received by Beauty, is excluded by~(A3). By~(A1), the three permutation-symmetric alternatives in the accessible sector receive equal weight: $\mu_{F_{\mathrm{wake}}}(H_{\mathrm{Mon}}) = \mu_{F_{\mathrm{wake}}}(T_{\mathrm{Mon}}) = \mu_{F_{\mathrm{wake}}}(T_{\mathrm{Tue}}) = 1/3$. The halfer's 1/2 is correct in~$F_{\mathrm{pre}}$; the thirder's 1/3 is correct in~$F_{\mathrm{wake}}$. The paradox arises from demanding a single frame-independent credence---the coherence-frame analog of demanding absolute simultaneity in SR.
 
+This suggests a sharpened preferred-basis criterion: a basis is preferred iff self-locating propositions can be consistently assigned truth values within it. Decoherence then selects not merely stable pointer states, but the basis in which questions of the form ``which outcome am I in?'' are well-posed. In the Sleeping Beauty protocol, the centered alternatives $\{H_{\mathrm{Mon}},T_{\mathrm{Mon}},T_{\mathrm{Tue}}\}$ are exactly the alternatives that remain in Beauty's accessible sector at $F_{\mathrm{wake}}$, so they constitute the preferred basis for her post-amnesia credence assignment.
+
+Beauty's amnesia is therefore the destruction of a temporal record, not the creation of new information. The transition $F_{\mathrm{pre}} \to F_{\mathrm{wake}}$ removes the ``which awakening'' record from the accessible sector of~$\Sig$, increasing self-locating uncertainty by decohering a temporal degree of freedom into the bath. In this sense the protocol fits the temporal analysis of Sec.~\ref{sec:temporal}: in coherence relativity, what counts as past is the structure of presently available records, so erasing a temporal record reopens centered uncertainty without changing the underlying coin history.
+
 Sebens and Carroll's epistemic separability principle---that changes to the environment alone do not affect local probability assignments---is compatible with Born measure invariance~(A1) and follows from~(A1) applied to frame transformations that act only on the bath sector of~$\Sig$. The structural identity between Sleeping Beauty and Everettian branch probability means that \CR{}'s resolution automatically provides a geometric derivation of the Born rule in the many-worlds setting, without requiring the decision-theoretic apparatus of Deutsch--Wallace~\cite{deutschQuantumTheoryProbability1999,wallaceEmergentMultiverseQuantum2012} or the envariance argument of Zurek~\cite{zurekProbabilitiesEntanglementBorns2005}.
 
 
@@ -582,6 +605,8 @@ Sebens and Carroll's epistemic separability principle---that changes to the envi
 \subsection{Resolution of the Measurement Problem}
 
 \CR{} offers a relational resolution of the measurement problem: ``collapse'' is a frame transformation, not a dynamical process. The Born rule is not postulated but derived as the unique frame-invariant measure. Definite outcomes exist in appropriate coherence frames; superposition exists in others. There is no need to explain \emph{when} or \emph{how} collapse occurs, because collapse is not a physical event---it is a change of description. Crucially, no frame ever loses coherence: what changes is the geometric relationship between alternatives, as distinguishability becomes redundantly encoded in the environment. Coherence is not destroyed but \emph{re-described} from the perspective of a different frame.
+
+A causal-direction caveat is important here. The joint space $\mathcal{M}\times\Sig$ should not be read as if spacetime drives coherence space, or vice versa, at the ontological level. Within the constituted arena the dynamics are bidirectional: $\Tab$ couples $\mathcal{M}$ and $\Sig$ simultaneously, and when we say that ``the environment drives decoherence'' the environment is itself already a projection of the deeper structure into $\mathcal{M}$-coordinates. The ontological direction is constitutive rather than dynamical, schematically $\mathcal{H} \rightsquigarrow \Sig \rightsquigarrow \mathcal{M}$.
 
 \subsection{Frame-Relative Pastness and Factual Closure}
 
@@ -685,21 +710,24 @@ Before stating the predictions, we identify the physical origin of the deviation
 
 Predictions~(1) (non-linear visibility) and (5) (transformation timescale) follow directly from $\Gll$ via the geodesic integral (Eq.~\ref{eq:tau}); they require no dynamical assumptions beyond the metric. Predictions~(2) (hysteresis $\delta\mathcal{V}$), (3) (curvature scaling), (4) (gravitational decoherence modification), and (6) (coherence revival) additionally invoke the stochastic action $\mathcal{S}[\gamma]$ and drift~$F^A$, whose explicit derivation from system--environment coupling is deferred to Paper~2. The order-of-magnitude estimates for these four predictions are motivated by the geometric structure but should be understood as indicative rather than derived. The quantitative falsifiability of predictions~(1) and (5) is therefore independent of Paper~2.
 
-Seven experimentally testable signatures distinguish \CR{} from standard QM:
+Eight experimentally testable signatures distinguish \HCR{} from standard QM:
 \begin{enumerate}
-\item \textbf{Non-linear visibility}: the CR geometric traversal $d_\Sig(\lambda)/d_\Sig(0)$ deviates from the standard QM visibility $\mathcal{V} = \sqrt{1-\lambda^2}$ due to $\Gll$ curvature (Fig.~\ref{fig:cr_vs_standard}).
+\item \textbf{Non-linear visibility}: the \HCR{} geometric traversal $d_\Sig(\lambda)/d_\Sig(0)$ deviates from the standard QM visibility $\mathcal{V} = \sqrt{1-\lambda^2}$ due to $\Gll$ curvature (Fig.~\ref{fig:cr_vs_standard}).
 \item \textbf{Frame-transformation hysteresis}: Erasure paths $\lambda: 0 \to 1 \to 0$ show path-dependent visibility recovery.
 \item \textbf{Coherence-space curvature}: Many-body systems exhibit $\Gll$ scaling deviations from mean-field predictions.
 \item \textbf{Modified gravitational decoherence}: Gravitational contributions to~$\Tab$ produce mass-dependent frame-transformation rates differing from Di\'osi--Penrose~\cite{diosiUniversalMasterEquation1987,penroseGravitysRoleQuantum1996}.
 \item \textbf{Transformation timescales}: Weak measurements probe finite frame-transformation duration, resolvable with current qubit platforms.
 \item \textbf{Coherence revival}: Closed systems show partial coherence recovery forbidden in irreversible-collapse models~\cite{ghirardiUnifiedDynamicsMicroscopic1986,carlessoTestingLargescaleLimit2020}.
-\item \textbf{Zeno/anti-Zeno crossover}: The crossover timescale is $\tau_{\mathrm{meas}} \approx \tau_{\mathrm{transform}}$ from the $D_f$ completion condition, distinct from the spectral-density prediction~\cite{KofmanKurizki2000}. Pointer-basis dependence of the crossover is a \CR{}-specific signature.
+\item \textbf{Zeno/anti-Zeno crossover}: The crossover timescale is $\tau_{\mathrm{meas}} \approx \tau_{\mathrm{transform}}$ from the $D_f$ completion condition, distinct from the spectral-density prediction~\cite{KofmanKurizki2000}. Pointer-basis dependence of the crossover is an \HCR{}-specific signature.
+\item \textbf{No preferred basis without record constitution}: In decoherence-protected systems that do not sustain stable record-bearing substructures, measurement-like interactions without external record formation should fail to select a unique preferred basis.
 \end{enumerate}
+
+Prediction~8 can be operationalized in engineered interferometric platforms by comparing decoherence-protected superconducting or trapped-ion devices with and without an explicit record-forming coupling. \HCR{} predicts that preferred-basis selection tracks the constitution of stable record-bearing structure, not merely the presence of an abstract measurement Hamiltonian.
 
 \begin{figure}[t]
 \centering
 \includegraphics[width=\columnwidth]{fig6_cr_vs_standard.pdf}
-\caption{Comparison of the normalized \CR{} geometric distance $d_\Sig(\lambda)/d_\Sig(0)$ (solid, red) with standard QM visibility $\mathcal{V} = \sqrt{1-\lambda^2}$ (dashed, blue) under the EGY parameterization $\lambda = \sqrt{1-|\langle W_L|W_R\rangle|^2}$. The CR curve deviates from the standard QM prediction, reaching a maximum difference $\Delta \approx 0.12$ at $\lambda \approx 0.52$.}
+\caption{Comparison of the normalized \HCR{} geometric distance $d_\Sig(\lambda)/d_\Sig(0)$ (solid, red) with standard QM visibility $\mathcal{V} = \sqrt{1-\lambda^2}$ (dashed, blue) under the EGY parameterization $\lambda = \sqrt{1-|\langle W_L|W_R\rangle|^2}$. The \HCR{} curve deviates from the standard QM prediction, reaching a maximum difference $\Delta \approx 0.12$ at $\lambda \approx 0.52$.}
 \label{fig:cr_vs_standard}
 \end{figure}
 
@@ -736,7 +764,7 @@ The timescales above are \emph{not} universal predictions of the framework: they
   framedot/.style={circle,fill=black,inner sep=1.5pt}
 ]
 %
-% --- Top row: CR and QRF descriptions (above the diagrams) ---
+% --- Top row: HCR and QRF descriptions (above the diagrams) ---
 \node[descbox] at (-6.6,2.3) {%
   \textbf{Coherence relativity}\\[1pt]
   One reality $R$, many frames $F\in\Sig$\\
@@ -800,13 +828,17 @@ The timescales above are \emph{not} universal predictions of the framework: they
 
 Compared to QBism~\cite{fuchsIntroductionQBism2014} and Healey's pragmatist quantum theory~\cite{healeyQuantumRevolutionPhilosophy2017}, \CR{} is realist: frame-invariant content (Born measures, inner products, spectra) constitutes observer-independent physical fact. Healey's approach shares \CR{}'s emphasis on relational structure but does not derive the Born rule or provide a geometric arena.
 
+It is also useful to distinguish coherence relativity from Benoist-style contextual realism in contemporary philosophy~\cite{Benoist2021ContextualRealism}. There the core claim is metaphysical and metaphilosophical: reality is neither a mind-dependent construction nor an acontextual ``in-itself,'' but is articulable only within specific language-games, practices, and categorial settings. Coherence relativity shares the rejection of naive acontextual realism, but the sense of context is different. Here context is physical rather than primarily linguistic or normative: boundary conditions, interaction networks, information-bearing channels, and the record structure encoded by a coherence frame. The project is therefore not a Wittgensteinian therapeutic redescription of scientific discourse, but a dynamical and geometric proposal about the physical structure from which effective laws arise.
+
+A related comparison point is the family of contextual realist interpretations of quantum mechanics associated with authors working near relational and neo-Copenhagen approaches~\cite{Pris2021RealMeaningQuantumMechanics}. Those accounts typically leave the standard quantum formalism intact and argue that measurement outcomes and state-ascriptions should be understood as context-dependent while preserving realism about experimentally accessible structures. Coherence relativity overlaps with them in rejecting acontextual hidden-value pictures and in treating definiteness as frame- or context-bound. It departs, however, in ambition and scope: rather than interpreting a fixed formalism, it is proposed as an underlying coherence-first framework from which quantum behavior, local field dynamics, and relativistic spacetime structure emerge as regime-specific limits.
+
 Compared to many-worlds~\cite{everettRelativeStateFormulation1957,dewittManyWorldsInterpretationQuantum1973}, \CR{} posits one reality and many frames, not many worlds and one agent. The logical structure of the Born rule derivation parallels the Deutsch--Wallace approach, but replaces branching ontology with geometric frame-invariance. On this reading, the branching structure ordinarily associated with Everettian multiplicity is relocated from a proliferation of spacetime worlds to the space of admissible decohering continuations on~$\Sig$: different quasi-classical histories correspond to different frame-relative sectors and transport paths available within the common coherence manifold. Emergent spacetime~$\mathcal{M}$ then records a realized quasi-classical history rather than serving as the fundamental container of all branches. In this sense, \CR{} preserves continuous Schr\"odinger evolution of the total state while re-locating branching and record formation from a multiplicity of worlds to the geometry of coherence frames. This is an interpretive consequence of the kinematics developed here; a full dynamical account of how particular spacetime histories are selected on~$\mathcal{M}\times\Sig$ is deferred to Paper~2.
 
-Compared to Bohmian mechanics~\cite{Bohm1952}, \CR{} also assigns explanatory weight to a geometrically defined structure guiding the emergence of classical behavior, but the role of the quasipotential is different. Bohm's quantum potential is defined in configuration space through a polar decomposition of~$\psi$ and guides hidden particle trajectories; the CR quasipotential $V(\lambda)$ is derived from the coordinate-invariant Fubini--Study geometry and guides frame evolution on~$\Sig$ toward stable pointer sectors. The analogy is therefore structural rather than ontological: \CR{} retains the guidance-landscape intuition without introducing hidden positions or a second ontology alongside the wavefunction.
+Compared to Bohmian mechanics~\cite{Bohm1952}, \CR{} also assigns explanatory weight to a geometrically defined structure guiding the emergence of classical behavior, but the role of the quasipotential is different. Bohm's quantum potential is defined in configuration space through a polar decomposition of~$\psi$ and guides hidden particle trajectories; the HCR quasipotential $V(\lambda)$ is derived from the coordinate-invariant Fubini--Study geometry and guides frame evolution on~$\Sig$ toward stable pointer sectors. The analogy is therefore structural rather than ontological: \CR{} retains the guidance-landscape intuition without introducing hidden positions or a second ontology alongside the wavefunction.
 
 The quantum reference frame (QRF) program~\cite{bartlettReferenceFramesSuperselection2007,giacominiQuantumMechanicsCovariance2019,delahametteQuantumReferenceFrames2020} shares \CR{}'s emphasis on frame dependence. In QRF work, entanglement and superposition can change when the reference system changes~\cite{giacominiQuantumMechanicsCovariance2019}, and several approaches seek perspective-neutral structures~\cite{vanrietveldeChangePerspectiveSwitching2020,loveridgeSymmetryReferenceFrames2018}. \CR{} differs in scope. QRFs transform between quantum systems serving as references, whereas coherence frames transform between \emph{descriptive bases} for a fixed system. The coherence space~$\Sig$ supplies a global geometric arena that is usually absent in QRF treatments, and in \CR{} the Born rule appears as the unique invariant measure on that arena rather than as an extra assumption. Recent work showing that the sum of entanglement and subsystem coherence is invariant under QRF transformations~\cite{cepollaroSumEntanglementSubsystem2025} supports the broader claim that physical reality is carried by frame-invariant quantities, not by any one frame-dependent description. Figure~\ref{fig:sigma-qrf} summarizes the relation.
 
-The relational flavor of \CR{} is especially close to Rovelli's loop quantum gravity program~\cite{rovelliQuantumGravity2004}. In that vocabulary, spin networks are discrete relational states of geometry, partial observables are quantities defined through their correlations, and relational time means time read from those correlations rather than from an external clock. In LQG, geometry is not a fixed background but part of the quantum state itself, built from relations among degrees of freedom. \CR{} adopts the same style of reasoning at the coherence level: coherence frames are not imposed on top of a pre-given quantum state but are defined together with that state through the pointer structure. Rovelli's account of time in terms of correlations among observables~\cite{rovelliPartialObservables2002} likewise parallels the CR discussion of past, present, and future in Sec.~\ref{sec:temporal}. A fuller unification of LQG-style relational geometry with the joint manifold $\mathcal{M}\times\Sig$ is reserved for Paper~2.
+The relational flavor of \CR{} is especially close to Rovelli's loop quantum gravity program~\cite{rovelliQuantumGravity2004}. In that vocabulary, spin networks are discrete relational states of geometry, partial observables are quantities defined through their correlations, and relational time means time read from those correlations rather than from an external clock. In LQG, geometry is not a fixed background but part of the quantum state itself, built from relations among degrees of freedom. \CR{} adopts the same style of reasoning at the coherence level: coherence frames are not imposed on top of a pre-given quantum state but are defined together with that state through the pointer structure. Rovelli's account of time in terms of correlations among observables~\cite{rovelliPartialObservables2002} likewise parallels the coherence-relativity discussion of past, present, and future in Sec.~\ref{sec:temporal}. A fuller unification of LQG-style relational geometry with the joint manifold $\mathcal{M}\times\Sig$ is reserved for Paper~2.
 
 
 \subsection{Geometric Emergence Programs}
@@ -818,7 +850,7 @@ Coherence relativity belongs to a broader contemporary movement in which geometr
 
 The coherence parameter~$\lambda$ also suggests a natural temporal reading. At $\lambda = 0$ the system is fully coherent: no stable classical record has formed, and multiple outcomes remain open possibilities. As $\lambda \to 1$, the system approaches a pointer frame: records become stable, outcomes become definite, and the metric $\Gll$ diverges. We interpret this divergence as the rigidity of the past. Once a classical record is fully established, reversing the trajectory through~$\Sig$ becomes geometrically costly.
 
-To keep these temporal claims distinct, three structures should be separated. \textit{$\mathcal{M}$ alone}: ordinary spacetime ordering of events, with the familiar SR relativity of simultaneity for spacelike separation. \textit{$\Sig$ alone}: not a second clock, but the ordering of decoherence progress---how far record formation has advanced along a trajectory in coherence space. \textit{$\mathcal{M} \times \Sig$}: the full CR description, in which an interaction has both a spacetime location and a coherence-frame status telling us whether its associated records are still open, still forming, or already settled. The key point is that coordinate-time order and fact-closure on~$\Sig$ need not coincide.
+To keep these temporal claims distinct, three structures should be separated. \textit{$\mathcal{M}$ alone}: ordinary spacetime ordering of events, with the familiar SR relativity of simultaneity for spacelike separation. \textit{$\Sig$ alone}: not a second clock, but the ordering of decoherence progress---how far record formation has advanced along a trajectory in coherence space. \textit{$\mathcal{M} \times \Sig$}: the full HCR description, in which an interaction has both a spacetime location and a coherence-frame status telling us whether its associated records are still open, still forming, or already settled. The key point is that coordinate-time order and fact-closure on~$\Sig$ need not coincide.
  
 This suggests a simple three-part picture inside \CR{}. Coherence ($\lambda \approx 0$) corresponds to the open future, where no observer-independent fact about a measurement outcome has yet been fixed. The intermediate region $0 < \lambda < 1$ corresponds to mixed, partly decohered frames: the present, where records are in the process of being formed. Decoherence ($\lambda \to 1$) corresponds to the fixed past, where stable pointer records satisfy Proposition~\ref{prop:observer-independent-fact}. Because $\Gll \to \infty$ as $\lambda \to 1$ (Sec.~\ref{sec:tensor}), the geodesic bound~\eqref{eq:tau} implies that this transition cannot be literally instantaneous.
  
@@ -827,7 +859,7 @@ Operationally, the temporal labels line up with frame type as follows:
 {\small
 \begin{tabular}{@{}llll@{}}
 \toprule
-Frame & $\lambda$ & \shortstack{Record\\status} & \shortstack{CR-\\time} \\
+Frame & $\lambda$ & \shortstack{Record\\status} & \shortstack{HCR-\\time} \\
 \midrule
 Coherent & $\approx 0$ & \shortstack{no stable\\records} & future \\
 \shortstack{Mixed/\\intermediate} & $0 < \lambda < 1$ & \shortstack{records\\forming} & present \\
@@ -837,9 +869,9 @@ Coherent & $\approx 0$ & \shortstack{no stable\\records} & future \\
 }
 \end{center}
 
-The Born measure $\mu_F(i) = |c_i|^2$ exists throughout this process. It is defined even in fully coherent frames, where $\mathcal{D}_F \approx \emptyset$. For that reason the CR-future is better described as pre-record than pre-Born. The weights are already there. What is missing is the stable record structure that turns those weights into definite facts about particular outcomes. Put differently: decoherence does not create the Born weights; it stabilizes the records that instantiate them.
+The Born measure $\mu_F(i) = |c_i|^2$ exists throughout this process. It is defined even in fully coherent frames, where $\mathcal{D}_F \approx \emptyset$. For that reason the HCR-future is better described as pre-record than pre-Born. The weights are already there. What is missing is the stable record structure that turns those weights into definite facts about particular outcomes. Put differently: decoherence does not create the Born weights; it stabilizes the records that instantiate them.
 
-\textit{Retrocausal paradoxes dissolved.---}This viewpoint also removes the force of retrocausal paradoxes. Delayed-choice and some weak-measurement experiments seem to show that a later intervention changes an earlier fact. In \CR{}, the key distinction is between coordinate-time order and CR-temporal order. An event is CR-past only when it has become a Born-compliant, observer-independent fact across the relevant transport loops. Roughly speaking, the issue is whether the candidate fact survives a closed cycle of frame changes and comes back unchanged. An event can therefore be earlier in coordinate time and still remain in the CR-present for some frames. The later intervention does not change the past; it helps complete the transition through~$\Sig$ by which the fact becomes globally fixed.
+\textit{Retrocausal paradoxes dissolved.---}This viewpoint also removes the force of retrocausal paradoxes. Delayed-choice and some weak-measurement experiments seem to show that a later intervention changes an earlier fact. In \HCR{}, the key distinction is between coordinate-time order and HCR-temporal order. An event is HCR-past only when it has become a Born-compliant, observer-independent fact across the relevant transport loops. Roughly speaking, the issue is whether the candidate fact survives a closed cycle of frame changes and comes back unchanged. An event can therefore be earlier in coordinate time and still remain in the HCR-present for some frames. The later intervention does not change the past; it helps complete the transition through~$\Sig$ by which the fact becomes globally fixed.
 
 \textit{Convergence of SR and QM temporal relativity.---}This is the point of contact with special relativity. SR says that simultaneity is frame-dependent. \CR{} says that the status of an event as future, present, or past is frame-dependent at the quantum level. In both cases, temporal relations are not absolute at the relevant level of description. Just as a Lorentz boost can change which distant events count as simultaneous without changing the underlying events, a coherence-frame change can alter whether a record counts as still forming or already settled without changing the underlying process. On the spacetime side, the dependence is governed by the Lorentz group $O(1,3)$. On the coherence side, it is governed by the group~$G$ of Born-preserving coherence-frame transformations. The joint manifold $\mathcal{M} \times \Sig$ is therefore the natural place to state the shared principle. Full geometric unification, including dynamics on $\mathcal{M} \times \Sig$ and holographic connections, is deferred to Paper~2.
 
@@ -852,7 +884,7 @@ The Born measure $\mu_F(i) = |c_i|^2$ exists throughout this process. It is defi
 
 \section{Conclusion}\label{sec:conclusion}
 
-We have introduced coherence relativity, a geometric framework in which:
+We have introduced coherence relativity as the coherence-frame sector of \HCRname{}, a geometric framework in which:
 \begin{enumerate}
 \item Quantum coherence is frame-relative, like simultaneity in special relativity.
 \item The Born rule $\mu_F(i) = |c_i|^2$ is the unique frame-invariant probability measure on the coherence manifold~$\Sig$.
@@ -861,9 +893,9 @@ We have introduced coherence relativity, a geometric framework in which:
 \item Temporal ordering---past, present, and future---is coherence-frame-relative: decoherence corresponds to the fixed past ($\lambda\to 1$, $\Gll\to\infty$), coherence to the open future ($\lambda\approx 0$), and the frame-transition zone to the present. \CR{} and SR thereby instantiate the same temporal-relativity principle at different strata of physical description (Sec.~\ref{sec:temporal}).
 \end{enumerate}
 
-The framework unifies insights from Gleason, Zurek, and operational reconstruction programs while identifying seven experimentally testable signatures. The most accessible---frame-transformation hysteresis and measurable transformation timescales---are within reach of current superconducting qubit and trapped ion experiments.
+The framework unifies insights from Gleason, Zurek, and operational reconstruction programs while identifying eight experimentally testable signatures. The most accessible---frame-transformation hysteresis and measurable transformation timescales---are within reach of current superconducting qubit and trapped ion experiments.
 
-Paper~2 will develop the full tensor field~$\Tab$ on $\mathcal{M} \times \Sig$, including the explicit derivation of $T_{M\Sigma}$, the $\delta\lambda$ formalism separating frame-lag from decoherence progress, the coordinate-invariant Markov transition criterion, the mixed-states extension of the Born rule via purification, equations of motion for frame dynamics, and holographic connections between coherence-space geometry and emergent spacetime.
+Paper~2 will develop the full tensor field~$\Tab$ on $\mathcal{M} \times \Sig$, including the explicit derivation of $T_{M\Sigma}$, the $\delta\lambda$ formalism separating frame-lag from decoherence progress, the coordinate-invariant Markov transition criterion, the mixed-states extension of the Born rule via purification, equations of motion for frame dynamics, and holographic connections between coherence-space geometry and emergent spacetime. Paper~2C gives a dynamical derivation of the Born rule from the self-consistency fixed-point condition on $\mathcal{M} \times \Sig$ (the SCF$\to$COV$\to$noncontextuality$\to$Gleason/Busch chain), recovering the present axiomatic result~(Theorem~\ref{thm:born}) as a consequence in the SCF-saturated sector.
 
 % ============================================================
 % DECLARATIONS (Required by Foundations of Physics)
