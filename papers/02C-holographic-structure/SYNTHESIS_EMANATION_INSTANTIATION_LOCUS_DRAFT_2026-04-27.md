@@ -120,7 +120,7 @@ localized at ∂M, with Π_{μν} the boundary projector. ✅ DERIVED (Paper 2C 
 **The geometric coefficient** α_geom = N₀² · I₆/I₂ = 10√2/(3π) ≈ 1.5005 is derived from the KCR zero-mode backreaction integral (RC-8b). The 0.033% proximity to 3/2 is a numerical coincidence; the two quantities answer different questions. ✅ DERIVED.
 
 **Open gates in §2.2:**
-- Physical k_c from Σ geometry (RC-3/Paper 4 deliverable): currently inferred as k_c = 5/χ_{CMB} from the 69% match; needs a first-principles derivation from FS geometry. ❌ MISSING.
+- Physical k_c from Σ geometry (RC-3 ⚠️ PARTIAL 2026-04-27): D1 (λ_min=d) ✅, D2 (Lorentzian propagator) ✅, D3a (ℓ_min=2 via T^(eff) rank-2 + SO(3) isotropy of ∂M) ✅ — k_c=5/R_Σ is now structurally derived; D3b (R_Σ=χ_CMB via holographic projection) ❌ Paper 4 §3 deliverable.
 - c_Γ from sourced EOM (RC-4): the constraint is Ω_{drag} = α_geom c_Γ² = 0.69, giving c_Γ ≈ 0.678 by inference; the derivation from the sourced T_M EOM is not complete. ⚠️ PARTIAL.
 - Full GKPW-type prescription and boundary correlators. ❌ MISSING.
 
@@ -230,7 +230,7 @@ The coincidence of all three is not assumed; it follows from Lemma 1 (below).
 - Isotropic T_M (uniform cosmological decoherence): w = -1. This is a boundary-localized dark energy contribution with α_geom = 10√2/(3π) ≈ 1.5005 as the derived coupling coefficient.
 - Anisotropic T_M (cluster-scale decoherence tracking baryons): w = 0. This is pressureless dark matter. ✅ Both derived.
 
-**Corollary 2 (CMB Quadrupole Suppression).** The primordial power spectrum modification Δ²_Σ(k) = A_s · k²/(k² + k_c²) suppresses the quadrupole by 69% at k_c = 5/χ_{CMB}, matching the Planck observation of ~67% within 3%. ✅ Verified numerically; k_c = 5/χ_{CMB} is observationally inferred (physical k_c from Σ geometry is ❌ MISSING).
+**Corollary 2 (CMB Quadrupole Suppression).** The primordial power spectrum modification Δ²_Σ(k) = A_s · k²/(k² + k_c²) suppresses the quadrupole by 69% at k_c = 5/χ_{CMB}, matching the Planck observation of ~67% within 3%. ✅ Verified numerically; k_c = 5/R_Σ is now structurally derived (T^(eff) rank-2 bilinear of spin-1 T_M → Sym²(j=1) = j=0 ⊕ j=2 → ℓ_min=2 → d'=25 → coefficient 5 ✅ 2026-04-27); R_Σ=χ_CMB remains ❌ Paper 4 §3 deliverable. Paper 2C §5.3 states the conditional result explicitly: k_c = 5/χ_CMB conditional on R_Σ=χ_CMB (Paper 4 §3). See `M1_2C_SEC5_PROSE_UPDATE_2026-04-26.md` §5.1–75.3 for full insertion prose.
 
 **Corollary 3 (KCBS Contextuality Bound).** On any fiber Σ_x = CP² (d = 3) over a point x ∈ ∂M, the Born rule from (II) implies the Klyachko–Can–Binicioğlu–Shumovsky maximum: max_{ψ} Σ_i W(Π_i | ψ) = √5 ≈ 2.236, exceeding the noncontextual bound of 2. The excess √5 − 2 is the quantitative signature of D3 holonomy non-triviality around the KCBS pentagon. ✅ Proved (DERIVATION_KCBS_2026-04-19.md, Theorem 7.1).
 
@@ -244,7 +244,7 @@ The coincidence of all three is not assumed; it follows from Lemma 1 (below).
 |---|------|------|--------|--------|
 | ~~G1~~ | ~~Conjecture 6.3′ — gauge uniqueness of A_C~~ | ✅ **PROVED 2026-04-27** — Theorem G1-Cov (axioms A1–A4 → naturality → Lemma NP → COV unconditional for all admissible F) + Theorem G1-Full (∇^FS uniqueness by Kobayashi–Nomizu + SU(d) transitivity on orthonormal bases → single gauge orbit). Born chain now unconditional in non-degenerate QM regime. See `G1_PHASE1_RESULT_2026-04-27.md`, `G1_PHASE2_RESULT_2026-04-27.md`. ⚠️ Requires independent mathematical review before final claim. | — | — |
 | ~~G2~~ | ~~α = 3/2 vs α_{geom} = 10√2/(3π) — coincidence or derivation?~~ | ✅ **RESOLVED 2026-04-26** — α_geom = 10√2/(3π) is **derived** (RC-8b + independent Python verification); proximity to 3/2 is a Wallis-product transcendental near-coincidence (same 0.034% error as π ≈ 20√2/9). Conjecture C1 retired. See `RC2_RESOLUTION_2026-04-26.md`. | — | — |
-| G3 | Physical k_c from FS geometry | calculation | 2–4 weeks (Paper 4 deliverable) | Parameter-free CMB prediction |
+| G3 | Physical k_c from FS geometry | ⚠️ **PARTIAL 2026-04-27** — D1 (λ_min=d, exact, ✅); D2 (Lorentzian propagator G(k,n)=1/(k²+λ_n/R_Σ²), k_Σ=√d'/R_Σ, ✅); D3a (ℓ_min=2 via T^(eff) rank-2 bilinear of spin-1 T_M + SO(3) isotropy of ∂M, ✅ — coefficient 5 in k_c=5/R_Σ structurally derived); D3b (R_Σ=χ_CMB via Φ:Σ→∂M) ❌ Paper 4 §3. Paper 2C §5.3 states conditional result k_c=5/χ_CMB with explicit Paper 4 §3 forward reference. See `G3_RC3_RESULT_2026-04-27.md`, `G3_RC3c_RESULT_2026-04-27.md`, `M1_2C_SEC5_PROSE_UPDATE_2026-04-26.md`. | Paper 4 §3 | Parameter-free CMB prediction |
 | G4 | Constructive 𝓕: (H, ∂𝒞, T_{AB}) → (M, g_{μν}, {Φ_a}) | Papers 4–7 program | 36–60 months | Full constructive closure of (III) |
 
 **Smaller manuscript-discipline gates:**
@@ -281,10 +281,10 @@ Three viable placements for this document in the series:
 | Lemma 0 (H ⊋ M) | ⚠️ Packaged; needs formal proof |
 | Lemma 1 (SCF saturation ≡ λ=1) | ✅ Proved in this document |
 | Theorem (main) | ✅ Stated; conditional on G4 only (G1 proved 2026-04-27 — Born chain unconditional in non-degenerate QM regime) |
-| Corollaries 1–4 | ✅ All stated; C2 k_c observationally inferred; C4 Ω=π pending |
+| Corollaries 1–4 | ✅ All stated; C2 coefficient 5 in k_c=5/χ_CMB structurally derived 2026-04-27 (T^(eff) rank-2 bilinear + SO(3) isotropy → ℓ_min=2 → d'=25 → √25=5); R_Σ=χ_CMB pending Paper 4; C4 Ω=π pending |
 | This document | ~75% — full prose, proofs, theorem, corollaries; connective polish and citation pass remain |
 
-**Overall HCR readiness for external review:** ~70–75%, gated by G3 (physical k_c), M1/M2/M3 prose insertions, synthesis prose polish pass, and independent peer review of G1 (Theorems G1-Cov + G1-Full proved 2026-04-27 — Born chain uniqueness resolved).
+**Overall HCR readiness for external review:** ~75–80%, gated by G3-D3b (R_Σ=χ_CMB via holographic projection — Paper 4 §3 deliverable), synthesis prose polish pass, and independent peer review of G1. G3-D1/D2/D3a proved 2026-04-27 (λ_min=d exact; Lorentzian propagator; ℓ_min=2 structural). G1 proved 2026-04-27 (Born chain unconditional). G2 resolved 2026-04-26 (α_geom derived).
 
 ---
 
