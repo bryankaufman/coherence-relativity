@@ -10,10 +10,27 @@ correspondence (Table 1), object-type conventions (Table 2), and causal/ontologi
 notation (Table 3) are not reproduced here. KCR-Cone-specific symbols are defined at first use
 in the text; all others refer to Paper 2A.
 
-This paper evaluates the abstract framework of Paper 2A on the first physically motivated
-geometry arising from derived compactification: the KCR-Cone, whose warp factor
-$A(r) = \cos(\sqrt{2}\,r)$ is derived — not fitted — from the Fubini-Study Laplacian eigenvalue
-$k^2 = 2$, a topological invariant of $\mathbb{CP}^1$. The paper establishes that the first two self-consistency conditions (SC1, SC2) are structurally guaranteed by the derived geometry — flatness follows from Minkowski 4D slices, and gravity localization follows from the bounded interval with divergent confining potential. The third condition (SC3, cosmological constant) is conditionally established via the Casimir mechanism. The paper also resolves the norm convention ambiguity identified in Paper 2A §4.2, and carries the derived-topology, EOM, regularity, and SC3 evaluation line. Dark-sector and holographic consequence material belongs to Paper 2C.
+In Coherence Relativity, the fundamental structure is not a bare spacetime manifold but a joint coherence geometry carried by $M \times \Sigma$: a classical spacetime $M$ together with a coherence manifold $\Sigma$ encoding environment-dependent coherence frames and pointer structure. The state map $\Phi : M \times \Sigma \to \mathbb{P}(\mathcal{H})$ assigns to each coherence frame at each spacetime event a ray in the multiparticle Hilbert space, and the mixed term $T_{M\Sigma}$ controls how coherence information propagates between spacetime and coherence degrees of freedom.
+
+Paper 2A developed the saturation and classicalization dynamics on this joint geometry. In particular, it introduced the pointer-sector criterion and the Markovian suppression of off-diagonal structure that make classical histories robust on $M$, while leaving a nontrivial coherence structure on $\Sigma$. In this paper we analyze the geometry and topology of that coherence structure and show how a compact extra dimension and a warped decoherence-depth coordinate arise as derived features of the framework rather than as additional coordinates postulated by hand.
+
+Historically, Kaluza–Klein theories begin by assuming a higher-dimensional manifold, such as $M^4 \times S^1$, and then interpreting the compact factor as an internal space giving rise to gauge fields upon dimensional reduction. Here we proceed in the opposite direction. We start from the coherence geometry demanded by decoherence and classicalization on $M \times \Sigma$, identify the relevant coherence bundles and Berry/Hopf structures on $\Sigma$, and show that the effective macroscopic geometry seen by classical observers acquires a compact extra dimension and a warped interval structure as consequences of that coherence geometry.
+
+The central claim of this paper is therefore not that the full multiparticle Hilbert-space tower is itself a literal extra spacetime dimension. Instead, decoherence makes the locally relevant coherence structure environmental and geometric; this compels a joint description on $M \times \Sigma$. Once the coherence geometry is analyzed, its topology and dynamics naturally generate a compact extra dimension and an associated depth coordinate in the effective macroscopic geometry. We refer to this derived Kaluza-type extension of Coherence Relativity as **Kaluza–Coherence Relativity (KCR)**.
+
+This paper evaluates that abstract framework on the first physically motivated geometry arising from derived compactification: the KCR-Cone, whose warp factor $A(r) = \cos(\sqrt{2}\,r)$ is derived — not fitted — from the Fubini-Study Laplacian eigenvalue $k^2 = 2$, a topological invariant of $\mathbb{CP}^1$. The paper establishes that the first two self-consistency conditions (SC1, SC2) are structurally guaranteed by the derived geometry — flatness follows from Minkowski 4D slices, and gravity localization follows from the bounded interval with divergent confining potential. The third condition (SC3, cosmological constant) is conditionally established via the Casimir mechanism. The paper also resolves the norm convention ambiguity identified in Paper 2A §4.2, and carries the derived-topology, EOM, regularity, and SC3 evaluation line. Dark-sector and holographic consequence material belongs to Paper 2C.
+
+> **Heuristic origin (motivation only).** A useful intuition is that decoherence operationally reduces the locally distinguishable sector of the full multiparticle Hilbert/configuration tower, so that a very large quantum tower behaves effectively like a lower-dimensional geometric degree of freedom. We retain that picture only as motivation. The formal derivation used in this paper keeps three levels distinct: $\mathbb{P}(\mathcal{H})$ supplies the kinematics, $\Sigma$ carries coherence, pointer, and Berry/Hopf structure, and the physical extra dimension appears only after the $M \times \Sigma$ geometry is evaluated on the KCR realization.
+
+### Three distinct arenas
+
+It is important to distinguish three different structures:
+
+- **Quantum state space $\mathbb{P}(\mathcal{H})$** — the projective Hilbert space of the underlying multiparticle quantum theory. This is the kinematical arena in which Schrödinger evolution lives.
+- **Coherence manifold $\Sigma$** — the geometric space of coherence frames and pointer structures introduced in Coherence Relativity. Berry-phase and Hopf-fibration structures on $\Sigma$ define internal gauge-like $S^1$ fibers, but these are not yet physical extra coordinates of spacetime.
+- **Physical extra dimension (KCR)** — a derived warped decoherence-depth direction in the effective macroscopic geometry on $M$, obtained only after analyzing decoherence, saturation, and the topology of the coherence geometry on $M \times \Sigma$.
+
+The multiparticle Hilbert-space tower motivates the introduction of $\Sigma$, and decoherence on $M$ is encoded in the dynamics of $T_{M\Sigma}$. However, the physical extra dimension of KCR is not $\mathbb{P}(\mathcal{H})$ itself, nor a direct quotient of it. It is a further emergent structure built from the coherence geometry of $\Sigma$.
 
 
 # §3.1 Historical Background: The Compactification Question in Quantum Gravity
@@ -46,7 +63,7 @@ In string theory, the extra dimensions are compactified on a Calabi–Yau manifo
 
 Similarly, in modified-gravity scenarios (e.g., massive gravity, bigravity), extra-dimensional models (e.g., DGP, Randall–Sundrum), and loop quantum gravity, compactification is either assumed or fine-tuned to match observations. It is not derived.
 
-This is the gap that the present work addresses. §3.2 will show that the coherence-frame axioms — when applied to the simplest quantum system (the qubit) — produce S² as the first-realized geometry, from which the Hopf fibration S¹ → S³ → S² emerges as a topological consequence. Compactness of the fiber dimension follows from the topology of the Hopf bundle, not from an ad hoc assumption. Compactification, in this argument, is derived rather than postulated.
+This is the gap that the present work addresses. Section 3.2 shows that the coherence-frame axioms — when applied to the simplest quantum system (the qubit) — produce $S^2$ as the first-realized geometry, from which the Hopf fibration $S^1 \to S^3 \to S^2$ emerges as a topological consequence. What is derived at that stage is a compact internal $U(1)$/Berry fiber structure on $\Sigma$, not yet the full macroscopic fifth coordinate of the KCR-Cone. Section 3.3 then shows how that derived coherence topology constrains the physical extra-dimensional realization, whose spacetime coordinate is the bounded interval $r$. Compactness, on this account, is derived rather than postulated, but the internal phase fiber and the physical extra dimension are not conflated.
 
 ---
 
@@ -60,11 +77,13 @@ When we impose these quantum-coherence axioms (discussed in §3.2), the ground s
 
 **Crucially:** over \(S^2\), principal \(U(1)\) bundles form a discrete family indexed by \(c_1 \in \mathbb{Z}\). In this framework, the Hopf case (\(|c_1|=1\)) is selected by minimality, not by a strict uniqueness theorem.
 
+That Hopf $S^1$ should be read first as an internal/gauge phase structure on $\Sigma$, not yet as the physical extra coordinate of the KCR-Cone. The physical decoherence-depth direction $r$ appears only when the $M \times \Sigma$ dynamics are evaluated and the effective warped geometry is constructed.
+
 ---
 
 ## Summary of §3.1
 
-Compactification has been a mystery in quantum gravity for a century. Traditional approaches assume compactness to suppress unwanted modes or match observations. This section reviewed that history. §3.2 now answers the question: compactification emerges from the requirement that the coherence frame be self-consistent under quantum evolution. It is not a free choice; it is a derived necessity.
+Compactification has been a mystery in quantum gravity for a century. Traditional approaches assume compactness to suppress unwanted modes or match observations. This section reviewed that history. Section 3.2 now answers the first half of that question: a compact internal fiber structure on the coherence side emerges from the requirement that the coherence frame be self-consistent under quantum evolution. Section 3.3 then shows how that topological input constrains the physical extra-dimensional realization.
 
 
 # §3.2 Topology as Output: Deriving Compactification from Coherence Axioms
@@ -130,9 +149,11 @@ Here is the critical shift: the Hopf fibration does not arise from a choice, a s
 
 To say it precisely: if the base manifold is $S^2$, then there exist non-trivial principal $U(1)$ structures. Among the infinite family of principal $U(1)$ bundles over $S^2$, the Hopf bundle with $c_1 = 1$ is the generator — the bundle of minimal (non-zero) Chern number. The selection of $c_1 = 1$ over higher values ($c_1 = 2, 3, ...$) follows from a minimality argument, not a uniqueness theorem.
 
+> **Minimality Axiom (stated explicitly).** Among the family of principal $U(1)$ bundles over $\Sigma|_{\rm qubit} = S^2$, we select the minimal non-trivial bundle: $c_1 = 1$ (the Hopf fibration). This is an **axiom** of the KCR framework at this stage, not a derived result. The physical motivation is that the most economical topological structure consistent with non-trivial $U(1)$ fiber structure is preferred at the first-realized geometry. Higher-$c_1$ bundles ($c_1 = 2, 3, ...$) are topologically consistent but excluded by the minimality principle. Whether minimality can be derived from an underlying emergence principle (e.g., the L1$\to$L2 minimal topological step in Paper 3's ontological hierarchy) is an open question deferred to Paper 3 §1/§3. Any result whose validity depends on $c_1 = 1$ (including the Hopf S¹ compactness of §3.2.4) is therefore conditional on this axiom.
+
 The Hopf fibration is **intrinsic to $S^2$**. It is not postulated. It emerges.
 
-## 3.2.4 Compactness as Topological Consequence
+## 3.2.4 Compact Internal Fiber as Topological Consequence
 
 The fiber of the Hopf fibration is a circle:
 $$S^1 \subset S^3.$$
@@ -146,9 +167,9 @@ Therefore, the following logical chain holds:
 2. Over $S^2$, the non-trivial principal $U(1)$ bundle of minimal Chern number is the Hopf fibration (§3.2.3).
 3. The fiber of the Hopf fibration is $S^1$, which is compact by topology (§3.2.4).
 
-**Conclusion: A compact extra dimension emerges as a topological consequence of the first-realized geometry.**
+**Conclusion: A compact internal $U(1)$ fiber emerges as a topological consequence of the first-realized geometry.**
 
-We have derived compactness. We did not assume it.
+We have derived the compact coherence-side fiber. We did not assume it. The translation from this internal phase structure to the physical extra-dimensional realization is carried by the effective $M \times \Sigma$ dynamics and the bounded-interval construction of §3.3.
 
 ## 3.2.5 Inversion of Historical Logic
 
@@ -162,9 +183,9 @@ The compact dimension is the *starting point*. All subsequent physics is built a
 
 ### Coherence Relativity Approach (This Paper)
 
-$$\boxed{\text{Derive } S^2 \text{ from coherence axioms}} \to \text{Hopf bundle forces } S^1 \text{ structure} \to \boxed{\text{Compactness is output}}$$
+$$\boxed{\text{Derive } S^2 \text{ from coherence axioms}} \to \text{Hopf bundle forces compact } U(1) \text{ fiber on } \Sigma \to \boxed{\text{physical extra dimension derived later from } M \times \Sigma \text{ geometry}}$$
 
-The compact dimension is the *conclusion*. It emerges from the topology of the first-realized geometry. The axioms do not assume compactness; the theorem produces it.
+The compact internal fiber is the immediate conclusion. The macroscopic extra dimension arises only after the effective geometry is worked out. The axioms do not assume compactness; the theory derives the compact coherence-side structure first and then determines the physical extra-dimensional realization.
 
 This is not a minor modification. This is an inversion of the logical structure of extra-dimensional physics.
 
@@ -174,7 +195,7 @@ In the historical framework:
 $$\text{Geometry} \xleftarrow{\text{assumed}} \text{Compactification} \xleftarrow{\text{required}} \text{Physics}$$
 
 In Coherence Relativity:
-$$\text{Physics (Coherence axioms)} \xrightarrow{\text{derive}} S^2 \xrightarrow{\text{force}} \text{Hopf } S^1 \xrightarrow{\text{topological}} \text{Compactness}$$
+$$\text{Physics (Coherence axioms)} \xrightarrow{\text{derive}} S^2 \xrightarrow{\text{force}} \text{Hopf } S^1 \text{ on } \Sigma \xrightarrow{\text{constrains}} \text{effective extra-dimensional realization}$$
 
 Causality runs in the opposite direction.
 
@@ -199,7 +220,7 @@ The compactness of the fiber is not a stabilization issue. It is a *topological 
 
 By contrast, in string theory, the *size* (radius) of a compact dimension is subject to moduli, potentials, and stabilization mechanisms. But the *topology*—the fact that it is compact—remains an assumption.
 
-Here, topology is derived. Only the radius remains a physical parameter to be stabilized (addressed in §5.3).
+Here, topology is derived. Only the later interval scale remains a physical parameter to be constrained (addressed in §5.3).
 
 ### (c) Absence of Moduli Space for Topology
 
@@ -223,7 +244,7 @@ We must be precise about what this section establishes and what it does not.
 
 ### What is Established
 
-1. **Compactness of the fiber dimension**: Given that $S^2$ is the first-realized geometry, the Hopf fibration necessarily produces a compact $S^1$ fiber. This is topological fact, not assumption.
+1. **Compactness of the internal Berry/Hopf fiber**: Given that $S^2$ is the first-realized geometry, the Hopf fibration necessarily produces a compact $S^1$ fiber on $\Sigma$. This is topological fact, not assumption.
 
 2. **Uniqueness of the minimal bundle**: The principal $U(1)$ bundle of minimal non-zero Chern number over $S^2$ is the Hopf fibration. This is unique among bundles with $|c_1| = 1$, but the selection of $c_1 = 1$ over higher values relies on a minimality principle, not a uniqueness proof.
 
@@ -231,7 +252,7 @@ We must be precise about what this section establishes and what it does not.
 
 ### What is Not Established (and Why)
 
-1. **The specific radius of $S^1$**: This section establishes that the fiber *is* compact, but not its size. The radius of the extra dimension is a physical parameter, addressed in §5.3 (radius stabilization via the quantum potential). Topology determines compactness; dynamics determines size.
+1. **The physical size of the later KCR interval**: This section establishes compact internal phase structure, not the macroscopic scale of the decoherence-depth coordinate $r$. The physical interval is addressed later through the effective geometry and the vacuum-energy analysis of §5.3. Topology determines the compact coherence-side seed; dynamics determines the spacetime realization.
 
 2. **Higher-dimensional analogs**: This derivation applies to the case where the base is $S^2$. Whether the coherence-frame construction yields higher-dimensional analogs (e.g., $S^4 \to S^7 \to S^4$ or other total spaces) is an open question, addressed briefly in §6.2 (future directions).
 
@@ -247,11 +268,11 @@ We therefore regard §3.2 as *conditionally rigorous*: given the results of Pape
 
 ## 3.2.8 Implications for the Extra-Dimensional Paradigm
 
-This section inverts the foundation of extra-dimensional physics. For over a century, compactness has been an *axiom*. Here, it becomes a *theorem*.
+This section inverts the foundation of extra-dimensional physics. For over a century, compact internal fiber structure has been treated as an *axiom*. Here, it becomes a *theorem*.
 
 The shift has profound implications:
 
-- **Naturality**: Compactness is no longer an ad hoc assumption required to match observation. It arises naturally from the structure of quantum mechanics and coherence.
+- **Naturality**: Compact internal structure is no longer an ad hoc assumption required to match observation. It arises naturally from the structure of quantum mechanics and coherence.
 
 - **Rigidity**: The landscape of possible compactifications is reduced from continuous to discrete. The topology is selected by minimality of the first Chern number ($c_1 = 1$), with higher values remaining as open theoretical possibilities (see §3.2.7).
 
@@ -265,7 +286,7 @@ Section 3.1 established that the coherence-frame manifold $\Sigma$ admits a natu
 
 Section 3.2 (this section) argues that the *topology* of $\Sigma$ is derived from the coherence axioms, not postulated. For the qubit case, this topology is $S^2$, and the Hopf fibration is an intrinsic topological property.
 
-Section 3.3 will address how the gauge structure on $\Sigma$ (via the Hopf bundle) induces a $U(1)$ symmetry in the low-energy effective action. This is where the connection to electromagnetism or the KK photon appears, but that story is built on the topological foundations laid here.
+Section 3.3 then addresses two distinct questions built on these foundations: how the gauge structure on $\Sigma$ (via the Hopf bundle) induces a $U(1)$ symmetry in the low-energy effective action, and how the physical decoherence-depth coordinate $r$ arises as the effective extra dimension of the KCR-Cone. The former is internal phase structure; the latter is the macroscopic extra coordinate.
 
 ## Summary: §3.2
 
@@ -273,9 +294,9 @@ Section 3.3 will address how the gauge structure on $\Sigma$ (via the Hopf bundl
 
 1. $S^2$ as the natural geometry of the coherence-frame manifold.
 2. The Hopf fibration $S^1 \to S^3 \to S^2$ as the unique principal $U(1)$ bundle of minimal Chern number over $S^2$.
-3. $S^1$ as the fiber, which is compact by topology.
+3. $S^1$ as the compact internal fiber on $\Sigma$.
 
-This inverts the historical logic: instead of assuming compact dimensions and building physics around them, Coherence Relativity derives compactness from first principles. The compact extra dimension is the *output* of the theory, not an input assumption.
+This inverts the historical logic: instead of assuming compact dimensions and building physics around them, Coherence Relativity derives compact internal fiber structure from first principles and then lets the physical extra dimension be fixed by the effective geometry rather than by postulation. The compact coherence-side seed is the *output* of the theory, not an input assumption.
 
 The topology is rigid, the landscape is resolved, and falsifiability is sharp. These are the hallmarks of a more fundamental framework for understanding extra dimensions.
 
@@ -295,9 +316,9 @@ The selection of $c_1 = 1$ over higher Chern numbers is a minimality argument. W
 
 ## 3.3.1 Overview: From Topology to Physics
 
-Section 3.2 established that compactification is *derived*, not assumed. The extra dimension is the decoherence-depth coordinate $r$, which is geometrically compact: the warp factor $A(r) = \cos(\sqrt{2}\,r)$ (Proposition 4.2, §7) vanishes at $r_{\max} = \pi/(2\sqrt{2})$, terminating the geometry. The parameter $\mu = \sqrt{2}$ is fixed by the Fubini-Study Laplacian eigenvalue $k^2 = 2$ — it is not a free parameter. The compact topology is a consequence, not an input.
+Section 3.2 established that the compact internal $U(1)$ structure on $\Sigma$ is *derived*, not assumed. The physical extra dimension is the decoherence-depth coordinate $r$, which is geometrically compact: the warp factor $A(r) = \cos(\sqrt{2}\,r)$ (Proposition 4.2, §7) vanishes at $r_{\max} = \pi/(2\sqrt{2})$, terminating the geometry. The parameter $\mu = \sqrt{2}$ is fixed by the Fubini-Study Laplacian eigenvalue $k^2 = 2$ — it is not a free parameter. The compact topology of the physical interval is therefore a consequence of the coherence geometry and its effective realization, not an input.
 
-This represents a qualitative shift in the landscape of extra-dimensional physics. In the historical framework, compactness is postulated and one is then free to choose any compact topology (Calabi-Yau, orbifold, Klein circle, etc.), with moduli to vary. In Coherence Relativity, the topology is *determined* by first principles, and Klein's 1926 compactification mechanism is unnecessary.
+This represents a qualitative shift in the landscape of extra-dimensional physics. In the historical framework, compactness is postulated and one is then free to choose any compact topology (Calabi-Yau, orbifold, Klein circle, etc.), with moduli to vary. In Coherence Relativity, the topological seed of compactness is determined by first principles, and the physical extra coordinate is then fixed by the effective $M \times \Sigma$ geometry rather than by an independent compactification ansatz. Klein's 1926 compactification mechanism is therefore unnecessary.
 
 **The question now is: What physics does this determination constrain?**
 

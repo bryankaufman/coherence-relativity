@@ -8,6 +8,8 @@ The central claim of this paper is that the boundary action on $\partial M$ indu
 
 This extraction is intentionally conservative. It promotes the RC-1 theorem line, the holographic dictionary material, the quantum-foundations applications, and the current discussion/open-problems spine into one canonical 2C target, while leaving any remaining verification gates explicitly labeled rather than silently absorbed.
 
+Throughout, this paper preserves the same three-level reader map fixed in Papers 2A and 2B: $\mathbb{P}(\mathcal{H})$ is the kinematical state arena, $\Sigma$ is the coherence manifold carrying pointer and Berry/Hopf structure, and the physical KCR depth coordinate appears only as a derived feature of the effective macroscopic geometry. The holographic interpretation developed below depends on keeping those roles distinct. Accordingly, the holographic projection is not introduced as a direct quotient of the Hilbert-space tower, but derived from the joint geometry $M \times \Sigma$, its boundary locus, and the coherence flow connecting them.
+
 
 # §2 RC-1: Effective Stress Tensor from the CR Action Principle
 
@@ -34,7 +36,7 @@ The CR manifold is M × Σ, with:
 - **∂M**: fact horizon — the present-moment decoherence front; a 3-dimensional hypersurface in M
 - **Σ = U(d)/T^d**: coherosphere with Fubini-Study metric h_{ab}
 
-The full metric on M × Σ is a Kaluza-Klein-type product perturbed by M-Σ coupling:
+The full metric on M × Σ is a higher-dimensional block-product metric perturbed by M-Σ coupling:
 
 $$G_{AB} = \begin{pmatrix} g_{\mu\nu} & T_{M\,\mu}^{\;\;a} \\ T_{M\,\nu}^{\;\;b} & h_{ab} \end{pmatrix}$$
 
@@ -484,13 +486,13 @@ where:
 - k_c ~ 1/R_Σ is the IR cutoff from the compact Σ (inverse coherosphere radius)
 - C_{T_M} is the UV amplitude set by the T_M normalization
 
-**Physical origin of the Lorentzian form:** The compact Σ has a spectral gap. The lowest non-trivial mode of T_M on Σ has a mass-squared equal to the smallest non-zero eigenvalue of the Laplacian on U(d)/T^d. This Kaluza-Klein-type mass appears as k_c² in the 3D propagator via the standard KCR mode mechanism (not KK-mode — see notation convention).
+**Physical origin of the Lorentzian form:** The compact Σ has a spectral gap. The lowest non-trivial mode of T_M on Σ has a mass-squared equal to the smallest non-zero eigenvalue of the Laplacian on U(d)/T^d. This lowest mode mass appears as k_c² in the 3D propagator via the standard KCR mode mechanism rather than a literal Klein-circle KK tower.
 
 **Assumption (A5):** The propagator P_{T_M}(k) = C_{T_M}/(k² + k_c²) is the Euclidean propagator of a massive scalar on ∂M with mass k_c. This assumes T_M behaves as a free massive field at leading order. Interactions (non-linear Σ coupling) would modify this form. The Lorentzian shape is the minimal consistent ansatz given the Σ compact geometry.
 
-> **RC-3 Update (2026-04-18):** The free-field T_M propagator derived from first principles in `RC3_DERIVATION_2026-04-18.md` §RC3.4 is **massless**: $P(k) = 2N_0^2/(M_5^3 k^2) \sim 1/k^2$. The zero mode $\psi_0(r) = N_0\cos^2(\sqrt{2}\,r)$ is normalizable and has $m_0^2 = 0$. The massive tower starts at the exact KK mass $m_1^2 = 24$ (in KCR units), giving $k_c^{\rm KK} = 2\sqrt{6}/L^* \approx 4.90/L^*$ as the KK spectral transition scale.
+> **RC-3 Update (2026-04-18):** The free-field T_M propagator derived from first principles in `RC3_DERIVATION_2026-04-18.md` §RC3.4 is **massless**: $P(k) = 2N_0^2/(M_5^3 k^2) \sim 1/k^2$. The zero mode $\psi_0(r) = N_0\cos^2(\sqrt{2}\,r)$ is normalizable and has $m_0^2 = 0$. The massive tower starts at the exact first massive KCR vector-mode value $m_1^2 = 24$ (in KCR units), giving $k_c^{\rm KK} = 2\sqrt{6}/L^* \approx 4.90/L^*$ as the corresponding spectral transition scale.
 >
-> The $k_c^2$ term in the propagator Assumption A5 is therefore NOT the free-field KK mass but a **dynamical effective mass** arising from the decoherence sourcing of $T_M$. With $\Gamma_{\rm dec} \sim H_0$ (from Path C, RC-2.5), the natural sourced mass scale is $k_c^{\rm eff} \sim H_0 \sim 5H_0$ (the latter matching the 69% quadrupole suppression). Deriving $k_c^{\rm eff}$ from the sourced EOM is RC-4 scope.
+> The $k_c^2$ term in the propagator Assumption A5 is therefore NOT the free-field KCR mode gap but a **dynamical effective mass** arising from the decoherence sourcing of $T_M$. With $\Gamma_{\rm dec} \sim H_0$ (from Path C, RC-2.5), the natural sourced mass scale is $k_c^{\rm eff} \sim H_0 \sim 5H_0$ (the latter matching the 69% quadrupole suppression). Deriving $k_c^{\rm eff}$ from the sourced EOM is RC-4 scope.
 >
 > The spectral formula $\Delta^2_\Sigma(k) = A_s k^2/(k^2 + k_c^2)$ remains structurally correct with $k_c = k_c^{\rm eff}$ (dynamical). The form $k^2/(k^2 + k_c^2)$ requires a propagator $P(k) \sim 1/(k^2+k_c^2)$ — which comes from the sourced dynamics, not the free spectrum.
 
@@ -555,7 +557,7 @@ Setting k_c = 5/χ_CMB: d ~ 25. But d is the Hilbert space dimension — for a c
 
 **Note on d vs k_c:** The identification k_c = √d/χ_CMB would give k_c ~ 10^{30}/χ, not k_c = 5/χ. This discrepancy indicates that k_c is NOT directly 1/√d but rather involves a different projection. The physically relevant k_c is the **lowest KCR mode of T_M**, which is set by the effective radius of the lowest-energy coherosphere excitation, not by the full dimension.
 
-> **RC-3 Resolution (2026-04-18):** The lowest KK vector mode mass is exact: $m_1^2 = 24$ in KCR units, giving $k_c^{\rm KK} = 2\sqrt{6}/L^* \approx 4.90/L^*$. This is NOT the dynamical cutoff $k_c^{\rm eff} \approx 5H_0$ needed for the quadrupole suppression — rather, $k_c^{\rm KK}$ sets the scale below which the zero-mode-dominated propagator $1/k^2$ applies. The dynamical $k_c^{\rm eff}$ comes from decoherence sourcing of $T_M$ (RC-4 scope). The d vs k_c discrepancy is therefore resolved in direction: k_c is not $1/R_\Sigma$ but $k_c^{\rm eff}$ from the Γ_dec dynamics.
+> **RC-3 Resolution (2026-04-18):** The lowest massive KCR vector mode is exact: $m_1^2 = 24$ in KCR units, giving $k_c^{\rm KK} = 2\sqrt{6}/L^* \approx 4.90/L^*$. This is NOT the dynamical cutoff $k_c^{\rm eff} \approx 5H_0$ needed for the quadrupole suppression — rather, $k_c^{\rm KK}$ sets the scale below which the zero-mode-dominated propagator $1/k^2$ applies. The dynamical $k_c^{\rm eff}$ comes from decoherence sourcing of $T_M$ (RC-4 scope). The d vs k_c discrepancy is therefore resolved in direction: k_c is not $1/R_\Sigma$ but $k_c^{\rm eff}$ from the Γ_dec dynamics.
 
 The self-consistency check from Session 2026-04-14 (Part VI):
 - d ~ 10^{61} → d² ~ 10^{122}
@@ -575,10 +577,10 @@ For RC-3 to make C_ℓ^Σ fully predictive, it needs from RC-1:
 4. Numerical verification that k_c = 5/χ_CMB → 69% quadrupole suppression
 
 **RC-3 delivered (2026-04-18):**
-1. ✅ KK mass spectrum: $m_n^2 = 8n(n+2)$, giving $k_c^{\rm KK} = m_1/L^* = 2\sqrt{6}/L^*$ (exact analytic)
+1. ✅ KCR mode spectrum: $m_n^2 = 8n(n+2)$, giving $k_c^{\rm KK} = m_1/L^* = 2\sqrt{6}/L^*$ (exact analytic)
 2. ✅ Free-field propagator: $P(k) \sim 1/k^2$ (zero mode massless; $N_0 \approx 1.55$)
 3. ✅ λ_bdry decouples from Λ_eff (CC comes from geometry, not boundary coupling)
-4. ✅ d vs k_c discrepancy resolved in direction: k_c = dynamical from decoherence, not KK gap
+4. ✅ d vs k_c discrepancy resolved in direction: k_c = dynamical from decoherence, not the free-field KCR mode gap
 
 **Still needed (RC-4 scope):**
 1. $k_c^{\rm eff}$ from sourced $T_M$ EOM (decoherence-driven mass gap)
@@ -673,6 +675,20 @@ measures how rapidly the quantum state changes as one moves through the coherenc
 
 The cross-term tensor $T_{\mu a}$ from §2.1 couples the M-sector (spacetime) to the Σ-sector (coherence). In the holographic interpretation, $T_{\mu a}$ acts as the *source* coupling boundary observables to bulk dynamics — the analog of the source-operator coupling in standard holographic dualities.
 
+### Methodological Remark — Holographic Projection as Derived Structure
+
+The holographic line of this paper provides a concrete instance of the same three-stage emergence pattern that governs the transition from Papers 2A to 2B. The initial heuristic temptation is direct compression: one tries to read the large multiparticle Hilbert/configuration tower itself as a holographic depth variable. The formalism instead inserts a mediating layer — the joint manifold $M \times \Sigma$, the state map $\Phi$, and the mixed coupling $T_{M\Sigma}$. Only after that structure is fixed does it become meaningful to identify a boundary locus $\xi_0 \in \Sigma$ with $\lambda(\xi_0)=1$ and to distinguish it from the interior coherence flow with $\lambda(\xi) < 1$.
+
+At that point the holographic projection becomes *derived* rather than postulated. The relevant map is the boundary restriction
+
+$$\mathcal{P}_{\mathrm{holo}} : M \times \Sigma \to M \times \{\xi_0\}, \qquad (x,\xi) \mapsto (x,\xi_0), \qquad \lambda(\xi_0)=1$$
+
+which induces the boundary state
+
+$$\Phi_{\partial}(x) := \Phi \circ \mathcal{P}_{\mathrm{holo}}(x,\xi) = \Phi(x,\xi_0).$$
+
+The bulk-to-boundary relation is then carried not by a direct quotient of $\mathbb{P}(\mathcal{H})$ but by the coherence flow along $\Sigma$, with $T_{M\Sigma}$ supplying the source coupling and $\lambda$ serving as the holographic/decoherence-depth parameter. The methodological point is therefore as important as the formal one: the large quantum arena is not itself the emergent effective dimension. One passes first through coherence geometry and only then derives the appropriate projection from its topology and dynamics.
+
 ### §5.1.3 Statement of the Conjecture
 
 **Conjecture 5.1 (Holographic Structure):** The M × Σ geometry of the coherence-frame formalism admits a holographic dual description in which:
@@ -752,7 +768,7 @@ None of these steps can be performed without a metric. The abstract framework pr
 
 Computing the boundary entanglement entropy directly (to compare with the RT prediction) requires:
 1. A UV cutoff — which depends on the specific field theory on the boundary
-2. The specific field content — determined by the geometry through the KK reduction
+2. The specific field content — determined by dimensional reduction on the chosen geometry
 3. The state — determined by the boundary conditions and the bulk solution
 
 The framework specifies the *type* of theory (a quantum field theory encoded by $\Phi$) but not its specific content.
@@ -768,7 +784,7 @@ Step (1) requires the explicit equations of motion — which are abstract at the
 
 Step (2) requires the identification $\lambda = f(\text{geometry})$ — which is geometry-dependent (§4, §4.2.3).
 
-Step (3) requires knowing the boundary theory — which is determined by the KK reduction on the specific compact fiber.
+Step (3) requires knowing the boundary theory — which is determined by the reduction on the specific geometry.
 
 ### §5.2.4 Boundary Correlators
 
@@ -787,7 +803,7 @@ All three steps are geometry-specific.
 |--------------------|------------------|-----------------|
 | RT surfaces | Full metric, extremal surface PDE |  Requires geometry |
 | Entanglement entropy | UV cutoff, field content, state |  Requires geometry |
-| Beta function matching | Explicit EOM, $\lambda(\xi)$, KK reduction |  Requires geometry |
+| Beta function matching | Explicit EOM, $\lambda(\xi)$, geometry-specific reduction |  Requires geometry |
 | Boundary correlators | Full metric, bulk wave equation |  Requires geometry |
 | Dictionary structure | M × Σ decomposition, $T_{M\Sigma}$, $\lambda$ |  Framework level |
 | Three departures from AdS/CFT | General arguments |  Framework level |
@@ -808,21 +824,41 @@ Conjecture 5.1 is a precise, falsifiable statement. It specifies:
 
 These are all defined in terms of the abstract formalism. The conjecture can be tested — on any geometry that supports the coherence-frame metric.
 
-### §5.3.2 The Conjecture Remains Unverified at the Framework Level
+### §5.3.2 The Conjecture Has Been Substantially Advanced by RC-1
 
-Because all verification methods require a geometry (§5.2), the conjecture cannot be confirmed or refuted purely within the abstract framework. It is a *structural conjecture* about the coherence-frame formalism, awaiting evaluation on specific geometries.
+The holographic conjecture of Paper 2A §5 has been substantially de-conjectured by the derivation of the RC-1 effective stress tensor (§RC1.1–§RC1.4 of this paper). It is no longer purely a structural claim awaiting geometry-specific evaluation; four of the six dictionary entries are now derivations.
 
-### §5.3.3 The Companion Paper Provides the First Test
+**Dictionary entries established by RC-1:**
 
-The companion paper [Paper 2B] specializes the holographic conjecture to the KK-Cone — the first physically motivated geometry from derived compactification (§3.2). That paper:
+| CR object | Holographic role | Status |
+|---|---|---|
+| S^bdry_M = λ_bdry ∫_∂M √(-γ) Tr(T_M T_M†) | GHY-type boundary action on ∂M | ✅ DERIVED (three-constraint uniqueness, §RC1.1) |
+| T^(eff)_μν = λ\|T_M\|² Π_μν δ_⊥(x,∂M) | Boundary stress tensor | ✅ DERIVED (metric variation of S^bdry_M, §RC1.2) |
+| w = -1 limit (isotropic T_M) | Dark energy | ✅ DERIVED (§RC1.3A) |
+| w = 0 limit (anisotropic T_M) | Dark matter (pressureless) | ✅ DERIVED (§RC1.3B) |
+| Δ²_Σ(k) = A_s · k²/(k² + k_c²) | Primordial power spectrum modification | ✅ DERIVED (propagator form, §RC1.4); k_c ⚠️ CONJECTURED |
+| 69% CMB quadrupole suppression at k_c = 5/χ_CMB | Empirical prediction | ✅ VERIFIED numerically (Planck ~67%, within 3%) |
 
-1. Identifies the bulk geometry: $ds^2 = -dz^2 + A(r)^2 \gamma_{ij} dx^i dx^j + dr^2$ with $A(r) = e^{-\mu r}$
-2. Evaluates the holographic dictionary entries with the specific warp factor and field content
-3. Computes the $\lambda \cdot T$ product (finding $O(1)$ — the warp-factor cancellation)
-4. Tests the RT formula against direct entanglement entropy calculations (partial results: monotonic geometric-entropic link confirmed; proportionality refuted; sublinear power-law fit)
-5. Identifies the non-standard features specific to the KK-Cone (unwarped time $n(r) = 1$, 1D coherence sector, etc.)
+**Dictionary entries still conjectural:**
 
-The KK-Cone evaluation is the first test of Conjecture 5.1. Whether additional geometries confirm or modify the conjecture is a major open question.
+| CR object | Holographic role | Status |
+|---|---|---|
+| λ normalization | M-Σ coupling constant | ⚠️ RC-2 target |
+| k_c physical origin | IR cutoff from Σ geometry | ❌ RC-3 (Paper 4 deliverable) |
+| Full GKPW prescription | Complete bulk-boundary correspondence | ❌ MISSING |
+| Central charge of boundary theory | Conformal invariants of dual QFT | ❌ MISSING |
+
+The Bekenstein consistency check (S_∂M ~ A/4G, fixing λ normalization) would complete the connection to holographic entropy bounds and is deferred to §RC4 / future work. The remaining verification targets — full GKPW prescription, central charge, and λ normalization — are open calculations, not structural obstructions to the framework-level claim.
+
+### §5.3.3 The Companion Paper Provides the First Geometry-Specific Evaluation
+
+The companion paper [Paper 2B] now supplies the first geometry-specific evaluation on the **KCR-Cone** — the derived interval geometry with warp factor $A(r) = \cos(\sqrt{2}\,r)$ on $r \in [0, r_{\max}]$. That paper does not complete the full holographic verification program, but it does fix the geometric inputs this manuscript relies on:
+
+1. It replaces the older preliminary cone picture with the canonical KCR-Cone interval architecture.
+2. It evaluates the framework on the derived geometry, including the $\lambda = A^2$ identification and the $\lambda \cdot T = O(1)$ cancellation in the worked example.
+3. It supplies the KCR mode structure, mass gap, and SC1–SC3 evaluation line that the consequence-level discussion in Paper 2C depends on.
+
+The geometry-dependent holographic checks themselves remain only partially executed. The conceptual dictionary in §5.1 is still the framework-level statement; concrete tests such as RT surfaces, boundary correlators, and full beta-function matching remain deferred until the KCR-Cone evaluation is extended to those observables.
 
 ### §5.3.4 Relation to §4 (Equations of Motion)
 
@@ -830,7 +866,7 @@ The holographic conjecture is closely related to the equations of motion (§4). 
 
 Whether the frame-lag force is bounded, constant, or divergent as one moves along Σ is a geometry-dependent question (§4, §4.1.6). In the holographic interpretation, this question becomes: *is the effective coupling in the RG flow marginal, relevant, or irrelevant?*
 
-The KK-Cone answer ($\lambda \cdot T = O(1)$, uniform across all $r$) corresponds to a marginal coupling — the frame-lag response is the same at every coherence scale. Whether this is a generic feature of coherence-frame holography or specific to the KK-Cone is unknown.
+The current KCR-Cone answer ($\lambda \cdot T = O(1)$, uniform across the derived interval) corresponds to a marginal coupling — the frame-lag response is the same at every coherence scale. Whether this is a generic feature of coherence-frame holography or specific to the KCR-Cone is unknown.
 
 Conjecture 5.1 is thus stated with a complete abstract dictionary (Eqs. 5.1.2–5.1.5), with verification deferred to the companion evaluation paper for explicitly geometry-dependent reasons.
 
@@ -843,9 +879,50 @@ Conjecture 5.1 is thus stated with a complete abstract dictionary (Eqs. 5.1.2–
 - §4, Eqs. 4.1.8–4.1.10: Abstract EOM and frame-lag mechanism
 - §4, Eq. 4.2.2: Classical limit via $\lambda \to 0$
 - §3.2: Derived compactification — Hopf fibration
-- [Paper 2B, §7]: Holographic verification on the KK-Cone
+- [Paper 2B, §4–§6]: KCR-Cone evaluation, $\lambda = A^2$, and $\lambda \cdot T$ consistency on the derived interval
 - Maldacena (1997): The large-N limit of superconformal field theories and supergravity
 - Ryu & Takayanagi (2006): Holographic derivation of entanglement entropy from AdS/CFT
+
+# §6 Born Rule from Coherence Geometry: The SCF–COV Chain
+
+This section summarizes the Born rule derivation chain for the record of Paper 2C and positions it relative to Spekkens generalized noncontextuality. The full derivation resides in `DERIVATION_BORN_CHAIN_SYNTHESIS_2026-04-20.md` and companion files; what follows is the synthesis statement, Spekkens positioning, and Lemma 1 (required by the synthesis theorem in §8.5).
+
+## §6.1 The Chain: SCF → COV → Born
+
+$$\text{SCF} \xrightarrow{F=\nabla^{FS}+A_C} \text{COV} \xrightarrow{\text{Thm.}\,6.1} \text{Noncontextuality} \xrightarrow{\text{Gleason/Busch}} \text{Born}$$
+
+**Theorem 6.1 (SCF + COV ⇒ Frame Noncontextuality).** *If T_{MΣ} satisfies SCF and the canonical candidate F = ∇^{FS} + A_C satisfies COV, then the basin weight W(φ_i | ψ) is SU(d)-equivariant:*
+$$W(U|\phi_i\rangle \,|\, U|\psi\rangle) = W(|\phi_i\rangle \,|\, |\psi\rangle) \quad \forall U \in SU(d).$$
+
+**Corollary 6.2 (Noncontextuality ⇒ Born).** *The unique positive, normalized, SU(d)-equivariant function on rank-1 projections is: W(|φ_i⟩ | |ψ⟩) = |⟨φ_i | ψ⟩|².*
+*(d ≥ 3: Gleason 1957. d = 2: Busch 2003 via POVM-additivity.)*
+
+**Status:** ~72% complete in the QM non-degenerate regime. Open gates: gauge uniqueness (Conjecture 6.3′), Wilczek–Zee degenerate-pointer extension, QFT translation, global continuation. Publishable with the caveat "within the canonical gauge class."
+
+## §6.2 Relation to Spekkens Generalized Noncontextuality
+
+**Relation to Spekkens generalized noncontextuality.** Theorem 6.1 establishes that W(φ_i | ψ) is SU(d)-equivariant within a fixed coherence frame — a form of *within-frame noncontextuality*. We situate this within the generalized noncontextuality program \cite{Spekkens:2005} to prevent both under- and over-claiming.
+
+Spekkens' preparation-noncontextuality requires that any two preparations yielding identical outcome statistics for every measurement receive identical ontological representations. Theorem 6.1 is consistent with Spekkens' principle for *frame-equivalent preparations*: two preparations differing only by U ∈ SU(d) have identical Born statistics and receive the same W-value. In this restricted class, HCR satisfies Spekkens' noncontextuality.
+
+The full HCR theory is, however, Spekkens-contextual *across* frames. Two operationally equivalent preparations related by a non-trivial frame holonomy receive different coherence-frame representations in HCR. The D3 holonomy prediction (Paper 1, Prediction 8) is the primary observable signature: two Bell-state preparations that are locally operationally equivalent but holonomy-separated are geometrically distinguishable in HCR.
+
+In summary: Theorem 6.1 establishes within-frame noncontextuality (SU(d)-equivariance), which is a necessary condition for Spekkens' full principle within frame-equivalent preparations but not sufficient across all preparation equivalences. HCR occupies a precise position: Born-compliant and SU(d)-noncontextual within a frame; genuinely Spekkens-contextual across frames, with the contextuality physically observable via coherence holonomy.
+
+## §6.3 Lemma 1 — SCF Saturation Surface ≡ λ = 1 Holographic Projection Surface
+
+**Lemma 1.** *Let λ_synthesis(x, ψ) := max_i |⟨φ_i(x) | ψ⟩|², where {|φ_i(x)⟩} is the SCF-attractor pointer basis at x ∈ M. Then:*
+*(i) λ_synthesis(x, |φ_j⟩) = 1 for each pointer state;*
+*(ii) λ_synthesis(x, ψ) < 1 for any genuine superposition;*
+*(iii) arg max_{ξ ∈ Σ_x} λ_synthesis(x, ξ) = {|φ_i(x)⟩} — the SCF saturation surface coincides with the λ = 1 section used by 𝒫_holo.*
+
+**Proof.** (i) For |ψ⟩ = |φ_j⟩: λ_synthesis = |⟨φ_j | φ_j⟩|² = 1. □ (ii) For |ψ⟩ = Σ c_i |φ_i⟩ with all |c_i|² < 1: max_i |c_i|² < 1. □ (iii) From (i)–(ii): maximum 1 is achieved exactly at the pointer states = SCF-attractor states. □
+
+**Consequence for §8.5.** 𝒫_holo projects to ξ_0(x) = arg max λ_synthesis = the pointer states at x. The "matching condition" in the synthesis theorem §8.5 is now a theorem, not an assumption.
+
+> **Convention note.** Paper 2A §2.2 uses λ = 0 for classical (coupling convention); Paper 1 and this synthesis use λ = 1 for classical (EGY convention). These are related by λ_synthesis = 1 − λ_coupling at leading order. This document uses the EGY convention throughout.
+
+---
 
 # §8 Quantum-Foundations Applications
 
@@ -910,9 +987,11 @@ The agents' "contradictory" conclusions arise because they are comparing states 
 
 In CR, a **measurement outcome** is defined relative to a coherence frame. There is no frame-invariant fact of the matter about "what F measured" that $\bar{\text{W}}$ can access without incurring a holonomy. The FR "contradiction" dissolves: the agents are making claims about frame-dependent quantities, and the mismatch between their conclusions is precisely the holonomy $i$.
 
-**Theorem 8.1.1 (FR Resolution).** *In the CR framework, the FR protocol traces a closed loop $\gamma_{\text{FR}}$ in $\Sigma = \mathbb{CP}^1$ with enclosed solid angle $\Omega = \pi$. The holonomy $\text{Hol}(\gamma_{\text{FR}}) = e^{i\pi/2} = i$ is the geometric phase that accounts for the apparent discrepancy between agents' conclusions. No logical contradiction arises once coherence-frame dependence is tracked.*
+**Theorem 8.1.1 (FR Resolution — conditional on $\Omega = \pi$).** *In the CR framework, the FR protocol traces a closed loop $\gamma_{\text{FR}}$ in $\Sigma = \mathbb{CP}^1$. Conditional on the enclosed solid angle being $\Omega = \pi$, the holonomy is $\text{Hol}(\gamma_{\text{FR}}) = e^{i\pi/2} = i$, which accounts for the apparent discrepancy between agents\u2019 conclusions. No logical contradiction arises once coherence-frame dependence is tracked.*
 
-> **Verification note:** The exact value $\Omega = \pi$ depends on the specific FR protocol geometry on $S^2$. A detailed verification with exact basis angles from Frauchiger & Renner (2018) is required. The result $\text{Hol} = i$ is expected to be robust to small protocol variations; exact calculation flagged for Opus verification pass.
+> **Verification note 1 ($\Omega = \pi$).** The value $\Omega = \pi$ is geometrically natural via the lune construction but depends on the exact composite-to-qubit projection of Wigner measurement steps $\xi_5, \xi_6$ not fully specified here. Detailed verification with exact basis angles from Frauchiger & Renner (2018) required. Flagged for Opus verification pass.
+
+> **Verification note 2 (sign under spacelike separation).** For the spatially separated Proietti variant (\u00a78.2), the sign of the holonomy is M-frame-dependent when measurement steps are spacelike-separated. This sign ambiguity is Born-compliant: $|\text{Hol}|^2 = 1$ regardless of sign, and the FR paradox resolution holds in any M-frame.
 
 ---
 
@@ -1060,6 +1139,24 @@ Superconducting qubit experiments (e.g., IBM Quantum, Google Sycamore) routinely
 
 ---
 
+## §8.5 KCBS Contextuality Bound: Corollary of the Born Rule
+
+**Theorem 8.5.1 (CR-native KCBS bound).** *Let $\Sigma_x = \mathbb{CP}^2$ (d = 3) and let $\{|v_i\rangle\}_{i=1}^5$ satisfy $\langle v_i | v_{i+1}\rangle = 0$ (indices mod 5). Then $\max_{|\psi\rangle} \sum_{i=1}^5 W(\Pi_i | \psi) = \sqrt{5}$. The noncontextual bound is 2.*
+
+**Proof.** By Corollary 6.2, $W(\Pi_i|\psi) = |\langle v_i|\psi\rangle|^2$. So $\sum_i W = \mathrm{Tr}(|\psi\rangle\langle\psi|K)$, $K = \sum_i \Pi_i$. The KCBS 5-cycle gives $K = \mathrm{diag}(\frac{5}{2}(1-\frac{1}{\sqrt{5}}), \frac{5}{2}(1-\frac{1}{\sqrt{5}}), \sqrt{5})$, so $\lambda_{\max}(K) = \sqrt{5}$. $\square$
+
+The excess $\sqrt{5}-2$ is the quantitative signature of D3 holonomy non-triviality around the KCBS pentagon. Full derivation: `DERIVATION_KCBS_2026-04-19.md` \S7.
+
+---
+
+## §8.6 Stochastic Corrections to the RC-1 Effective Stress Tensor
+
+The derivation of $T^{(\mathrm{eff})}_{\mu\nu}$ treats $T_M$ as a classical background (Assumption A1). When $T_M$'s quantum fluctuations are retained, the metric back-reaction acquires stochastic contributions governed by $\langle T_M T_M\rangle - \langle T_M\rangle^2$. The natural framework is the Einstein--Langevin equation of semiclassical stochastic gravity \cite{HuVerdaguer:2020}. A systematic treatment would (i) quantify the domain of validity of the mean-field approximation, (ii) connect $T^{(\mathrm{eff})}_{\mu\nu}$ to the gravitational decoherence predictions of Paper 1 (Signature 4: modified gravitational decoherence), and (iii) provide a noise-spectroscopy handle distinguishing RC-1 from standard semiclassical gravity. Deferred to future work.
+
+\bibitem{HuVerdaguer:2020} B.\,L. Hu and E. Verdaguer, \textit{Semiclassical and Stochastic Gravity} (Cambridge University Press, 2020).
+
+---
+
 ## References for §8
 
 - Frauchiger, D. & Renner, R. (2018). Quantum theory cannot consistently describe the use of itself. *Nature Communications* **9**, 3711.
@@ -1101,26 +1198,82 @@ In this picture, the observed dark-sector fractions emerge from how the decohere
 
 The SC3 checkpoint—“Does derived compactification on the KCR-Cone produce a physically viable extra dimension?”—is now conditionally established. On the positive side:
 
-- Derived compactification fixes the fiber topology as $$S^1$$ with $$c_1 = 1$$, eliminating continuous moduli and replacing an assumed compactification with a topological output.  
+- Derived compactification fixes the bulk extra dimension as a bounded interval, while the associated $$U(1)$$ topological structure is still carried by the Hopf/Berry fiber with $$c_1 = 1$$; this removes continuous shape moduli and replaces an assumed compactification with a derived geometric/topological output.  
 - The Casimir calculation with Dirichlet boundary conditions yields $$L^* = 56$$–$$69\,\mu\mathrm{m}$$, consistent with existing inverse-square-law bounds and specifying a concrete scale at which deviations from 4D gravity could appear.  
 - The Atiyah–Singer analysis shows that the mode-count parameter $$f$$ is constrained by the Hopf topology and that the resulting Level 1b correction leaves $$L^*$$ essentially unchanged.  
 
-On the open side, stabilization of the effective geometry remains unresolved. The combined effective potential $$V_{\mathrm{eff}}(\eta)$$ for the Berger-squashing parameter has no minimum when only geometric curvature, Casimir energy, and the current estimate of Level 3 are included: the same $$1/\eta^4$$ scaling that gives a useful Casimir contribution is structurally destabilizing, and the Machian term adds further negative curvature. Rather than hiding this, the analysis makes it a feature: SC3 is declared “conditionally established” precisely because scale stabilization is now a sharply posed, quantitative problem, not a hand-waved assumption. Paper III is tasked with adding the missing physics—flux quantization and a fully derived $$T_{M\Sigma}$$ backreaction—to close this gap.
+On the open side, stabilization of the effective geometry remains unresolved. The combined effective potential $$V_{\mathrm{eff}}(\eta)$$ for the Berger-squashing parameter has no minimum when only geometric curvature, Casimir energy, and the current estimate of Level 3 are included: the same $$1/\eta^4$$ scaling that gives a useful Casimir contribution is structurally destabilizing, and the Machian term adds further negative curvature. Rather than hiding this, the analysis makes it a feature: SC3 is declared “conditionally established” precisely because scale stabilization is now a sharply posed, quantitative problem, not a hand-waved assumption. Paper 3 is tasked with adding the missing physics—flux quantization and a fully derived $$T_{M\Sigma}$$ backreaction—to close this gap.
 
 ## §9.5 The Role of the KCR-Cone
 
-Throughout, the KCR-Cone is presented as a worked example and template, not as a unique solution. It demonstrates that when compactification is derived from coherence geometry rather than assumed, several things happen automatically: the fiber topology is fixed, the Kaluza–Klein spectrum is discretized without continuous moduli, and coupling hierarchies like $$\alpha_{\rm geom} \approx 1.5005$$ (RC-8b) appear as geometric invariants rather than fit parameters. It also shows how easy it is to misassign roles—FS curvature nearly became a “geometric Λ”—and how the five-level hierarchy helps prevent such category errors.
+Throughout, the KCR-Cone is presented as a worked example and template, not as a unique solution. It demonstrates that when compactification is derived from coherence geometry rather than assumed, several things happen automatically: the bulk interval geometry and associated Berry-fiber topology are fixed, the KCR spectrum is discretized without continuous moduli, and coupling hierarchies like $$\alpha_{\rm geom} \approx 1.5005$$ (RC-8b) appear as geometric invariants rather than fit parameters. It also shows how easy it is to misassign roles—FS curvature nearly became a “geometric Λ”—and how the five-level hierarchy helps prevent such category errors.
 
-The invitation going forward is straightforward. Any alternative geometry consistent with the coherence-frame axioms can be run through the same pipeline: derive its compactification, compute its Level 1 Casimir contribution and Level 1b topological corrections, determine whether its Level 2 curvature enters gravity or only decoherence, and evaluate its Level 3–4 entanglement backreaction. The KCR-Cone has passed this battery of tests up to the SC3 stabilization gate; Paper III will decide whether it clears that gate or whether another geometry does better. Either way, the framework—compactification as output, not input, organized by a five-level Σ → M hierarchy—is the durable result.
+The holographic projection line of §5 also isolates a methodological lesson that may outlast the present worked example. The tempting first move is a direct identification: compress the large quantum tower immediately into an effective depth variable. The successful derivation instead passes through the mediating coherence geometry on $M \times \Sigma$, and only then recovers a derived projection or effective extra-dimensional structure. In the present paper that logic appears in the passage from the naive Hilbert-space picture to the boundary restriction $\mathcal{P}_{\mathrm{holo}}$; in later holographic constructions the same three-stage sequence — heuristic intuition, geometric mediation, derived effective structure — may prove reusable.
+
+**Methodological remark: Mediated emergence of effective dimensions.** This three-stage pattern recurs throughout the series and is generalizable. Briefly: (1) a heuristic identifies a large kinematical structure with an effective dimension; (2) a geometric mediator ($\Sigma$, or in holography a MERA/cMERA entanglement network) carries the actual structure; (3) the effective coordinate is derived from the mediator's topology and dynamics, not from direct identification with the original Hilbert or configuration space. Two worked examples with an AdS/CFT correspondence table are in `METHODOLOGICAL_PRINCIPLE_MEDIATED_EMERGENCE_2026-04-26.md`. The all-dimensions generalization is in `P3_ALL_DIMENSIONS_OUTLOOK_2026-04-27.md` (Paper 3 \S9).
+
+The invitation going forward is straightforward. Any alternative geometry consistent with the coherence-frame axioms can be run through the same pipeline: derive its compactification, compute its Level 1 Casimir contribution and Level 1b topological corrections, determine whether its Level 2 curvature enters gravity or only decoherence, and evaluate its Level 3–4 entanglement backreaction. The KCR-Cone has passed this battery of tests up to the SC3 stabilization gate; Paper 3 will decide whether it clears that gate or whether another geometry does better. Either way, the framework—compactification as output, not input, organized by a five-level Σ → M hierarchy—is the durable result.
+
+## §9.6 Relationship to Existing Programs
+
+> **Note on Related Work coverage.** A structured Related Work skeleton (`CR_Related_Work_19Apr2026.docx`) was produced in the 2026-04-19 session covering 10/12 verified citations across 7 constraint categories. Two claims are marked as genuinely CR-novel in that skeleton and not covered by any neighboring program: (1) *bidirectionality* — the SCF fixed-point equation runs in both directions (M → Σ and Σ → M), whereas standard decoherence/open-systems and holographic programs are typically one-directional; (2) *Born geometry* — the Born rule emerges from the Fubini-Study geometry of Σ via SCF + COV, rather than being postulated or recovered from symmetry alone. The §9.6 text below draws on that skeleton; these two CR-novel claims should be highlighted explicitly in final manuscript preparation.
+
+The CR/HCR/KCR family is not best compared to the current landscape by slogans but by limits. The right comparison protocol is: begin with the equations and observables a neighboring program already trusts, identify the regime in which the present framework reproduces them, and only then state what additional structure is carried by $$T_{M\Sigma}$$. On that standard, the framework has several natural but still partial interfaces.
+
+The strongest current interface is with **holography / AdS-CFT–style programs** (Susskind 1995; Maldacena 1998; Ryu & Takayanagi 2006; Van Raamsdonk 2010; Swingle 2012). The overlap is real at the level of entropy bounds, extremal surfaces, boundary consistency conditions, and the general idea that entanglement structure constrains admissible bulk geometry. But the present work is making a structural claim at that level, not yet providing a string-theoretic embedding, an operator-algebra realization, or a controlled $$1/N$$ construction. For that reason the present holographic comparison should be read as “same problem class, partially overlapping tools,” not “already a new AdS/CFT dual pair.”
+
+There is also a strong interface with **quantum-information / decoherence / open-systems programs** (Lindblad 1976; Joos & Zeh 1985; Joos *et al.* 2003; Zurek 2003; Zurek 2005). The language of Lindblad evolution, Loschmidt echoes, fidelity amplitudes, pointer sectors, and reversibility diagnostics is already native to large parts of this paper. In that setting, $$T_{M\Sigma}$$ should be read as a geometric envelope for channel/dilation language, not as a rhetorical substitute for it. The case for the framework in that community depends on whether the geometric packaging yields either calculational compression or genuinely new diagnostics.
+
+The interface with **loop quantum gravity and isolated-horizon programs** is narrower but still substantive (Rovelli 2004; Ashtekar, Baez, Corichi & Krasnov 1998). The overlap is at the level of boundary degrees of freedom, horizon data, and coarse-grained area information. Here the present formulation should be read as continuum and effective: it is not a replacement for spin networks or a derivation from them. The right claim is that $$T_{M\Sigma}$$ may function as a coarse-grained mediator above discrete horizon/boundary data, not that the discrete microstructure has already been recovered.
+
+There is likewise a meaningful interface with **tensor-network / holographic-code programs** (Swingle 2012; Pastawski *et al.* 2015). The admissibility band and SCF line can be read as continuum analogues of code/isometry constraints, and the framework shares with those programs the conviction that entanglement structure and geometry should be treated together. But no explicit MERA-, HaPPY-, or fixed-point-code realization is yet claimed, so the present comparison remains analogical and structural rather than constructive.
+
+Other interfaces are presently weaker or more indirect (Reuter & Saueressig 2012; Bombelli *et al.* 1987; Ambjørn, Jurkiewicz & Loll 2001; Everett 1957; Wallace 2012; Bohm 1952). For **perturbative string theory**, the obvious complaint is that the current papers do not yet produce strings, branes, amplitudes, or moduli dynamics. For **asymptotic safety**, the resonance is only partial: fixed-point language alone is not enough unless $$T_{M\Sigma}$$ can be related to functional RG flows. For **causal-set / CDT programs**, the missing step is even more basic: $$T_{M\Sigma}$$ has not yet been defined on a discrete causal substrate. For **Everettian** and **Bohmian** communities, the present series should be read as branch-geometry or effective-guidance interface work, not as an unqualified replacement for branching or pilot-wave ontology. The local Bohmian overlap in Paper 2A §2.3 and the branch/pointer-sector language in Paper 2A §2.5 are therefore best understood as controlled interfaces with existing programs, not declarations that those programs have been superseded wholesale.
+
+## §9.7 Addressing Predictable Objections
+
+Several objections are likely to recur across these communities, and they should be treated as legitimate technical demands rather than as sociological resistance.
+
+**“Where is the explicit $$T_{M\Sigma}$$?”** This is the most universal objection. A framework-level constraint list is not enough by itself. The right answer is local and cumulative: the qubit/Bloch-sphere and dephasing sectors, the pilot-wave overlap in Paper 2A §2.3, the pointer-sector / Born-rule structures in Paper 2A §2.5, and the KCR-Cone interval evaluation in Paper 2B are all partial explicit realizations. What is still missing is a comparably explicit, fully general construction of $$T_{M\Sigma}$$ across the whole program.
+
+**“Show me a regime where your geometry reduces to equations I already know.”** This is also a fair demand. For open-systems readers, the framework must reduce to known Lindblad / pointer / decoherence structures in the appropriate limits. For Bohmian readers, it must recover the guidance-law and quantum-potential sector where the dephasing model applies. For holographers, it must reproduce RT/HRT-type structures and entanglement constraints in known backgrounds before stronger claims are made. For LQG-style readers, the relevant target is a coarse-grained connection to spin-network or horizon data rather than a mere verbal analogy.
+
+**“Why introduce a new geometric object instead of just using the existing formalism?”** For channel/dilation programs this means: why not stay with completely positive maps and effective master equations? For asymptotic-safety readers it means: why not stay with functional RG flows? For Everettian readers it means: why not stick with unitary branching? The only defensible answer is that $$T_{M\Sigma}$$ is useful only if it unifies structures that would otherwise remain disconnected or if it yields new diagnostics that the older language does not already package as naturally.
+
+**“What is the genuinely new prediction?”** Without at least one diagnostic unavailable in the comparison program, the framework remains interpretive overlay rather than physical advance. The present series has only a first set of answers: the Zeno basis-angle dependence, the CMB quadrupole-suppression line, and the interval/KCR compactification constraints. These are enough to justify continued development, but not enough to eliminate the demand for sharper, cross-community predictions.
+
+The deeper strategic point is therefore simple. The framework should be presented most strongly where it already has calculational traction, and more cautiously where the interface is still aspirational. That is not a weakness; it is the correct way to keep the comparison to existing programs honest. If later papers can make $$T_{M\Sigma}$$ explicit on additional substrates, recover more of the neighboring limits, and sharpen the existing diagnostics into unmistakable tests, then the present discussion section will read as early calibration rather than defensive hedging. If not, the value of the current work will remain what it already securely is: a coherence-first geometric organization of problems that are otherwise treated separately.
+
+## References for §9
+
+- Susskind, L. (1995). The world as a hologram. *Journal of Mathematical Physics* **36**, 6377–6396.
+- Maldacena, J. (1998). The large-N limit of superconformal field theories and supergravity. *Advances in Theoretical and Mathematical Physics* **2**, 231–252.
+- Ryu, S. & Takayanagi, T. (2006). Holographic derivation of entanglement entropy from AdS/CFT. *Physical Review Letters* **96**, 181602.
+- Van Raamsdonk, M. (2010). Building up spacetime with quantum entanglement. *General Relativity and Gravitation* **42**, 2323–2329.
+- Swingle, B. (2012). Entanglement renormalization and holography. *Physical Review D* **86**, 065007.
+- Lindblad, G. (1976). On the generators of quantum dynamical semigroups. *Communications in Mathematical Physics* **48**, 119–130.
+- Joos, E. & Zeh, H. D. (1985). The emergence of classical properties through interaction with the environment. *Zeitschrift für Physik B* **59**, 223–243.
+- Joos, E., Zeh, H. D., Kiefer, C., Giulini, D., Kupsch, J. & Stamatescu, I.-O. (2003). *Decoherence and the Appearance of a Classical World in Quantum Theory*. 2nd ed. Springer.
+- Zurek, W. H. (2003). Decoherence, einselection, and the quantum origins of the classical. *Reviews of Modern Physics* **75**, 715–775.
+- Zurek, W. H. (2005). Probabilities from entanglement, Born’s rule from envariance. *Physical Review A* **71**, 052105.
+- Rovelli, C. (2004). *Quantum Gravity*. Cambridge University Press.
+- Ashtekar, A., Baez, J., Corichi, A. & Krasnov, K. (1998). Quantum geometry and black hole entropy. *Physical Review Letters* **80**, 904–907.
+- Pastawski, F., Yoshida, B., Harlow, D. & Preskill, J. (2015). Holographic quantum error-correcting codes: Toy models for the bulk/boundary correspondence. *Journal of High Energy Physics* **06**, 149.
+- Reuter, M. & Saueressig, F. (2012). Quantum Einstein gravity. *New Journal of Physics* **14**, 055022.
+- Bombelli, L., Lee, J., Meyer, D. & Sorkin, R. D. (1987). Space-time as a causal set. *Physical Review Letters* **59**, 521–524.
+- Ambjørn, J., Jurkiewicz, J. & Loll, R. (2001). Dynamically triangulating Lorentzian quantum gravity. *Nuclear Physics B* **610**, 347–382.
+- Everett, H. (1957). Relative state formulation of quantum mechanics. *Reviews of Modern Physics* **29**, 454–462.
+- Wallace, D. (2012). *The Emergent Multiverse: Quantum Theory According to the Everett Interpretation*. Oxford University Press.
+- Bohm, D. (1952). A suggested interpretation of the quantum theory in terms of “hidden” variables. *Physical Review* **85**, 166–179.
 
 
 # §10 Open Problems (REVISED)
 
-The KCR framework now has a well-defined five-level Σ → M coupling hierarchy and a worked example on the KCR-Cone. This makes it possible to state open problems with sharper scope. We group them into: (A) near-term questions still within the reach of the current geometry and tools; (B) Paper III gates that must be resolved before the program advances; and (C) long-range structural questions that chart the conceptual roadmap.
+The KCR framework now has a well-defined five-level Σ → M coupling hierarchy and a worked example on the KCR-Cone. This makes it possible to state open problems with sharper scope. We group them into: (A) near-term questions still within the reach of the current geometry and tools; (B) Paper 3 gates that must be resolved before the program advances; and (C) long-range structural questions that chart the conceptual roadmap.
 
 ***
 
-## §10.1 Category A — Paper 2B Open Problems (Near-Term, Concrete)
+## §10.1 Category A — KCR-Cone Open Problems (Near-Term, Concrete)
 
 These problems can, in principle, be addressed by extending the methods already used in the companion paper on the KCR-Cone. They refine or complete results that are partially in hand.
 
@@ -1139,9 +1292,9 @@ At the current stage, the two-channel model reproduces $$\Omega_{\mathrm{DE}} = 
 
 ***
 
-## §10.2 Category B — Paper III Gates (Blocking Problems)
+## §10.2 Category B — Paper 3 Gates (Blocking Problems)
 
-These problems are now sharply defined by the D1–D5 results. They must be addressed in Paper III before the framework can claim a complete account of SC3 and the dark sector.
+These problems are now sharply defined by the D1–D5 results. They must be addressed in Paper 3 before the framework can claim a complete account of SC3 and the dark sector.
 
 **OP-B1. SC3 stabilization via flux quantization.**  
 The D3/D3b analysis establishes “Outcome B”: with Casimir $$ \propto 1/\eta^4$$ and Level 3 backreaction $$ \propto 1/\eta^2$$, the effective potential $$V_{\mathrm{eff}}(\eta)$$ has no minimum; any stationary point is a maximum. Stabilization therefore requires an additional contribution with slower-than-$$\eta^2$$ growth but positive sign—flux quantization on the compact fiber is the primary candidate. The gate problem is to compute this flux contribution, derive its $$\eta$$-dependence (e.g., constant or logarithmic), and demonstrate a bona fide minimum in $$V_{\mathrm{eff}}(\eta)$$ consistent with SC3.
@@ -1150,13 +1303,13 @@ The D3/D3b analysis establishes “Outcome B”: with Casimir $$ \propto 1/\eta^
 The geometric coefficient in the Level 3 Machian term is now fixed by a reproducible derivation: $$\alpha_{\rm geom} = 10\sqrt{2}/(3\pi)\approx 1.5005$$ (RC-8b). The remaining gate is to derive the full effective stress-energy tensor $$T_{\mu\nu}^{\mathrm{drag}}$$ (including its equation of state beyond the isotropic estimate) together with the sourced dynamics that determine $$c_\Gamma=\Gamma_{\mathrm{dec}}/H_0$$ on the cosmological background.
 
 **OP-B3. SU(3)$$_c$$ gauge derivation.**  
-D4 shows that the $$c_1 = 1$$ Hopf bundle naturally yields a geometric $$U(1)_Y$$ structure but cannot produce $$SU(3)_c$$ from this single $$S^2$$–$$S^1$$ compactification alone. Paper III must introduce the additional compact structure—whether an extended spatial compactification, a higher-dimensional Hopf fibration, or another mechanism—that supports an $$SU(3)$$ principal bundle. The gate is to construct such a bundle explicitly and demonstrate how the color sector emerges from the same derived-compactification philosophy.
+D4 shows that the $$c_1 = 1$$ Hopf bundle naturally yields a geometric $$U(1)_Y$$ structure but cannot produce $$SU(3)_c$$ from this single $$S^2$$ base plus Hopf-fiber structure alone. Paper 3 must introduce the additional compact structure—whether an extended spatial compactification, a higher-dimensional Hopf fibration, or another mechanism—that supports an $$SU(3)$$ principal bundle. The gate is to construct such a bundle explicitly and demonstrate how the color sector emerges from the same derived-compactification philosophy.
 
 **OP-B4. Cosmic decoherence history and $$\Omega_{\mathrm{DM}}/\Omega_{\mathrm{DE}}$$ as prediction.**  
 The present dark-sector model treats the dark-matter–to–dark-energy ratio as an input. Once $$\Gamma_{\mathrm{dec}}(\eta)$$ and $$T_{M\Sigma}$$ backreaction are derived from the action, the cosmic decoherence history becomes calculable across radiation, matter, and dark-energy domination. The gate problem is to compute $$\Gamma_{\mathrm{dec}}(t)$$ on the cosmological background and thereby turn $$\Omega_{\mathrm{DM}}/\Omega_{\mathrm{DE}}$$ into a parameter-free prediction.
 
 **OP-B5. Chronogenic field and coalescence map consistency.**  
-The chronogenic scalar $$\phi_c$$ and the coalescence map $$C : \Sigma \to M$$ are conceptually intertwined: both aim to capture how a pre-temporal coherence substrate yields a classical spacetime with an arrow of time. Paper III must supply a single, consistent set of equations that (1) links $$\phi_c$$ to decoherence-driven entropy production, and (2) realizes the coalescence hypothesis with a non-singular Big Bang locus and a well-defined metric at the apex. This is a true gate: without it, the chronogenic picture remains heuristic.
+The chronogenic scalar $$\phi_c$$ and the coalescence map $$C : \Sigma \to M$$ are conceptually intertwined: both aim to capture how a pre-temporal coherence substrate yields a classical spacetime with an arrow of time. Paper 3 must supply a single, consistent set of equations that (1) links $$\phi_c$$ to decoherence-driven entropy production, and (2) realizes the coalescence hypothesis with a non-singular Big Bang locus and a well-defined metric at the apex. This is a true gate: without it, the chronogenic picture remains heuristic.
 
 ***
 
