@@ -87,7 +87,7 @@ The first closure operates entirely on the Σ side and delivers the Born rule as
 *Step 3: Frame Noncontextuality ⇒ Born (Corollary 6.2).* By Gleason's theorem (d ≥ 3): the unique positive, normalized, SU(d)-equivariant function on rank-1 projections of ℂ^d is the trace form W(|φ_i⟩|ψ⟩) = |⟨φ_i|ψ⟩|². For d = 2: the Busch (2003) extension to effects under POVM-additivity supplies the same conclusion. ✅ VERIFIED (Gleason 1957; Busch 2003).
 
 **Open gates in §2.1:**
-- G1: Gauge uniqueness (Conjecture 6.3′) — are all SCF fixed-points gauge-equivalent to the canonical class? ❌ MISSING. Without this, the chain proves "IF canonical gauge THEN Born"; with it, it proves "SCF FORCES Born."
+- ~~G1: Gauge uniqueness (Conjecture 6.3′)~~ ✅ **PROVED 2026-04-27** — Theorem G1-Cov (HCR axioms A1–A4 → naturality via Kolar–Michor–Slovak → Lemma NP → every admissible SCF fixed-point satisfies COV unconditionally) + Theorem G1-Full (∇^FS is unique natural Kähler-compatible connection on CP^{d-1}; SU(d) transitive on orthonormal bases → all A_C connections gauge-equivalent → single orbit). The chain now proves "SCF FORCES Born" — unconditionally in the non-degenerate QM regime. ⚠️ Pending independent mathematical review; Wilczek–Zee degenerate-pointer extension and QFT loop-correction stability remain open.
 - Wilczek–Zee degenerate-pointer extension (non-Abelian Berry phases). ❌ MISSING.
 - QFT translation of the Banach contraction (loop corrections to κ = εC_E C_Q C_{YM}). ❌ MISSING.
 - Global continuation beyond the initial Banach ball. ❌ MISSING.
@@ -217,7 +217,7 @@ The coincidence of all three is not assumed; it follows from Lemma 1 (below).
 - (III) follows from §2.3 + Lemma 1: 𝒫_holo projects to ξ_0 = arg max λ_synthesis = {|φ_i⟩} (Lemma 1); {|φ_i⟩} are the SCF-attractor states (§2.1); ∂M is the fact horizon (§2.3); CMB identification from Paper 3 §3.
 
 **Conditional on:**
-- Conjecture 6.3′ (gauge uniqueness of A_C in §2.1) — without this, (II) reads "IF the canonical gauge class THEN Born."
+- ~~Conjecture 6.3′~~ ✅ **PROVED 2026-04-27** (Theorems G1-Cov + G1-Full) — (II) is now unconditional in the non-degenerate QM regime; "IF canonical gauge" caveat is lifted. ⚠️ Pending independent mathematical review.
 - QFT translation of the Banach contraction (§2.1 varying-basis branch in renormalized theory).
 - Lemma 0 (H ⊋ M — provides the ontological backdrop for (III)).
 - Constructive 𝓕: the theorem names the locus ∂M × Σ but does not construct the reconstruction map from Hilbert boundary data to (M, g, {Φ_a}); this is the Papers 4–7 program.
@@ -242,8 +242,8 @@ The coincidence of all three is not assumed; it follows from Lemma 1 (below).
 
 | # | Gate | Type | Effort | Blocks |
 |---|------|------|--------|--------|
-| G1 | Conjecture 6.3′ — gauge uniqueness of A_C | calculation | 4–6 weeks | Full closure of §2.1 and unconditional (II) |
-| G2 | α = 3/2 vs α_{geom} = 10√2/(3π) — coincidence or derivation? | calculation/coincidence | ½ day for sanity check; up to 6 months for derivation | Sharpness of §2.2 numerical claim |
+| ~~G1~~ | ~~Conjecture 6.3′ — gauge uniqueness of A_C~~ | ✅ **PROVED 2026-04-27** — Theorem G1-Cov (axioms A1–A4 → naturality → Lemma NP → COV unconditional for all admissible F) + Theorem G1-Full (∇^FS uniqueness by Kobayashi–Nomizu + SU(d) transitivity on orthonormal bases → single gauge orbit). Born chain now unconditional in non-degenerate QM regime. See `G1_PHASE1_RESULT_2026-04-27.md`, `G1_PHASE2_RESULT_2026-04-27.md`. ⚠️ Requires independent mathematical review before final claim. | — | — |
+| ~~G2~~ | ~~α = 3/2 vs α_{geom} = 10√2/(3π) — coincidence or derivation?~~ | ✅ **RESOLVED 2026-04-26** — α_geom = 10√2/(3π) is **derived** (RC-8b + independent Python verification); proximity to 3/2 is a Wallis-product transcendental near-coincidence (same 0.034% error as π ≈ 20√2/9). Conjecture C1 retired. See `RC2_RESOLUTION_2026-04-26.md`. | — | — |
 | G3 | Physical k_c from FS geometry | calculation | 2–4 weeks (Paper 4 deliverable) | Parameter-free CMB prediction |
 | G4 | Constructive 𝓕: (H, ∂𝒞, T_{AB}) → (M, g_{μν}, {Φ_a}) | Papers 4–7 program | 36–60 months | Full constructive closure of (III) |
 
@@ -275,16 +275,16 @@ Three viable placements for this document in the series:
 
 | Track | Status |
 |---|---|
-| §2.1 Quantum closure (Born chain) | ~72% QM regime |
+| §2.1 Quantum closure (Born chain) | ~90% QM non-degenerate regime (G1 proved 2026-04-27; Wilczek–Zee degenerate-pointer + QFT loop extension remain) |
 | §2.2 Holographic closure (RC-1) | ~85% analytic / pending error-bar audit |
 | §2.3 Ontological closure (H⊋M / fact horizon) | ~40% named, not constructed |
 | Lemma 0 (H ⊋ M) | ⚠️ Packaged; needs formal proof |
 | Lemma 1 (SCF saturation ≡ λ=1) | ✅ Proved in this document |
-| Theorem (main) | ✅ Stated; conditional on G1, G4 |
+| Theorem (main) | ✅ Stated; conditional on G4 only (G1 proved 2026-04-27 — Born chain unconditional in non-degenerate QM regime) |
 | Corollaries 1–4 | ✅ All stated; C2 k_c observationally inferred; C4 Ω=π pending |
 | This document | ~75% — full prose, proofs, theorem, corollaries; connective polish and citation pass remain |
 
-**Overall HCR readiness for external review:** ~65–70%, gated by G1 (Born chain uniqueness), G3 (physical k_c), M1/M2/M3 prose insertions, and the synthesis prose polish pass.
+**Overall HCR readiness for external review:** ~70–75%, gated by G3 (physical k_c), M1/M2/M3 prose insertions, synthesis prose polish pass, and independent peer review of G1 (Theorems G1-Cov + G1-Full proved 2026-04-27 — Born chain uniqueness resolved).
 
 ---
 
