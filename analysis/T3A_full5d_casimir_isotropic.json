@@ -1,0 +1,1082 @@
+[
+  {
+    "ic": {
+      "a0": 2.0,
+      "Ha0": 1.0,
+      "b0": 1.5,
+      "Hb0": -0.9207818930041153
+    },
+    "t_end": 40.0,
+    "a_min": 2.0,
+    "a_max": 21.91109447168932,
+    "b_min": 1.2106353442166782,
+    "b_max": 36.49479452722542,
+    "Ha_crossings": 1,
+    "Hb_crossings": 1,
+    "max_abs_constraint": 0.8573051255383137,
+    "max_abs_continuity": 3.773293350884461,
+    "survived_full_window": true
+  },
+  {
+    "ic": {
+      "a0": 2.0,
+      "Ha0": 1.0,
+      "b0": 2.0,
+      "Hb0": -1.1458333333333333
+    },
+    "t_end": 40.0,
+    "a_min": 2.0,
+    "a_max": 26.689162860877193,
+    "b_min": 1.2737213452314884,
+    "b_max": 24.74276411020525,
+    "Ha_crossings": 1,
+    "Hb_crossings": 1,
+    "max_abs_constraint": 0.9728411390453342,
+    "max_abs_continuity": 2.4677701944983648,
+    "survived_full_window": true
+  },
+  {
+    "ic": {
+      "a0": 1.5,
+      "Ha0": 0.1,
+      "b0": 1.5,
+      "Hb0": -1.2522633744855964
+    },
+    "t_end": 40.0,
+    "a_min": 1.5,
+    "a_max": 21.31749573620116,
+    "b_min": 0.7720075947895922,
+    "b_max": 43.653034492133195,
+    "Ha_crossings": 1,
+    "Hb_crossings": 1,
+    "max_abs_constraint": 11.474449395609586,
+    "max_abs_continuity": 37.35164511186801,
+    "survived_full_window": true
+  },
+  {
+    "ic": {
+      "a0": 1.5,
+      "Ha0": 0.3,
+      "b0": 2.0,
+      "Hb0": -1.4342592592592593
+    },
+    "t_end": 40.0,
+    "a_min": 1.5,
+    "a_max": 43.533375117758865,
+    "b_min": 0.674935026435454,
+    "b_max": 19.938683235443026,
+    "Ha_crossings": 0,
+    "Hb_crossings": 1,
+    "max_abs_constraint": 19.945267836427675,
+    "max_abs_continuity": 84.54680924756825,
+    "survived_full_window": true
+  },
+  {
+    "ic": {
+      "a0": 1.0,
+      "Ha0": 0.6,
+      "b0": 2.0,
+      "Hb0": -2.093055555555556
+    },
+    "t_end": 40.0,
+    "a_min": 1.0,
+    "a_max": 34.68542231693403,
+    "b_min": 0.5490148293995527,
+    "b_max": 22.96412201699181,
+    "Ha_crossings": 1,
+    "Hb_crossings": 1,
+    "max_abs_constraint": 45.60114370781336,
+    "max_abs_continuity": 292.4533377198522,
+    "survived_full_window": true
+  },
+  {
+    "ic": {
+      "a0": 2.0,
+      "Ha0": 0.1,
+      "b0": 2.0,
+      "Hb0": -1.5583333333333331
+    },
+    "t_end": 40.0,
+    "a_min": 2.0,
+    "a_max": 93.47052917424764,
+    "b_min": 0.5304959487314441,
+    "b_max": 16.73821716049352,
+    "Ha_crossings": 0,
+    "Hb_crossings": 1,
+    "max_abs_constraint": 53.54065431072854,
+    "max_abs_continuity": 355.2423985904187,
+    "survived_full_window": true
+  },
+  {
+    "ic": {
+      "a0": 1.0,
+      "Ha0": 0.3,
+      "b0": 1.5,
+      "Hb0": -2.535939643347051
+    },
+    "t_end": 40.0,
+    "a_min": 1.0,
+    "a_max": 43.786995267060604,
+    "b_min": 0.45804921092518164,
+    "b_max": 20.969876291294433,
+    "Ha_crossings": 0,
+    "Hb_crossings": 1,
+    "max_abs_constraint": 95.60141443227025,
+    "max_abs_continuity": 859.1637277381583,
+    "survived_full_window": true
+  },
+  {
+    "ic": {
+      "a0": 0.6,
+      "Ha0": 1.0,
+      "b0": 2.0,
+      "Hb0": -3.673611111111111
+    },
+    "t_end": 40.0,
+    "a_min": 0.6,
+    "a_max": 41.898957573996604,
+    "b_min": 0.33034123371568813,
+    "b_max": 22.09377227819701,
+    "Ha_crossings": 0,
+    "Hb_crossings": 1,
+    "max_abs_constraint": 354.2292902001965,
+    "max_abs_continuity": 6120.035167170097,
+    "survived_full_window": true
+  },
+  {
+    "ic": {
+      "a0": 1.0,
+      "Ha0": 0.3,
+      "b0": 2.0,
+      "Hb0": -3.2861111111111114
+    },
+    "t_end": 40.0,
+    "a_min": 1.0,
+    "a_max": 101.78221355061109,
+    "b_min": 0.2754289278696327,
+    "b_max": 17.662511883849017,
+    "Ha_crossings": 0,
+    "Hb_crossings": 1,
+    "max_abs_constraint": 738.5404790936764,
+    "max_abs_continuity": 18163.273460831428,
+    "survived_full_window": true
+  },
+  {
+    "ic": {
+      "a0": 0.6,
+      "Ha0": 0.6,
+      "b0": 1.5,
+      "Hb0": -4.6809327846364885
+    },
+    "t_end": 40.0,
+    "a_min": 0.6,
+    "a_max": 54.107225720808145,
+    "b_min": 0.2685934482934023,
+    "b_max": 20.375072674275234,
+    "Ha_crossings": 0,
+    "Hb_crossings": 1,
+    "max_abs_constraint": 814.674136727365,
+    "max_abs_continuity": 21130.443137314858,
+    "survived_full_window": true
+  },
+  {
+    "ic": {
+      "a0": 1.5,
+      "Ha0": 0.1,
+      "b0": 2.0,
+      "Hb0": -3.502777777777777
+    },
+    "t_end": 40.0,
+    "a_min": 1.5,
+    "a_max": 184.9091049505826,
+    "b_min": 0.2364805018612673,
+    "b_max": 17.075378786324404,
+    "Ha_crossings": 0,
+    "Hb_crossings": 1,
+    "max_abs_constraint": 1360.8068398445214,
+    "max_abs_continuity": 45321.62668336696,
+    "survived_full_window": true
+  },
+  {
+    "ic": {
+      "a0": 0.6,
+      "Ha0": 0.6,
+      "b0": 2.0,
+      "Hb0": -5.05601851851852
+    },
+    "t_end": 40.0,
+    "a_min": 0.6,
+    "a_max": 91.91769916410003,
+    "b_min": 0.18954113997972763,
+    "b_max": 18.456006599851836,
+    "Ha_crossings": 0,
+    "Hb_crossings": 1,
+    "max_abs_constraint": 3294.5552500337467,
+    "max_abs_continuity": 171020.39242318357,
+    "survived_full_window": true
+  },
+  {
+    "ic": {
+      "a0": 1.0,
+      "Ha0": 0.1,
+      "b0": 1.5,
+      "Hb0": -6.807818930041153
+    },
+    "t_end": 40.0,
+    "a_min": 1.0,
+    "a_max": 187.5498087777522,
+    "b_min": 0.1594190474336173,
+    "b_max": 17.5803214327044,
+    "Ha_crossings": 0,
+    "Hb_crossings": 1,
+    "max_abs_constraint": 6590.010480835166,
+    "max_abs_continuity": 482891.08640785655,
+    "survived_full_window": true
+  },
+  {
+    "ic": {
+      "a0": 0.6,
+      "Ha0": 0.1,
+      "b0": 1.0,
+      "Hb0": -11.211111111111112
+    },
+    "t_end": 40.0,
+    "a_min": 0.6,
+    "a_max": 121.72943329386999,
+    "b_min": 0.1427745842841186,
+    "b_max": 18.222975254853626,
+    "Ha_crossings": 0,
+    "Hb_crossings": 1,
+    "max_abs_constraint": 10245.206082995062,
+    "max_abs_continuity": 935481.573153112,
+    "survived_full_window": true
+  },
+  {
+    "ic": {
+      "a0": 0.6,
+      "Ha0": 0.3,
+      "b0": 1.5,
+      "Hb0": -8.461865569272979
+    },
+    "t_end": 40.0,
+    "a_min": 0.6,
+    "a_max": 135.53756924169247,
+    "b_min": 0.13274999483709032,
+    "b_max": 18.131453967851296,
+    "Ha_crossings": 0,
+    "Hb_crossings": 1,
+    "max_abs_constraint": 13703.453300139665,
+    "max_abs_continuity": 1448599.874226546,
+    "survived_full_window": true
+  },
+  {
+    "ic": {
+      "a0": 0.6,
+      "Ha0": 0.3,
+      "b0": 2.0,
+      "Hb0": -9.212037037037039
+    },
+    "t_end": 40.0,
+    "a_min": 0.6,
+    "a_max": 206.30204836616446,
+    "b_min": 0.09169765223927377,
+    "b_max": 18.12763307868523,
+    "Ha_crossings": 0,
+    "Hb_crossings": 1,
+    "max_abs_constraint": 60199.844820721235,
+    "max_abs_continuity": 13336002.100835595,
+    "survived_full_window": true
+  },
+  {
+    "ic": {
+      "a0": 1.0,
+      "Ha0": 0.1,
+      "b0": 2.0,
+      "Hb0": -9.058333333333334
+    },
+    "t_end": 40.0,
+    "a_min": 1.0,
+    "a_max": 350.3888553033292,
+    "b_min": 0.09026946558137773,
+    "b_max": 17.93569117754846,
+    "Ha_crossings": 0,
+    "Hb_crossings": 1,
+    "max_abs_constraint": 64103.344865990686,
+    "max_abs_continuity": 14652540.986656485,
+    "survived_full_window": true
+  },
+  {
+    "ic": {
+      "a0": 0.6,
+      "Ha0": 0.1,
+      "b0": 1.5,
+      "Hb0": -24.58559670781893
+    },
+    "t_end": 40.0,
+    "a_min": 0.6,
+    "a_max": 448.7135184990378,
+    "b_min": 0.043946086244534485,
+    "b_max": 18.590920578277103,
+    "Ha_crossings": 0,
+    "Hb_crossings": 1,
+    "max_abs_constraint": 1141205.9287721664,
+    "max_abs_continuity": 1100604019.0866516,
+    "survived_full_window": true
+  },
+  {
+    "ic": {
+      "a0": 0.6,
+      "Ha0": 1.0,
+      "b0": 1.5,
+      "Hb0": -3.4485596707818935
+    },
+    "t_end": 39.06795524616529,
+    "a_min": 0.0006131008093361877,
+    "a_max": 18.801936213281056,
+    "b_min": 0.4397384675448552,
+    "b_max": 955643.1173272606,
+    "Ha_crossings": 1,
+    "Hb_crossings": 1,
+    "max_abs_constraint": 3961713.0,
+    "max_abs_continuity": 1109.5222093698856,
+    "survived_full_window": false
+  },
+  {
+    "ic": {
+      "a0": 0.6,
+      "Ha0": 0.3,
+      "b0": 1.0,
+      "Hb0": -4.003703703703704
+    },
+    "t_end": 37.780242143584594,
+    "a_min": 0.0006042570581782454,
+    "a_max": 18.26317267099066,
+    "b_min": 0.3915627742601741,
+    "b_max": 936486.6100680187,
+    "Ha_crossings": 1,
+    "Hb_crossings": 1,
+    "max_abs_constraint": 4079628.0,
+    "max_abs_continuity": 2193.0039716716087,
+    "survived_full_window": false
+  },
+  {
+    "ic": {
+      "a0": 1.5,
+      "Ha0": 1.0,
+      "b0": 2.0,
+      "Hb0": -1.3402777777777777
+    },
+    "t_end": 35.58909391766513,
+    "a_min": 0.0005748763449903423,
+    "a_max": 16.53461842531252,
+    "b_min": 1.1365944954821818,
+    "b_max": 746084.0382933255,
+    "Ha_crossings": 1,
+    "Hb_crossings": 1,
+    "max_abs_constraint": 4484972.0,
+    "max_abs_continuity": 4.489896486218447,
+    "survived_full_window": false
+  },
+  {
+    "ic": {
+      "a0": 2.0,
+      "Ha0": 0.3,
+      "b0": 2.0,
+      "Hb0": -0.7861111111111112
+    },
+    "t_end": 34.82270622588608,
+    "a_min": 0.0005663687264387304,
+    "a_max": 16.04916800171352,
+    "b_min": 1.1634647051052829,
+    "b_max": 718684.1919914886,
+    "Ha_crossings": 1,
+    "Hb_crossings": 1,
+    "max_abs_constraint": 4618478.0,
+    "max_abs_continuity": 3.440829613492334,
+    "survived_full_window": false
+  },
+  {
+    "ic": {
+      "a0": 2.0,
+      "Ha0": 0.6,
+      "b0": 2.0,
+      "Hb0": -0.8430555555555557
+    },
+    "t_end": 34.5948511508773,
+    "a_min": 0.0005645658540406997,
+    "a_max": 15.948097618717076,
+    "b_min": 1.3151710531497476,
+    "b_max": 699294.0152735154,
+    "Ha_crossings": 1,
+    "Hb_crossings": 1,
+    "max_abs_constraint": 4643640.0,
+    "max_abs_continuity": 1.892115672683199,
+    "survived_full_window": false
+  },
+  {
+    "ic": {
+      "a0": 1.5,
+      "Ha0": 0.6,
+      "b0": 2.0,
+      "Hb0": -1.1671296296296296
+    },
+    "t_end": 33.38310532402509,
+    "a_min": 0.0005561126444899109,
+    "a_max": 15.472493758635242,
+    "b_min": 1.0336513579620332,
+    "b_max": 704393.0171702037,
+    "Ha_crossings": 1,
+    "Hb_crossings": 1,
+    "max_abs_constraint": 4794446.0,
+    "max_abs_continuity": 7.146622646822762,
+    "survived_full_window": false
+  },
+  {
+    "ic": {
+      "a0": 1.0,
+      "Ha0": 1.0,
+      "b0": 2.0,
+      "Hb0": -1.8958333333333333
+    },
+    "t_end": 31.89934869864411,
+    "a_min": 0.0005464251762514612,
+    "a_max": 14.936971457971117,
+    "b_min": 0.8023756966741432,
+    "b_max": 703138.2573928167,
+    "Ha_crossings": 1,
+    "Hb_crossings": 1,
+    "max_abs_constraint": 4973464.0,
+    "max_abs_continuity": 31.73789389212605,
+    "survived_full_window": false
+  },
+  {
+    "ic": {
+      "a0": 0.6,
+      "Ha0": 0.1,
+      "b0": 2.0,
+      "Hb0": -26.83611111111111
+    },
+    "t_end": 40.0,
+    "a_min": 0.6,
+    "a_max": 666.0105256775414,
+    "b_min": 0.030203317496329193,
+    "b_max": 18.876655609591356,
+    "Ha_crossings": 0,
+    "Hb_crossings": 1,
+    "max_abs_constraint": 5114670.812741663,
+    "max_abs_continuity": 10443030583.912415,
+    "survived_full_window": true
+  },
+  {
+    "ic": {
+      "a0": 1.5,
+      "Ha0": 1.0,
+      "b0": 1.5,
+      "Hb0": -1.1152263374485596
+    },
+    "t_end": 26.792329820501884,
+    "a_min": 0.000499184805179711,
+    "a_max": 12.467922096390128,
+    "b_min": 1.1289445753353706,
+    "b_max": 550297.0779601923,
+    "Ha_crossings": 1,
+    "Hb_crossings": 1,
+    "max_abs_constraint": 5942291.0,
+    "max_abs_continuity": 5.250721259909002,
+    "survived_full_window": false
+  },
+  {
+    "ic": {
+      "a0": 2.0,
+      "Ha0": 1.0,
+      "b0": 1.0,
+      "Hb0": 0.4166666666666667
+    },
+    "t_end": 23.798208549466537,
+    "a_min": 0.00047766715379477285,
+    "a_max": 11.415546351781947,
+    "b_min": 1.0,
+    "b_max": 514698.1046121931,
+    "Ha_crossings": 1,
+    "Hb_crossings": 0,
+    "max_abs_constraint": 6497111.0,
+    "max_abs_continuity": 9.273106205022218,
+    "survived_full_window": false
+  },
+  {
+    "ic": {
+      "a0": 1.0,
+      "Ha0": 0.6,
+      "b0": 1.5,
+      "Hb0": -1.7179698216735255
+    },
+    "t_end": 23.922327748168065,
+    "a_min": 0.0004725705387475822,
+    "a_max": 11.172394115961131,
+    "b_min": 0.7615863134761053,
+    "b_max": 519258.52693041554,
+    "Ha_crossings": 1,
+    "Hb_crossings": 1,
+    "max_abs_constraint": 6645679.0,
+    "max_abs_continuity": 42.689015562345226,
+    "survived_full_window": false
+  },
+  {
+    "ic": {
+      "a0": 2.0,
+      "Ha0": 0.6,
+      "b0": 1.5,
+      "Hb0": -0.46796982167352547
+    },
+    "t_end": 19.888473369695234,
+    "a_min": 0.0004288669120310677,
+    "a_max": 9.20494421805728,
+    "b_min": 1.3621822021832035,
+    "b_max": 378062.9886601955,
+    "Ha_crossings": 1,
+    "Hb_crossings": 1,
+    "max_abs_constraint": 8022691.0,
+    "max_abs_continuity": 1.8487696658707178,
+    "survived_full_window": false
+  },
+  {
+    "ic": {
+      "a0": 1.0,
+      "Ha0": 1.0,
+      "b0": 1.5,
+      "Hb0": -1.6707818930041152
+    },
+    "t_end": 17.825615033893513,
+    "a_min": 0.00040484802818869576,
+    "a_max": 8.200760233662935,
+    "b_min": 0.9016150486888698,
+    "b_max": 362350.5229058055,
+    "Ha_crossings": 1,
+    "Hb_crossings": 1,
+    "max_abs_constraint": 9033304.0,
+    "max_abs_continuity": 17.122703456752284,
+    "survived_full_window": false
+  },
+  {
+    "ic": {
+      "a0": 1.5,
+      "Ha0": 0.6,
+      "b0": 1.5,
+      "Hb0": -0.7920438957475996
+    },
+    "t_end": 14.519276323730738,
+    "a_min": 0.0003631067894379819,
+    "a_max": 6.598821899965965,
+    "b_min": 1.2003367843403294,
+    "b_max": 267322.4191140509,
+    "Ha_crossings": 1,
+    "Hb_crossings": 1,
+    "max_abs_constraint": 11177875.0,
+    "max_abs_continuity": 3.4654803618059207,
+    "survived_full_window": false
+  },
+  {
+    "ic": {
+      "a0": 1.5,
+      "Ha0": 1.0,
+      "b0": 1.0,
+      "Hb0": 0.22222222222222224
+    },
+    "t_end": 12.995412130151987,
+    "a_min": 0.00035186749462149677,
+    "a_max": 6.195608681116357,
+    "b_min": 1.0,
+    "b_max": 262520.09684244345,
+    "Ha_crossings": 1,
+    "Hb_crossings": 0,
+    "max_abs_constraint": 11939884.0,
+    "max_abs_continuity": 8.150228662588297,
+    "survived_full_window": false
+  },
+  {
+    "ic": {
+      "a0": 2.0,
+      "Ha0": 1.0,
+      "b0": 0.6,
+      "Hb0": 11.610082304526749
+    },
+    "t_end": 11.984257485276705,
+    "a_min": 0.0003504116228000592,
+    "a_max": 6.139578253528457,
+    "b_min": 0.6,
+    "b_max": 580482.311002855,
+    "Ha_crossings": 1,
+    "Hb_crossings": 0,
+    "max_abs_constraint": 11955023.0,
+    "max_abs_continuity": 1791.679367982523,
+    "survived_full_window": false
+  },
+  {
+    "ic": {
+      "a0": 2.0,
+      "Ha0": 0.6,
+      "b0": 1.0,
+      "Hb0": 1.7611111111111113
+    },
+    "t_end": 9.001737671791876,
+    "a_min": 0.000303063804728944,
+    "a_max": 4.594717407873231,
+    "b_min": 1.0,
+    "b_max": 220501.39713803717,
+    "Ha_crossings": 1,
+    "Hb_crossings": 0,
+    "max_abs_constraint": 15941585.0,
+    "max_abs_continuity": 35.22222222222223,
+    "survived_full_window": false
+  },
+  {
+    "ic": {
+      "a0": 2.0,
+      "Ha0": 0.1,
+      "b0": 1.0,
+      "Hb0": 14.066666666666663
+    },
+    "t_end": 2.6340452333463396,
+    "a_min": 0.0002036712039574082,
+    "a_max": 2.0741202771135425,
+    "b_min": 1.0,
+    "b_max": 379272.34280924365,
+    "Ha_crossings": 1,
+    "Hb_crossings": 0,
+    "max_abs_constraint": 16836450.0,
+    "max_abs_continuity": 281.33333333333326,
+    "survived_full_window": false
+  },
+  {
+    "ic": {
+      "a0": 1.5,
+      "Ha0": 0.3,
+      "b0": 1.5,
+      "Hb0": -0.6840877914951989
+    },
+    "t_end": 9.540304375769223,
+    "a_min": 0.0002912273959799964,
+    "a_max": 4.246414074354557,
+    "b_min": 1.1946369013239355,
+    "b_max": 159691.5517188658,
+    "Ha_crossings": 1,
+    "Hb_crossings": 1,
+    "max_abs_constraint": 17283693.0,
+    "max_abs_continuity": 3.209445839067579,
+    "survived_full_window": false
+  },
+  {
+    "ic": {
+      "a0": 2.0,
+      "Ha0": 0.6,
+      "b0": 0.6,
+      "Hb0": 20.416803840877918
+    },
+    "t_end": 7.148724550123484,
+    "a_min": 0.0002774832282336216,
+    "a_max": 3.8498592485386833,
+    "b_min": 0.6,
+    "b_max": 675312.7301984053,
+    "Ha_crossings": 1,
+    "Hb_crossings": 0,
+    "max_abs_constraint": 18106043.0,
+    "max_abs_continuity": 3150.7413334688144,
+    "survived_full_window": false
+  },
+  {
+    "ic": {
+      "a0": 0.6,
+      "Ha0": 0.6,
+      "b0": 1.0,
+      "Hb0": -2.4518518518518526
+    },
+    "t_end": 8.831983170361646,
+    "a_min": 0.00028468279883415586,
+    "a_max": 4.054979652292575,
+    "b_min": 0.619238534446162,
+    "b_max": 179716.58640993127,
+    "Ha_crossings": 1,
+    "Hb_crossings": 1,
+    "max_abs_constraint": 18269281.0,
+    "max_abs_continuity": 147.18064368544873,
+    "survived_full_window": false
+  },
+  {
+    "ic": {
+      "a0": 1.5,
+      "Ha0": 1.0,
+      "b0": 0.6,
+      "Hb0": 11.415637860082304
+    },
+    "t_end": 6.882875293065388,
+    "a_min": 0.0002679363599913471,
+    "a_max": 3.589645281999607,
+    "b_min": 0.6,
+    "b_max": 323250.1035287698,
+    "Ha_crossings": 1,
+    "Hb_crossings": 0,
+    "max_abs_constraint": 20147346.0,
+    "max_abs_continuity": 1761.6725092719605,
+    "survived_full_window": false
+  },
+  {
+    "ic": {
+      "a0": 1.5,
+      "Ha0": 0.1,
+      "b0": 1.0,
+      "Hb0": 12.12222222222222
+    },
+    "t_end": 1.8621262497212003,
+    "a_min": 0.0001750942475943074,
+    "a_max": 1.5329758445795758,
+    "b_min": 1.0,
+    "b_max": 205659.46613743022,
+    "Ha_crossings": 1,
+    "Hb_crossings": 0,
+    "max_abs_constraint": 20622560.0,
+    "max_abs_continuity": 242.4444444444444,
+    "survived_full_window": false
+  },
+  {
+    "ic": {
+      "a0": 2.0,
+      "Ha0": 0.3,
+      "b0": 1.5,
+      "Hb0": -0.03593964334705084
+    },
+    "t_end": 6.827658300460229,
+    "a_min": 0.00025904445686013484,
+    "a_max": 3.3640261907992377,
+    "b_min": 1.4985791288248655,
+    "b_max": 107595.91273582117,
+    "Ha_crossings": 1,
+    "Hb_crossings": 1,
+    "max_abs_constraint": 21818403.0,
+    "max_abs_continuity": 0.7454386546317123,
+    "survived_full_window": false
+  },
+  {
+    "ic": {
+      "a0": 2.0,
+      "Ha0": 0.3,
+      "b0": 0.6,
+      "Hb0": 41.73360768175583
+    },
+    "t_end": 4.187423425998734,
+    "a_min": 0.00022671816495874392,
+    "a_max": 2.570056677086669,
+    "b_min": 0.6,
+    "b_max": 943856.3475435111,
+    "Ha_crossings": 1,
+    "Hb_crossings": 0,
+    "max_abs_constraint": 22742074.0,
+    "max_abs_continuity": 6440.371555826517,
+    "survived_full_window": false
+  },
+  {
+    "ic": {
+      "a0": 2.0,
+      "Ha0": 0.3,
+      "b0": 1.0,
+      "Hb0": 4.422222222222223
+    },
+    "t_end": 4.401853905209893,
+    "a_min": 0.00022962936706477812,
+    "a_max": 2.636739375810497,
+    "b_min": 1.0,
+    "b_max": 205068.43241985975,
+    "Ha_crossings": 1,
+    "Hb_crossings": 0,
+    "max_abs_constraint": 24109606.0,
+    "max_abs_continuity": 88.44444444444447,
+    "survived_full_window": false
+  },
+  {
+    "ic": {
+      "a0": 1.0,
+      "Ha0": 1.0,
+      "b0": 1.0,
+      "Hb0": -0.3333333333333333
+    },
+    "t_end": 6.241612065947562,
+    "a_min": 0.0002418329293837071,
+    "a_max": 2.927864372460693,
+    "b_min": 0.9861032390546384,
+    "b_max": 111698.68745589016,
+    "Ha_crossings": 1,
+    "Hb_crossings": 1,
+    "max_abs_constraint": 25153099.0,
+    "max_abs_continuity": 8.665025769489377,
+    "survived_full_window": false
+  },
+  {
+    "ic": {
+      "a0": 1.5,
+      "Ha0": 0.6,
+      "b0": 1.0,
+      "Hb0": 1.4370370370370373
+    },
+    "t_end": 5.349620161381036,
+    "a_min": 0.00023573866784070888,
+    "a_max": 2.7809887201998884,
+    "b_min": 1.0,
+    "b_max": 117974.20247850656,
+    "Ha_crossings": 1,
+    "Hb_crossings": 0,
+    "max_abs_constraint": 26151752.0,
+    "max_abs_continuity": 28.740740740740748,
+    "survived_full_window": false
+  },
+  {
+    "ic": {
+      "a0": 0.6,
+      "Ha0": 1.0,
+      "b0": 1.0,
+      "Hb0": -2.111111111111111
+    },
+    "t_end": 5.900242844261539,
+    "a_min": 0.00023040953532493062,
+    "a_max": 2.6569157244435915,
+    "b_min": 0.7202453789580859,
+    "b_max": 109008.1364399657,
+    "Ha_crossings": 1,
+    "Hb_crossings": 1,
+    "max_abs_constraint": 27768948.0,
+    "max_abs_continuity": 65.5636986381865,
+    "survived_full_window": false
+  },
+  {
+    "ic": {
+      "a0": 1.5,
+      "Ha0": 0.6,
+      "b0": 0.6,
+      "Hb0": 20.092729766803842
+    },
+    "t_end": 4.247885295907774,
+    "a_min": 0.00021839554340059468,
+    "a_max": 2.384843036294077,
+    "b_min": 0.6,
+    "b_max": 378420.30254661385,
+    "Ha_crossings": 1,
+    "Hb_crossings": 0,
+    "max_abs_constraint": 27950421.0,
+    "max_abs_continuity": 3100.7299022845436,
+    "survived_full_window": false
+  },
+  {
+    "ic": {
+      "a0": 1.5,
+      "Ha0": 0.3,
+      "b0": 0.6,
+      "Hb0": 41.08545953360768
+    },
+    "t_end": 2.6679262866681346,
+    "a_min": 0.00018732242407861223,
+    "a_max": 1.7544853272215613,
+    "b_min": 0.6,
+    "b_max": 539350.9920415066,
+    "Ha_crossings": 1,
+    "Hb_crossings": 0,
+    "max_abs_constraint": 29768340.0,
+    "max_abs_continuity": 6340.348693457976,
+    "survived_full_window": false
+  },
+  {
+    "ic": {
+      "a0": 2.0,
+      "Ha0": 0.1,
+      "b0": 1.5,
+      "Hb0": 0.6921810699588473
+    },
+    "t_end": 3.040169344746189,
+    "a_min": 0.00020528554577624314,
+    "a_max": 2.1169477964784593,
+    "b_min": 1.5,
+    "b_max": 62652.4747942957,
+    "Ha_crossings": 1,
+    "Hb_crossings": 0,
+    "max_abs_constraint": 31277099.0,
+    "max_abs_continuity": 2.7345424986028535,
+    "survived_full_window": false
+  },
+  {
+    "ic": {
+      "a0": 1.5,
+      "Ha0": 0.3,
+      "b0": 1.0,
+      "Hb0": 3.7740740740740755
+    },
+    "t_end": 2.8365812916517563,
+    "a_min": 0.00018950949304531302,
+    "a_max": 1.7962109453461976,
+    "b_min": 1.0,
+    "b_max": 109160.28459652144,
+    "Ha_crossings": 1,
+    "Hb_crossings": 0,
+    "max_abs_constraint": 34063802.0,
+    "max_abs_continuity": 75.48148148148151,
+    "survived_full_window": false
+  },
+  {
+    "ic": {
+      "a0": 1.0,
+      "Ha0": 0.1,
+      "b0": 1.0,
+      "Hb0": 6.566666666666665
+    },
+    "t_end": 1.1949447052703988,
+    "a_min": 0.00014220985866472357,
+    "a_max": 1.0119142095863054,
+    "b_min": 1.0,
+    "b_max": 64912.93044107151,
+    "Ha_crossings": 1,
+    "Hb_crossings": 0,
+    "max_abs_constraint": 36070221.0,
+    "max_abs_continuity": 131.3333333333333,
+    "survived_full_window": false
+  },
+  {
+    "ic": {
+      "a0": 1.0,
+      "Ha0": 1.0,
+      "b0": 0.6,
+      "Hb0": 10.860082304526749
+    },
+    "t_end": 3.2415933340027197,
+    "a_min": 0.00018778263616699715,
+    "a_max": 1.763237324052516,
+    "b_min": 0.6,
+    "b_max": 140542.28451846392,
+    "Ha_crossings": 1,
+    "Hb_crossings": 0,
+    "max_abs_constraint": 39620047.0,
+    "max_abs_continuity": 1675.9386272417823,
+    "survived_full_window": false
+  },
+  {
+    "ic": {
+      "a0": 1.0,
+      "Ha0": 0.3,
+      "b0": 0.6,
+      "Hb0": 39.23360768175583
+    },
+    "t_end": 1.4907073353688345,
+    "a_min": 0.00014695382471508893,
+    "a_max": 1.079773152159907,
+    "b_min": 0.6,
+    "b_max": 246699.0159792375,
+    "Ha_crossings": 1,
+    "Hb_crossings": 0,
+    "max_abs_constraint": 39945852.0,
+    "max_abs_continuity": 6054.569086690714,
+    "survived_full_window": false
+  },
+  {
+    "ic": {
+      "a0": 1.0,
+      "Ha0": 0.6,
+      "b0": 0.6,
+      "Hb0": 19.166803840877918
+    },
+    "t_end": 2.1374655562115934,
+    "a_min": 0.0001611894926563776,
+    "a_max": 1.2991218827819313,
+    "b_min": 0.6,
+    "b_max": 166593.65539979067,
+    "Ha_crossings": 1,
+    "Hb_crossings": 0,
+    "max_abs_constraint": 46784373.0,
+    "max_abs_continuity": 2957.8400989009133,
+    "survived_full_window": false
+  },
+  {
+    "ic": {
+      "a0": 1.0,
+      "Ha0": 0.6,
+      "b0": 1.0,
+      "Hb0": 0.5111111111111111
+    },
+    "t_end": 2.930077296352468,
+    "a_min": 0.00017456200959972728,
+    "a_max": 1.527228348527632,
+    "b_min": 1.0,
+    "b_max": 50121.38821687117,
+    "Ha_crossings": 1,
+    "Hb_crossings": 0,
+    "max_abs_constraint": 47887877.0,
+    "max_abs_continuity": 10.879568138150423,
+    "survived_full_window": false
+  },
+  {
+    "ic": {
+      "a0": 0.6,
+      "Ha0": 0.3,
+      "b0": 0.6,
+      "Hb0": 33.307681755829904
+    },
+    "t_end": 0.7734951795035528,
+    "a_min": 0.00011122340013123292,
+    "a_max": 0.6185518779320874,
+    "b_min": 0.6,
+    "b_max": 88318.54792304387,
+    "Ha_crossings": 1,
+    "Hb_crossings": 0,
+    "max_abs_constraint": 55616357.0,
+    "max_abs_continuity": 5140.074345035479,
+    "survived_full_window": false
+  },
+  {
+    "ic": {
+      "a0": 1.0,
+      "Ha0": 0.3,
+      "b0": 1.0,
+      "Hb0": 1.922222222222223
+    },
+    "t_end": 1.6897507537406358,
+    "a_min": 0.00014896492464840848,
+    "a_max": 1.112092033461993,
+    "b_min": 1.0,
+    "b_max": 39170.85427447989,
+    "Ha_crossings": 1,
+    "Hb_crossings": 0,
+    "max_abs_constraint": 58784739.0,
+    "max_abs_continuity": 38.44444444444446,
+    "survived_full_window": false
+  },
+  {
+    "ic": {
+      "a0": 0.6,
+      "Ha0": 0.6,
+      "b0": 0.6,
+      "Hb0": 16.203840877914953
+    },
+    "t_end": 0.9900803401773951,
+    "a_min": 0.00011605341564651289,
+    "a_max": 0.6734896183269182,
+    "b_min": 0.6,
+    "b_max": 57117.94590370019,
+    "Ha_crossings": 1,
+    "Hb_crossings": 0,
+    "max_abs_constraint": 79079117.0,
+    "max_abs_continuity": 2500.5927280732953,
+    "survived_full_window": false
+  },
+  {
+    "ic": {
+      "a0": 0.6,
+      "Ha0": 1.0,
+      "b0": 0.6,
+      "Hb0": 9.08230452674897
+    },
+    "t_end": 1.3611555972269476,
+    "a_min": 0.00012669436204670688,
+    "a_max": 0.8027927658198244,
+    "b_min": 0.6,
+    "b_max": 47562.369437839545,
+    "Ha_crossings": 1,
+    "Hb_crossings": 0,
+    "max_abs_constraint": 82114219.0,
+    "max_abs_continuity": 1401.5902047452114,
+    "survived_full_window": false
+  }
+]
