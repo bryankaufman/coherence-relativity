@@ -10,24 +10,32 @@ Paper 1 introduced coherence relativity as the coherence-frame sector of Hologra
 
 Paper 1 established the geometry of $\Sigma$ alone — the manifold of coherence frames at a fixed spacetime point. This paper extends the formalism to the joint manifold $M \times \Sigma$, where $M$ is spacetime. The extension is forced by physics: decoherence conditions vary across spacetime, and the coherence frame that is natural in one environment may be inappropriate in another.
 
+This extension should not be read as a claim that the multiparticle Hilbert/configuration-space tower is itself a literal extra spacetime dimension. The claim is narrower and more geometric: decoherence makes the locally relevant coherence structure environmental and frame-dependent, so the correct arena is the joint manifold $M \times \Sigma$. In the presentation of this series, three levels are kept distinct from the outset: the projective Hilbert space $\mathbb{P}(\mathcal{H})$ provides the kinematics, the coherence manifold $\Sigma$ carries frame and pointer structure, and any physical extra dimension is a later derived effective coordinate rather than a direct relabeling of Hilbert-space dimensionality.
+
 ## §1.2 What Paper 2A Delivers
 
-Paper 2A isolates the abstract $M \times \Sigma$ framework needed by the later companions. It carries the cross-term tensor $T_{M\Sigma}$ (§2.1), the $\delta\lambda$ formalism (§2.2), the pilot-wave correspondence (§2.3), the mixed-state Born rule (§2.4), the left-right generator decomposition (§2.5), the Markov criterion for classicalization (§2.6), and the abstract equations of motion on $M \times \Sigma$ (§4).
+Paper 2A isolates the abstract $M \times \Sigma$ framework needed by the later companions. Starting from the joint state map $\Phi: M \times \Sigma \to \mathbb{P}(\mathcal{H})$, it develops the cross-term tensor $T_{M\Sigma}$ (§2.1), the $\delta\lambda$ formalism (§2.2), the pilot-wave correspondence (§2.3), the mixed-state Born rule (§2.4), the left-right generator decomposition (§2.5), the Markov criterion for classicalization (§2.6), and the abstract equations of motion on $M \times \Sigma$ (§4). These are the saturation and classicalization ingredients that Paper 2B later evaluates geometrically in the KCR construction.
 
 ## §1.3 Scope Boundary
 
 Paper 2A does not evaluate the framework on a specific geometry. Derived topology, the KCR-Cone worked example, self-consistency checks, and holographic/dark-sector consequence lines now belong to Papers 2B and 2C. This separation is intentional: 2A is the abstract foundation text that stabilizes definitions, notation, and the core $M \times \Sigma$ derivations before specialization.
 
+Any claim about a physical fifth dimension therefore belongs to Paper 2B, where the abstract framework is evaluated on a specific coherence geometry and the internal phase structure of $\Sigma$ is kept distinct from the effective extra coordinate.
+
 ## §1.4 Posture
 
 This paper is intentionally conservative about claims beyond the abstract framework. Its role is to establish the $M \times \Sigma$ geometry, the coupling objects, and the classicalization logic in a form that later papers can cite without carrying along geometry-specific scaffolding.
+
+**Three-level separation used throughout Papers 2A–2C.** $\mathbb{P}(\mathcal{H})$ is the kinematical state arena; $\Sigma$ is the coherence manifold carrying Berry/Hopf and pointer structure; the physical extra dimension, when it appears in the KCR evaluation, is a derived decoherence-depth coordinate in the effective macroscopic geometry. The present paper addresses only the first two levels plus their joint coupling on $M \times \Sigma$.
 
 
 ## §1.5 The Companion Paper
 
 This paper develops the framework. Two companion papers complete the series:
 
-- *HCR IIB* evaluates the abstract framework on a specific geometry: the Kaluza-Klein cone (KCR-Cone) arising from derived compactification. It specializes the equations of motion to the 5D warped metric, resolves the norm conventions, evaluates the Markov criterion in the warped throat, and tests the self-consistency conditions.
+The derivation chain across the series is therefore: Paper 1 establishes coherence-frame geometry on $\Sigma$; Paper 2A promotes that structure to $M \times \Sigma$ via $\Phi: M \times \Sigma \to \mathbb{P}(\mathcal{H})$, $T_{M\Sigma}$, the pointer-sector criterion, and the Markov/classicalization machinery; Paper 2B evaluates the resulting coherence geometry on the first-realized topology and asks what effective extra-dimensional realization it supports; Paper 2C extracts the physical consequence line and the interface to neighboring programs.
+
+- *HCR IIB* evaluates the abstract framework on a specific geometry: the Kaluza–Coherence Relativity cone (KCR-Cone) arising from derived compactification. It specializes the equations of motion to the 5D warped metric, resolves the norm conventions, distinguishes the internal Berry/Hopf phase structure on $\Sigma$ from the physical decoherence-depth coordinate $r$, evaluates the Markov criterion in the warped throat, and tests the self-consistency conditions.
 
 - *HCR IIC* derives the physical consequence line: the RC-1 effective stress tensor from the boundary action, the holographic dictionary as calculation rather than conjecture, dark-sector predictions, CMB implications, and quantum-foundations applications.
 
@@ -1600,6 +1608,10 @@ provides a geometric derivation of pilot-wave theory as an effective M-sector de
 M × Σ dynamics, valid whenever the system is genuinely open and decoherence is spatially
 inhomogeneous.
 
+For the broader positioning of this Bohmian interface relative to neighboring interpretational and
+geometric programs, see the standalone discussion in Paper 2C §9.6–§9.7; the claim here is a
+controlled effective correspondence, not a wholesale replacement of pilot-wave ontology.
+
 ---
 
 **References for this section:**
@@ -2029,6 +2041,9 @@ where $G_{ij}$ is the Fubini-Study real part and $\Omega_{ij}$ is the Berry conn
 **Conjecture 2.5.3 (Born Rule as Coherence-Frame Invariant).** *In the dephasing model of §2.5.3–2.5.4, the transition weight $|\langle\psi|\phi\rangle|^2$ is invariant under both coherence-frame rotations and Schrödinger/Heisenberg picture changes, and thus behaves as the natural scalar invariant of $|H_{M\Sigma}|$. We conjecture that, under standard noncontextuality and regularity assumptions translated into the HCR coherence-frame language, this Born weight is the unique such invariant for the full HCR framework — in direct analogy with Gleason-type and envariance-type derivations (Gleason 1957; Zurek 2003). A complete proof would require the three elements itemized in the proof-requirements box below.*
 
 **Model verification (dephasing):** Pointer states $|0\rangle, |1\rangle$ have Born probabilities $P(|0\rangle) = \rho_{00}$, $P(|1\rangle) = \rho_{11}$ — the standard result. The metric $G_{ij}$ on the pointer-state manifold (diagonal states) reduces to the Fisher information for $(P(|0\rangle), P(|1\rangle))$, confirming that $|H_{ij}|$ encodes Born weights correctly in this model. The amplitude-damping + dephasing model (§2.5.4) provides the same check in a richer open-system setting.
+
+For the relation of this Born-rule and pointer-sector discussion to Everettian, decoherence-based,
+and adjacent research programs, see the standalone landscape discussion in Paper 2C §9.6–§9.7.
 
 > **Box 2.5.A — What is Needed for a Proof of Conjecture 2.5.3**
 >

@@ -1,0 +1,174 @@
+Session: 2026-04-04 — CR Peer-Review Platform Findings and Custom Build Decision
+
+Status
+- Review-workflow recovery: complete
+- External tool scan: complete
+- Decision: build a custom CR review/governance platform
+- Cross-agent coordination: completed through conv-log
+
+Problem Statement
+The objective was to recover the actual multi-stage review process previously used on Paper 2, standardize it so it can be repeated, and determine whether that process should be implemented by adopting an existing research-management product or by building a custom system.
+
+Canonical Internal Record Set
+The canonical review corpus is the Paper 2 audit tree in the main repository:
+
+- audit/paper2/FORMALISM_CHECKPOINT.md
+  Cross-section consistency audit. Captures notation drift, λ-definition conflicts, equation-numbering splits, cross-reference problems, and warp-factor inconsistency.
+
+- audit/paper2/review_section_2.2_delta_lambda.md
+  Section-level technical review with issue list, severity, verification checklist, and status tags.
+
+- audit/paper2/review_section_7.0_EoM_MxSigma.md
+  Section-level review confirming the pattern of technical verification, cross-reference correction, and status tagging.
+
+- audit/paper2/triage/TRIAGE_VERDICT.md
+  Higher-level proceed/conditional decision after technical review and blast-radius analysis.
+
+- audit/paper2/triage/T1_ricci_propagation.md
+- audit/paper2/triage/T2_branch_lock_consistency.md
+- audit/paper2/triage/T3_h1_dependency_map.md
+  Dependency and survivability analysis showing which downstream sections fail, survive, or require conditional treatment.
+
+- audit/paper2/triage/SECTION_7.0_QUALITY_CHECK.md
+  Promotion-quality review showing how a section may be accepted as draft while still carrying cleanup obligations.
+
+- audit/paper2/spike11/SC2_TIME_WARPING_CONVENTION_LOCK.md
+  Convention-lock artifact showing how local progress can continue under an explicit ansatz even when global formalism issues remain unresolved.
+
+Supporting Precedent Artifacts (Non-Canonical but Useful)
+These artifacts capture review style and output structure, but they are not the full canonical workflow record:
+
+- /Users/bryankaufman/Desktop/review_section_2.3_opus.md
+- /Users/bryankaufman/Desktop/option_a_opus_verification.md
+- /Users/bryankaufman/Desktop/coherence-relativity/GROK_REVIEW2_ANALYSIS.md
+
+Key Findings
+1. The historical Paper 2 review process was not just a prompt for general peer review. It was a structured pipeline with distinct artifacts:
+   - formalism checkpoint
+   - section review
+   - dependency / blast-radius analysis
+   - triage verdict
+   - targeted spike commissions
+   - revision and escalation into later-paper backlog
+
+2. The formalism layer is load-bearing.
+   The most important missing piece in the desktop-only reconstruction was the global checkpoint stage represented by FORMALISM_CHECKPOINT.md.
+
+3. Global inconsistency and local progress can coexist.
+   The warp-factor inconsistency flagged in the checkpoint was not globally resolved paper-wide. However, section-level work proceeded under an explicit local convention lock for SC2, and that local lock was treated as sufficient for §7 review and draft promotion.
+
+4. Paper 3 emerged partly as an escalation path.
+   The review process did not only produce corrections. It also identified unresolved structural issues that were better migrated into a successor-paper backlog.
+
+Recovered Operational Rules
+- Run a global formalism checkpoint before promoting section-level conclusions to manuscript-level confidence.
+- Allow section review to proceed only when the local convention is explicit and locked.
+- Carry unresolved convention drift into triage instead of silently ignoring it.
+- Use targeted spike investigations when a blocking question is too narrow or technical for the main review flow.
+- Distinguish:
+  - fix now in current paper
+  - note but do not block
+  - escalate to successor-paper backlog
+
+Recovered Review Pipeline
+1. Intake and freeze the target section or manuscript state.
+2. Run a global formalism checkpoint.
+3. Run section-level technical reviews.
+4. Generate dependency / blast-radius analysis (T-files).
+5. Issue a triage verdict.
+6. Commission spikes for unresolved blocking questions when needed.
+7. Produce revision program and author-response commitments.
+8. Escalate unresolved structural findings into later-paper backlog.
+
+External Tool Scan
+An external search was run for research program management, structured review, and stage-gate portfolio tools.
+
+Most relevant categories and examples:
+
+- Research administration / workflow systems
+  Cayuse, Kuali Research, Fibi, Insight, Researchweb
+
+- Assessment / panel review systems
+  Tactiv / Enquire, Dapple
+
+- R&D portfolio / stage-gate systems
+  Planisware, ITONICS, GenSight, Cora
+
+Useful patterns observed in those tools:
+- configurable routing and approvals
+- reviewer panels and structured scoring
+- audit trails and status transparency
+- configurable stage gates
+- dashboarded portfolio visibility
+- follow-up and reporting workflows
+
+Critical gaps relative to the CR use case:
+- no native formalism-checkpoint layer
+- no VERIFIED / UNTESTED / MISSING / CONDITIONAL physics-status ontology
+- no built-in dependency T-file / blast-radius analysis
+- no spike-commission mechanism for adjudicating narrow blocking questions
+- no successor-paper backlog logic as a first-class outcome of review
+
+Decision
+Build a custom version.
+
+Rationale
+- The internal CR review process already contains a domain-specific governance model that off-the-shelf tools do not represent.
+- Existing products cover generic workflow mechanics well, but not the mathematics- and formalism-sensitive logic that made the Paper 2 review productive.
+- The most reliable path is to preserve the proven CR artifact structure and borrow only generic workflow patterns from external systems.
+
+Recommended Custom Platform Shape
+Core artifacts:
+- ReviewTarget
+- FormalismCheckpoint
+- SectionReview
+- Issue
+- DependencyMap
+- TriageVerdict
+- SpikeCommission
+- AuthorResponse
+- BacklogItem
+
+Core roles:
+- Orchestrator
+- Formalism Auditor
+- Section Reviewer
+- Dependency Mapper
+- Triage Agent
+- Validation Agent
+- Synthesis Editor
+
+Core status labels:
+- VERIFIED
+- UNTESTED
+- MISSING
+- CONDITIONAL
+- INCONSISTENT
+
+Core gates:
+- PASS
+- PASS WITH CRITICAL ISSUES
+- FAIL
+- PROCEED
+- PROCEED CONDITIONALLY
+- PAUSE
+- RESTRUCTURE
+
+What to Borrow from Existing Tools
+- Use Researchweb / Tactiv / Dapple patterns for intake, reviewer routing, structured assessments, and auditable decisions.
+- Use Planisware / ITONICS patterns for stage-gates, portfolio triage, and successor-project backlog management.
+- Keep all CR-specific logic custom.
+
+Recommended Next Artifact
+Create a canonical v2 platform specification in the repository that defines:
+- the artifact schema
+- the review stages
+- the role prompts
+- the filename / packet conventions
+- the promotion / triage rules
+- the backlog escalation rules
+
+Archive Note
+This session establishes that the correct direction is not to adopt a generic research-management suite as-is, but to build a custom CR review-governance layer that preserves the actual Paper 2 to Paper 3 workflow and selectively borrows workflow mechanics from external platforms.
+
+Logged: 2026-04-04 UTC
