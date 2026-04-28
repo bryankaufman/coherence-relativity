@@ -4,7 +4,6 @@
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage{braket}
-\usepackage{array}
 \usepackage{booktabs}
 \usepackage{xcolor}
 \usepackage{float}
@@ -101,7 +100,7 @@ Section~\ref{sec:frames} introduces coherence frames and the geometry of $\Sig$.
 \small
 \setlength{\tabcolsep}{4pt}
 \renewcommand{\arraystretch}{1.15}
-\begin{tabular}{@{}l >{\raggedright\arraybackslash}p{0.5\columnwidth} l@{}}
+\begin{tabular}{@{}l l l@{}}
 \toprule
 \textbf{Symbol} & \textbf{Meaning} & \textbf{Ref.} \\
 \midrule
@@ -372,7 +371,101 @@ The construction above establishes the kinematic notion of transport and the cri
 
 The paradox resolutions in Sec.~\ref{sec:paradoxes} now have a precise form: apparent contradictions arise when a fact definite in one frame is transported outside its compliance domain, or around a loop with nontrivial holonomy. In that case there is no inconsistency in the theory; the contradiction lies in treating a frame-local fact as though it were a globally portable one.
 
-\subsection{Frame Splitting}\label{sec:splitting}
+\begin{figure*}[t]
+\centering
+\begin{tikzpicture}[
+  >=latex,
+  every node/.style={font=\small},
+  panellabel/.style={font=\footnotesize\bfseries},
+  factdot/.style={circle, fill=black!80, inner sep=2pt},
+  boxstyle/.style={draw, rounded corners, fill=gray!8, inner sep=7pt,
+                    font=\footnotesize, align=center}
+]
+%
+% ===== LEFT PANEL: Trivial holonomy =====
+\begin{scope}[shift={(-5.2, 0)}]
+  \node[panellabel] at (0, 2.55) {(a)~~Trivial holonomy};
+  % Sigma manifold
+  \draw[thick, fill=blue!5] (0,0) ellipse [x radius=2.4cm, y radius=1.8cm];
+  \node[font=\scriptsize, blue!40] at (2.0, 1.5) {$\Sig$};
+  % Frame point
+  \node[factdot] (F0) at (-0.1, 0.2) {};
+  \node[font=\scriptsize, above right=1pt] at (F0) {$F$};
+  % Contractible loop (small, encloses no topological area)
+  \draw[->, thick, blue!70, rounded corners=5pt]
+    (-0.1,0.2) -- (0.8, 0.85) -- (1.3, 0.2) -- (0.7,-0.4) -- (-0.1, 0.2);
+  \node[font=\scriptsize, blue!70] at (1.6, 0.7) {$\gamma$};
+  % Record label: in and out (both the same)
+  \node[draw, rounded corners=2pt, fill=white, font=\scriptsize,
+        inner sep=2pt] (rin) at (-1.4, 0.8) {$r$};
+  \node[draw, rounded corners=2pt, fill=white, font=\scriptsize,
+        inner sep=2pt] (rout) at (-1.4,-0.4) {$r$};
+  \draw[->, black!60] (F0) -- (rin);
+  \draw[->, black!60, dashed] (rout) -- (F0);
+  \node[font=\normalsize] at (-1.95, 0.2) {$=$};
+  \node[font=\scriptsize, black!60] at (-1.4, 0.2) {};
+  % Bottom label
+  \node[align=center, font=\footnotesize] at (0,-2.5) {%
+    $H_\gamma(r) = r$\\[3pt]
+    \textbf{Observer-independent fact}\\[1pt]
+    {\scriptsize globally portable across $\mathcal{U}$}};
+\end{scope}
+%
+% ===== RIGHT PANEL: Non-trivial holonomy =====
+\begin{scope}[shift={(5.2, 0)}]
+  \node[panellabel] at (0, 2.55) {(b)~~Non-trivial holonomy (FR scenario)};
+  % Sigma manifold
+  \draw[thick, fill=red!5] (0,0) ellipse [x radius=2.4cm, y radius=1.8cm];
+  \node[font=\scriptsize, red!40] at (2.0, 1.5) {$\Sig$};
+  % Frame point
+  \node[factdot] (FR) at (0,-0.6) {};
+  \node[font=\scriptsize, below right=1pt] at (FR) {$F$};
+  % Large loop enclosing solid angle (FR six-step agent loop)
+  \draw[->, thick, red!70]
+    (0,-0.6) -- (1.3,-0.05) -- (1.8, 0.85) -- (0.5, 1.55)
+    -- (-0.5, 1.55) -- (-1.8, 0.85) -- (-1.3,-0.05) -- (0,-0.6);
+  \node[font=\scriptsize, red!60] at (0, 0.55) {$\Omega$};
+  \node[font=\scriptsize, red!70] at (2.15, 1.2) {$\gamma$};
+  % Record r (before) and r' = e^{iΩ/2}r (after, different)
+  \node[draw, rounded corners=2pt, fill=white, font=\scriptsize,
+        inner sep=2pt] (rin2) at (-1.5,-0.2) {$r$};
+  \node[draw, rounded corners=2pt, fill=red!15, font=\scriptsize,
+        inner sep=2pt] (rout2) at (-1.5,-1.2) {$r' = e^{i\Omega/2}r$};
+  \draw[->, black!60] (FR) -- (rin2);
+  \draw[->, red!70, dashed] (rout2) -- (FR);
+  \node[font=\normalsize, red!80] at (-2.1,-0.7) {$\neq$};
+  % Bottom label
+  \node[align=center, font=\footnotesize] at (0,-2.5) {%
+    $H_\gamma(r) = e^{i\Omega/2}\,r \neq r$\\[3pt]
+    \textbf{Frame-local fact}\\[1pt]
+    {\scriptsize FR/Wigner obstruction to global portability}};
+\end{scope}
+%
+% ===== BOTTOM: Criterion box =====
+\node[boxstyle, text width=11.5cm] at (0,-4.3) {%
+  \textbf{Proposition~\ref{prop:observer-independent-fact}:}\enskip
+  $r \in \mathcal{D}_F$ is \emph{observer-independent} iff
+  $H_\gamma(r) = r$ for every closed loop $\gamma \subset \Sig$
+  and $r$ is measure-compliant with respect to all frames in the transport domain.};
+\draw[->, gray!60] (-3.5,-2.8) to[bend right=10] (-2.0,-4.0);
+\draw[->, gray!60] (3.5,-2.8) to[bend left=10] (2.0,-4.0);
+%
+\end{tikzpicture}
+\caption{Holonomy criterion for observer-independent facts (Proposition~\ref{prop:observer-independent-fact}).
+\textbf{(a)}~A contractible loop~$\gamma$ in coherence space~$\Sig$ returns the transported
+record~$r$ unchanged: $H_\gamma(r) = r$. The record is observer-independent---globally
+portable across all frames in the admissible domain.
+\textbf{(b)}~A large loop (the Frauchiger--Renner six-step agent-comparison loop is one instance)
+encloses nontrivial solid angle~$\Omega$ in~$\Sig$ and returns a holonomy-rotated
+record $r' = e^{i\Omega/2}r \neq r$. The record is frame-local, not globally portable.
+Apparent contradictions in FR and Wigner's friend scenarios arise when frame-local
+facts are transported outside their compliance domain as though holonomy were trivial.
+The antisymmetric part~$\Omega_{AB}$ of the tensor field~$\Tab$ (Eq.~\eqref{eq:omega-explicit})
+is the infinitesimal obstruction: $\Omega_{AB} \neq 0$ makes nontrivial holonomy possible.}
+\label{fig:holonomy-criterion}
+\end{figure*}
+
+\subsection{Frame Splitting}
 
 \begin{definition}[Frame Splitting]
 A \textbf{frame splitting} transforms a single basis state into an equal-amplitude superposition:
@@ -540,7 +633,7 @@ Frauchiger and Renner~\cite{frauchigerQuantumTheoryCannot2018} sharpen Wigner's 
 
 These scenarios form closed loops of comparison in coherence space. A record $r \in \mathcal{D}_{F_{\mathrm{friend}}}$ is definite for the friend, while an outside super-observer transports the same laboratory to a frame in which the joint lab remains coherent and is checked by an interference-type measurement. The contradiction appears only if one assumes that the friend's record and the super-observer's result can both be carried unchanged around the full loop as observer-independent facts.
 
-Proposition~\ref{prop:observer-independent-fact} says that such transport is allowed only when the comparison domain is compliant and the holonomy is trivial, $H_\gamma(r) = r$, on every closed loop~$\gamma$. Frauchiger--Renner fails exactly at this point. Each agent's inference is valid inside the frame in which its record is definite, but inconsistency appears when frame-local facts are moved around the loop as if holonomy were trivial. The problem is therefore not an inconsistency in quantum theory itself, but an obstruction to global fact assignment.
+Proposition~\ref{prop:observer-independent-fact} says that such transport is allowed only when the comparison domain is compliant and the holonomy is trivial, $H_\gamma(r) = r$, on every closed loop~$\gamma$ (Fig.~\ref{fig:holonomy-criterion}). Frauchiger--Renner fails exactly at this point. Each agent's inference is valid inside the frame in which its record is definite, but inconsistency appears when frame-local facts are moved around the loop as if holonomy were trivial. The problem is therefore not an inconsistency in quantum theory itself, but an obstruction to global fact assignment.
 
 The same diagnosis applies to the Proietti experiment. The friends' facts $A_0$, $B_0$ and the super-observers' interference-type facts $A_1$, $B_1$ do not fit into a single observer-independent record algebra. In \CR{}, that is exactly what one expects when the relevant loop in coherence space carries nontrivial holonomy.
 
