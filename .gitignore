@@ -34,3 +34,9 @@ __pycache__/
 .obsidian/workspace-mobile.json
 .obsidian/cache
 .obsidian/.trash/
+
+# Obsidian plugin binaries (large; installed by Obsidian, tracked by manifest.json only)
+.obsidian/plugins/*/main.js
+.obsidian/plugins/*/styles.css
+.obsidian/plugins/*/*.css
+.obsidian/plugins/*/hotreload

@@ -1,1 +1,10 @@
-[]
+[
+  "templater-obsidian",
+  "dataview",
+  "obsidian-git",
+  "obsidian-importer",
+  "obsidian-icon-folder",
+  "remotely-save",
+  "obsidian-local-rest-api",
+  "semantic-vault-mcp"
+]

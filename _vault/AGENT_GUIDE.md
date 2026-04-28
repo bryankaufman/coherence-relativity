@@ -130,6 +130,65 @@ These exist and may be browsed, but are NOT the source of truth:
 
 ---
 
+## Obsidian MCP Integration (added 2026-04-28)
+
+Two MCP servers are configured to give agents live read/write access to the vault through Obsidian:
+
+### Server 1 — `obsidian-hcr` (cyanheads, stdio)
+**Tool**: `obsidian-mcp-server` (installed globally via npm)
+**Requires**: Obsidian running + Local REST API plugin enabled (port 27123)
+**Use for**: File reads, writes, search, frontmatter, tags during Warp sessions
+
+| Tool | Purpose |
+|------|---------|
+| `obsidian_read_note` | Read note content + metadata |
+| `obsidian_update_note` | Append / prepend / overwrite note |
+| `obsidian_global_search` | Vault-wide text/regex search |
+| `obsidian_list_notes` | Directory tree listing |
+| `obsidian_manage_frontmatter` | Get/set/delete YAML frontmatter |
+| `obsidian_manage_tags` | Add/remove/list tags |
+| `obsidian_search_replace` | In-note search-and-replace |
+| `obsidian_delete_note` | Delete a note |
+
+**Key env vars** (set in shell or Warp Drive env):
+```bash
+export OBSIDIAN_API_KEY=<from Local REST API plugin settings>
+export OBSIDIAN_BASE_URL=http://127.0.0.1:27123
+```
+
+**Activate Local REST API**: open Obsidian → Settings → Community Plugins → Local REST API → copy API key.
+
+### Server 2 — `obsidian-hcr-semantic` (aaronsb, HTTP)
+**Plugin**: `semantic-vault-mcp` v0.11.16 (installed in `.obsidian/plugins/obsidian-mcp-plugin/`)
+**Requires**: Plugin enabled in Obsidian; starts HTTP server on port 3001
+**Use for**: Graph traversal, semantic search, backlinks, cross-paper concept navigation
+
+| Tool Group | Purpose |
+|------------|---------|
+| `vault.*` | File operations + semantic search |
+| `graph.*` | Link traversal, paths, backlinks, tag analysis |
+| `edit.*` | Structure-aware content modification |
+| `dataview.*` | DQL query execution (Dataview plugin required) |
+| `workflow.*` | Contextual next-action hints |
+
+**Setup** (one-time, in Obsidian GUI):
+1. Open Obsidian → Settings → Community Plugins → enable "Semantic Notes Vault MCP"
+2. Open plugin settings → copy the generated API key
+3. Set in shell: `export OBSIDIAN_MCP_API_KEY=<key from plugin settings>`
+
+**Connection test**:
+```bash
+curl -s -H "Authorization: Bearer $OBSIDIAN_MCP_API_KEY" http://localhost:3001/mcp
+```
+
+### Activation Checklist
+- [ ] Obsidian is open with the HCR vault loaded
+- [ ] Local REST API plugin enabled → `OBSIDIAN_API_KEY` set in env
+- [ ] Semantic Notes Vault MCP plugin enabled → `OBSIDIAN_MCP_API_KEY` set in env
+- [ ] Warp detects both servers (Settings → MCP → Detected from Warp)
+
+---
+
 ## Build Commands
 ```bash
 # Python environment
