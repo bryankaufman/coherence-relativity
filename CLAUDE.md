@@ -66,3 +66,18 @@ Paper 1 uses **EGY**: λ ≡ √(1 − |⟨W_L|W_R⟩|²)
 - Geodesic integral: π/(2√2) ≈ 1.107
 
 Paper 2 extends this with the full T_AB tensor field dynamics on M × Σ.
+
+---
+
+## HCR Vault (added 2026-04-28)
+
+The project is now named **HCR (Holographic Coherence Relativity)**. The canonical Obsidian vault is rooted at this repo.
+
+**Orientation for new sessions:**
+1. Read `_vault/AGENT_GUIDE.md` — authoritative path registry, write rules, paper status
+2. Read `memory/kb/INDEX.md` — session log index (newest first)
+3. Check `TASKS.md` for active tasks
+
+**Do NOT write to `_vault/*.md` MOC files** — those are human-curated navigation.
+
+**Session log convention:** `memory/kb/SESSION_YYYY-MM-DD_TOPIC.md` + append to `memory/kb/INDEX.md`

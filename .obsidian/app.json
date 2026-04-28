@@ -1,0 +1,21 @@
+{
+  "attachmentFolderPath": "figures",
+  "newFileLocation": "folder",
+  "newFileFolderPath": "_vault/inbox",
+  "promptDelete": false,
+  "trashOption": "local",
+  "showUnsupportedFiles": false,
+  "strictLineBreaks": false,
+  "defaultViewMode": "preview",
+  "foldHeading": false,
+  "spellcheck": true,
+  "useMarkdownLinks": false,
+  "userIgnoreFilters": [
+    "analysis/__pycache__",
+    "code/__pycache__",
+    "papers/01-coherence-frames/build",
+    "papers/02-saturation-dynamics/build",
+    "papers/02-saturation-dynamics/audit",
+    "github-repo"
+  ]
+}

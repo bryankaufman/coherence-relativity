@@ -111,3 +111,18 @@ API (arXiv/OSF submission interfaces)
 - `memory/kb/SESSION_2026-02-12_ESTIMATE_AUDIT.md` — R_Σ=8, s*=0.72, geodesic cutoff
 - `memory/kb/SESSION_2026-02-14_PUBLICATION.md` — OSF publication milestone
 - `memory/kb/SESSION_2026-03-19_REFEREE_REVISION.md` — EGY reparameterization, 10 fixes
+
+---
+
+## HCR Vault (added 2026-04-28)
+
+The project is now named **HCR (Holographic Coherence Relativity)**. The canonical Obsidian vault is rooted at this repo.
+
+**Orientation for new sessions:**
+1. Read `_vault/AGENT_GUIDE.md` — authoritative path registry, write rules, paper status
+2. Read `memory/kb/INDEX.md` — session log index (newest first)
+3. Check `TASKS.md` for active tasks
+
+**Do NOT write to `_vault/*.md` MOC files** — those are human-curated navigation.
+
+**Session log convention:** `memory/kb/SESSION_YYYY-MM-DD_TOPIC.md` + append to `memory/kb/INDEX.md`
