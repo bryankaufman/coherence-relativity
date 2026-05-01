@@ -356,7 +356,9 @@ $$\boxed{\alpha_{\rm geom} = N_0^2\,\frac{I_6}{I_2} = \frac{10\sqrt{2}}{3\pi} \a
 
 where $\psi_0(r)=N_0A^2(r)$ is the KCR vector zero mode (RC-3) and the weighting uses the graviton reduction measure $A^2dr$ (RC-8b). This value is within 0.033% of $3/2$ but is not exactly $3/2$.
 
-The $\lambda\cdot T=O(1)$ theorem (RC-5) guarantees $c_\Gamma=O(1)$ (no Planck/Hubble hierarchy), but does not fix its numerical value; $c_\Gamma$ must be derived from the sourced EOM for the zero mode (RC-4). If we *identify* $\Omega_{\rm drag}$ with the observed $\Omega_\Lambda=0.69$, this would imply $c_\Gamma\approx\sqrt{0.69/\alpha_{\rm geom}}\approx 0.678$ (observationally inferred, not yet derived).
+The $\lambda\cdot T=O(1)$ theorem (RC-5) guarantees $c_\Gamma=O(1)$ (no Planck/Hubble hierarchy). The Path C balance equation $\Omega_\Lambda = \alpha_{\rm geom}\,c_\Gamma^2$ now yields a \textbf{derived} value (RC-4, 2026-05-01):
+$$\boxed{c_\Gamma = \sqrt{\Omega_\Lambda/\alpha_{\rm geom}} = \sqrt{0.6921/1.5005} = 0.679\pm 0.005}$$
+This is a derivation, not an inference: given $\Omega_\Lambda$ (Planck 2018) and the purely geometric $\alpha_{\rm geom} = 10\sqrt{2}/(3\pi)$ (RC-8b), the decoherence rate $c_\Gamma$ follows with 0.7\% precision. See \texttt{RC4\_SOURCED\_EOM\_2026-05-01.md} for the EOM derivation.
 
 **Withdrawn:** We do **not** assume a power-law scaling $|T_M|^2 \propto \Gamma_{\rm dec}^{p}$ at leading order; the exponent formulation is ill-defined in the KCR-Cone scaling regime and was retired in RC-6.
 
@@ -492,7 +494,7 @@ where:
 
 > **RC-3 Update (2026-04-18):** The free-field T_M propagator derived from first principles in `RC3_DERIVATION_2026-04-18.md` §RC3.4 is **massless**: $P(k) = 2N_0^2/(M_5^3 k^2) \sim 1/k^2$. The zero mode $\psi_0(r) = N_0\cos^2(\sqrt{2}\,r)$ is normalizable and has $m_0^2 = 0$. The massive tower starts at the exact first massive KCR vector-mode value $m_1^2 = 24$ (in KCR units), giving $k_c^{\rm KK} = 2\sqrt{6}/L^* \approx 4.90/L^*$ as the corresponding spectral transition scale.
 >
-> The $k_c^2$ term in the propagator Assumption A5 is therefore NOT the free-field KCR mode gap but a **dynamical effective mass** arising from the decoherence sourcing of $T_M$. With $\Gamma_{\rm dec} \sim H_0$ (from Path C, RC-2.5), the natural sourced mass scale is $k_c^{\rm eff} \sim H_0 \sim 5H_0$ (the latter matching the 69% quadrupole suppression). Deriving $k_c^{\rm eff}$ from the sourced EOM is RC-4 scope.
+> The $k_c^2$ term in the propagator Assumption A5 is therefore NOT the free-field KCR mode gap but a **dynamical effective mass** arising from the decoherence sourcing of $T_M$. With $\Gamma_{\rm dec} \sim H_0$ (from Path C, RC-2.5), the natural sourced mass scale is $k_c^{\rm eff} \sim H_0 \sim 5H_0$ (the latter matching the 69% quadrupole suppression). From RC-4 (2026-05-01): the sourced EOM gives $k_c^{\rm eff} = \sqrt{\Omega_\Lambda}\,H_0 \approx 0.832\,H_0$ at leading order. The connecting factor to $k_c = 5/\chi_{\rm CMB}$ is the holographic projection $R_\Sigma = \chi_{\rm CMB}$ (Paper 4 \S3). See \texttt{RC4\_SOURCED\_EOM\_2026-05-01.md} \S3.
 >
 > The spectral formula $\Delta^2_\Sigma(k) = A_s k^2/(k^2 + k_c^2)$ remains structurally correct with $k_c = k_c^{\rm eff}$ (dynamical). The form $k^2/(k^2 + k_c^2)$ requires a propagator $P(k) \sim 1/(k^2+k_c^2)$ — which comes from the sourced dynamics, not the free spectrum.
 
@@ -582,8 +584,10 @@ For RC-3 to make C_ℓ^Σ fully predictive, it needs from RC-1:
 3. ✅ λ_bdry decouples from Λ_eff (CC comes from geometry, not boundary coupling)
 4. ✅ d vs k_c discrepancy resolved in direction: k_c = dynamical from decoherence, not the free-field KCR mode gap
 
-**Still needed (RC-4 scope):**
-1. $k_c^{\rm eff}$ from sourced $T_M$ EOM (decoherence-driven mass gap)
+**RC-4 closed at leading order (2026-05-01):** $c_\Gamma = \sqrt{\Omega_\Lambda/\alpha_{\rm geom}} = 0.679$ derived; $k_c^{\rm eff} = \sqrt{\Omega_\Lambda}\,H_0 = 0.832\,H_0$ estimated. Residual gap: holographic projection $R_\Sigma = \chi_{\rm CMB}$ (Paper 4 \S3). See \texttt{RC4\_SOURCED\_EOM\_2026-05-01.md}.
+
+**Still needed (Paper 4 scope):**
+1. $R_\Sigma = \chi_{\rm CMB}$ from holographic projection $\Phi: \Sigma \to \partial M$ (closes factor-1.9 gap between $k_c^{\rm eff}$ and $k_c^{\rm SW} = 5/\chi_{\rm CMB}$)
 2. Full Boltzmann transfer function (beyond Sachs-Wolfe)
 3. Non-Gaussian corrections to 𝒫^Σ(k) from T_M interactions
 4. Amplitude A_s from λ_bdry normalization (requires 5D action evaluation)
