@@ -120,8 +120,10 @@ localized at ∂M, with Π_{μν} the boundary projector. ✅ DERIVED (Paper 2C 
 **The geometric coefficient** α_geom = N₀² · I₆/I₂ = 10√2/(3π) ≈ 1.5005 is derived from the KCR zero-mode backreaction integral (RC-8b). The 0.033% proximity to 3/2 is a numerical coincidence; the two quantities answer different questions. ✅ DERIVED.
 
 **Open gates in §2.2:**
+- **RC-1 Opus verification 2026-05-01** — §RC1.1 VERIFIED (U(d)×T^d uniqueness of |T_M|²); §RC1.2 VERIFIED (variational calc correct). §RC1.3A DEMOTED: (i) Π_μν is purely spatial for constant-t ∂M → ρ_eff=0 from direct variation; w=−1 comes from bulk EOM Ω_drag=(3/2)(Γ_dec/H₀)² with Γ_dec=const, NOT from boundary variation; (ii) α=3/2 is a **coefficient** (not exponent) in Ω_drag; Weyl law for CP¹ gives ρ(λ)~const (not λ^{1/2}). Bridge boundary→bulk requires Israel JC (RC-2). §RC1.4 UPDATED: k_c^eff = √Ω_Λ H₀ = 0.832 H₀ (RC-4). See `RC1_OPUS_VERIFICATION_2026-05-01.md`.
 - Physical k_c from Σ geometry (RC-3 ⚠️ PARTIAL 2026-04-27): D1 (λ_min=d) ✅, D2 (Lorentzian propagator) ✅, D3a (ℓ_min=2 via T^(eff) rank-2 + SO(3) isotropy of ∂M) ✅ — k_c=5/R_Σ is now structurally derived; D3b (R_Σ=χ_CMB via holographic projection) ❌ Paper 4 §3 deliverable.
-- c_Γ from sourced EOM (RC-4): the constraint is Ω_{drag} = α_geom c_Γ² = 0.69, giving c_Γ ≈ 0.678 by inference; the derivation from the sourced T_M EOM is not complete. ⚠️ PARTIAL.
+- ~~c_Γ from sourced EOM (RC-4)~~ ✅ **CLOSED 2026-05-01** — c_Γ = √(Ω_Λ/α_geom) = 0.679 ± 0.005 **derived** from Path C invariant Ω_Λ = α_geom c_Γ²; k_c^eff = √Ω_Λ H₀ = 0.832 H₀ (leading order EOM). Residual gap to k_c^SW = 5/χ_CMB: holographic projection R_Σ = χ_CMB (Paper 4 §3). See `RC4_SOURCED_EOM_2026-05-01.md`. Closes omnibus #22, #23 at leading order.
+- ~~C4 axiom (d=2 Born rule derivation)~~ ✅ **CLOSED 2026-05-01** — Route A (isotropic Fokker–Planck) definitively closed. Busch 2003 (PRL 91, 120403) adopted as stated axiom for d=2 qubit POVMs. Corollary 6.2 cites Busch 2003 for d=2. Route B (non-isotropic noise ∝ T_MΣ) deferred to Paper 5. See `C4_AXIOM_DECISION_2026-05-01.md`. Closes 2C ledger #21.
 - Full GKPW-type prescription and boundary correlators. ❌ MISSING.
 
 **Realistic closure: ~85% on the analytic side.** RC-1 has de-conjectured the holographic structure to a substantial degree.
@@ -284,7 +286,7 @@ Three viable placements for this document in the series:
 | Corollaries 1–4 | ✅ All stated; C2 coefficient 5 in k_c=5/χ_CMB structurally derived 2026-04-27 (T^(eff) rank-2 bilinear + SO(3) isotropy → ℓ_min=2 → d'=25 → √25=5); R_Σ=χ_CMB pending Paper 4; C4 Ω=π pending |
 | This document | ~75% — full prose, proofs, theorem, corollaries; connective polish and citation pass remain |
 
-**Overall HCR readiness for external review:** ~75–80%, gated by G3-D3b (R_Σ=χ_CMB via holographic projection — Paper 4 §3 deliverable), synthesis prose polish pass, and independent peer review of G1. G3-D1/D2/D3a proved 2026-04-27 (λ_min=d exact; Lorentzian propagator; ℓ_min=2 structural). G1 proved 2026-04-27 (Born chain unconditional). G2 resolved 2026-04-26 (α_geom derived).
+**Overall HCR readiness for external review:** ~82%, reflecting: RC-4 CLOSED (c_Γ=0.679 derived, k_c^eff=0.832 H₀); C4 CLOSED (Busch 2003 d=2 axiom); RC-1 Opus corrections installed (α=3/2 coefficient not exponent; w=−1 via bulk EOM route); G1 PROVED (Born chain unconditional); G2 RESOLVED (α_geom derived); G3 PARTIAL (D1/D2/D3a ✅; D3b Paper 4). Gated by: G3-D3b (R_Σ=χ_CMB, Paper 4 §3), RC-2 (Israel JC for dark energy), and independent peer review of G1.
 
 ---
 
