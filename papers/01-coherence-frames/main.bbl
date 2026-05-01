@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{59}%
+\begin{thebibliography}{68}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -189,6 +189,45 @@
   quantum state reduction},\ }\href@noop {} {\bibfield  {journal} {\bibinfo
   {journal} {Gen. Relativ. Gravit.}\ }\textbf {\bibinfo {volume} {28}},\
   \bibinfo {pages} {581} (\bibinfo {year} {1996})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Joos}\ and\ \citenamefont {Zeh}(1985)}]{JoosZeh1985}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {E.}~\bibnamefont
+  {Joos}}\ and\ \bibinfo {author} {\bibfnamefont {H.~D.}\ \bibnamefont {Zeh}},\
+  }\bibfield  {title} {\bibinfo {title} {The emergence of classical properties
+  through interaction with the environment},\ }\href
+  {https://doi.org/10.1007/BF01725541} {\bibfield  {journal} {\bibinfo
+  {journal} {Zeitschrift f{\"u}r Physik B}\ }\textbf {\bibinfo {volume} {59}},\
+  \bibinfo {pages} {223} (\bibinfo {year} {1985})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Brune}\ \emph {et~al.}(1996)\citenamefont {Brune},
+  \citenamefont {Hagley}, \citenamefont {Dreyer}, \citenamefont {Ma\^{i}tre},
+  \citenamefont {Maali}, \citenamefont {Wunderlich}, \citenamefont {Raimond},\
+  and\ \citenamefont {Haroche}}]{Haroche1996decoherence}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Brune}}, \bibinfo {author} {\bibfnamefont {E.}~\bibnamefont {Hagley}},
+  \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Dreyer}}, \bibinfo
+  {author} {\bibfnamefont {X.}~\bibnamefont {Ma\^{i}tre}}, \bibinfo {author}
+  {\bibfnamefont {A.}~\bibnamefont {Maali}}, \bibinfo {author} {\bibfnamefont
+  {C.}~\bibnamefont {Wunderlich}}, \bibinfo {author} {\bibfnamefont {J.~M.}\
+  \bibnamefont {Raimond}},\ and\ \bibinfo {author} {\bibfnamefont
+  {S.}~\bibnamefont {Haroche}},\ }\bibfield  {title} {\bibinfo {title}
+  {Observing the progressive decoherence of the ``meter'' in a quantum
+  measurement},\ }\href {https://doi.org/10.1103/PhysRevLett.77.4887}
+  {\bibfield  {journal} {\bibinfo  {journal} {Physical Review Letters}\
+  }\textbf {\bibinfo {volume} {77}},\ \bibinfo {pages} {4887} (\bibinfo {year}
+  {1996})},\ \bibinfo {note} {first quantitative experimental confirmation of
+  decoherence; 26 years after Zeh (1970). Directly verifies decoherence
+  timescale calculations of Joos \& Zeh (1985).}\BibitemShut {Stop}%
+\bibitem [{\citenamefont {Haroche}(2012)}]{Haroche2012Nobel}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Haroche}},\ }\href
+  {https://www.nobelprize.org/prizes/physics/2012/haroche/lecture/} {\bibinfo
+  {title} {Controlling photons in a box and exploring the quantum to classical
+  boundary}},\ \bibinfo {howpublished} {Nobel Lecture, December 8, 2012}
+  (\bibinfo {year} {2012}),\ \bibinfo {note} {documents the 26-year journey
+  from Zeh's 1970 discovery to experimental confirmation; relevant historical
+  framing for CR Introduction}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Bengtsson}\ and\ \citenamefont
   {{\.Z}yczkowski}(2017)}]{bengtssonGeometryQuantumStates2017}%
   \BibitemOpen
@@ -432,6 +471,55 @@
   {\bibfield  {journal} {\bibinfo  {journal} {Physical Review Letters}\
   }\textbf {\bibinfo {volume} {89}},\ \bibinfo {pages} {080401} (\bibinfo
   {year} {2002})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Li}\ \emph {et~al.}(2018)\citenamefont {Li},
+  \citenamefont {Chen},\ and\ \citenamefont {Fisher}}]{Li2019MIPT}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont
+  {Li}}, \bibinfo {author} {\bibfnamefont {X.}~\bibnamefont {Chen}},\ and\
+  \bibinfo {author} {\bibfnamefont {M.~P.~A.}\ \bibnamefont {Fisher}},\
+  }\bibfield  {title} {\bibinfo {title} {Quantum zeno effect and the many-body
+  entanglement transition},\ }\href
+  {https://doi.org/10.1103/PhysRevB.98.205136} {\bibfield  {journal} {\bibinfo
+  {journal} {Physical Review B}\ }\textbf {\bibinfo {volume} {98}},\ \bibinfo
+  {pages} {205136} (\bibinfo {year} {2018})},\ \bibinfo {note} {first
+  demonstration of measurement-induced entanglement phase transition in random
+  quantum circuits}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Bao}\ \emph {et~al.}(2020)\citenamefont {Bao},
+  \citenamefont {Choi},\ and\ \citenamefont {Altman}}]{Bao2020MIPT}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont
+  {Bao}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Choi}},\ and\
+  \bibinfo {author} {\bibfnamefont {E.}~\bibnamefont {Altman}},\ }\bibfield
+  {title} {\bibinfo {title} {Theory of the phase transition in random unitary
+  circuits with measurements},\ }\href
+  {https://doi.org/10.1103/PhysRevB.101.104301} {\bibfield  {journal} {\bibinfo
+   {journal} {Physical Review B}\ }\textbf {\bibinfo {volume} {101}},\ \bibinfo
+  {pages} {104301} (\bibinfo {year} {2020})},\ \bibinfo {note} {establishes
+  field-theory description of measurement-induced phase transition (MIPT); maps
+  entanglement transition to replica statistical mechanics}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Noel}\ \emph {et~al.}(2022)\citenamefont {Noel} \emph
+  {et~al.}}]{Noel2022MIPT}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {Noel}} \emph {et~al.},\ }\bibfield  {title} {\bibinfo {title}
+  {Measurement-induced quantum phases realized in a trapped-ion quantum
+  computer},\ }\href {https://doi.org/10.1038/s41567-022-01619-7} {\bibfield
+  {journal} {\bibinfo  {journal} {Nature Physics}\ }\textbf {\bibinfo {volume}
+  {18}},\ \bibinfo {pages} {760} (\bibinfo {year} {2022})},\ \bibinfo {note}
+  {first experimental observation of MIPT in a trapped-ion system; collapse as
+  measurement-induced phase transition with concrete data}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {{Google Quantum AI}}(2023)}]{GoogleMIPT2023}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {{Google Quantum AI}}},\
+  }\bibfield  {title} {\bibinfo {title} {Measurement-induced entanglement and
+  teleportation on a noisy quantum processor},\ }\href
+  {https://doi.org/10.1038/s41586-023-06505-7} {\bibfield  {journal} {\bibinfo
+  {journal} {Nature}\ }\textbf {\bibinfo {volume} {622}},\ \bibinfo {pages}
+  {481} (\bibinfo {year} {2023})},\ \bibinfo {note} {experimental MIPT
+  observation on superconducting qubits; directly relevant to CR Prediction 7
+  timescale regime}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Kofman}\ and\ \citenamefont
   {Kurizki}(2000)}]{KofmanKurizki2000}%
   \BibitemOpen
@@ -552,6 +640,21 @@
   {\emph {\bibinfo {title} {The Quantum Revolution in Philosophy}}}\ (\bibinfo
   {publisher} {Oxford University Press},\ \bibinfo {address} {Oxford},\
   \bibinfo {year} {2017})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Benoist}(2021)}]{Benoist2021ContextualRealism}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Benoist}},\ }\href {https://doi.org/10.4159/9780674258723} {\emph {\bibinfo
+  {title} {Toward a Contextual Realism}}}\ (\bibinfo  {publisher} {Harvard
+  University Press},\ \bibinfo {address} {Cambridge, MA},\ \bibinfo {year}
+  {2021})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Pris}(2021)}]{Pris2021RealMeaningQuantumMechanics}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.-I.}\ \bibnamefont
+  {Pris}},\ }\bibfield  {title} {\bibinfo {title} {The real meaning of quantum
+  mechanics},\ }\bibfield  {journal} {\bibinfo  {journal} {arXiv preprint
+  arXiv:2107.10666}\ }\href {https://doi.org/10.48550/arXiv.2107.10666}
+  {10.48550/arXiv.2107.10666} (\bibinfo {year} {2021}),\ \Eprint
+  {https://arxiv.org/abs/2107.10666} {arXiv:2107.10666} \BibitemShut {NoStop}%
 \bibitem [{\citenamefont
   {Everett}(1957)}]{everettRelativeStateFormulation1957}%
   \BibitemOpen

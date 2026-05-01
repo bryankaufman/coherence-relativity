@@ -607,7 +607,7 @@ Consider the double-slit with two frames (Fig.~\ref{fig:double_slit}):
 \item $\Fint$: $\ket{\psi}_{\Fint} = \tfrac{1}{\sqrt{2}}(\ket{L} + \ket{R})$. Interference visible.
 \item $\Fwp$: $\ket{\psi}_{\Fwp} = \tfrac{1}{\sqrt{2}}(\ket{L}\ket{W_L} + \ket{R}\ket{W_R})$. Paths definite.
 \end{itemize}
-The transformation $U_{\Fint \to \Fwp}$ is realized by detector coupling. Frame invariants: $\mu(L) = \mu(R) = 1/2$ in both frames. Frame-dependent: visibility of interference fringes, off-diagonal density matrix elements.
+The transformation $U_{\Fint \to \Fwp}$ is realized by detector coupling (Fig.~\ref{fig:frame_transformation}). Frame invariants: $\mu(L) = \mu(R) = 1/2$ in both frames. Frame-dependent: visibility of interference fringes, off-diagonal density matrix elements.
 
 \begin{figure}[t]
 \centering
@@ -615,6 +615,14 @@ The transformation $U_{\Fint \to \Fwp}$ is realized by detector coupling. Frame 
 \caption{Double-slit experiment in two coherence frames. Left: interference frame~$\Fint$ shows the characteristic fringe pattern. Right: which-path frame~$\Fwp$ resolves individual paths with no interference. The Born measure $\mu(L) = \mu(R) = 1/2$ is invariant.}
 \label{fig:double_slit}
 \end{figure}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\columnwidth]{fig3_frame_transformation.pdf}
+\caption{Operator-level frame transformation $U_{\Fint \to \Fwp}$ for the double-slit experiment. Left (\textbf{blue}): interference frame $\Fint$ in which the system is a coherent superposition $|\psi\rangle = \tfrac{1}{\sqrt{2}}(|L\rangle+|R\rangle)$; interference is visible and $\rho_{LR} \neq 0$. Right (\textbf{orange}): which-path frame $\Fwp$ after detector coupling; paths are definite and $\rho_{LR} = 0$. The frame transformation $U_{\Fint\to\Fwp}$ is unitary, preserving the Born measure $\mu(L)=\mu(R)=\tfrac{1}{2}$ (green strip), while changing which observables have definite values. Compare Fig.~\ref{fig:double_slit} for the experimental geometry.}
+\label{fig:frame_transformation}
+\end{figure}
+
 \subsection{Delayed-Choice and Quantum Eraser}
 
 Recent delayed-choice and quantum-eraser experiments sharpen the timing and control of the original Wheeler and Scully--Dr\"uhl proposals, but they do not change the basic puzzle. Quantum-computing realizations of the eraser~\cite{chenDemonstrationScullyDruhl2025} and dual-selection delayed-choice interferometry~\cite{yangExperimentalRealizationWheeler2025} make clear that the issue is not whether the future reaches back into the past, but which comparison frame is used to describe the completed experiment.
@@ -807,10 +815,10 @@ Predictions~(1) (non-linear visibility) and (5) (transformation timescale) follo
 Eight experimentally testable signatures distinguish \HCR{} from standard QM:
 \begin{enumerate}
 \item \textbf{Non-linear visibility}: the \HCR{} geometric traversal $d_\Sig(\lambda)/d_\Sig(0)$ deviates from the standard QM visibility $\mathcal{V} = \sqrt{1-\lambda^2}$ due to $\Gll$ curvature (Fig.~\ref{fig:cr_vs_standard}).
-\item \textbf{Frame-transformation hysteresis}: Erasure paths $\lambda: 0 \to 1 \to 0$ show path-dependent visibility recovery.
+\item \textbf{Frame-transformation hysteresis}: Erasure paths $\lambda: 0 \to 1 \to 0$ show path-dependent visibility recovery (Fig.~\ref{fig:experimental_setup}a).
 \item \textbf{Coherence-space curvature}: Many-body systems exhibit $\Gll$ scaling deviations from mean-field predictions.
 \item \textbf{Modified gravitational decoherence}: Gravitational contributions to~$\Tab$ produce mass-dependent frame-transformation rates differing from Di\'osi--Penrose~\cite{diosiUniversalMasterEquation1987,penroseGravitysRoleQuantum1996}.
-\item \textbf{Transformation timescales}: Weak measurements probe finite frame-transformation duration, resolvable with current qubit platforms.
+\item \textbf{Transformation timescales}: Weak measurements probe finite frame-transformation duration, resolvable with current qubit platforms (Fig.~\ref{fig:experimental_setup}b).
 \item \textbf{Coherence revival}: Closed systems show partial coherence recovery forbidden in irreversible-collapse models~\cite{ghirardiUnifiedDynamicsMicroscopic1986,carlessoTestingLargescaleLimit2020}.
 \item \textbf{Zeno/anti-Zeno crossover}: The crossover timescale is $\tau_{\mathrm{meas}} \approx \tau_{\mathrm{transform}}$ from the $D_f$ completion condition, distinct from the spectral-density prediction~\cite{KofmanKurizki2000}. Pointer-basis dependence of the crossover is an \HCR{}-specific signature.
 \item \textbf{No preferred basis without record constitution}: In decoherence-protected systems that do not sustain stable record-bearing substructures, measurement-like interactions without external record formation should fail to select a unique preferred basis.
@@ -848,6 +856,14 @@ where $v_{\max}$ is bounded by the measurement coupling strength. For a transmon
 \begin{remark}[Universality of timescales]\label{rem:universality}
 The timescales above are \emph{not} universal predictions of the framework: they depend on the coupling strength~$v_{\max}$ that sets the maximum rate of motion through~$\Sig$. What \emph{is} universal is the geometric constraint~\eqref{eq:tau}---a minimum geodesic distance must be traversed---and the characteristic shape of~$\Gll(\lambda)$. Different experimental platforms (femtosecond photonic vs.\ microsecond superconducting) will exhibit different absolute timescales because their couplings differ; the testable content is the \emph{ratio} of transformation duration to coupling strength and the path-dependent structure of the metric.
 \end{remark}
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{fig7_experimental_setup.pdf}
+\caption{Experimental protocols for the two most accessible \HCR{} predictions. \textbf{(a)}~Prediction~2 (frame-transformation hysteresis): a tunable-strength detector between the slits and screen allows direct measurement of $G_{\lambda\lambda}$ as a function of detector coupling~$\chi$. A complete erasure cycle $\lambda: 0 \to \lambda_{\max} \to 0$ should show path-dependent visibility recovery $\delta\mathcal{V} \sim (\tau_{\mathrm{frame}}/T_2)^2 \cdot \mathcal{K}_\Sig$ forbidden in standard QM. \textbf{(b)}~Prediction~5 (transformation timescales / Quantum Darwinism frame selection): as the number of independently monitoring environment fragments~$N$ increases, weak-measurement trajectories probe a sharpening $V(\lambda)$ minimum (Fig.~\ref{fig:quasipotential}) and a slower pointer-frame approach---a longer $\tau_{\mathrm{frame}} \propto \sqrt{N}$ determined by the multi-mode geodesic integral~\eqref{eq:tau}.}
+\label{fig:experimental_setup}
+\end{figure*}
+
 \begin{figure*}[t]
 \centering
 \begin{tikzpicture}[
