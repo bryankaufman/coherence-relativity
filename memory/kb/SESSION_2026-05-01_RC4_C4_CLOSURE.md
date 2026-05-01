@@ -100,3 +100,28 @@ Three sections updated in `papers/02C-holographic-structure/paper2C_HOLOGRAPHIC_
 | `OPEN_ITEMS_ROLLUP.md` | Updated (8 locations) |
 
 Commit: `7eaa543` · 4 files · 514 insertions
+
+---
+
+## RC-1 Opus Verification (2026-05-01, commit bfd197b)
+
+**Files created/updated:**
+-  (full report, 227 lines)
+-  (inline corrections + status table)
+
+### Findings
+
+**§RC1.1 VERIFIED:** Uniqueness of |T_M|² bilinear under U(d)×T^d correct. Minor: Σ-index sum should be d(d−1) not d².
+
+**§RC1.2 VERIFIED:** Variational calculation T^(eff)_μν = λ(√−γ/√−g)Π_μν|T_M|²δ_⊥ is correct step by step.
+
+**§RC1.3A — TWO ERRORS FOUND:**
+1. **w=−1 claim demoted:** Π_μν is PURELY SPATIAL for constant-t ∂M (diag(0,a²,a²,a²)), giving ρ_eff=0, NOT w=−1. The w=−1 result comes from the April 10 bulk EOM: Ω_drag=(3/2)(Γ_dec/H₀)² with Γ_dec=const. Bridge requires Israel junction conditions (RC-2 scope).
+2. **α=3/2 misidentified as exponent:** The RC-1 draft interpreted α=3/2 as the exponent in ρ~Γ_dec^{3/2}. The actual April 10 formula has EXPONENT=2 and α=3/2 as COEFFICIENT: Ω_drag = (3/2)(Γ_dec/H₀)². Coefficient α = ∫f₀/∫f₀³ = 3/2 from KCR graviton zero-mode wavefunction f₀=Ncos^{3/2}(√2 r). The Weyl law spectral density argument in the draft (ρ(λ)~λ^{1/2} for CP¹) is WRONG: CP¹ (dim=2) gives ρ(λ)~const.
+
+**§RC1.3B PLAUSIBLE under A3:** w=0 from u_μu_ν tensor structure. Ω_DM/Ω_b consistency holds with corrected formula: Ω_DM=(3/2)β², β=0.416 (April 10).
+
+**§RC1.4 UPDATED:** k_c^eff = √Ω_Λ H₀ = 0.832 H₀ installed from RC-4.
+
+### RC-2 Primary Task (revised)
+Reconcile boundary action route (T^(eff)∝Π_μν spatial) with bulk EOM route (ρ_drag=(3/2)(Γ_dec/H₀)²ρ_crit). Show equivalence via Israel junction conditions, with α=∫f₀/∫f₀³=3/2 entering the extrinsic curvature term.

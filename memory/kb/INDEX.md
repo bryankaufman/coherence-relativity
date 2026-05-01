@@ -13,7 +13,7 @@
 
 ## Log (newest first)
 
-- 2026-05-01 — RC4_C4_CLOSURE — RC-4 closed: c_Γ = sqrt(Ω_Λ/α_geom) = 0.679±0.005 derived, k_c^eff = 0.832 H_0 (leading order); C4 closed: Busch 2003 d=2 Born axiom adopted; paper2C 3 prose updates; OPEN_ITEMS_ROLLUP updated; commit 7eaa543
+- 2026-05-01 — RC4_C4_CLOSURE_RC1_OPUS — RC-4 CLOSED (c_Γ=0.679 derived, k_c^eff=0.832 H₀); C4 CLOSED (Busch 2003 axiom); RC-1 Opus pass: §RC1.1/RC1.2 VERIFIED, §RC1.3A DEMOTED (Π_μν purely spatial→ρ=0; α=3/2 is coefficient not exponent; Weyl law for CP¹ incorrect); §RC1.4 k_c^eff updated; commits 7eaa543 904b100 bfd197b
 - 2026-04-30 — GAP_TRACKING_INFRASTRUCTURE — Per-paper ledgers built in identical format to Paper 2 omnibus: PAPER4_OPEN_ITEMS_LEDGER_2026-04-30.md (28 items, ~50% complete), PAPER2C_OPEN_ITEMS_LEDGER_2026-04-30.md (20 net-new + 26 omnibus cross-refs, ~78%), PAPER3_OPEN_ITEMS_LEDGER_2026-04-30.md (35 items + 7 P3-Hx interface contracts owed, ~58%), PAPER5-6_TRANSFORMER_OPEN_ITEMS_2026-04-30.md (stub, ~10–20%), OPEN_ITEMS_ROLLUP.md project-level cross-paper aggregator at repo root. Critical path identified: RC-4 sourced EOM → RC-1 Opus pass → ζ-regularization → C4 axiom decision → H1-A/B/C → s(R) first-principles
 - 2026-04-29 — BLOCH-PENROSE-CONSCIOUSNESS — Bloch↔Penrose conformal-boundary mapping; transformer kernels Σ↔M; λ-manifold = round S² radius 1/(2√2) verified; comparison-substrate dissolution of hard problem; outputs: SESSION log + papers/07-consciousness-program/ HARD-PROBLEM-NOTES.md + PROJECT-TRAJECTORY.md
 - 2026-04-28 — VAULT_SETUP — HCR Obsidian vault created; _vault/ MOC layer added; project renamed HCR
