@@ -163,4 +163,76 @@ The 2A action (without A1) generates a smooth bulk source T^(eff,bulk)_μν ∝ 
 
 ---
 
-*Session conducted via Warp (Oz) in conversation format. No files edited; findings are diagnostic only. Commit this log to preserve the derivation record.*
+## Addendum: P3-H3 — KK EM Decoupling and Hopf U(1) Selection
+
+*Added after further analysis within the same session.*
+
+### P3-H3 argument path — IDENTIFIED (not yet written)
+
+**Core finding:** The correct closure for P3-H3 (c₁ = 1 Hopf bundle uniqueness) is the projective-phase argument:
+
+> The physically relevant U(1) is the one built into the definition of projective Hilbert space: the action e^{iθ}·|ψ⟩ on unit vectors in ℂ² (or ℂ^d). This is exactly the Hopf circle on S³ (for d=2) or the diagonal U(1) ⊂ T^d (for general d). The c₁ = 1 tautological Hopf bundle over CP¹ ≅ S² is the unique U(1) bundle whose total space is S³ and whose fiber action is this projective phase. No other U(1) subgroup of SO(4) has this interpretation.
+
+**What was WRONG in the earlier framing:** The "Born-rule continuity → π₁ = 0" argument is invalid — Berry phases are physical and measurable, and single-valued probabilities don't imply simply-connected internal space. The topology argument (S³ → c₁ = 1) was correct in conclusion but incomplete, because S³ has multiple inequivalent U(1) sub-actions and topology alone doesn't select the Hopf one.
+
+**Two formalization subtleties:**
+
+1. **d > 2 generalization:** For general d, Σ = U(d)/T^d and T^d has d independent U(1)'s. The "projective-phase" U(1) is the diagonal one (θ₁ = ... = θ_d), acting as overall e^{iθ}·1_d. The remaining (d−1) U(1) factors in T^d are internal phase rotations between components of |ψ⟩. For d ≥ 3, these (d−1) remaining factors are the natural "room" for additional gauge structure (U(1)_Y, dark photons, Cartan generators of larger gauge groups). **Forward-looking note for P3-H3 write-up:** "The diagonal U(1) ⊂ T^d is selected as EM by the projective-phase argument; the remaining (d−1) U(1) factors are deferred to the gauge-structure derivation [Paper 3 §X]." This ties P3-H3 cleanly into the SM-embedding line item (#13 in P3 ledger) rather than leaving d > 2 as a loose end.
+
+2. **Left/right Hopf orientation:** S³ has two Hopf fibrations (SU(2)_L and SU(2)_R factors of SO(4) ≅ (SU(2)_L × SU(2)_R)/ℤ₂), giving opposite fiber orientations. The projective-phase argument selects c₁ = ±1 but the sign is a residual ℤ₂ choice — the same discrete choice as the sign convention for positive electric charge (Dirac convention). Either it's fixed by an existing frame-bundle orientation in 2A/2B, or it remains a free discrete choice analogous to CPT. Either is acceptable; the formalization should identify which.
+
+**Revised P3-H3 effort estimate:** 3–5 pages of argument-development (not 1–2 as initially estimated). The Born-rule continuity path is invalid; the projective-phase/complex-structure path is correct but requires treating general d, ruling out isometry-rotation U(1)s, and addressing L/R orientation.
+
+**Ledger status change:** P3-H3 promoted from "ready to write (citation-level)" to "argument-development required (3–5 pages)".
+
+### KK common origin preserved ✅
+
+Gravity and EM both arise as KK zero modes from G_AB on M×Σ:
+- Gravity ← g_μν (M-block); m = 0 (RC-3)
+- EM ← G_μψ (Hopf fiber = diagonal U(1)); massless by gauge invariance
+- T_MΣ coupling ← G_μa (all Σ-directions); coherence back-coupling (new, no KK analog)
+
+Decoupling at low energy is standard KK (mass gap from 1/r_max). The common origin of gravity and EM is deeper in HCR than standard KK: the Hopf fiber exists because of the coherence-frame axioms, not because we assumed a circle.
+
+### GW170817 flag (LI-S2 update)
+
+HCR leading-order T^(eff) (δ_⊥-localized at ∂M) does not modify bulk GW propagation → c_GW = c at leading order, trivially consistent with GW170817 constraint (< 10⁻¹⁵ fractional deviation). However, the bulk source T^(eff,bulk) ∝ λ|T_M| (LI-S2, absent from 2C) could in principle contribute dispersive corrections to GW propagation for λ non-uniform along the 130 Mpc path. This must be explicitly checked rather than assumed safe. **Action: add GW170817 bound-verification line to LI-S2.**
+
+### CMB quadrupole downgrade
+
+CMB ℓ = 2 has 5 m-modes → cosmic variance ~63%. The ~69% suppression is at most ~2σ. HCR predicting it consistently is a check, not a discriminator. The actual discriminator is D^μ[Π_μν|T_M|²] = 0 on non-FRW boundaries — not cosmic-variance-bounded.
+
+---
+
+## Updated Open Items
+
+| # | Item | Priority | Target | Notes |
+|---|------|----------|--------|----- |
+| P3-H4 #2 | Wilsonian derivation: Z_Σ|_{λ→0} → e^{-λ_bdry ∫|T_M|²} | HIGH | Σ-sector path integral at λ=0 fixed point | Target form fixed; coefficient open |
+| P3-H3 | Hopf U(1) uniqueness via projective-phase argument | HIGH | 3–5 page argument-development; diagonal U(1) ⊂ T^d; L/R orientation | Promoted from "citation" to "argument-development required" |
+| Sensitivity-p | p > 1 robustness of junction-condition verdict | MEDIUM | One-page analysis | Ansatz A* gives p = 2; check p ≤ 1 sensitivity |
+| Bulk-T (LI-S2) | T^(eff,bulk) ∝ λ|T_M| in 2C + GW170817 bound | MEDIUM | Add GW propagation check; add subleading correction to 2C non-FRW | Bound-verification line needed |
+
+---
+
+## Final Status Map
+
+| Item | Status |
+|------|--------|
+| Family #2 verdict | ✅ Structural — Σ = U(d)/T^d unitary |
+| G² uniqueness on ∂M | ✅ Bundle distinction (G_μa metric, F_μa curvature) + Theorem 2.5.1 |
+| F² suppression at ∂M | ✅ Derived (Theorem 2.5.1), not hypothesized |
+| α_geom = 10√2/(3π) | ✅ Exact (RC-8b); 3/2 dead (RC-7) |
+| δ_⊥ mechanism | ✅ GHY-type; λ ~ n² quadratic vanishing |
+| Junction-condition D^μ[Π|T_M|²] = 0 | ✅ New prediction for non-FRW ∂M |
+| λ_bdry from first principles | ❌ Wilsonian Z_Σ calculation open |
+| Bulk source in 2C | ⚠️ Absent; subleading at ∂M; GW170817 check needed |
+| P3-H3 (c₁ = 1 uniqueness) | ⚠️ Argument path identified (projective-phase U(1)); 3–5 page write-up needed; d > 2 and L/R subtleties scoped |
+| KK EM/gravity common origin | ✅ Preserved; Hopf fiber = diagonal U(1) from projective phase |
+| SM gauge embedding | ❌ Deferred; (d−1) remaining U(1)s in T^d are the natural room; Paper 3 §X |
+| CMB quadrupole | ⚠️ Consistency check only (~2σ, cosmic-variance-bounded) |
+| D^μ[Π|T_M|²] = 0 as discriminator | ✅ BH horizons / structure / GW-perturbed ∂M; not cosmic-variance-bounded |
+
+---
+
+*Addendum written same session (2026-05-01). No new commit required for addendum — will be included in next session commit or working-notes push.*
