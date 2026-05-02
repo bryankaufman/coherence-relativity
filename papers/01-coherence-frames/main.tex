@@ -500,7 +500,14 @@ V\ket{\psi}_F = \sum_i c_i \cdot \frac{1}{\sqrt{m_i}} \sum_{j \in B_i} \ket{i,e_
 where the last equality uses $c_i = \sqrt{m_i/M}$ (up to phases absorbed by relabeling). Identifying $\ket{i,k}_{F'} \equiv \ket{i,e_j}$ for $j \in B_i$ gives the equal-amplitude state $\ket{\psi}_{F'} = M^{-1/2}\sum_{i,k}\ket{i,k}_{F'}$ in the enlarged frame~$F'$.
 \end{proof}
 
-Physically, this construction corresponds to refining a measurement by coupling to an ancilla---a standard procedure in quantum information.
+Physically, this construction corresponds to refining a measurement by coupling to an ancilla---a standard procedure in quantum information (Fig.~\ref{fig:frame_splitting}).
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{fig_frame_splitting.pdf}
+\caption{Born rule derivation---Step~3 (rational amplitudes). \textbf{3a:}~The initial frame~$F$ carries unequal amplitudes $|c_0|^2 = m/(m+n)$, $|c_1|^2 = n/(m+n)$. \textbf{3b:}~An ancilla space of dimension~$m+n$ is introduced, partitioned into block~$B_0$ ($m$ states, outcome~0) and block~$B_1$ ($n$ states, outcome~1). \textbf{3c:}~Isometry~$V$ maps $|\psi\rangle_F$ to the enlarged frame~$F'$ on $\mathcal{H}\otimes\mathcal{H}_{\mathrm{anc}}$, producing an equal-amplitude state $(m+n)^{-1/2}\sum_{i,k}|i,k\rangle_{F'}$. The green dashed border marks where Axiom~(A1) applies: the measure~$\mu$ must be preserved under this embedding. \textbf{3d:}~Step~2 assigns each extended alternative probability~$1/(m+n)$; Axiom~(A2) (purple dashed border) collapses the sum over~$B_0$ to yield $\mu_F(0) = m/(m+n) = |c_0|^2$. Reading clockwise: unequal amplitudes $\to$ ancilla embedding $\to$ equal amplitudes $\to$ Born measure---the logical circuit of Step~3.}
+\label{fig:frame_splitting}
+\end{figure*}
 
 The frame splitting embeds $\Sig$ into the larger coherence space $\Sig' = U(dM)/T^{dM}$; Axiom~(A1) requires only that the probability measure~$\mu$ is preserved under this embedding. We do not claim $T_{AB}$ is defined on~$\Sig'$; the splitting is used solely to establish the probability assignment via Steps~2--3 of the Born rule derivation, after which the isometry returns to the original~$\Sig$. Compatibility of~$T_{AB}$ across dimension-changing embeddings is addressed in Paper~2.
 
