@@ -153,4 +153,6 @@ The single highest-leverage item across all papers, in priority order:
 
 ## Deferred Items — Return To
 
+
+- **File migration audit** (added 2026-05-02): When a full-disk grep is needed to find something, the file is misplaced. Audit for: (1) KB entries not in memory/kb/; (2) derivation files outside per-paper ledgers; (3) idea content that should be in section drafts. Use _vault/AGENT_GUIDE.md path registry as authority. Goal: all content findable without grep.
 - **Tetris toy model of record settlement** (): Draft placeholder committed 2026-05-02. Correspondence: falling piece → λ-trajectory, locking → G_λλ→∞, complete rows → observer-independent facts, incomplete rows → frame-local, line-clear → immutable causal record. Placement in Paper 2A (§7 EOM or illustrative appendix) and figure TBD. Return to for: (1) figure, (2) named Proposition on line-clear irreversibility, (3) Ω_AB rotation-hysteresis extension as discrete Prediction 2.
