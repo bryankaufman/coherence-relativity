@@ -745,6 +745,10 @@ Coherence relativity suggests a frame-relative account of when facts become sett
 
 This helps with delayed-choice and other retrocausal puzzles. An event can happen earlier in coordinate time and still fail to count as part of the observer-independent past if the relevant transport loop has not yet closed. In that case it remains, for some frames, in the present process of fact-establishment. What is already past for the friend can still be present for Wigner. The apparent retrocausality comes from treating a frame-local description as if it were already frame-invariant. In this sense, SR and \CR{} express the same general lesson: temporal relations depend on the frame at the level where they are defined. The extension of this parallel to the full geometry of $\mathcal{M}\times\Sig$ is deferred to Paper~2.
 
+\begin{remark}[Hilbert-space dimension and the depth of the past]\label{rem:hilbert-depth}
+The frame-relative nature of pastness acquires a precise geometric meaning when observers have access to Hilbert spaces of different dimension. The friend's coherence space~$\Sig_F = U(d_S)/T^{d_S}$ is built from the system alone; Wigner's~$\Sig_W = U(d_S d_{\mathrm{lab}})/T^{d_S d_{\mathrm{lab}}}$ is strictly higher-dimensional, containing~$\Sig_F$ as a lower-dimensional submanifold. An event at $\lambda_F \to 1$ in~$\Sig_F$---geometrically rigid, locally in the fixed past---sits at $\lambda_W \approx 0$ in the additional dimensions of~$\Sig_W$ inaccessible to the friend. Both observers are correct in their respective coherence spaces; the conflict arises only if one demands a single coherence space for both, which Proposition~\ref{prop:observer-independent-fact} shows is unjustified when the relevant loop encloses nontrivial holonomy. The $\lambda = 1$ past horizon is therefore always relative to the accessible Hilbert-space dimension: a super-observer with access to a larger~$\Sig$ can always treat the settled past of a lower-dimensional frame as still quantum-open. This is exactly what Wigner does to Friend, and what sufficiently large quantum computers could do to small quantum systems in Frauchiger--Renner-type protocols. There is no absolute past in a quantum universe---only past-relative-to-an-accessible-Hilbert-space-dimension. The holographic structure of Paper~4, in which the boundary~$\partial M$ plays the role of the lower-dimensional ``flat world,'' provides a natural arena for making this hierarchy of past horizons precise.
+\end{remark}
+
 \begin{figure*}[t]
 \centering
 \includegraphics[width=\textwidth]{fig_geometric_entropy.pdf}
@@ -993,7 +997,7 @@ To keep these temporal claims distinct, three structures should be separated. \t
  
 This suggests a simple three-part picture inside \CR{}. Coherence ($\lambda \approx 0$) corresponds to the open future, where no observer-independent fact about a measurement outcome has yet been fixed. The intermediate region $0 < \lambda < 1$ corresponds to mixed, partly decohered frames: the present, where records are in the process of being formed. Decoherence ($\lambda \to 1$) corresponds to the fixed past, where stable pointer records satisfy Proposition~\ref{prop:observer-independent-fact}. Because $\Gll \to \infty$ as $\lambda \to 1$ (Sec.~\ref{sec:tensor}), the geodesic bound~\eqref{eq:tau} implies that this transition cannot be literally instantaneous.
  
-Operationally, the temporal labels line up with frame type as follows:
+Operationally, the temporal labels line up with frame type as follows (Fig.~\ref{fig:temporal_axis}):
 \begin{center}
 {\small
 \begin{tabular}{@{}llll@{}}
@@ -1007,6 +1011,13 @@ Coherent & $\approx 0$ & \shortstack{no stable\\records} & future \\
 \end{tabular}
 }
 \end{center}
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{fig_temporal_axis.pdf}
+\caption{HCR temporal ordering (frame-relative). The decoherence parameter~$\lambda$ indexes three zones: the open future ($\lambda\approx 0$, no stable records), the present ($0<\lambda<1$, records forming), and the fixed past ($\lambda\to 1$, stable records, $\Gll\to\infty$). The inset shows $\Gll$ diverging as $\lambda\to 1$: the geometric cost of reversing an established record grows without bound, making the past progressively more rigid. The note at lower left emphasises that the Born measure $\mu_F(i)=|c_i|^2$ exists throughout all three zones---the future is pre-record, not pre-Born. The SR analogy table (right) draws the structural parallel: future light-cone $\leftrightarrow$ $\lambda\approx 0$; past light-cone $\leftrightarrow$ $\lambda\to 1$; present $\leftrightarrow$ $0<\lambda<1$. This ordering is frame-relative: a super-observer with access to a larger Hilbert space (Remark~\ref{rem:hilbert-depth}) may treat events in the fixed past of a lower-dimensional frame as still quantum-open in their own coherence space.}
+\label{fig:temporal_axis}
+\end{figure*}
 
 The Born measure $\mu_F(i) = |c_i|^2$ exists throughout this process. It is defined even in fully coherent frames, where $\mathcal{D}_F \approx \emptyset$. For that reason the HCR-future is better described as pre-record than pre-Born. The weights are already there. What is missing is the stable record structure that turns those weights into definite facts about particular outcomes. Put differently: decoherence does not create the Born weights; it stabilizes the records that instantiate them.
 
