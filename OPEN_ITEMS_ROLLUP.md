@@ -168,10 +168,11 @@ Five structural commitments in Paper 1 are partially delivered and must not fall
 | Gauge symmetry redundancy test | 377 | **Paper 2C §5 / G1 Phase 2** | ⚠️ OPEN — Phase 1 (covariance proved 2026-04-27) CLOSED; Phase 2 orbit classification ~2–3 weeks |
 
 ### Architectural split rule (established 2026-05-02)
-**Paper 2B delivers the structural statement; Paper 3 delivers the field-theoretic grounding.**
-This rule applies uniformly to two Paper 1 promises:
-- Line 844 (emergent metric): 2B §4.6 gives Gᴇᴹᴼ=N₀²η_μν by symmetry; Paper 3 Axiom B grounds Gᶡᵇᵒ)=η_μν field-theoretically
-- Lines 1034/1056 (holographic connections): 2C §RC1.4+§8 gives structural side; Paper 4 §3 gives Ryu–Takayanagi closure
+**For any Paper 1 promise that has both an effective-theory statement and a first-principles grounding, the effective result lives in Paper 2 (2A abstract / 2B specific geometry / 2C consequences) and the grounding lives in Paper 3 (axioms, field content, interface contracts). Paper 2 delivers the structural result conditionally on Paper 3's grounding; Paper 3 closes the contingency.**
+This rule applies uniformly to:
+- Line 844 (emergent metric): 2B §4.6 gives Gᴇᴹᴼ = f₀(0)²η_μν = N₀²η_μν by Poincaré symmetry; absorbed to η_μν in 4D Planck units via G₄=G₅/I₂; Paper 3 Axiom B grounds the field-theoretic identification of |e₀⟩
+- Lines 1034/1056 (holographic connections): 2C §RC1.4+§8 gives structural side; Paper 4 §3 closes Ryu–Takayanagi
+- General principle: 2B/2C results are valid *given* the Paper 3 grounding; Paper 3 closes the contingency (interface contracts P3-H3/P3-H4)
 
 ### ✅ APPROPRIATELY DEFERRED — correctly designated, not at risk
 

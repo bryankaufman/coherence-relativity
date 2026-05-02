@@ -87,9 +87,13 @@ The structural result Eq. (4.6.6) holds independently of Axiom B; the grounding 
 
 Combining Eqs. (4.6.5)–(4.6.6):
 
-$$\boxed{G^\mathrm{em}_{\mu\nu} = N_0^2\,\eta_{\mu\nu}, \quad N_0^2 = \frac{16\sqrt{2}}{3\pi} \approx 2.404} \qquad \text{(4.6.7)}$$
+$$\boxed{G^\mathrm{em}_{\mu\nu} = f_0(0)^2\,\eta_{\mu\nu}, \quad f_0(0)^2 = N_0^2 = \frac{16\sqrt{2}}{3\pi} \approx 2.404} \qquad \text{(4.6.7)}$$
 
-The emergent spacetime metric is flat Minkowski, rescaled by the zero-mode normalization N₀².
+The numerical factor N₀² is absorbed into the 4D Newton constant via G₄ = G₅/I₂ (RC-8b, Eq. 4.6.8), giving the canonical form
+
+$$G^\mathrm{em}_{\mu\nu} = \eta_{\mu\nu} \quad \text{in 4D Planck units} \qquad \text{(4.6.7b)}$$
+
+The eigenfunction value f₀(0)² = N₀² is kept explicit in (4.6.7) so the calculation can be verified against RC-8b; (4.6.7b) is the physically canonical form after unit rescaling.
 
 ---
 
