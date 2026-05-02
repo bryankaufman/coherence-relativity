@@ -5,6 +5,7 @@
 \usepackage{hyperref}
 \usepackage{braket}
 \usepackage{booktabs}
+\usepackage{makecell}
 \usepackage{xcolor}
 \usepackage{float}
 \usepackage{tikz}
@@ -106,7 +107,7 @@ Section~\ref{sec:frames} introduces coherence frames and the geometry of $\Sig$.
 \midrule
 \multicolumn{3}{@{}l}{\textit{Spaces}} \\[2pt]
 $\mathcal{H}$      & Hilbert space, dimension $d$               & §\ref{sec:frames} \\
-$\mathcal{M}$      & Emergent spacetime (input in this paper; derived from $\mathcal{H}$ in Paper~3) & §\ref{sec:intro}  \\
+$\mathcal{M}$      & \makecell[l]{Emergent spacetime (input in this paper;\\derived from $\mathcal{H}$ in Paper~3)} & §\ref{sec:intro}  \\
 $\Sig$             & Coherence space $= U(d)/T^d$               & Def.\ 1 \\
 \midrule
 \multicolumn{3}{@{}l}{\textit{Core objects}} \\[2pt]
@@ -248,7 +249,7 @@ The complete development of $\Tab$---including the decomposition into $\mathcal{
 \begin{figure*}[t]
 \centering
 \includegraphics[width=\textwidth]{fig_tab_hysteresis.pdf}
-\caption{Frame-bundle curvature $\Omega_{AB}$ and hysteresis. \textbf{(a)}~When $\Omega_{AB}=0$ the forward (erasure) and reverse (revival) paths through~$\Sig$ coincide; the pointer observable~$P$ returns unchanged and the visibility deficit $\delta\mathcal{V}=0$. \textbf{(b)}~When $\Omega_{AB}\neq 0$ the two paths diverge, enclosing a finite action cost $\Delta\mathcal{S}>0$. The pointer observable does not return: $P_{\mathrm{out}}\neq P_{\mathrm{in}}$. The resulting visibility deficit $\delta\mathcal{V}\sim(\tau_{\mathrm{frame}}/T_2)^2\mathcal{K}_\Sig$ is the prediction of Prediction~2 (\S\ref{sec:predictions}).}
+\caption{Frame-bundle curvature $\Omega_{AB}$ and hysteresis. \textbf{(a)}~When $\Omega_{AB}=0$ the forward (erasure) and reverse (revival) paths through~$\Sig$ coincide; the pointer observable~$P$ returns unchanged and the visibility deficit $\delta\mathcal{V}=0$. \textbf{(b)}~When $\Omega_{AB}\neq 0$ the two paths diverge, enclosing a finite action cost $\Delta\mathcal{S}>0$. The pointer observable does not return: $P_{\mathrm{out}}\neq P_{\mathrm{in}}$. The resulting visibility deficit $\delta\mathcal{V}\sim(\tau_{\mathrm{frame}}/T_2)^2\mathcal{K}_\Sig$ is Prediction~2 (\S\ref{sec:predictions}).}
 \label{fig:tab_hysteresis}
 \end{figure*}
 
@@ -505,7 +506,7 @@ Physically, this construction corresponds to refining a measurement by coupling 
 \begin{figure*}[t]
 \centering
 \includegraphics[width=\textwidth]{fig_frame_splitting.pdf}
-\caption{Born rule derivation---Step~3 (rational amplitudes). \textbf{3a:}~The initial frame~$F$ carries unequal amplitudes $|c_0|^2 = m/(m+n)$, $|c_1|^2 = n/(m+n)$. \textbf{3b:}~An ancilla space of dimension~$m+n$ is introduced, partitioned into block~$B_0$ ($m$ states, outcome~0) and block~$B_1$ ($n$ states, outcome~1). \textbf{3c:}~Isometry~$V$ maps $|\psi\rangle_F$ to the enlarged frame~$F'$ on $\mathcal{H}\otimes\mathcal{H}_{\mathrm{anc}}$, producing an equal-amplitude state $(m+n)^{-1/2}\sum_{i,k}|i,k\rangle_{F'}$. The green dashed border marks where Axiom~(A1) applies: the measure~$\mu$ must be preserved under this embedding. \textbf{3d:}~Step~2 assigns each extended alternative probability~$1/(m+n)$; Axiom~(A2) (purple dashed border) collapses the sum over~$B_0$ to yield $\mu_F(0) = m/(m+n) = |c_0|^2$. Reading clockwise: unequal amplitudes $\to$ ancilla embedding $\to$ equal amplitudes $\to$ Born measure---the logical circuit of Step~3.}
+\caption{Born rule derivation---Step~3 (rational amplitudes). \textbf{3a:}~The initial frame~$F$ carries unequal amplitudes $|c_0|^2 = m/(m+n)$, $|c_1|^2 = n/(m+n)$. \textbf{3b:}~An ancilla space of dimension~$m+n$ is introduced, partitioned into block~$B_0$ ($m$ states, outcome~0) and block~$B_1$ ($n$ states, outcome~1). \textbf{3c:}~Isometry~$V$ maps $|\psi\rangle_F$ to the enlarged frame~$F'$ on $\mathcal{H}\otimes\mathcal{H}_{\mathrm{anc}}$, producing an equal-amplitude state $(m+n)^{-1/2}\sum_{i,k}|i,k\rangle_{F'}$. The green dashed border marks where Axiom~(A1) applies: the measure~$\mu$ must be preserved under this embedding. \textbf{3d:}~Step~2 assigns each extended alternative probability~$1/(m+n)$; Axiom~(A2) (purple dashed border) collapses the sum over~$B_0$ to yield $\mu_F(0) = m/(m+n) = |c_0|^2$. Reading stepwise: unequal amplitudes $\to$ ancilla embedding $\to$ equal amplitudes $\to$ Born measure---the logical circuit of Step~3.}
 \label{fig:frame_splitting}
 \end{figure*}
 
