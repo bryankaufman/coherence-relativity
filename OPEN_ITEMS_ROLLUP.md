@@ -22,7 +22,7 @@ For full per-item detail, see the per-paper ledgers:
 | Paper | Completion | Status | Primary blocker |
 |---|---|---|---|
 | Paper 1 | 100% | Published 2026-02-14 (OSF MetaArXiv) | — |
-| Paper 2A | ~90% | Active draft | None blocking; #6 (s dynamical mechanism) is the last open item |
+| Paper 2A | ~95% | **Draft complete** (2026-05-02) | #6 (s dynamical mechanism) transferred to Paper 3 as debt item |
 | Paper 2B | ~85% | Active draft | #6 (s dynamical mechanism); spectra exact |
 | Paper 2C | ~82% | Publishable | RC-4 ✅ CLOSED (2026-05-01); C4 ✅ CLOSED — Busch 2003 axiom adopted |
 | Paper 3 | ~62% | Active development | ζ-regularization, RC-1 Opus pass, s(R) first-principles (RC-4 ✅ CLOSED) |

@@ -29,7 +29,7 @@ This ledger collects every item that is currently UNTESTED, OPEN, CONJECTURED, A
 | # | Item | Source | Notes |
 |---|------|--------|-------|
 | 5 | ~~**SC1/SC2 rewrite to KCR interval formulation**~~ | 2B | **RESOLVED.** SC1 structurally satisfied (flat Minkowski slices). SC2 structurally satisfied (bounded interval, divergent volcano potential). §5.1 and §5.2 written. |
-| 6 | **Scale factor s dynamical mechanism** | 2B §3 (L1123) | Shape RESOLVED. Scale PARTIALLY RESOLVED — Casimir gives the value but the dynamical mechanism driving s to that value is not yet demonstrated. |
+| ~~6~~ | ~~**Scale factor s dynamical mechanism**~~ | 2B §3 (L1123) | **TRANSFERRED TO PAPER 3 (2026-05-02).** Shape RESOLVED (topological freeze, zero moduli). Scale: Casimir balance gives L* ∈ [56–69 μm]; V_eff has no minimum (Outcome B — dV/dη > 0 everywhere; Casimir + Level 3 both destabilise). Flux quantization required to create a V_eff minimum. Paper 2A declares this a Paper 3 deliverable and defers it explicitly. See Paper 3 OPEN_ITEMS_LEDGER item #P3-NEW-1 (s-stabilization). Paper 2A **draft complete** with this deferral. |
 
 ---
 
@@ -131,7 +131,7 @@ This ledger collects every item that is currently UNTESTED, OPEN, CONJECTURED, A
 |----------|-------|--------------------|
 | Deferred | 3 | No |
 | Untested (needs 2B verification) | 0 (#3 resolved, #4 resolved by RC-5) | — |
-| Blocking 2B | 2 (#5 resolved, #6 partially resolved) | Yes — #6 |
+| Blocking 2B | 0 (#5 resolved, #6 transferred to Paper 3) | — |
 | Contingent on Paper 3 | 3 | No (interface contracts) |
 | Open | 2 (items #11, #13b partially resolved; #11 → RC-4) | Partially |
 | Conjectured | 2 | No (flagged honestly) |
