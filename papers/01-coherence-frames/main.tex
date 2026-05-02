@@ -245,6 +245,13 @@ which is the Berry curvature two-form on projective Hilbert space when restricte
 
 The complete development of $\Tab$---including the decomposition into $\mathcal{M}$ and $\Sig$ coordinates, the cross-term $T_{M\Sigma}$ encoding $\mathcal{M}$-$\Sig$ coupling, the $\delta\lambda$ formalism separating frame-lag from decoherence progress, equations of motion, and the connection to emergent spacetime---is the subject of Paper~2. Here we require only the decomposition~\eqref{eq:tab-decomp}, the metric definition~\eqref{eq:gab}, and the qualitative role of~$\Omega_{AB}$ in generating hysteresis. In Paper~2, $T_{AB}$ is promoted to the quantum geometric tensor $Q_{AB} = G_{AB} + iF_{AB}$ on $\mathcal{M} \times \Sig$; the $\Sigma$-$\Sigma$ block of $Q_{AB}$ recovers $T_{AB}$, and a new cross-term $T_{M\Sigma}$ (with no Paper-1 analog) encodes $\mathcal{M}$-$\Sig$ coupling. See Paper~2 for the precise correspondence.
 
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{fig_tab_hysteresis.pdf}
+\caption{Frame-bundle curvature $\Omega_{AB}$ and hysteresis. \textbf{(a)}~When $\Omega_{AB}=0$ the forward (erasure) and reverse (revival) paths through~$\Sig$ coincide; the pointer observable~$P$ returns unchanged and the visibility deficit $\delta\mathcal{V}=0$. \textbf{(b)}~When $\Omega_{AB}\neq 0$ the two paths diverge, enclosing a finite action cost $\Delta\mathcal{S}>0$. The pointer observable does not return: $P_{\mathrm{out}}\neq P_{\mathrm{in}}$. The resulting visibility deficit $\delta\mathcal{V}\sim(\tau_{\mathrm{frame}}/T_2)^2\mathcal{K}_\Sig$ is the prediction of Prediction~2 (\S\ref{sec:predictions}).}
+\label{fig:tab_hysteresis}
+\end{figure*}
+
 \subsection{Analogy with Special Relativity}
 
 The coherence-frame structure parallels the inertial-frame structure of special relativity (Table~\ref{tab:analogy}). The key structural parallel: in SR, there is no absolute simultaneity---it depends on the inertial frame. In \CR{}, there is no absolute fact about whether a system is ``in superposition'' or ``has collapsed''---it depends on the coherence frame.
@@ -684,6 +691,13 @@ Regardless of which Zeno mechanism is correct, the paradox follows the general p
 
 This yields a seventh experimentally testable signature: the Zeno/anti-Zeno crossover occurs at $\tau_{\mathrm{meas}} \approx \tau_{\mathrm{transform}}$. Standard QM predicts the crossover from spectral-density arguments~\cite{KofmanKurizki2000}; \CR{} predicts it from the $D_f$ completion condition. The cleanest \CR{}-specific test: two measurements at the same rate but in different bases should give different crossover behavior if one basis matches the pointer basis and the other does not---a pointer-basis dependence not predicted by standard Zeno treatments.
 
+\begin{figure}[t]
+\centering
+\includegraphics[width=\columnwidth]{fig_zeno_phase.pdf}
+\caption{Zeno/anti-Zeno crossover (Prediction~7). The phase boundary $\tau_{\mathrm{meas}}=\tau_{\mathrm{transform}}$ separates the Quantum Zeno regime (upper-left, frequent measurements keep the system in the Zeno subspace) from the anti-Zeno regime (lower-right, $D_f$ is not fully populated between measurements). Standard QM (solid black) predicts the boundary from spectral-density considerations. \HCR{} predicts a pointer-basis-dependent shift: for a pointer-matched measurement basis the effective $\tau_{\mathrm{transform}}$ is smaller (dotted green, boundary shifts left), while for a pointer-mismatched basis it is larger (dashed brown, boundary shifts right). The basis-dependent splitting is the \HCR{}-specific signature absent from standard Zeno treatments.}
+\label{fig:zeno_phase}
+\end{figure}
+
 \subsection{Sleeping Beauty and Self-Locating Uncertainty}
 
 The Sleeping Beauty problem~\cite{Elga2000}---where a fair coin determines whether an amnestic subject is awakened once or twice, and she must assign credence to Heads upon waking---has generated over 100 papers~\cite{Winkler2017} without resolution. The ``halfer'' answer (1/2) preserves conditionalization but violates indifference; the ``thirder'' answer (1/3) respects indifference but violates the principle that credence should not shift without new information. Sebens and Carroll~\cite{SebensCarroll2018} proved this paradox has the exact same logical structure as the central open problem in Everettian quantum mechanics: how to derive the Born rule when all branches are realized.
@@ -697,6 +711,13 @@ This suggests a sharpened preferred-basis criterion: a basis is preferred iff se
 Beauty's amnesia is therefore the destruction of a temporal record, not the creation of new information. The transition $F_{\mathrm{pre}} \to F_{\mathrm{wake}}$ removes the ``which awakening'' record from the accessible sector of~$\Sig$, increasing self-locating uncertainty by decohering a temporal degree of freedom into the bath. In this sense the protocol fits the temporal analysis of Sec.~\ref{sec:temporal}: in coherence relativity, what counts as past is the structure of presently available records, so erasing a temporal record reopens centered uncertainty without changing the underlying coin history.
 
 Sebens and Carroll's epistemic separability principle---that changes to the environment alone do not affect local probability assignments---is compatible with Born measure invariance~(A1) and follows from~(A1) applied to frame transformations that act only on the bath sector of~$\Sig$. The structural identity between Sleeping Beauty and Everettian branch probability means that \CR{}'s resolution automatically provides a geometric derivation of the Born rule in the many-worlds setting, without requiring the decision-theoretic apparatus of Deutsch--Wallace~\cite{deutschQuantumTheoryProbability1999,wallaceEmergentMultiverseQuantum2012} or the envariance argument of Zurek~\cite{zurekProbabilitiesEntanglementBorns2005}.
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{fig_sleeping_beauty.pdf}
+\caption{Sleeping Beauty paradox resolved as a frame transformation. \textbf{Left:} Before sleep, frame~$F_{\mathrm{pre}}$ has two accessible alternatives $\{|H\rangle,|T\rangle\}$ with equal Born weight~$1/2$. \textbf{Centre:} The amnesia drug implements a Hamiltonian coupling that transfers temporal self-location information into an inaccessible biochemical bath---a standard frame transformation $F_{\mathrm{pre}}\to F_{\mathrm{wake}}$. \textbf{Right:} The wake frame~$F_{\mathrm{wake}}$ has three permutation-symmetric alternatives $\{|H_{\mathrm{Mon}}\rangle, |T_{\mathrm{Mon}}\rangle, |T_{\mathrm{Tue}}\rangle\}$; by~(A1) each receives weight~$1/3$. Both answers (halfer~$1/2$ and thirder~$1/3$) are correct---in their respective frames. The paradox arises from demanding a single frame-independent credence, the coherence-frame analog of demanding absolute simultaneity.}
+\label{fig:sleeping_beauty}
+\end{figure*}
 
 
 % ============================================================
