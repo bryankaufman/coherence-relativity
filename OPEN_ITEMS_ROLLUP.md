@@ -1,5 +1,5 @@
 # HCR — Project-Level Open Items Rollup
-*2026-04-30 — first consolidation across all papers; updated 2026-05-01 (RC-4 ✅, C4 ✅)*
+*2026-04-30 — first consolidation across all papers; updated 2026-05-01 (RC-4 ✅, C4 ✅); updated 2026-05-02 (Paper 2A recasted active draft; Paper 1 promise map added)*
 
 This is the project-level aggregator. It does **not** restate per-paper items — it gives the cross-paper picture: where the critical-path items are, which interface contracts cross which papers, and what the realistic status of each manuscript is.
 
@@ -22,7 +22,7 @@ For full per-item detail, see the per-paper ledgers:
 | Paper | Completion | Status | Primary blocker |
 |---|---|---|---|
 | Paper 1 | 100% | Published 2026-02-14 (OSF MetaArXiv) | — |
-| Paper 2A | ~95% | **Draft complete** (2026-05-02) | #6 (s dynamical mechanism) transferred to Paper 3 as debt item |
+| Paper 2A | ~88% | **Active draft** | §7 F^A from H_SE (stochastic V_stoch, Predictions 2/3/4/6) OPEN; §2.3.1 open-system transport undesignated; s-stabilization transferred to Paper 3 |
 | Paper 2B | ~85% | Active draft | #6 (s dynamical mechanism); spectra exact |
 | Paper 2C | ~82% | Publishable | RC-4 ✅ CLOSED (2026-05-01); C4 ✅ CLOSED — Busch 2003 axiom adopted |
 | Paper 3 | ~62% | Active development | ζ-regularization, RC-1 Opus pass, s(R) first-principles (RC-4 ✅ CLOSED) |
@@ -148,6 +148,32 @@ The single highest-leverage item across all papers, in priority order:
 
 **Realistic Status: 100% complete on the gap-tracking infrastructure refactor.** All four ledgers and this rollup created today; Papers 2, 2C, 3, 4 now have ledgers in identical format; Papers 5/6 stub anchors the future-paper program; project-level rollup gives the cross-paper picture in one place.
 
+**Paper 2A note (2026-05-02):** "Draft complete" designation was premature. Paper 2A §7 (EOM / F^A derivation from H_SE) and §2.3.1 (open-system transport) are needed to fulfill Paper 1's explicit promises at lines 778 and 331 respectively. Paper 2A status reverted to Active draft until those sections are verifiably closed.
+
+
+---
+
+## Paper 1 Promise Fulfillment Tracking (added 2026-05-02)
+
+Five structural commitments in Paper 1 are partially delivered and must not fall through the cracks. Each is assigned a canonical section. Items move from PARTIAL to CLOSED when that section is verifiably complete.
+
+### ⚠️ PARTIAL — requires designated section work
+
+| Paper 1 promise | P1 line | Designated section | Status |
+|---|---:|---|---|
+| Stochastic V_stoch with explicit drift F^A from H_SE | 778 | **Paper 2A §7** (`paper2_section_7.0_EoM_MxSigma`) | OPEN — F^A is phenomenological; derivation from H_SE required to close Predictions 2/3/4/6 |
+| Emergent metric + embedding geometry (C¹ regularity explicit form) | 844 | **Paper 2B §4.4–§4.5** (`paper2_section_4.4_C1_regularity`) | OPEN — structure stated; explicit form of metric requires KCR-Cone geometry section |
+| Full holographic connections (RT-style closure) | 1034, 1056 | **Paper 2C §RC1.4 + §8** (structure); **Paper 4 §3** (RT closure) | ⚠️ SPLIT — 2C carries structural side; full Ryu–Takayanagi verification is Paper 4 scope |
+| Non-unitary transport: coarse-graining, partial trace, open-system reduction | 331 | **Paper 2A §2.3.1** (new subsection — not yet written) | OPEN — mixed-state Born via purification is §2.4; general open-system transport formalism undesignated |
+| Gauge symmetry redundancy test | 377 | **Paper 2C §5 / G1 Phase 2** | ⚠️ OPEN — Phase 1 (covariance proved 2026-04-27) CLOSED; Phase 2 orbit classification ~2–3 weeks |
+
+### ✅ APPROPRIATELY DEFERRED — correctly designated, not at risk
+
+| Paper 1 promise | P1 line | Designated section | Status |
+|---|---:|---|---|
+| FR / Proietti holonomy calculations | 663 | **Paper 2C §8** | Substantially verified (Opus 4.6, 2026-04-18); conditional on composite-angle details |
+| Dynamical Born rule (SCF → COV chain) | 1056 | **Paper 2C §6** | ~90% complete; G1 Phase 1 proved |
+| Temporal parallel full M×Σ unification | 754, 1034 | **Paper 2B §3–4** (structural) + **Paper 2C** (dynamical) | On track with paper splits |
 
 ---
 
