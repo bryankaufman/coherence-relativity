@@ -147,3 +147,10 @@ The single highest-leverage item across all papers, in priority order:
 3. ~~Bryan to triage~~ — RC-4 and C4 now closed. Next: RC-1 Opus verification pass (critical path item #2).
 
 **Realistic Status: 100% complete on the gap-tracking infrastructure refactor.** All four ledgers and this rollup created today; Papers 2, 2C, 3, 4 now have ledgers in identical format; Papers 5/6 stub anchors the future-paper program; project-level rollup gives the cross-paper picture in one place.
+
+
+---
+
+## Deferred Items — Return To
+
+- **Tetris toy model of record settlement** (): Draft placeholder committed 2026-05-02. Correspondence: falling piece → λ-trajectory, locking → G_λλ→∞, complete rows → observer-independent facts, incomplete rows → frame-local, line-clear → immutable causal record. Placement in Paper 2A (§7 EOM or illustrative appendix) and figure TBD. Return to for: (1) figure, (2) named Proposition on line-clear irreversibility, (3) Ω_AB rotation-hysteresis extension as discrete Prediction 2.
