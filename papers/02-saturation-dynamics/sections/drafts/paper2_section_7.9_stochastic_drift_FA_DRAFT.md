@@ -1,10 +1,13 @@
 # §7.9 Stochastic Drift F^A from the System-Environment Hamiltonian
 
-**Status:** REVISED DRAFT (2026-05-02 original → corrected 2026-05-02)
+**Status:** REVISED DRAFT (2026-05-02 original → corrected 2026-05-02 → editorial 2026-05-03)
 **Closes:** Paper 1 line-778 promise (Predictions 2, 3, 4, 6)
 **Placement:** Appended to `paper2_section_7.0_EoM_MxSigma_DRAFT.md` after §7.8
 **Status note:** F^r formula (Eq. 7.9.13) is correct; derivation is from a phenomenological
 logistic ansatz (§7.9.5), NOT a first-principles Lindblad derivation. See §7.9.5 and §7.9.9.
+**2026-05-03 editorial pass:** Fixed m_KK numerical value in §7.9.8 (8·1·(1+2)=24, not √48);
+added angular F^θ, F^φ scope statement at end of §7.9.5; tightened D subleading estimate in
+§7.9.6; added N-mode independent-channels justification for Prediction 3 in §7.9.7.
 
 ---
 
@@ -166,6 +169,16 @@ $$\boxed{F^r(r) = \frac{\Gamma_\mathrm{dec}}{2\sqrt{2}}\,\sin(2\sqrt{2}\,r)} \qq
 
 The drift is smooth and finite everywhere, consistent with regularity (§4.4.8).
 
+### Scope: angular components F^θ, F^φ
+
+The present derivation gives only the radial drift F^r on the KK-cone. For pointer-basis
+decoherence with isotropic environment coupling — H_int = Σ_α A_α ⊗ B_α with the A_α
+operators invariant under the residual U(1) ⊂ T^d isometry of Σ — the angular components
+F^θ, F^φ vanish identically: there is no preferred angular direction in the dissipator and
+no angular bias is induced. Anisotropic coupling (A_α(θ, φ) breaking the U(1)) would generate
+non-zero angular drift; the anisotropic case is outside §7.9 scope and deferred to future work
+(Paper 2D or appropriate target). All Predictions 2, 3, 6 evaluated below depend only on F^r.
+
 ---
 
 ## §7.9.6 Diffusion Coefficient D
@@ -181,7 +194,10 @@ $$D = \Gamma_0 \qquad \text{(7.9.14)}$$
 **Correction vs. pre-2026-05-02 draft:** The old formula D(r) = cos⁴(√2 r) Γ₀ arose from
 including an explicit λ_A coupling in H_int and squaring under the Born approximation.
 Absorbing λ_A into Γ_dec (§7.9.3) removes this double-counting; D is constant at leading
-order. Subleading r-dependence from Γ_dec(r) corrections is O(G/H₀) suppressed.
+order. Subleading r-dependence enters from the spectral-density evaluation at the system
+Bohr frequency rather than at the bare Hubble scale, and is estimated O(Γ_dec/m_KK) ≈ O(0.1)
+at present cosmological epoch (using m_KK ≈ 4.90 H₀ from §7.9.8 and Γ_dec ≈ 0.49 H₀); this
+correction is not derived in §7.9.
 
 ### Consequences for stochastic action
 
@@ -233,9 +249,11 @@ a measurable hysteresis coefficient of order Γ_dec²/Γ₀ per erasure-revival 
 
 **Prediction 3 (Coherence-space curvature, N-body):** The N-mode generalization of F^r
 follows from the N-mode warp factor A_N(r). At leading order in 1/N, the logistic
-Ansatz (7.9.9) generalizes with Γ_dec → Γ_dec × N, giving δV ∝ N² — the N²-scaling
-prediction. D^(N) = Γ₀ remains constant at leading order. Full N-mode generalization
-is Paper 2C scope.
+Ansatz (7.9.9) generalizes with Γ_dec → Γ_dec × N (each of N independent decoherence
+channels contributes additively to the dissipator under the standard product-environment
+Born-Markov assumption; cross-channel correlations are subleading in 1/N). This gives
+δV ∝ N² from (Γ_dec × N)² in the stochastic-action prefactor. D^(N) = Γ₀ remains constant
+at leading order. Full N-mode generalization is Paper 2C scope.
 
 **Prediction 6 (Coherence revival time):** The Poincaré recurrence time for escape from
 the pointer attractor back to r = 0 scales as:
@@ -268,9 +286,10 @@ system-environment coupling). With H_int = Σ A_α ⊗ B_α and no explicit warp
   system dynamics slow to zero, and the Markov condition τ_E ≪ 1/Γ_system is not violated.
 
 **Markov validity:** The Markov approximation requires τ_E ≪ 1/Γ_dec. For the KK bath
-(environment = KK graviton modes, §2.3), this reads m_KK ≫ Γ_dec. Using the first
-KK vector mode m_KK ~ √(8 × 2 × 3) H₀ ≈ 7 H₀ (Paper 2B §6) vs. Γ_dec ~ 0.49 H₀,
-the Markov condition m_KK/Γ_dec ≈ 14 ≫ 1 is satisfied.
+(environment = KK bulk modes, §2.3), this reads m_KK ≫ Γ_dec. Using the first
+KK vector mode with spectrum m_n² = 8n(n+2) (Paper 2B §RC3.3 addendum), so
+m_1² = 8·1·(1+2) = 24 and m_1 = 2√6 H₀ ≈ 4.90 H₀, vs. Γ_dec ~ 0.49 H₀,
+the Markov condition m_KK/Γ_dec ≈ 10 ≫ 1 is satisfied.
 
 ---
 
@@ -289,7 +308,7 @@ the Markov condition m_KK/Γ_dec ≈ 14 ≫ 1 is satisfied.
 | Prediction 6 revival time T_rev | 7.9.20 | ✅ CORRECTED (finite, well-defined) |
 | Prediction 3 N-body scaling | §7.9.7 | ⚠️ SKETCH (N-mode generalization stated) |
 | Prediction 4 gravitational correction β | 7.9.21 | ⚠️ DEFERRED to Paper 2C |
-| Born/Markov validity in KK environment | §7.9.8 | ✅ VERIFIED (m_KK/Γ_dec ≈ 14) |
+| Born/Markov validity in KK environment | §7.9.8 | ✅ VERIFIED (m_1 = 2√6 H₀ ≈ 4.90 H₀; m_KK/Γ_dec ≈ 10) |
 
 **What this section closes:** Paper 1 line 778 promise that F^A would be derived from H_SE
 in Paper 2. F^r = Γ_dec sin(2√2 r)/(2√2) is the result; derived from the logistic Ansatz
