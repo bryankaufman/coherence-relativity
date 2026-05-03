@@ -139,7 +139,8 @@ Physical motivation for this specific form:
 > **Scope statement:** Ansatz (7.9.9) is a leading-order phenomenological model capturing the
 > key fixed-point structure and rate normalization. It is consistent with — but not uniquely
 > determined by — the Born-Markov Lindblad framework of §7.9.4. First-principles derivation
-> of the logistic form from the Nakajima-Zwanzig memory kernel is deferred to Paper 2C §5.
+> of the logistic form from the Nakajima-Zwanzig memory kernel is deferred to future work;
+> registered as #OP-NZ in PAPER2_OPEN_ITEMS_LEDGER; stub in Paper 2C §5.5.
 
 ### Derivation of F^r from the logistic ansatz
 
@@ -177,7 +178,8 @@ operators invariant under the residual U(1) ⊂ T^d isometry of Σ — the angul
 F^θ, F^φ vanish identically: there is no preferred angular direction in the dissipator and
 no angular bias is induced. Anisotropic coupling (A_α(θ, φ) breaking the U(1)) would generate
 non-zero angular drift; the anisotropic case is outside §7.9 scope and deferred to future work
-(Paper 2D or appropriate target). All Predictions 2, 3, 6 evaluated below depend only on F^r.
+(future work; not currently scoped to a specific paper — registered as #OP-AF in PAPER2_OPEN_ITEMS_LEDGER).
+All Predictions 2, 3, 6 evaluated below depend only on F^r.
 
 ---
 
@@ -313,7 +315,7 @@ the Markov condition m_KK/Γ_dec ≈ 10 ≫ 1 is satisfied.
 **What this section closes:** Paper 1 line 778 promise that F^A would be derived from H_SE
 in Paper 2. F^r = Γ_dec sin(2√2 r)/(2√2) is the result; derived from the logistic Ansatz
 (7.9.9) on the warp coupling λ_A, motivated by Born-Markov Lindblad decoherence physics.
-The ansatz status is explicit; first-principles closure of (7.9.9) is a Paper 2C item.
+The ansatz status is explicit; first-principles closure of (7.9.9) is deferred to future work (registered as #OP-NZ in PAPER2_OPEN_ITEMS_LEDGER).
 
 **Key corrections over pre-2026-05-02 draft:**
 1. λ_A notation disambiguated from EGY λ throughout; see §7.9.2.
@@ -333,5 +335,5 @@ The ansatz status is explicit; first-principles closure of (7.9.9) is a Paper 2C
 - Omnibus #29: Γ_dec(z) = Γ₀ H(z)/H₀ (COMPLETED 2026-04-20)
 - `notes/NOTATION_DISAMBIGUATION_LAMBDA_2026-05-02.md`: Authoritative λ symbol list
 - Paper 2C §RC1.3: T_{AB} gravitational coupling coefficient β
-- Paper 2C §5: First-principles closure of logistic Ansatz (7.9.9) via Nakajima-Zwanzig
+- **N-Z closure of Ansatz (7.9.9):** First-principles derivation via Nakajima-Zwanzig memory kernel not yet scoped to a specific section; registered as #OP-NZ in PAPER2_OPEN_ITEMS_LEDGER
 - Paper 1 §6.F Eq. (6.2): Stochastic action S[γ]

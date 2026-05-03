@@ -440,10 +440,26 @@ and hence
 $$\lambda^2 = \frac{0.259}{0.049} \cdot \frac{1}{\sqrt{0.049}} = 5.29 \cdot 4.52 \approx 23.9 \cdot \rho_c^{-1/2}.$$
 
 The $\Omega^{1/2}$ factor carries units of $\rho_c^{1/2}$, so this is only a scaling-level consistency estimate.
-
 **Conjectured (C2):** If future work yields a baryon-tracking scaling close to $q\approx 3/2$, then the observed ratio $\Omega_{\rm DM}/\Omega_b = 5.29$ can be matched by an admissible choice of the normalization $\lambda$. This check does **not** derive either $q$ or $\lambda$; it only shows phenomenological viability of that benchmark ansatz.
 
 **Interpretation:** This illustrative baryon exponent $q$ is **not** tied to the geometric dark-energy coefficient $\alpha_{\rm geom}$; the latter is fixed independently by the KCR zero-mode backreaction integral (RC-8b). Any genuine derivation of baryon tracking requires solving the sourced M–Σ dynamics.
+
+---
+
+**⚠️ Inbound reference from Paper 2B §7.9 — Gravitational decoherence coefficient β (item #OP-β):**
+Paper 2B §7.9.7 Eq. (7.9.21) introduces a gravitationally-sourced correction to the
+stochastic drift F^r:
+$$F^r_{\rm grav}(r) = F^r(r) + \beta\,\frac{dg/dt^2}{\chi^2_{\rm grav}}\,\tau^2_{\rm frame}$$
+and asserts β ~ O(1) with a forward reference to this section (Paper 2C §RC1.3) for the
+derivation of β from the T_{AB} effective stress tensor. **That derivation does not currently
+exist here.** The §RC1.3 results establish w = −1 (DE limit) and w = 0 (DM limit) from the
+boundary effective stress tensor T^(eff)_μν, and fix α_geom (Eq. RC-8b). Extracting a
+gravitational decoherence modification β from these results requires:
+1. A time-dependent metric perturbation g(t) expanding the T^(eff) source;
+2. A coupling between ∂M dynamics and the coherence frame r-coordinate via T_{MΣ};
+3. The resulting correction to Γ_dec(r,t) and hence to F^r.
+This calculation is deferred to RC-2 (full T_M EOM with sourced metric) or a dedicated
+sub-item. **Status:** OPEN (#OP-β). Registered in PAPER2_OPEN_ITEMS_LEDGER.
 
 ---
 
@@ -936,6 +952,39 @@ $$\boxed{k_c = 5/\chi_{\rm CMB} \quad\text{(conditional on Paper 4 §3)}}$$
 | D2: Lorentzian propagator | $G(k,n)=1/(k^2+\lambda_n/R_\Sigma^2)$; $k_c=\sqrt{d'}/R_\Sigma$ | ✅ PROVED |
 | D3a: $\ell_{\min}=2$ | $\mathrm{Sym}^2(j=1)=j=0\oplus j=2$; $d'=25$ | ✅ DERIVED |
 | D3b: $R_\Sigma=\chi_{\rm CMB}$ | Holographic projection $\Phi:\Sigma\to\partial M$ | ❌ Paper 4 §3 |
+
+## §5.5 Open Items Inbound from Paper 2B §7.9 (added 2026-05-03)
+
+Three items derived in Paper 2B §7.9 carry explicit forward references into Paper 2C or future
+work. They are registered here so they do not fall through the cracks during review.
+
+**#OP-NZ — First-principles closure of the logistic ansatz (7.9.9):**
+Paper 2B §7.9.5 introduces the phenomenological logistic decay
+dλ_A/dt = −2Γ_dec λ_A(1−λ_A) as a leading-order model for warp-coupling evolution under
+decoherence. The first-principles derivation of this specific logistic form from the full
+Nakajima-Zwanzig memory kernel — showing that the Born-Markov approximation selects the
+logistic ansatz over other two-fixed-point forms — is an open item. A candidate calculation
+would use the Redfield tensor on the KK-cone to extract the non-Markovian correction terms
+and verify that they are suppressed by O(Γ_dec/m_KK) ≈ O(0.1) (see Paper 2B §7.9.6 for
+the estimate). Until this is done, the logistic form remains an ANSATZ with correct
+fixed-point structure, not a derived result.
+**Target:** Paper 2C or future dedicated calculation. **Status:** OPEN.
+
+**#OP-β — Gravitational decoherence modification coefficient β:**
+Paper 2B §7.9.7 Eq. (7.9.21) writes a gravitationally-sourced correction to F^r as
+F^r_grav = F^r + β (dg/dt²/χ²_grav) τ²_frame, and references Paper 2C §RC1.3 for the
+derivation of the O(1) coefficient β from the T_{AB} effective stress tensor.
+This derivation does not currently exist in §RC1.3 (see back-reference note added there).
+**Target:** Paper 2C §RC1.3 or §RC2. **Status:** OPEN.
+
+**#OP-AF — Anisotropic angular drift F^θ, F^φ:**
+Paper 2B §7.9.5 notes that F^θ = F^φ = 0 under the isotropic coupling assumption
+(U(1) ⊂ T^d invariance of A_α operators). The anisotropic case — where the Lindblad
+operators A_α(θ,φ) break the residual isometry — would generate non-zero angular drift.
+This case is not currently scoped.
+**Target:** Future work; no specific paper assigned. **Status:** UNSCOPED.
+
+---
 
 ## References (within Paper 2)
 

@@ -159,6 +159,19 @@ This ledger collects every item that is currently UNTESTED, OPEN, CONJECTURED, A
 
 ---
 
+## §7.9 DEFERRAL TRACKING (added 2026-05-03)
+
+Three items from Paper 2B §7.9 carry forward references that were unscoped or dangling as of
+2026-05-03. These are registered here so they appear on the project-wide tracking radar.
+
+| # | Item | Source | Notes |
+|---|------|--------|-------|
+| #OP-NZ | **N-Z closure of logistic Ansatz (7.9.9):** dλ_A/dt = −2Γ_dec λ_A(1−λ_A) is a phenomenological ansatz (ANSATZ status). First-principles derivation via Nakajima-Zwanzig memory kernel on KK-cone not yet computed. Would show that Born-Markov selects logistic form, with subleading corrections O(Γ_dec/m_KK) ≈ O(0.1). | Paper 2B §7.9.5 | OPEN. Not blocking §7.9 close (ansatz status explicitly stated). Target: future dedicated calculation. Stub added in Paper 2C §5.5. |
+| #OP-β | **Gravitational decoherence coefficient β** for Prediction 4 correction F^r_grav = F^r + β(dg/dt²/χ²_grav)τ²_frame (Eq. 7.9.21). β ~ O(1) asserted but not derived. Source: T_{AB} from §RC1.3. Requires: (1) time-dep. metric perturbation in T^(eff); (2) T_{MΣ} coupling to r-coordinate; (3) resulting Γ_dec(r,t) modification. | Paper 2B §7.9.7 Eq. (7.9.21); Paper 2C §RC1.3 | OPEN. Not blocking (Prediction 4 is deferred to Paper 2C scope in §7.9 table). Note added in Paper 2C §RC1.3. |
+| #OP-AF | **Angular drift F^θ, F^φ for anisotropic coupling.** Current §7.9 assumes isotropic coupling (U(1) invariance of A_α); angular components vanish under this assumption. Non-isotropic A_α(θ,φ) would generate angular drift. | Paper 2B §7.9.5 angular scope note | UNSCOPED. Not blocking any current paper. Listed here for completeness. |
+
+---
+
 ## CROSS-PAPER REFERENCE (added 2026-05-02)
 
 | # | Item | Source | Notes |
