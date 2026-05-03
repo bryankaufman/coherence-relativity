@@ -22,7 +22,7 @@ For full per-item detail, see the per-paper ledgers:
 | Paper | Completion | Status | Primary blocker |
 |---|---|---|---|
 | Paper 1 | 100% | Published 2026-02-14 (OSF MetaArXiv) | — |
-| Paper 2A | ~97% | **Active draft** | §7.9 ✅ §2.5 ✅ §4.4.8 ✅ §4.6 ✅ all DRAFTED 2026-05-02; Opus verification pass on §7.9 is the final gate before CLOSED |
+| Paper 2A | ~98% | **Active draft** | §7.9 ✅ §2.5 ✅ §4.4.8 ✅ §4.6 ✅ all DRAFTED; §7.9 REWRITTEN 2026-05-02 (3 issues fixed: λ disambiguation, D=Γ₀ constant, finite V_stoch) |
 | Paper 2B | ~85% | Active draft | #6 (s dynamical mechanism); spectra exact |
 | Paper 2C | ~82% | Publishable | RC-4 ✅ CLOSED (2026-05-01); C4 ✅ CLOSED — Busch 2003 axiom adopted |
 | Paper 3 | ~62% | Active development | ζ-regularization, RC-1 Opus pass, s(R) first-principles (RC-4 ✅ CLOSED) |
@@ -186,8 +186,7 @@ This rule applies uniformly to:
 
 ## Deferred Items — Return To
 
-
-- **λ disambiguation editorial pass** (added 2026-05-02): `notes/NOTATION_DISAMBIGUATION_LAMBDA_2026-05-02.md` is the authoritative reference. Eight distinct λ symbols catalogued. Critical finding: EGY λ (0→1) and KK-cone λ_A = A(r)² (1→0) are INVERTED. Ansatz A* corrected: λ = sin(√2 r), λ_A = 1−λ². Requires 2–3 editorial sessions across P2A/P2B/P2C. P2B §7 is the heaviest hit. P2B §7.9 rewrite is a separate blocking task.
-- **Paper 2B §7.9 rewrite** (added 2026-05-02): Draft has three verified issues: (1) logistic dλ/dt = −Γ_dec λ(1−λ) is a phenomenological ansatz, not derivable from pointer-basis Lindblad (7.9.8); (2) Born validity at r=0 (λ_A=1 violates weak-coupling); (3) revised D = Γ₀ (constant) not cos⁴Γ₀, removes the tan² divergence. Downstream: stochastic action S[γ] is finite everywhere; geometric rigidity comes from V_geom not V_stoch; V_stoch(0) = πΓ_dec²/(128√2Γ₀) FINITE. Section must be reframed: F^r result is CORRECT but comes from the logistic ansatz (not a first-principles Lindblad derivation). Status downgrade from DERIVED to ANSATZ. Separate cowork session needed.
+- **λ disambiguation editorial pass** (added 2026-05-02): `notes/NOTATION_DISAMBIGUATION_LAMBDA_2026-05-02.md` is the authoritative reference. Eight distinct λ symbols catalogued. Critical finding: EGY λ (0→1) and KK-cone λ_A = A(r)² (1→0) are INVERTED. Ansatz A* corrected: λ = sin(√2 r), λ_A = 1−λ². Requires 2–3 editorial sessions across P2A/P2B/P2C. P2B §7 is the heaviest hit. P2B §7.9 rewrite is ✅ COMPLETED (see next bullet).
+- **Paper 2B §7.9 rewrite** (COMPLETED 2026-05-02): All three issues resolved in `paper2_section_7.9_stochastic_drift_FA_DRAFT.md`. (1) New §7.9.2 notation table + Corrected Ansatz A*: λ = sin(√2 r), λ_A = 1−λ²; (2) New §7.9.4 explains why Lindblad (7.9.8) cannot give logistic dλ/dt (population preservation); (3) New §7.9.5 frames Ansatz (7.9.9) dλ_A/dt = −2Γ_dec λ_A(1−λ_A) explicitly as phenomenological, derives F^r = Γ_dec sin(2√2 r)/(2√2); (4) D = Γ₀ constant, V_stoch(0) = πΓ_dec²/(128√2Γ₀) FINITE derived analytically (§7.9.7); (5) New §7.9.8 Born/Markov validity: m_KK/Γ_dec ≈ 14 verified. F^r formula unchanged; status correctly downgraded to ANSATZ.
 - **File migration audit** (added 2026-05-02): When a full-disk grep is needed to find something, the file is misplaced. Audit for: (1) KB entries not in memory/kb/; (2) derivation files outside per-paper ledgers; (3) idea content that should be in section drafts. Use _vault/AGENT_GUIDE.md path registry as authority. Goal: all content findable without grep.
 - **Tetris toy model of record settlement** (): Draft placeholder committed 2026-05-02. Correspondence: falling piece → λ-trajectory, locking → G_λλ→∞, complete rows → observer-independent facts, incomplete rows → frame-local, line-clear → immutable causal record. Placement in Paper 2A (§7 EOM or illustrative appendix) and figure TBD. Return to for: (1) figure, (2) named Proposition on line-clear irreversibility, (3) Ω_AB rotation-hysteresis extension as discrete Prediction 2.
