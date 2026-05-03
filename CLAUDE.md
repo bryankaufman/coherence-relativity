@@ -16,12 +16,19 @@ Then read the relevant project folder:
 - `papers/02-saturation-dynamics/` — Paper 2 (active draft, ~75% complete)
 - `analysis/` — numerical computations (Casimir spectral, T3A dynamics)
 
+## MCP Runtime & Global Audit
+
+- MCP servers run from `~/.mcp-runtime/` (NOT the git dev repo). See `~/.mcp-runtime/RUNTIME_PROTOCOL.md`.
+- All git ops (commits, checkouts, pushes) are logged to `~/.dev-audit/ops.log`. Query: `~/.dev-audit/ops-dashboard.sh`.
+- Never modify `~/.mcp-runtime/` directly. Use `deploy.sh` after code changes.
+
 ## Do Not
 
 - Execute immediately if the goal, audience, or output format is unclear — ask first.
 - Invent facts, citations, parameter values, or physical claims.
 - Edit Paper 1 files without explicit instruction (it is content-complete).
 - Edit Desktop scratch copies — only the canonical repo is authoritative.
+- Modify `~/.mcp-runtime/` directly — use `~/.mcp-runtime/deploy.sh`.
 
 ## Save Outputs
 
