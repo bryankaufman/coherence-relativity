@@ -67,6 +67,7 @@ Confirm HEAD matches expectations and working tree is clean.
 
 ## Hard Boundaries
 
+- **Never modify `~/.mcp-runtime/` directly.** Use `~/.mcp-runtime/deploy.sh` after code changes. See `~/.mcp-runtime/RUNTIME_PROTOCOL.md`.
 - **Never invent citations.** If you need a reference and don't have one, write `[CITE NEEDED]`.
 - **Never silently change parameterization.** EGY is locked for Paper 1.
 - **Never edit Desktop scratch copies as authoritative.** Always work in the canonical repo.
