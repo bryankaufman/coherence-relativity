@@ -172,6 +172,20 @@ Three items from Paper 2B §7.9 carry forward references that were unscoped or d
 
 ---
 
+
+## PAPER 1 FORWARD-REFERENCE AUDIT (added 2026-05-03)
+
+Forward-reference audit against Paper 1 main.tex completed 2026-05-03. Three drafted sections
+(§2.2, §2.3, §2.4) were missing from the rollup Promise Fulfillment tracking table — added.
+Two additional items registered here:
+
+| # | Item | Source | Notes |
+|---|------|--------|-------|
+| #P1-848 | **QD V-minimum N-scaling (Prediction 3) — SKETCH status** | P1 line 848; Paper 2A §7.9.7 | Paper 1 promises V-minimum sharpening "made precise in Paper 2"; §7.9.7 provides δV ∝ N² from (Γ_dec×N)² after F^A is established. Status ⚠️ SKETCH in §7.9.9 (N-mode generalization stated, not fully derived). Paper 1 promise is **substantially met** (F^A provided, N-scaling identified); precise multi-mode V-min geometry is Paper 2C scope. |
+| #2A-Kahler | **Kähler structure on M×Σ / complex coordinate compatibility** | Paper 2A §2.2 draft (possible future-work deferral in §2.2) | If Paper 2A §2.2 carries an explicit "Kähler structure deferred to future work" statement, this should be registered. Needs source verification against actual §2.2 draft text. Not in any current ledger. If confirmed, target: Paper 2B or future dedicated session. |
+
+**Publication note (κ disambiguation):** Audit doc (2026-04-26) flagged a recommended footnote to Paper 1 OSF preprint v1 disambiguating the κ(x,ξ) coupling parameter. Paper 1 is frozen at v1 (published 2026-02-14). The disambiguation lives in Paper 2A §2.2 and the audit notes; readers of Paper 1 alone will not see it. Decision needed: (a) submit v2/errata with footnote, (b) accept asymmetric documentation. Not a physics gap.
+
 ## CROSS-PAPER REFERENCE (added 2026-05-02)
 
 | # | Item | Source | Notes |
