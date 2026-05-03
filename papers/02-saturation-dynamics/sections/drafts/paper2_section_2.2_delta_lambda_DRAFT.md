@@ -663,7 +663,7 @@ The equations of motion (Eq. 2.2.29 and 2.2.30, in the simplified 1D example) ar
 
 **Approach**: Compute the Fubini-Study tensor G_{AB} explicitly using the 5D metric (Eq. 2.2.34). Evaluate the cross-term T_{μa} as a function of (r,z). Determine whether λ, as extracted from the equations of motion, scales as A².
 
-**Status**: Deferred to §7. This is a key verification point for the entire formalism.
+**Status**: ✅ **CLOSED (RC-5, 2026-04-18)** — Derived from first principles: λ_A(r) = ψ_0(r)/ψ_0(0) = A²(r) where ψ_0 = N₀A² is the vector zero-mode profile. Also: T_{μa} ∼ A^{-2} derived in §6.2.10 (PAPER2_OPEN_ITEMS_LEDGER #3 ✅ RESOLVED). Corrected Ansatz A*: λ = sin(√2 r), λ_A = A² = 1 − λ². See `RC5_LAMBDA_DERIVATION_2026-04-18.md`. Deferred calculation in [Paper 2B, §3] for full convention-lock; the principal scaling result is now closed.
 
 ---
 
@@ -707,9 +707,9 @@ The equations of motion (Eq. 2.2.29 and 2.2.30, in the simplified 1D example) ar
 
 ### Hypotheses and Conjectures
 
-- **Warp-factor scaling: λ ∼ A(r,z)²** (Eq. 2.2.41): Derived from dimensional analysis and physical intuition. **Status**: ⚠️ **UNTESTED** — Requires verification in §7.
-- **Cross-term scaling: $T_{\mu a}^{\text{FS}} \sim A^{-2}$** (Eq. 2.2.38): From §2.1 hypothesis. **Status**: ⚠️ **UNTESTED** — Requires covariant derivative calculation.
-- **First-principles formula for λ** (§2.2.12.1): Not yet proposed. **Status**: ⚠️ **MISSING**.
+- **Warp-factor scaling: λ_A = A(r,z)²** (Eq. 2.2.41): Derived from dimensional analysis and physical intuition. **Status**: ✅ **CLOSED (RC-5, 2026-04-18)** — λ_A = A²(r) derived from zero-mode profile ψ_0 ∝ A². Corrected Ansatz A*: λ_EGY = sin(√2 r), λ_A = 1 − λ_EGY².
+- **Cross-term scaling: T_{μa}^{FS} ∼ A^{-2}** (Eq. 2.2.38): From §2.1 hypothesis. **Status**: ✅ **CLOSED (RC-5, 2026-04-18)** — Derived from first principles in §6.2.10 (Hamiltonian decomposition + KCR-Cone metric); T_{μr} ∼ A^{-2} exact. Combined with λ_A ∼ A², gives λ_A · T = O(1) (geometric theorem, PAPER2_OPEN_ITEMS_LEDGER #4 ✅).
+- **First-principles formula for λ (rate equation)** (§2.2.12.1): **Status**: ⚠️ **PARTIALLY RESOLVED** — Definition of λ and λ-warp relationship CLOSED (see above). Rate equation dλ_A/dt: logistic Ansatz (7.9.9) is phenomenological; N-Z first-principles closure = **#OP-NZ** (§7.9 deferral tracking).
 
 ---
 
@@ -717,7 +717,7 @@ The equations of motion (Eq. 2.2.29 and 2.2.30, in the simplified 1D example) ar
 
 - **Explicit form of O(λ) corrections to inverse metric** (§2.2.3): Lengthy algebra, deferred to Appendix A.
 - **Position-dependent decoherence rate example** (mentioned in §2.1.8): Concrete model of T_{MΣ} with γ = γ(x), deferred to §3.
-- **Exact solutions in KK-Cone and verification of λ ∼ A² scaling** (§2.2.6, 2.2.12.2): Full numerical or analytical solution, deferred to §7.
+- **Exact solutions in KK-Cone** (§2.2.6): Full numerical/analytical solution deferred to [Paper 2B, §6]. Note: **λ ∼ A² principal scaling is CLOSED** (RC-5, 2026-04-18); convention-lock and numerical estimates are Paper 2B scope.
 - **Quantization of M × Σ system** (§2.2.12.4): Future work.
 
 ---
@@ -728,7 +728,7 @@ The equations of motion (Eq. 2.2.29 and 2.2.30, in the simplified 1D example) ar
 
 1. **Interpretation of λ is phenomenological**: A first-principles derivation from decoherence-rate functionals would strengthen the formalism.
 
-2. **Warp-factor scaling is hypothetical**: The λ ∼ A² ansatz must be verified by explicit calculation in the KK-Cone geometry (§7).
+2. ~~**Warp-factor scaling is hypothetical**~~: **RESOLVED (RC-5, 2026-04-18)** — λ_A = A²(r) is now derived from first principles; the λ_A · T = O(1) cancellation is a geometric theorem. Convention-lock for R_Markov norms deferred to [Paper 2B, Appendix A].
 
 3. **Exact solutions are limited**: The coupled equations are complex; progress likely requires symmetry, ansätze, or numerical methods.
 
