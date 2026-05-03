@@ -444,6 +444,9 @@ The $\Omega^{1/2}$ factor carries units of $\rho_c^{1/2}$, so this is only a sca
 
 **Interpretation:** This illustrative baryon exponent $q$ is **not** tied to the geometric dark-energy coefficient $\alpha_{\rm geom}$; the latter is fixed independently by the KCR zero-mode backreaction integral (RC-8b). Any genuine derivation of baryon tracking requires solving the sourced M–Σ dynamics.
 
+**⚠️ Forward reference to Paper 2D §5 (conjecture closure, registered 2026-05-03):**
+The C2 conjecture will be resolved when RC-2 delivers the full M–Σ EOM with Γ_dec ∝ ρ_b(x) as source. At that point, the derivation of the rank-1 T_M structure, the proof that the baryon-tracking ansatz is the unique minimal solution, and the resulting first-principles prediction for Ω_DM/Ω_b will be housed in **Paper 2D §5** (conditional paper, opens on RC-2 trigger). This section (2C §RC1.3B) retains the C2 conjecture statement as the record of what is claimed; Paper 2D §5 provides the derivation and turns C2 from CONJECTURED to DERIVED. Until then, C2 remains open (PAPER2_OPEN_ITEMS_LEDGER #15).
+
 ---
 
 **⚠️ Inbound reference from Paper 2B §7.9 — Gravitational decoherence coefficient β (item #OP-β):**

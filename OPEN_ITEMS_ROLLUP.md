@@ -184,6 +184,28 @@ This rule applies uniformly to:
 
 ---
 
+## Paper 2D — Formal Conditional Scope (registered 2026-05-03)
+
+**Mandate:** "Beyond-Leading-Order Stochastic Dynamics on M×Σ — N-Z Corrections, Anisotropic Coupling, and Dynamical T_M Backreaction"
+**Trigger:** RC-2 closure (full δT_M/δg^{μν} extraction from M-Σ EOM)
+**Do not open until:** RC-2 produces the field-theoretic T_M EOM; 2D §4 and 2D §5 are structurally empty without it.
+
+| Section | Content | Short-term home (provisional) | #OP item |
+|---------|---------|-------------------------------|----------|
+| 2D §1 | Motivation: when Born-Markov/isotropy/static-background fail | N/A | N/A |
+| 2D §2 | Anisotropic Σ-coupling A_α(θ,φ): angular drift F^θ, F^φ | Paper 2B §7.10 | #OP-AF |
+| 2D §3 | Nakajima-Zwanzig memory corrections to logistic Ansatz (7.9.9); O(Γ_dec/m_KK)≊O(0.1) | Paper 2A §2.5 appendix | #OP-NZ |
+| 2D §4 | Dynamical T_M backreaction with time-varying g(t); gravitational β coefficient (Prediction 4) | Paper 2C RC-2 scope | #OP-β |
+| 2D §5 | First-principles anisotropic DM: derived rank-1 T_M ansatz; Ω_DM/Ω_b as parameter-free prediction | 2C §RC1.3B (conjecture, forward-ref); 2D §5 (derivation + prediction) | C2 (#15) |
+
+**Architectural notes (2026-05-03):**
+- "Symmetry-breaking" is NOT the right umbrella: only 2D §2 is symmetry-breaking proper; §3 is non-Markovian correction; §4 is backreaction. Correct umbrella: "beyond-leading-order."
+- **#OP-AF target corrected:** Paper 3 was proposed via P3-H3. Verified: Paper 3 ledger has no anisotropic Σ-coupling item; P3-H3 concerns Hopf fiber c₁=1 selection (distinct physics). Correct: 2B §7.10 (short-term) / 2D §2 (long-term).
+- **2D §5 hybrid placement:** C2 conjecture statement stays in 2C §RC1.3B with forward-reference; derivation and prediction live in 2D §5.
+- Short-term homes are provisional; when 2D opens, content migrates from 2B §7.10, 2A §2.5 appendix, 2C RC-2 into 2D.
+
+---
+
 ## Deferred Items — Return To
 
 - **λ disambiguation editorial pass** (added 2026-05-02): `notes/NOTATION_DISAMBIGUATION_LAMBDA_2026-05-02.md` is the authoritative reference. Eight distinct λ symbols catalogued. Critical finding: EGY λ (0→1) and KK-cone λ_A = A(r)² (1→0) are INVERTED. Ansatz A* corrected: λ = sin(√2 r), λ_A = 1−λ². Requires 2–3 editorial sessions across P2A/P2B/P2C. P2B §7 is the heaviest hit. P2B §7.9 rewrite is ✅ COMPLETED (see next bullet).
